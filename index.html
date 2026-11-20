@@ -96,8 +96,9 @@ summary{cursor:pointer}
 .start{text-align:center;padding:36px 0}.start h2{font-size:22px;margin:4px 0 6px}.start p{color:var(--mut);margin:0 0 26px}
 .go{background:#3b6d11;color:#fff;border:0;border-radius:14px;font-size:24px;font-weight:700;letter-spacing:1px;padding:22px 56px;min-height:72px;width:min(100%,360px)}.go:hover{background:#27500a}
 .pushbox{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--inl);background:var(--inb);border-radius:12px;padding:12px 16px;margin:0 auto 18px;max-width:520px}.pushbox b{display:block;color:var(--int)}.pushbox span{display:block;font-size:14px;color:var(--ink)}.pushbox .pe{color:var(--kot);font-size:13px}
+.sumt{font-size:17px;text-align:center;margin:26px 0 4px}.sumh{font-size:14px;margin:14px 0 6px}.sumq{border:1px solid var(--line,#ddd);border-radius:8px;margin:0 0 6px;padding:6px 10px;font-size:13px}.sumq summary{cursor:pointer;display:flex;gap:10px;align-items:baseline}.sumpct{font-weight:700;color:var(--kot);min-width:3em}.sumd{font-size:12px;opacity:.8;margin:8px 0 4px}.sumko{font-weight:600;color:var(--kot);margin:0 0 4px}.sumok{font-weight:600;color:var(--okt);margin:0 0 8px}
 </style>
-<script>const APPV='1795198938';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795199327';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -128,7 +129,7 @@ const keyOf=ms=>new Date(ms).toISOString().slice(0,10);
 const monday=k=>{const t=parse(k),d=(new Date(t).getUTCDay()+6)%7;return keyOf(t-d*864e5)};
 const weekDays=m=>[0,1,2,3,4,5].map(i=>keyOf(parse(m)+i*864e5));
 const MAXW=72,CUT=0.7;
-function weeks(){const w={};for(const k in S.daily){const m=monday(k);w[m]=w[m]||{neta:0,resp:0,ok:0};w[m].ok+=Object.values(S.daily[k]).filter(d=>{const q=byId(d.id);return q&&ptsOf(d.a,q)===1}).length;w[m].neta=Math.round((w[m].neta+netaDay(k))*100)/100;w[m].resp+=Object.keys(S.daily[k]).length}return w}
+function weeks(){const w={};for(const k in S.daily){const m=monday(k);w[m]=w[m]||{neta:0,resp:0,ok:0};w[m].ans=w[m].ans||{};for(const d of Object.values(S.daily[k])){const q=byId(d.id);if(q)w[m].ans[d.id]=d.a===null||d.a===undefined?'b':d.a===q.c?'o':'x'+d.a}w[m].ok+=Object.values(S.daily[k]).filter(d=>{const q=byId(d.id);return q&&ptsOf(d.a,q)===1}).length;w[m].neta=Math.round((w[m].neta+netaDay(k))*100)/100;w[m].resp+=Object.keys(S.daily[k]).length}return w}
 function pushRank(){if(!RANK||!NAME)return;const body={weeks:weeks(),nombre:NAME};const s=JSON.stringify(body);if(s===pushRank.last)return;pushRank.last=s;RANK.set(body).catch(()=>{pushRank.last=null})}
 const PLAN={};
 function rng(seed){return()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
@@ -361,6 +362,24 @@ function ranking(sel){
   }else drawRanking();
 }
 function okOf(r){if(typeof r.ok==='number')return r.ok;const N=Math.round(r.neta*100);for(let w=0;w<=r.resp;w++){const t=N+33*w;if(t%100===0){const ok=t/100;if(ok>=0&&ok+w<=r.resp)return ok}}return 0}
+function summary(m,docs,now){
+  const ids=new Set();for(const k of weekDays(m)){if(k>=now.key||k<'2026-11-20'||!hasDay(k))continue;for(const h of HOURS){const q=slotQ(k,h);if(q)ids.add(q.id)}}
+  if(!ids.size)return `<h3 class="sumt">Resumen de la semana</h3><p class="note" style="text-align:center">Aparecerá cuando termine el primer día de la semana.</p>`;
+  const st={};for(const d of docs){const a=(d.w[m]||{}).ans||{};for(const id in a){if(!ids.has(+id))continue;const s=st[id]=st[id]||{o:0,x:0,b:0,w:{}};const v=a[id];if(v==='o'||v==='b')s[v]++;else{s.x++;const j=v.slice(1);if(j!=='')s.w[j]=(s.w[j]||0)+1}}}
+  const L=Object.entries(st).map(([id,s])=>({q:byId(+id),...s,n:s.o+s.x+s.b})).filter(r=>r.q&&r.n>=2);
+  if(!L.length)return `<h3 class="sumt">Resumen de la semana</h3><p class="note" style="text-align:center">Todavía no hay respuestas suficientes.</p>`;
+  const fail=L.filter(r=>r.x+r.b>r.n/2).sort((a,b)=>(b.x+b.b)/b.n-(a.x+a.b)/a.n||b.n-a.n).slice(0,5);
+  const tot=L.reduce((t,r)=>({o:t.o+r.o,n:t.n+r.n}),{o:0,n:0});
+  const item=r=>`<details class="sumq"><summary><span class="sumpct">${Math.round((r.x+r.b)/r.n*100)} %</span><span>${esc(r.q.q)}</span></summary>
+    <p class="sumd">Fallada por ${r.x} y en blanco ${r.b}, de ${r.n} personas.</p>
+    ${(()=>{const e=Object.entries(r.w).sort((a,b)=>b[1]-a[1])[0];return e&&e[1]>=2?`<p class="sumko">✗ Error más repetido (${e[1]} personas): ${esc(r.q.o[+e[0]]||'')}</p>`:''})()}
+    <p class="sumok">✓ Correcta: ${esc(r.q.o[r.q.c])}</p>${expl(r.q)}</details>`;
+  return `<h3 class="sumt">Resumen de la semana</h3>
+  <p class="note" style="text-align:center">Acierto medio del grupo: <b>${Math.round(tot.o/tot.n*100)} %</b> (días ya terminados)</p>
+  ${(()=>{const T={};for(const r of L){const t=T[r.q.t]=T[r.q.t]||{o:0,n:0};t.o+=r.o;t.n+=r.n}const W=Object.entries(T).filter(([,t])=>t.n>=4).map(([k,t])=>[k,t.o/t.n]).sort((a,b)=>a[1]-b[1]).slice(0,3).filter(x=>x[1]<0.6);return W.length?`<h4 class="sumh">Temas más flojos del grupo</h4><p class="note">${W.map(([k,p])=>`<b>${esc(k)}</b>: ${Math.round(p*100)} % de acierto`).join(' · ')}</p>`:''})()}
+  <h4 class="sumh">Las que más ha fallado el grupo</h4>
+  ${fail.length?fail.map(item).join(''):'<p class="note" style="text-align:center">Ninguna pregunta la ha fallado o dejado en blanco más de la mitad. ¡Bien!</p>'}`;
+}
 function drawRanking(){
   const docs=RK.docs,now=madrid(),cur=monday(now.key);
   const weeksAll=[...new Set([cur,...docs.flatMap(d=>Object.keys(d.w))])].filter(w=>w<=cur).sort().reverse();
@@ -379,6 +398,7 @@ function drawRanking(){
       </div>
       <div class="sc"><b>${okOf(r)}/${max}</b></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
   app.querySelectorAll('.rk .nm').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
+  app.insertAdjacentHTML('beforeend',summary(m,docs,now));
   const wk=document.getElementById('wk');if(wk)wk.onchange=()=>{RK.sel=wk.value;drawRanking()};
 }
 
