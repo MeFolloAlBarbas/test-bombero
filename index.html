@@ -99,7 +99,7 @@ summary{cursor:pointer}
 .sumt{font-size:17px;text-align:center;margin:26px 0 4px}.sumh{font-size:14px;margin:14px 0 6px}.sumq{border:1px solid var(--line,#ddd);border-radius:8px;margin:0 0 6px;padding:6px 10px;font-size:13px}.sumq summary{cursor:pointer;display:flex;gap:10px;align-items:baseline}.sumpct{font-weight:700;color:var(--kot);min-width:3em}.sumd{font-size:12px;opacity:.8;margin:8px 0 4px}.sumko{font-weight:600;color:var(--kot);margin:0 0 4px}.sumok{font-weight:600;color:var(--okt);margin:0 0 8px}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-start;justify-content:center;padding:24px 12px;overflow:auto;z-index:50}.mbox{background:var(--bg,#fff);color:inherit;max-width:560px;width:100%;border-radius:12px;padding:18px 16px}.podio{margin:0 0 6px;padding-left:22px;font-size:14px}
 </style>
-<script>const APPV='1795203277';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795203345';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -306,7 +306,9 @@ function home(){
   </div>
   ${sun?'':'<div class="nav" style="justify-content:center;margin-bottom:18px"><button class="btn sec" id="bDay">Revisar las de hoy</button></div>'}
   ${pushBox()}
-  <p class="note">Hola, <b>${esc(NAME)}</b> · <a href="#" id="chName">cambiar PIN</a> · <a href="#" id="lo">cerrar sesión</a>. Para entrar desde otro móvil u ordenador, usa tu nombre y tu PIN. ${DB?'De lunes a sábado habrá una pregunta cada hora de 9:00 a 20:00.':'Tu progreso se guarda en este navegador.'} ${syncNote}</p>`;
+  <p class="note">Hola, <b>${esc(NAME)}</b> · <a href="#" id="chName">cambiar PIN</a> · <a href="#" id="lo">cerrar sesión</a>.</p>
+  <p class="note">Para entrar desde otro móvil u ordenador, usa tu nombre y tu PIN.</p>
+  <p class="note">De lunes a sábado habrá una pregunta cada hora de 9:00 a 20:00.${syncNote?' '+syncNote:''}</p>`;
   const bd=document.getElementById('bDay');if(bd)bd.onclick=()=>go('dia-'+key);bindPush();
   document.getElementById('chName').onclick=e=>{e.preventDefault();askName(true)};
   document.getElementById('lo').onclick=e=>{e.preventDefault();logout()};
