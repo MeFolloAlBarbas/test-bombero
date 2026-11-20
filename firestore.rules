@@ -6,7 +6,8 @@ service cloud.firestore {
     match /perfiles/{key} {
       allow get: if request.auth != null;
       allow create: if request.auth != null
-        && !exists(/databases/$(database)/documents/ranking/$(request.resource.data.pid));
+        && (!exists(/databases/$(database)/documents/ranking/$(request.resource.data.pid))
+            || get(/databases/$(database)/documents/devices/$(request.auth.uid)).data.pid == request.resource.data.pid);
       allow update: if request.auth != null
         && request.resource.data.pid == resource.data.pid;
       allow list, delete: if false;
