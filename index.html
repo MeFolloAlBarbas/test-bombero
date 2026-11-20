@@ -368,7 +368,8 @@ function drawRanking(){
   const rows=docs.filter(d=>d.w[m]&&d.w[m].resp>0).map(d=>({id:d.id,n:d.n,...d.w[m]})).sort((a,b)=>b.neta-a.neta||b.resp-a.resp);
   const end=keyOf(parse(m)+5*864e5);let pos=0,prev=null;
   app.innerHTML=`
-  <h2 style="font-size:19px;margin:0 0 12px;text-align:center">Ranking Semanal</h2>
+  <h2 style="font-size:19px;margin:0 0 4px;text-align:center">Ranking Semanal</h2>
+  <p class="note" style="margin:0 0 12px;text-align:center"><b style="color:var(--okt)">Verde:</b> has pasado el corte · <b style="color:var(--kot)">Rojo:</b> no has pasado el corte</p>
   ${weeksAll.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${weeksAll.map(w=>`<option value="${w}" ${w===m?'selected':''}>${w===cur?'Semana actual':'Semana del '+nice(w)}</option>`).join('')}</select>`:''}
   ${rows.map((r,i)=>{if(r.neta!==prev){pos=i+1;prev=r.neta}
     const pct=max?r.neta/max*100:0,pass=r.neta>cut;
