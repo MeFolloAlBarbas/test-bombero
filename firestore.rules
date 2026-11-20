@@ -1,16 +1,30 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Progreso privado de cada persona: solo lo lee y escribe ella misma.
-    match /jugadores/{uid} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
+    // Perfil de cada persona. El ID es su código personal secreto:
+    // se puede leer o escribir sabiendo el código, pero nunca listar.
+    match /perfiles/{code} {
+      allow get, create, update: if request.auth != null;
+      allow list, delete: if false;
     }
-    // Ranking: lo lee cualquiera; cada persona solo escribe su propia fila.
-    match /ranking/{uid} {
-      allow read: if true;
+    // Cada dispositivo apunta a un perfil; solo si conoce su código.
+    match /devices/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
       allow write: if request.auth != null && request.auth.uid == uid
-                   && request.resource.data.nombre is string
-                   && request.resource.data.nombre.size() <= 30;
+        && get(/databases/$(database)/documents/perfiles/$(request.resource.data.code)).data.pid == request.resource.data.pid;
+    }
+    // Ranking: lo lee cualquiera; cada uno escribe solo la fila de su perfil.
+    match /ranking/{pid} {
+      allow read: if true;
+      allow write: if request.auth != null
+        && get(/databases/$(database)/documents/devices/$(request.auth.uid)).data.pid == pid
+        && request.resource.data.nombre is string
+        && request.resource.data.nombre.size() <= 30;
+      allow delete: if request.auth != null && request.auth.uid == pid;
+    }
+    // Versión anterior (solo para migrar los datos ya guardados).
+    match /jugadores/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
     }
   }
 }
