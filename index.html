@@ -86,10 +86,11 @@ summary{cursor:pointer}
 .rk.pass{background:var(--okb);border-color:var(--okl);color:var(--okt)}.rk.fail{background:var(--kob);border-color:var(--kol);color:var(--kot)}
 .rk .pos{font-size:22px;font-weight:600}.rk .who b{font-weight:600}.rk .why{display:block;font-size:13px}
 .rk .sc{text-align:right}.rk .sc b{display:block;font-size:20px;font-weight:600}.rk .sc span{font-size:12px;white-space:nowrap}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}.tabs a{color:var(--ink);text-decoration:none;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:8px}.tabs a:hover{background:var(--card)}
 </style>
 </head>
 <body>
-<header><div class="in"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
+<header><div class="in"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
 <main id="app"><p class="empty">Cargando preguntas…</p></main>
 <script src="firebase-config.js"></script>
 <script>
@@ -178,58 +179,37 @@ const ptsOf=(a,q)=>a===null?0:a===q.c?1:-0.33;
 const netaDay=k=>Object.values(S.daily[k]||{}).reduce((t,d)=>{const q=byId(d.id);return t+(q?ptsOf(d.a,q):0)},0);
 
 /* vistas */
-function render(){if(!NAME){askName(false);return}const h=location.hash.slice(1);if(h==='hoy')day(madrid().key);else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='ranking')ranking();else home()}
+function render(){if(!NAME){askName(false);return}const h=location.hash.slice(1);if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='ranking')ranking();else home()}
 function go(h){if(location.hash==='#'+h)render();else location.hash=h}
 
+function pending(){
+  const {key,hour}=madrid();if(dow(key)===0)return null;
+  for(const hh of HOURS){if(hh>hour)break;if(!(S.daily[key]||{})[hh])return {k:key,h:hh}}
+  return null;
+}
 function home(){
   run=null;homeBtn.hidden=true;window.scrollTo(0,0);
+  const p=pending();
+  if(p){start('dia',[slot(p.k,p.h).q],p);return}
+  const {key,hour}=madrid(),sun=dow(key)===0,nxt=HOURS.find(x=>x>hour);
   const vals=Object.values(S.stats),ok=vals.reduce((a,s)=>a+s.ok,0),ko=vals.reduce((a,s)=>a+s.ko,0);
-  const pct=ok+ko?Math.round(ok*100/(ok+ko))+' %':'–';
-  const fallos=S.fallos.filter(id=>byId(id)).length;
-  const {key,hour}=madrid(),sun=dow(key)===0;
-  const open=sun?0:HOURS.filter(h=>h<=hour).length,done=Object.keys(S.daily[key]||{}).length;
-  const opts=temas().map(t=>`<option>${esc(t)}</option>`).join('');
-  const bars=temas().map(t=>{
-    let a=0,b=0;BANK.filter(q=>q.t===t).forEach(q=>{const s=S.stats[q.id];if(s){a+=s.ok;b+=s.ko}});
-    const p=a+b?Math.round(a*100/(a+b)):0;
-    return `<div class="bar"><span>${esc(t)}</span><div class="tr"><i style="width:${p}%"></i></div><em>${a+b?p+' %':'–'}</em></div>`}).join('');
+  const w=weeks()[monday(key)];
   app.innerHTML=`
-  <div class="today">
-    <div><h2>Preguntas de hoy</h2><p>${sun?'Hoy es domingo: descanso.':`${nice(key)} · ${done} de ${open} disponibles respondidas${open<12?` · la siguiente, a las ${HOURS.find(h=>h>hour)}:00`:''}`}</p></div>
-    <div class="row2"><button class="btn" id="bH" ${sun?'disabled':''}>Ir a hoy</button><button class="btn sec" id="bHist">Días anteriores</button><button class="btn sec" id="bRank">Ranking semanal</button></div>
-  </div>
+  <div class="score"><h2>${sun?'Hoy es domingo: descanso':nxt?'Estás al día':'Día completado'}</h2>
+  <p>${sun?'El lunes vuelven las preguntas a las 9:00.':nxt?`La siguiente pregunta se abre a las ${nxt}:00.`:'Has terminado las preguntas de hoy. Mañana, más.'}</p></div>
   <div class="stats">
-    <div class="stat"><b>${fmt(weeks()[monday(key)]?weeks()[monday(key)].neta:0)}</b><span>netas esta semana</span></div>
-    <div class="stat"><b>${fmt(ok-0.33*ko)}</b><span>netas acumuladas</span></div>
-    <div class="stat"><b>${pct}</b><span>de acierto</span></div>
+    <div class="stat"><b>${fmt(netaDay(key))}</b><span>netas hoy</span></div>
+    <div class="stat"><b>${fmt(w?w.neta:0)}</b><span>netas esta semana</span></div>
+    <div class="stat"><b>${ok+ko?Math.round(ok*100/(ok+ko))+' %':'–'}</b><span>de acierto</span></div>
   </div>
-  <div class="modes">
-    <div class="mode"><h2>Práctica</h2><p>Corrección y explicación después de cada pregunta.</p>
-      <select id="pT" aria-label="Tema"><option value="">Todos los temas</option>${opts}</select>
-      <select id="pD" aria-label="Dificultad"><option value="">Cualquier dificultad</option><option value="normal">Normal</option><option value="difícil">Difícil</option></select>
-      <button class="btn" id="bP">Empezar</button></div>
-    <div class="mode"><h2>Simulacro</h2><p>Como el examen: sin corrección hasta el final. Acierto +1, fallo −0,33, en blanco 0.</p>
-      <select id="sN" aria-label="Número de preguntas"><option value="10">10 preguntas</option><option value="20" selected>20 preguntas</option><option value="40">Todas (hasta 40)</option></select>
-      <button class="btn" id="bS">Empezar simulacro</button></div>
-    <div class="mode"><h2>Repaso de fallos</h2><p>${fallos?`Tienes <b>${fallos}</b> pendiente${fallos>1?'s':''}. Salen de la lista cuando las aciertas.`:'No tienes fallos pendientes.'}</p>
-      <button class="btn${fallos?'':' sec'}" id="bF" ${fallos?'':'disabled'}>Repasar fallos</button></div>
-  </div>
-  <h3 class="sub">Tu acierto por tema</h3>${bars}
-  <p class="note">Hola, <b>${esc(NAME)}</b> · <a href="#" id="chName">cambiar nombre</a>. ${DB?'Tu progreso se guarda en la base de datos y en este navegador.':'Tu progreso se guarda en este navegador.'} ${syncNote} Preguntas comprobadas en los manuales del temario; el banco irá creciendo.</p>`;
-  document.getElementById('bH').onclick=()=>go('hoy');
-  document.getElementById('bHist').onclick=()=>go('historial');
-  document.getElementById('bRank').onclick=()=>go('ranking');
+  ${sun?'':'<div class="nav" style="justify-content:center;margin-bottom:18px"><button class="btn sec" id="bDay">Revisar las de hoy</button></div>'}
+  <p class="note">Hola, <b>${esc(NAME)}</b> · <a href="#" id="chName">cambiar nombre</a>. ${DB?'Tu progreso se guarda en la base de datos y en este navegador.':'Tu progreso se guarda en este navegador.'} ${syncNote}</p>`;
+  const bd=document.getElementById('bDay');if(bd)bd.onclick=()=>go('dia-'+key);
   document.getElementById('chName').onclick=e=>{e.preventDefault();askName(true)};
-  document.getElementById('bP').onclick=()=>{
-    const t=document.getElementById('pT').value,d=document.getElementById('pD').value;
-    const pool=BANK.filter(q=>(!t||q.t===t)&&(!d||q.d===d));
-    if(pool.length)start('practica',shuffle(pool))};
-  document.getElementById('bS').onclick=()=>start('simulacro',shuffle(BANK).slice(0,+document.getElementById('sN').value));
-  document.getElementById('bF').onclick=()=>start('fallos',shuffle(BANK.filter(q=>S.fallos.includes(q.id))));
 }
 
 function day(k){
-  run=null;homeBtn.hidden=false;window.scrollTo(0,0);
+  run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   const now=madrid(),today=k===now.key,past=k<now.key;
   if(dow(k)===0||k>now.key){app.innerHTML=`<p class="empty">${dow(k)===0?'Los domingos no hay preguntas.':'Ese día todavía no ha llegado.'}</p>`;return}
   const rows=HOURS.map(h=>{
@@ -241,7 +221,7 @@ function day(k){
     else{state='Sin responder · 0';cls='bl'}
     const head=`<span class="hr">${h}:00</span><span class="st ${cls}">${state}</span>`;
     if(locked)return `<div class="slot lk"><div class="sh">${head}</div></div>`;
-    if(today&&!s.done)return `<div class="slot"><div class="sh">${head}</div><p class="sq">${esc(q.t)}</p><button class="btn" data-h="${h}">Responder</button></div>`;
+    if(today&&!s.done)return `<div class="slot"><div class="sh">${head}</div></div>`;
     return `<details class="slot"><summary class="sh">${head}</summary><p class="sq">${esc(q.t)}</p><p class="enun">${esc(q.q)}</p>
       ${[0,1,2].map(o=>`<div class="op rv ${o===q.c?'okc':o===s.a?'koc':''}">${o===q.c?'✓ ':o===s.a?'✗ ':''}${esc(q.o[o])}</div>`).join('')}${expl(q)}</details>`;
   }).join('');
@@ -250,13 +230,13 @@ function day(k){
   <h2 style="font-size:19px;margin:0 0 4px">${nice(k)}</h2>
   <p class="note" style="margin:0 0 16px">${today?'Las preguntas solo se pueden responder hoy. Mañana quedarán para revisar.':'Este día ya está cerrado: puedes revisar tus respuestas, pero no contestar.'}</p>
   ${rows}
-  <div class="nav"><button class="btn sec" id="bHist">Días anteriores</button></div>`;
-  app.querySelectorAll('[data-h]').forEach(b=>b.onclick=()=>{const h=+b.dataset.h;start('dia',[slot(k,h).q],{k,h})});
+  <div class="nav">${today&&pending()?'<button class="btn" id="bNext">Responder la siguiente</button>':''}<button class="btn sec" id="bHist">Días anteriores</button></div>`;
   document.getElementById('bHist').onclick=()=>go('historial');
+  const bn=document.getElementById('bNext');if(bn)bn.onclick=()=>go('inicio');
 }
 
 function history(){
-  run=null;homeBtn.hidden=false;window.scrollTo(0,0);
+  run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   const now=madrid().key,first=[S.start||now,...Object.keys(S.daily)].sort()[0],list=[];
   for(let t=parse(now)-864e5;t>=parse(first);t-=864e5){const k=keyOf(t);if(dow(k)!==0)list.push(k)}
   app.innerHTML=`<h2 style="font-size:19px;margin:0 0 12px">Días anteriores</h2>${list.length?list.map(k=>{
@@ -266,7 +246,7 @@ function history(){
 }
 
 async function ranking(sel){
-  run=null;homeBtn.hidden=false;window.scrollTo(0,0);
+  run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   app.innerHTML='<p class="empty">Cargando ranking…</p>';
   if(!FS){app.innerHTML='<p class="empty">El ranking necesita conexión con la base de datos. Espera unos segundos y vuelve a intentarlo.</p>';return}
   let docs=[];
@@ -292,7 +272,7 @@ async function ranking(sel){
   const wk=document.getElementById('wk');if(wk)wk.onchange=()=>ranking(wk.value);
 }
 
-function start(mode,qs,ctx){run={mode,ctx,qs:qs.map(q=>({q,ord:shuffle([0,1,2])})),i:0,ans:[],net:0};homeBtn.hidden=false;show()}
+function start(mode,qs,ctx){run={mode,ctx,qs:qs.map(q=>({q,ord:shuffle([0,1,2])})),i:0,ans:[],net:0};homeBtn.hidden=true;show()}
 
 function expl(q){return `
   <div class="sec2 q"><h4>Qué es</h4>${q.que}</div>
@@ -304,9 +284,9 @@ function expl(q){return `
 function show(){
   window.scrollTo(0,0);
   const {q,ord}=run.qs[run.i],n=run.qs.length,sim=run.mode==='simulacro';
-  const title={practica:'Práctica',simulacro:'Simulacro',fallos:'Repaso de fallos',dia:run.ctx?`Pregunta de las ${run.ctx.h}:00`:''}[run.mode];
+  const title={dia:run.ctx?`Pregunta de las ${run.ctx.h}:00 · solo se puede responder hoy`:''}[run.mode]||'';
   app.innerHTML=`
-  <div class="top"><span>${title}${sim||run.mode==='dia'?'':' · '+fmt(run.net)+' netas'}</span><span>${run.mode==='dia'?'Solo hoy':`Pregunta ${run.i+1} de ${n}`}</span></div>
+  <div class="top"><span>${title}${sim||run.mode==='dia'?'':' · '+fmt(run.net)+' netas'}</span><span>${run.mode==='dia'?nice(run.ctx.k):`Pregunta ${run.i+1} de ${n}`}</span></div>
   <div class="prog"><i style="width:${run.i*100/n}%"></i></div>
   <p class="meta">${esc(q.t)}${q.d==='difícil'?'<span class="chip">Difícil</span>':''}</p>
   <p class="enun">${esc(q.q)}</p>
@@ -347,8 +327,9 @@ function answer(o){
   const pts=blank?'0 netas':ok?'+1 neta':'−0,33 netas';
   document.getElementById('after').innerHTML=`<p class="res" style="color:var(${blank?'--mut':ok?'--okt':'--kot'});margin-bottom:14px">${blank?'En blanco. La buena es la '+correctL:ok?'Correcto':'Incorrecto. La buena es la '+correctL} · ${pts}</p>${expl(q)}`;
   const last=run.i+1>=run.qs.length;
-  document.getElementById('nav').innerHTML=`<button class="btn" id="nx">${run.mode==='dia'?'Volver a hoy':last?'Terminar':'Siguiente'}</button>`;
-  document.getElementById('nx').onclick=run.mode==='dia'?()=>go('dia-'+run.ctx.k):next;
+  const more=run.mode==='dia'&&pending();
+  document.getElementById('nav').innerHTML=`<button class="btn" id="nx">${run.mode==='dia'?(more?'Siguiente pregunta':'Continuar'):last?'Terminar':'Siguiente'}</button>`;
+  document.getElementById('nx').onclick=run.mode==='dia'?()=>{location.hash==='#inicio'||!location.hash||location.hash==='#hoy'?home():go('inicio')}:next;
 }
 
 function next(){run.i++;run.i<run.qs.length?show():finish()}
@@ -373,7 +354,7 @@ function finish(){
 }
 
 function askName(change){
-  homeBtn.hidden=!change;
+  homeBtn.hidden=true;
   app.innerHTML=`<form id="nf" class="mode" style="max-width:420px;margin:24px auto"><h2>${change?'Cambiar nombre':'¿Cómo te llamas?'}</h2>
   <p>Es el nombre que aparecerá en el ranking semanal.</p><input id="nm" maxlength="30" autocomplete="name" value="${esc(NAME)}" placeholder="Nombre y apellido" style="font:inherit;font-size:16px;min-height:44px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)">
   <p id="ne" style="color:var(--kot);font-size:13px;margin:0" hidden>Escribe tu nombre para continuar.</p><button class="btn">Entrar</button></form>`;
