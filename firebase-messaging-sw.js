@@ -30,7 +30,7 @@ const messaging = firebase.messaging();
 messaging.onBackgroundMessage(p => {
   if (p.notification) return;
   const d = p.data || {};
-  return self.registration.showNotification(d.title || 'Nueva pregunta', {
+  return self.registration.showNotification(d.title || 'Nueva pregunta', { icon: 'img/icon-192.png', badge: 'img/favicon.png',
     body: d.body || '', tag: 'pregunta', renotify: true, data: { link: d.link || URL_APP }
   });
 });
