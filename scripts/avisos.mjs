@@ -22,10 +22,8 @@ for (let i = 0; i < tokens.length; i += 500) {
   const lote = tokens.slice(i, i + 500);
   const r = await admin.messaging().sendEachForMulticast({
     tokens: lote,
-    webpush: {
-      notification: { title: `🚒 Pregunta de las ${hour}:00`, body: 'Ya tienes una pregunta nueva. Respóndela hoy: mañana solo se podrá revisar.', tag: 'pregunta', renotify: true },
-      fcmOptions: { link }
-    }
+    data: { title: `🚒 Pregunta de las ${hour}:00`, body: 'Ya tienes una pregunta nueva. Respóndela hoy: mañana solo se podrá revisar.', link },
+    webpush: { headers: { Urgency: 'high', TTL: '3600' } }
   });
   ok += r.successCount;
   await Promise.all(r.responses.map((x, j) => {

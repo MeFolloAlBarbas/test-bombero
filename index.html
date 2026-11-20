@@ -223,7 +223,7 @@ async function enablePush(silent){
     if(st==='no')return 'Este navegador no admite avisos. Prueba con Chrome.';
     if(st==='off')return 'Los avisos todavía no están configurados.';
     if(!silent&&(await Notification.requestPermission())!=='granted')return 'No has dado permiso. Puedes activarlo en los ajustes del navegador, en «Notificaciones» de esta web.';
-    const reg=await navigator.serviceWorker.register('firebase-messaging-sw.js');
+    const reg=await navigator.serviceWorker.register('firebase-messaging-sw.js',{updateViaCache:'none'});
     const {getMessaging,getToken,isSupported}=await import(FS.B+'firebase-messaging.js');
     if(!(await isSupported()))return 'Este navegador no admite avisos.';
     const t=await getToken(getMessaging(FS.app),{vapidKey:window.FIREBASE_VAPID,serviceWorkerRegistration:reg});
