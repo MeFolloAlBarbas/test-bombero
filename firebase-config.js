@@ -8,5 +8,5 @@ self.FIREBASE_CONFIG = {
   appId: "1:546272558520:web:a25e2bbfd7d52d38d5634d"
 };
 // Clave pública para las notificaciones push (Cloud Messaging → Certificados push web).
-self.FIREBASE_VAPID = "";
+self.FIREBASE_VAPID = "BMT_RAuze0uOJ9LFLA6IUPbO7rl7ZsTpBsAvY-8YnjyuST1u4X1nWkQBZNDny1GzJ-LGiztcfuOPY8r3NibBA6g";
 if (typeof window !== 'undefined') { window.FIREBASE_CONFIG = self.FIREBASE_CONFIG; window.FIREBASE_VAPID = self.FIREBASE_VAPID; }
