@@ -87,6 +87,8 @@ summary{cursor:pointer}
 .rk .pos{font-size:22px;font-weight:600}.rk .who b{font-weight:600}.rk .why{display:block;font-size:13px}
 .rk .sc{text-align:right}.rk .sc b{display:block;font-size:20px;font-weight:600}.rk .sc span{font-size:12px;white-space:nowrap}
 .tabs{display:flex;gap:6px;flex-wrap:wrap}.tabs a{color:var(--ink);text-decoration:none;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:8px}.tabs a:hover{background:var(--card)}
+.start{text-align:center;padding:36px 0}.start h2{font-size:22px;margin:4px 0 6px}.start p{color:var(--mut);margin:0 0 26px}
+.go{background:#3b6d11;color:#fff;border:0;border-radius:14px;font-size:24px;font-weight:700;letter-spacing:1px;padding:22px 56px;min-height:72px;width:min(100%,360px)}.go:hover{background:#27500a}
 </style>
 </head>
 <body>
@@ -190,7 +192,13 @@ function pending(){
 function home(){
   run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   const p=pending();
-  if(p){start('dia',[slot(p.k,p.h).q],p);return}
+  if(p&&home.go){start('dia',[slot(p.k,p.h).q],p);return}
+  if(p){
+    const {key,hour}=madrid(),n=HOURS.filter(x=>x<=hour&&!(S.daily[key]||{})[x]).length;
+    app.innerHTML=`<div class="start"><p class="meta">${nice(key)}</p><h2>Hola, ${esc(NAME)}</h2>
+      <p>Tienes <b>${n}</b> pregunta${n>1?'s':''} pendiente${n>1?'s':''} hoy.</p>
+      <button class="go" id="bGo">COMENZAR</button></div>`;
+    document.getElementById('bGo').onclick=()=>{home.go=true;home()};return}
   const {key,hour}=madrid(),sun=dow(key)===0,nxt=HOURS.find(x=>x>hour);
   const vals=Object.values(S.stats),ok=vals.reduce((a,s)=>a+s.ok,0),ko=vals.reduce((a,s)=>a+s.ko,0);
   const w=weeks()[monday(key)];
