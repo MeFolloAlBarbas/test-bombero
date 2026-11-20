@@ -91,14 +91,14 @@ summary{cursor:pointer}
 .rk{display:grid;grid-template-columns:2em minmax(0,1fr) auto auto;gap:8px;align-items:center;border-left:3px solid;border-radius:0;padding:3px 8px;margin:0 0 3px;font-size:13px;line-height:1.3}
 .rk.pass{background:var(--okb);border-color:var(--okl);color:var(--okt)}.rk.fail{background:var(--kob);border-color:var(--kol);color:var(--kot)}
 .rk .pos{font-size:14px;font-weight:600}.rk .who b{font-weight:600;font-size:13px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rk .why{display:block;font-size:11px;opacity:.85}
-.rk .sc{text-align:right}.rk .sc b{font-size:14px;font-weight:600}.rk .sc span{font-size:11px;white-space:nowrap}
+.rk .sc{text-align:right}.rk .sc{display:flex;gap:14px;align-items:baseline;white-space:nowrap}.rk .sc .ac{font-size:13px;opacity:.8}.rk .sc b{font-size:14px;font-weight:700}.rk .sc span{font-size:11px;white-space:nowrap}
 .tabs{display:flex;gap:6px;flex-wrap:wrap}.tabs a{color:var(--ink);text-decoration:none;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:8px}.tabs a:hover{background:var(--card)}
 .start{text-align:center;padding:36px 0}.start h2{font-size:22px;margin:4px 0 6px}.start p{color:var(--mut);margin:0 0 26px}
 .go{background:#3b6d11;color:#fff;border:0;border-radius:14px;font-size:24px;font-weight:700;letter-spacing:1px;padding:22px 56px;min-height:72px;width:min(100%,360px)}.go:hover{background:#27500a}
 .pushbox{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--inl);background:var(--inb);border-radius:12px;padding:12px 16px;margin:0 auto 18px;max-width:520px}.pushbox b{display:block;color:var(--int)}.pushbox span{display:block;font-size:14px;color:var(--ink)}.pushbox .pe{color:var(--kot);font-size:13px}
 .sumt{font-size:17px;text-align:center;margin:26px 0 4px}.sumh{font-size:14px;margin:14px 0 6px}.sumq{border:1px solid var(--line,#ddd);border-radius:8px;margin:0 0 6px;padding:6px 10px;font-size:13px}.sumq summary{cursor:pointer;display:flex;gap:10px;align-items:baseline}.sumpct{font-weight:700;color:var(--kot);min-width:3em}.sumd{font-size:12px;opacity:.8;margin:8px 0 4px}.sumko{font-weight:600;color:var(--kot);margin:0 0 4px}.sumok{font-weight:600;color:var(--okt);margin:0 0 8px}
 </style>
-<script>const APPV='1795199327';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795199361';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -396,7 +396,7 @@ function drawRanking(){
     const pct=max?r.neta/max*100:0,pass=r.neta>cut;
     return `<div class="rk ${pass?'pass':'fail'}"><span class="pos">${pos}º</span><div class="who"><b class="nm"></b>
       </div>
-      <div class="sc"><b>${okOf(r)}/${max}</b></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
+      <div class="sc"><span class="ac">${okOf(r)}/${max}</span><b>${fmt(r.neta)} netas</b></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
   app.querySelectorAll('.rk .nm').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
   app.insertAdjacentHTML('beforeend',summary(m,docs,now));
   const wk=document.getElementById('wk');if(wk)wk.onchange=()=>{RK.sel=wk.value;drawRanking()};
