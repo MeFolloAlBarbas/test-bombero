@@ -17,7 +17,7 @@ App de entrenamiento tipo test para la oposición de Bombero Especialista del Ay
 ## Puesta en marcha (una sola vez)
 
 1. Firebase → crear proyecto → añadir app web → copiar la configuración en `firebase-config.js`.
-2. Authentication → Método de acceso → activar **Anónimo**. En Configuración → Dominios autorizados, añadir `TU-USUARIO.github.io`.
+2. Authentication → Método de acceso → activar **Anónimo**. En Configuración → Dominios autorizados, añadir `mefolloalbarbas.github.io`.
 3. Firestore Database → crear base de datos (región europe-west) → pestaña Reglas → pegar `firestore.rules` → Publicar.
 4. GitHub → Settings → Pages → Deploy from a branch → `main` / root.
 

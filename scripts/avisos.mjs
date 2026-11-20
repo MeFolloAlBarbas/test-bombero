@@ -16,7 +16,7 @@ if (!force && (await est.get()).data()?.ultimo === marca) { console.log('Ya envi
 const snap = await db.collection('tokens').get();
 const tokens = snap.docs.map(d => d.id);
 console.log('Dispositivos:', tokens.length);
-const link = 'https://pedroireneo-cpu.github.io/test-bombero/#inicio';
+const link = 'https://mefolloalbarbas.github.io/test-bombero/#inicio';
 let ok = 0, borrados = 0;
 for (let i = 0; i < tokens.length; i += 500) {
   const lote = tokens.slice(i, i + 500);
