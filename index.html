@@ -97,8 +97,9 @@ summary{cursor:pointer}
 .go{background:#3b6d11;color:#fff;border:0;border-radius:14px;font-size:24px;font-weight:700;letter-spacing:1px;padding:22px 56px;min-height:72px;width:min(100%,360px)}.go:hover{background:#27500a}
 .pushbox{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--inl);background:var(--inb);border-radius:12px;padding:12px 16px;margin:0 auto 18px;max-width:520px}.pushbox b{display:block;color:var(--int)}.pushbox span{display:block;font-size:14px;color:var(--ink)}.pushbox .pe{color:var(--kot);font-size:13px}
 .sumt{font-size:17px;text-align:center;margin:26px 0 4px}.sumh{font-size:14px;margin:14px 0 6px}.sumq{border:1px solid var(--line,#ddd);border-radius:8px;margin:0 0 6px;padding:6px 10px;font-size:13px}.sumq summary{cursor:pointer;display:flex;gap:10px;align-items:baseline}.sumpct{font-weight:700;color:var(--kot);min-width:3em}.sumd{font-size:12px;opacity:.8;margin:8px 0 4px}.sumko{font-weight:600;color:var(--kot);margin:0 0 4px}.sumok{font-weight:600;color:var(--okt);margin:0 0 8px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-start;justify-content:center;padding:24px 12px;overflow:auto;z-index:50}.mbox{background:var(--bg,#fff);color:inherit;max-width:560px;width:100%;border-radius:12px;padding:18px 16px}.podio{margin:0 0 6px;padding-left:22px;font-size:14px}
 </style>
-<script>const APPV='1795199361';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795199453';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -191,7 +192,7 @@ async function bind(key,pid,name){
   KEY=key;PID=pid;NAME=name;lsSet('key',key);lsSet('pid',pid);lsSet('nombre',name);
   PREF=fs.doc(db,'perfiles',key);
   DB={set:async()=>{await pull();await fs.setDoc(PREF,{estado:JSON.parse(JSON.stringify(S)),pid:PID,nombre:NAME,actualizado:Date.now()})}};
-  RANK={set:body=>fs.setDoc(fs.doc(db,'ranking',PID),{nombre:NAME,...body})}; if(BANK.length)pushRank();
+  RANK={set:body=>fs.setDoc(fs.doc(db,'ranking',PID),{nombre:NAME,...body})}; if(BANK.length)pushRank();setTimeout(weeklyPopup,1500);
 }
 async function login(name,pin){
   if(!FS)return 'Conectando con la base de datos… espera unos segundos y vuelve a probar.';
@@ -380,6 +381,29 @@ function summary(m,docs,now){
   <h4 class="sumh">Las que más ha fallado el grupo</h4>
   ${fail.length?fail.map(item).join(''):'<p class="note" style="text-align:center">Ninguna pregunta la ha fallado o dejado en blanco más de la mitad. ¡Bien!</p>'}`;
 }
+async function weeklyPopup(){
+  if(!FS||!BANK.length||weeklyPopup.done)return;weeklyPopup.done=true;
+  const now=madrid(),prev=keyOf(parse(monday(now.key))-7*864e5),seen='resumen-'+prev;
+  if(lsGet(seen))return;
+  let docs=RK.docs;
+  if(!docs.length){try{const qs=await FS.fs.getDocs(FS.fs.collection(FS.db,'ranking'));docs=qs.docs.map(d=>({id:d.id,n:d.data().nombre||'Participante',w:d.data().weeks||{}}))}catch(e){weeklyPopup.done=false;return}}
+  const rows=docs.filter(d=>d.w[prev]&&d.w[prev].resp>0).map(d=>({id:d.id,n:d.n,...d.w[prev]})).sort((a,b)=>b.neta-a.neta||b.resp-a.resp);
+  if(!rows.length){lsSet(seen,1);return}
+  const max=maxSoFar(prev),cut=max*CUT;let pos=0,prev2=null,mine=null;
+  rows.forEach((r,i)=>{if(r.neta!==prev2){pos=i+1;prev2=r.neta}if(r.id===PID)mine={pos,...r}});
+  const podium=rows.slice(0,3).map((r,i)=>`<li><b class="pn"></b> · ${fmt(r.neta)} netas</li>`).join('');
+  const me=mine?`<div class="rk ${mine.neta>cut?'pass':'fail'}" style="margin:10px 0"><span class="pos">${mine.pos}º</span><div class="who"><b>Tú</b></div><div class="sc"><span class="ac">${okOf(mine)}/${max}</span><b>${fmt(mine.neta)} netas</b></div></div><p class="note" style="text-align:center;margin:0 0 6px">${mine.neta>cut?'¡Pasaste el corte!':'No pasaste el corte'} (más de ${fmt(cut)} netas)</p>`:'<p class="note" style="text-align:center">La semana pasada no respondiste ninguna pregunta.</p>';
+  const ov=document.createElement('div');ov.className='modal';
+  ov.innerHTML=`<div class="mbox"><h2 style="text-align:center;margin:0 0 2px;font-size:20px">Resumen de la semana pasada</h2>
+  <p class="note" style="text-align:center;margin:0 0 10px">Del ${nice(prev)} al ${nice(keyOf(parse(prev)+5*864e5))}</p>
+  ${me}<h4 class="sumh">Podio</h4><ol class="podio">${podium}</ol>
+  ${summary(prev,docs,now).replace(/<h3 class="sumt">[^<]*<\/h3>/,'')}
+  <button class="go" id="mclose" style="margin-top:14px;font-size:18px;padding:12px">Entendido</button></div>`;
+  document.body.appendChild(ov);
+  ov.querySelectorAll('.podio .pn').forEach((el,i)=>el.textContent=rows[i].n);
+  const close=()=>{lsSet(seen,1);ov.remove()};
+  ov.querySelector('#mclose').onclick=close;ov.onclick=e=>{if(e.target===ov)close()};
+}
 function drawRanking(){
   const docs=RK.docs,now=madrid(),cur=monday(now.key);
   const weeksAll=[...new Set([cur,...docs.flatMap(d=>Object.keys(d.w))])].filter(w=>w<=cur).sort().reverse();
@@ -398,7 +422,6 @@ function drawRanking(){
       </div>
       <div class="sc"><span class="ac">${okOf(r)}/${max}</span><b>${fmt(r.neta)} netas</b></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
   app.querySelectorAll('.rk .nm').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
-  app.insertAdjacentHTML('beforeend',summary(m,docs,now));
   const wk=document.getElementById('wk');if(wk)wk.onchange=()=>{RK.sel=wk.value;drawRanking()};
 }
 
