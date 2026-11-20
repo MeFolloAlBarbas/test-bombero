@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Test Bombero Madrid</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#3b6d11">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <style>
 /* VOICE: sencillo y limpio, igual que las preguntas del chat
    IDEA: una hoja de test tranquila, sin adornos
@@ -89,6 +92,7 @@ summary{cursor:pointer}
 .tabs{display:flex;gap:6px;flex-wrap:wrap}.tabs a{color:var(--ink);text-decoration:none;font-size:14px;padding:6px 12px;border:1px solid var(--line);border-radius:8px}.tabs a:hover{background:var(--card)}
 .start{text-align:center;padding:36px 0}.start h2{font-size:22px;margin:4px 0 6px}.start p{color:var(--mut);margin:0 0 26px}
 .go{background:#3b6d11;color:#fff;border:0;border-radius:14px;font-size:24px;font-weight:700;letter-spacing:1px;padding:22px 56px;min-height:72px;width:min(100%,360px)}.go:hover{background:#27500a}
+.pushbox{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--inl);background:var(--inb);border-radius:12px;padding:12px 16px;margin:0 auto 18px;max-width:520px}.pushbox b{display:block;color:var(--int)}.pushbox span{display:block;font-size:14px;color:var(--ink)}.pushbox .pe{color:var(--kot);font-size:13px}
 </style>
 </head>
 <body>
@@ -205,6 +209,34 @@ async function changePin(pin){
     return '';
   }catch(e){return 'No se ha podido cambiar el PIN. Inténtalo de nuevo.'}
 }
+const isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent),standalone=matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+function pushState(){
+  if(!window.FIREBASE_VAPID)return 'off';
+  if(!('Notification' in window)||!('serviceWorker' in navigator))return isIOS&&!standalone?'ios':'no';
+  if(Notification.permission==='denied')return 'denied';
+  return Notification.permission==='granted'&&lsGet('push')?'on':'ask';
+}
+async function enablePush(silent){
+  try{
+    if(!FS)return 'Conectando… inténtalo en unos segundos.';
+    const st=pushState();if(st==='ios')return 'En iPhone, primero añade la web a la pantalla de inicio (botón Compartir → «Añadir a pantalla de inicio») y ábrela desde ahí.';
+    if(st==='no')return 'Este navegador no admite avisos. Prueba con Chrome.';
+    if(st==='off')return 'Los avisos todavía no están configurados.';
+    if(!silent&&(await Notification.requestPermission())!=='granted')return 'No has dado permiso. Puedes activarlo en los ajustes del navegador, en «Notificaciones» de esta web.';
+    const reg=await navigator.serviceWorker.register('firebase-messaging-sw.js');
+    const {getMessaging,getToken,isSupported}=await import(FS.B+'firebase-messaging.js');
+    if(!(await isSupported()))return 'Este navegador no admite avisos.';
+    const t=await getToken(getMessaging(FS.app),{vapidKey:window.FIREBASE_VAPID,serviceWorkerRegistration:reg});
+    if(!t)return 'No se ha podido activar. Inténtalo de nuevo.';
+    await FS.fs.setDoc(FS.fs.doc(FS.db,'tokens',t),{pid:PID||'',actualizado:Date.now()});
+    lsSet('push','1');return '';
+  }catch(e){return 'No se ha podido activar los avisos. Inténtalo de nuevo.'}
+}
+function pushBox(){
+  const st=pushState();if(st==='on'||st==='off')return '';
+  return `<div class="pushbox"><div><b>Activa los avisos</b><span>${st==='denied'?'Tienes las notificaciones bloqueadas para esta web: actívalas en los ajustes del navegador.':st==='ios'?'En iPhone: añade la web a la pantalla de inicio y ábrela desde ahí para poder recibir avisos.':'Te llegará una notificación cada vez que se abra una pregunta nueva.'}</span><span id="pe" class="pe"></span></div>${st==='ask'?'<button class="btn" id="bPush">Activar</button>':''}</div>`;
+}
+function bindPush(){const b=document.getElementById('bPush');if(b)b.onclick=async()=>{b.disabled=true;const r=await enablePush(false);b.disabled=false;if(r){const pe=document.getElementById('pe');pe.textContent=r}else render()}}
 function logout(){lsSet('key','');lsSet('pid','');lsSet('nombre','');try{localStorage.removeItem(LS)}catch(e){}location.hash='';location.reload()}
 async function connect(){
   try{
@@ -213,9 +245,9 @@ async function connect(){
     const [{initializeApp},{getAuth,signInAnonymously,onAuthStateChanged},fs]=await Promise.all([import(B+'firebase-app.js'),import(B+'firebase-auth.js'),import(B+'firebase-firestore.js')]);
     const appF=initializeApp(cfg),auth=getAuth(appF),db=fs.getFirestore(appF);
     const u=await new Promise((res,rej)=>{const off=onAuthStateChanged(auth,x=>{if(x){off();res(x)}});signInAnonymously(auth).catch(rej)});
-    FS={fs,db,uid:u.uid};
+    FS={fs,db,uid:u.uid,app:appF,B};
     const key=lsGet('key'),pid=lsGet('pid');
-    if(key&&pid&&NAME){await bind(key,pid,NAME);await pull();pushRank.last=null;save()}
+    if(key&&pid&&NAME){await bind(key,pid,NAME);await pull();pushRank.last=null;save();if(pushState()==='on')enablePush(true)}
     if(!run)render();
     document.addEventListener('visibilitychange',async()=>{if(document.visibilityState==='visible'&&await pull()&&!run)render()});
   }catch(e){syncNote='No se ha podido conectar con la base de datos; el progreso queda en este navegador.';if(!run)render()}
@@ -245,7 +277,7 @@ function home(){
     const {key,hour}=madrid(),n=HOURS.filter(x=>x<=hour&&!(S.daily[key]||{})[x]).length;
     app.innerHTML=`<div class="start"><p class="meta">${nice(key)}</p><h2>Hola, ${esc(NAME)}</h2>
       <p>Tienes <b>${n}</b> pregunta${n>1?'s':''} pendiente${n>1?'s':''} hoy.</p>
-      <button class="go" id="bGo">COMENZAR</button></div>`;
+      <button class="go" id="bGo">COMENZAR</button></div>${pushBox()}`;bindPush();
     document.getElementById('bGo').onclick=async()=>{await pull();home.go=true;home()};return}
   const {key,hour}=madrid(),sun=dow(key)===0,nxt=HOURS.find(x=>x>hour);
   const vals=Object.values(S.stats),ok=vals.reduce((a,s)=>a+s.ok,0),ko=vals.reduce((a,s)=>a+s.ko,0);
@@ -259,8 +291,9 @@ function home(){
     <div class="stat"><b>${ok+ko?Math.round(ok*100/(ok+ko))+' %':'–'}</b><span>de acierto</span></div>
   </div>
   ${sun?'':'<div class="nav" style="justify-content:center;margin-bottom:18px"><button class="btn sec" id="bDay">Revisar las de hoy</button></div>'}
+  ${pushBox()}
   <p class="note">Hola, <b>${esc(NAME)}</b> · <a href="#" id="chName">cambiar PIN</a> · <a href="#" id="lo">cerrar sesión</a>. Para entrar desde otro móvil u ordenador, usa tu nombre y tu PIN. ${DB?'Tu progreso se guarda en la base de datos y en este navegador.':'Tu progreso se guarda en este navegador.'} ${syncNote}</p>`;
-  const bd=document.getElementById('bDay');if(bd)bd.onclick=()=>go('dia-'+key);
+  const bd=document.getElementById('bDay');if(bd)bd.onclick=()=>go('dia-'+key);bindPush();
   document.getElementById('chName').onclick=e=>{e.preventDefault();askName(true)};
   document.getElementById('lo').onclick=e=>{e.preventDefault();logout()};
 }
@@ -430,6 +463,8 @@ function askName(change){
     nb.disabled=true;const r=change?await changePin(pin):await login(name,pin);nb.disabled=false;
     if(r)return err(r);go('inicio');render()};
 }
+let lastPend=null;
+setInterval(()=>{if(!BANK.length||run||!lsGet('key'))return;const p=pending(),k=p?p.k+'-'+p.h:'';if(lastPend!==null&&k&&k!==lastPend&&(location.hash===''||location.hash==='#inicio'||location.hash==='#hoy')){home.go=false;home()}lastPend=k},30000);
 homeBtn.onclick=()=>go('inicio');
 window.addEventListener('hashchange',render);
 loadLocal();

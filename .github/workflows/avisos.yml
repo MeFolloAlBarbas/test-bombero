@@ -1,0 +1,23 @@
+name: Avisos de pregunta
+on:
+  schedule:
+    # Cada hora a las :58 (UTC). El script comprueba la hora de Madrid (9:00-20:00, lunes a sábado).
+    - cron: '58 6-19 * * 1-6'
+  workflow_dispatch:
+    inputs:
+      forzar:
+        description: 'Enviar ya un aviso de prueba (si / no)'
+        default: 'si'
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-save firebase-admin@12
+      - run: node scripts/avisos.mjs
+        env:
+          FIREBASE_SA: ${{ secrets.FIREBASE_SA }}
+          FORZAR: ${{ github.event.inputs.forzar }}

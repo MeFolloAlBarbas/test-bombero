@@ -24,6 +24,11 @@ service cloud.firestore {
         && get(/databases/$(database)/documents/perfiles/$(request.resource.data.key)).data.pid == request.resource.data.pid;
     }
     // Ranking: lo lee cualquiera; cada uno escribe solo su fila.
+    // Dispositivos suscritos a los avisos (solo los lee el servidor de avisos).
+    match /tokens/{t} {
+      allow create, update: if request.auth != null;
+      allow read, delete: if false;
+    }
     match /ranking/{pid} {
       allow read: if true;
       allow create, update: if request.auth != null
