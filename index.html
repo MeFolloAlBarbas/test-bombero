@@ -269,7 +269,7 @@ const ptsOf=(a,q)=>a===null?0:a===q.c?1:-0.33;
 const netaDay=k=>Object.values(S.daily[k]||{}).reduce((t,d)=>{const q=byId(d.id);return t+(q?ptsOf(d.a,q):0)},0);
 
 /* vistas */
-function render(){if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='ranking')ranking();else home()}
+function render(){if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='ranking')ranking();else home()}
 function go(h){if(location.hash==='#'+h)render();else location.hash=h}
 
 function pending(){
@@ -344,31 +344,38 @@ function history(){
   app.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>go('dia-'+b.dataset.k));
 }
 
-async function ranking(sel){
+let RK={unsub:null,docs:[],sel:null};
+function stopRanking(){if(RK.unsub){RK.unsub();RK.unsub=null}}
+function maxSoFar(m){const now=madrid();let n=0;for(const k of weekDays(m)){if(k>now.key)break;if(!hasDay(k))continue;n+=k<now.key?12:HOURS.filter(h=>h<=now.hour).length}return n}
+function ranking(sel){
   run=null;homeBtn.hidden=true;window.scrollTo(0,0);
-  app.innerHTML='<p class="empty">Cargando ranking…</p>';
+  if(sel!==undefined)RK.sel=sel;
   if(!FS){app.innerHTML='<p class="empty">El ranking necesita conexión con la base de datos. Espera unos segundos y vuelve a intentarlo.</p>';return}
-  let docs=[];
-  try{const qs=await FS.fs.getDocs(FS.fs.collection(FS.db,'ranking'));docs=qs.docs.map(d=>({id:d.id,n:d.data().nombre||'Participante',w:d.data().weeks||{}}))}
-  catch(e){app.innerHTML='<p class="empty">No se ha podido cargar el ranking. Inténtalo de nuevo en un momento.</p>';return}
-  const today=madrid().key,closed=[...new Set(docs.flatMap(d=>Object.keys(d.w)))].filter(m=>keyOf(parse(m)+6*864e5)<=today).sort().reverse();
-  if(!closed.length){app.innerHTML=`<h2 style="font-size:19px;margin:0 0 8px">Ranking semanal</h2><p class="empty">Todavía no hay ninguna semana terminada. El ranking de la semana se publica el domingo, cuando se cierra el sábado.</p>`;return}
-  const m=sel&&closed.includes(sel)?sel:closed[0];
+  if(!RK.unsub){
+    app.innerHTML='<p class="empty">Cargando ranking…</p>';
+    RK.unsub=FS.fs.onSnapshot(FS.fs.collection(FS.db,'ranking'),qs=>{RK.docs=qs.docs.map(d=>({id:d.id,n:d.data().nombre||'Participante',w:d.data().weeks||{}}));if(location.hash==='#ranking')drawRanking()},()=>{app.innerHTML='<p class="empty">No se ha podido cargar el ranking. Inténtalo de nuevo en un momento.</p>';stopRanking()});
+  }else drawRanking();
+}
+function drawRanking(){
+  const docs=RK.docs,now=madrid(),cur=monday(now.key);
+  const weeksAll=[...new Set([cur,...docs.flatMap(d=>Object.keys(d.w))])].filter(w=>w<=cur).sort().reverse();
+  const m=RK.sel&&weeksAll.includes(RK.sel)?RK.sel:weeksAll[0];
+  const live=m===cur&&dow(now.key)!==0;
+  const max=live?maxSoFar(m):MAXW,cut=max*CUT;
   const rows=docs.filter(d=>d.w[m]&&d.w[m].resp>0).map(d=>({id:d.id,n:d.n,...d.w[m]})).sort((a,b)=>b.neta-a.neta||b.resp-a.resp);
-  const me=FS.uid;
-  const end=keyOf(parse(m)+5*864e5),cut=MAXW*CUT;
-  let pos=0,prev=null;
+  const end=keyOf(parse(m)+5*864e5);let pos=0,prev=null;
   app.innerHTML=`
-  <h2 style="font-size:19px;margin:0 0 4px">Ranking semanal</h2>
-  <p class="note" style="margin:0 0 12px">Semana del ${nice(m)} al ${nice(end)} · nota máxima ${MAXW} netas (12 preguntas × 6 días) · corte: más del 70 % (${fmt(cut)} netas)</p>
-  ${closed.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${closed.map(w=>`<option value="${w}" ${w===m?'selected':''}>Semana del ${nice(w)}</option>`).join('')}</select>`:''}
+  <h2 style="font-size:19px;margin:0 0 4px">Ranking semanal${live?' · en directo':''}</h2>
+  <p class="note" style="margin:0 0 12px">Semana del ${nice(m)} al ${nice(end)}. ${live?`Clasificación provisional: se actualiza sola con cada respuesta. Hasta ahora se han abierto ${max} preguntas, así que el corte provisional es de más de ${fmt(cut)} netas (70 %).`:`Nota máxima: ${MAXW} netas (12 preguntas × 6 días). Corte: más del 70 % (${fmt(cut)} netas).`}</p>
+  ${weeksAll.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${weeksAll.map(w=>`<option value="${w}" ${w===m?'selected':''}>${w===cur?'Semana actual':'Semana del '+nice(w)}</option>`).join('')}</select>`:''}
   ${rows.map((r,i)=>{if(r.neta!==prev){pos=i+1;prev=r.neta}
-    const pct=r.neta/MAXW*100,pass=r.neta>cut;
-    return `<div class="rk ${pass?'pass':'fail'}"><span class="pos">${pos}º</span><div class="who"><b class="nm"></b>${r.id===me?' <span class="mut">(tú)</span>':''}
-      <span class="why">${pass?'Ha pasado el corte':`No ha podido pasar el corte: necesitaba más de ${fmt(cut)} netas (70 %)`}</span></div>
-      <div class="sc"><b>${fmt(r.neta)}</b><span>${fmt(pct)} % · ${r.resp}/72</span></div></div>`}).join('')||'<p class="empty">Nadie respondió preguntas esa semana.</p>'}`;
+    const pct=max?r.neta/max*100:0,pass=r.neta>cut;
+    const why=live?(pass?'Ahora mismo, por encima del corte':`Ahora mismo, por debajo del corte: necesita más de ${fmt(cut)} netas`):(pass?'Ha pasado el corte':`No ha podido pasar el corte: necesitaba más de ${fmt(cut)} netas (70 %)`);
+    return `<div class="rk ${pass?'pass':'fail'}"><span class="pos">${pos}º</span><div class="who"><b class="nm"></b>${r.id===PID?' <span class="mut">(tú)</span>':''}
+      <span class="why">${why}</span></div>
+      <div class="sc"><b>${fmt(r.neta)}</b><span>${fmt(pct)} % · ${r.resp}/${live?max:72}</span></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
   app.querySelectorAll('.rk .nm').forEach((el,i)=>el.textContent=rows[i].n);
-  const wk=document.getElementById('wk');if(wk)wk.onchange=()=>ranking(wk.value);
+  const wk=document.getElementById('wk');if(wk)wk.onchange=()=>{RK.sel=wk.value;drawRanking()};
 }
 
 function start(mode,qs,ctx){run={mode,ctx,qs:qs.map(q=>({q,ord:shuffle([0,1,2])})),i:0,ans:[],net:0};homeBtn.hidden=true;show()}
