@@ -97,7 +97,7 @@ summary{cursor:pointer}
 .go{background:#3b6d11;color:#fff;border:0;border-radius:14px;font-size:24px;font-weight:700;letter-spacing:1px;padding:22px 56px;min-height:72px;width:min(100%,360px)}.go:hover{background:#27500a}
 .pushbox{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--inl);background:var(--inb);border-radius:12px;padding:12px 16px;margin:0 auto 18px;max-width:520px}.pushbox b{display:block;color:var(--int)}.pushbox span{display:block;font-size:14px;color:var(--ink)}.pushbox .pe{color:var(--kot);font-size:13px}
 </style>
-<script>const APPV='1795198719';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795198908';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -360,6 +360,7 @@ function ranking(sel){
     RK.unsub=FS.fs.onSnapshot(FS.fs.collection(FS.db,'ranking'),qs=>{RK.docs=qs.docs.map(d=>({id:d.id,n:d.data().nombre||'Participante',w:d.data().weeks||{}}));if(location.hash==='#ranking')drawRanking()},()=>{app.innerHTML='<p class="empty">No se ha podido cargar el ranking. Inténtalo de nuevo en un momento.</p>';stopRanking()});
   }else drawRanking();
 }
+function okOf(r){if(typeof r.ok==='number')return r.ok;const N=Math.round(r.neta*100);for(let w=0;w<=r.resp;w++){const t=N+33*w;if(t%100===0){const ok=t/100;if(ok>=0&&ok+w<=r.resp)return ok}}return 0}
 function drawRanking(){
   const docs=RK.docs,now=madrid(),cur=monday(now.key);
   const weeksAll=[...new Set([cur,...docs.flatMap(d=>Object.keys(d.w))])].filter(w=>w<=cur).sort().reverse();
@@ -376,7 +377,7 @@ function drawRanking(){
     const pct=max?r.neta/max*100:0,pass=r.neta>cut;
     return `<div class="rk ${pass?'pass':'fail'}"><span class="pos">${pos}º</span><div class="who"><b class="nm"></b>
       </div>
-      <div class="sc"><b>${r.ok??'–'}/${live?max:MAXW}</b></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
+      <div class="sc"><b>${okOf(r)}/${live?max:MAXW}</b></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
   app.querySelectorAll('.rk .nm').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
   const wk=document.getElementById('wk');if(wk)wk.onchange=()=>{RK.sel=wk.value;drawRanking()};
 }
