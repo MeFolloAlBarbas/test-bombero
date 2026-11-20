@@ -373,7 +373,6 @@ function drawRanking(){
   ${weeksAll.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${weeksAll.map(w=>`<option value="${w}" ${w===m?'selected':''}>${w===cur?'Semana actual':'Semana del '+nice(w)}</option>`).join('')}</select>`:''}
   ${rows.map((r,i)=>{if(r.neta!==prev){pos=i+1;prev=r.neta}
     const pct=max?r.neta/max*100:0,pass=r.neta>cut;
-    const why=live?(pass?'Por encima del corte':'Por debajo del corte'):(pass?'Ha pasado el corte':'No ha podido pasar el corte');
     return `<div class="rk ${pass?'pass':'fail'}"><span class="pos">${pos}º</span><div class="who"><b class="nm"></b>
       </div>
       <div class="sc"><b>${r.ok??'–'}/${live?max:MAXW}</b></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
