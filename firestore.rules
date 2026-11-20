@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Progreso privado de cada persona: solo lo lee y escribe ella misma.
+    match /jugadores/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+    // Ranking: lo lee cualquiera; cada persona solo escribe su propia fila.
+    match /ranking/{uid} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == uid
+                   && request.resource.data.nombre is string
+                   && request.resource.data.nombre.size() <= 30;
+    }
+  }
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Test Bombero Madrid</title>
+<style>
+/* VOICE: sencillo y limpio, igual que las preguntas del chat
+   IDEA: una hoja de test tranquila, sin adornos
+   PICTURE: la pregunta y sus tres opciones son la imagen
+   COLOUR and TYPE: fondo blanco, tinta gris oscura; verde acierto, rojo fallo, bloques azul/verde/rojo/amarillo; fuente del sistema
+   LAYOUT: una columna de 720px */
+:root{--bg:#ffffff;--ink:#1f1f1f;--mut:#6b6b6b;--line:#d9d9d9;--card:#f3f3f3;
+--okb:#eaf3de;--okt:#27500a;--okl:#639922;--kob:#fcebeb;--kot:#791f1f;--kol:#e24b4a;
+--inb:#e6f1fb;--int:#0c447c;--inl:#378add;--wab:#faeeda;--wat:#633806;--wal:#ba7517;--hl:#fff3a3}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1a1a1a;--ink:#ececec;--mut:#a0a0a0;--line:#3a3a3a;--card:#262626;
+--okb:#173404;--okt:#c0dd97;--okl:#639922;--kob:#501313;--kot:#f7c1c1;--kol:#e24b4a;
+--inb:#042c53;--int:#b5d4f4;--inl:#378add;--wab:#412402;--wat:#fac775;--wal:#ba7517;--hl:#5c4d0a}}
+:root[data-theme=dark]{--bg:#1a1a1a;--ink:#ececec;--mut:#a0a0a0;--line:#3a3a3a;--card:#262626;
+--okb:#173404;--okt:#c0dd97;--okl:#639922;--kob:#501313;--kot:#f7c1c1;--kol:#e24b4a;
+--inb:#042c53;--int:#b5d4f4;--inl:#378add;--wab:#412402;--wat:#fac775;--wal:#ba7517;--hl:#5c4d0a}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:clip}
+header{padding:20px max(5vw,16px) 0}
+header .in{max-width:720px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px}
+h1,h2,h3{font-weight:600;line-height:1.2;margin:0}
+h1{font-size:22px}header small{display:block;font-size:13px;color:var(--mut);margin-top:2px}
+main{max-width:720px;margin:auto;padding:20px max(5vw,16px) 56px}
+button{font:inherit;cursor:pointer;border-radius:8px;min-height:44px;-webkit-appearance:none;appearance:none}
+button:focus-visible,select:focus-visible{outline:3px solid var(--inl);outline-offset:2px}
+.btn{background:var(--ink);color:var(--bg);border:0;padding:10px 20px;font-weight:500}
+.btn.sec{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn:disabled{opacity:.45;cursor:default}
+.home-btn{background:transparent;color:var(--ink);border:1px solid var(--line);padding:6px 14px;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 22px}
+.stat{background:var(--card);border-radius:8px;padding:12px 14px}
+.stat b{display:block;font-size:24px;font-weight:600;line-height:1.1}
+.stat span{font-size:13px;color:var(--mut)}
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:0 0 26px}
+.mode{border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.mode h2{font-size:17px}.mode p{margin:0;color:var(--mut);font-size:14px}
+.mode .btn{margin-top:auto}
+select{font:inherit;font-size:16px;min-height:44px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+h3.sub{font-size:16px;margin:0 0 10px}
+.bar{display:grid;grid-template-columns:minmax(0,10em) minmax(0,1fr) 3.5em;gap:10px;align-items:center;font-size:14px;padding:4px 0}
+.bar .tr{height:8px;background:var(--card);border-radius:4px;overflow:hidden}.bar .tr i{display:block;height:100%;background:var(--okl)}
+.bar em{font-style:normal;text-align:right;color:var(--mut);white-space:nowrap}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 8px;font-size:13px;color:var(--mut)}
+.prog{height:4px;background:var(--card);border-radius:2px;margin:0 0 16px;overflow:hidden}.prog i{display:block;height:100%;background:var(--inl);transition:width .3s}
+.meta{font-size:12px;color:var(--mut);margin:0 0 6px}
+.chip{display:inline-block;font-size:11px;padding:2px 8px;border-radius:8px;margin-left:6px;background:var(--kob);color:var(--kot)}
+.enun{font-size:16px;line-height:1.6;margin:0 0 14px}
+.op{display:block;width:100%;text-align:left;background:transparent;color:var(--ink);border:1px solid var(--line);padding:10px 14px;margin:0 0 8px;font-size:15px;line-height:1.5}
+.op:hover:not(:disabled){background:var(--card)}
+.op:disabled{cursor:default}
+.res{font-size:14px;font-weight:600;margin:10px 0 0}
+.sec2{border-left:3px solid;border-radius:0;padding:10px 14px;margin:0 0 12px;font-size:15px;line-height:1.65}
+.sec2 h4{margin:0 0 4px;font-size:13px;font-weight:600}
+.sec2.q{background:var(--inb);border-color:var(--inl)}.sec2.q h4{color:var(--int)}
+.sec2.p{background:var(--okb);border-color:var(--okl)}.sec2.p h4{color:var(--okt)}
+.sec2.o{background:var(--kob);border-color:var(--kol)}.sec2.o h4{color:var(--kot)}
+.sec2.r{background:var(--wab);border-color:var(--wal)}.sec2.r h4{color:var(--wat)}
+mark{background:var(--hl);color:inherit;padding:0 3px;border-radius:3px}
+.src{font-size:12px;color:var(--mut);margin:0 0 14px}
+.nav{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;margin-top:8px}
+.score{text-align:center;padding:16px 0 8px}
+.score b{display:block;font-size:56px;font-weight:600;line-height:1.1}
+.empty{color:var(--mut);background:var(--card);border-radius:8px;padding:14px}
+details{border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:0 0 10px}
+summary{cursor:pointer}
+.note{font-size:12px;color:var(--mut);margin-top:24px}
+@media(max-width:600px){.stats{gap:8px}.stat{padding:10px}.bar{grid-template-columns:minmax(0,7em) minmax(0,1fr) 3em}}
+@media(prefers-reduced-motion:reduce){.prog i{transition:none}}
+.today{border:1px solid var(--line);border-radius:12px;padding:16px;margin:0 0 18px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.today h2{font-size:17px}.today p{margin:2px 0 0;color:var(--mut);font-size:14px}
+.row2{display:flex;gap:8px;flex-wrap:wrap}
+.slot{border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:0 0 8px}
+.slot.lk{opacity:.6}.slot .btn{margin-top:4px}
+.sh{display:flex;gap:12px;align-items:center;cursor:pointer;list-style:none;flex-wrap:wrap}.sh::-webkit-details-marker{display:none}
+.hr{font-weight:600;min-width:3.2em}.st{font-size:14px}
+.st.okr{color:var(--okt);font-weight:600}.st.kor{color:var(--kot);font-weight:600}.st.bl,.st.lk{color:var(--mut)}.st.pd{color:var(--int);font-weight:600}
+.sq{font-size:12px;color:var(--mut);margin:6px 0}
+.op.rv{cursor:default}.op.okc{background:var(--okb);border:2px solid var(--okl);color:var(--okt);font-weight:600}.op.koc{background:var(--kob);border:2px solid var(--kol);color:var(--kot);font-weight:600}
+.dayrow{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.mut{color:var(--mut);font-size:14px}
+.rk{display:grid;grid-template-columns:3em minmax(0,1fr) auto;gap:12px;align-items:center;border-left:4px solid;border-radius:0;padding:10px 14px;margin:0 0 8px}
+.rk.pass{background:var(--okb);border-color:var(--okl);color:var(--okt)}.rk.fail{background:var(--kob);border-color:var(--kol);color:var(--kot)}
+.rk .pos{font-size:22px;font-weight:600}.rk .who b{font-weight:600}.rk .why{display:block;font-size:13px}
+.rk .sc{text-align:right}.rk .sc b{display:block;font-size:20px;font-weight:600}.rk .sc span{font-size:12px;white-space:nowrap}
+</style>
+</head>
+<body>
+<header><div class="in"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
+<main id="app"><p class="empty">Cargando preguntas…</p></main>
+<script src="firebase-config.js"></script>
+<script>
+{
+const LS='bm-test-v1',T0=Date.UTC(2026,10,21),HOURS=[9,10,11,12,13,14,15,16,17,18,19,20];
+let RANK=null,FS=null,NAME='',BANK=[],S={stats:{},fallos:[],daily:{},start:null},run=null,DB=null,saving=Promise.resolve(),syncNote='';
+const app=document.getElementById('app'),homeBtn=document.getElementById('goHome');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const temas=()=>[...new Set(BANK.map(q=>q.t))];
+const L='ABC';
+const fmt=n=>(Math.round(n*100)/100).toFixed(2).replace('.',',').replace(',00','');
+const byId=id=>BANK.find(q=>q.id===id);
+const DIAS=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+const MESES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+
+function madrid(){
+  const p={};new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Madrid',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);
+  return {key:`${p.year}-${p.month}-${p.day}`,hour:+p.hour};
+}
+const parse=k=>{const [y,m,d]=k.split('-').map(Number);return Date.UTC(y,m-1,d)};
+const dow=k=>new Date(parse(k)).getUTCDay();
+const nice=k=>{const t=new Date(parse(k));return `${DIAS[t.getUTCDay()]} ${t.getUTCDate()} de ${MESES[t.getUTCMonth()]}`};
+const keyOf=ms=>new Date(ms).toISOString().slice(0,10);
+const monday=k=>{const t=parse(k),d=(new Date(t).getUTCDay()+6)%7;return keyOf(t-d*864e5)};
+const weekDays=m=>[0,1,2,3,4,5].map(i=>keyOf(parse(m)+i*864e5));
+const MAXW=72,CUT=0.7;
+function weeks(){const w={};for(const k in S.daily){const m=monday(k);w[m]=w[m]||{neta:0,resp:0};w[m].neta=Math.round((w[m].neta+netaDay(k))*100)/100;w[m].resp+=Object.keys(S.daily[k]).length}return w}
+function pushRank(){if(!RANK||!NAME)return;const body={weeks:weeks(),nombre:NAME};const s=JSON.stringify(body);if(s===pushRank.last)return;pushRank.last=s;RANK.set(body).catch(()=>{pushRank.last=null})}
+function slotQ(k,h){const n=BANK.length,days=Math.round((parse(k)-T0)/864e5);return BANK.slice().sort((a,b)=>a.id-b.id)[(((days*12+(h-9))%n)+n)%n]}
+function slot(k,h){const d=(S.daily[k]||{})[h];return d?{q:byId(d.id)||slotQ(k,h),a:d.a,done:true}:{q:slotQ(k,h),a:undefined,done:false}}
+
+/* almacenamiento: navegador + cuenta (db) */
+function loadLocal(){try{const v=JSON.parse(localStorage.getItem(LS));if(v&&v.stats)S=Object.assign(S,v)}catch(e){}}
+function save(){
+  try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){}
+  pushRank();
+  if(DB){const body=JSON.parse(JSON.stringify(S));saving=saving.then(()=>DB.set(body)).catch(()=>{syncNote='No se ha podido guardar en tu cuenta; queda guardado en este navegador.'})}
+}
+function merge(r){
+  if(!r)return;
+  for(const id in r.stats||{}){const a=S.stats[id],b=r.stats[id];S.stats[id]=!a?b:{ok:Math.max(a.ok,b.ok),ko:Math.max(a.ko,b.ko)}}
+  S.fallos=[...new Set([...(r.fallos||[]),...S.fallos])];
+  for(const k in r.daily||{})S.daily[k]=Object.assign({},r.daily[k],S.daily[k]||{});
+  if(r.start&&(!S.start||r.start<S.start))S.start=r.start;
+}
+async function connect(){
+  try{
+    const cfg=window.FIREBASE_CONFIG;if(!cfg||!cfg.apiKey){syncNote='Falta configurar Firebase: el progreso solo se guarda en este navegador.';if(!run)render();return}
+    const V='10.12.2',B='https://www.gstatic.com/firebasejs/'+V+'/';
+    const [{initializeApp},{getAuth,signInAnonymously,onAuthStateChanged},fs]=await Promise.all([import(B+'firebase-app.js'),import(B+'firebase-auth.js'),import(B+'firebase-firestore.js')]);
+    const appF=initializeApp(cfg),auth=getAuth(appF),db=fs.getFirestore(appF);
+    const u=await new Promise((res,rej)=>{const off=onAuthStateChanged(auth,x=>{if(x){off();res(x)}});signInAnonymously(auth).catch(rej)});
+    FS={fs,db,uid:u.uid};
+    const ref=fs.doc(db,'jugadores',u.uid),snap=await fs.getDoc(ref);
+    const remote=snap.exists()?JSON.stringify(snap.data().estado||{}):null;
+    if(remote)merge(snap.data().estado);
+    DB={set:body=>fs.setDoc(ref,{estado:body,actualizado:Date.now()})};
+    RANK={set:body=>fs.setDoc(fs.doc(db,'ranking',u.uid),{nombre:NAME,...body})};
+    if(JSON.stringify(S)!==remote)save();else pushRank();
+    if(!run)render();
+  }catch(e){syncNote='No se ha podido conectar con la base de datos; el progreso queda en este navegador.';if(!run)render()}
+}
+
+function record(q,ok){
+  const s=Object.assign({ok:0,ko:0},S.stats[q.id]);ok?s.ok++:s.ko++;S.stats[q.id]=s;
+  const f=new Set(S.fallos);ok?f.delete(q.id):f.add(q.id);S.fallos=[...f];
+}
+const ptsOf=(a,q)=>a===null?0:a===q.c?1:-0.33;
+const netaDay=k=>Object.values(S.daily[k]||{}).reduce((t,d)=>{const q=byId(d.id);return t+(q?ptsOf(d.a,q):0)},0);
+
+/* vistas */
+function render(){if(!NAME){askName(false);return}const h=location.hash.slice(1);if(h==='hoy')day(madrid().key);else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='ranking')ranking();else home()}
+function go(h){if(location.hash==='#'+h)render();else location.hash=h}
+
+function home(){
+  run=null;homeBtn.hidden=true;window.scrollTo(0,0);
+  const vals=Object.values(S.stats),ok=vals.reduce((a,s)=>a+s.ok,0),ko=vals.reduce((a,s)=>a+s.ko,0);
+  const pct=ok+ko?Math.round(ok*100/(ok+ko))+' %':'–';
+  const fallos=S.fallos.filter(id=>byId(id)).length;
+  const {key,hour}=madrid(),sun=dow(key)===0;
+  const open=sun?0:HOURS.filter(h=>h<=hour).length,done=Object.keys(S.daily[key]||{}).length;
+  const opts=temas().map(t=>`<option>${esc(t)}</option>`).join('');
+  const bars=temas().map(t=>{
+    let a=0,b=0;BANK.filter(q=>q.t===t).forEach(q=>{const s=S.stats[q.id];if(s){a+=s.ok;b+=s.ko}});
+    const p=a+b?Math.round(a*100/(a+b)):0;
+    return `<div class="bar"><span>${esc(t)}</span><div class="tr"><i style="width:${p}%"></i></div><em>${a+b?p+' %':'–'}</em></div>`}).join('');
+  app.innerHTML=`
+  <div class="today">
+    <div><h2>Preguntas de hoy</h2><p>${sun?'Hoy es domingo: descanso.':`${nice(key)} · ${done} de ${open} disponibles respondidas${open<12?` · la siguiente, a las ${HOURS.find(h=>h>hour)}:00`:''}`}</p></div>
+    <div class="row2"><button class="btn" id="bH" ${sun?'disabled':''}>Ir a hoy</button><button class="btn sec" id="bHist">Días anteriores</button><button class="btn sec" id="bRank">Ranking semanal</button></div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>${BANK.length}</b><span>preguntas en el banco</span></div>
+    <div class="stat"><b>${fmt(ok-0.33*ko)}</b><span>netas acumuladas</span></div>
+    <div class="stat"><b>${pct}</b><span>de acierto</span></div>
+  </div>
+  <div class="modes">
+    <div class="mode"><h2>Práctica</h2><p>Corrección y explicación después de cada pregunta.</p>
+      <select id="pT" aria-label="Tema"><option value="">Todos los temas</option>${opts}</select>
+      <select id="pD" aria-label="Dificultad"><option value="">Cualquier dificultad</option><option value="normal">Normal</option><option value="difícil">Difícil</option></select>
+      <button class="btn" id="bP">Empezar</button></div>
+    <div class="mode"><h2>Simulacro</h2><p>Como el examen: sin corrección hasta el final. Acierto +1, fallo −0,33, en blanco 0.</p>
+      <select id="sN" aria-label="Número de preguntas"><option value="10">10 preguntas</option><option value="20" selected>20 preguntas</option><option value="40">Todas (hasta 40)</option></select>
+      <button class="btn" id="bS">Empezar simulacro</button></div>
+    <div class="mode"><h2>Repaso de fallos</h2><p>${fallos?`Tienes <b>${fallos}</b> pendiente${fallos>1?'s':''}. Salen de la lista cuando las aciertas.`:'No tienes fallos pendientes.'}</p>
+      <button class="btn${fallos?'':' sec'}" id="bF" ${fallos?'':'disabled'}>Repasar fallos</button></div>
+  </div>
+  <h3 class="sub">Tu acierto por tema</h3>${bars}
+  <p class="note">Hola, <b>${esc(NAME)}</b> · <a href="#" id="chName">cambiar nombre</a>. ${DB?'Tu progreso se guarda en la base de datos y en este navegador.':'Tu progreso se guarda en este navegador.'} ${syncNote} Preguntas comprobadas en los manuales del temario; el banco irá creciendo.</p>`;
+  document.getElementById('bH').onclick=()=>go('hoy');
+  document.getElementById('bHist').onclick=()=>go('historial');
+  document.getElementById('bRank').onclick=()=>go('ranking');
+  document.getElementById('chName').onclick=e=>{e.preventDefault();askName(true)};
+  document.getElementById('bP').onclick=()=>{
+    const t=document.getElementById('pT').value,d=document.getElementById('pD').value;
+    const pool=BANK.filter(q=>(!t||q.t===t)&&(!d||q.d===d));
+    if(pool.length)start('practica',shuffle(pool))};
+  document.getElementById('bS').onclick=()=>start('simulacro',shuffle(BANK).slice(0,+document.getElementById('sN').value));
+  document.getElementById('bF').onclick=()=>start('fallos',shuffle(BANK.filter(q=>S.fallos.includes(q.id))));
+}
+
+function day(k){
+  run=null;homeBtn.hidden=false;window.scrollTo(0,0);
+  const now=madrid(),today=k===now.key,past=k<now.key;
+  if(dow(k)===0||k>now.key){app.innerHTML=`<p class="empty">${dow(k)===0?'Los domingos no hay preguntas.':'Ese día todavía no ha llegado.'}</p>`;return}
+  const rows=HOURS.map(h=>{
+    const s=slot(k,h),q=s.q,locked=today&&h>now.hour;
+    let state,cls='';
+    if(s.done){state=s.a===null?'En blanco · 0':s.a===q.c?'✓ Acierto · +1':'✗ Fallo · −0,33';cls=s.a===null?'bl':s.a===q.c?'okr':'kor'}
+    else if(locked){state=`Disponible a las ${h}:00`;cls='lk'}
+    else if(today){state='Pendiente de responder';cls='pd'}
+    else{state='Sin responder · 0';cls='bl'}
+    const head=`<span class="hr">${h}:00</span><span class="st ${cls}">${state}</span>`;
+    if(locked)return `<div class="slot lk"><div class="sh">${head}</div></div>`;
+    if(today&&!s.done)return `<div class="slot"><div class="sh">${head}</div><p class="sq">${esc(q.t)}</p><button class="btn" data-h="${h}">Responder</button></div>`;
+    return `<details class="slot"><summary class="sh">${head}</summary><p class="sq">${esc(q.t)}</p><p class="enun">${esc(q.q)}</p>
+      ${[0,1,2].map(o=>`<div class="op rv ${o===q.c?'okc':o===s.a?'koc':''}">${o===q.c?'✓ ':o===s.a?'✗ ':''}${esc(q.o[o])}</div>`).join('')}${expl(q)}</details>`;
+  }).join('');
+  app.innerHTML=`
+  <div class="top"><span>${today?'Hoy':past?'Día anterior · solo revisión':''}</span><span>${fmt(netaDay(k))} netas</span></div>
+  <h2 style="font-size:19px;margin:0 0 4px">${nice(k)}</h2>
+  <p class="note" style="margin:0 0 16px">${today?'Las preguntas solo se pueden responder hoy. Mañana quedarán para revisar.':'Este día ya está cerrado: puedes revisar tus respuestas, pero no contestar.'}</p>
+  ${rows}
+  <div class="nav"><button class="btn sec" id="bHist">Días anteriores</button></div>`;
+  app.querySelectorAll('[data-h]').forEach(b=>b.onclick=()=>{const h=+b.dataset.h;start('dia',[slot(k,h).q],{k,h})});
+  document.getElementById('bHist').onclick=()=>go('historial');
+}
+
+function history(){
+  run=null;homeBtn.hidden=false;window.scrollTo(0,0);
+  const now=madrid().key,first=[S.start||now,...Object.keys(S.daily)].sort()[0],list=[];
+  for(let t=parse(now)-864e5;t>=parse(first);t-=864e5){const k=keyOf(t);if(dow(k)!==0)list.push(k)}
+  app.innerHTML=`<h2 style="font-size:19px;margin:0 0 12px">Días anteriores</h2>${list.length?list.map(k=>{
+    const n=Object.values(S.daily[k]||{}),r=n.filter(d=>{const q=byId(d.id);return q&&d.a!==null}).length;
+    return `<button class="op dayrow" data-k="${k}"><span>${nice(k)}</span><span class="mut">${n.length}/12 respondidas · ${fmt(netaDay(k))} netas</span></button>`}).join(''):'<p class="empty">Todavía no hay días anteriores. Aparecerán aquí a partir de mañana.</p>'}`;
+  app.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>go('dia-'+b.dataset.k));
+}
+
+async function ranking(sel){
+  run=null;homeBtn.hidden=false;window.scrollTo(0,0);
+  app.innerHTML='<p class="empty">Cargando ranking…</p>';
+  if(!FS){app.innerHTML='<p class="empty">El ranking necesita conexión con la base de datos. Espera unos segundos y vuelve a intentarlo.</p>';return}
+  let docs=[];
+  try{const qs=await FS.fs.getDocs(FS.fs.collection(FS.db,'ranking'));docs=qs.docs.map(d=>({id:d.id,n:d.data().nombre||'Participante',w:d.data().weeks||{}}))}
+  catch(e){app.innerHTML='<p class="empty">No se ha podido cargar el ranking. Inténtalo de nuevo en un momento.</p>';return}
+  const today=madrid().key,closed=[...new Set(docs.flatMap(d=>Object.keys(d.w)))].filter(m=>keyOf(parse(m)+6*864e5)<=today).sort().reverse();
+  if(!closed.length){app.innerHTML=`<h2 style="font-size:19px;margin:0 0 8px">Ranking semanal</h2><p class="empty">Todavía no hay ninguna semana terminada. El ranking de la semana se publica el domingo, cuando se cierra el sábado.</p>`;return}
+  const m=sel&&closed.includes(sel)?sel:closed[0];
+  const rows=docs.filter(d=>d.w[m]&&d.w[m].resp>0).map(d=>({id:d.id,n:d.n,...d.w[m]})).sort((a,b)=>b.neta-a.neta||b.resp-a.resp);
+  const me=FS.uid;
+  const end=keyOf(parse(m)+5*864e5),cut=MAXW*CUT;
+  let pos=0,prev=null;
+  app.innerHTML=`
+  <h2 style="font-size:19px;margin:0 0 4px">Ranking semanal</h2>
+  <p class="note" style="margin:0 0 12px">Semana del ${nice(m)} al ${nice(end)} · nota máxima ${MAXW} netas (12 preguntas × 6 días) · corte: más del 70 % (${fmt(cut)} netas)</p>
+  ${closed.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${closed.map(w=>`<option value="${w}" ${w===m?'selected':''}>Semana del ${nice(w)}</option>`).join('')}</select>`:''}
+  ${rows.map((r,i)=>{if(r.neta!==prev){pos=i+1;prev=r.neta}
+    const pct=r.neta/MAXW*100,pass=r.neta>cut;
+    return `<div class="rk ${pass?'pass':'fail'}"><span class="pos">${pos}º</span><div class="who"><b class="nm"></b>${r.id===me?' <span class="mut">(tú)</span>':''}
+      <span class="why">${pass?'Ha pasado el corte':`No ha podido pasar el corte: necesitaba más de ${fmt(cut)} netas (70 %)`}</span></div>
+      <div class="sc"><b>${fmt(r.neta)}</b><span>${fmt(pct)} % · ${r.resp}/72</span></div></div>`}).join('')||'<p class="empty">Nadie respondió preguntas esa semana.</p>'}`;
+  app.querySelectorAll('.rk .nm').forEach((el,i)=>el.textContent=rows[i].n);
+  const wk=document.getElementById('wk');if(wk)wk.onchange=()=>ranking(wk.value);
+}
+
+function start(mode,qs,ctx){run={mode,ctx,qs:qs.map(q=>({q,ord:shuffle([0,1,2])})),i:0,ans:[],net:0};homeBtn.hidden=false;show()}
+
+function expl(q){return `
+  <div class="sec2 q"><h4>Qué es</h4>${q.que}</div>
+  <div class="sec2 p"><h4>Por qué</h4>${q.porque}</div>
+  <div class="sec2 o"><h4>Ojo</h4>${q.ojo}</div>
+  <div class="sec2 r"><h4>Para recordar</h4>${q.rec}</div>
+  <p class="src">Fuente: ${esc(q.f)}</p>`}
+
+function show(){
+  window.scrollTo(0,0);
+  const {q,ord}=run.qs[run.i],n=run.qs.length,sim=run.mode==='simulacro';
+  const title={practica:'Práctica',simulacro:'Simulacro',fallos:'Repaso de fallos',dia:run.ctx?`Pregunta de las ${run.ctx.h}:00`:''}[run.mode];
+  app.innerHTML=`
+  <div class="top"><span>${title}${sim||run.mode==='dia'?'':' · '+fmt(run.net)+' netas'}</span><span>${run.mode==='dia'?'Solo hoy':`Pregunta ${run.i+1} de ${n}`}</span></div>
+  <div class="prog"><i style="width:${run.i*100/n}%"></i></div>
+  <p class="meta">${esc(q.t)}${q.d==='difícil'?'<span class="chip">Difícil</span>':''}</p>
+  <p class="enun">${esc(q.q)}</p>
+  <div id="ops">${ord.map((o,k)=>`<button class="op" data-o="${o}">${L[k]}. ${esc(q.o[o])}</button>`).join('')}</div>
+  <div id="after"></div>
+  <div class="nav" id="nav"><button class="btn sec" id="blank">Dejar en blanco</button></div>`;
+  app.querySelectorAll('#ops .op').forEach(b=>b.onclick=()=>answer(+b.dataset.o));
+  document.getElementById('blank').onclick=()=>sim?(run.ans.push(null),next()):answer(null);
+}
+
+function paint(el,k){
+  const ok=k==='ok';
+  el.style.setProperty('background',ok?'var(--okb)':'var(--kob)','important');
+  el.style.setProperty('border',ok?'2px solid var(--okl)':'2px solid var(--kol)','important');
+  el.style.setProperty('color',ok?'var(--okt)':'var(--kot)','important');
+  el.style.setProperty('font-weight','600','important');
+  el.style.setProperty('opacity','1','important');
+  el.textContent=(ok?'✓ ':'✗ ')+el.textContent;
+}
+
+function answer(o){
+  const {q}=run.qs[run.i],blank=o===null,ok=o===q.c;
+  if(run.mode==='dia'){
+    const {k,h}=run.ctx;
+    if(k!==madrid().key){app.innerHTML='<p class="empty">Este día ya ha terminado: la pregunta solo se podía responder ese día.</p>';return}
+    if((S.daily[k]||{})[h]){go('dia-'+k);return}
+    S.daily[k]=Object.assign({},S.daily[k],{[h]:{id:q.id,a:blank?null:o}});
+  }
+  if(!blank)record(q,ok);
+  save();
+  if(run.mode==='simulacro'){run.ans.push(o);next();return}
+  app.querySelectorAll('#ops .op').forEach(b=>{
+    const v=+b.dataset.o;b.disabled=true;
+    if(v===q.c)paint(b,'ok');else if(v===o)paint(b,'ko');else b.style.setProperty('opacity','0.5','important');
+  });
+  const correctL=L[run.qs[run.i].ord.indexOf(q.c)];
+  run.net+=ptsOf(blank?null:o,q);
+  const pts=blank?'0 netas':ok?'+1 neta':'−0,33 netas';
+  document.getElementById('after').innerHTML=`<p class="res" style="color:var(${blank?'--mut':ok?'--okt':'--kot'});margin-bottom:14px">${blank?'En blanco. La buena es la '+correctL:ok?'Correcto':'Incorrecto. La buena es la '+correctL} · ${pts}</p>${expl(q)}`;
+  const last=run.i+1>=run.qs.length;
+  document.getElementById('nav').innerHTML=`<button class="btn" id="nx">${run.mode==='dia'?'Volver a hoy':last?'Terminar':'Siguiente'}</button>`;
+  document.getElementById('nx').onclick=run.mode==='dia'?()=>go('dia-'+run.ctx.k):next;
+}
+
+function next(){run.i++;run.i<run.qs.length?show():finish()}
+
+function finish(){
+  window.scrollTo(0,0);
+  if(run.mode!=='simulacro'){
+    app.innerHTML=`<div class="score"><h2>Ronda terminada</h2><p>${run.qs.length} preguntas · ${fmt(run.net)} netas</p></div><div class="nav" style="justify-content:center"><button class="btn" id="h">Volver al inicio</button></div>`;
+    document.getElementById('h').onclick=()=>go('inicio');return}
+  let a=0,f=0,bl=0;run.qs.forEach(({q},k)=>{const v=run.ans[k];v===null?bl++:v===q.c?a++:f++});
+  const n=run.qs.length,neta=a-0.33*f,nota=Math.max(0,neta*10/n);
+  const wrong=run.qs.map((x,k)=>({...x,v:run.ans[k]})).filter(x=>x.v!==x.q.c);
+  app.innerHTML=`
+  <div class="score"><span>Nota (sobre 10, con penalización)</span><b>${nota.toFixed(2).replace('.',',')}</b>
+  <p>${a} aciertos · ${f} fallos · ${bl} en blanco · ${fmt(neta)} netas</p></div>
+  <h3 class="sub">${wrong.length?'Revisa las que no acertaste':'Ninguna fallada. Muy bien.'}</h3>
+  ${wrong.map(({q,v})=>`<details><summary>${esc(q.q)}</summary>
+    <p style="margin:10px 0 4px;color:var(--kot)">${v===null?'En blanco':'Tu respuesta: '+esc(q.o[v])}</p>
+    <p style="margin:0 0 12px;color:var(--okt);font-weight:600">Correcta: ${esc(q.o[q.c])}</p>${expl(q)}</details>`).join('')}
+  <div class="nav" style="justify-content:center"><button class="btn" id="h">Volver al inicio</button></div>`;
+  document.getElementById('h').onclick=()=>go('inicio');
+}
+
+function askName(change){
+  homeBtn.hidden=!change;
+  app.innerHTML=`<form id="nf" class="mode" style="max-width:420px;margin:24px auto"><h2>${change?'Cambiar nombre':'¿Cómo te llamas?'}</h2>
+  <p>Es el nombre que aparecerá en el ranking semanal.</p><input id="nm" maxlength="30" autocomplete="name" value="${esc(NAME)}" placeholder="Nombre y apellido" style="font:inherit;font-size:16px;min-height:44px;padding:6px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)">
+  <p id="ne" style="color:var(--kot);font-size:13px;margin:0" hidden>Escribe tu nombre para continuar.</p><button class="btn">Entrar</button></form>`;
+  const i=document.getElementById('nm');i.focus();i.oninput=()=>document.getElementById('ne').hidden=true;
+  document.getElementById('nf').onsubmit=e=>{e.preventDefault();const v=i.value.trim();if(!v){document.getElementById('ne').hidden=false;return}
+    NAME=v;try{localStorage.setItem(LS+'-nombre',v)}catch(x){}pushRank.last=null;pushRank();go('inicio')};
+}
+homeBtn.onclick=()=>go('inicio');
+window.addEventListener('hashchange',render);
+loadLocal();
+if(!S.start){S.start=madrid().key}
+try{NAME=localStorage.getItem(LS+'-nombre')||''}catch(e){}
+fetch('preguntas.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{BANK=d;NAME?render():askName(false);connect()}).catch(()=>{app.innerHTML='<p class="empty">No se han podido cargar las preguntas. Recarga la página.</p>'});
+}
+</script>
+</body>
+</html>
