@@ -99,7 +99,7 @@ summary{cursor:pointer}
 .sumt{font-size:17px;text-align:center;margin:26px 0 4px}.sumh{font-size:14px;margin:14px 0 6px}.sumq{border:1px solid var(--line,#ddd);border-radius:8px;margin:0 0 6px;padding:6px 10px;font-size:13px}.sumq summary{cursor:pointer;display:flex;gap:10px;align-items:baseline}.sumpct{font-weight:700;color:var(--kot);min-width:3em}.sumd{font-size:12px;opacity:.8;margin:8px 0 4px}.sumko{font-weight:600;color:var(--kot);margin:0 0 4px}.sumok{font-weight:600;color:var(--okt);margin:0 0 8px}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-start;justify-content:center;padding:24px 12px;overflow:auto;z-index:50}.mbox{background:var(--bg,#fff);color:inherit;max-width:560px;width:100%;border-radius:12px;padding:18px 16px}.podio{margin:0 0 6px;padding-left:22px;font-size:14px}
 </style>
-<script>const APPV='1795203345';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795203541';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -191,7 +191,8 @@ async function bind(key,pid,name){
   await fs.setDoc(fs.doc(db,'devices',uid),{key,pid});
   KEY=key;PID=pid;NAME=name;lsSet('key',key);lsSet('pid',pid);lsSet('nombre',name);
   PREF=fs.doc(db,'perfiles',key);
-  DB={set:async()=>{await pull();await fs.setDoc(PREF,{estado:JSON.parse(JSON.stringify(S)),pid:PID,nombre:NAME,actualizado:Date.now()})}};
+  const COPY=()=>fs.setDoc(fs.doc(db,'copias',PID),{estado:JSON.parse(JSON.stringify(S)),nombre:NAME,actualizado:Date.now()}).catch(()=>{});
+  DB={set:async()=>{await pull();await fs.setDoc(PREF,{estado:JSON.parse(JSON.stringify(S)),pid:PID,nombre:NAME,actualizado:Date.now()});COPY()}};COPY();
   RANK={set:body=>fs.setDoc(fs.doc(db,'ranking',PID),{nombre:NAME,...body})}; if(BANK.length)pushRank();setTimeout(weeklyPopup,1500);
 }
 async function login(name,pin){
@@ -275,7 +276,7 @@ const ptsOf=(a,q)=>a===null?0:a===q.c?1:-0.33;
 const netaDay=k=>Object.values(S.daily[k]||{}).reduce((t,d)=>{const q=byId(d.id);return t+(q?ptsOf(d.a,q):0)},0);
 
 /* vistas */
-function render(){if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='ranking')ranking();else home()}
+function render(){if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='ranking')ranking();else if(h==='admin')admin();else home()}
 function go(h){if(location.hash==='#'+h)render();else location.hash=h}
 
 function pending(){
@@ -405,6 +406,43 @@ async function weeklyPopup(){
   ov.querySelectorAll('.podio .pn').forEach((el,i)=>el.textContent=rows[i].n);
   const close=()=>{lsSet(seen,1);ov.remove()};
   ov.querySelector('#mclose').onclick=close;ov.onclick=e=>{if(e.target===ov)close()};
+}
+async function admin(msg){
+  run=null;homeBtn.hidden=true;window.scrollTo(0,0);
+  if(!FS){app.innerHTML='<p class="empty">Conectando con la base de datos… vuelve a intentarlo en unos segundos.</p>';return}
+  const {fs,db,uid}=FS;
+  let ok=false;try{ok=(await fs.getDoc(fs.doc(db,'admins',uid))).exists()}catch(e){}
+  if(!ok){
+    app.innerHTML=`<h2 style="font-size:19px;text-align:center;margin:0 0 12px">Administración</h2>
+    <p class="note" style="text-align:center">Escribe el código de administrador.</p>
+    <input id="acode" type="password" autocomplete="off" style="width:100%;margin:8px 0">
+    <button class="go" id="aok" style="font-size:17px;padding:10px">Entrar</button><p class="note" id="aerr" style="color:var(--kot)">${msg||''}</p>`;
+    document.getElementById('aok').onclick=async()=>{const c=document.getElementById('acode').value.trim();
+      try{await fs.setDoc(fs.doc(db,'admins',uid),{code:c,t:Date.now()});admin()}catch(e){document.getElementById('aerr').textContent='Código incorrecto.'}};
+    return;
+  }
+  app.innerHTML='<p class="empty">Cargando participantes…</p>';
+  let L=[];try{L=(await fs.getDocs(fs.collection(db,'copias'))).docs.map(d=>({pid:d.id,n:d.data().nombre||'(sin nombre)'})).sort((a,b)=>a.n.localeCompare(b.n,'es'))}
+  catch(e){app.innerHTML='<p class="empty">No se ha podido cargar la lista. Revisa que las reglas nuevas estén publicadas.</p>';return}
+  app.innerHTML=`<h2 style="font-size:19px;text-align:center;margin:0 0 4px">Administración</h2>
+  <p class="note" style="text-align:center;margin:0 0 12px">Restablecer el PIN de un participante. Conserva todo su progreso; después debe cambiarlo en «cambiar PIN».</p>
+  <p class="note" id="amsg" style="font-weight:600;color:var(--okt)">${msg||''}</p>
+  ${L.map((r,i)=>`<div class="rk pass" style="grid-template-columns:minmax(0,1fr) 5em auto;background:transparent;color:inherit"><b class="an"></b>
+    <input inputmode="numeric" maxlength="4" placeholder="PIN" data-i="${i}" style="width:5em">
+    <button data-i="${i}" class="ares">Restablecer</button></div>`).join('')||'<p class="empty">Todavía no hay participantes con copia guardada. Aparecen cuando entran en la web.</p>'}`;
+  app.querySelectorAll('.an').forEach((el,i)=>el.textContent=L[i].n);
+  app.querySelectorAll('.ares').forEach(b=>b.onclick=async()=>{
+    const r=L[+b.dataset.i],pin=app.querySelector(`input[data-i="${b.dataset.i}"]`).value.trim(),m=document.getElementById('amsg');
+    m.style.color='var(--kot)';
+    if(!/^\d{4}$/.test(pin)){m.textContent='El PIN debe tener 4 cifras.';return}
+    try{
+      const key=await keyOfLogin(r.n,pin);
+      if((await fs.getDoc(fs.doc(db,'perfiles',key))).exists()){m.textContent='Ese PIN no se puede usar para '+r.n+'. Elige otro.';return}
+      const c=await fs.getDoc(fs.doc(db,'copias',r.pid));
+      await fs.setDoc(fs.doc(db,'perfiles',key),{estado:(c.data()||{}).estado||{},pid:r.pid,nombre:r.n,creado:Date.now(),restablecido:true});
+      admin(`Listo: ${r.n} ya puede entrar con su nombre y el PIN ${pin}.`);
+    }catch(e){m.textContent='No se ha podido restablecer. Inténtalo de nuevo.'}
+  });
 }
 function drawRanking(){
   const docs=RK.docs,now=madrid(),cur=monday(now.key);
