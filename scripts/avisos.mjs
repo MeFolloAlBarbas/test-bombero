@@ -8,6 +8,10 @@ const hour = +p.hour, day = `${p.year}-${p.month}-${p.day}`;
 const force = process.env.FORZAR === 'si';
 if (!force && (p.weekday === 'Sun' || hour < 9 || hour > 20)) { console.log('Fuera de horario:', day, hour); process.exit(0); }
 
+import { readFileSync } from 'node:fs';
+const plan = JSON.parse(readFileSync(new URL('../plan.json', import.meta.url)));
+if (!force && !plan[day]) { console.log('No hay preguntas publicadas para', day); process.exit(0); }
+
 admin.initializeApp({ credential: admin.credential.cert(JSON.parse(process.env.FIREBASE_SA)) });
 const db = admin.firestore();
 const marca = `${day}-${hour}`, est = db.doc('avisos/estado');

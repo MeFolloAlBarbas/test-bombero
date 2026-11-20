@@ -148,7 +148,9 @@ function planUpTo(k){
   }
   return PLAN[k]||[];
 }
-function slotQ(k,h){return planUpTo(k)[h-9]||BANK[0]}
+let FIXED={};
+function slotQ(k,h){if(k>='2026-11-21'){const ids=FIXED[k];return ids?byId(ids[h-9])||null:null}return planUpTo(k)[h-9]||null}
+const hasDay=k=>k<'2026-11-21'||!!FIXED[k];
 function slot(k,h){const d=(S.daily[k]||{})[h];return d?{q:byId(d.id)||slotQ(k,h),a:d.a,done:true}:{q:slotQ(k,h),a:undefined,done:false}}
 
 /* almacenamiento: navegador + cuenta (db) */
@@ -271,8 +273,8 @@ function render(){if(!NAME||!lsGet('key')){askName(false);return}const h=locatio
 function go(h){if(location.hash==='#'+h)render();else location.hash=h}
 
 function pending(){
-  const {key,hour}=madrid();if(dow(key)===0)return null;
-  for(const hh of HOURS){if(hh>hour)break;if(!(S.daily[key]||{})[hh])return {k:key,h:hh}}
+  const {key,hour}=madrid();if(dow(key)===0||!hasDay(key))return null;
+  for(const hh of HOURS){if(hh>hour)break;if(!(S.daily[key]||{})[hh]&&slotQ(key,hh))return {k:key,h:hh}}
   return null;
 }
 function home(){
@@ -289,8 +291,8 @@ function home(){
   const vals=Object.values(S.stats),ok=vals.reduce((a,s)=>a+s.ok,0),ko=vals.reduce((a,s)=>a+s.ko,0);
   const w=weeks()[monday(key)];
   app.innerHTML=`
-  <div class="score"><h2>${sun?'Hoy es domingo: descanso':nxt?'Estás al día':'Día completado'}</h2>
-  <p>${sun?'El lunes vuelven las preguntas a las 9:00.':nxt?`La siguiente pregunta se abre a las ${nxt}:00.`:'Has terminado las preguntas de hoy. Mañana, más.'}</p></div>
+  <div class="score"><h2>${sun?'Hoy es domingo: descanso':!hasDay(key)?'Preguntas de hoy pendientes de publicar':nxt?'Estás al día':'Día completado'}</h2>
+  <p>${sun?'El lunes vuelven las preguntas a las 9:00.':!hasDay(key)?'Todavía no se han publicado las preguntas de hoy. Vuelve más tarde.':nxt?`La siguiente pregunta se abre a las ${nxt}:00.`:'Has terminado las preguntas de hoy. Mañana, más.'}</p></div>
   <div class="stats">
     <div class="stat"><b>${fmt(netaDay(key))}</b><span>netas hoy</span></div>
     <div class="stat"><b>${fmt(w?w.neta:0)}</b><span>netas esta semana</span></div>
@@ -310,6 +312,7 @@ function day(k){
   if(dow(k)===0||k>now.key){app.innerHTML=`<p class="empty">${dow(k)===0?'Los domingos no hay preguntas.':'Ese día todavía no ha llegado.'}</p>`;return}
   const rows=HOURS.map(h=>{
     const s=slot(k,h),q=s.q,locked=today&&h>now.hour;
+    if(!q)return `<div class="slot lk"><div class="sh"><span class="hr">${h}:00</span><span class="st lk">Sin publicar</span></div></div>`;
     let state,cls='';
     if(s.done){state=s.a===null?'En blanco · 0':s.a===q.c?'✓ Acierto · +1':'✗ Fallo · −0,33';cls=s.a===null?'bl':s.a===q.c?'okr':'kor'}
     else if(locked){state=`Disponible a las ${h}:00`;cls='lk'}
@@ -477,7 +480,7 @@ loadLocal();
 if(!S.start){S.start=madrid().key}
 try{NAME=localStorage.getItem(LS+'-nombre')||''}catch(e){}
 if(!lsGet('key'))NAME='';
-fetch('preguntas.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{BANK=d;render();connect()}).catch(()=>{app.innerHTML='<p class="empty">No se han podido cargar las preguntas. Recarga la página.</p>'});
+Promise.all([fetch('preguntas.json',{cache:'no-cache'}).then(r=>r.json()),fetch('plan.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([d,p])=>{BANK=d;FIXED=p||{};render();connect()}).catch(()=>{app.innerHTML='<p class="empty">No se han podido cargar las preguntas. Recarga la página.</p>'});
 }
 </script>
 </body>
