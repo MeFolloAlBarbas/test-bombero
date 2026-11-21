@@ -207,8 +207,36 @@ summary{cursor:pointer}
 .fcf{position:absolute;top:-10px;width:7px;height:7px;animation:fcae 1.8s linear forwards}@keyframes fcae{to{transform:translateY(340px) rotate(360deg)}}
 .racha{text-align:center;margin:-4px 0 16px}.rt{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:#BA7517}
 .rds{display:flex;justify-content:center;gap:5px;margin-top:6px}.rd{width:11px;height:11px;border-radius:3px;background:var(--line);display:inline-block}.rd.on{background:#fa8723}
+/* ===== detalles del camión (v2) ===== */
+#maq .tshadow{position:absolute;left:4px;right:2px;bottom:-2px;height:9px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.55),rgba(0,0,0,0))}
+#maq .ladder{background:linear-gradient(#e2e2e2 0 2px,transparent 2px calc(100% - 2px),#9a9a9a calc(100% - 2px)),repeating-linear-gradient(90deg,#c8c8c8 0 12px,#2d1616 12px 15px)}
+#maq .tbase{position:absolute;left:236px;top:12px;width:24px;height:12px;background:#505050;border:3px solid #2d1616;border-bottom:0;border-radius:4px 4px 0 0;box-sizing:border-box;z-index:1}
+#maq .tpost{position:absolute;left:104px;top:16px;width:6px;height:8px;background:#505050;border:2px solid #2d1616;border-bottom:0;box-sizing:border-box;z-index:1}
+#maq .tbody{background:linear-gradient(90deg,transparent 57px,rgba(45,22,22,.35) 57px 59px,transparent 59px 112px,rgba(45,22,22,.35) 112px 114px,transparent 114px),#e8392c}
+#maq .stripe span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Press Start 2P',monospace;font-size:5px;letter-spacing:1px;color:#c0241a;line-height:1}
+#maq .tcab .stripe span{display:none}
+#maq .tsill{position:absolute;left:4px;right:4px;bottom:3px;height:4px;background:repeating-linear-gradient(90deg,#c8c8c8 0 5px,#8c8c8c 5px 6px);border:1px solid #2d1616}
+#maq .door{position:absolute;left:4px;top:3px;width:70px;height:60px;border:2px solid rgba(45,22,22,.5);border-radius:24px 4px 3px 3px;box-sizing:border-box}
+#maq .handle{position:absolute;left:58px;top:51px;width:10px;height:3px;background:#2d1616;border-radius:1px}
+#maq .mirror{position:absolute;left:-7px;top:40px;width:8px;height:15px;background:#c8ebff;border:2px solid #2d1616;border-radius:2px;box-sizing:border-box;z-index:3;box-shadow:3px 9px 0 -1px #2d1616}
+#maq .siren{left:34px;width:36px;background:linear-gradient(90deg,#d72d1e 50%,#378ADD 50%);animation:tsir2 .5s steps(1) infinite}
+@keyframes tsir2{50%{background:linear-gradient(90deg,#378ADD 50%,#d72d1e 50%)}}
+#maq .spin .siren,#maq .win .siren{filter:drop-shadow(0 0 5px #fff) drop-shadow(0 0 8px #378ADD)}
+#maq .tlight{box-shadow:0 0 4px #ffd23c}
+#maq .moving .tlight::after{content:'';position:absolute;right:6px;top:-6px;width:34px;height:16px;background:linear-gradient(270deg,rgba(255,230,120,.55),rgba(255,230,120,0));clip-path:polygon(100% 35%,0 0,0 100%,100% 65%)}
+#maq .rlight{position:absolute;left:261px;top:82px;width:6px;height:12px;background:#ff4a3d;border:2px solid #2d1616;border-radius:2px;z-index:3}
+#maq .bumper{width:12px;height:12px;left:-3px;bottom:38px;z-index:3}
+#maq .arch{position:absolute;top:100px;height:18px;background:#2d1616;border-radius:24px 24px 0 0;z-index:1}
+#maq .twheel{background:repeating-conic-gradient(#2d1616 0 12deg,#4a3430 12deg 24deg);box-shadow:inset 0 0 0 3px #2d1616}
+#maq .twheel i{width:18px;height:18px;background:radial-gradient(circle,#8c8c8c 0 2px,#e2e2e2 2px 4px,#c8c8c8 4px);border:3px solid #6e6e6e}
+#maq .twheel i::after{top:1px;height:3px;width:3px;border-radius:50%;margin-left:-1.5px;background:#505050;box-shadow:0 9px 0 #505050,-4.5px 4.5px 0 #505050,4.5px 4.5px 0 #505050}
+#maq .puff{position:absolute;left:262px;bottom:20px;width:7px;height:7px;border-radius:50%;background:rgba(200,200,200,.8);opacity:0;pointer-events:none}
+#maq .moving .puff{animation:tpuff .7s ease-out infinite}
+#maq .moving .puff.p2{animation-delay:.35s}
+@keyframes tpuff{0%{opacity:.9;transform:translate(0,0) scale(.6)}100%{opacity:0;transform:translate(16px,-10px) scale(1.8)}}
+@media (prefers-reduced-motion:reduce){#maq .moving .puff,#maq .moving .tlight::after{display:none}}
 </style>
-<script>const APPV='1795281146';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795283435';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -448,10 +476,10 @@ function showMaquina(){
   ov.innerHTML=`<div class="tbox" id="cab">
     <p class="ttl">TIRADA DEL DÍA</p>
     <div class="trk" id="trk">
-      <div class="ladder"></div>
-      <div class="tbody"><div class="twnd">${[0,1,2].map(i=>`<div class="reel" id="mr${i}"></div>`).join('')}</div><div class="stripe"></div></div>
-      <div class="tcab"><div class="siren"></div><div class="wind"><div class="drv"><svg width="44" height="33" viewBox="0 0 24 18" shape-rendering="crispEdges" aria-hidden="true">${pxRects(PX.masc.slice(0,18),PXM)}</svg></div><div class="glare"></div></div><div class="stripe"></div></div>
-      <div class="tlight"></div><div class="bumper"></div>
+      <div class="tshadow"></div><div class="tbase"></div><div class="tpost"></div><div class="ladder"></div>
+      <div class="tbody"><div class="twnd">${[0,1,2].map(i=>`<div class="reel" id="mr${i}"></div>`).join('')}</div><div class="stripe"><span>BOMBEROS</span></div><div class="tsill"></div></div>
+      <div class="tcab"><div class="siren"></div><div class="door"></div><div class="handle"></div><div class="wind"><div class="drv"><svg width="44" height="33" viewBox="0 0 24 18" shape-rendering="crispEdges" aria-hidden="true">${pxRects(PX.masc.slice(0,18),PXM)}</svg></div><div class="glare"></div></div><div class="stripe"></div></div>
+      <div class="tlight"></div><div class="rlight"></div><div class="bumper"></div><div class="arch" style="left:17px;width:48px"></div><div class="arch" style="left:169px;width:90px"></div><i class="puff"></i><i class="puff p2"></i>
       <div class="twheel" style="left:24px"><i></i></div><div class="twheel" style="left:176px"><i></i></div><div class="twheel" style="left:218px"><i></i></div>
     </div>
     <div id="lv" hidden></div>
