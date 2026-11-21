@@ -100,7 +100,7 @@ summary{cursor:pointer}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-start;justify-content:center;padding:24px 12px;overflow:auto;z-index:50}.mbox{background:var(--bg,#fff);color:inherit;max-width:560px;width:100%;border-radius:12px;padding:18px 16px}.podio{margin:0 0 6px;padding-left:22px;font-size:14px}
 .note a{color:#185FA5;text-decoration:underline;font-weight:600}@media (prefers-color-scheme:dark){.note a{color:#85B7EB}}
 </style>
-<script>const APPV='1795244937';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795244970';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -298,7 +298,7 @@ function home(){
   const {key,hour}=madrid(),sun=dow(key)===0,nxt=HOURS.find(x=>x>hour);
   const vals=Object.values(S.stats),ok=vals.reduce((a,s)=>a+s.ok,0),ko=vals.reduce((a,s)=>a+s.ko,0);
   const w=weeks()[monday(key)];
-  app.innerHTML=`<div style="min-height:calc(100vh - 170px);display:flex;flex-direction:column"><div>
+  app.innerHTML=`<div style="min-height:calc(100vh - 220px);display:flex;flex-direction:column"><div>
   <div class="score"><h2>${sun?'Hoy es domingo: descanso':!hasDay(key)?'Preguntas de hoy pendientes de publicar':nxt?'Estás al día':'Día completado'}</h2>
   <p>${sun?'El lunes vuelven las preguntas a las 9:00.':!hasDay(key)?'Todavía no se han publicado las preguntas de hoy. Vuelve más tarde.':nxt?`La siguiente pregunta se abre a las ${nxt}:00.`:'Has terminado las preguntas de hoy. Mañana, más.'}</p></div>
   <div class="stats">
