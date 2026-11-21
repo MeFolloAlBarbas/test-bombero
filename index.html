@@ -243,12 +243,12 @@ summary{cursor:pointer}
 .tj-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--bg);display:flex;flex-direction:column;box-shadow:0 2px 0 var(--line);overflow:auto}.tj-back{transform:rotateY(180deg)}
 .tj-tema{font-size:12px;color:var(--int);background:var(--inb);padding:2px 8px;border-radius:999px;align-self:flex-start;margin-bottom:12px}.tj-q{font-size:20px;font-weight:600;line-height:1.4;flex:1;display:flex;align-items:center}.tj-hint{font-size:13px;color:var(--mut);text-align:center;margin-top:12px}
 .tj-bq{font-size:13px;color:var(--mut);margin:0 0 10px;line-height:1.45}.tj-ok{background:var(--okb);color:var(--okt);border:2px solid var(--okl);border-radius:10px;padding:10px 12px;font-weight:600;margin:0 0 8px}.tj-mal{background:var(--kob);color:var(--kot);border-radius:10px;padding:6px 12px;font-size:13px;margin:0 0 10px}
-.tj-rec{background:var(--wab);color:var(--wat);border-left:4px solid var(--wal);border-radius:8px;padding:8px 12px;font-size:14px;margin:0 0 8px}.tj-ex{font-size:14px;margin:0}
+.tj-rec{background:var(--wab);color:var(--wat);border-left:4px solid var(--wal);border-radius:8px;padding:8px 12px;font-size:14px;margin:0 0 8px}.tj-ex{font-size:14px;margin:0 0 8px}.tj-ojo{color:var(--kot)}
 .tj-acts{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;margin-top:14px}.tj-n{font-size:13px;color:var(--mut)}.tj-nav{background:var(--card);color:var(--ink);border-color:var(--line)!important}.tj-acts button{font:inherit;font-size:15px;font-weight:600;min-height:48px;border-radius:10px;cursor:pointer;border:2px solid}.tj-acts button:disabled{opacity:.35;cursor:default}
 .tj-again{background:var(--kob);color:var(--kot);border-color:var(--kol)}.tj-know{background:var(--okb);color:var(--okt);border-color:var(--okl)}.tj-empty{border:1px dashed var(--line);border-radius:14px;padding:30px 16px;text-align:center;color:var(--mut)}
 @media (prefers-reduced-motion:reduce){.tj-card{transition:none}}
 </style>
-<script>const APPV='1795286926';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795287006';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Tus fallos</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -736,9 +736,10 @@ function tarjetas(){
   if(!c){app.innerHTML='<div class="tj-empty">Aquí aparecerán las preguntas que falles o dejes en blanco.</div>';return}
   const tq=c.q.tq||c.q.q,ta=c.q.ta||OT(c.q,c.q.c);
   app.innerHTML=`<div class="tj-stage"><div class="tj-card" id="tjC"><div class="tj-face"><h3 class="tj-t">${esc(c.q.t)}</h3><div class="tj-q">${esc(tq)}</div>${qimg(c.q)}<div class="tj-hint">Toca para ver la respuesta</div></div>
-  <div class="tj-face tj-back"><h3 class="tj-t">${esc(c.q.t)}</h3><p class="tj-bq">${esc(tq)}</p><div class="tj-a">${esc(ta)}</div></div></div></div>
+  <div class="tj-face tj-back"><h3 class="tj-t">${esc(c.q.t)}</h3><p class="tj-bq">${esc(tq)}</p><div class="tj-ok">✓ ${esc(ta)}</div><div class="tj-mal">${c.tu===null||c.tu===undefined?'La dejaste en blanco':'Tú respondiste: '+esc(OT(c.q,c.tu))}</div>${c.q.rec?`<div class="tj-rec"><b>Para recordar:</b> ${c.q.rec}</div>`:''}${c.q.que?`<p class="tj-ex">${c.q.que}</p>`:''}${c.q.porque?`<p class="tj-ex">${c.q.porque}</p>`:''}${c.q.ojo?`<p class="tj-ex tj-ojo"><b>Ojo:</b> ${c.q.ojo}</p>`:''}</div></div></div>
   <div class="tj-acts"><button class="tj-nav" id="tjP" ${TJ.idx?'':'disabled'}>← Anterior</button><span class="tj-n">${TJ.idx+1} / ${L.length}</span><button class="tj-nav" id="tjN" ${TJ.idx<L.length-1?'':'disabled'}>Siguiente →</button></div>`;
   const cd=document.getElementById('tjC');TJ.n=L.length;
+  const fit=()=>{cd.style.height='';const h=Math.max(...[...cd.querySelectorAll('.tj-face')].map(f=>f.scrollHeight));cd.style.height=Math.max(h,300)+'px'};fit();setTimeout(fit,50);
   cd.onclick=()=>{if(TJ.swiped){TJ.swiped=false;return}cd.classList.toggle('flip')};
   cd.addEventListener('touchstart',e=>{const t=e.touches[0];TJ.tx=t.clientX;TJ.ty=t.clientY},{passive:true});
   cd.addEventListener('touchend',e=>{const t=e.changedTouches[0],dx=t.clientX-TJ.tx,dy=t.clientY-TJ.ty;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5){TJ.swiped=true;setTimeout(()=>TJ.swiped=false,400);tjMover(dx<0?1:-1)}},{passive:true});
