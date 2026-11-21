@@ -199,7 +199,7 @@ summary{cursor:pointer}
 .adn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.adbar{height:7px;background:var(--card);border-radius:4px;overflow:hidden}.adbar i{display:block;height:100%}
 .adq{border:0;border-top:1px solid var(--line);border-radius:0;background:none;margin:0;padding:6px 0;font-size:14px}.adq summary>span:last-child{white-space:nowrap}.adq summary{display:flex;justify-content:space-between;gap:10px;cursor:pointer;list-style:none}.adq .note{margin:4px 0}
 </style>
-<script>const APPV='1795267038';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795267106';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -735,7 +735,8 @@ async function admin(msg){
   run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   if(!FS){app.innerHTML='<p class="empty">Conectando con la base de datos… vuelve a intentarlo en unos segundos.</p>';return}
   const {fs,db,uid}=FS;
-  let ok=false;try{ok=(await fs.getDoc(fs.doc(db,'admins',uid))).exists()}catch(e){}
+  let ok=false;try{const d=await fs.getDoc(fs.doc(db,'admins',uid));ok=d.exists()&&(!d.data().pid||d.data().pid===PID)}catch(e){}
+  if(!ok&&!msg)try{if((await fs.getDoc(fs.doc(db,'admins',uid))).exists()){app.innerHTML='<p class="empty">Este panel es solo para el administrador.</p>';return}}catch(e){}
   if(!ok){
     app.innerHTML=`<h2 style="font-size:19px;text-align:center;margin:0 0 12px">Administración</h2>
     <p class="note" style="text-align:center">Escribe el código de administrador.</p>
