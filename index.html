@@ -199,10 +199,10 @@ summary{cursor:pointer}
 .adn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.adbar{height:7px;background:var(--card);border-radius:4px;overflow:hidden}.adbar i{display:block;height:100%}
 .adq{border:0;border-top:1px solid var(--line);border-radius:0;background:none;margin:0;padding:6px 0;font-size:14px}.adq summary>span:last-child{white-space:nowrap}.adq summary{display:flex;justify-content:space-between;gap:10px;cursor:pointer;list-style:none}.adq .note{margin:4px 0}
 </style>
-<script>const APPV='1795266860';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795267038';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
-<header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
+<header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
 <main id="app"><p class="empty">Cargando preguntas…</p></main>
 <script src="firebase-config.js"></script>
 <script>
@@ -290,7 +290,7 @@ async function bind(key,pid,name){
   try{const dv=await fs.getDoc(fs.doc(db,'devices',uid));const old=dv.exists()&&dv.data().pid;if(old&&old!==pid)await fs.deleteDoc(fs.doc(db,'ranking',old))}catch(e){}
   try{await fs.deleteDoc(fs.doc(db,'ranking',uid))}catch(e){}
   await fs.setDoc(fs.doc(db,'devices',uid),{key,pid});
-  KEY=key;PID=pid;NAME=name;lsSet('key',key);lsSet('pid',pid);lsSet('nombre',name);
+  KEY=key;PID=pid;NAME=name;lsSet('key',key);lsSet('pid',pid);lsSet('nombre',name);adminTab();
   PREF=fs.doc(db,'perfiles',key);
   const COPY=()=>fs.setDoc(fs.doc(db,'copias',PID),{estado:JSON.parse(JSON.stringify(S)),nombre:NAME,actualizado:Date.now()}).catch(()=>{});
   DB={set:async()=>{await pull();await fs.setDoc(PREF,{estado:JSON.parse(JSON.stringify(S)),pid:PID,nombre:NAME,actualizado:Date.now()});COPY()}};COPY();
@@ -364,6 +364,7 @@ async function connect(){
     FS={fs,db,uid:u.uid,app:appF,B};
     const key=lsGet('key'),pid=lsGet('pid');
     if(key&&pid&&NAME){await bind(key,pid,NAME);await pull();await cargarSabotajes();await cargarLanzados();pushRank.last=null;save();if(pushState()==='on')enablePush(true)}
+    adminTab();
     if(!run)render();
     document.addEventListener('visibilitychange',async()=>{if(document.visibilityState==='visible'){await cargarSabotajes();await cargarLanzados();if(await pull()&&!run)render()}});
   }catch(e){syncNote='No se ha podido conectar con la base de datos; el progreso queda en este navegador.';if(!run)render()}
@@ -727,6 +728,9 @@ function panelAdmin(L,R){
   <h3 class="adh">Temas más flojos del grupo</h3>${temasH?`<div class="adg adt">${temasH}</div>`:'<p class="note">Todavía no hay respuestas esta semana.</p>'}
   <h3 class="adh">Comodines</h3><p class="note">Esta semana: ${C.chu} Chulito${C.chu===1?'':'s'} lanzado${C.chu===1?'':'s'} · ${C.esc} escudo${C.esc===1?'':'s'} usado${C.esc===1?'':'s'} · ${C.f50} 50/50</p>`;
 }
+// Pestaña «Panel»: solo la ve el administrador, en su cuenta, en los dispositivos donde ha puesto el código.
+async function adminTab(){const t=document.getElementById('tabAdmin');if(!t||!FS)return;let on=false;
+  try{const d=await FS.fs.getDoc(FS.fs.doc(FS.db,'admins',FS.uid));on=d.exists()&&(!d.data().pid||d.data().pid===PID)}catch(e){}t.hidden=!on}
 async function admin(msg){
   run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   if(!FS){app.innerHTML='<p class="empty">Conectando con la base de datos… vuelve a intentarlo en unos segundos.</p>';return}
@@ -738,7 +742,7 @@ async function admin(msg){
     <input id="acode" type="password" autocomplete="off" style="width:100%;margin:8px 0">
     <button class="go" id="aok" style="font-size:17px;padding:10px">Entrar</button><p class="note" id="aerr" style="color:var(--kot)">${msg||''}</p>`;
     document.getElementById('aok').onclick=async()=>{const c=document.getElementById('acode').value.trim();
-      try{await fs.setDoc(fs.doc(db,'admins',uid),{code:c,t:Date.now()});admin()}catch(e){document.getElementById('aerr').textContent='Código incorrecto.'}};
+      try{await fs.setDoc(fs.doc(db,'admins',uid),{code:c,t:Date.now(),pid:PID,nombre:NAME.slice(0,30)});adminTab();admin()}catch(e){document.getElementById('aerr').textContent='Código incorrecto.'}};
     return;
   }
   app.innerHTML='<p class="empty">Cargando panel…</p>';
