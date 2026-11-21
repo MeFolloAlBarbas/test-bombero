@@ -127,6 +127,7 @@ summary{cursor:pointer}
 .cab .lever{position:absolute;right:-16px;top:74px;width:6px;height:48px;background:#8c8c8c;border:2px solid #2d1616;border-radius:3px;transform-origin:bottom center;transition:transform .25s}
 .cab .lever::before{content:'';position:absolute;top:-13px;left:-6px;width:14px;height:14px;border-radius:50%;background:#d72d1e;border:2px solid #2d1616}
 .cab .lever.down{transform:scaleY(-0.55) translateY(-18px)}
+.msnd{position:absolute;right:6px;bottom:6px;font-size:14px;line-height:1;cursor:pointer;z-index:3;user-select:none}
 .mbtn{display:block;margin-top:11px;width:100%;font-family:'Press Start 2P',monospace;font-size:12px;color:#fff!important;background:#3B9D11!important;border:3px solid #2d1616!important;border-radius:8px;padding:9px 0 8px;box-shadow:0 4px 0 #1f5a08;cursor:pointer;text-shadow:2px 2px 0 #1f5a08}
 .mbtn.sec{background:#ffd23c!important;color:#2d1616!important;text-shadow:none;box-shadow:0 4px 0 #a07c10;font-size:9px}
 .mbtn:active,.mbtn:disabled{transform:translateY(3px);box-shadow:0 1px 0 #1f5a08}
@@ -374,6 +375,16 @@ function needTirada(){
   const {key,hour}=madrid();
   return dow(key)!==0&&hour>=9&&!(S.tir||{})[key];
 }
+let ACX=null;
+function sonidoOn(){return lsGet('sonido')!=='no'}
+function tono(f,d,type,vol,when,slide){if(!sonidoOn())return;try{if(!ACX)ACX=new (window.AudioContext||window.webkitAudioContext)();if(ACX.state==='suspended')ACX.resume();const o=ACX.createOscillator(),g=ACX.createGain(),t=ACX.currentTime+(when||0);o.type=type||'square';o.frequency.setValueAtTime(f,t);if(slide)o.frequency.exponentialRampToValueAtTime(slide,t+d);g.gain.setValueAtTime(vol||.08,t);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(ACX.destination);o.start(t);o.stop(t+d+.02)}catch(e){}}
+const SFX={
+  lever:()=>{tono(180,.12,'square',.08,0,90);tono(90,.08,'triangle',.12,.1)},
+  tick:()=>tono(900+Math.random()*300,.025,'square',.03),
+  stop:()=>{tono(220,.07,'square',.1);tono(110,.09,'triangle',.14,.02)},
+  tense:()=>{for(let i=0;i<8;i++)tono(330+i*45,.11,'square',.05,i*.17)},
+  win:()=>{[523,659,784,1047,784,1047,1319].forEach((f,i)=>tono(f,i===6?.45:.12,'square',.08,i*.11));[262,330,392].forEach((f,i)=>tono(f,.3,'triangle',.08,.33+i*.11))},
+  lose:()=>{tono(392,.16,'square',.07);tono(311,.16,'square',.07,.17);tono(247,.32,'square',.07,.34)}};
 function vib(p){try{navigator.vibrate&&navigator.vibrate(p)}catch(e){}}
 
 function showMaquina(){
@@ -382,6 +393,7 @@ function showMaquina(){
   const ov=document.createElement('div');ov.id='maq';ov.className='maq-ov';
   ov.innerHTML=`<div class="cab" id="cab">
     <div class="masc"><svg width="64" height="59" viewBox="0 0 24 22" shape-rendering="crispEdges" aria-hidden="true">${pxRects(PX.masc,PXM)}</svg></div>
+    <span class="msnd" id="msnd" role="button" tabindex="0" aria-label="Sonido"></span>
     <div class="marq"><h3>TIRADA DEL DÍA</h3><div class="bulbs">${'<i></i>'.repeat(11)}</div></div>
     <div class="wnd"><div class="reels">${[0,1,2].map(i=>`<div class="reel" id="mr${i}"></div>`).join('')}</div><div class="pay"></div></div>
     <div class="lever" id="lv"></div>
@@ -391,31 +403,33 @@ function showMaquina(){
   document.body.appendChild(ov);document.body.style.overflow='hidden';
   const R=[0,1,2].map(i=>document.getElementById('mr'+i)),IS=38,K=Object.keys(PX.icons);
   ['llama','chulito','maza'].forEach((k,i)=>R[i].innerHTML=pxIcon(k,IS));
+  const ms=document.getElementById('msnd'),pint=()=>{ms.textContent=sonidoOn()?'🔊':'🔇'};pint();
+  ms.onclick=()=>{lsSet('sonido',sonidoOn()?'no':'');pint()};
   document.getElementById('mgo').onclick=async()=>{
     const b=document.getElementById('mgo'),res=document.getElementById('mres'),lv=document.getElementById('lv'),cab=document.getElementById('cab');
     if(b.dataset.done){cerrarMaquina();return}
-    b.disabled=true;lv.classList.add('down');setTimeout(()=>lv.classList.remove('down'),350);vib(20);
+    b.disabled=true;lv.classList.add('down');setTimeout(()=>lv.classList.remove('down'),350);vib(20);SFX.lever();
     const r=await tiradaRes(key);
     let fin;
     if(r!=='none')fin=[r,r,r];
     else{do{fin=[0,1,2].map(()=>K[Math.floor(Math.random()*K.length)])}while(fin[0]===fin[1]&&fin[1]===fin[2])}
     S.tir=Object.assign({},S.tir,{[key]:r});save();
     R.forEach(x=>{x.classList.remove('stop','tense','slow');x.classList.add('spin')});
-    const t=setInterval(()=>R.forEach(x=>{if(x.classList.contains('spin'))x.innerHTML=pxIcon(K[Math.floor(Math.random()*K.length)],IS)}),90);
+    const t=setInterval(()=>{let a=false;R.forEach(x=>{if(x.classList.contains('spin')){a=true;x.innerHTML=pxIcon(K[Math.floor(Math.random()*K.length)],IS)}});if(a)SFX.tick()},90);
     const tense=fin[0]===fin[1],stopAt=[800,1300,tense?3000:1800];
     R.forEach((x,i)=>{
       setTimeout(()=>{x.classList.remove('spin');x.classList.add('slow')},stopAt[i]-350);
       setTimeout(()=>{if(x.classList.contains('slow'))x.innerHTML=pxIcon(K[Math.floor(Math.random()*K.length)],IS)},stopAt[i]-200);
-      if(i===2&&tense)setTimeout(()=>x.classList.add('tense'),1300);
+      if(i===2&&tense)setTimeout(()=>{x.classList.add('tense');SFX.tense()},1450);
       setTimeout(()=>{
-        x.classList.remove('slow','tense');x.innerHTML=pxIcon(fin[i],IS);void x.offsetWidth;x.classList.add('stop');vib(25);
+        x.classList.remove('slow','tense');x.innerHTML=pxIcon(fin[i],IS);void x.offsetWidth;x.classList.add('stop');vib(25);SFX.stop();
         if(i<2)return;
         clearInterval(t);
         const m={manc:'¡ESCUDO!',ext:'¡COMODÍN 50/50!',chulito:'¡CHULITO!'};
         if(r!=='none'){
-          cab.classList.add('win','shake');setTimeout(()=>cab.classList.remove('shake'),400);monedas();vib([80,60,80,60,250]);
+          cab.classList.add('win','shake');setTimeout(()=>cab.classList.remove('shake'),400);monedas();vib([80,60,80,60,250]);setTimeout(SFX.win,150);
           res.innerHTML=`<span style="color:#ffd23c">${m[r]}</span><br>${r==='chulito'?'Lánzalo desde el inicio':r==='ext'?'Úsalo en una pregunta':'Úsalo en una pregunta'}`;
-        }else res.textContent=tense?'¡CASI! HOY NO HAY PREMIO':'HOY NO HAY PREMIO';
+        }else{res.textContent=tense?'¡CASI! HOY NO HAY PREMIO':'HOY NO HAY PREMIO';setTimeout(SFX.lose,150)}
         b.textContent='CONTINUAR';b.dataset.done='1';b.disabled=false;
       },stopAt[i]);
     });
@@ -434,7 +448,7 @@ async function cargarSabotajes(){
   }catch(e){}
 }
 async function elegirVictima(){
-  if(!FS){alert('Sin conexión con la base de datos.');return}
+  if(!FS){const o=document.createElement('div');o.className='maq-ov';o.innerHTML='<div class="vbox"><h3>Sin conexión</h3><p class="note">Ahora mismo no se puede lanzar el Chulito. Lo conservas: inténtalo en un rato.</p><button class="btn" style="margin-top:10px">Vale</button></div>';o.querySelector('button').onclick=()=>o.remove();document.body.appendChild(o);return}
   const ov=document.createElement('div');ov.className='maq-ov';ov.id='vict';
   ov.innerHTML=`<div class="vbox"><h3>¿A quién le lanzas el Chulito?</h3><p class="note">Su próxima pregunta tendrá 4 opciones y verá que has sido tú.</p><div id="vlist"><p class="note">Cargando compañeros…</p></div><button class="btn sec" id="vno" style="margin-top:10px">Ahora no</button></div>`;
   document.body.appendChild(ov);
@@ -461,7 +475,7 @@ async function elegirVictima(){
       ov.querySelector('.vbox').innerHTML=`<h3>¡Chulito lanzado!</h3><p class="note">La próxima pregunta de <b></b> tendrá 4 opciones.</p><button class="btn" id="vok" style="margin-top:10px">Vale</button>`;
       ov.querySelector('.vbox b').textContent=x.n;
       document.getElementById('vok').onclick=()=>{ov.remove();render()};
-    }catch(e){vl.innerHTML='<p class="note">No se ha podido lanzar. Inténtalo de nuevo.</p>'}
+    }catch(e){vl.innerHTML='<p class="note">No se ha podido lanzar por un problema de conexión. Conservas tu Chulito: inténtalo de nuevo en un rato.</p>'}
   }});
 }
 async function marcarSabotaje(s,qid,res){
@@ -478,11 +492,11 @@ async function cargarLanzados(){
 function lanzBar(){
   if(!LANZ.length)return '';
   const txt={ok:'ha acertado la pregunta',ko:'ha fallado la pregunta',bl:'ha dejado la pregunta en blanco',esc:'ha fallado, pero tenía escudo'};
-  return LANZ.map((x,i)=>`<p class="sabn lanz" data-i="${i}" style="${x.res==='ok'?'background:#FCEBEB;color:#791F1F;border-color:#E24B4A':'background:#EAF3DE;color:#27500A;border-color:#639922'}">Tu Chulito a <b></b>: ${txt[x.res]||''}. <a href="#" class="lvis">Vale</a></p>`).join('');
+  return LANZ.slice(0,1).map((x,i)=>`<p class="sabn lanz" data-i="${i}" style="${x.res==='ok'?'background:#FCEBEB;color:#791F1F;border-color:#E24B4A':'background:#EAF3DE;color:#27500A;border-color:#639922'}">Tu Chulito a <b></b>: ${txt[x.res]||''}. <a href="#" class="lvis">Vale</a></p>`).join('');
 }
 function bindLanz(){
   document.querySelectorAll('.lanz').forEach(p=>{const x=LANZ[+p.dataset.i];p.querySelector('b').textContent=x.toName||'tu compañero';
-    p.querySelector('.lvis').onclick=async e=>{e.preventDefault();p.remove();LANZ=LANZ.filter(y=>y.id!==x.id);try{await FS.fs.updateDoc(FS.fs.doc(FS.db,'sabotajes',x.id),{visto:true})}catch(e){}}});
+    p.querySelector('.lvis').onclick=async e=>{e.preventDefault();LANZ=LANZ.filter(y=>y.id!==x.id);render();try{await FS.fs.updateDoc(FS.fs.doc(FS.db,'sabotajes',x.id),{visto:true})}catch(e){}}});
 }
 
 // ===== Comodines como dibujos pequeños =====
@@ -493,6 +507,13 @@ function comIcons(tipos,id='cw'){
 }
 function bindIcons(fn,id='cw'){document.querySelectorAll('#'+id+' .cico').forEach(s=>{const f=()=>{if(s.classList.contains('bote'))return;s.classList.add('bote');setTimeout(()=>fn(s.dataset.t),330)};s.onclick=f;s.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();f()}}})}
 function hdrChu(){const el=document.getElementById('hchu');if(!el)return;el.innerHTML=PID?comIcons(['chu'],'hcw'):'';bindIcons(()=>elegirVictima(),'hcw')}
+function avisoUnico(){
+  if(!PID)return pushBox();
+  const sab=SAB.length;
+  if(sab)return `<p class="sabn">Te ${sab>1?`han lanzado ${sab} Chulitos`:'ha lanzado un Chulito'} <b></b>: tu${sab>1?`s ${sab}`:''} próxima${sab>1?'s':''} pregunta${sab>1?'s tendrán':' tendrá'} 4 opciones.</p>`;
+  if(LANZ.length)return lanzBar();
+  return pushBox();
+}
 function comBar(){
   if(!PID)return '';
   const sab=SAB.length;
@@ -511,8 +532,8 @@ function home(){
     const {key,hour}=madrid(),n=HOURS.filter(x=>x<=hour&&!(S.daily[key]||{})[x]).length;
     app.innerHTML=`<div class="start"><p class="meta">${nice(key)}</p><h2>Hola, ${esc(NAME)}</h2>
       <p>Tienes <b>${n}</b> pregunta${n>1?'s':''} pendiente${n>1?'s':''} hoy.</p>
-      <button class="go" id="bGo">COMENZAR</button></div>${comBar()}${pushBox()}`;bindPush();bindComBar();
-    document.getElementById('bGo').onclick=async()=>{await pull();home.go=true;home()};return}
+      <button class="go" id="bGo">COMENZAR</button></div>${avisoUnico()}`;bindPush();bindComBar();
+    document.getElementById('bGo').onclick=async()=>{await pull();await cargarSabotajes();home.go=true;home()};return}
   const {key,hour}=madrid(),sun=dow(key)===0,nxt=HOURS.find(x=>x>hour);
   const vals=Object.values(S.stats),ok=vals.reduce((a,s)=>a+s.ok,0),ko=vals.reduce((a,s)=>a+s.ko,0);
   const w=weeks()[monday(key)];
@@ -525,7 +546,7 @@ function home(){
     ${(()=>{const mx=maxSoFar(monday(key));if(!mx)return '<div class="stat"><b>–</b><span>Tu nota</span></div>';const v=Math.round(Math.max(0,(w?w.neta:0))/mx*1000)/100;return `<div class="stat"><b style="color:${v>=8.51?'var(--okt)':'var(--kot)'}">${v.toFixed(2).replace('.',',')}</b><span>Tu nota</span></div>`})()}
   </div>
   ${sun?'':'<div class="nav" style="justify-content:center;margin-bottom:18px"><button class="btn sec" id="bDay">Revisar las de hoy</button></div>'}
-  ${comBar()}${pushBox()}</div>
+  ${avisoUnico()}</div>
   <div style="margin-top:auto;padding-top:28px">
   <p class="note">Hola, <b>${esc(NAME)}</b> · <a href="#" id="chName">cambiar PIN</a> · <a href="#" id="lo">cerrar sesión</a>.</p>
   <p class="note">Para entrar desde otro móvil u ordenador, usa tu nombre y tu PIN.</p>
