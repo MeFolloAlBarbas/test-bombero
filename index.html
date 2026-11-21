@@ -147,6 +147,9 @@ summary{cursor:pointer}
 .cico:hover,.cico:focus-visible{transform:scale(2);z-index:2}
 .cico i{position:absolute;left:50%;bottom:100%;transform:translateX(-50%) scale(.5);transform-origin:center bottom;white-space:nowrap;font-style:normal;font-size:11px;line-height:1.3;background:#fffaf0;color:#2d1616;padding:2px 6px;border-radius:4px;opacity:0;pointer-events:none;transition:opacity .15s;margin-bottom:2px}
 .cico:hover i,.cico:focus-visible i{opacity:1}
+.hchu{margin-left:auto;align-self:center}
+.hchu .cw{margin:0}
+.hchu .cico i{top:100%;bottom:auto;transform-origin:center top;margin:2px 0 0}
 .pila{display:inline-flex}
 .pila .cico+.cico{margin-left:-15px}
 .pila .cico:hover,.pila .cico:focus-visible{z-index:5}
@@ -157,7 +160,7 @@ summary{cursor:pointer}
 <script>const APPV='1795245027';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
-<header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
+<header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
 <main id="app"><p class="empty">Cargando preguntas…</p></main>
 <script src="firebase-config.js"></script>
 <script>
@@ -332,7 +335,7 @@ const ptsOf=(a,q)=>a===null?0:a===q.c?1:-0.33;
 const netaDay=k=>Object.values(S.daily[k]||{}).reduce((t,d)=>{const q=byId(d.id);return t+(q?ptsOf(d.a,q):0)},0);
 
 /* vistas */
-function render(){if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='ranking')ranking();else if(h==='admin')admin();else home();if(needTirada())showMaquina()}
+function render(){if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='ranking')ranking();else if(h==='admin')admin();else home();hdrChu();if(needTirada())showMaquina()}
 function go(h){if(location.hash==='#'+h)render();else location.hash=h}
 
 function pending(){
@@ -458,19 +461,19 @@ async function marcarSabotaje(s,qid){
 }
 
 // ===== Comodines como dibujos pequeños =====
-function comIcons(tipos){
+function comIcons(tipos,id='cw'){
   const c=comCount();
   const g=tipos.filter(t=>c[t]>0).map(t=>`<span class="pila">${Array.from({length:c[t]},()=>`<span class="cico" role="button" tabindex="0" data-t="${t}" aria-label="${NOMBRE_COM[t]}"><i>${NOMBRE_COM[t]}</i>${pxIcon(ICO_COM[t],20)}</span>`).join('')}</span>`).join('');
-  return g?`<div class="cw" id="cw">${g}</div>`:'';
+  return g?`<div class="cw" id="${id}">${g}</div>`:'';
 }
-function bindIcons(fn){document.querySelectorAll('#cw .cico').forEach(s=>{const f=()=>{if(s.classList.contains('bote'))return;s.classList.add('bote');setTimeout(()=>fn(s.dataset.t),330)};s.onclick=f;s.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();f()}}})}
+function bindIcons(fn,id='cw'){document.querySelectorAll('#'+id+' .cico').forEach(s=>{const f=()=>{if(s.classList.contains('bote'))return;s.classList.add('bote');setTimeout(()=>fn(s.dataset.t),330)};s.onclick=f;s.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();f()}}})}
+function hdrChu(){const el=document.getElementById('hchu');if(!el)return;el.innerHTML=PID?comIcons(['chu'],'hcw'):'';bindIcons(()=>elegirVictima(),'hcw')}
 function comBar(){
   if(!PID)return '';
   const sab=SAB.length;
-  return `${comIcons(['chu'])}${sab?`<p class="sabn">Te ${sab>1?`han lanzado ${sab} Chulitos`:'ha lanzado un Chulito'} <b></b>: tu${sab>1?`s ${sab}`:''} próxima${sab>1?'s':''} pregunta${sab>1?'s tendrán':' tendrá'} 4 opciones.</p>`:''}`;
+  return `${sab?`<p class="sabn">Te ${sab>1?`han lanzado ${sab} Chulitos`:'ha lanzado un Chulito'} <b></b>: tu${sab>1?`s ${sab}`:''} próxima${sab>1?'s':''} pregunta${sab>1?'s tendrán':' tendrá'} 4 opciones.</p>`:''}`;
 }
 function bindComBar(){
-  bindIcons(()=>elegirVictima());
   const n=document.querySelector('.sabn b');if(n){const ns=[...new Set(SAB.map(s=>s.fromName))];n.textContent='('+ns.join(', ')+')'}
 }
 
