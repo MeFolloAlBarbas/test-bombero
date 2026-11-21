@@ -237,7 +237,7 @@ summary{cursor:pointer}
 @media (prefers-reduced-motion:reduce){#maq .moving .puff,#maq .moving .tlight::after{display:none}}
 .lfx{position:relative;display:inline-block;line-height:0;vertical-align:middle}.lfx>svg{position:relative;z-index:1}.lfx i{position:absolute;bottom:45%;line-height:0;opacity:0;z-index:2;animation:lchispa 1.5s steps(8) infinite}.lfx i:nth-of-type(odd){--dx:-1px}@keyframes lchispa{0%{opacity:0;transform:translate(0,0)}15%{opacity:1}60%{opacity:1}100%{opacity:0;transform:translate(var(--dx,1px),-16px)}}@media (prefers-reduced-motion:reduce){.lfx i{animation:none;opacity:.8}}
 </style>
-<script>const APPV='1795286113';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795286188';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -625,12 +625,11 @@ function racha(hoy){let n=0,t=parse(hoy);if(diaHecho(hoy))n++;t-=864e5;
 const LLAMA_AURA=["..........................","..........QQQQQ...........",".........QQZZZQQ..........",".........QZZKZZQQ.........","........QQZKRKZZQQQQQQ....","........QZZKRRKZQQZZZQQ...",".......QQZKRORKZZZZKZZQ...","...QQQQQZZKROORKZZKRKZQQ..","..QQZZZQZKROOORKZKRRKZZQQ.","..QZZKZZZKROYOORKKRORKZZQ.",".QQZKRKZKRROYYORRKROORKZQ.",".QZZKRRKKROOYYOORRROORKZQ.",".QZKRORKROOYYYYOORROORKZQ.",".QZKROORROOYYYYYOOROORKZQ.",".QZKROOOOOYYYWYYYOOOORKZQ.",".QZKROOOOYYYWWWYYYOOORKZQ.",".QZKRROOOYYWWWWWYYOORRKZQ.",".QZZKROOOYYWWWWWYYOORKZZQ.",".QQZKRROOYYYWWWYYYORRKZQQ.","..QZZKRROOYYYYYYYOORKZZQ..","..QQZZKKRROOOOOOORRKZZQQ..","...QQZZZKKKRRRRRKKKZZQQ...","....QQQZZZZKKKKKZZZZQQ....","......QQQQZZZZZZZQQQQ.....",".........QQQQQQQQQ........",".........................."];
 const LLAMA_PAL=[null,null,{K:'2d1616',R:'fa821e',O:'ffd23c',Y:'fff3a0',W:'ffffff'},{K:'10204a',R:'2a5bd7',O:'4ea1ff',Y:'a8e0ff',W:'ffffff'},{K:'10204a',R:'2a5bd7',O:'4ea1ff',Y:'a8e0ff',W:'ffffff',Z:'7fd0ff',Q:'2f6fb0'}];
 const LLAMA_SPK=[null,['fff3a0','fa821e'],['ffffff','ffd23c'],['ffffff','4ea1ff'],['ffffff','7fd0ff']];
-const LLAMA_NOM=['Llama','Llama viva','Llama al rojo blanco','Llama azul','Fuego azul legendario'];
 function llamaNivel(n){return n>=48?4:n>=24?3:n>=12?2:n>=6?1:0}
 function llamaRacha(n,px){const l=llamaNivel(n),g=l===4?LLAMA_AURA:PX.icons.llama,cm=LLAMA_PAL[l]||PXC,w=Math.max(...g.map(r=>r.length)),h=g.length,s=Math.max(w,h);
   let o=`<svg width="${px}" height="${px}" viewBox="${-(s-w)/2} ${-(s-h)/2} ${s} ${s}" shape-rendering="crispEdges" aria-hidden="true">${pxRects(g,cm)}</svg>`;
   if(LLAMA_SPK[l]){const [a,b]=LLAMA_SPK[l],sz=3;o+=[12,80,30,64,48,92].map((x,i)=>`<i style="left:${x}%;animation-delay:${[0,.5,1,.25,.75,1.25][i]}s"><svg width="${sz}" height="${sz}" viewBox="0 0 3 3" shape-rendering="crispEdges"><rect x="1" y="0" width="1" height="3" fill="#${b}"/><rect x="0" y="1" width="3" height="1" fill="#${b}"/><rect x="1" y="1" width="1" height="1" fill="#${a}"/></svg></i>`).join('')}
-  return `<span class="lfx" title="${LLAMA_NOM[l]}" style="width:${px}px;height:${px}px">${o}</span>`}
+  return `<span class="lfx" style="width:${px}px;height:${px}px">${o}</span>`}
 function rachaHtml(hoy){if(!PID)return '';const n=racha(hoy),wk=weekDays(monday(hoy)).slice(0,6);
   const sq=wk.map(k=>`<i class="rd${diaHecho(k)?' on':''}" title="${nice(k)}"></i>`).join('');
   return `<div class="racha"><div class="rt">${llamaRacha(n,20)}${n?`${n} día${n>1?'s':''} seguido${n>1?'s':''}`:'Contesta las 12 de hoy para empezar tu racha'}</div><div class="rds">${sq}</div></div>`}
