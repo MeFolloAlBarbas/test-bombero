@@ -7,6 +7,8 @@ Reglas:
 - La de las 20:00 es siempre "difícil".
 - Los días ya planificados no se tocan; solo se añaden días nuevos al final.
 - Si no quedan preguntas suficientes para un día completo, el plan se detiene ahí.
+- Las preguntas de intervención (int=1) no se usan aquí: las coloca scripts/intervencion.py
+  (una al día, a hora aleatoria). Ejecutar después: python3 scripts/intervencion.py
 Uso: python3 scripts/plan.py
 """
 import json, random, datetime as dt, os
@@ -30,7 +32,7 @@ while True:
     if not dificiles:
         break
     dura = dificiles[0]
-    normales = [q for q in libres if q['d'] != 'difícil' and q['t'] != dura['t']]
+    normales = [q for q in libres if q['d'] != 'difícil' and not q.get('int') and q['t'] != dura['t']]
     por_tema = {}
     for q in normales:
         por_tema.setdefault(q['t'], []).append(q)
