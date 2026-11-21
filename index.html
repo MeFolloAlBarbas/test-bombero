@@ -252,7 +252,7 @@ summary{cursor:pointer}
 @keyframes tjOut{to{transform:scale(.85) translateY(30px);opacity:0}}@keyframes tjInR{from{transform:translateX(60%) rotate(6deg);opacity:0}}@keyframes tjInL{from{transform:translateX(-60%) rotate(-6deg);opacity:0}}
 @media (prefers-reduced-motion:reduce){.tj-out,.tj-in-r,.tj-in-l{animation:none}}
 </style>
-<script>const APPV='1795287767';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795288131';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Tus fallos</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -966,7 +966,7 @@ function diaPerfecto(k){const d=S.daily[k]||{};return HOURS.every(h=>{const e=d[
 function fiesta(k){
   if(lsGet('fiesta')===k||!diaPerfecto(k))return;lsSet('fiesta',k);
   const ov=document.createElement('div');ov.className='fiesta';
-  ov.innerHTML=`<div class="fbox"><div class="fmasc">${mascFeliz(120)}</div><div class="ftit">¡12 de 12!</div><p>Día perfecto. La llamita está orgullosa.</p><button class="btn" id="fok">¡Vamos!</button></div>`;
+  ov.innerHTML=`<div class="fbox"><div class="fmasc">${mascFeliz(120)}</div><div class="ftit">¡12 de 12!</div><p>Día perfecto</p><button class="btn" id="fok">¡Vamos!</button></div>`;
   document.body.appendChild(ov);
   const box=ov.querySelector('.fbox'),cols=['#ffd23c','#de3422','#fa8723','#7bd389','#6fb6ff'];
   for(let i=0;i<34;i++){const c=document.createElement('i');c.className='fcf';c.style.left=Math.random()*100+'%';c.style.background=cols[i%5];c.style.animationDelay=(Math.random()*.7)+'s';box.appendChild(c)}
