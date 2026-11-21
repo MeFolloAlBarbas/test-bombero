@@ -198,8 +198,9 @@ summary{cursor:pointer}
 .adh{font-size:15px;margin:16px 0 6px}.adg{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;font-size:14px}.adt{grid-template-columns:minmax(0,9em) 1fr 3em;align-items:center}
 .adn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.adbar{height:7px;background:var(--card);border-radius:4px;overflow:hidden}.adbar i{display:block;height:100%}
 .adq{border:0;border-top:1px solid var(--line);border-radius:0;background:none;margin:0;padding:6px 0;font-size:14px}.adq summary>span:last-child{white-space:nowrap}.adq summary{display:flex;justify-content:space-between;gap:10px;cursor:pointer;list-style:none}.adq .note{margin:4px 0}
+.qimg{display:flex;justify-content:center;margin:4px 0 14px}.qimg svg{width:auto;height:150px;max-width:100%}
 </style>
-<script>const APPV='1795267106';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795267465';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -216,6 +217,7 @@ const temas=()=>[...new Set(BANK.map(q=>q.t))];
 const L='ABCD';const OT=(q,i)=>i===3?q.o4:q.o[i];
 const fmt=n=>(Math.round(n*100)/100).toFixed(2).replace('.',',').replace(',00','');
 const byId=id=>BANK.find(q=>q.id===id);
+const qimg=q=>q&&q.img?`<div class="qimg">${q.img}</div>`:'';
 const DIAS=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
 const MESES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 
@@ -621,7 +623,7 @@ function day(k){
     const head=`<span class="hr">${h}:00</span><span class="st ${cls}">${state}</span>`;
     if(locked)return `<div class="slot lk"><div class="sh">${head}</div></div>`;
     if(today&&!s.done)return `<div class="slot"><div class="sh">${head}</div></div>`;
-    return `<details class="slot"><summary class="sh">${head}</summary><p class="sq">${esc(q.t)}</p><p class="enun">${esc(q.q)}</p>
+    return `<details class="slot"><summary class="sh">${head}</summary><p class="sq">${esc(q.t)}</p><p class="enun">${esc(q.q)}</p>${qimg(q)}
       ${de.sab?`<p class="sabq" style="margin:0 0 8px">Chulito de ${esc(de.sab)}: tenía 4 opciones.</p>`:''}${(()=>{const ch=s.a!==null&&s.a!==undefined?s.a:de.wa;return (de.sab&&q.o4?[0,1,2,3]:[0,1,2]).map(o=>`<div class="op rv ${o===q.c?'okc':o===ch?'koc':''}">${o===q.c?'✓ ':o===ch?'✗ ':''}${esc(OT(q,o))}</div>`).join('')})()}${expl(q)}</details>`;
   }).join('');
   app.innerHTML=`
@@ -668,7 +670,7 @@ function summary(m,docs,now){
   const item=r=>`<details class="sumq"><summary><span class="sumpct">${Math.round((r.x+r.b)/r.n*100)} %</span><span>${esc(r.q.q)}</span></summary>
     <p class="sumd">Fallada por ${r.x} y en blanco ${r.b}, de ${r.n} personas.</p>
     ${(()=>{const e=Object.entries(r.w).sort((a,b)=>b[1]-a[1])[0];return e&&e[1]>=2?`<p class="sumko">✗ Error más repetido (${e[1]} personas): ${esc(r.q.o[+e[0]]||'')}</p>`:''})()}
-    <p class="sumok">✓ Correcta: ${esc(r.q.o[r.q.c])}</p>${expl(r.q)}</details>`;
+    ${qimg(r.q)}<p class="sumok">✓ Correcta: ${esc(r.q.o[r.q.c])}</p>${expl(r.q)}</details>`;
   return `<h3 class="sumt">Resumen de la semana</h3>
   <p class="note" style="text-align:center">Acierto medio del grupo: <b>${Math.round(tot.o/tot.n*100)} %</b> (días ya terminados)</p>
   ${(()=>{const T={};for(const r of L){const t=T[r.q.t]=T[r.q.t]||{o:0,n:0};t.o+=r.o;t.n+=r.n}const W=Object.entries(T).filter(([,t])=>t.n>=4).map(([k,t])=>[k,t.o/t.n]).sort((a,b)=>a[1]-b[1]).slice(0,3).filter(x=>x[1]<0.6);return W.length?`<h4 class="sumh">Temas más flojos del grupo</h4><p class="note">${W.map(([k,p])=>`<b>${esc(k)}</b>: ${Math.round(p*100)} % de acierto`).join(' · ')}</p>`:''})()}
@@ -714,7 +716,7 @@ function panelAdmin(L,R){
   const fail=Q.slice().sort((a,b)=>a.o/a.n-b.o/b.n||b.n-a.n).slice(0,5).filter(r=>r.o/r.n<0.7);
   const failH=fail.map(r=>{const e=Object.entries(r.w).sort((a,b)=>b[1]-a[1])[0];
     return `<details class="adq"><summary><span class="adn">#${r.q.id} · ${esc(r.q.q)}</span><span style="color:var(--kol);font-weight:600">${Math.round(r.o/r.n*100)} %</span></summary>
-    <p class="note">Aciertan ${r.o} de ${r.n} · fallan ${r.x} · en blanco ${r.b}</p>${e?`<p class="note" style="color:var(--kot)">Error más repetido (${e[1]}): ${esc(OT(r.q,+e[0])||'')}</p>`:''}<p class="note" style="color:var(--okt)">Correcta: ${esc(r.q.o[r.q.c])}</p></details>`}).join('');
+    ${qimg(r.q)}<p class="note">Aciertan ${r.o} de ${r.n} · fallan ${r.x} · en blanco ${r.b}</p>${e?`<p class="note" style="color:var(--kot)">Error más repetido (${e[1]}): ${esc(OT(r.q,+e[0])||'')}</p>`:''}<p class="note" style="color:var(--okt)">Correcta: ${esc(r.q.o[r.q.c])}</p></details>`}).join('');
   const T={};for(const r of Q){const t=T[r.q.t]=T[r.q.t]||{o:0,n:0};t.o+=r.o;t.n+=r.n}
   const temasH=Object.entries(T).map(([k,t])=>[k,t.o/t.n]).sort((a,b)=>a[1]-b[1]).slice(0,6).map(([k,p])=>{const c=p<0.55?'var(--kol)':p<0.7?'var(--wal)':'var(--okl)',v=Math.round(p*100);
     return `<span class="adn">${esc(k)}</span><span class="adbar"><i style="width:${v}%;background:${c}"></i></span><span>${v} %</span>`}).join('');
@@ -808,7 +810,7 @@ function show(){
   <div class="top"><span>${title}${sim||run.mode==='dia'?'':' · '+fmt(run.net)+' netas'}</span><span>${run.mode==='dia'?nice(run.ctx.k):`Pregunta ${run.i+1} de ${n}`}</span></div>
   <div class="prog"><i style="width:${run.i*100/n}%"></i></div>
   <p class="meta">${esc(q.t)}${q.d==='difícil'?`<span class="chip">${run.mode==='dia'&&run.ctx&&run.ctx.h===20?'Máxima dificultad':'Difícil'}</span>`:''}</p>
-  <p class="enun">${esc(q.q)}</p>
+  <p class="enun">${esc(q.q)}</p>${qimg(q)}
   <div id="avq"></div>
   <div id="ops">${ord.map((o,k)=>`<button class="op" data-o="${o}">${L[k]}. ${esc(OT(q,o))}</button>`).join('')}</div>
   <div id="after"></div>
@@ -897,7 +899,7 @@ function finish(){
   <div class="score"><span>Nota (sobre 10, con penalización)</span><b>${nota.toFixed(2).replace('.',',')}</b>
   <p>${a} aciertos · ${f} fallos · ${bl} en blanco · ${fmt(neta)} netas</p></div>
   <h3 class="sub">${wrong.length?'Revisa las que no acertaste':'Ninguna fallada. Muy bien.'}</h3>
-  ${wrong.map(({q,v})=>`<details><summary>${esc(q.q)}</summary>
+  ${wrong.map(({q,v})=>`<details><summary>${esc(q.q)}</summary>${qimg(q)}
     <p style="margin:10px 0 4px;color:var(--kot)">${v===null?'En blanco':'Tu respuesta: '+esc(q.o[v])}</p>
     <p style="margin:0 0 12px;color:var(--okt);font-weight:600">Correcta: ${esc(q.o[q.c])}</p>${expl(q)}</details>`).join('')}
   <div class="nav" style="justify-content:center"><button class="btn" id="h">Volver al inicio</button></div>`;
