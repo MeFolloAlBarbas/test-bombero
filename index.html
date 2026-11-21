@@ -248,7 +248,7 @@ summary{cursor:pointer}
 .tj-again{background:var(--kob);color:var(--kot);border-color:var(--kol)}.tj-know{background:var(--okb);color:var(--okt);border-color:var(--okl)}.tj-empty{border:1px dashed var(--line);border-radius:14px;padding:30px 16px;text-align:center;color:var(--mut)}
 @media (prefers-reduced-motion:reduce){.tj-card{transition:none}}
 </style>
-<script>const APPV='1795286810';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795286926';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Tus fallos</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -726,6 +726,10 @@ function tarjetasLista(){
     vistos.add(q.id);L.push({q,tu,k})}
   return L}
 const TJ={idx:0};
+function tjMover(d){const i=TJ.idx+d;if(i<0||i>=(TJ.n||0))return;TJ.idx=i;tarjetas()}
+document.addEventListener('keydown',e=>{if(location.hash!=='#tarjetas'||e.ctrlKey||e.metaKey||e.altKey||/INPUT|TEXTAREA|SELECT/.test((e.target||{}).tagName||''))return;const cd=document.getElementById('tjC');if(!cd)return;
+  if(e.key==='ArrowRight'){e.preventDefault();tjMover(1)}else if(e.key==='ArrowLeft'){e.preventDefault();tjMover(-1)}else if(e.key===' '||e.code==='Space'){e.preventDefault();cd.classList.toggle('flip')}});
+
 function tarjetas(){
   run=null;homeBtn.hidden=true;
   const L=tarjetasLista();if(TJ.idx>=L.length)TJ.idx=0;const c=L[TJ.idx];
@@ -734,8 +738,11 @@ function tarjetas(){
   app.innerHTML=`<div class="tj-stage"><div class="tj-card" id="tjC"><div class="tj-face"><h3 class="tj-t">${esc(c.q.t)}</h3><div class="tj-q">${esc(tq)}</div>${qimg(c.q)}<div class="tj-hint">Toca para ver la respuesta</div></div>
   <div class="tj-face tj-back"><h3 class="tj-t">${esc(c.q.t)}</h3><p class="tj-bq">${esc(tq)}</p><div class="tj-a">${esc(ta)}</div></div></div></div>
   <div class="tj-acts"><button class="tj-nav" id="tjP" ${TJ.idx?'':'disabled'}>← Anterior</button><span class="tj-n">${TJ.idx+1} / ${L.length}</span><button class="tj-nav" id="tjN" ${TJ.idx<L.length-1?'':'disabled'}>Siguiente →</button></div>`;
-  const cd=document.getElementById('tjC');cd.onclick=()=>cd.classList.toggle('flip');
-  document.getElementById('tjP').onclick=()=>{TJ.idx--;tarjetas()};document.getElementById('tjN').onclick=()=>{TJ.idx++;tarjetas()};
+  const cd=document.getElementById('tjC');TJ.n=L.length;
+  cd.onclick=()=>{if(TJ.swiped){TJ.swiped=false;return}cd.classList.toggle('flip')};
+  cd.addEventListener('touchstart',e=>{const t=e.touches[0];TJ.tx=t.clientX;TJ.ty=t.clientY},{passive:true});
+  cd.addEventListener('touchend',e=>{const t=e.changedTouches[0],dx=t.clientX-TJ.tx,dy=t.clientY-TJ.ty;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.5){TJ.swiped=true;setTimeout(()=>TJ.swiped=false,400);tjMover(dx<0?1:-1)}},{passive:true});
+  document.getElementById('tjP').onclick=()=>tjMover(-1);document.getElementById('tjN').onclick=()=>tjMover(1);
 }
 let RK={unsub:null,docs:[],sel:null};
 function stopRanking(){if(RK.unsub){RK.unsub();RK.unsub=null}}
