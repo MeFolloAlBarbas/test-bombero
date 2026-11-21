@@ -101,7 +101,7 @@ summary{cursor:pointer}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-start;justify-content:center;padding:24px 12px;overflow:auto;z-index:50}.mbox{background:var(--bg,#fff);color:inherit;max-width:560px;width:100%;border-radius:12px;padding:18px 16px}.podio{margin:0 0 6px;padding-left:22px;font-size:14px}
 .note a{color:#185FA5;text-decoration:underline;font-weight:600}@media (prefers-color-scheme:dark){.note a{color:#85B7EB}}
 
-.maq-ov{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:100;padding:16px;overflow:auto}
+.maq-ov{position:fixed;inset:0;background:rgba(10,10,10,.9);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;z-index:100;padding:16px;overflow:auto}
 .cab{width:210px;margin-top:44px;background:#c0241a;border:3px solid #2d1616;border-radius:16px 16px 8px 8px;padding:0 9px 11px;box-sizing:border-box;position:relative;box-shadow:inset 0 -5px 0 #8f1a12,inset 0 3px 0 #e5483c}
 .cab .masc{position:absolute;left:50%;top:-58px;transform:translateX(-50%)}
 .cab .marq{margin:0 -9px 9px;background:#2d1616;border-radius:13px 13px 0 0;padding:9px 6px 6px}
@@ -158,6 +158,42 @@ summary{cursor:pointer}
 .cico.bote{animation:cbote .35s ease-out forwards}
 @keyframes cbote{0%{transform:scale(1)}40%{transform:scale(2.2) translateY(-4px)}100%{transform:scale(0)}}
 .op.tach{text-decoration:line-through;opacity:.35!important;pointer-events:none}
+
+#maq .tbox{position:relative;display:flex;flex-direction:column;align-items:center;width:280px}
+#maq .ttl{font-family:'Press Start 2P',monospace;font-size:9px;color:#ffd23c;text-shadow:2px 2px 0 #b8302a;margin:0 0 16px}
+#maq .trk{position:relative;width:268px;height:150px}
+#maq .ladder{position:absolute;left:96px;top:6px;width:162px;height:12px;border:3px solid #2d1616;background:repeating-linear-gradient(90deg,#c8c8c8 0 14px,#2d1616 14px 17px);border-radius:3px;z-index:1;box-sizing:content-box}
+#maq .tbody{position:absolute;left:90px;top:22px;width:176px;height:92px;background:#e8392c;border:3px solid #2d1616;border-radius:6px 10px 6px 6px;box-sizing:border-box;box-shadow:inset 0 -8px 0 #b82a20,inset 0 4px 0 #ff6b5e}
+#maq .stripe{position:absolute;left:0;right:0;bottom:16px;height:7px;background:#fffaf0;border-top:2px solid #2d1616;border-bottom:2px solid #2d1616;box-sizing:content-box}
+#maq .tcab{position:absolute;left:2px;top:30px;width:94px;height:84px;background:#e8392c;border:3px solid #2d1616;border-radius:30px 6px 6px 8px;box-sizing:border-box;box-shadow:inset 0 -8px 0 #b82a20,inset 0 4px 0 #ff6b5e}
+#maq .wind{position:absolute;left:8px;top:7px;width:62px;height:40px;background:#c8ebff;border:3px solid #2d1616;border-radius:22px 4px 4px 4px;overflow:hidden;box-sizing:border-box}
+#maq .drv{position:absolute;left:14px;top:2px;line-height:0}
+#maq .glare{position:absolute;left:4px;top:4px;width:8px;height:14px;background:rgba(255,255,255,.7);border-radius:4px;transform:skewX(-15deg)}
+#maq .moving .drv{animation:tbob .25s steps(2) infinite}
+@keyframes tbob{50%{transform:translateY(1px)}}
+#maq .siren{position:absolute;left:40px;top:-16px;width:26px;height:13px;border:3px solid #2d1616;border-bottom:0;border-radius:9px 9px 0 0;background:#d72d1e;z-index:2;animation:tsir .5s steps(1) infinite;box-sizing:border-box}
+@keyframes tsir{50%{background:#378ADD}}
+#maq .spin .siren,#maq .win .siren{animation-duration:.15s}
+#maq .twnd{position:absolute;left:8px;top:12px;display:flex;gap:5px}
+#maq .reel{width:50px;height:56px;background:#fffaf0;border:3px solid #2d1616;border-radius:8px;box-sizing:border-box}
+#maq .twheel{position:absolute;bottom:4px;width:34px;height:34px;border-radius:50%;background:#2d1616;display:flex;align-items:center;justify-content:center;z-index:2}
+#maq .twheel i{width:16px;height:16px;border-radius:50%;background:#c8c8c8;border:3px solid #8c8c8c;box-sizing:border-box;position:relative}
+#maq .twheel i::after{content:'';position:absolute;left:50%;top:-1px;width:2px;height:12px;margin-left:-1px;background:#505050}
+#maq .moving .twheel i{animation:trot .25s linear infinite}
+@keyframes trot{to{transform:rotate(360deg)}}
+#maq .trk.moving{animation:tshake .12s steps(2) infinite}
+@keyframes tshake{50%{transform:translateY(-1px)}}
+#maq .bumper{position:absolute;left:-2px;bottom:14px;width:10px;height:10px;background:#c8c8c8;border:3px solid #2d1616;border-radius:3px;box-sizing:border-box}
+#maq .tlight{position:absolute;left:2px;top:84px;width:8px;height:8px;background:#ffd23c;border:2px solid #2d1616;border-radius:2px;z-index:3}
+#maq .mbtn{width:220px;margin-top:14px;border-radius:22px!important;background:#4cb81c!important;box-shadow:0 4px 0 #2a7a0c,inset 0 3px 0 #8be35a}
+#maq .msnd{position:static;margin-top:10px}
+#maq .reel.tense{box-shadow:0 0 0 2px #ffd23c,0 0 10px #ffd23c}
+#maq .reel{display:flex;align-items:center;justify-content:center;overflow:hidden}
+#maq .reel.spin>*{animation:msp .1s linear infinite}
+#maq .reel.slow>*{animation:msp .22s linear infinite}
+#maq .reel.stop>*{animation:mbo .38s ease-out}
+#maq .reel.tense{animation:mtp .3s steps(1) infinite}
+#maq .tbox.shake{animation:msh .35s}
 </style>
 <script>const APPV='1795245027';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
@@ -394,17 +430,22 @@ function showMaquina(){
   if(document.getElementById('maq'))return;
   const {key}=madrid();
   const ov=document.createElement('div');ov.id='maq';ov.className='maq-ov';
-  ov.innerHTML=`<div class="cab" id="cab">
-    <div class="masc"><svg width="64" height="59" viewBox="0 0 24 22" shape-rendering="crispEdges" aria-hidden="true">${pxRects(PX.masc,PXM)}</svg></div>
-    <span class="msnd" id="msnd" role="button" tabindex="0" aria-label="Sonido"></span>
-    <div class="marq"><h3>TIRADA DEL DÍA</h3><div class="bulbs">${'<i></i>'.repeat(11)}</div></div>
-    <div class="wnd"><div class="reels">${[0,1,2].map(i=>`<div class="reel" id="mr${i}"></div>`).join('')}</div><div class="pay"></div></div>
-    <div class="lever" id="lv"></div>
+  ov.innerHTML=`<div class="tbox" id="cab">
+    <p class="ttl">TIRADA DEL DÍA</p>
+    <div class="trk" id="trk">
+      <div class="ladder"></div>
+      <div class="tbody"><div class="twnd">${[0,1,2].map(i=>`<div class="reel" id="mr${i}"></div>`).join('')}</div><div class="stripe"></div></div>
+      <div class="tcab"><div class="siren"></div><div class="wind"><div class="drv"><svg width="44" height="33" viewBox="0 0 24 18" shape-rendering="crispEdges" aria-hidden="true">${pxRects(PX.masc.slice(0,18),PXM)}</svg></div><div class="glare"></div></div><div class="stripe"></div></div>
+      <div class="tlight"></div><div class="bumper"></div>
+      <div class="twheel" style="left:24px"><i></i></div><div class="twheel" style="left:176px"><i></i></div><div class="twheel" style="left:218px"><i></i></div>
+    </div>
+    <div id="lv" hidden></div>
     <button class="mbtn" id="mgo">TIRAR</button>
     <div class="mres" id="mres"></div>
+    <span class="msnd" id="msnd" role="button" tabindex="0" aria-label="Sonido"></span>
   </div>`;
   document.body.appendChild(ov);document.body.style.overflow='hidden';
-  const R=[0,1,2].map(i=>document.getElementById('mr'+i)),IS=38,K=Object.keys(PX.icons);
+  const R=[0,1,2].map(i=>document.getElementById('mr'+i)),IS=36,K=Object.keys(PX.icons);
   ['llama','chulito','maza'].forEach((k,i)=>R[i].innerHTML=pxIcon(k,IS));
   const ms=document.getElementById('msnd'),pint=()=>{ms.innerHTML=sndIco(sonidoOn());ms.setAttribute('aria-label',sonidoOn()?'Silenciar':'Activar sonido')};pint();
   ms.onclick=()=>{lsSet('sonido',sonidoOn()?'no':'');pint()};
@@ -417,7 +458,7 @@ function showMaquina(){
     if(r!=='none')fin=[r,r,r];
     else{do{fin=[0,1,2].map(()=>K[Math.floor(Math.random()*K.length)])}while(fin[0]===fin[1]&&fin[1]===fin[2])}
     S.tir=Object.assign({},S.tir,{[key]:r});save();
-    R.forEach(x=>{x.classList.remove('stop','tense','slow');x.classList.add('spin')});
+    R.forEach(x=>{x.classList.remove('stop','tense','slow');x.classList.add('spin')});const trk=document.getElementById('trk');trk.classList.add('moving','spin');
     const t=setInterval(()=>{let a=false;R.forEach(x=>{if(x.classList.contains('spin')){a=true;x.innerHTML=pxIcon(K[Math.floor(Math.random()*K.length)],IS)}});if(a)SFX.tick()},90);
     const tense=fin[0]===fin[1],stopAt=[800,1300,tense?3000:1800];
     R.forEach((x,i)=>{
@@ -427,7 +468,7 @@ function showMaquina(){
       setTimeout(()=>{
         x.classList.remove('slow','tense');x.innerHTML=pxIcon(fin[i],IS);void x.offsetWidth;x.classList.add('stop');vib(25);SFX.stop();
         if(i<2)return;
-        clearInterval(t);
+        clearInterval(t);trk.classList.remove('moving','spin');
         const m={manc:'¡ESCUDO!',ext:'¡COMODÍN 50/50!',chulito:'¡CHULITO!'};
         if(r!=='none'){
           cab.classList.add('win','shake');setTimeout(()=>cab.classList.remove('shake'),400);monedas();vib([80,60,80,60,250]);setTimeout(SFX.win,150);
