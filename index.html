@@ -39,7 +39,7 @@ button:focus-visible,select:focus-visible{outline:3px solid var(--inl);outline-o
 .btn:disabled{opacity:.45;cursor:default}
 .home-btn{background:transparent;color:var(--ink);border:1px solid var(--line);padding:6px 14px;font-size:14px}
 .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 22px}
-.stat{background:var(--card);border-radius:8px;padding:12px 14px}
+.stat{background:var(--card);border-radius:8px;padding:12px 14px;text-align:center}
 .stat b{display:block;font-size:24px;font-weight:600;line-height:1.1}
 .stat span{font-size:13px;color:var(--mut)}
 .modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:0 0 26px}
@@ -100,7 +100,7 @@ summary{cursor:pointer}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-start;justify-content:center;padding:24px 12px;overflow:auto;z-index:50}.mbox{background:var(--bg,#fff);color:inherit;max-width:560px;width:100%;border-radius:12px;padding:18px 16px}.podio{margin:0 0 6px;padding-left:22px;font-size:14px}
 .note a{color:#185FA5;text-decoration:underline;font-weight:600}@media (prefers-color-scheme:dark){.note a{color:#85B7EB}}
 </style>
-<script>const APPV='1795244826';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795244887';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
