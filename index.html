@@ -322,9 +322,9 @@ async function connect(){
     const u=await new Promise((res,rej)=>{const off=onAuthStateChanged(auth,x=>{if(x){off();res(x)}});signInAnonymously(auth).catch(rej)});
     FS={fs,db,uid:u.uid,app:appF,B};
     const key=lsGet('key'),pid=lsGet('pid');
-    if(key&&pid&&NAME){await bind(key,pid,NAME);await pull();await cargarSabotajes();pushRank.last=null;save();if(pushState()==='on')enablePush(true)}
+    if(key&&pid&&NAME){await bind(key,pid,NAME);await pull();await cargarSabotajes();await cargarLanzados();pushRank.last=null;save();if(pushState()==='on')enablePush(true)}
     if(!run)render();
-    document.addEventListener('visibilitychange',async()=>{if(document.visibilityState==='visible'){await cargarSabotajes();if(await pull()&&!run)render()}});
+    document.addEventListener('visibilitychange',async()=>{if(document.visibilityState==='visible'){await cargarSabotajes();await cargarLanzados();if(await pull()&&!run)render()}});
   }catch(e){syncNote='No se ha podido conectar con la base de datos; el progreso queda en este navegador.';if(!run)render()}
 }
 
@@ -448,7 +448,15 @@ async function elegirVictima(){
     if(comCount().chu<1){ov.remove();return}
     vl.querySelectorAll('button').forEach(z=>z.disabled=true);
     try{
-      await FS.fs.addDoc(FS.fs.collection(FS.db,'sabotajes'),{to:x.pid,from:PID,fromName:NAME.slice(0,30),t:Date.now(),usado:false});
+      const {fs,db}=FS,lim=fs.doc(db,'chulimite',x.pid+'_'+madrid().key);
+      const ok=await fs.runTransaction(db,async tr=>{
+        const d=await tr.get(lim),n=d.exists()?d.data().n:0;
+        if(n>=2)return false;
+        tr.set(lim,{n:n+1});
+        tr.set(fs.doc(fs.collection(db,'sabotajes')),{to:x.pid,from:PID,fromName:NAME.slice(0,30),toName:x.n.slice(0,30),dia:madrid().key,t:Date.now(),usado:false});
+        return true;
+      });
+      if(!ok){vl.querySelectorAll('button').forEach(z=>z.disabled=false);b.disabled=true;b.textContent=x.n+' · ya ha recibido 2 hoy';return}
       gastar('chu-'+Date.now(),'chu');
       ov.querySelector('.vbox').innerHTML=`<h3>¡Chulito lanzado!</h3><p class="note">La próxima pregunta de <b></b> tendrá 4 opciones.</p><button class="btn" id="vok" style="margin-top:10px">Vale</button>`;
       ov.querySelector('.vbox b').textContent=x.n;
@@ -456,9 +464,25 @@ async function elegirVictima(){
     }catch(e){vl.innerHTML='<p class="note">No se ha podido lanzar. Inténtalo de nuevo.</p>'}
   }});
 }
-async function marcarSabotaje(s,qid){
+async function marcarSabotaje(s,qid,res){
   SAB=SAB.filter(x=>x.id!==s.id);
-  try{await FS.fs.updateDoc(FS.fs.doc(FS.db,'sabotajes',s.id),{usado:true,q:qid,t2:Date.now()})}catch(e){}
+  try{await FS.fs.updateDoc(FS.fs.doc(FS.db,'sabotajes',s.id),{usado:true,q:qid,t2:Date.now(),res})}catch(e){}
+}
+// Resultados de los chulitos que has lanzado (para avisarte)
+let LANZ=[];
+async function cargarLanzados(){
+  if(!FS||!PID)return;
+  try{const {fs,db}=FS,qs=await fs.getDocs(fs.query(fs.collection(db,'sabotajes'),fs.where('from','==',PID),fs.where('usado','==',true)));
+    LANZ=qs.docs.map(d=>({id:d.id,...d.data()})).filter(x=>!x.visto&&x.res).sort((a,b)=>a.t2-b.t2)}catch(e){}
+}
+function lanzBar(){
+  if(!LANZ.length)return '';
+  const txt={ok:'ha acertado la pregunta',ko:'ha fallado la pregunta',bl:'ha dejado la pregunta en blanco',esc:'ha fallado, pero tenía escudo'};
+  return LANZ.map((x,i)=>`<p class="sabn lanz" data-i="${i}" style="${x.res==='ok'?'background:#FCEBEB;color:#791F1F;border-color:#E24B4A':'background:#EAF3DE;color:#27500A;border-color:#639922'}">Tu Chulito a <b></b>: ${txt[x.res]||''}. <a href="#" class="lvis">Vale</a></p>`).join('');
+}
+function bindLanz(){
+  document.querySelectorAll('.lanz').forEach(p=>{const x=LANZ[+p.dataset.i];p.querySelector('b').textContent=x.toName||'tu compañero';
+    p.querySelector('.lvis').onclick=async e=>{e.preventDefault();p.remove();LANZ=LANZ.filter(y=>y.id!==x.id);try{await FS.fs.updateDoc(FS.fs.doc(FS.db,'sabotajes',x.id),{visto:true})}catch(e){}}});
 }
 
 // ===== Comodines como dibujos pequeños =====
@@ -472,9 +496,10 @@ function hdrChu(){const el=document.getElementById('hchu');if(!el)return;el.inne
 function comBar(){
   if(!PID)return '';
   const sab=SAB.length;
-  return `${sab?`<p class="sabn">Te ${sab>1?`han lanzado ${sab} Chulitos`:'ha lanzado un Chulito'} <b></b>: tu${sab>1?`s ${sab}`:''} próxima${sab>1?'s':''} pregunta${sab>1?'s tendrán':' tendrá'} 4 opciones.</p>`:''}`;
+  return `${lanzBar()}${sab?`<p class="sabn">Te ${sab>1?`han lanzado ${sab} Chulitos`:'ha lanzado un Chulito'} <b></b>: tu${sab>1?`s ${sab}`:''} próxima${sab>1?'s':''} pregunta${sab>1?'s tendrán':' tendrá'} 4 opciones.</p>`:''}`;
 }
 function bindComBar(){
+  bindLanz();
   const n=document.querySelector('.sabn b');if(n){const ns=[...new Set(SAB.map(s=>s.fromName))];n.textContent='('+ns.join(', ')+')'}
 }
 
@@ -679,13 +704,13 @@ function show(){
   <div class="prog"><i style="width:${run.i*100/n}%"></i></div>
   <p class="meta">${esc(q.t)}${q.d==='difícil'?`<span class="chip">${run.mode==='dia'&&run.ctx&&run.ctx.h===20?'Máxima dificultad':'Difícil'}</span>`:''}</p>
   <p class="enun">${esc(q.q)}</p>
-  ${run.sab?`<p class="sabq"><b class="sabw"></b> te ha lanzado un Chulito: esta pregunta tiene 4 opciones.</p>`:''}
+  <div id="avq"></div>
   <div id="ops">${ord.map((o,k)=>`<button class="op" data-o="${o}">${L[k]}. ${esc(OT(q,o))}</button>`).join('')}</div>
   <div id="after"></div>
   <div class="nav" id="nav"><button class="btn sec" id="blank">Dejar en blanco</button></div>`;
   app.querySelectorAll('#ops .op').forEach(b=>b.onclick=()=>answer(+b.dataset.o));
   document.getElementById('blank').onclick=()=>sim?(run.ans.push(null),next()):answer(null);
-  if(run.sab)app.querySelector('.sabw').textContent=run.sab.fromName;
+  avisoQ();
   if(run.mode==='dia'&&run.ctx){
     const id=run.ctx.k+'-'+run.ctx.h,t=(S.tach||{})[id];
     const tachar=xs=>xs.forEach(v=>{const b=app.querySelector(`#ops .op[data-o="${v}"]`);if(b)b.classList.add('tach')});
@@ -702,7 +727,15 @@ function show(){
     if((S.gasto||{})['esc-'+id])escudoOn();
   }
 }
-function escudoOn(){if(document.getElementById('escb'))return;document.getElementById('ops').insertAdjacentHTML('beforebegin','<p class="sabq" id="escb" style="background:#EAF3DE;color:#27500A;border-color:#639922">Escudo activado: si fallas, esta pregunta contará como en blanco.</p>')}
+function escudoOn(){run.esc=true;avisoQ()}
+function avisoQ(){
+  const el=document.getElementById('avq');if(!el)return;
+  const s=run.sab,e=run.esc;
+  if(!s&&!e){el.innerHTML='';return}
+  const ico=(k)=>`<span style="vertical-align:-4px;margin-right:4px">${pxIcon(k,18)}</span>`;
+  el.innerHTML=`<p class="sabq" style="${s?'':'background:#EAF3DE;color:#27500A;border-color:#639922'}">${s?ico('chulito')+'<b class="sabw"></b> te ha lanzado un Chulito: esta pregunta tiene 4 opciones.':''}${s&&e?'<br>':''}${e?ico('manc')+'Escudo activado: si fallas, contará como en blanco.':''}</p>`;
+  const w=el.querySelector('.sabw');if(w)w.textContent=s.fromName;
+}
 
 function paint(el,k){
   const ok=k==='ok';
@@ -725,7 +758,7 @@ function answer(o){
     if(esc&&!blank&&!ok){run.escFail=true}
     const ent={id:q.id,a:blank||run.escFail?null:o};if(run.escFail)ent.wa=o;if(esc)ent.esc=1;if(run.sab)ent.sab=run.sab.fromName;
     S.daily[k]=Object.assign({},S.daily[k],{[h]:ent});
-    if(run.sab)marcarSabotaje(run.sab,q.id);
+    if(run.sab)marcarSabotaje(run.sab,q.id,blank?'bl':run.escFail?'esc':ok?'ok':'ko');
   }
   if(!blank)record(q,ok);
   save();
