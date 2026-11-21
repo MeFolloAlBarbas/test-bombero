@@ -2,8 +2,13 @@
 // Lo lanza GitHub Actions (.github/workflows/avisos.yml). Necesita el secreto FIREBASE_SA.
 import admin from 'firebase-admin';
 
-const p = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', weekday: 'short', hourCycle: 'h23' })
-  .formatToParts(new Date(Date.now() + 30 * 60 * 1000)).map(x => [x.type, x.value]));
+// Hora de la pregunta a avisar: si se ejecuta en los últimos 10 minutos de una hora
+// (lo normal, a las :58), avisa de la que se abre a la hora siguiente. Si GitHub lo
+// lanza con retraso (pasada la hora), avisa de la que ya está abierta, no de la siguiente.
+const madrid = d => Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', weekday: 'short', hourCycle: 'h23' })
+  .formatToParts(d).map(x => [x.type, x.value]));
+const ahora = madrid(new Date());
+const p = +ahora.minute >= 50 ? madrid(new Date(Date.now() + 15 * 60 * 1000)) : ahora;
 const hour = +p.hour, day = `${p.year}-${p.month}-${p.day}`;
 const force = process.env.FORZAR === 'si';
 if (!force && (p.weekday === 'Sun' || hour < 9 || hour > 20)) { console.log('Fuera de horario:', day, hour); process.exit(0); }
