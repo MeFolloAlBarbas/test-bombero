@@ -200,8 +200,13 @@ summary{cursor:pointer}
 .adn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.adbar{height:7px;background:var(--card);border-radius:4px;overflow:hidden}.adbar i{display:block;height:100%}
 .adq{border:0;border-top:1px solid var(--line);border-radius:0;background:none;margin:0;padding:6px 0;font-size:14px}.adq summary>span:last-child{white-space:nowrap}.adq summary{display:flex;justify-content:space-between;gap:10px;cursor:pointer;list-style:none}.adq .note{margin:4px 0}
 .qimg{display:flex;justify-content:center;margin:4px 0 14px}.qimg svg{width:auto;height:150px;max-width:100%}
+.fiesta{position:fixed;inset:0;z-index:60;background:rgba(5,12,24,.72);display:flex;align-items:center;justify-content:center;padding:20px}
+.fbox{position:relative;overflow:hidden;background:#0f1b2d;border:2px solid #ffd23c;border-radius:16px;padding:34px 24px 18px;text-align:center;max-width:320px;width:100%;color:#f1f4f8}
+.fmasc{display:inline-block;animation:fsalto .5s ease-in-out infinite alternate}@keyframes fsalto{from{transform:translateY(0)}to{transform:translateY(-12px)}}
+.ftit{font-size:26px;font-weight:700;color:#ffd23c;margin:10px 0 4px}.fbox p{margin:0 0 14px;color:#c9d3df;font-size:14px}
+.fcf{position:absolute;top:-10px;width:7px;height:7px;animation:fcae 1.8s linear forwards}@keyframes fcae{to{transform:translateY(340px) rotate(360deg)}}
 </style>
-<script>const APPV='1795277406';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795277832';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -859,6 +864,21 @@ function paint(el,k){
   el.textContent=(ok?'✓ ':'✗ ')+el.textContent;
 }
 
+// ===== Celebración 12 de 12 (una vez por día) =====
+const MASC_FELIZ=["...K.......K", "..KYK.....KY", "..KYOK...KYO", "..KOOK..KKKK", "...KORKKNNNN", "...KRKNNNNNG", "...KRKNNNNGG", "..KKKKKKKKKK", "..KRRRRRRRRR", ".KRRRRRRRRRR", ".KROOOOOOOOO", ".KROOKKOOOOO", ".KROKOOKOOOO", "KRROOOOOOOOO", "KROPPOKWWWWW", "KRROOKWWWWWW", ".KRROKWSWWWW", "..KRRKWSWWSW", ".KRROKWSWWSW", "KRRYKWWSWWSW", "KOKYKWSWWSWW", "KOKYKSWWSWWW", ".KRYKSWWSWWW", ".KRYYKSWWSWW", ".KRRYKSWWSWW", "..KRRKSWSWWW", "..KRRKSWSWWW", "..KOOKKSWSWW", "..KKKK.KSWSW", ".......KSWSW", "........KSWW", "........KSWW", ".......KSWWS", "........KWSW", ".........KSW", ".........KWW", "..........KW", "..........KK"];
+const MASC_C={K:'2d1616',N:'23376e',G:'f5c32d',R:'de3422',O:'fa8723',Y:'ffd446',W:'fff8e1',P:'ff788c',S:'c8c8d2'};
+function mascFeliz(sz){const g=MASC_FELIZ.map(r=>r+r.split('').reverse().join(''));return `<svg width="${Math.round(sz*24/38)}" height="${sz}" viewBox="0 0 24 38" shape-rendering="crispEdges" aria-hidden="true">${pxRects(g,MASC_C)}</svg>`}
+function diaPerfecto(k){const d=S.daily[k]||{};return HOURS.every(h=>{const e=d[h],q=e&&byId(e.id);return q&&e.a===q.c})}
+function fiesta(k){
+  if(lsGet('fiesta')===k||!diaPerfecto(k))return;lsSet('fiesta',k);
+  const ov=document.createElement('div');ov.className='fiesta';
+  ov.innerHTML=`<div class="fbox"><div class="fmasc">${mascFeliz(120)}</div><div class="ftit">¡12 de 12!</div><p>Día perfecto. La llamita está orgullosa.</p><button class="btn" id="fok">¡Vamos!</button></div>`;
+  document.body.appendChild(ov);
+  const box=ov.querySelector('.fbox'),cols=['#ffd23c','#de3422','#fa8723','#7bd389','#6fb6ff'];
+  for(let i=0;i<34;i++){const c=document.createElement('i');c.className='fcf';c.style.left=Math.random()*100+'%';c.style.background=cols[i%5];c.style.animationDelay=(Math.random()*.7)+'s';box.appendChild(c)}
+  [523,659,784,1047,784,1047,1319].forEach((f,i)=>tono(f,i===6?.45:.13,'square',.08,i*.12));[262,330,392].forEach((f,i)=>tono(f,.3,'triangle',.08,.36+i*.12));vib([60,40,60,40,200]);
+  ov.querySelector('#fok').onclick=()=>ov.remove();
+}
 function answer(o){
   const {q}=run.qs[run.i],blank=o===null,ok=o===q.c;
   if(run.mode==='dia'){
@@ -871,6 +891,8 @@ function answer(o){
     const ent={id:q.id,a:blank||run.escFail?null:o};if(run.escFail)ent.wa=o;if(esc)ent.esc=1;if(run.sab)ent.sab=run.sab.fromName;
     S.daily[k]=Object.assign({},S.daily[k],{[h]:ent});
     if(run.sab)marcarSabotaje(run.sab,q.id,blank?'bl':run.escFail?'esc':ok?'ok':'ko');
+
+    setTimeout(()=>fiesta(k),900);
   }
   if(!blank)record(q,ok);
   save();
