@@ -127,7 +127,7 @@ summary{cursor:pointer}
 .cab .lever{position:absolute;right:-16px;top:74px;width:6px;height:48px;background:#8c8c8c;border:2px solid #2d1616;border-radius:3px;transform-origin:bottom center;transition:transform .25s}
 .cab .lever::before{content:'';position:absolute;top:-13px;left:-6px;width:14px;height:14px;border-radius:50%;background:#d72d1e;border:2px solid #2d1616}
 .cab .lever.down{transform:scaleY(-0.55) translateY(-18px)}
-.msnd{position:absolute;right:6px;bottom:6px;font-size:14px;line-height:1;cursor:pointer;z-index:3;user-select:none}
+.msnd{position:absolute;right:7px;bottom:7px;line-height:0;cursor:pointer;z-index:3;user-select:none}
 .mbtn{display:block;margin-top:11px;width:100%;font-family:'Press Start 2P',monospace;font-size:12px;color:#fff!important;background:#3B9D11!important;border:3px solid #2d1616!important;border-radius:8px;padding:9px 0 8px;box-shadow:0 4px 0 #1f5a08;cursor:pointer;text-shadow:2px 2px 0 #1f5a08}
 .mbtn.sec{background:#ffd23c!important;color:#2d1616!important;text-shadow:none;box-shadow:0 4px 0 #a07c10;font-size:9px}
 .mbtn:active,.mbtn:disabled{transform:translateY(3px);box-shadow:0 1px 0 #1f5a08}
@@ -385,6 +385,9 @@ const SFX={
   tense:()=>{for(let i=0;i<8;i++)tono(330+i*45,.11,'square',.05,i*.17)},
   win:()=>{[523,659,784,1047,784,1047,1319].forEach((f,i)=>tono(f,i===6?.45:.12,'square',.08,i*.11));[262,330,392].forEach((f,i)=>tono(f,.3,'triangle',.08,.33+i*.11))},
   lose:()=>{tono(392,.16,'square',.07);tono(311,.16,'square',.07,.17);tono(247,.32,'square',.07,.34)}};
+const SND_ON=["....K.......","...KK...K...","KKKWK..K.K..","KWWWK.K..K..","KWWWK.K..K..","KWWWK.K..K..","KKKWK..K.K..","...KK...K...","....K......."];
+const SND_OFF=["....K.......","...KK.......","KKKWK.K...K.","KWWWK..K.K..","KWWWK...K...","KWWWK..K.K..","KKKWK.K...K.","...KK.......","....K......."];
+function sndIco(on){return `<svg width="22" height="17" viewBox="0 0 12 9" shape-rendering="crispEdges" aria-hidden="true">${pxRects(on?SND_ON:SND_OFF,{K:'2d1616',W:'fffaf0'})}</svg>`}
 function vib(p){try{navigator.vibrate&&navigator.vibrate(p)}catch(e){}}
 
 function showMaquina(){
@@ -403,7 +406,7 @@ function showMaquina(){
   document.body.appendChild(ov);document.body.style.overflow='hidden';
   const R=[0,1,2].map(i=>document.getElementById('mr'+i)),IS=38,K=Object.keys(PX.icons);
   ['llama','chulito','maza'].forEach((k,i)=>R[i].innerHTML=pxIcon(k,IS));
-  const ms=document.getElementById('msnd'),pint=()=>{ms.textContent=sonidoOn()?'🔊':'🔇'};pint();
+  const ms=document.getElementById('msnd'),pint=()=>{ms.innerHTML=sndIco(sonidoOn());ms.setAttribute('aria-label',sonidoOn()?'Silenciar':'Activar sonido')};pint();
   ms.onclick=()=>{lsSet('sonido',sonidoOn()?'no':'');pint()};
   document.getElementById('mgo').onclick=async()=>{
     const b=document.getElementById('mgo'),res=document.getElementById('mres'),lv=document.getElementById('lv'),cab=document.getElementById('cab');
