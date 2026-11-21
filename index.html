@@ -142,6 +142,7 @@ summary{cursor:pointer}
 .cpills{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
 .cpill{font-size:12px;padding:3px 9px;border-radius:12px;border:1px solid var(--line)}
 .cpill.off{opacity:.55}
+.lanz{display:flex;align-items:center;justify-content:space-between;gap:10px}.lvis{flex:none;min-height:0;height:auto;width:auto;margin:0;line-height:1.4;box-shadow:none;font:inherit;font-size:12px;font-weight:600;padding:3px 12px;border-radius:6px;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer}
 .sabn,.sabq{font-size:13px;margin:8px 0 0;padding:8px 10px;border-radius:8px;background:#FAEEDA;color:#633806;border-left:3px solid #BA7517}
 .cw{display:flex;gap:18px;justify-content:center;margin:18px 0 6px}
 .cico{position:relative;display:inline-block;line-height:0;cursor:pointer;transition:transform .15s;padding:2px;transform-origin:center bottom;background:none;border:0;outline:none}
@@ -200,7 +201,7 @@ summary{cursor:pointer}
 .adq{border:0;border-top:1px solid var(--line);border-radius:0;background:none;margin:0;padding:6px 0;font-size:14px}.adq summary>span:last-child{white-space:nowrap}.adq summary{display:flex;justify-content:space-between;gap:10px;cursor:pointer;list-style:none}.adq .note{margin:4px 0}
 .qimg{display:flex;justify-content:center;margin:4px 0 14px}.qimg svg{width:auto;height:150px;max-width:100%}
 </style>
-<script>const APPV='1795268597';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795277406';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -542,8 +543,8 @@ async function cargarLanzados(){
 }
 function lanzBar(){
   if(!LANZ.length)return '';
-  const txt={ok:'ha acertado la pregunta',ko:'ha fallado la pregunta',bl:'ha dejado la pregunta en blanco',esc:'ha fallado, pero tenía escudo'};
-  return LANZ.slice(0,1).map((x,i)=>`<p class="sabn lanz" data-i="${i}" style="${x.res==='ok'?'background:#FCEBEB;color:#791F1F;border-color:#E24B4A':'background:#EAF3DE;color:#27500A;border-color:#639922'}">Tu Chulito a <b></b>: ${txt[x.res]||''}. <a href="#" class="lvis">Vale</a></p>`).join('');
+  const txt={ok:'ha acertado la pregunta',ko:'ha fallado por tu culpa',bl:'ha dejado la pregunta en blanco',esc:'ha fallado, pero tenía escudo'};
+  return LANZ.slice(0,1).map((x,i)=>`<p class="sabn lanz" data-i="${i}" style="${x.res==='ok'?'background:#FCEBEB;color:#791F1F;border-color:#E24B4A':'background:#EAF3DE;color:#27500A;border-color:#639922'}"><span><b></b> ${txt[x.res]||''}</span><button class="lvis">Vale</button></p>`).join('');
 }
 function bindLanz(){
   document.querySelectorAll('.lanz').forEach(p=>{const x=LANZ[+p.dataset.i];p.querySelector('b').textContent=x.toName||'tu compañero';
@@ -558,21 +559,25 @@ function comIcons(tipos,id='cw'){
 }
 function bindIcons(fn,id='cw'){document.querySelectorAll('#'+id+' .cico').forEach(s=>{const f=()=>{if(s.classList.contains('bote'))return;s.classList.add('bote');setTimeout(()=>fn(s.dataset.t),330)};s.onclick=f;s.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();f()}}})}
 function hdrChu(){const el=document.getElementById('hchu');if(!el)return;el.innerHTML=PID?comIcons(['chu'],'hcw'):'';bindIcons(()=>elegirVictima(),'hcw')}
+function sabMsg(){
+  const sab=SAB.length,ns=[...new Set(SAB.map(s=>s.fromName||'Un compañero'))];
+  const quien=ns.length>1?ns.slice(0,-1).join(', ')+' y '+ns[ns.length-1]:ns[0];
+  return `<p class="sabn"><b>${esc(quien)}</b> te ${ns.length>1?'han':'ha'} lanzado ${sab>1?sab+' Chulitos':'un Chulito'}: tu${sab>1?`s ${sab}`:''} próxima${sab>1?'s':''} pregunta${sab>1?'s tendrán':' tendrá'} 4 opciones.</p>`;
+}
 function avisoUnico(){
   if(!PID)return pushBox();
   const sab=SAB.length;
-  if(sab)return `<p class="sabn">Te ${sab>1?`han lanzado ${sab} Chulitos`:'ha lanzado un Chulito'} <b></b>: tu${sab>1?`s ${sab}`:''} próxima${sab>1?'s':''} pregunta${sab>1?'s tendrán':' tendrá'} 4 opciones.</p>`;
+  if(sab)return sabMsg();
   if(LANZ.length)return lanzBar();
   return pushBox();
 }
 function comBar(){
   if(!PID)return '';
   const sab=SAB.length;
-  return `${lanzBar()}${sab?`<p class="sabn">Te ${sab>1?`han lanzado ${sab} Chulitos`:'ha lanzado un Chulito'} <b></b>: tu${sab>1?`s ${sab}`:''} próxima${sab>1?'s':''} pregunta${sab>1?'s tendrán':' tendrá'} 4 opciones.</p>`:''}`;
+  return `${lanzBar()}${sab?sabMsg():''}`;
 }
 function bindComBar(){
   bindLanz();
-  const n=document.querySelector('.sabn b');if(n){const ns=[...new Set(SAB.map(s=>s.fromName))];n.textContent='('+ns.join(', ')+')'}
 }
 
 function home(){
