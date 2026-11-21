@@ -32,7 +32,7 @@ while True:
     if not dificiles:
         break
     dura = dificiles[0]
-    normales = [q for q in libres if q['d'] != 'difícil' and not q.get('int') and q['t'] != dura['t']]
+    normales = [q for q in libres if q['d'] != 'difícil' and not q.get('int') and not q.get('ex') and q['t'] != dura['t']]
     por_tema = {}
     for q in normales:
         por_tema.setdefault(q['t'], []).append(q)
