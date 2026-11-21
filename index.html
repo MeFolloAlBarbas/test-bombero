@@ -147,6 +147,9 @@ summary{cursor:pointer}
 .cico:hover,.cico:focus-visible{transform:scale(2);z-index:2}
 .cico i{position:absolute;left:50%;bottom:100%;transform:translateX(-50%) scale(.5);transform-origin:center bottom;white-space:nowrap;font-style:normal;font-size:11px;line-height:1.3;background:#fffaf0;color:#2d1616;padding:2px 6px;border-radius:4px;opacity:0;pointer-events:none;transition:opacity .15s;margin-bottom:2px}
 .cico:hover i,.cico:focus-visible i{opacity:1}
+.cw.pila{gap:0}
+.cw.pila .cico+.cico{margin-left:-15px}
+.cw.pila .cico:hover,.cw.pila .cico:focus-visible{z-index:5}
 .cico.bote{animation:cbote .35s ease-out forwards}
 @keyframes cbote{0%{transform:scale(1)}40%{transform:scale(2.2) translateY(-4px)}100%{transform:scale(0)}}
 .op.tach{text-decoration:line-through;opacity:.35!important;pointer-events:none}
@@ -455,16 +458,16 @@ async function marcarSabotaje(s,qid){
 }
 
 // ===== Comodines como dibujos pequeños =====
-function comIcons(tipos){
+function comIcons(tipos,pila){
   const c=comCount();let o='';
   for(const t of tipos)for(let i=0;i<c[t];i++)o+=`<span class="cico" role="button" tabindex="0" data-t="${t}" aria-label="${NOMBRE_COM[t]}"><i>${NOMBRE_COM[t]}</i>${pxIcon(ICO_COM[t],20)}</span>`;
-  return o?`<div class="cw" id="cw">${o}</div>`:'';
+  return o?`<div class="cw${pila?' pila':''}" id="cw">${o}</div>`:'';
 }
 function bindIcons(fn){document.querySelectorAll('#cw .cico').forEach(s=>{const f=()=>{if(s.classList.contains('bote'))return;s.classList.add('bote');setTimeout(()=>fn(s.dataset.t),330)};s.onclick=f;s.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();f()}}})}
 function comBar(){
   if(!PID)return '';
   const sab=SAB.length;
-  return `${comIcons(['chu'])}${sab?`<p class="sabn">Te ${sab>1?`han lanzado ${sab} Chulitos`:'ha lanzado un Chulito'} <b></b>: tu${sab>1?`s ${sab}`:''} próxima${sab>1?'s':''} pregunta${sab>1?'s tendrán':' tendrá'} 4 opciones.</p>`:''}`;
+  return `${comIcons(['chu'],true)}${sab?`<p class="sabn">Te ${sab>1?`han lanzado ${sab} Chulitos`:'ha lanzado un Chulito'} <b></b>: tu${sab>1?`s ${sab}`:''} próxima${sab>1?'s':''} pregunta${sab>1?'s tendrán':' tendrá'} 4 opciones.</p>`:''}`;
 }
 function bindComBar(){
   bindIcons(()=>elegirVictima());
