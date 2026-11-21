@@ -99,7 +99,7 @@ summary{cursor:pointer}
 .sumt{font-size:17px;text-align:center;margin:26px 0 4px}.sumh{font-size:14px;margin:14px 0 6px}.sumq{border:1px solid var(--line,#ddd);border-radius:8px;margin:0 0 6px;padding:6px 10px;font-size:13px}.sumq summary{cursor:pointer;display:flex;gap:10px;align-items:baseline}.sumpct{font-weight:700;color:var(--kot);min-width:3em}.sumd{font-size:12px;opacity:.8;margin:8px 0 4px}.sumko{font-weight:600;color:var(--kot);margin:0 0 4px}.sumok{font-weight:600;color:var(--okt);margin:0 0 8px}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:flex-start;justify-content:center;padding:24px 12px;overflow:auto;z-index:50}.mbox{background:var(--bg,#fff);color:inherit;max-width:560px;width:100%;border-radius:12px;padding:18px 16px}.podio{margin:0 0 6px;padding-left:22px;font-size:14px}
 </style>
-<script>const APPV='1795243745';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795243754';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -284,8 +284,6 @@ function pending(){
   for(const hh of HOURS){if(hh>hour)break;if(!(S.daily[key]||{})[hh]&&slotQ(key,hh))return {k:key,h:hh}}
   return null;
 }
-// Plazas de Bombero/a Especialista aprobadas en OEP y sin convocar: 118 (2024) + 110 (2025) + 185 (2026)
-const PLAZAS=413;
 function home(){
   run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   const p=pending();
@@ -303,7 +301,7 @@ function home(){
   <div class="score"><h2>${sun?'Hoy es domingo: descanso':!hasDay(key)?'Preguntas de hoy pendientes de publicar':nxt?'Estás al día':'Día completado'}</h2>
   <p>${sun?'El lunes vuelven las preguntas a las 9:00.':!hasDay(key)?'Todavía no se han publicado las preguntas de hoy. Vuelve más tarde.':nxt?`La siguiente pregunta se abre a las ${nxt}:00.`:'Has terminado las preguntas de hoy. Mañana, más.'}</p></div>
   <div class="stats">
-    <div class="stat"><b>${PLAZAS}</b><span>plazas pendientes de convocar</span><span style="font-size:11px">2024: 118 · 2025: 110 · 2026: 185</span></div>
+    <div class="stat"><b>${fmt(netaDay(key))}</b><span>netas hoy</span></div>
     <div class="stat"><b>${fmt(w?w.neta:0)}</b><span>netas esta semana</span></div>
     <div class="stat"><b>${ok+ko?Math.round(ok*100/(ok+ko))+' %':'–'}</b><span>de acierto</span></div>
   </div>
