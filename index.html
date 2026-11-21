@@ -194,8 +194,12 @@ summary{cursor:pointer}
 #maq .reel.stop>*{animation:mbo .38s ease-out}
 #maq .reel.tense{animation:mtp .3s steps(1) infinite}
 #maq .tbox.shake{animation:msh .35s}
+.adcs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:6px}.adc{background:var(--card);border-radius:10px;padding:8px;text-align:center}.adc span{display:block;font-size:12px;color:var(--mut)}.adc b{font-size:22px}
+.adh{font-size:15px;margin:16px 0 6px}.adg{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;font-size:14px}.adt{grid-template-columns:minmax(0,9em) 1fr 3em;align-items:center}
+.adn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.adbar{height:7px;background:var(--card);border-radius:4px;overflow:hidden}.adbar i{display:block;height:100%}
+.adq{border:0;border-top:1px solid var(--line);border-radius:0;background:none;margin:0;padding:6px 0;font-size:14px}.adq summary>span:last-child{white-space:nowrap}.adq summary{display:flex;justify-content:space-between;gap:10px;cursor:pointer;list-style:none}.adq .note{margin:4px 0}
 </style>
-<script>const APPV='1795259407';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795266860';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#historial">Días anteriores</a><a href="#ranking">Ranking</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -693,6 +697,36 @@ async function weeklyPopup(){
   const close=()=>{lsSet(seen,1);ov.remove()};
   ov.querySelector('#mclose').onclick=close;ov.onclick=e=>{if(e.target===ov)close()};
 }
+function panelAdmin(L,R){
+  const now=madrid(),today=now.key,m=monday(today),wk=weekDays(m);
+  const open=dow(today)!==0&&hasDay(today)?HOURS.filter(h=>h<=now.hour).length:0;
+  const answered=e=>Object.keys((e.daily||{})[today]||{}).length;
+  const last=e=>Object.keys(e.daily||{}).filter(k=>Object.keys(e.daily[k]||{}).length).sort().pop();
+  const hoy=L.filter(r=>answered(r.e)>0).length;
+  const st={};for(const d of R){const a=(d.w[m]||{}).ans||{};for(const id in a){const s=st[id]=st[id]||{o:0,x:0,b:0,w:{}};const v=a[id];if(v==='o'||v==='b')s[v]++;else{s.x++;const j=v.slice(1);if(j!=='')s.w[j]=(s.w[j]||0)+1}}}
+  const Q=Object.entries(st).map(([id,s])=>({q:byId(+id),...s,n:s.o+s.x+s.b})).filter(r=>r.q&&r.n>=2);
+  const tot=Q.reduce((t,r)=>({o:t.o+r.o,n:t.n+r.n}),{o:0,n:0});
+  const card=(l,v)=>`<div class="adc"><span>${l}</span><b>${v}</b></div>`;
+  const act=open?L.map(r=>{const a=answered(r.e);if(a){const c=a>=open?'var(--okl)':a>=open/2?'var(--wal)':'var(--kol)';return [a,`<span class="adn">${esc(r.n)}</span><span style="color:${c};font-weight:600">${a}/${open}</span>`]}
+    const lk=last(r.e);let n=0;if(lk)for(let t=parse(lk)+864e5;t<parse(today);t+=864e5){const k=keyOf(t);if(dow(k)!==0&&hasDay(k))n++}
+    return [-1,`<span class="adn">${esc(r.n)}</span><span style="color:var(--kol);font-weight:600">${lk?(n?`Sin entrar (${n} día${n>1?'s':''})`:'Sin entrar hoy'):'Nunca ha respondido'}</span>`]}).sort((a,b)=>b[0]-a[0]).map(x=>x[1]).join(''):'';
+  const fail=Q.slice().sort((a,b)=>a.o/a.n-b.o/b.n||b.n-a.n).slice(0,5).filter(r=>r.o/r.n<0.7);
+  const failH=fail.map(r=>{const e=Object.entries(r.w).sort((a,b)=>b[1]-a[1])[0];
+    return `<details class="adq"><summary><span class="adn">#${r.q.id} · ${esc(r.q.q)}</span><span style="color:var(--kol);font-weight:600">${Math.round(r.o/r.n*100)} %</span></summary>
+    <p class="note">Aciertan ${r.o} de ${r.n} · fallan ${r.x} · en blanco ${r.b}</p>${e?`<p class="note" style="color:var(--kot)">Error más repetido (${e[1]}): ${esc(OT(r.q,+e[0])||'')}</p>`:''}<p class="note" style="color:var(--okt)">Correcta: ${esc(r.q.o[r.q.c])}</p></details>`}).join('');
+  const T={};for(const r of Q){const t=T[r.q.t]=T[r.q.t]||{o:0,n:0};t.o+=r.o;t.n+=r.n}
+  const temasH=Object.entries(T).map(([k,t])=>[k,t.o/t.n]).sort((a,b)=>a[1]-b[1]).slice(0,6).map(([k,p])=>{const c=p<0.55?'var(--kol)':p<0.7?'var(--wal)':'var(--okl)',v=Math.round(p*100);
+    return `<span class="adn">${esc(k)}</span><span class="adbar"><i style="width:${v}%;background:${c}"></i></span><span>${v} %</span>`}).join('');
+  const C={chu:0,esc:0,f50:0},inW=k=>k>=m&&k<=wk[5];
+  for(const r of L)for(const id in r.e.gasto||{}){const t=r.e.gasto[id];if(!(t in C))continue;const k=t==='chu'?keyOf(+id.split('-')[1]+36e5):id.split('-').slice(1,4).join('-');if(inW(k))C[t]++}
+  return `<h2 style="font-size:19px;text-align:center;margin:0 0 2px">Panel de administrador</h2>
+  <p class="note" style="text-align:center;margin:0 0 12px">Semana del ${nice(m)} al ${nice(wk[5])}</p>
+  <div class="adcs">${card('Participantes',L.length)}${card('Entraron hoy',hoy)}${card('Acierto medio',tot.n?Math.round(tot.o/tot.n*100)+' %':'—')}</div>
+  <h3 class="adh">Actividad de hoy</h3>${open?`<div class="adg">${act||'<span class="note">Sin participantes.</span>'}</div>`:'<p class="note">Hoy no hay preguntas.</p>'}
+  <h3 class="adh">Preguntas más falladas de la semana</h3>${failH||'<p class="note">Ninguna baja del 70 % de acierto (o aún hay pocas respuestas).</p>'}
+  <h3 class="adh">Temas más flojos del grupo</h3>${temasH?`<div class="adg adt">${temasH}</div>`:'<p class="note">Todavía no hay respuestas esta semana.</p>'}
+  <h3 class="adh">Comodines</h3><p class="note">Esta semana: ${C.chu} Chulito${C.chu===1?'':'s'} lanzado${C.chu===1?'':'s'} · ${C.esc} escudo${C.esc===1?'':'s'} usado${C.esc===1?'':'s'} · ${C.f50} 50/50</p>`;
+}
 async function admin(msg){
   run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   if(!FS){app.innerHTML='<p class="empty">Conectando con la base de datos… vuelve a intentarlo en unos segundos.</p>';return}
@@ -707,10 +741,11 @@ async function admin(msg){
       try{await fs.setDoc(fs.doc(db,'admins',uid),{code:c,t:Date.now()});admin()}catch(e){document.getElementById('aerr').textContent='Código incorrecto.'}};
     return;
   }
-  app.innerHTML='<p class="empty">Cargando participantes…</p>';
-  let L=[];try{L=(await fs.getDocs(fs.collection(db,'copias'))).docs.map(d=>({pid:d.id,n:d.data().nombre||'(sin nombre)'})).sort((a,b)=>a.n.localeCompare(b.n,'es'))}
+  app.innerHTML='<p class="empty">Cargando panel…</p>';
+  let L=[],R=[];try{L=(await fs.getDocs(fs.collection(db,'copias'))).docs.map(d=>({pid:d.id,n:d.data().nombre||'(sin nombre)',e:d.data().estado||{}})).sort((a,b)=>a.n.localeCompare(b.n,'es'))}
   catch(e){app.innerHTML='<p class="empty">No se ha podido cargar la lista. Revisa que las reglas nuevas estén publicadas.</p>';return}
-  app.innerHTML=`<h2 style="font-size:19px;text-align:center;margin:0 0 4px">Administración</h2>
+  try{R=(await fs.getDocs(fs.collection(db,'ranking'))).docs.map(d=>({id:d.id,w:d.data().weeks||{}}))}catch(e){}
+  app.innerHTML=`${panelAdmin(L,R)}<h3 class="adh" style="margin-top:22px">Restablecer PIN</h3>
   <p class="note" style="text-align:center;margin:0 0 12px">Restablecer el PIN de un participante. Conserva todo su progreso; después debe cambiarlo en «cambiar PIN».</p>
   <p class="note" id="amsg" style="font-weight:600;color:var(--okt)">${msg||''}</p>
   ${L.map((r,i)=>`<div class="rk pass" style="grid-template-columns:minmax(0,1fr) 5em auto;background:transparent;color:inherit"><b class="an"></b>
