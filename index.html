@@ -248,7 +248,7 @@ summary{cursor:pointer}
 .tj-again{background:var(--kob);color:var(--kot);border-color:var(--kol)}.tj-know{background:var(--okb);color:var(--okt);border-color:var(--okl)}.tj-empty{border:1px dashed var(--line);border-radius:14px;padding:30px 16px;text-align:center;color:var(--mut)}
 @media (prefers-reduced-motion:reduce){.tj-card{transition:none}}
 </style>
-<script>const APPV='1795286742';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795286810';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Tus fallos</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -428,7 +428,7 @@ const ptsOf=(a,q)=>a===null?0:a===q.c?1:-0.33;
 const netaDay=k=>Object.values(S.daily[k]||{}).reduce((t,d)=>{const q=byId(d.id);return t+(q?ptsOf(d.a,q):0)},0);
 
 /* vistas */
-function render(){if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='tarjetas')tarjetas();else if(h==='ranking')ranking();else if(h==='admin')admin();else home();hdrChu();if(needTirada())showMaquina()}
+function render(){if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='tarjetas')tarjetas();else if(h==='ranking')ranking();else if(h==='admin')admin();else home();hdrChu();if(needTirada())showMaquina()}
 function go(h){if(location.hash==='#'+h)render();else location.hash=h}
 
 function pending(){
@@ -701,12 +701,22 @@ function day(k){
   <h2 style="font-size:19px;margin:0 0 4px">${nice(k)}</h2>
   <p class="note" style="margin:0 0 16px">${today?'Las preguntas solo se pueden responder hoy. Mañana quedarán para revisar.':'Este día ya está cerrado: puedes revisar tus respuestas, pero no contestar.'}</p>
   ${rows}
-  <div class="nav">${today&&pending()?'<button class="btn" id="bNext">Responder la siguiente</button>':''}</div>`;
+  <div class="nav">${today&&pending()?'<button class="btn" id="bNext">Responder la siguiente</button>':''}<button class="btn sec" id="bHist">Días anteriores</button></div>`;
+  document.getElementById('bHist').onclick=()=>go('historial');
   const bn=document.getElementById('bNext');if(bn)bn.onclick=()=>go('inicio');
 }
 
 
 
+function history(){
+  run=null;homeBtn.hidden=true;window.scrollTo(0,0);
+  const now=madrid().key,first=[S.start||now,...Object.keys(S.daily)].sort()[0],list=[];
+  for(let t=parse(now)-864e5;t>=parse(first);t-=864e5){const k=keyOf(t);if(dow(k)!==0)list.push(k)}
+  app.innerHTML=`<h2 style="font-size:19px;margin:0 0 12px">Días anteriores</h2>${list.length?list.map(k=>{
+    const n=Object.values(S.daily[k]||{}),r=n.filter(d=>{const q=byId(d.id);return q&&d.a!==null}).length;
+    return `<button class="op dayrow" data-k="${k}"><span>${nice(k)}</span><span class="mut">${n.length}/12 respondidas · ${fmt(netaDay(k))} netas</span></button>`}).join(''):'<p class="empty">Todavía no hay días anteriores. Aparecerán aquí a partir de mañana.</p>'}`;
+  app.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>go('dia-'+b.dataset.k));
+}
 // ===== Tarjetas de estudio: cada fallo o pregunta en blanco se convierte en una tarjeta =====
 function tarjetasLista(){
   const vistos=new Set(),L=[];
