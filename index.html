@@ -338,11 +338,13 @@ summary{cursor:pointer}
 #nvart{position:fixed;inset:0;background:var(--bg);overflow:auto;transform:translateX(100%);transition:transform .28s ease;z-index:60;text-align:left}
 #nvart.on{transform:none}
 #nvart{touch-action:pan-y}
-.nv-pg{display:flex;gap:6px;justify-content:center;margin:26px 0 0}.nv-pg i{width:6px;height:6px;border-radius:50%;background:var(--line)}.nv-pg i.on{background:var(--nvac)}
+.nv-top{position:sticky;top:0;z-index:2;background:var(--bg)}
+.nv-top .nv-pg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
+.nv-pg{display:flex;gap:6px;justify-content:center}.nv-pg i{width:6px;height:6px;border-radius:50%;background:var(--line)}.nv-pg i.on{background:var(--nvac)}
 html.nv-lock,html.nv-lock body{overflow:hidden}
 @media(min-width:720px){.nv-hero{margin:0 max(5vw,16px);border-radius:14px;overflow:hidden}}
 #nvart .nv-w{max-width:680px;margin:auto;padding:0 0 60px}
-#nvart .nv-back{position:sticky;top:0;background:var(--bg);display:flex;align-items:center;gap:6px;padding:12px max(5vw,16px);font:inherit;font-size:15px;border:0;width:100%;color:var(--ink);cursor:pointer;z-index:2}
+#nvart .nv-back{background:var(--bg);display:flex;align-items:center;gap:6px;padding:12px max(5vw,16px);font:inherit;font-size:15px;border:0;width:100%;color:var(--ink);cursor:pointer;z-index:2}
 .nv-hero{aspect-ratio:16/9;background:var(--il1)}
 #nvart .nv-b{padding:0 max(5vw,16px)}
 #nvart h1{font-size:25px;line-height:1.25;margin:6px 0 14px}
@@ -370,7 +372,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795352893';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795353045';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1351,7 +1353,7 @@ function pintaNov(){
   nvTimer();
 }
 let NVA=0;
-function nvArtHtml(n){return `<div class="nv-w"><button class="nv-back" id="nvBack">‹ Volver</button><div class="nv-hero">${nvIl(n)}</div><div class="nv-b"><div class="nv-m">${nvMeta(n)}</div><h1>${esc(n.tit)}</h1>${n.txt.map(p=>`<p>${esc(p)}</p>`).join('')}${n.clave?`<div class="nv-clave"><b>A tener en cuenta</b>${esc(n.clave)}</div>`:''}<a class="nv-doc" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.doc||'Ver documento')} ↗</a><div class="nv-pg">${NOV.map((x,k)=>`<i class="${k===NVA?'on':''}"></i>`).join('')}</div></div></div>`}
+function nvArtHtml(n){return `<div class="nv-w"><div class="nv-top"><button class="nv-back" id="nvBack">‹ Volver</button><div class="nv-pg">${NOV.map((x,k)=>`<i class="${k===NVA?'on':''}"></i>`).join('')}</div></div><div class="nv-hero">${nvIl(n)}</div><div class="nv-b"><div class="nv-m">${nvMeta(n)}</div><h1>${esc(n.tit)}</h1>${n.txt.map(p=>`<p>${esc(p)}</p>`).join('')}${n.clave?`<div class="nv-clave"><b>A tener en cuenta</b>${esc(n.clave)}</div>`:''}<a class="nv-doc" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.doc||'Ver documento')} ↗</a></div></div>`}
 function nvPinta(dir){
   const A=document.getElementById('nvart'),n=NOV[NVA];
   const put=()=>{A.innerHTML=nvArtHtml(n);A.scrollTop=0;document.getElementById('nvBack').onclick=nvCerrar;
