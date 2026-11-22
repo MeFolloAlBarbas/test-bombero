@@ -373,7 +373,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795353554';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795353942';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1163,7 +1163,7 @@ function parecidosHtml(){
 function erratasHtml(){
   const hechas=new Set();for(const k in S.daily)for(const h in S.daily[k])hechas.add(S.daily[k][h].id);
   const V=LAB.err.filter(e=>!e.q||hechas.has(e.q)),falta=LAB.err.length-V.length;
-  return `<p class="lab-in">Fallos de los manuales, contrastados con la norma.</p>`+(V.length?'':'<p class="tj-empty">Cada errata aparecerá aquí después de responder su pregunta.</p>')+(falta?`<p class="gl-mas">Por descubrir: ${falta} ${falta===1?'errata':'erratas'}.</p>`:'')+V.map(e=>`<div class="err"><div class="err-t">${esc(e.t)}</div><div class="err-m">${esc(e.tema)} · ${esc(e.m)}</div><div class="err-b err-d"><span class="err-lb">El manual dice</span><q>${esc(e.dice)}</q></div><div class="err-b err-r"><span class="err-lb">En realidad</span>${e.real}</div><div class="err-b err-x"><span class="err-lb">Ojo en el examen</span>${esc(e.exa)}</div><div class="err-f">Fuente: ${esc(e.f)}</div></div>`).join('');
+  return `<p class="lab-in">Fallos de los manuales, contrastados con la norma.</p>`+(V.length?'':'<p class="tj-empty">Cada errata del manual aparecerá aquí después de responder su pregunta.</p>')+(falta?`<p class="gl-mas">Por descubrir: ${falta} ${falta===1?'errata':'erratas'}.</p>`:'')+V.map(e=>`<div class="err"><div class="err-t">${esc(e.t)}</div><div class="err-m">${esc(e.tema)} · ${esc(e.m)}</div><div class="err-b err-d"><span class="err-lb">El manual dice</span><q>${esc(e.dice)}</q></div><div class="err-b err-r"><span class="err-lb">En realidad</span>${e.real}</div><div class="err-b err-x"><span class="err-lb">Ojo en el examen</span>${esc(e.exa)}</div><div class="err-f">Fuente: ${esc(e.f)}</div></div>`).join('');
 }
 function alertaPanel(t){const m=document.getElementById('amsg');if(m){m.style.color='var(--kot)';m.textContent=t}}
 // ===== preguntas guardadas en tus tarjetas =====
