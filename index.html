@@ -289,7 +289,7 @@ summary{cursor:pointer}
 .err-d{background:var(--kob);border-color:var(--kol);color:var(--kot)}.err-d q{font-style:italic}.err-r{background:var(--okb);border-color:var(--okl);color:var(--okt)}.err-x{background:var(--wab);border-color:var(--wal);color:var(--wat)}.err-f{font-size:12px;color:var(--mut)}
 .par .gl-n{color:#2f6f73}@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .par .gl-n{color:#8fc9cb}}:root[data-theme=dark] .par .gl-n{color:#8fc9cb}
 </style>
-<script>const APPV='1795312447';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795312541';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1039,7 +1039,7 @@ function parecidosHtml(){
   const vis=gVistos(),idx=t=>{const g=GLOS.find(x=>x.t===t);return g?g.i:-1};
   const L=LAB.par.filter(p=>p.g.some(t=>vis.has(idx(t)))),falta=LAB.par.length-L.length;
   let h=`<p class="lab-in">Parejas que el examen mezcla a propósito.</p>`;
-  h+=L.map(p=>`<div class="par"><div class="par-c">${esc(p.tema)}</div><div class="par-2"><div class="par-l"><div class="gl-n">${esc(p.a)}</div><div class="par-d">${esc(p.ad)}</div></div><div class="par-l"><div class="gl-n">${esc(p.b)}</div><div class="par-d">${esc(p.bd)}</div></div></div><div class="par-k"><b>La clave:</b> ${p.clave}</div></div>`).join('');
+  h+=L.map(p=>`<div class="par"><div class="par-c">${esc(p.tema)}</div><div class="par-2"><div class="par-l"><div class="gl-n">${esc(p.a)}</div><div class="par-d">${esc(p.ad)}</div></div><div class="par-l"><div class="gl-n">${esc(p.b)}</div><div class="par-d">${esc(p.bd)}</div></div></div><div class="par-k">${p.clave}</div></div>`).join('');
   if(!L.length)h+='<p class="tj-empty">Las parejas irán apareciendo según respondas preguntas de sus términos.</p>';
   if(falta)h+=`<p class="gl-mas">Por descubrir: ${falta} ${falta===1?'pareja':'parejas'} más.</p>`;
   return h;
