@@ -296,8 +296,10 @@ summary{cursor:pointer}
 .aex,.area{font:inherit;font-size:14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;padding:6px 12px;min-height:40px}
 .aex.warn{background:var(--kob);color:var(--kot);border-color:var(--kol);font-weight:600}
 .arow{display:grid;grid-template-columns:minmax(0,1fr) 5.5em auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}.arow .an{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.arow input{font:inherit;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%}.arow button{font:inherit;font-size:14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;padding:6px 12px;min-height:40px}
+.podio{list-style:none;padding:0;margin:0 0 6px}.podio li{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:8px;background:var(--card);margin:0 0 5px}.podio .pm{font-size:20px}.podio .pn{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.podio .pt{font-size:14px;color:var(--mut);white-space:nowrap}
+.flojos{list-style:none;padding:0;margin:0 0 6px}.flojos li{display:flex;justify-content:space-between;gap:10px;padding:7px 10px;border-radius:8px;background:var(--kob);color:var(--kot);margin:0 0 5px;font-size:15px}
 </style>
-<script>const APPV='1795313371';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795313801';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -826,35 +828,35 @@ function summary(m,docs,now){
   const tot=L.reduce((t,r)=>({o:t.o+r.o,n:t.n+r.n}),{o:0,n:0});
   const item=r=>`<details class="sumq"><summary><span class="sumpct">${Math.round((r.x+r.b)/r.n*100)} %</span><span>${esc(r.q.q)}</span></summary>
     <p class="sumd">Fallada por ${r.x} y en blanco ${r.b}, de ${r.n} personas.</p>
-    ${(()=>{const e=Object.entries(r.w).sort((a,b)=>b[1]-a[1])[0];return e&&e[1]>=2?`<p class="sumko">✗ Error más repetido (${e[1]} personas): ${esc(r.q.o[+e[0]]||'')}</p>`:''})()}
-    ${qimg(r.q)}<p class="sumok">✓ Correcta: ${esc(r.q.o[r.q.c])}</p>${expl(r.q)}</details>`;
+    ${(()=>{const e=Object.entries(r.w).sort((a,b)=>b[1]-a[1])[0];return e&&e[1]>=2?`<p class="sumko">Error más repetido (${e[1]} personas): ${esc(r.q.o[+e[0]]||'')}</p>`:''})()}
+    ${qimg(r.q)}<p class="sumok">Correcta: ${esc(r.q.o[r.q.c])}</p>${expl(r.q)}</details>`;
   return `<h3 class="sumt">Resumen de la semana</h3>
   <p class="note" style="text-align:center">Acierto medio del grupo: <b>${Math.round(tot.o/tot.n*100)} %</b> (días ya terminados)</p>
-  ${(()=>{const T={};for(const r of L){const t=T[r.q.t]=T[r.q.t]||{o:0,n:0};t.o+=r.o;t.n+=r.n}const W=Object.entries(T).filter(([,t])=>t.n>=4).map(([k,t])=>[k,t.o/t.n]).sort((a,b)=>a[1]-b[1]).slice(0,3).filter(x=>x[1]<0.6);return W.length?`<h4 class="sumh">Temas más flojos del grupo</h4><p class="note">${W.map(([k,p])=>`<b>${esc(k)}</b>: ${Math.round(p*100)} % de acierto`).join(' · ')}</p>`:''})()}
+  ${(()=>{const T={};for(const r of L){const t=T[r.q.t]=T[r.q.t]||{o:0,n:0};t.o+=r.o;t.n+=r.n}const W=Object.entries(T).filter(([,t])=>t.n>=4).map(([k,t])=>[k,t.o/t.n]).sort((a,b)=>a[1]-b[1]).slice(0,3).filter(x=>x[1]<0.6);return W.length?`<h4 class="sumh">Temas más flojos del grupo</h4><ul class="flojos">${W.map(([k,p])=>`<li><span>${esc(k)}</span><b>${Math.round(p*100)} %</b></li>`).join('')}</ul>`:''})()}
   <h4 class="sumh">Las que más ha fallado el grupo</h4>
   ${fail.length?fail.map(item).join(''):'<p class="note" style="text-align:center">Ninguna pregunta la ha fallado o dejado en blanco más de la mitad. ¡Bien!</p>'}`;
 }
-async function weeklyPopup(){
-  if(!FS||!BANK.length||weeklyPopup.done)return;weeklyPopup.done=true;
-  const now=madrid(),prev=keyOf(parse(monday(now.key))-7*864e5),seen='resumen-'+prev;
-  if(lsGet(seen))return;
+async function weeklyPopup(vista){
+  if(!FS||!BANK.length)return;if(!vista){if(weeklyPopup.done)return;weeklyPopup.done=true}
+  const now=madrid(),prev=vista?(dow(now.key)===0?monday(now.key):keyOf(parse(monday(now.key))-7*864e5)):keyOf(parse(monday(now.key))-7*864e5),seen='resumen-'+prev;
+  if(!vista&&lsGet(seen))return;
   let docs=RK.docs;
   if(!docs.length){try{const qs=await FS.fs.getDocs(FS.fs.collection(FS.db,'ranking'));docs=qs.docs.map(d=>({id:d.id,n:d.data().nombre||'Participante',w:d.data().weeks||{}}))}catch(e){weeklyPopup.done=false;return}}
   const rows=docs.filter(d=>d.w[prev]&&d.w[prev].resp>0).map(d=>({id:d.id,n:d.n,...d.w[prev]})).sort((a,b)=>b.neta-a.neta||b.resp-a.resp);
-  if(!rows.length){lsSet(seen,1);return}
+  if(!rows.length){if(vista){alertaPanel('Todavía no hay respuestas esa semana.');return}lsSet(seen,1);return}
   const max=maxSoFar(prev),cut=max*CUT;let pos=0,prev2=null,mine=null;
   rows.forEach((r,i)=>{if(r.neta!==prev2){pos=i+1;prev2=r.neta}if(r.id===PID)mine={pos,...r}});
-  const podium=rows.slice(0,3).map((r,i)=>`<li><b class="pn"></b> · ${fmt(r.neta)} netas</li>`).join('');
+  const podium=rows.slice(0,3).map((r,i)=>`<li><span class="pm">${['🥇','🥈','🥉'][i]}</span><b class="pn"></b><span class="pt">${fmt(r.neta)} netas</span></li>`).join('');
   const me=mine?`<div class="rk ${mine.neta>cut?'pass':'fail'}" style="margin:10px 0"><span class="pos">${mine.pos}º</span><div class="who"><b>Tú</b></div><div class="sc"><span class="ac">${okOf(mine)}/${max}</span><b>${fmt(mine.neta)} netas</b></div></div><p class="note" style="text-align:center;margin:0 0 6px">${mine.neta>cut?'¡Pasaste el corte!':'No pasaste el corte'} (más de ${fmt(cut)} netas)</p>`:'<p class="note" style="text-align:center">La semana pasada no respondiste ninguna pregunta.</p>';
   const ov=document.createElement('div');ov.className='modal';
-  ov.innerHTML=`<div class="mbox"><h2 style="text-align:center;margin:0 0 2px;font-size:20px">Resumen de la semana pasada</h2>
+  ov.innerHTML=`<div class="mbox">${vista?'<p class="note" style="text-align:center;margin:0 0 6px;color:var(--int);font-weight:600">Vista previa (solo la ves tú)</p>':''}<h2 style="text-align:center;margin:0 0 2px;font-size:20px">Resumen de la semana pasada</h2>
   <p class="note" style="text-align:center;margin:0 0 10px">Del ${nice(prev)} al ${nice(keyOf(parse(prev)+5*864e5))}</p>
   ${me}<h4 class="sumh">Podio</h4><ol class="podio">${podium}</ol>
   ${summary(prev,docs,now).replace(/<h3 class="sumt">[^<]*<\/h3>/,'')}
   <button class="go" id="mclose" style="margin-top:14px;font-size:18px;padding:12px">Entendido</button></div>`;
   document.body.appendChild(ov);
   ov.querySelectorAll('.podio .pn').forEach((el,i)=>el.textContent=rows[i].n);
-  const close=()=>{lsSet(seen,1);ov.remove()};
+  const close=()=>{if(!vista)lsSet(seen,1);ov.remove()};
   ov.querySelector('#mclose').onclick=close;ov.onclick=e=>{if(e.target===ov)close()};
 }
 function panelAdmin(L,R){
@@ -917,11 +919,15 @@ async function admin(msg){
   ${L.map((r,i)=>`<div class="arow"><b class="an"></b>
     <input inputmode="numeric" maxlength="4" placeholder="PIN" data-i="${i}" style="width:5em">
     <button data-i="${i}" class="ares">Restablecer</button></div>`).join('')||'<p class="empty">Todavía no hay participantes con copia guardada. Aparecen cuando entran en la web.</p>'}
+  <h3 class="adh" style="margin-top:22px">Resumen del lunes</h3>
+  <p class="note" style="text-align:center;margin:0 0 10px">Muestra el resumen tal como lo verá cada uno, con los datos reales. No se envía a nadie.</p>
+  <button class="go" id="avista" style="font-size:16px;padding:10px">Vista previa del resumen</button>
   <h3 class="adh" style="margin-top:22px">Expulsar</h3>
   <p class="note" style="text-align:center;margin:0 0 12px">Le quita del ranking y bloquea su perfil y los móviles desde los que ha entrado. Se puede deshacer.</p>
   ${L.filter(r=>r.pid!==PID).map(r=>`<div class="aexp"><b class="aexn" data-p="${r.pid}"></b><button class="aex" data-p="${r.pid}">Expulsar</button></div>`).join('')}
   ${BQ.length?`<h4 class="sumh">Expulsados</h4>`+BQ.map(r=>`<div class="aexp"><span><b class="aexn2" data-p="${r.pid}"></b> <small class="mut">· ${r.k} ${r.k===1?'dispositivo':'dispositivos'}</small></span><button class="area" data-p="${r.pid}">Readmitir</button></div>`).join(''):''}`;
   app.querySelectorAll('.an').forEach((el,i)=>el.textContent=L[i].n);
+  const av=document.getElementById('avista');if(av)av.onclick=()=>weeklyPopup(true);
   const nom=p=>(L.find(r=>r.pid===p)||BQ.find(r=>r.pid===p)||{}).n||'';
   app.querySelectorAll('.aexn,.aexn2').forEach(el=>el.textContent=nom(el.dataset.p));
   app.querySelectorAll('.aex').forEach(b=>b.onclick=async()=>{const r=L.find(x=>x.pid===b.dataset.p);
@@ -1071,6 +1077,7 @@ function erratasHtml(){
   const V=LAB.err.filter(e=>!e.q||hechas.has(e.q)),falta=LAB.err.length-V.length;
   return `<p class="lab-in">Fallos de los manuales, contrastados con la norma.</p>`+(V.length?'':'<p class="tj-empty">Cada errata aparecerá aquí después de responder su pregunta.</p>')+(falta?`<p class="gl-mas">Por descubrir: ${falta} ${falta===1?'errata':'erratas'}.</p>`:'')+V.map(e=>`<div class="err"><div class="err-t">${esc(e.t)}</div><div class="err-m">${esc(e.tema)} · ${esc(e.m)}</div><div class="err-b err-d"><span class="err-lb">El manual dice</span><q>${esc(e.dice)}</q></div><div class="err-b err-r"><span class="err-lb">En realidad</span>${e.real}</div><div class="err-b err-x"><span class="err-lb">Ojo en el examen</span>${esc(e.exa)}</div><div class="err-f">Fuente: ${esc(e.f)}</div></div>`).join('');
 }
+function alertaPanel(t){const m=document.getElementById('amsg');if(m){m.style.color='var(--kot)';m.textContent=t}}
 // ===== expulsiones =====
 async function comprobarBloqueo(pid){
   if(!FS)return false;const {fs,db,uid}=FS;
