@@ -1,0 +1,541 @@
+[
+{
+"t": "Rango de inflamabilidad",
+"a": [
+"rango de inflamabilidad",
+"rango inflamable"
+],
+"d": "Concentraciones de gas o vapor en aire, entre el LII y el LSI, en las que la mezcla puede arder.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "LII",
+"a": [
+"LII",
+"límite inferior de inflamabilidad"
+],
+"d": "Límite inferior de inflamabilidad: concentración mínima de vapor en el aire para que pueda arder. Por debajo, la mezcla es pobre.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "LSI",
+"a": [
+"LSI",
+"límite superior de inflamabilidad"
+],
+"d": "Límite superior de inflamabilidad: concentración máxima. Por encima no hay aire suficiente para arder (mezcla rica).",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Mezcla rica",
+"a": [
+"mezcla rica"
+],
+"d": "Mezcla por encima del LSI. No arde mientras siga así, pero si entra aire atraviesa el rango inflamable.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Panel naranja",
+"a": [
+"panel naranja"
+],
+"d": "Placa de 40 × 30 cm que indica que un vehículo transporta mercancías peligrosas: arriba, el número de peligro; abajo, el número ONU.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Número de peligro",
+"a": [
+"número de peligro",
+"código Kemler"
+],
+"d": "Cifras de la parte superior del panel naranja (código Kemler). La X indica que reacciona peligrosamente con el agua y una cifra repetida, que el peligro se intensifica.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Número ONU",
+"a": [
+"número ONU"
+],
+"d": "Número de la parte inferior del panel naranja que identifica la materia transportada.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "DL50",
+"a": [
+"DL50",
+"dosis letal 50"
+],
+"d": "Dosis que causa la muerte del 50 % de una población animal de prueba. Cuanto más baja, más tóxica es la sustancia.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "TLV",
+"a": [
+"TLV"
+],
+"d": "Valores límite de exposición a sustancias en el trabajo.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "TLV/STEL",
+"a": [
+"STEL"
+],
+"d": "Límite de exposición para periodos cortos, de no más de 15 minutos.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "TLV/TWA",
+"a": [
+"TWA"
+],
+"d": "Límite de exposición como media ponderada de una jornada laboral.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "IPVS (IDLH)",
+"a": [
+"IPVS",
+"IDLH"
+],
+"d": "Concentración de peligro inmediato para la vida o la salud.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Explosímetro",
+"a": [
+"explosímetro"
+],
+"d": "Aparato que mide la concentración de gases y vapores inflamables. Detecta su presencia, pero no distingue unas sustancias de otras.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Factor de corrección",
+"a": [
+"factor de corrección"
+],
+"d": "Número por el que se multiplica la lectura del explosímetro cuando se mide un gas distinto del de calibración (normalmente metano).",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Tubo colorimétrico",
+"a": [
+"tubo colorimétrico",
+"tubos colorimétricos"
+],
+"d": "Vial con un reactivo que cambia de color con la sustancia; la longitud de la mancha indica la concentración. Se lee inmediatamente.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Ojiva",
+"a": [
+"ojiva"
+],
+"d": "Parte superior de la botella de gas. Según la norma actual, su color identifica el riesgo principal del gas.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Rombo NFPA 704",
+"a": [
+"NFPA"
+],
+"d": "«Diamante de peligro» de EE. UU.: azul, salud; rojo, inflamabilidad; amarillo, reactividad; blanco, riesgos especiales. Cada uno, de 0 a 4.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Código Hazchem",
+"a": [
+"Hazchem"
+],
+"d": "Código de mercancías peligrosas de Reino Unido, Australia y Nueva Zelanda. Empieza por el código de acción de emergencia.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Reglamento CLP",
+"a": [
+"CLP"
+],
+"d": "Reglamento CE 1272/2008 de clasificación, etiquetado y envasado: pictogramas en rombo con borde rojo.",
+"tema": "NRBQ",
+"f": "Manual NRBQ"
+},
+{
+"t": "Factor de caída",
+"a": [
+"factor de caída"
+],
+"d": "Distancia de caída ÷ longitud de cuerda activa. No tiene unidades. En ascenso por cuerda se parte de un factor 2 teórico.",
+"tema": "Trabajos en altura",
+"f": "Manual ANETVA"
+},
+{
+"t": "Fuerza de choque",
+"a": [
+"fuerza de choque"
+],
+"d": "Golpe que recibe el cuerpo cuando el sistema detiene la caída. El sistema debe absorber la mayor energía posible.",
+"tema": "Trabajos en altura",
+"f": "Manual ANETVA"
+},
+{
+"t": "Absorbedor de energía",
+"a": [
+"absorbedor"
+],
+"d": "Elemento que se rasga o estira para «gastar» energía de la caída. Limita la fuerza de choque a 6 kN con 100 kg (UNE-EN 355).",
+"tema": "Trabajos en altura",
+"f": "Manual de trabajos en altura"
+},
+{
+"t": "Punto de anclaje",
+"a": [
+"punto de anclaje",
+"anclaje"
+],
+"d": "Punto fijo del que cuelga todo el sistema. Debe garantizar al menos 12 kN (UNE-EN 795).",
+"tema": "Trabajos en altura",
+"f": "Manual de trabajos en altura"
+},
+{
+"t": "Conector",
+"a": [
+"conector"
+],
+"d": "Pieza que une los elementos del sistema (arnés, cuerda, anclaje…). Más de 15 kN en su eje mayor (EN 362).",
+"tema": "Trabajos en altura",
+"f": "Manual de trabajos en altura"
+},
+{
+"t": "Bloqueador",
+"a": [
+"bloqueador",
+"puño"
+],
+"d": "Aparato que se desliza por la cuerda en un sentido y se bloquea en el otro al cargar peso. Sirve para progresar, no para detener caídas.",
+"tema": "Trabajos en altura",
+"f": "Manual de trabajos en altura"
+},
+{
+"t": "Cuerda semiestática",
+"a": [
+"cuerda semiestática",
+"cuerdas semiestáticas"
+],
+"d": "Cuerda que estira poco (UNE-EN 1891). Clase A: 22 kN; clase B: 18 kN.",
+"tema": "Trabajos en altura",
+"f": "Manual de trabajos en altura"
+},
+{
+"t": "Cuerda de seguridad",
+"a": [
+"cuerda de seguridad"
+],
+"d": "La que hace de anticaídas. Va con anclaje independiente de la de trabajo y es de otro color.",
+"tema": "Trabajos en altura",
+"f": "Manual de trabajos en altura"
+},
+{
+"t": "Cuerda de trabajo",
+"a": [
+"cuerda de trabajo"
+],
+"d": "La que se usa para acceder al punto de trabajo y apoyarse.",
+"tema": "Trabajos en altura",
+"f": "Manual de trabajos en altura"
+},
+{
+"t": "Síndrome del arnés",
+"a": [
+"síndrome del arnés",
+"trauma por suspensión"
+],
+"d": "Daño por estar mucho tiempo colgado del arnés. En suspensiones largas es imprescindible el asiento de trabajo.",
+"tema": "Trabajos en altura",
+"f": "NTP de trabajos verticales"
+},
+{
+"t": "Protocolo P.A.S.",
+"a": [
+"P.A.S."
+],
+"d": "Principios ante cualquier accidente, en este orden: Proteger, Alertar y Socorrer.",
+"tema": "Trabajos en altura",
+"f": "Manual de trabajos en altura"
+},
+{
+"t": "Interruptor diferencial",
+"a": [
+"diferencial"
+],
+"d": "Corta la corriente al detectar diferencia entre la que entra y la que sale (una fuga). En viviendas, 30 mA.",
+"tema": "Electricidad",
+"f": "Manual de instalaciones eléctricas"
+},
+{
+"t": "Tetanización",
+"a": [
+"tetanización"
+],
+"d": "Contracción muscular por el paso de la corriente que impide soltar el conductor.",
+"tema": "Electricidad",
+"f": "Conceptos básicos de electricidad"
+},
+{
+"t": "Baja tensión",
+"a": [
+"baja tensión"
+],
+"d": "Hasta 1.000 V en alterna y 1.500 V en continua.",
+"tema": "Electricidad",
+"f": "Manual de instalaciones eléctricas"
+},
+{
+"t": "MBTS",
+"a": [
+"MBTS",
+"muy baja tensión de seguridad"
+],
+"d": "Muy baja tensión de seguridad: tan baja que no se considera peligrosa. En piscinas, 12 V.",
+"tema": "Electricidad",
+"f": "Manual de instalaciones eléctricas"
+},
+{
+"t": "Corriente trifásica",
+"a": [
+"trifásica"
+],
+"d": "Tres corrientes alternas de la misma frecuencia y valor eficaz, desfasadas 120°.",
+"tema": "Electricidad",
+"f": "Manual de instalaciones eléctricas"
+},
+{
+"t": "Centro de transformación",
+"a": [
+"centro de transformación",
+"centros de transformación"
+],
+"d": "Última etapa antes del usuario: recibe normalmente 20 kV y entrega baja tensión de 400/230 V.",
+"tema": "Electricidad",
+"f": "Manual de instalaciones eléctricas"
+},
+{
+"t": "Red de transporte eléctrico",
+"a": [
+"red de transporte"
+],
+"d": "Lleva la electricidad a muy alta tensión (220 a 400 kV) para perder menos energía.",
+"tema": "Electricidad",
+"f": "Manual de instalaciones eléctricas",
+"solo": 1
+},
+{
+"t": "Peligro",
+"a": [
+"peligro"
+],
+"d": "Ley 17/2015: potencial de ocasionar daño.",
+"tema": "Protección civil",
+"f": "Ley 17/2015, art. 2",
+"solo": 1
+},
+{
+"t": "Amenaza",
+"a": [
+"amenaza"
+],
+"d": "Ley 17/2015: situación en la que personas y bienes están expuestos a un peligro inminente o latente.",
+"tema": "Protección civil",
+"f": "Ley 17/2015, art. 2",
+"solo": 1
+},
+{
+"t": "Vulnerabilidad",
+"a": [
+"vulnerabilidad"
+],
+"d": "Ley 17/2015: lo susceptible que es una colectividad de ser afectada por un peligro.",
+"tema": "Protección civil",
+"f": "Ley 17/2015, art. 2",
+"solo": 1
+},
+{
+"t": "Riesgo",
+"a": [
+"riesgo"
+],
+"d": "Ley 17/2015: posibilidad de que una amenaza llegue a afectar a personas o bienes.",
+"tema": "Protección civil",
+"f": "Ley 17/2015, art. 2",
+"solo": 1
+},
+{
+"t": "Catástrofe",
+"a": [
+"catástrofe"
+],
+"d": "Nivel más grave: situación que supera los medios de la propia comunidad.",
+"tema": "Protección civil",
+"f": "Ley 17/2015, art. 2",
+"solo": 1
+},
+{
+"t": "Emergencia de protección civil",
+"a": [
+"emergencia de protección civil",
+"emergencia ordinaria"
+],
+"d": "Situación de riesgo colectivo que exige una gestión rápida de los poderes públicos. La ordinaria no tiene afectación colectiva.",
+"tema": "Protección civil",
+"f": "Ley 17/2015, art. 2"
+},
+{
+"t": "Deber de colaboración",
+"a": [
+"deber de colaboración"
+],
+"d": "Obligación de colaborar personal o materialmente cuando lo pide la autoridad. Solo se indemnizan los daños en los bienes.",
+"tema": "Protección civil",
+"f": "Ley 17/2015, art. 7 bis"
+},
+{
+"t": "Estrategia del Sistema Nacional",
+"a": [
+"Estrategia"
+],
+"d": "Analiza los riesgos futuros y fija líneas de acción. Se revisa al menos cada 4 años.",
+"tema": "Protección civil",
+"f": "Ley 17/2015",
+"solo": 1
+},
+{
+"t": "Silencio administrativo",
+"a": [
+"silencio administrativo",
+"silencio"
+],
+"d": "Lo que se entiende que ha decidido la Administración cuando no contesta en plazo. Puede ser estimatorio o desestimatorio.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 24",
+"solo": 1
+},
+{
+"t": "Certificado de silencio",
+"a": [
+"certificado de silencio"
+],
+"d": "Acredita que se ha producido el silencio. Se expide de oficio en 15 días desde que vence el plazo para resolver.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 24.4"
+},
+{
+"t": "Trámite de audiencia",
+"a": [
+"trámite de audiencia"
+],
+"d": "Antes de la propuesta de resolución, la Administración enseña el expediente al interesado para que alegue. Entre 10 y 15 días.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 82"
+},
+{
+"t": "Medidas provisionales",
+"a": [
+"medidas provisionales",
+"medida provisional"
+],
+"d": "Aseguran que la resolución final pueda cumplirse. Si se toman antes de abrir el procedimiento, hay que iniciarlo en 15 días.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 56"
+},
+{
+"t": "Caducidad",
+"a": [
+"caducidad"
+],
+"d": "Terminación del procedimiento cuando se paraliza por culpa del interesado.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 95"
+},
+{
+"t": "Capacidad de obrar",
+"a": [
+"capacidad de obrar"
+],
+"d": "Aptitud para actuar por uno mismo ante la Administración. Los menores la tienen donde la ley no exige a sus padres o tutores.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 3"
+},
+{
+"t": "Informe",
+"a": [
+"informe",
+"informes"
+],
+"d": "Opinión técnica o jurídica de un órgano. Por defecto, facultativo y no vinculante; plazo general de 10 días.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 80",
+"solo": 1
+},
+{
+"t": "Información pública",
+"a": [
+"información pública"
+],
+"d": "Trámite para que cualquier persona examine el expediente. Mínimo 20 días.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 83"
+},
+{
+"t": "Período de prueba",
+"a": [
+"período de prueba"
+],
+"d": "Se abre cuando la Administración no da por ciertos los hechos alegados. Entre 10 y 30 días.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 77"
+},
+{
+"t": "Ejecución subsidiaria",
+"a": [
+"ejecución subsidiaria"
+],
+"d": "La Administración hace lo que el obligado no hace, a costa de este. Solo si otro puede hacerlo.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 102"
+},
+{
+"t": "Multa coercitiva",
+"a": [
+"multa coercitiva"
+],
+"d": "Medio de ejecución forzosa para obligar a cumplir. No es una sanción y es compatible con ellas.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 103"
+},
+{
+"t": "Compulsión directa",
+"a": [
+"compulsión"
+],
+"d": "Medio de ejecución más intenso: actúa sobre la propia persona. Solo para obligaciones de no hacer o soportar, si la ley lo autoriza.",
+"tema": "Procedimiento administrativo",
+"f": "Ley 39/2015, art. 104"
+}
+]

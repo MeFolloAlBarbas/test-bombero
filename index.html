@@ -256,8 +256,29 @@ summary{cursor:pointer}
 .op.vot .vt{flex:1;position:relative;z-index:1}.op.vot .vpc{position:relative;z-index:1;font-weight:700;font-variant-numeric:tabular-nums;min-width:3.2em;text-align:right}
 @media(prefers-color-scheme:dark){.op.vot .vbar{background:rgba(255,255,255,.09)}}
 .op.vot.okc .vbar{background:rgba(99,153,34,.22)}.op.vot.koc .vbar{background:rgba(226,75,74,.2)}
+.gt{font-weight:700;cursor:pointer;border-radius:3px}.okc .gt,.koc .gt,.enun .gt,.tj-bq .gt{font-weight:800}
+.gt:hover,.gt.act{background:rgba(55,138,221,.15)}
+.gpop{position:absolute;z-index:50;width:min(320px,calc(100vw - 32px));background:var(--bg);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.18);padding:12px 14px;animation:gap .18s ease-out}
+@keyframes gap{from{opacity:0;transform:translateY(-4px)}}
+.gpt{font-weight:700;font-size:16px}.gpd{font-size:15px;line-height:1.45;margin:4px 0 8px}
+.gpf{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12px}
+.gchip{font-size:12px;border-radius:99px;padding:1px 9px;background:var(--card);color:var(--mut);white-space:nowrap}
+.gpf a{color:var(--inl);cursor:pointer;font-weight:600;white-space:nowrap}
+.seg{display:grid;grid-template-columns:1fr 1fr;background:var(--card);border-radius:10px;padding:3px;margin:0 0 16px}
+.seg button{font:inherit;font-size:15px;border:0;background:transparent;color:var(--mut);border-radius:8px;min-height:40px}
+.seg button.on{background:var(--bg);color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.gl-c{display:flex;align-items:center;gap:10px;margin:0 0 12px}.gl-c span{font-size:14px;color:var(--mut);white-space:nowrap}
+.gl-b{flex:1;height:8px;background:var(--card);border-radius:99px;overflow:hidden}.gl-b i{display:block;height:100%;background:var(--inl);border-radius:99px}
+.gl-s{width:100%;font:inherit;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);margin:0 0 10px}
+.gl-ts{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin:0 0 6px;scrollbar-width:none}
+.gl-ts button{flex-shrink:0;font:inherit;font-size:13px;white-space:nowrap;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:99px;padding:4px 12px;min-height:0}
+.gl-ts button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.gl-l{font-size:13px;font-weight:700;color:var(--mut);margin:16px 0 4px;border-bottom:1px solid var(--line);padding-bottom:2px}
+.gl-t{padding:9px 0;border-bottom:1px solid var(--line)}.gl-n{font-weight:700}.gl-d{font-size:15px;line-height:1.45}.gl-f{font-size:12px;color:var(--mut);margin-top:2px}
+.gl-t.flash{animation:glf 1.8s ease-out}@keyframes glf{0%,30%{background:rgba(55,138,221,.18)}100%{background:transparent}}
+.gl-t.lock .gl-n{color:var(--mut);letter-spacing:.15em}.gl-t.lock .gl-d{color:var(--mut);font-size:13px}.gl-mas{font-size:13px;color:var(--mut);margin:8px 0 0}
 </style>
-<script>const APPV='1795308887';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795310388';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Tus fallos</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -266,7 +287,7 @@ summary{cursor:pointer}
 <script>
 {
 const LS='bm-test-v1',T0=Date.UTC(2026,10,16),HOURS=[9,10,11,12,13,14,15,16,17,18,19,20];
-let RANK=null,FS=null,NAME='',BANK=[],S={stats:{},fallos:[],daily:{},start:null},run=null,DB=null,saving=Promise.resolve(),syncNote='';
+let GLOS=[],RANK=null,FS=null,NAME='',BANK=[],S={stats:{},fallos:[],daily:{},start:null},run=null,DB=null,saving=Promise.resolve(),syncNote='';
 const app=document.getElementById('app'),homeBtn=document.getElementById('goHome');
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
@@ -711,7 +732,7 @@ function day(k){
   <p class="note" style="margin:0 0 16px">${today?'Las preguntas solo se pueden responder hoy. Mañana quedarán para revisar.':'Este día ya está cerrado: puedes revisar tus respuestas, pero no contestar.'}</p>
   ${rows}
   <div class="nav">${today&&pending()?'<button class="btn" id="bNext">Responder la siguiente</button>':''}<button class="btn sec" id="bHist">Días anteriores</button></div>`;
-  app.querySelectorAll('details.slot[data-q]').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&!d.dataset.v){d.dataset.v=1;votosEn(d.querySelectorAll('.op.rv'),+d.dataset.q)}}));
+  app.querySelectorAll('details.slot[data-q]').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&!d.dataset.v){d.dataset.v=1;marcarTerminos(d,byId(+d.dataset.q));votosEn(d.querySelectorAll('.op.rv'),+d.dataset.q)}}));
   document.getElementById('bHist').onclick=()=>go('historial');
   const bn=document.getElementById('bNext');if(bn)bn.onclick=()=>go('inicio');
 }
@@ -737,17 +758,21 @@ function tarjetasLista(){
   return L}
 const TJ={idx:0};
 function tjMover(d){const i=TJ.idx+d;if(TJ.busy||i<0||i>=(TJ.n||0))return;const wr=document.getElementById('tjW');const ir=()=>{TJ.idx=i;TJ.dir=d;tarjetas();TJ.dir=0;TJ.busy=false};if(!wr||matchMedia('(prefers-reduced-motion:reduce)').matches){ir();return}TJ.busy=true;wr.classList.add('tj-out');setTimeout(ir,270)}
-document.addEventListener('keydown',e=>{if(location.hash!=='#tarjetas'||e.ctrlKey||e.metaKey||e.altKey||/INPUT|TEXTAREA|SELECT/.test((e.target||{}).tagName||''))return;const cd=document.getElementById('tjC');if(!cd)return;
+document.addEventListener('keydown',e=>{if(GL.sub==='glos'||location.hash!=='#tarjetas'||e.ctrlKey||e.metaKey||e.altKey||/INPUT|TEXTAREA|SELECT/.test((e.target||{}).tagName||''))return;const cd=document.getElementById('tjC');if(!cd)return;
   if(e.key==='ArrowRight'){e.preventDefault();tjMover(1)}else if(e.key==='ArrowLeft'){e.preventDefault();tjMover(-1)}else if(e.key===' '||e.code==='Space'){e.preventDefault();cd.classList.toggle('flip')}});
 
 function tarjetas(){
-  run=null;homeBtn.hidden=true;
+  run=null;homeBtn.hidden=true;gCerrar();
+  const seg=`<div class="seg"><button data-s="tj" class="${GL.sub==='tj'?'on':''}">Tarjetas</button><button data-s="glos" class="${GL.sub==='glos'?'on':''}">Glosario</button></div>`;
+  const segBind=()=>app.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>{GL.sub=b.dataset.s;tarjetas()});
+  if(GL.sub==='glos'){app.innerHTML=seg+glosarioHtml();segBind();glosarioBind();return}
   const L=tarjetasLista();if(TJ.idx>=L.length)TJ.idx=0;const c=L[TJ.idx];
-  if(!c){app.innerHTML='<div class="tj-empty">Aquí aparecerán las preguntas que falles o dejes en blanco.</div>';return}
+  if(!c){app.innerHTML=seg+'<div class="tj-empty">Aquí aparecerán las preguntas que falles o dejes en blanco.</div>';segBind();return}
   const tq=c.q.tq||c.q.q,ta=c.q.ta||OT(c.q,c.q.c);
-  app.innerHTML=`<div class="tj-stage">${L.length>1?'<div class="tj-pila p2"></div><div class="tj-pila"></div>':''}<div class="tj-wrap${TJ.dir>0?' tj-in-r':TJ.dir<0?' tj-in-l':''}" id="tjW"><div class="tj-card" id="tjC"><div class="tj-face"><h3 class="tj-t">${esc(c.q.t)}</h3><div class="tj-q">${esc(tq)}</div>${qimg(c.q)}<div class="tj-hint">Toca para ver la respuesta</div></div>
+  app.innerHTML=seg+`<div class="tj-stage">${L.length>1?'<div class="tj-pila p2"></div><div class="tj-pila"></div>':''}<div class="tj-wrap${TJ.dir>0?' tj-in-r':TJ.dir<0?' tj-in-l':''}" id="tjW"><div class="tj-card" id="tjC"><div class="tj-face"><h3 class="tj-t">${esc(c.q.t)}</h3><div class="tj-q">${esc(tq)}</div>${qimg(c.q)}<div class="tj-hint">Toca para ver la respuesta</div></div>
   <div class="tj-face tj-back"><h3 class="tj-t">${esc(c.q.t)}</h3><p class="tj-bq">${esc(tq)}</p><div class="tj-ok">✓ ${esc(ta)}</div><div class="tj-mal">${c.tu===null||c.tu===undefined?'La dejaste en blanco':'Tú respondiste: '+esc(OT(c.q,c.tu))}</div>${c.q.rec?`<div class="tj-rec"><b>Para recordar:</b> ${c.q.rec}</div>`:''}${c.q.que?`<p class="tj-ex">${c.q.que}</p>`:''}${c.q.porque?`<p class="tj-ex">${c.q.porque}</p>`:''}${c.q.ojo?`<p class="tj-ex tj-ojo"><b>Ojo:</b> ${c.q.ojo}</p>`:''}</div></div></div></div>
   <div class="tj-acts"><button class="tj-nav" id="tjP" ${TJ.idx?'':'disabled'}>← Anterior</button><span class="tj-n">${TJ.idx+1} / ${L.length}</span><button class="tj-nav" id="tjN" ${TJ.idx<L.length-1?'':'disabled'}>Siguiente →</button></div>`;
+  segBind();marcarTerminos(app.querySelector('.tj-back'),c.q);
   const cd=document.getElementById('tjC');TJ.n=L.length;
   const fit=()=>{cd.style.height='';const h=Math.max(...[...cd.querySelectorAll('.tj-face')].map(f=>f.scrollHeight));cd.style.height=Math.max(h,300)+'px'};fit();setTimeout(fit,50);
   cd.onclick=()=>{if(TJ.swiped){TJ.swiped=false;return}cd.classList.toggle('flip')};
@@ -954,6 +979,49 @@ function avisoQ(){
   const w=el.querySelector('.sabw');if(w)w.textContent=s.fromName;
 }
 
+// ===== glosario =====
+const GL={sub:'tj',busca:'',tema:'Todos',flash:null};
+const gNorm=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+function glosPrep(){GLOS.forEach((g,i)=>{g.i=i;g.re=g.a.map(a=>new RegExp('(^|[^\\wáéíóúüñÁÉÍÓÚÜÑ])('+a.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')(?![\\wáéíóúüñÁÉÍÓÚÜÑ])',/^[A-Z0-9./]+$/.test(a)?'':'i'))})}
+function gTexto(q){const t=x=>(x||'').replace(/<[^>]+>/g,' ');return [q.q,...q.o,q.o4,t(q.que),t(q.porque),t(q.ojo),t(q.rec)].join(' ')}
+function gDeQ(q){if(!q._g){const T=gTexto(q);q._g=GLOS.filter(g=>(!g.solo||g.tema===q.t)&&g.re.some(r=>r.test(T))).map(g=>g.i)}return q._g}
+function gVistos(){const v=new Set();for(const k in S.daily)for(const h in S.daily[k]){const q=byId(S.daily[k][h].id);if(q)gDeQ(q).forEach(i=>v.add(i))}return v}
+function marcarTerminos(root,q){
+  if(!root||!q||!GLOS.length)return;const ids=gDeQ(q);if(!ids.length)return;
+  const terms=ids.map(i=>GLOS[i]).sort((a,b)=>Math.max(...b.a.map(x=>x.length))-Math.max(...a.a.map(x=>x.length)));
+  for(const g of terms){let hecho=false;
+    const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('.gt,button,.vpc,.res')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+    let n;while(!hecho&&(n=w.nextNode())){for(const r of g.re){const m=n.data.match(r);if(m){const i=m.index+m[1].length,sp=document.createElement('span');sp.className='gt';sp.dataset.g=g.i;
+      const resto=n.splitText(i);resto.splitText(m[2].length);sp.textContent=resto.data;resto.replaceWith(sp);hecho=true;break}}}}
+}
+let gPop=null;
+function gCerrar(){if(gPop){gPop.remove();gPop=null}document.querySelectorAll('.gt.act').forEach(x=>x.classList.remove('act'))}
+document.addEventListener('click',e=>{const s=e.target.closest('.gt');if(!s){if(!e.target.closest('.gpop'))gCerrar();return}
+  e.stopPropagation();e.preventDefault();const was=s.classList.contains('act');gCerrar();if(was)return;const g=GLOS[+s.dataset.g];if(!g)return;s.classList.add('act');
+  gPop=document.createElement('div');gPop.className='gpop';
+  gPop.innerHTML=`<div class="gpt">${esc(g.t)}</div><div class="gpd">${esc(g.d)}</div><div class="gpf"><span class="gchip">${esc(g.tema)}</span><a>Ver en el glosario →</a></div>`;
+  document.body.appendChild(gPop);const r=s.getBoundingClientRect(),wd=gPop.offsetWidth;
+  let x=r.left+scrollX+r.width/2-wd/2;x=Math.max(16,Math.min(x,document.documentElement.clientWidth-wd-16));gPop.style.left=x+'px';gPop.style.top=(r.bottom+scrollY+8)+'px';
+  gPop.querySelector('a').onclick=()=>{gCerrar();GL.sub='glos';GL.tema='Todos';GL.busca='';GL.flash=g.i;location.hash==='#tarjetas'?tarjetas():go('tarjetas')}},true);
+function glosarioHtml(){
+  const vis=gVistos(),q=gNorm(GL.busca.trim());
+  const temas=['Todos',...new Set(GLOS.filter(g=>vis.has(g.i)).map(g=>g.tema))];if(!temas.includes(GL.tema))GL.tema='Todos';
+  const L=GLOS.filter(g=>vis.has(g.i)&&(GL.tema==='Todos'||g.tema===GL.tema)&&(!q||gNorm(g.t).includes(q)||gNorm(g.d).includes(q))).sort((a,b)=>a.t.localeCompare(b.t,'es'));
+  let h='',ult='';for(const g of L){const l=gNorm(g.t)[0].toUpperCase();if(l!==ult){h+=`<div class="gl-l">${l}</div>`;ult=l}
+    h+=`<div class="gl-t${GL.flash===g.i?' flash':''}" id="gl${g.i}"><div class="gl-n">${esc(g.t)}</div><div class="gl-d">${esc(g.d)}</div><div class="gl-f">${esc(g.tema)} · ${esc(g.f)}</div></div>`}
+  if(!vis.size)h='<p class="tj-empty">Aquí irán apareciendo los términos del temario según respondas preguntas.</p>';
+  else if(!L.length)h=`<p class="tj-empty">Ningún término con «${esc(GL.busca)}» en lo que llevas visto.</p>`;
+  const falta=GLOS.length-vis.size,muestra=GLOS.filter(g=>!vis.has(g.i)).slice(0,4);
+  const bloq=(!q&&GL.tema==='Todos'&&falta)?`<div class="gl-l">Por descubrir</div>`+muestra.map(g=>`<div class="gl-t lock"><div class="gl-n">${'•'.repeat(Math.min(14,g.t.length))}</div><div class="gl-d">${esc(g.tema)} · aparecerá cuando respondas su pregunta</div></div>`).join('')+(falta>4?`<p class="gl-mas">y ${falta-4} más</p>`:''):'';
+  return `<div class="gl-c"><div class="gl-b"><i style="width:${GLOS.length?vis.size/GLOS.length*100:0}%"></i></div><span>${vis.size} de ${GLOS.length} términos</span></div>
+  <input class="gl-s" id="glS" placeholder="Buscar un término…" value="${esc(GL.busca)}">
+  <div class="gl-ts">${temas.map(t=>`<button data-tema="${esc(t)}" class="${t===GL.tema?'on':''}">${esc(t)}</button>`).join('')}</div>${h}${bloq}`;
+}
+function glosarioBind(){
+  const b=document.getElementById('glS');if(b)b.oninput=()=>{GL.busca=b.value;const pos=b.selectionStart;tarjetas();const nb=document.getElementById('glS');nb.focus();nb.setSelectionRange(pos,pos)};
+  app.querySelectorAll('.gl-ts button').forEach(x=>x.onclick=()=>{GL.tema=x.dataset.tema;tarjetas()});
+  if(GL.flash!==null){const el=document.getElementById('gl'+GL.flash);GL.flash=null;if(el)setTimeout(()=>el.scrollIntoView({block:'center',behavior:'smooth'}),60)}
+}
 // ===== porcentajes de respuesta de todos =====
 async function votar(qid,o){
   if(!FS||!PID)return;const {fs,db}=FS;
@@ -1021,6 +1089,7 @@ function answer(o){
   run.net+=run.escFail?0:ptsOf(blank?null:o,q);
   const pts=blank||run.escFail?'0 netas':ok?'+1 neta':'−0,33 netas';
   document.getElementById('after').innerHTML=`<p class="res" style="color:var(${blank?'--mut':ok?'--okt':'--kot'});margin-bottom:14px">${blank?'En blanco. La buena es la '+correctL:ok?'Correcto':'Incorrecto. La buena es la '+correctL}${run.escFail?' · El escudo te ha salvado':''} · ${pts}</p>${expl(q)}`;
+  marcarTerminos(app,q);
   const last=run.i+1>=run.qs.length;
   const more=run.mode==='dia'&&pending();
   document.getElementById('nav').innerHTML=`<button class="btn" id="nx">${run.mode==='dia'?(more?'Siguiente pregunta':'Continuar'):last?'Terminar':'Siguiente'}</button>`;
@@ -1076,6 +1145,7 @@ loadLocal();
 if(!S.start){S.start=madrid().key}
 try{NAME=localStorage.getItem(LS+'-nombre')||''}catch(e){}
 if(!lsGet('key'))NAME='';
+fetch('glosario.json',{cache:'no-cache'}).then(r=>r.json()).then(g=>{GLOS=g;glosPrep()}).catch(()=>{});
 Promise.all([fetch('preguntas.json',{cache:'no-cache'}).then(r=>r.json()),fetch('plan.json',{cache:'no-cache'}).then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([d,p])=>{BANK=d;FIXED=p||{};render();connect()}).catch(()=>{app.innerHTML='<p class="empty">No se han podido cargar las preguntas. Recarga la página.</p>'});
 }
 </script>
