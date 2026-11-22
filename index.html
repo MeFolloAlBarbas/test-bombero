@@ -356,14 +356,16 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-tw span.out{opacity:0;transform:translateY(-10px)}
 .nv-tw span.in{opacity:0;transform:translateY(10px);transition:none}
 @media(prefers-reduced-motion:reduce){.nv-tw span{transition:none}}
-.nv-all{display:block;margin:8px 2px 0;background:none;border:0;padding:0;font:inherit;font-size:13px;color:var(--mut);cursor:pointer}
+.nv-dots{display:flex;gap:6px;justify-content:center;margin:6px auto 0;background:none;border:0;padding:8px 12px;cursor:pointer}
+.nv-dots i{width:6px;height:6px;border-radius:50%;background:var(--line);transition:background .3s,transform .3s}
+.nv-dots i.on{background:var(--nvac);transform:scale(1.15)}
 .nv-list{margin-top:8px}
 .nv-li{padding:12px 0;border-top:1px solid var(--line);cursor:pointer}
 .nv-li .nv-m{margin:0}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795347941';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795348087';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1322,7 +1324,7 @@ function pintaNov(){
   if(NVI>=NOV.length)NVI=0;
   const n0=NOV[NVI];
   el.innerHTML=`<div class="nv-tt" id="nvTT" role="button" tabindex="0"><b>Última hora</b><div class="nv-tw"><span id="nvTx">${esc(n0.tit)}</span></div></div>
-  <button class="nv-all" id="nvAll">${NVall?'Ocultar':'Ver todas'} (${NOV.length})</button>
+  <button class="nv-dots${NVall?' open':''}" id="nvAll" aria-label="${NVall?'Ocultar':'Ver todas'} las noticias">${NOV.map((n,i)=>`<i class="${i===NVI?'on':''}"></i>`).join('')}</button>
   ${NVall?`<div class="nv-list">${NOV.map((n,i)=>`<div class="nv-li" data-n="${i}"><div class="nv-m">${nvMeta(n)}</div><h4>${esc(n.tit)}</h4></div>`).join('')}</div>`:''}`;
   document.getElementById('nvTT').onclick=()=>nvAbrir(NOV[NVI]);
   document.getElementById('nvAll').onclick=()=>{NVall=!NVall;pintaNov()};
@@ -1330,7 +1332,7 @@ function pintaNov(){
   if(NOV.length>1)NVT=setInterval(()=>{
     const x=document.getElementById('nvTx');if(!x){clearInterval(NVT);return}
     x.classList.add('out');
-    setTimeout(()=>{NVI=(NVI+1)%NOV.length;const n=NOV[NVI];x.textContent=n.tit;x.classList.remove('out');x.classList.add('in');requestAnimationFrame(()=>requestAnimationFrame(()=>x.classList.remove('in')))},400);
+    setTimeout(()=>{NVI=(NVI+1)%NOV.length;const n=NOV[NVI];x.textContent=n.tit;document.querySelectorAll('#nvAll i').forEach((d,j)=>d.classList.toggle('on',j===NVI));x.classList.remove('out');x.classList.add('in');requestAnimationFrame(()=>requestAnimationFrame(()=>x.classList.remove('in')))},400);
   },4000);
 }
 function nvAbrir(n){
