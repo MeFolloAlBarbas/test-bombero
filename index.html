@@ -348,9 +348,22 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-clave{border-left:3px solid var(--nvac);background:var(--nvacb);padding:10px 14px;border-radius:0 10px 10px 0;margin:4px 0 18px;font-size:15.5px}
 .nv-clave b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--nvac);margin-bottom:2px}
 .nv-doc{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--nvac);text-decoration:none;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-top:6px}
+.nv-tt{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer;overflow:hidden}
+.nv-tt b{flex:0 0 auto;font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:var(--nvac);color:var(--bg);padding:3px 8px;border-radius:6px}
+.nv-tw{flex:1;min-width:0;overflow:hidden;height:2.7em;position:relative;display:flex;align-items:center}
+.nv-tw span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:14.5px;line-height:1.35;transition:transform .4s ease,opacity .4s}
+.nv-tw span em{font-style:normal;font-weight:600;color:var(--nvac);margin-right:4px}
+.nv-tw span.out{opacity:0;transform:translateY(-10px)}
+.nv-tw span.in{opacity:0;transform:translateY(10px);transition:none}
+@media(prefers-reduced-motion:reduce){.nv-tw span{transition:none}}
+.nv-all{display:block;margin:8px 2px 0;background:none;border:0;padding:0;font:inherit;font-size:13px;color:var(--mut);cursor:pointer}
+.nv-list{margin-top:8px}
+.nv-li{padding:12px 0;border-top:1px solid var(--line);cursor:pointer}
+.nv-li .nv-m{margin:0}
+.nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795347587';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795347941';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1302,16 +1315,23 @@ const NVMES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','
 function nvFecha(n){if(n.fx)return n.fx;const [y,m,d]=n.f.split('-');return `${+d} ${NVMES[m-1]} ${y}`}
 function nvVistas(){try{return JSON.parse(lsGet('nvistas')||'[]')}catch(e){return []}}
 function nvMeta(n){return `<b>${esc(n.src)}</b><span>·</span><span>${nvFecha(n)}</span>`}
+let NVT=null,NVI=0;
 function pintaNov(){
+  clearInterval(NVT);
   const el=document.getElementById('nov');if(!el||!NOV.length){if(el)el.innerHTML='';return}
-  const v=nvVistas(),nw=n=>!v.includes(n.id)&&(Date.now()-new Date(n.f))<20*864e5;
-  const [a,...r]=NOV,lst=NVall?r:r.slice(0,2);
-  el.innerHTML=`<h2 class="nv-h">Novedades de la oposición</h2>
-  <div class="nv-lead" data-n="0"><div class="nv-img">${nvIl(a)}</div><div class="nv-m">${nvMeta(a,nw(a))}</div><h3>${esc(a.tit)}</h3>${a.ent?`<p>${esc(a.ent)}</p>`:''}</div>
-  ${lst.map((n,i)=>`<div class="nv-row" data-n="${i+1}"><div><div class="nv-m">${nvMeta(n,nw(n),1)}</div><h4>${esc(n.tit)}</h4></div><div class="nv-th">${nvIl(n)}</div></div>`).join('')}
-  ${!NVall&&r.length>2?'<button class="nv-more" id="nvMas">Ver más noticias</button>':''}`;
+  if(NVI>=NOV.length)NVI=0;
+  const n0=NOV[NVI];
+  el.innerHTML=`<div class="nv-tt" id="nvTT" role="button" tabindex="0"><b>Última hora</b><div class="nv-tw"><span id="nvTx">${esc(n0.tit)}</span></div></div>
+  <button class="nv-all" id="nvAll">${NVall?'Ocultar':'Ver todas'} (${NOV.length})</button>
+  ${NVall?`<div class="nv-list">${NOV.map((n,i)=>`<div class="nv-li" data-n="${i}"><div class="nv-m">${nvMeta(n)}</div><h4>${esc(n.tit)}</h4></div>`).join('')}</div>`:''}`;
+  document.getElementById('nvTT').onclick=()=>nvAbrir(NOV[NVI]);
+  document.getElementById('nvAll').onclick=()=>{NVall=!NVall;pintaNov()};
   el.querySelectorAll('[data-n]').forEach(e=>e.onclick=()=>nvAbrir(NOV[+e.dataset.n]));
-  const m=document.getElementById('nvMas');if(m)m.onclick=()=>{NVall=true;pintaNov()};
+  if(NOV.length>1)NVT=setInterval(()=>{
+    const x=document.getElementById('nvTx');if(!x){clearInterval(NVT);return}
+    x.classList.add('out');
+    setTimeout(()=>{NVI=(NVI+1)%NOV.length;const n=NOV[NVI];x.textContent=n.tit;x.classList.remove('out');x.classList.add('in');requestAnimationFrame(()=>requestAnimationFrame(()=>x.classList.remove('in')))},400);
+  },4000);
 }
 function nvAbrir(n){
   let A=document.getElementById('nvart');
@@ -1320,7 +1340,7 @@ function nvAbrir(n){
   const v=nvVistas();if(!v.includes(n.id)){v.push(n.id);lsSet('nvistas',JSON.stringify(v.slice(-80)))}
   A.scrollTop=0;document.documentElement.classList.add('nv-lock');requestAnimationFrame(()=>A.classList.add('on'));
   document.getElementById('nvBack').onclick=nvCerrar;
-  window.history.pushState({nv:1},'');pintaNov();
+  window.history.pushState({nv:1},'');
 }
 function nvCerrar(){const A=document.getElementById('nvart');if(A&&A.classList.contains('on')){A.classList.remove('on');document.documentElement.classList.remove('nv-lock');if(window.history.state&&window.history.state.nv)window.history.back()}}
 window.addEventListener('popstate',()=>{const A=document.getElementById('nvart');if(A)A.classList.remove('on');document.documentElement.classList.remove('nv-lock')});
