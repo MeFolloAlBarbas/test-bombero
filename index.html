@@ -348,7 +348,7 @@ summary{cursor:pointer}
 .nv-doc{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--nvac);text-decoration:none;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-top:6px}
 /*/NOV*/
 </style>
-<script>const APPV='1795347007';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795347078';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1295,6 +1295,7 @@ casa:`<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><rect widt
 boe:`<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><rect width="320" height="180" fill="var(--il4)"/><g transform="rotate(-6 160 90)"><rect x="96" y="30" width="128" height="130" rx="6" fill="var(--bg)" stroke="var(--il2)" stroke-width="3"/><g fill="var(--il3)"><rect x="112" y="50" width="96" height="9" rx="4"/><rect x="112" y="70" width="80" height="7" rx="3"/><rect x="112" y="84" width="90" height="7" rx="3"/><rect x="112" y="98" width="70" height="7" rx="3"/></g></g><circle cx="214" cy="128" r="26" fill="none" stroke="var(--il5)" stroke-width="4"/><text x="214" y="135" text-anchor="middle" font-size="20" font-weight="700" fill="var(--il5)" font-family="sans-serif">152</text></svg>`,
 calendario:`<svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><rect width="320" height="180" fill="var(--il1)"/><circle cx="60" cy="150" r="70" fill="var(--il3)"/><rect x="100" y="34" width="120" height="120" rx="12" fill="var(--bg)" stroke="var(--il2)" stroke-width="3"/><path d="M100 46a12 12 0 0 1 12-12h96a12 12 0 0 1 12 12v18H100z" fill="var(--il2)"/><g stroke="var(--il2)" stroke-width="5" stroke-linecap="round"><path d="M128 26v16M192 26v16"/></g><g fill="var(--il3)"><rect x="116" y="78" width="18" height="16" rx="3"/><rect x="142" y="78" width="18" height="16" rx="3"/><rect x="168" y="78" width="18" height="16" rx="3"/><rect x="116" y="104" width="18" height="16" rx="3"/><rect x="168" y="104" width="18" height="16" rx="3"/><rect x="194" y="78" width="18" height="16" rx="3"/></g><rect x="142" y="104" width="18" height="16" rx="3" fill="var(--il5)"/></svg>`
 };
+function nvIl(n){const t=NVIL[n.il]||NVIL.lista;return n.num?t.replace('>152<','>'+n.num+'<'):t}
 const NVMES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
 function nvFecha(n){if(n.fx)return n.fx;const [y,m,d]=n.f.split('-');return `${+d} ${NVMES[m-1]} ${y}`}
 function nvVistas(){try{return JSON.parse(lsGet('nvistas')||'[]')}catch(e){return []}}
@@ -1304,16 +1305,16 @@ function pintaNov(){
   const v=nvVistas(),nw=n=>!v.includes(n.id)&&(Date.now()-new Date(n.f))<20*864e5;
   const [a,...r]=NOV,lst=NVall?r:r.slice(0,2);
   el.innerHTML=`<h2 class="nv-h">${NOV.some(nw)?'<i></i>':''}Novedades de la oposición</h2>
-  <div class="nv-lead" data-n="0"><div class="nv-img">${NVIL[a.il]||NVIL.lista}</div><div class="nv-m">${nvMeta(a,nw(a))}</div><h3>${esc(a.tit)}</h3>${a.ent?`<p>${esc(a.ent)}</p>`:''}</div>
-  ${lst.map((n,i)=>`<div class="nv-row" data-n="${i+1}"><div><div class="nv-m">${nvMeta(n,nw(n),1)}</div><h4>${esc(n.tit)}</h4></div><div class="nv-th">${NVIL[n.il]||NVIL.lista}</div></div>`).join('')}
-  ${!NVall&&r.length>2?'<button class="nv-more" id="nvMas">Ver noticias anteriores</button>':''}`;
+  <div class="nv-lead" data-n="0"><div class="nv-img">${nvIl(a)}</div><div class="nv-m">${nvMeta(a,nw(a))}</div><h3>${esc(a.tit)}</h3>${a.ent?`<p>${esc(a.ent)}</p>`:''}</div>
+  ${lst.map((n,i)=>`<div class="nv-row" data-n="${i+1}"><div><div class="nv-m">${nvMeta(n,nw(n),1)}</div><h4>${esc(n.tit)}</h4></div><div class="nv-th">${nvIl(n)}</div></div>`).join('')}
+  ${!NVall&&r.length>2?'<button class="nv-more" id="nvMas">Ver más noticias</button>':''}`;
   el.querySelectorAll('[data-n]').forEach(e=>e.onclick=()=>nvAbrir(NOV[+e.dataset.n]));
   const m=document.getElementById('nvMas');if(m)m.onclick=()=>{NVall=true;pintaNov()};
 }
 function nvAbrir(n){
   let A=document.getElementById('nvart');
   if(!A){A=document.createElement('div');A.id='nvart';document.body.appendChild(A)}
-  A.innerHTML=`<div class="nv-w"><button class="nv-back" id="nvBack">‹ Volver</button><div class="nv-hero">${NVIL[n.il]||NVIL.lista}</div><div class="nv-b"><div class="nv-m">${nvMeta(n,false)}</div><h1>${esc(n.tit)}</h1>${n.txt.map(p=>`<p>${esc(p)}</p>`).join('')}${n.clave?`<div class="nv-clave"><b>A tener en cuenta</b>${esc(n.clave)}</div>`:''}<a class="nv-doc" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.doc||'Ver documento')} ↗</a></div></div>`;
+  A.innerHTML=`<div class="nv-w"><button class="nv-back" id="nvBack">‹ Volver</button><div class="nv-hero">${nvIl(n)}</div><div class="nv-b"><div class="nv-m">${nvMeta(n,false)}</div><h1>${esc(n.tit)}</h1>${n.txt.map(p=>`<p>${esc(p)}</p>`).join('')}${n.clave?`<div class="nv-clave"><b>A tener en cuenta</b>${esc(n.clave)}</div>`:''}<a class="nv-doc" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.doc||'Ver documento')} ↗</a></div></div>`;
   const v=nvVistas();if(!v.includes(n.id)){v.push(n.id);lsSet('nvistas',JSON.stringify(v.slice(-80)))}
   A.scrollTop=0;requestAnimationFrame(()=>A.classList.add('on'));
   document.getElementById('nvBack').onclick=nvCerrar;
@@ -1321,7 +1322,7 @@ function nvAbrir(n){
 }
 function nvCerrar(){const A=document.getElementById('nvart');if(A&&A.classList.contains('on')){A.classList.remove('on');if(window.history.state&&window.history.state.nv)window.history.back()}}
 window.addEventListener('popstate',()=>{const A=document.getElementById('nvart');if(A)A.classList.remove('on')});
-fetch('noticias.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{NOV=d.sort((a,b)=>b.f.localeCompare(a.f));pintaNov()}).catch(()=>{});
+fetch('noticias.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{NOV=d.sort((a,b)=>(a.p||9)-(b.p||9)||b.f.localeCompare(a.f));pintaNov()}).catch(()=>{});
 /*/NOV*/
 fetch('laboratorio.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{LAB=d}).catch(()=>{});
 fetch('glosario.json',{cache:'no-cache'}).then(r=>r.json()).then(g=>{GLOS=g;glosPrep()}).catch(()=>{});

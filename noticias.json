@@ -1,60 +1,96 @@
 [
-{
-"id": "2026-11-12-lista-fisicas",
-"f": "2026-11-12",
-"src": "Tribunal de selección",
-"il": "lista",
-"tit": "Ya es definitiva la lista de aprobados de las pruebas físicas",
-"ent": "El tribunal rechaza las alegaciones a la maza y al corte en madera. Falta el antidopaje.",
-"txt": [
-"El tribunal de las 152 plazas se reunió el 11 de noviembre y cerró el segundo ejercicio. La lista de quienes lo superaron pasa de provisional a definitiva.",
-"Se han rechazado todas las alegaciones presentadas contra dos pruebas: el desplazamiento de carga con maza y el corte en madera. Tampoco se revisarán marcas: el tribunal comprobó que los tiempos de las federaciones de atletismo y natación y las fichas firmadas por cada aspirante coinciden con las notas provisionales. Cada persona recibirá la respuesta a su alegación de forma individual.",
-"La lista queda condicionada al resultado del control antidopaje. Quien no esté de acuerdo puede presentar recurso de alzada en el plazo de un mes desde la publicación."
-],
-"clave": "El anuncio aún no da fecha para el siguiente ejercicio.",
-"url": "https://www.madrid.es/UnidadWeb/Contenidos/Oposiciones/2025/BomberoEspecialista2025/Ficheros/anuciodef2.pdf",
-"doc": "Ver el anuncio oficial (PDF)"
-},
-{
-"id": "2026-11-nodrizas-cam",
-"f": "2026-11-08",
-"fx": "Nov 2026",
-"src": "Comunidad de Madrid",
-"il": "camion",
-"tit": "Siete camiones nodriza de 11.500 litros para los bomberos de la Comunidad",
-"txt": [
-"El Consejo de Gobierno regional ha autorizado la compra de siete camiones nodriza, con capacidad para 11.500 litros de agua cada uno.",
-"El contrato asciende a unos 4,9 millones de euros y se ejecutará entre 2026 y 2031."
-],
-"clave": "Ojo: es el Cuerpo de Bomberos de la Comunidad de Madrid, no el del Ayuntamiento.",
-"url": "https://vivirediciones.es/?p=1148821",
-"doc": "Leer la noticia"
-},
-{
-"id": "2026-11-campana-hogar-cam",
-"f": "2026-11-03",
-"fx": "Nov 2026",
-"src": "Comunidad de Madrid",
-"il": "casa",
-"tit": "Campaña contra incendios en casa para mayores de pueblos",
-"txt": [
-"Durante noviembre, los bomberos regionales visitan municipios rurales para enseñar a las personas mayores de 65 años a prevenir incendios en el hogar.",
-"La idea es extender la actividad a más zonas rurales de la región."
-],
-"url": "https://www.comunidad.madrid/node/121706",
-"doc": "Leer la noticia"
-},
-{
-"id": "2025-10-29-boe-152",
-"f": "2025-10-29",
-"src": "BOE",
-"il": "boe",
-"tit": "El BOE publica la convocatoria de las 152 plazas",
-"txt": [
-"El Boletín Oficial del Estado recogió la convocatoria de 152 plazas de Bombero/a Especialista del Ayuntamiento de Madrid, por oposición libre.",
-"Las bases ya se habían publicado en el Boletín Oficial del Ayuntamiento el 10 de octubre de 2025. La publicación en el BOE abrió el plazo de solicitudes."
-],
-"url": "https://boe.es/boe/dias/2025/10/29/pdfs/BOE-A-2025-21764.pdf",
-"doc": "Ver en el BOE (PDF)"
-}
+ {
+  "id": "2026-11-12-lista-fisicas",
+  "f": "2026-11-12",
+  "src": "Ayto. Madrid",
+  "il": "lista",
+  "tit": "Ya es definitiva la lista de aprobados de las pruebas físicas",
+  "ent": "El tribunal rechaza las alegaciones a la maza y al corte en madera. Falta el antidopaje.",
+  "txt": [
+   "El tribunal de las 152 plazas se reunió el 11 de noviembre y cerró el segundo ejercicio. La lista de quienes lo superaron pasa de provisional a definitiva.",
+   "Se han rechazado todas las alegaciones presentadas contra dos pruebas: el desplazamiento de carga con maza y el corte en madera. Tampoco se revisarán marcas: el tribunal comprobó que los tiempos de las federaciones de atletismo y natación y las fichas firmadas por cada aspirante coinciden con las notas provisionales. Cada persona recibirá la respuesta a su alegación de forma individual.",
+   "La lista queda condicionada al resultado del control antidopaje. Quien no esté de acuerdo puede presentar recurso de alzada en el plazo de un mes desde la publicación."
+  ],
+  "clave": "El anuncio aún no da fecha para el siguiente ejercicio.",
+  "url": "https://www.madrid.es/UnidadWeb/Contenidos/Oposiciones/2025/BomberoEspecialista2025/Ficheros/anuciodef2.pdf",
+  "doc": "Ver el anuncio oficial (PDF)",
+  "p": 1
+ },
+ {
+  "id": "2026-08-cam-131",
+  "p": 2,
+  "f": "2026-08-06",
+  "src": "Comunidad de Madrid",
+  "il": "boe",
+  "num": "131",
+  "tit": "Comunidad de Madrid: sigue en marcha la oposición de 131 plazas",
+  "txt": [
+   "La Comunidad de Madrid convocó 131 plazas de Bombero Especialista Conductor (Orden 877/2026), por oposición libre seguida de un curso selectivo. El plazo de solicitudes fue del 9 de abril al 7 de mayo de 2026.",
+   "En julio se publicaron las listas provisionales de admitidos y excluidos, con plazo para subsanar hasta el 20 de julio. Después se ha modificado varias veces la composición del tribunal; la última, en el BOCM del 6 de agosto."
+  ],
+  "clave": "Es el cuerpo autonómico: temario y pruebas distintos a los del Ayuntamiento.",
+  "url": "https://www.comunidad.madrid/servicios/empleo/bomberos-bombero-especialista-c1-2026",
+  "doc": "Ver la oposición en la web de la Comunidad"
+ },
+ {
+  "id": "2026-07-toledo",
+  "p": 3,
+  "f": "2026-07-08",
+  "src": "Toledo",
+  "il": "calendario",
+  "tit": "Toledo convoca plazas de bombero-conductor este verano",
+  "txt": [
+   "El Consorcio Provincial de Extinción de Incendios y Salvamento de Toledo ha convocado 17 plazas de bombero-conductor. El anuncio salió en el BOE del 8 de julio de 2026, tras publicarse las bases en el Boletín de la Provincia en junio.",
+   "Por su parte, el Ayuntamiento de Toledo tiene en marcha otra convocatoria de bombero-conductor, que se amplió de 4 a 8 plazas en junio."
+  ],
+  "clave": "Son dos procesos distintos: el del Consorcio provincial y el del Ayuntamiento de la ciudad.",
+  "url": "https://www.boe.es/boe/dias/2026/07/08/pdfs/BOE-A-2026-14821.pdf",
+  "doc": "Ver el anuncio en el BOE (PDF)"
+ },
+ {
+  "id": "2026-06-conductor-68",
+  "p": 4,
+  "f": "2026-06-05",
+  "src": "Conductor · Ayto.",
+  "il": "boe",
+  "num": "68",
+  "tit": "Cambian las bases de las 68 plazas de Bombero Conductor Especialista",
+  "txt": [
+   "El Ayuntamiento de Madrid ha modificado las bases de la oposición de 68 plazas de Bombero/a Conductor/a Especialista, convocada en julio de 2025.",
+   "El cambio se hace para cumplir una sentencia del Tribunal de Instancia de Madrid (Sentencia 111/2026). La modificación se publicó en el BOAM en junio de 2026."
+  ],
+  "url": "https://sede.madrid.es/UnidadWeb/Contenidos/Oposiciones/2025/BomberoConductorEspecialista/Ficheros/68plBasesBOAM5junio26.pdf",
+  "doc": "Ver la modificación (PDF)"
+ },
+ {
+  "id": "2026-11-nodrizas-cam",
+  "f": "2026-11-08",
+  "fx": "Nov 2026",
+  "src": "Comunidad de Madrid",
+  "il": "camion",
+  "tit": "Siete camiones nodriza de 11.500 litros para los bomberos de la Comunidad",
+  "txt": [
+   "El Consejo de Gobierno regional ha autorizado la compra de siete camiones nodriza, con capacidad para 11.500 litros de agua cada uno.",
+   "El contrato asciende a unos 4,9 millones de euros y se ejecutará entre 2026 y 2031."
+  ],
+  "clave": "Ojo: es el Cuerpo de Bomberos de la Comunidad de Madrid, no el del Ayuntamiento.",
+  "url": "https://vivirediciones.es/?p=1148821",
+  "doc": "Leer la noticia",
+  "p": 5
+ },
+ {
+  "id": "2026-11-campana-hogar-cam",
+  "f": "2026-11-03",
+  "fx": "Nov 2026",
+  "src": "Comunidad de Madrid",
+  "il": "casa",
+  "tit": "Campaña contra incendios en casa para mayores de pueblos",
+  "txt": [
+   "Durante noviembre, los bomberos regionales visitan municipios rurales para enseñar a las personas mayores de 65 años a prevenir incendios en el hogar.",
+   "La idea es extender la actividad a más zonas rurales de la región."
+  ],
+  "url": "https://www.comunidad.madrid/node/121706",
+  "doc": "Leer la noticia",
+  "p": 5
+ }
 ]
