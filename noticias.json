@@ -38,10 +38,10 @@
   "f": "2026-07-08",
   "src": "Toledo",
   "il": "calendario",
-  "tit": "Toledo convoca plazas de bombero-conductor este verano",
+  "tit": "Toledo: 25 plazas de bombero-conductor en dos oposiciones",
   "txt": [
-   "El Consorcio Provincial de Extinción de Incendios y Salvamento de Toledo ha convocado 17 plazas de bombero-conductor. El anuncio salió en el BOE del 8 de julio de 2026, tras publicarse las bases en el Boletín de la Provincia en junio.",
-   "Por su parte, el Ayuntamiento de Toledo tiene en marcha otra convocatoria de bombero-conductor, que se amplió de 4 a 8 plazas en junio."
+   "El Consorcio Provincial de Extinción de Incendios y Salvamento de Toledo convocó 17 plazas de bombero-conductor por oposición libre (BOE del 8 de julio de 2026). El plazo de solicitudes acabó el 5 de agosto, y ya se ha publicado en el Boletín de la Provincia la relación definitiva de admitidos y excluidos (Decreto 209/2026).",
+   "Por su parte, el Ayuntamiento de Toledo convocó 8 plazas de bombero-conductor por concurso-oposición (BOE del 30 de junio). Su plazo terminó el 28 de julio."
   ],
   "clave": "Son dos procesos distintos: el del Consorcio provincial y el del Ayuntamiento de la ciudad.",
   "url": "https://www.boe.es/boe/dias/2026/07/08/pdfs/BOE-A-2026-14821.pdf",
@@ -61,6 +61,20 @@
   ],
   "url": "https://sede.madrid.es/UnidadWeb/Contenidos/Oposiciones/2025/BomberoConductorEspecialista/Ficheros/68plBasesBOAM5junio26.pdf",
   "doc": "Ver la modificación (PDF)"
+ },
+ {
+  "id": "2026-11-19-cpeis-presupuesto",
+  "p": 5,
+  "f": "2026-11-19",
+  "src": "Toledo",
+  "il": "camion",
+  "tit": "Los bomberos de la provincia de Toledo tendrán 31 millones en 2027",
+  "txt": [
+   "El Pleno del Consorcio Provincial de Extinción de Incendios y Salvamento de Toledo ha aprobado por unanimidad su presupuesto para 2027: algo más de 31 millones de euros, un 16,7 % más que este año.",
+   "El aumento servirá para reforzar la plantilla y los medios, y para seguir modernizando los ocho parques comarcales. La oferta de empleo incluye 30 plazas: 17 de bombero-conductor y 13 de cabo."
+  ],
+  "url": "https://www.encastillalamancha.es/castilla-la-mancha-cat/toledo/el-consorcio-de-bomberos-de-toledo-aprueba-por-unanimidad-su-presupuesto-para-2027-de-31-millones/",
+  "doc": "Leer la noticia"
  },
  {
   "id": "2026-11-nodrizas-cam",
