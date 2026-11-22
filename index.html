@@ -372,7 +372,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795353143';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795353251';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -767,9 +767,9 @@ function llamaRacha(n,px){const l=llamaNivel(n),g=l===4?LLAMA_AURA:PX.icons.llam
   let o=`<svg width="${px}" height="${px}" viewBox="${-(s-w)/2} ${-(s-h)/2} ${s} ${s}" shape-rendering="crispEdges" aria-hidden="true">${pxRects(g,cm)}</svg>`;
   if(LLAMA_SPK[l]){const [a,b]=LLAMA_SPK[l],sz=3;o+=[12,80,30,64,48,92].map((x,i)=>`<i style="left:${x}%;animation-delay:${[0,.5,1,.25,.75,1.25][i]}s"><svg width="${sz}" height="${sz}" viewBox="0 0 3 3" shape-rendering="crispEdges"><rect x="1" y="0" width="1" height="3" fill="#${b}"/><rect x="0" y="1" width="3" height="1" fill="#${b}"/><rect x="1" y="1" width="1" height="1" fill="#${a}"/></svg></i>`).join('')}
   return `<span class="lfx" style="width:${px}px;height:${px}px">${o}</span>`}
-function rachaHtml(hoy){if(!PID)return '';const n=racha(hoy),wk=weekDays(monday(hoy)).slice(0,6);
+function rachaHtml(hoy){const ph=!PID;const n=ph?0:racha(hoy),wk=weekDays(monday(hoy)).slice(0,6);
   const sq=wk.map(k=>`<i class="rd${diaHecho(k)?' on':''}" title="${nice(k)}"></i>`).join('');
-  return `<div class="racha"><div class="rt">${llamaRacha(n,20)}${n?`${n} día${n>1?'s':''} seguido${n>1?'s':''}`:'Contesta las 12 de hoy para empezar tu racha'}</div><div class="rds">${sq}</div></div>`}
+  return `<div class="racha"${ph?' style="visibility:hidden"':''}><div class="rt">${llamaRacha(n,20)}${n?`${n} día${n>1?'s':''} seguido${n>1?'s':''}`:'Contesta las 12 de hoy para empezar tu racha'}</div><div class="rds">${sq}</div></div>`}
 function home(){
   run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   const p=pending();
@@ -791,8 +791,9 @@ function home(){
     <div class="stat"><b>8,51</b><span>Nota teórica del 152</span></div>
     ${(()=>{const mx=maxSoFar(monday(key));if(!mx)return '<div class="stat"><b>–</b><span>Tu nota</span></div>';const v=Math.round(Math.max(0,(w?w.neta:0))/mx*1000)/100;return `<div class="stat"><b style="color:${v>=8.51?'var(--okt)':'var(--kot)'}">${v.toFixed(2).replace('.',',')}</b><span>Tu nota</span></div>`})()}
   </div>
+  ${rachaHtml(key)}
   ${sun?'':'<div class="nav" style="justify-content:center;margin-bottom:18px"><button class="btn sec" id="bDay">Revisar las de hoy</button></div>'}
-  ${avisoUnico()}<div id="nov"></div>${rachaHtml(key)}</div>
+  ${avisoUnico()}<div id="nov"></div></div>
   <div style="margin-top:auto;padding-top:28px">
   <p class="note">Hola, <b>${esc(NAME)}</b> · <a href="#" id="chName">cambiar PIN</a> · <a href="#" id="lo">cerrar sesión</a>.</p>
   <p class="note">Para entrar desde otro móvil u ordenador, usa tu nombre y tu PIN.</p>
