@@ -291,8 +291,12 @@ summary{cursor:pointer}
 .rk{grid-template-columns:2.2em minmax(0,1fr) auto!important;gap:10px!important;border-left:0!important;border-radius:8px!important;padding:9px 12px!important;margin:0 0 5px!important;font-size:15px!important}
 .rk .pos{text-align:center;font-weight:700}.rk .who b{font-size:15px!important}.rk .sc .ac{font-size:13px!important;opacity:.75}.rk .sc b{font-size:15px!important}
 .rk.yo{box-shadow:inset 0 0 0 2px currentColor}
+.bloq{text-align:center;padding:40px 10px}.bloq h2{font-size:20px;margin:0 0 8px}.bloq p{color:var(--mut)}
+.aexp{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.aex,.area{font:inherit;font-size:14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;padding:6px 12px;min-height:40px}
+.aex.warn{background:var(--kob);color:var(--kot);border-color:var(--kol);font-weight:600}
 </style>
-<script>const APPV='1795312995';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795313242';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -301,7 +305,7 @@ summary{cursor:pointer}
 <script>
 {
 const LS='bm-test-v1',T0=Date.UTC(2026,10,16),HOURS=[9,10,11,12,13,14,15,16,17,18,19,20];
-let LAB={par:[],err:[]},GLOS=[],RANK=null,FS=null,NAME='',BANK=[],S={stats:{},fallos:[],daily:{},start:null},run=null,DB=null,saving=Promise.resolve(),syncNote='';
+let BLOQ=false,LAB={par:[],err:[]},GLOS=[],RANK=null,FS=null,NAME='',BANK=[],S={stats:{},fallos:[],daily:{},start:null},run=null,DB=null,saving=Promise.resolve(),syncNote='';
 const app=document.getElementById('app'),homeBtn=document.getElementById('goHome');
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
@@ -457,6 +461,7 @@ async function connect(){
     const u=await new Promise((res,rej)=>{const off=onAuthStateChanged(auth,x=>{if(x){off();res(x)}});signInAnonymously(auth).catch(rej)});
     FS={fs,db,uid:u.uid,app:appF,B};
     const key=lsGet('key'),pid=lsGet('pid');
+    if(await comprobarBloqueo(pid)){render();return}
     if(key&&pid&&NAME){await bind(key,pid,NAME);await pull();await cargarSabotajes();await cargarLanzados();pushRank.last=null;save();if(pushState()==='on')enablePush(true)}
     adminTab();
     if(!run)render();
@@ -472,7 +477,7 @@ const ptsOf=(a,q)=>a===null?0:a===q.c?1:-0.33;
 const netaDay=k=>Object.values(S.daily[k]||{}).reduce((t,d)=>{const q=byId(d.id);return t+(q?ptsOf(d.a,q):0)},0);
 
 /* vistas */
-function render(){if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='tarjetas')tarjetas();else if(h==='ranking')ranking();else if(h==='admin')admin();else home();hdrChu();if(needTirada())showMaquina()}
+function render(){if(BLOQ){app.innerHTML='<div class="bloq"><h2>Acceso desactivado</h2><p>El administrador ha desactivado tu acceso a la web.</p></div>';document.querySelectorAll('nav,header nav,#tabs').forEach(n=>n.style.display='none');return}if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='tarjetas')tarjetas();else if(h==='ranking')ranking();else if(h==='admin')admin();else home();hdrChu();if(needTirada())showMaquina()}
 function go(h){if(location.hash==='#'+h)render();else location.hash=h}
 
 function pending(){
@@ -903,13 +908,26 @@ async function admin(msg){
   let L=[],R=[];try{L=(await fs.getDocs(fs.collection(db,'copias'))).docs.map(d=>({pid:d.id,n:d.data().nombre||'(sin nombre)',e:d.data().estado||{}})).sort((a,b)=>a.n.localeCompare(b.n,'es'))}
   catch(e){app.innerHTML='<p class="empty">No se ha podido cargar la lista. Revisa que las reglas nuevas estén publicadas.</p>';return}
   try{R=(await fs.getDocs(fs.collection(db,'ranking'))).docs.map(d=>({id:d.id,w:d.data().weeks||{}}))}catch(e){}
+  let BQ=[];try{BQ=(await fs.getDocs(fs.collection(db,'bloqueados'))).docs.map(d=>({pid:d.id,n:d.data().nombre||'(sin nombre)',k:(d.data().uids||[]).length}))}catch(e){}
+  const bq=new Set(BQ.map(x=>x.pid));L=L.filter(r=>!bq.has(r.pid));
   app.innerHTML=`${panelAdmin(L,R)}<h3 class="adh" style="margin-top:22px">Restablecer PIN</h3>
   <p class="note" style="text-align:center;margin:0 0 12px">Restablecer el PIN de un participante. Conserva todo su progreso; después debe cambiarlo en «cambiar PIN».</p>
   <p class="note" id="amsg" style="font-weight:600;color:var(--okt)">${msg||''}</p>
   ${L.map((r,i)=>`<div class="rk pass" style="grid-template-columns:minmax(0,1fr) 5em auto;background:transparent;color:inherit"><b class="an"></b>
     <input inputmode="numeric" maxlength="4" placeholder="PIN" data-i="${i}" style="width:5em">
-    <button data-i="${i}" class="ares">Restablecer</button></div>`).join('')||'<p class="empty">Todavía no hay participantes con copia guardada. Aparecen cuando entran en la web.</p>'}`;
+    <button data-i="${i}" class="ares">Restablecer</button></div>`).join('')||'<p class="empty">Todavía no hay participantes con copia guardada. Aparecen cuando entran en la web.</p>'}
+  <h3 class="adh" style="margin-top:22px">Expulsar</h3>
+  <p class="note" style="text-align:center;margin:0 0 12px">Le quita del ranking y bloquea su perfil y los móviles desde los que ha entrado. Se puede deshacer.</p>
+  ${L.filter(r=>r.pid!==PID).map(r=>`<div class="aexp"><b class="aexn" data-p="${r.pid}"></b><button class="aex" data-p="${r.pid}">Expulsar</button></div>`).join('')}
+  ${BQ.length?`<h4 class="sumh">Expulsados</h4>`+BQ.map(r=>`<div class="aexp"><span><b class="aexn2" data-p="${r.pid}"></b> <small class="mut">· ${r.k} ${r.k===1?'dispositivo':'dispositivos'}</small></span><button class="area" data-p="${r.pid}">Readmitir</button></div>`).join(''):''}`;
   app.querySelectorAll('.an').forEach((el,i)=>el.textContent=L[i].n);
+  const nom=p=>(L.find(r=>r.pid===p)||BQ.find(r=>r.pid===p)||{}).n||'';
+  app.querySelectorAll('.aexn,.aexn2').forEach(el=>el.textContent=nom(el.dataset.p));
+  app.querySelectorAll('.aex').forEach(b=>b.onclick=async()=>{const r=L.find(x=>x.pid===b.dataset.p);
+    if(!b.dataset.ok){b.dataset.ok=1;b.textContent='¿Seguro? Pulsa otra vez';b.classList.add('warn');setTimeout(()=>{if(b.isConnected){delete b.dataset.ok;b.textContent='Expulsar';b.classList.remove('warn')}},4000);return}
+    b.disabled=true;b.textContent='Expulsando…';
+    try{const n=await expulsar(r);admin(`${r.n} ha sido expulsado (${n} ${n===1?'dispositivo bloqueado':'dispositivos bloqueados'}).`)}catch(e){b.disabled=false;b.textContent='Expulsar';const m=document.getElementById('amsg');m.style.color='var(--kot)';m.textContent='No se ha podido expulsar. Revisa que las reglas nuevas estén publicadas.'}});
+  app.querySelectorAll('.area').forEach(b=>b.onclick=async()=>{b.disabled=true;try{await readmitir(b.dataset.p);admin(`${nom(b.dataset.p)} vuelve a tener acceso, con su progreso intacto.`)}catch(e){b.disabled=false;const m=document.getElementById('amsg');m.style.color='var(--kot)';m.textContent='No se ha podido readmitir.'}});
   app.querySelectorAll('.ares').forEach(b=>b.onclick=async()=>{
     const r=L[+b.dataset.i],pin=app.querySelector(`input[data-i="${b.dataset.i}"]`).value.trim(),m=document.getElementById('amsg');
     m.style.color='var(--kot)';
@@ -1049,6 +1067,26 @@ function parecidosHtml(){
 }
 function erratasHtml(){
   return `<p class="lab-in">Fallos de los manuales, contrastados con la norma.</p>`+LAB.err.map(e=>`<div class="err"><div class="err-t">${esc(e.t)}</div><div class="err-m">${esc(e.tema)} · ${esc(e.m)}</div><div class="err-b err-d"><span class="err-lb">El manual dice</span><q>${esc(e.dice)}</q></div><div class="err-b err-r"><span class="err-lb">En realidad</span>${e.real}</div><div class="err-b err-x"><span class="err-lb">Ojo en el examen</span>${esc(e.exa)}</div><div class="err-f">Fuente: ${esc(e.f)}</div></div>`).join('');
+}
+// ===== expulsiones =====
+async function comprobarBloqueo(pid){
+  if(!FS)return false;const {fs,db,uid}=FS;
+  try{if((await fs.getDoc(fs.doc(db,'vetados',uid))).exists())BLOQ=true}catch(e){}
+  try{if(pid&&(await fs.getDoc(fs.doc(db,'bloqueados',pid))).exists())BLOQ=true}catch(e){}
+  return BLOQ;
+}
+async function expulsar(r){
+  const {fs,db}=FS;let uids=[];
+  try{uids=(await fs.getDocs(fs.query(fs.collection(db,'devices'),fs.where('pid','==',r.pid)))).docs.map(d=>d.id)}catch(e){}
+  const b=fs.writeBatch(db);
+  b.set(fs.doc(db,'bloqueados',r.pid),{nombre:r.n.slice(0,30),t:Date.now(),uids});
+  uids.forEach(u=>b.set(fs.doc(db,'vetados',u),{pid:r.pid,t:Date.now()}));
+  b.delete(fs.doc(db,'ranking',r.pid));
+  await b.commit();return uids.length;
+}
+async function readmitir(pid){
+  const {fs,db}=FS;const d=await fs.getDoc(fs.doc(db,'bloqueados',pid));const uids=(d.exists()&&d.data().uids)||[];
+  const b=fs.writeBatch(db);uids.forEach(u=>b.delete(fs.doc(db,'vetados',u)));b.delete(fs.doc(db,'bloqueados',pid));await b.commit();
 }
 // ===== porcentajes de respuesta de todos =====
 async function votar(qid,o){

@@ -1,28 +1,32 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
+    function vetado(){ return request.auth != null && exists(/databases/$(database)/documents/vetados/$(request.auth.uid)); }
+    function bloqueado(p){ return exists(/databases/$(database)/documents/bloqueados/$(p)); }
     function isAdmin(){ return request.auth != null && exists(/databases/$(database)/documents/admins/$(request.auth.uid)); }
     // Perfil de cada persona. Su ID sale del nombre + PIN, así que solo
     // se puede abrir sabiendo los dos. No se puede listar.
     match /perfiles/{key} {
       allow get: if request.auth != null;
-      allow create: if request.auth != null
+      allow create: if request.auth != null && !vetado() && !bloqueado(request.resource.data.pid)
         && (!exists(/databases/$(database)/documents/ranking/$(request.resource.data.pid))
             || get(/databases/$(database)/documents/devices/$(request.auth.uid)).data.pid == request.resource.data.pid
             || isAdmin());
-      allow update: if request.auth != null
+      allow update: if request.auth != null && !vetado() && !bloqueado(resource.data.pid)
         && request.resource.data.pid == resource.data.pid;
       allow list, delete: if false;
     }
     // Nombres ya registrados (para que nadie use el nombre de otro).
     match /nombres/{n} {
-      allow get, create: if request.auth != null;
-      allow list, update, delete: if false;
+      allow get: if request.auth != null;
+      allow create: if request.auth != null && !vetado();
+      allow delete: if isAdmin();
+      allow list, update: if false;
     }
     // Cada dispositivo apunta al perfil con el que ha entrado.
     match /devices/{uid} {
-      allow read: if request.auth != null && request.auth.uid == uid;
-      allow write: if request.auth != null && request.auth.uid == uid
+      allow read: if (request.auth != null && request.auth.uid == uid) || isAdmin();
+      allow write: if request.auth != null && request.auth.uid == uid && !vetado()
         && get(/databases/$(database)/documents/perfiles/$(request.resource.data.key)).data.pid == request.resource.data.pid;
     }
     // Ranking: lo lee cualquiera; cada uno escribe solo su fila.
@@ -42,13 +46,13 @@ service cloud.firestore {
     // Copia del progreso de cada participante, para poder restablecer su PIN.
     match /copias/{pid} {
       allow read: if isAdmin();
-      allow write: if request.auth != null
+      allow write: if request.auth != null && !vetado()
         && get(/databases/$(database)/documents/devices/$(request.auth.uid)).data.pid == pid;
     }
     // Chulitos (sabotajes): cada uno lanza en su nombre; lo leen la víctima y quien lo lanzó.
     function miPid(){ return get(/databases/$(database)/documents/devices/$(request.auth.uid)).data.pid; }
     match /sabotajes/{id} {
-      allow create: if request.auth != null
+      allow create: if request.auth != null && !vetado()
         && request.resource.data.from == miPid()
         && request.resource.data.to is string
         && request.resource.data.to != request.resource.data.from
@@ -76,10 +80,10 @@ service cloud.firestore {
     function suma(m){ return m.get('o0',0) + m.get('o1',0) + m.get('o2',0) + m.get('o3',0); }
     match /votos/{q} {
       allow read: if request.auth != null;
-      allow create: if request.auth != null && votoNuevo(q)
+      allow create: if request.auth != null && !vetado() && votoNuevo(q)
         && request.resource.data.keys().hasOnly(['o0','o1','o2','o3'])
         && request.resource.data.size() == 1 && suma(request.resource.data) == 1;
-      allow update: if request.auth != null && votoNuevo(q)
+      allow update: if request.auth != null && !vetado() && votoNuevo(q)
         && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['o0','o1','o2','o3'])
         && request.resource.data.diff(resource.data).affectedKeys().size() == 1
         && suma(request.resource.data) == suma(resource.data) + 1;
@@ -89,13 +93,22 @@ service cloud.firestore {
         allow read, update, delete: if false;
       }
     }
+    // Expulsiones: solo el administrador. Cada uno puede consultar si está bloqueado.
+    match /bloqueados/{p} {
+      allow get: if request.auth != null;
+      allow list, write: if isAdmin();
+    }
+    match /vetados/{u} {
+      allow get: if request.auth != null && (request.auth.uid == u || isAdmin());
+      allow list, write: if isAdmin();
+    }
     match /ranking/{pid} {
       allow read: if true;
-      allow create, update: if request.auth != null
+      allow create, update: if request.auth != null && !vetado() && !bloqueado(pid)
         && get(/databases/$(database)/documents/devices/$(request.auth.uid)).data.pid == pid
         && request.resource.data.nombre is string
         && request.resource.data.nombre.size() <= 30;
-      allow delete: if request.auth != null && (request.auth.uid == pid
+      allow delete: if isAdmin() || request.auth != null && (request.auth.uid == pid
         || get(/databases/$(database)/documents/devices/$(request.auth.uid)).data.pid == pid);
     }
   }
