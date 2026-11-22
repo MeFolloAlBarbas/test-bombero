@@ -9,7 +9,9 @@
 <link rel="icon" type="image/png" sizes="48x48" href="img/favicon.png?v=3">
 <link rel="shortcut icon" href="favicon.ico?v=3">
 <link rel="apple-touch-icon" href="img/apple-touch-icon-v2.png">
-<meta name="theme-color" content="#3b6d11">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" id="thc" content="#1a1a1a">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <style>
 /* VOICE: sencillo y limpio, igual que las preguntas del chat
@@ -373,7 +375,8 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795365314';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795365479';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
