@@ -537,5 +537,1115 @@
 "d": "Medio de ejecución más intenso: actúa sobre la propia persona. Solo para obligaciones de no hacer o soportar, si la ley lo autoriza.",
 "tema": "Procedimiento administrativo",
 "f": "Ley 39/2015, art. 104"
+},
+{
+"t": "Densidad relativa",
+"a": [
+"densidad relativa"
+],
+"d": "Compara el peso de un gas con el del aire (aire = 1). Si es menor que 1, sube; si es mayor, se acumula abajo.",
+"tema": "Gas y GLP",
+"f": "Manual de gas natural"
+},
+{
+"t": "Tensión de vapor",
+"a": [
+"tensión de vapor"
+],
+"d": "Equilibrio entre el líquido y el gas dentro de la bombona de GLP. Por eso no se llena del todo (máximo 85 %).",
+"tema": "Gas y GLP",
+"f": "Manual de gas natural"
+},
+{
+"t": "Válvula de seguridad",
+"a": [
+"válvula de seguridad"
+],
+"d": "Válvula contra sobrepresiones en la parte superior de la bombona de GLP. Abre a 26 bar.",
+"tema": "Gas y GLP",
+"f": "Manual de gas natural"
+},
+{
+"t": "THT",
+"a": [
+"THT",
+"odorizante"
+],
+"d": "Odorizante que se añade al gas natural, que no huele, para poder detectar las fugas.",
+"tema": "Gas y GLP",
+"f": "Manual de gas natural"
+},
+{
+"t": "Llama higiénica",
+"a": [
+"llama higiénica"
+],
+"d": "Llama azul, dura y estable, que no produce CO ni hollín. Una llama amarilla indica mala combustión.",
+"tema": "Gas y GLP",
+"f": "Manual de gas natural"
+},
+{
+"t": "Índice de Wobbe",
+"a": [
+"Wobbe"
+],
+"d": "Relaciona el poder calorífico con la densidad del gas y agrupa los gases en familias. Gases de distinta familia no son intercambiables.",
+"tema": "Gas y GLP",
+"f": "Manual de gas natural"
+},
+{
+"t": "GLP",
+"a": [
+"GLP"
+],
+"d": "Gases licuados del petróleo (propano y butano). Se guardan licuados: ocupan unas 240 veces menos que en gas.",
+"tema": "Gas y GLP",
+"f": "Manual de gas natural"
+},
+{
+"t": "Gas natural",
+"a": [
+"gas natural"
+],
+"d": "Mezcla de hidrocarburos ligeros, sobre todo metano (≈80 %). No es tóxico, pero desplaza el oxígeno.",
+"tema": "Gas y GLP",
+"f": "Manual de gas natural",
+"solo": 1
+},
+{
+"t": "GNL",
+"a": [
+"GNL"
+],
+"d": "Gas natural licuado: se licúa a unos −160 °C.",
+"tema": "Gas y GLP",
+"f": "Manual de gas natural"
+},
+{
+"t": "Acometida de gas",
+"a": [
+"acometida"
+],
+"d": "Tramo que une la red con el edificio. En Madrid hay de baja presión (sobre todo en la almendra central) y de media presión en el resto.",
+"tema": "Gas y GLP",
+"f": "Manual de gas natural",
+"solo": 1
+},
+{
+"t": "Recorrido de evacuación",
+"a": [
+"recorrido de evacuación",
+"recorridos de evacuación"
+],
+"d": "Distancia que hay que andar hasta una salida. Se limita porque el humo avanza más rápido que la gente.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 3"
+},
+{
+"t": "Sector de incendio",
+"a": [
+"sector de incendio"
+],
+"d": "Zona cerrada con elementos resistentes al fuego para que el incendio no pase al resto del edificio durante un tiempo. En general, máximo 2.500 m².",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 1"
+},
+{
+"t": "Altura de evacuación",
+"a": [
+"altura de evacuación"
+],
+"d": "Diferencia de cota entre la planta más alejada y la de salida del edificio. De ella dependen muchas exigencias del DB-SI.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI, Anejo A"
+},
+{
+"t": "Espacio de maniobra",
+"a": [
+"espacio de maniobra"
+],
+"d": "Zona junto a la fachada para los vehículos de bomberos, sobre todo las autoescalas. Obligatorio con más de 9 m de altura de evacuación.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 5"
+},
+{
+"t": "Vial de aproximación",
+"a": [
+"vial de aproximación",
+"viales de aproximación",
+"viales"
+],
+"d": "Camino que lleva a los vehículos de bomberos hasta el espacio de maniobra. Gálibo mínimo de 4,5 m.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 5",
+"solo": 1
+},
+{
+"t": "Columna seca",
+"a": [
+"columna seca"
+],
+"d": "Tubería vacía que los bomberos conectan desde la calle. En viviendas, obligatoria con más de 24 m de altura de evacuación.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 4"
+},
+{
+"t": "BIE",
+"a": [
+"BIE"
+],
+"d": "Boca de incendio equipada: manguera fija conectada a una red de agua para la primera intervención. 45 mm en general; 25 mm en viviendas.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 4"
+},
+{
+"t": "Hidrante exterior",
+"a": [
+"hidrante",
+"hidrantes"
+],
+"d": "Toma de agua en la calle para abastecer a los vehículos de bomberos. Cuentan los que están a menos de 100 m de la fachada.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 4",
+"solo": 1
+},
+{
+"t": "Extinción automática",
+"a": [
+"extinción automática",
+"rociadores"
+],
+"d": "Instalación que apaga el fuego sin intervención humana, como los rociadores.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 4"
+},
+{
+"t": "Escalera protegida",
+"a": [
+"escalera protegida"
+],
+"d": "Recinto donde los ocupantes pueden permanecer un tiempo con seguridad. Se protege del humo con ventilación, conductos o presión diferencial.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 3"
+},
+{
+"t": "Interfaz urbano-forestal",
+"a": [
+"interfaz urbano-forestal",
+"zona forestal"
+],
+"d": "Zona donde los edificios lindan con terreno forestal, de especial riesgo de incendio. Exige una franja libre de 25 m.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 5"
+},
+{
+"t": "Hueco de acceso para bomberos",
+"a": [
+"hueco de acceso",
+"huecos"
+],
+"d": "Hueco en fachada que permite a los bomberos entrar en cada planta desde fuera. Mínimo 0,80 × 1,20 m.",
+"tema": "CTE DB-SI",
+"f": "CTE DB-SI 5",
+"solo": 1
+},
+{
+"t": "Zona caliente",
+"a": [
+"zona caliente"
+],
+"d": "Zona de acción alrededor del vehículo accidentado (en general, de 2 a 5 m). Solo entra personal con EPI y formación.",
+"tema": "Tráfico (APRAT)",
+"f": "APRAT"
+},
+{
+"t": "Condensador",
+"a": [
+"condensador",
+"condensadores"
+],
+"d": "Almacena carga y la retiene tras desconectar la fuente. Por eso un airbag puede dispararse con la batería desembornada.",
+"tema": "Tráfico (APRAT)",
+"f": "APRAT I"
+},
+{
+"t": "Airbag de dos etapas",
+"a": [
+"dos etapas"
+],
+"d": "Airbag con dos disparos según la violencia del choque: que haya saltado no significa que esté desactivado.",
+"tema": "Tráfico (APRAT)",
+"f": "APRAT I"
+},
+{
+"t": "Pretensor",
+"a": [
+"pretensor",
+"pretensores"
+],
+"d": "Tensa el cinturón en un choque frontal. Los hay mecánicos (sensor mecánico, sin electricidad) y pirotécnicos.",
+"tema": "Tráfico (APRAT)",
+"f": "APRAT I"
+},
+{
+"t": "Niveles de atrapamiento",
+"a": [
+"atrapamiento"
+],
+"d": "Clasificación del APRAT para decidir el rescate. Físico 1: no puede salir por sus lesiones, pero el vehículo no le atrapa. Físico 2: el vehículo le atrapa.",
+"tema": "Tráfico (APRAT)",
+"f": "APRAT II",
+"solo": 1
+},
+{
+"t": "Vía de extracción",
+"a": [
+"vía de extracción",
+"salida de extracción"
+],
+"d": "Salida por la que se saca a la víctima. Se elige la que menos gira la columna: 0º por el portón; 25º por la puerta trasera del mismo lado.",
+"tema": "Tráfico (APRAT)",
+"f": "APRAT II"
+},
+{
+"t": "Estabilización",
+"a": [
+"estabilización"
+],
+"d": "Evitar movimientos del vehículo que agraven las lesiones y crear un lugar de trabajo seguro. Sobre ruedas: cuñas a ambos lados de una o dos ruedas.",
+"tema": "Tráfico (APRAT)",
+"f": "APRAT",
+"solo": 1
+},
+{
+"t": "Acceso sanitario",
+"a": [
+"acceso sanitario"
+],
+"d": "Espacio que se crea como prioridad para que el sanitario llegue al herido y lo valore.",
+"tema": "Tráfico (APRAT)",
+"f": "APRAT"
+},
+{
+"t": "Paracaídas",
+"a": [
+"paracaídas"
+],
+"d": "Frena la cabina clavando cuñas contra las guías cuando baja demasiado rápido. Para soltarlo, la cabina se mueve hacia arriba.",
+"tema": "Ascensores",
+"f": "Manual de ascensores"
+},
+{
+"t": "Foso",
+"a": [
+"foso"
+],
+"d": "Parte del hueco por debajo de la última parada. Tiene mandos (seta de emergencia, finales de carrera, limitador) que pueden quedar con tensión.",
+"tema": "Ascensores",
+"f": "Manual de ascensores"
+},
+{
+"t": "Ascensor hidráulico",
+"a": [
+"hidráulico",
+"hidráulicos"
+],
+"d": "La cabina sube empujada por aceite a presión; para bajarla basta con dejar salir el aceite (botón o tirador rojo).",
+"tema": "Ascensores",
+"f": "Manual de ascensores",
+"solo": 1
+},
+{
+"t": "Ascensor de emergencia",
+"a": [
+"ascensor de emergencia"
+],
+"d": "Ascensor de uso prioritario para bomberos en un incendio. Carga mínima de 630 kg (bomberos con equipo o camilla).",
+"tema": "Ascensores",
+"f": "Manual de ascensores · CTE DB-SI"
+},
+{
+"t": "Faldón",
+"a": [
+"faldón"
+],
+"d": "Chapa bajo la puerta de la cabina que tapa el hueco del foso cuando la cabina se para entre dos pisos. Mínimo 750 mm.",
+"tema": "Ascensores",
+"f": "Manual de ascensores"
+},
+{
+"t": "Ascensor sin cuarto de máquinas",
+"a": [
+"sin cuarto de máquinas"
+],
+"d": "El protocolo añade un paso propio: mover la cabina con el sistema eléctrico de emergencia.",
+"tema": "Ascensores",
+"f": "Manual de ascensores"
+},
+{
+"t": "Enjambrazón",
+"a": [
+"enjambrazón"
+],
+"d": "División natural de la colonia: se va la reina vieja con parte de las abejas; en la colmena nacen reinas nuevas.",
+"tema": "Apícola",
+"f": "Manual de rescate apícola"
+},
+{
+"t": "Ahumador",
+"a": [
+"humo"
+],
+"d": "El humo hace que las abejas llenen el buche de miel y les cueste picar. Es la herramienta clásica para trabajar sin ataques masivos.",
+"tema": "Apícola",
+"f": "Manual de rescate apícola",
+"solo": 1
+},
+{
+"t": "Aspirado del enjambre",
+"a": [
+"aspirado",
+"aspirar"
+],
+"d": "Forma de retirar las abejas: se ahúma hacia una zona limpia y se aspira a la potencia mínima.",
+"tema": "Apícola",
+"f": "Manual de rescate apícola",
+"solo": 1
+},
+{
+"t": "Lagarto ocelado",
+"a": [
+"lagarto ocelado"
+],
+"d": "Reptil grande y verdoso con manchas azules (50-60 cm, hasta 90). Su peligro es el mordisco: cierra fuerte la mandíbula.",
+"tema": "Apícola",
+"f": "Manual de rescate apícola"
+},
+{
+"t": "Eslingas",
+"a": [
+"eslingas"
+],
+"d": "Cintas para izar animales grandes, como caballos o vacas. Un animal grande no debe estar suspendido más de 15 minutos.",
+"tema": "Apícola",
+"f": "Manual de rescate apícola"
+},
+{
+"t": "Pulsioxímetro",
+"a": [
+"pulsioxímetro"
+],
+"d": "Mide la proporción de hemoglobina saturada de oxígeno. El convencional no distingue la carboxihemoglobina.",
+"tema": "Atención sanitaria",
+"f": "Manual de Soporte Vital Básico"
+},
+{
+"t": "Carboxihemoglobina",
+"a": [
+"carboxihemoglobina"
+],
+"d": "Unión del CO con la hemoglobina (240 veces más afín que el oxígeno). Produce hipoxia; se trata con oxígeno al 100 %.",
+"tema": "Atención sanitaria",
+"f": "Atención inicial al politraumatizado"
+},
+{
+"t": "Relleno capilar",
+"a": [
+"relleno capilar"
+],
+"d": "Se aprieta la uña y se suelta: indica si la sangre llega bien a la periferia. Normal, menos de 3 segundos.",
+"tema": "Atención sanitaria",
+"f": "Atención inicial al politraumatizado"
+},
+{
+"t": "Torniquete",
+"a": [
+"torniquete"
+],
+"d": "Corta toda la circulación de una extremidad. Detiene la hemorragia, pero puede causar daños: solo para amputaciones o hemorragias que no paran con presión.",
+"tema": "Atención sanitaria",
+"f": "Atención inicial al politraumatizado"
+},
+{
+"t": "AVDN",
+"a": [
+"AVDN"
+],
+"d": "Valoración rápida del nivel de conciencia: Alerta, responde a la Voz, al Dolor o No responde.",
+"tema": "Atención sanitaria",
+"f": "Atención inicial al politraumatizado"
+},
+{
+"t": "Escala de Glasgow",
+"a": [
+"Glasgow"
+],
+"d": "Valora el nivel de conciencia sumando respuesta ocular, verbal y motora: de 3 a 15. TCE leve 14-15 · moderado 9-13 · grave menos de 9.",
+"tema": "Atención sanitaria",
+"f": "Atención inicial al politraumatizado"
+},
+{
+"t": "Collarín cervical",
+"a": [
+"collarín"
+],
+"d": "Protege el cuello ante sospecha de traumatismo. Se pone entre dos personas, en posición neutra y sin traccionar. No limita los movimientos laterales: no se suelta la cabeza.",
+"tema": "Atención sanitaria",
+"f": "Atención inicial al politraumatizado"
+},
+{
+"t": "SIEVE",
+"a": [
+"SIEVE"
+],
+"d": "Triaje del Reino Unido con esquema C-ABC: camina · vía aérea · respiración · circulación. No valora el estado mental.",
+"tema": "Atención sanitaria",
+"f": "Patologías e IMV"
+},
+{
+"t": "DEA",
+"a": [
+"DEA"
+],
+"d": "Desfibrilador externo automático: analiza el ritmo y, si es desfibrilable, da una descarga. En niños, con atenuador o modo pediátrico.",
+"tema": "Sanitario (SVB)",
+"f": "Manual de Soporte Vital Básico"
+},
+{
+"t": "Cadena de supervivencia",
+"a": [
+"cadena de supervivencia"
+],
+"d": "Eslabones que salvan vidas en una parada; uno de ellos es la desfibrilación precoz.",
+"tema": "Sanitario (SVB)",
+"f": "Manual de Soporte Vital Básico"
+},
+{
+"t": "Obstrucción de la vía aérea",
+"a": [
+"obstrucción"
+],
+"d": "Incompleta: pasa aire, se anima a toser. Completa: 5 golpes en la espalda y 5 compresiones abdominales.",
+"tema": "Sanitario (SVB)",
+"f": "Manual de Soporte Vital Básico",
+"solo": 1
+},
+{
+"t": "RCP",
+"a": [
+"RCP",
+"compresiones"
+],
+"d": "Reanimación cardiopulmonar. Compresiones de 5-6 cm a 110-120 por minuto. En niños se empieza con 5 ventilaciones.",
+"tema": "Sanitario (SVB)",
+"f": "Manual de Soporte Vital Básico",
+"solo": 1
+},
+{
+"t": "Síndrome coronario agudo",
+"a": [
+"síndrome coronario",
+"ángor",
+"infarto"
+],
+"d": "Ángor: la arteria coronaria se estrecha. Infarto (IAM): se obstruye del todo.",
+"tema": "Patología cardiovascular",
+"f": "Manual de patologías"
+},
+{
+"t": "Crisis hipertensiva",
+"a": [
+"crisis hipertensiva"
+],
+"d": "Subida brusca de la tensión. Es emergencia si daña órganos diana (cerebro, corazón, riñones).",
+"tema": "Patología cardiovascular",
+"f": "Manual de patologías"
+},
+{
+"t": "Insuficiencia respiratoria",
+"a": [
+"insuficiencia respiratoria"
+],
+"d": "Fallo del aparato respiratorio para oxigenar la sangre: saturación por debajo del 90 %.",
+"tema": "Síntomas clínicos",
+"f": "Manual de patologías"
+},
+{
+"t": "Oxicorte",
+"a": [
+"oxicorte"
+],
+"d": "Corta el metal calentándolo al rojo cereza y quemándolo después con un chorro de oxígeno puro.",
+"tema": "Corte y soldadura",
+"f": "Manual de corte térmico"
+},
+{
+"t": "Chemtane",
+"a": [
+"Chemtane"
+],
+"d": "Combustible del oxicorte que sustituye al acetileno: 99 % propano, unos 3.300 °C. Válvula y manguera rojas.",
+"tema": "Corte y soldadura",
+"f": "Manual de corte térmico"
+},
+{
+"t": "Regulador",
+"a": [
+"regulador"
+],
+"d": "Baja la presión de la botella a la de trabajo. Oxígeno 2-5 bar; Chemtane 0,5 bar.",
+"tema": "Corte y soldadura",
+"f": "Manual de corte térmico",
+"solo": 1
+},
+{
+"t": "Lanza térmica",
+"a": [
+"lanza térmica"
+],
+"d": "Herramienta de corte que alcanza 4.000-5.000 °C en la punta y funciona incluso sumergida.",
+"tema": "Corte y soldadura",
+"f": "Manual de corte térmico"
+},
+{
+"t": "Aparatos de gas tipo A, B y C",
+"a": [
+"tipo A",
+"tipo B",
+"tipo C"
+],
+"d": "A: vierte el humo al local. B: coge aire del local y saca el humo por un conducto. C: estanco, aire de fuera y humo fuera.",
+"tema": "ACS",
+"f": "Manual de ACS",
+"solo": 1
+},
+{
+"t": "Legionela",
+"a": [
+"legionela"
+],
+"d": "Bacteria que se multiplica en el agua tibia estancada y puede causar neumonías graves. Se elimina a 70 °C.",
+"tema": "ACS",
+"f": "Manual de ACS"
+},
+{
+"t": "Acometida de agua",
+"a": [
+"acometida"
+],
+"d": "Une la red pública con la instalación del edificio. Normalmente una; los edificios especiales pueden tener dos en anillo; la de incendios, siempre independiente.",
+"tema": "Agua fría",
+"f": "Manual de agua fría",
+"solo": 1
+},
+{
+"t": "Arteria",
+"a": [
+"arteria",
+"arterias"
+],
+"d": "Tubería de la red de transporte de agua. En ella no se ponen acometidas ni hidrantes.",
+"tema": "Agua fría",
+"f": "Manual de agua fría",
+"solo": 1
+},
+{
+"t": "Red de distribución",
+"a": [
+"red de distribución"
+],
+"d": "Tiene tres subredes: transporte (arterias), distribución principal y secundaria (ramales). Es propiedad del Canal de Isabel II.",
+"tema": "Agua fría",
+"f": "Manual de agua fría"
+},
+{
+"t": "Nomenclatura de bombas",
+"a": [
+"FPN"
+],
+"d": "Indica presión y caudal: FPN 10/3500 es una bomba de baja presión que a 10 bar da 3.500 l/min.",
+"tema": "Vehículos",
+"f": "Información básica de vehículos"
+},
+{
+"t": "Cabrestante",
+"a": [
+"cabrestante"
+],
+"d": "Torno para arrastrar o sujetar cargas.",
+"tema": "Vehículos",
+"f": "Información básica de vehículos"
+},
+{
+"t": "Autoescala",
+"a": [
+"autoescala",
+"autoescalas"
+],
+"d": "Vehículo con escalera extensible. El Servicio tiene convencionales y articuladas.",
+"tema": "Vehículos",
+"f": "Información básica de vehículos"
+},
+{
+"t": "Resbalón",
+"a": [
+"resbalón"
+],
+"d": "Pieza que cierra la puerta al tirar de ella sin echar la llave. Su cara inclinada mira hacia el cerradero.",
+"tema": "Accesos forzados",
+"f": "Manual de accesos forzados"
+},
+{
+"t": "Picaporte con condena",
+"a": [
+"condena"
+],
+"d": "Cerradura sencilla que se bloquea desde dentro, típica del baño.",
+"tema": "Accesos forzados",
+"f": "Manual de accesos forzados"
+},
+{
+"t": "Puerta blindada",
+"a": [
+"blindada"
+],
+"d": "Más resistente que la estándar, menos que la acorazada. Las puertas se ordenan: estándar, blindada, acorazada.",
+"tema": "Accesos forzados",
+"f": "Manual de accesos forzados"
+},
+{
+"t": "Puerta acorazada",
+"a": [
+"acorazada"
+],
+"d": "La más resistente: bisagras robustas y varios cierres antipalanca.",
+"tema": "Accesos forzados",
+"f": "Manual de accesos forzados"
+},
+{
+"t": "Autonomía del ERA",
+"a": [
+"aire disponible"
+],
+"d": "Aire disponible = (presión inicial − presión final) × volumen de la botella; dividido por el consumo da los minutos.",
+"tema": "EPI",
+"f": "Manual de EPI"
+},
+{
+"t": "Alarma de baja presión",
+"a": [
+"alarma"
+],
+"d": "Aviso acústico del manorreductor del ERA: suena a 55 bar y sigue hasta quedar 10 bar.",
+"tema": "EPI",
+"f": "Manual de EPI",
+"solo": 1
+},
+{
+"t": "Prescripción",
+"a": [
+"prescripción",
+"prescriben"
+],
+"d": "Plazo tras el cual ya no se puede sancionar una falta si la Administración no ha actuado. Faltas graves: 2 años.",
+"tema": "EBEP",
+"f": "TREBEP, art. 97",
+"solo": 1
+},
+{
+"t": "Funcionario interino",
+"a": [
+"interino",
+"interinos"
+],
+"d": "Nombrado temporalmente, por necesidad y urgencia, para funciones de funcionario de carrera (vacante: máximo 3 años).",
+"tema": "EBEP",
+"f": "TREBEP, art. 10"
+},
+{
+"t": "Situaciones administrativas",
+"a": [
+"situaciones administrativas"
+],
+"d": "Posición en que se encuentra un funcionario respecto a su puesto: servicio activo, excedencia, suspensión…",
+"tema": "EBEP",
+"f": "TREBEP, art. 85"
+},
+{
+"t": "Excedencia",
+"a": [
+"excedencia"
+],
+"d": "Situación en la que el funcionario deja de prestar servicio durante un tiempo.",
+"tema": "EBEP",
+"f": "TREBEP, art. 89"
+},
+{
+"t": "Suspensión firme",
+"a": [
+"suspensión firme"
+],
+"d": "Sanción que aparta al funcionario de sus funciones (máximo 6 años).",
+"tema": "EBEP",
+"f": "TREBEP, art. 90"
+},
+{
+"t": "Separación del servicio",
+"a": [
+"separación del servicio"
+],
+"d": "Sanción más grave: pérdida de la condición de funcionario. Solo por falta muy grave.",
+"tema": "EBEP",
+"f": "TREBEP, art. 96"
+},
+{
+"t": "Grupos de clasificación",
+"a": [
+"grupo",
+"grupos"
+],
+"d": "Los cuerpos se clasifican en grupos según la titulación exigida para entrar.",
+"tema": "EBEP",
+"f": "TREBEP, art. 76",
+"solo": 1
+},
+{
+"t": "Junta de Gobierno Local",
+"a": [
+"Junta de Gobierno Local",
+"Junta de Gobierno"
+],
+"d": "Órgano que ayuda al Alcalde a dirigir el ayuntamiento. Obligatoria con más de 5.000 habitantes; como máximo, un tercio de los concejales.",
+"tema": "Régimen local",
+"f": "Ley 7/1985, arts. 20 y 23"
+},
+{
+"t": "Servicios mínimos obligatorios",
+"a": [
+"servicios mínimos"
+],
+"d": "Servicios que cada municipio debe prestar según su población (art. 26). Extinción de incendios, desde 20.000; transporte urbano, desde 50.000.",
+"tema": "Régimen local",
+"f": "Ley 7/1985, art. 26"
+},
+{
+"t": "Distrito",
+"a": [
+"Distrito",
+"Distritos"
+],
+"d": "División territorial con órganos de gestión desconcentrada. En Madrid lo preside siempre un Concejal.",
+"tema": "Régimen local",
+"f": "Ley 22/2006",
+"solo": 1
+},
+{
+"t": "Moción de censura",
+"a": [
+"moción de censura"
+],
+"d": "Permite al Pleno destituir al Alcalde. Votación pública y por llamamiento nominal.",
+"tema": "Régimen local",
+"f": "Ley 7/1985"
+},
+{
+"t": "Bando",
+"a": [
+"bando",
+"bandos"
+],
+"d": "Aviso o mandato del Alcalde dirigido a los vecinos.",
+"tema": "Régimen local",
+"f": "Ley 7/1985, art. 21"
+},
+{
+"t": "Voto de calidad",
+"a": [
+"voto de calidad"
+],
+"d": "Voto que sirve para desempatar. Lo tiene el Alcalde.",
+"tema": "Régimen local",
+"f": "Ley 7/1985"
+},
+{
+"t": "Competencias propias",
+"a": [
+"competencias propias",
+"competencia propia"
+],
+"d": "Las que el municipio ejerce en su propio nombre, como la prevención y extinción de incendios.",
+"tema": "Régimen local",
+"f": "Ley 7/1985, art. 25"
+},
+{
+"t": "Padrón",
+"a": [
+"padrón"
+],
+"d": "Registro de los vecinos del municipio. No prueba la residencia legal de un extranjero.",
+"tema": "Régimen local",
+"f": "Ley 7/1985, art. 16"
+},
+{
+"t": "Inviolabilidad del domicilio",
+"a": [
+"inviolabilidad del domicilio",
+"domicilio"
+],
+"d": "Derecho fundamental (art. 18): no se entra sin consentimiento, resolución judicial o en caso de flagrante delito.",
+"tema": "Constitución",
+"f": "CE, art. 18",
+"solo": 1
+},
+{
+"t": "Detención preventiva",
+"a": [
+"detención preventiva"
+],
+"d": "Sirve para hacer las averiguaciones necesarias; máximo 72 horas antes de pasar al juez.",
+"tema": "Constitución",
+"f": "CE, art. 17"
+},
+{
+"t": "Tutela judicial efectiva",
+"a": [
+"tutela judicial efectiva"
+],
+"d": "Derecho a acudir a los tribunales y obtener una respuesta fundada, sin indefensión.",
+"tema": "Constitución",
+"f": "CE, art. 24"
+},
+{
+"t": "Irretroactividad",
+"a": [
+"irretroactividad"
+],
+"d": "Una norma no se aplica a hechos anteriores a su entrada en vigor. Garantizada para las sancionadoras desfavorables.",
+"tema": "Constitución",
+"f": "CE, art. 9.3"
+},
+{
+"t": "Valores superiores",
+"a": [
+"valores superiores"
+],
+"d": "Libertad, justicia, igualdad y pluralismo político (art. 1.1).",
+"tema": "Constitución",
+"f": "CE, art. 1"
+},
+{
+"t": "Autonomía municipal",
+"a": [
+"autonomía de los municipios",
+"autonomía municipal"
+],
+"d": "Los municipios gozan de personalidad jurídica plena; su gobierno corresponde a alcaldes y concejales.",
+"tema": "Constitución",
+"f": "CE, art. 140"
+},
+{
+"t": "Instituciones de autogobierno",
+"a": [
+"instituciones de autogobierno"
+],
+"d": "De la Comunidad de Madrid: la Asamblea, el Gobierno y el Presidente.",
+"tema": "Estatuto CAM",
+"f": "Estatuto de Autonomía de la CAM"
+},
+{
+"t": "Unidad de mando",
+"a": [
+"unidad de mando"
+],
+"d": "Todo servicio con dos o más miembros se hace bajo el mando de una sola persona.",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos"
+},
+{
+"t": "Mandos naturales",
+"a": [
+"mandos naturales"
+],
+"d": "Los únicos que dan órdenes en el Cuerpo: sus mandos internos, por jerarquía y especialización.",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos"
+},
+{
+"t": "Servicio de Apoyo Técnico",
+"a": [
+"Servicio de Apoyo Técnico"
+],
+"d": "Personal con incapacidad física parcial para la atención directa (por edad, enfermedad o accidente). Pase por edad: bombero 55; conductor y mando 60.",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos"
+},
+{
+"t": "Promoción interna",
+"a": [
+"promoción interna"
+],
+"d": "En la Escala Ejecutiva: concurso-oposición y curso selectivo. A Cabo, 6 años; a Sargento, 10 (o 4 desde Cabo).",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos"
+},
+{
+"t": "Delegados de Prevención",
+"a": [
+"Delegados de Prevención",
+"Delegado de Prevención"
+],
+"d": "Representantes de los trabajadores en seguridad y salud. De 101 a 500 trabajadores, 3.",
+"tema": "PRL",
+"f": "Ley 31/1995, art. 35"
+},
+{
+"t": "Comité de Seguridad y Salud",
+"a": [
+"Comité de Seguridad y Salud"
+],
+"d": "Órgano paritario de consulta en empresas de 50 o más trabajadores. Se reúne cada trimestre.",
+"tema": "PRL",
+"f": "Ley 31/1995, art. 38"
+},
+{
+"t": "Vigilancia de la salud",
+"a": [
+"vigilancia de la salud"
+],
+"d": "Reconocimientos médicos según los riesgos del puesto. Requiere consentimiento, salvo excepciones.",
+"tema": "PRL",
+"f": "Ley 31/1995, art. 22"
+},
+{
+"t": "Riesgo grave e inminente",
+"a": [
+"riesgo grave e inminente",
+"peligro grave e inminente"
+],
+"d": "El trabajador puede interrumpir su actividad y no se le exige volver mientras dure.",
+"tema": "PRL",
+"f": "Ley 31/1995, art. 21"
+},
+{
+"t": "Principios de la acción preventiva",
+"a": [
+"acción preventiva"
+],
+"d": "Nueve principios del art. 15. El primero: evitar los riesgos.",
+"tema": "PRL",
+"f": "Ley 31/1995, art. 15"
+},
+{
+"t": "Acoso sexual",
+"a": [
+"acoso sexual"
+],
+"d": "Comportamiento de naturaleza sexual que atenta contra la dignidad. Siempre es discriminatorio.",
+"tema": "Igualdad",
+"f": "LO 3/2007, art. 7"
+},
+{
+"t": "Acoso por razón de sexo",
+"a": [
+"acoso por razón de sexo"
+],
+"d": "Comportamiento motivado por el sexo de la persona que atenta contra su dignidad. Siempre es discriminatorio.",
+"tema": "Igualdad",
+"f": "LO 3/2007, art. 7"
+},
+{
+"t": "Discriminación directa",
+"a": [
+"discriminación directa"
+],
+"d": "Trato menos favorable por razón de sexo. Lo es todo trato desfavorable por embarazo o maternidad.",
+"tema": "Igualdad",
+"f": "LO 3/2007, arts. 6 y 8"
+},
+{
+"t": "Discriminación indirecta",
+"a": [
+"discriminación indirecta"
+],
+"d": "Una norma o práctica aparentemente neutra que perjudica a las personas de un sexo.",
+"tema": "Igualdad",
+"f": "LO 3/2007, art. 6"
+},
+{
+"t": "Acciones positivas",
+"a": [
+"acciones positivas"
+],
+"d": "Medidas específicas para corregir desigualdades de hecho, mientras duren y si son razonables y proporcionadas.",
+"tema": "Igualdad",
+"f": "LO 3/2007, art. 11"
+},
+{
+"t": "Indemnidad frente a represalias",
+"a": [
+"indemnidad"
+],
+"d": "Trato adverso por reclamar la igualdad: es discriminación por razón de sexo.",
+"tema": "Igualdad",
+"f": "LO 3/2007, art. 9"
+},
+{
+"t": "Discriminación por error",
+"a": [
+"discriminación por error"
+],
+"d": "Ley 4/2023: la que se basa en una apreciación equivocada de las características de la persona.",
+"tema": "Igualdad",
+"f": "Ley 4/2023, art. 3"
+},
+{
+"t": "Tasa",
+"a": [
+"tasa"
+],
+"d": "Se paga por un servicio concreto que se te presta a ti. Algunos servicios, como la protección civil, nunca pueden cobrarse con tasa.",
+"tema": "Haciendas locales",
+"f": "TRLRHL, arts. 20-21",
+"solo": 1
+},
+{
+"t": "Contribución especial",
+"a": [
+"contribución especial",
+"contribuciones especiales"
+],
+"d": "La pagan quienes se benefician especialmente de una obra o de la ampliación de un servicio. Solo se destina a esa obra.",
+"tema": "Haciendas locales",
+"f": "TRLRHL, art. 28"
+},
+{
+"t": "Precio público",
+"a": [
+"precio público",
+"precios públicos"
+],
+"d": "Se cobra por servicios que no son obligatorios para el ciudadano. Debe cubrir al menos el coste.",
+"tema": "Haciendas locales",
+"f": "TRLRHL, art. 41"
+},
+{
+"t": "Sustituto del contribuyente",
+"a": [
+"sustituto del contribuyente",
+"sustituta del contribuyente"
+],
+"d": "Quien paga en lugar del contribuyente. En la tasa de extinción de incendios, la aseguradora.",
+"tema": "Haciendas locales",
+"f": "TRLRHL, art. 23"
+},
+{
+"t": "Impuestos potestativos",
+"a": [
+"potestativo",
+"potestativos"
+],
+"d": "Los que el ayuntamiento «podrá establecer»: el ICIO y la plusvalía (IIVTNU). Obligatorios: IBI, IAE e IVTM.",
+"tema": "Haciendas locales",
+"f": "TRLRHL, art. 59"
 }
 ]
