@@ -337,6 +337,8 @@ summary{cursor:pointer}
 .nv-more{display:block;width:100%;font:inherit;font-size:14px;color:var(--mut);background:none;border:0;border-top:1px solid var(--line);padding:14px 0 0;cursor:pointer;text-align:left}
 #nvart{position:fixed;inset:0;background:var(--bg);overflow:auto;transform:translateX(100%);transition:transform .28s ease;z-index:60;text-align:left}
 #nvart.on{transform:none}
+#nvart{touch-action:pan-y}
+.nv-pg{display:flex;gap:6px;justify-content:center;margin:26px 0 0}.nv-pg i{width:6px;height:6px;border-radius:50%;background:var(--line)}.nv-pg i.on{background:var(--nvac)}
 html.nv-lock,html.nv-lock body{overflow:hidden}
 @media(min-width:720px){.nv-hero{margin:0 max(5vw,16px);border-radius:14px;overflow:hidden}}
 #nvart .nv-w{max-width:680px;margin:auto;padding:0 0 60px}
@@ -368,7 +370,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795352768';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795352893';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1348,13 +1350,27 @@ function pintaNov(){
   el.querySelectorAll('[data-n]').forEach(e=>e.onclick=()=>nvAbrir(NOV[+e.dataset.n]));
   nvTimer();
 }
+let NVA=0;
+function nvArtHtml(n){return `<div class="nv-w"><button class="nv-back" id="nvBack">‹ Volver</button><div class="nv-hero">${nvIl(n)}</div><div class="nv-b"><div class="nv-m">${nvMeta(n)}</div><h1>${esc(n.tit)}</h1>${n.txt.map(p=>`<p>${esc(p)}</p>`).join('')}${n.clave?`<div class="nv-clave"><b>A tener en cuenta</b>${esc(n.clave)}</div>`:''}<a class="nv-doc" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.doc||'Ver documento')} ↗</a><div class="nv-pg">${NOV.map((x,k)=>`<i class="${k===NVA?'on':''}"></i>`).join('')}</div></div></div>`}
+function nvPinta(dir){
+  const A=document.getElementById('nvart'),n=NOV[NVA];
+  const put=()=>{A.innerHTML=nvArtHtml(n);A.scrollTop=0;document.getElementById('nvBack').onclick=nvCerrar;
+    const v=nvVistas();if(!v.includes(n.id)){v.push(n.id);lsSet('nvistas',JSON.stringify(v.slice(-80)))}};
+  if(!dir){put();return}
+  const w=A.firstElementChild;if(w){w.style.transition='transform .2s ease,opacity .2s';w.style.transform=`translateX(${dir>0?-40:40}px)`;w.style.opacity='0'}
+  setTimeout(()=>{put();const w2=A.firstElementChild;w2.style.transform=`translateX(${dir>0?40:-40}px)`;w2.style.opacity='0';
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{w2.style.transition='transform .22s ease,opacity .22s';w2.style.transform='none';w2.style.opacity='1'}))},200);
+}
 function nvAbrir(n){
   let A=document.getElementById('nvart');
-  if(!A){A=document.createElement('div');A.id='nvart';document.body.appendChild(A)}
-  A.innerHTML=`<div class="nv-w"><button class="nv-back" id="nvBack">‹ Volver</button><div class="nv-hero">${nvIl(n)}</div><div class="nv-b"><div class="nv-m">${nvMeta(n,false)}</div><h1>${esc(n.tit)}</h1>${n.txt.map(p=>`<p>${esc(p)}</p>`).join('')}${n.clave?`<div class="nv-clave"><b>A tener en cuenta</b>${esc(n.clave)}</div>`:''}<a class="nv-doc" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.doc||'Ver documento')} ↗</a></div></div>`;
-  const v=nvVistas();if(!v.includes(n.id)){v.push(n.id);lsSet('nvistas',JSON.stringify(v.slice(-80)))}
-  A.scrollTop=0;document.documentElement.classList.add('nv-lock');requestAnimationFrame(()=>A.classList.add('on'));
-  document.getElementById('nvBack').onclick=nvCerrar;
+  if(!A){A=document.createElement('div');A.id='nvart';document.body.appendChild(A);
+    let x0=null,y0=0;
+    A.addEventListener('touchstart',e=>{if(e.touches.length!==1){x0=null;return}x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+    A.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;
+      if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5&&NOV.length>1){const d=dx<0?1:-1;NVA=(NVA+d+NOV.length)%NOV.length;nvPinta(d)}});
+  }
+  NVA=Math.max(0,NOV.indexOf(n));nvPinta(0);
+  document.documentElement.classList.add('nv-lock');requestAnimationFrame(()=>A.classList.add('on'));
   window.history.pushState({nv:1},'');
 }
 function nvCerrar(){const A=document.getElementById('nvart');if(A&&A.classList.contains('on')){A.classList.remove('on');document.documentElement.classList.remove('nv-lock');if(window.history.state&&window.history.state.nv)window.history.back()}}
