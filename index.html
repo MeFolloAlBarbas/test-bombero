@@ -295,8 +295,9 @@ summary{cursor:pointer}
 .aexp{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
 .aex,.area{font:inherit;font-size:14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;padding:6px 12px;min-height:40px}
 .aex.warn{background:var(--kob);color:var(--kot);border-color:var(--kol);font-weight:600}
+.arow{display:grid;grid-template-columns:minmax(0,1fr) 5.5em auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}.arow .an{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.arow input{font:inherit;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%}.arow button{font:inherit;font-size:14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;padding:6px 12px;min-height:40px}
 </style>
-<script>const APPV='1795313286';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795313371';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -913,7 +914,7 @@ async function admin(msg){
   app.innerHTML=`${panelAdmin(L,R)}<h3 class="adh" style="margin-top:22px">Restablecer PIN</h3>
   <p class="note" style="text-align:center;margin:0 0 12px">Restablecer el PIN de un participante. Conserva todo su progreso; después debe cambiarlo en «cambiar PIN».</p>
   <p class="note" id="amsg" style="font-weight:600;color:var(--okt)">${msg||''}</p>
-  ${L.map((r,i)=>`<div class="rk pass" style="grid-template-columns:minmax(0,1fr) 5em auto;background:transparent;color:inherit"><b class="an"></b>
+  ${L.map((r,i)=>`<div class="arow"><b class="an"></b>
     <input inputmode="numeric" maxlength="4" placeholder="PIN" data-i="${i}" style="width:5em">
     <button data-i="${i}" class="ares">Restablecer</button></div>`).join('')||'<p class="empty">Todavía no hay participantes con copia guardada. Aparecen cuando entran en la web.</p>'}
   <h3 class="adh" style="margin-top:22px">Expulsar</h3>
