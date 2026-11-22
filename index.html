@@ -337,6 +337,8 @@ summary{cursor:pointer}
 .nv-more{display:block;width:100%;font:inherit;font-size:14px;color:var(--mut);background:none;border:0;border-top:1px solid var(--line);padding:14px 0 0;cursor:pointer;text-align:left}
 #nvart{position:fixed;inset:0;background:var(--bg);overflow:auto;transform:translateX(100%);transition:transform .28s ease;z-index:60;text-align:left}
 #nvart.on{transform:none}
+html.nv-lock,html.nv-lock body{overflow:hidden}
+@media(min-width:720px){.nv-hero{margin:0 max(5vw,16px);border-radius:14px;overflow:hidden}}
 #nvart .nv-w{max-width:680px;margin:auto;padding:0 0 60px}
 #nvart .nv-back{position:sticky;top:0;background:var(--bg);display:flex;align-items:center;gap:6px;padding:12px max(5vw,16px);font:inherit;font-size:15px;border:0;width:100%;color:var(--ink);cursor:pointer;z-index:2}
 .nv-hero{aspect-ratio:16/9;background:var(--il1)}
@@ -348,7 +350,7 @@ summary{cursor:pointer}
 .nv-doc{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--nvac);text-decoration:none;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-top:6px}
 /*/NOV*/
 </style>
-<script>const APPV='1795347078';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795347173';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1316,12 +1318,12 @@ function nvAbrir(n){
   if(!A){A=document.createElement('div');A.id='nvart';document.body.appendChild(A)}
   A.innerHTML=`<div class="nv-w"><button class="nv-back" id="nvBack">‹ Volver</button><div class="nv-hero">${nvIl(n)}</div><div class="nv-b"><div class="nv-m">${nvMeta(n,false)}</div><h1>${esc(n.tit)}</h1>${n.txt.map(p=>`<p>${esc(p)}</p>`).join('')}${n.clave?`<div class="nv-clave"><b>A tener en cuenta</b>${esc(n.clave)}</div>`:''}<a class="nv-doc" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.doc||'Ver documento')} ↗</a></div></div>`;
   const v=nvVistas();if(!v.includes(n.id)){v.push(n.id);lsSet('nvistas',JSON.stringify(v.slice(-80)))}
-  A.scrollTop=0;requestAnimationFrame(()=>A.classList.add('on'));
+  A.scrollTop=0;document.documentElement.classList.add('nv-lock');requestAnimationFrame(()=>A.classList.add('on'));
   document.getElementById('nvBack').onclick=nvCerrar;
   window.history.pushState({nv:1},'');pintaNov();
 }
-function nvCerrar(){const A=document.getElementById('nvart');if(A&&A.classList.contains('on')){A.classList.remove('on');if(window.history.state&&window.history.state.nv)window.history.back()}}
-window.addEventListener('popstate',()=>{const A=document.getElementById('nvart');if(A)A.classList.remove('on')});
+function nvCerrar(){const A=document.getElementById('nvart');if(A&&A.classList.contains('on')){A.classList.remove('on');document.documentElement.classList.remove('nv-lock');if(window.history.state&&window.history.state.nv)window.history.back()}}
+window.addEventListener('popstate',()=>{const A=document.getElementById('nvart');if(A)A.classList.remove('on');document.documentElement.classList.remove('nv-lock')});
 fetch('noticias.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{NOV=d.sort((a,b)=>(a.p||9)-(b.p||9)||b.f.localeCompare(a.f));pintaNov()}).catch(()=>{});
 /*/NOV*/
 fetch('laboratorio.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{LAB=d}).catch(()=>{});
