@@ -164,6 +164,16 @@
 "exa": "Si copian la frase literal del manual, el tribunal podría darla por buena tal cual.",
 "f": "EN 81-1/81-2/81-20 · RD 1314/1997 · Directiva 2014/33/UE",
 "q": 291
+},
+{
+"t": "Ley de Hooke: tensión y módulo de elasticidad",
+"tema": "Edificaciones",
+"m": "Edificaciones I, 2.4 Elasticidad, pág. 25",
+"dice": "A igualdad de deformación, un cuerpo sufre menores tensiones cuanto mayor sea su elasticidad (mayor módulo de elasticidad \"E\").",
+"real": "Con σ = E · ε, si la deformación es la misma, la tensión <b>crece</b> con E: el de mayor E soporta <b>más</b> tensión. Lo que el manual quería decir es que, <b>con la misma carga</b>, el de mayor E se deforma <b>menos</b> (ε = σ / E), como muestran sus propios ejemplos: el hierro fundido se deforma el doble que el acero. E mide la rigidez, no la «elasticidad».",
+"exa": "Si copian la frase literal del manual, el tribunal podría darla por buena tal cual.",
+"f": "Ley de Hooke (σ = E · ε) · la propia tabla y los ejemplos del manual",
+"q": 292
 }
 ]
 }

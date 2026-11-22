@@ -1731,5 +1731,24 @@
 "d": "Ascensor eléctrico con el motor unido directamente a una polea grande. Rápido: 2-10 m/s, para edificios de gran altura.",
 "tema": "Ascensores",
 "f": "Manual de rescate en ascensores"
+},
+{
+"t": "Ley de Hooke",
+"a": [
+"ley de Hooke"
+],
+"d": "σ = E · ε: mientras el material trabaja en su zona elástica, la tensión es proporcional a la deformación.",
+"tema": "Edificaciones",
+"f": "Edificaciones I, 2.4"
+},
+{
+"t": "Módulo de elasticidad (E)",
+"a": [
+"módulo de elasticidad"
+],
+"d": "Mide la rigidez de un material: cuanto mayor es, menos se deforma con la misma carga. Acero ≈ 210.000 N/mm²; hormigón, unas 10 veces menos.",
+"tema": "Edificaciones",
+"f": "Edificaciones I, 2.4",
+"solo": 1
 }
 ]
