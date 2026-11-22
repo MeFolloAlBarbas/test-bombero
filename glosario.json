@@ -1647,5 +1647,89 @@
 "d": "Los que el ayuntamiento «podrá establecer»: el ICIO y la plusvalía (IIVTNU). Obligatorios: IBI, IAE e IVTM.",
 "tema": "Haciendas locales",
 "f": "TRLRHL, art. 59"
+},
+{
+"t": "Contrapeso",
+"a": [
+"contrapeso"
+],
+"d": "Peso que equilibra la cabina para reducir la potencia del motor: la cabina más un 45 %. Con poca gente dentro, la cabina tiende a subir.",
+"tema": "Ascensores",
+"f": "Manual de rescate en ascensores"
+},
+{
+"t": "Limitador de velocidad",
+"a": [
+"limitador de velocidad",
+"limitador"
+],
+"d": "Detiene la cabina con el paracaídas si va demasiado rápida y corta el motor. Tiene dos poleas y un cable propio, independiente de los de tracción.",
+"tema": "Ascensores",
+"f": "Manual de rescate en ascensores",
+"solo": 1
+},
+{
+"t": "Pulsador de bomberos",
+"a": [
+"pulsador de bomberos"
+],
+"d": "Al romper su cristal, el ascensor de emergencia queda para los bomberos: si sube, para en el piso siguiente; si baja, sigue a la planta principal; luego solo atiende llamadas interiores.",
+"tema": "Ascensores",
+"f": "Manual de rescate en ascensores"
+},
+{
+"t": "Amortiguadores",
+"a": [
+"amortiguadores"
+],
+"d": "Frenan la cabina en el foso si fallan las paradas automáticas. Comprimidos del todo, deben dejar al menos medio metro libre.",
+"tema": "Ascensores",
+"f": "Manual de rescate en ascensores"
+},
+{
+"t": "Impulsión directa",
+"a": [
+"impulsión directa"
+],
+"d": "Ascensor hidráulico 1:1: la cabina se mueve lo mismo que el pistón. Necesita un foso profundo.",
+"tema": "Ascensores",
+"f": "Manual de rescate en ascensores"
+},
+{
+"t": "Impulsión diferencial",
+"a": [
+"impulsión diferencial"
+],
+"d": "Ascensor hidráulico 2:1: por cada centímetro del pistón la cabina se mueve dos. El pistón va en el lateral y no necesita foso profundo.",
+"tema": "Ascensores",
+"f": "Manual de rescate en ascensores"
+},
+{
+"t": "Cuarto de máquinas",
+"a": [
+"cuarto de máquinas"
+],
+"d": "Lugar del mecanismo de tracción (motor, polea, volante, freno, limitador y cuadro de maniobras). Los ascensores más modernos no lo tienen.",
+"tema": "Ascensores",
+"f": "Manual de rescate en ascensores"
+},
+{
+"t": "RAEM",
+"a": [
+"RAEM",
+"Reglamento de Aparatos de Elevación"
+],
+"d": "Reglamento de Aparatos de Elevación y Manutención (RD 2291/1985). Un defecto grave se corrige en 6 meses o el ascensor queda fuera de servicio.",
+"tema": "Ascensores",
+"f": "Manual de rescate en ascensores"
+},
+{
+"t": "Ascensor sin engranajes",
+"a": [
+"sin engranajes"
+],
+"d": "Ascensor eléctrico con el motor unido directamente a una polea grande. Rápido: 2-10 m/s, para edificios de gran altura.",
+"tema": "Ascensores",
+"f": "Manual de rescate en ascensores"
 }
 ]
