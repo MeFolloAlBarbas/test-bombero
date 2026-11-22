@@ -70,6 +70,25 @@ service cloud.firestore {
       allow update: if request.auth != null && request.resource.data.n == resource.data.n + 1 && request.resource.data.n <= 2;
       allow delete: if false;
     }
+    // Porcentajes de respuesta: un voto por persona y pregunta.
+    function votoNuevo(q){ return !exists(/databases/$(database)/documents/votos/$(q)/quien/$(miPid()))
+        && existsAfter(/databases/$(database)/documents/votos/$(q)/quien/$(miPid())); }
+    function suma(m){ return m.get('o0',0) + m.get('o1',0) + m.get('o2',0) + m.get('o3',0); }
+    match /votos/{q} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && votoNuevo(q)
+        && request.resource.data.keys().hasOnly(['o0','o1','o2','o3'])
+        && request.resource.data.size() == 1 && suma(request.resource.data) == 1;
+      allow update: if request.auth != null && votoNuevo(q)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['o0','o1','o2','o3'])
+        && request.resource.data.diff(resource.data).affectedKeys().size() == 1
+        && suma(request.resource.data) == suma(resource.data) + 1;
+      allow delete: if false;
+      match /quien/{pid} {
+        allow create: if request.auth != null && pid == miPid() && request.resource.data.size() == 0;
+        allow read, update, delete: if false;
+      }
+    }
     match /ranking/{pid} {
       allow read: if true;
       allow create, update: if request.auth != null
