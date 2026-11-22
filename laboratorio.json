@@ -1,0 +1,168 @@
+{
+"par": [
+{
+"tema": "Protección civil",
+"a": "Peligro",
+"ad": "Potencial de ocasionar daño.",
+"b": "Amenaza",
+"bd": "Situación de exposición a un peligro inminente o latente.",
+"clave": "El peligro es lo que <b>puede</b> dañar; la amenaza, estar <b>expuesto</b> a ello.",
+"g": [
+"Peligro",
+"Amenaza"
+]
+},
+{
+"tema": "Protección civil",
+"a": "Riesgo",
+"ad": "Posibilidad de que una amenaza llegue a afectar a personas o bienes.",
+"b": "Vulnerabilidad",
+"bd": "Lo susceptible que es una colectividad de ser afectada.",
+"clave": "El riesgo es una <b>posibilidad</b>; la vulnerabilidad, una <b>característica</b> de quien la sufre.",
+"g": [
+"Riesgo",
+"Vulnerabilidad"
+]
+},
+{
+"tema": "NRBQ",
+"a": "LII",
+"ad": "Concentración mínima de vapor en aire para que arda. Por debajo, mezcla pobre.",
+"b": "LSI",
+"bd": "Concentración máxima. Por encima falta aire: mezcla rica.",
+"clave": "Entre los dos está el <b>rango de inflamabilidad</b>. Fuera de él no arde… hasta que cambia la mezcla.",
+"g": [
+"LII",
+"LSI"
+]
+},
+{
+"tema": "NRBQ",
+"a": "TLV/STEL",
+"ad": "Exposición corta: no más de 15 minutos.",
+"b": "TLV/TWA",
+"bd": "Media ponderada de una jornada laboral.",
+"clave": "<b>S</b>TEL = <b>S</b>hort (corto, 15 min); TWA = toda la jornada.",
+"g": [
+"TLV/STEL",
+"TLV/TWA"
+]
+},
+{
+"tema": "Haciendas locales",
+"a": "Tasa",
+"ad": "Pagas por un servicio concreto que se te presta a ti.",
+"b": "Precio público",
+"bd": "Pagas por un servicio que no es obligatorio para ti; cubre al menos el coste.",
+"clave": "La tasa es por un servicio que <b>no eliges</b> o que solo da la Administración; el precio público, por uno <b>voluntario</b>.",
+"g": [
+"Tasa",
+"Precio público"
+]
+},
+{
+"tema": "Haciendas locales",
+"a": "Tasa",
+"ad": "Por un servicio que se te presta a ti.",
+"b": "Contribución especial",
+"bd": "Por una obra o ampliación de un servicio que te beneficia especialmente.",
+"clave": "Tasa: <b>servicio</b> a ti. Contribución: <b>obra</b> que te beneficia más que al resto.",
+"g": [
+"Tasa",
+"Contribución especial"
+]
+},
+{
+"tema": "Igualdad",
+"a": "Discriminación directa",
+"ad": "Trato menos favorable por razón de sexo.",
+"b": "Discriminación indirecta",
+"bd": "Norma aparentemente neutra que perjudica a un sexo.",
+"clave": "La directa se ve en el <b>trato</b>; la indirecta, en el <b>efecto</b> de una norma neutra.",
+"g": [
+"Discriminación directa",
+"Discriminación indirecta"
+]
+},
+{
+"tema": "Igualdad",
+"a": "Acoso sexual",
+"ad": "Comportamiento de naturaleza sexual.",
+"b": "Acoso por razón de sexo",
+"bd": "Comportamiento motivado por el sexo de la persona.",
+"clave": "Uno es por el <b>contenido</b> (sexual); el otro, por el <b>motivo</b> (el sexo de la víctima). Los dos son siempre discriminatorios.",
+"g": [
+"Acoso sexual",
+"Acoso por razón de sexo"
+]
+},
+{
+"tema": "Trabajos en altura",
+"a": "Cuerda clase A",
+"ad": "Garantiza 22 kN. Sirve como cuerda de seguridad.",
+"b": "Cuerda clase B",
+"bd": "Garantiza 18 kN. No vale como cuerda de seguridad.",
+"clave": "<b>A</b> de «Aguanta más»: 22 frente a 18 kN.",
+"g": [
+"Cuerda semiestática"
+]
+},
+{
+"tema": "Procedimiento administrativo",
+"a": "Ejecución subsidiaria",
+"ad": "La Administración hace lo que el obligado no hace, a su costa.",
+"b": "Compulsión directa",
+"bd": "Se actúa sobre la propia persona: solo no hacer o soportar, si la ley lo autoriza.",
+"clave": "La subsidiaria actúa sobre la <b>cosa</b> (otro puede hacerlo); la compulsión, sobre la <b>persona</b>.",
+"g": [
+"Ejecución subsidiaria",
+"Compulsión directa"
+]
+},
+{
+"tema": "Patología cardiovascular",
+"a": "Ángor",
+"ad": "La arteria coronaria se estrecha.",
+"b": "Infarto (IAM)",
+"bd": "La arteria se obstruye del todo.",
+"clave": "Estrecha = <b>ángor</b>; cerrada = <b>infarto</b>.",
+"g": [
+"Síndrome coronario agudo"
+]
+},
+{
+"tema": "Tráfico (APRAT)",
+"a": "Físico 1",
+"ad": "No puede salir por sus lesiones, pero el vehículo no le atrapa.",
+"b": "Físico 2",
+"bd": "El vehículo le atrapa (por ejemplo, un miembro).",
+"clave": "En el 1 lo retiene su <b>cuerpo</b>; en el 2, el <b>vehículo</b>.",
+"g": [
+"Niveles de atrapamiento"
+]
+},
+{
+"tema": "Ascensores",
+"a": "Impulsión directa (1:1)",
+"ad": "La cabina se mueve lo mismo que el pistón. Necesita foso profundo.",
+"b": "Impulsión diferencial (2:1)",
+"bd": "La cabina se mueve el doble que el pistón. Sin foso profundo.",
+"clave": "2:1 = <b>doble</b> recorrido y pistón en el lateral.",
+"g": [
+"Impulsión directa",
+"Impulsión diferencial"
+]
+}
+],
+"err": [
+{
+"t": "Inclinación de las guías del ascensor",
+"tema": "Ascensores",
+"m": "Manual de rescate en ascensores, cap. 1",
+"dice": "Su inclinación sobre la horizontal nunca supera los 15 grados.",
+"real": "Las guías no se inclinan más de <b>15° respecto a la vertical</b> (EN 81-1, 81-2 y 81-20). La definición legal lo dice al revés: inclinación sobre la horizontal <b>superior</b> a 15°. 15° sobre la horizontal sería casi una rampa plana.",
+"exa": "Si copian la frase literal del manual, el tribunal podría darla por buena tal cual.",
+"f": "EN 81-1/81-2/81-20 · RD 1314/1997 · Directiva 2014/33/UE"
+}
+]
+}
