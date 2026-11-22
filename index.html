@@ -298,8 +298,14 @@ summary{cursor:pointer}
 .arow{display:grid;grid-template-columns:minmax(0,1fr) 5.5em auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}.arow .an{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.arow input{font:inherit;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%}.arow button{font:inherit;font-size:14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:8px;padding:6px 12px;min-height:40px}
 .podio{list-style:none;padding:0;margin:0 0 6px}.podio li{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:8px;background:var(--card);margin:0 0 5px}.podio .pm{font-size:20px}.podio .pn{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.podio .pt{font-size:14px;color:var(--mut);white-space:nowrap}
 .flojos{list-style:none;padding:0;margin:0 0 6px}.flojos li{display:flex;justify-content:space-between;gap:10px;padding:7px 10px;border-radius:8px;background:var(--kob);color:var(--kot);margin:0 0 5px;font-size:15px}
+.adsec{border:1px solid var(--line);border-radius:12px;margin:0 0 10px;overflow:hidden}
+.adsec>summary{list-style:none;cursor:pointer;padding:12px 14px;font-weight:700;font-size:16px;display:flex;justify-content:space-between;align-items:center}
+.adsec>summary::-webkit-details-marker{display:none}.adsec>summary::after{content:"›";font-size:22px;line-height:1;color:var(--mut);transition:transform .2s}
+.adsec[open]>summary::after{transform:rotate(90deg)}.adsec[open]>summary{border-bottom:1px solid var(--line)}
+.adbody{padding:10px 14px 14px}.adh2{font-size:14px;margin:12px 0 6px;color:var(--mut)}.adbody .adh2:first-child{margin-top:0}
+.adgrp{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);margin:20px 0 8px}
 </style>
-<script>const APPV='1795313801';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795314113';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -884,10 +890,10 @@ function panelAdmin(L,R){
   return `<h2 style="font-size:19px;text-align:center;margin:0 0 2px">Panel de administrador</h2>
   <p class="note" style="text-align:center;margin:0 0 12px">Semana del ${nice(m)} al ${nice(wk[5])}</p>
   <div class="adcs">${card('Participantes',L.length)}${card('Entraron hoy',hoy)}${card('Acierto medio',tot.n?Math.round(tot.o/tot.n*100)+' %':'—')}</div>
-  <h3 class="adh">Actividad de hoy</h3>${open?`<div class="adg">${act||'<span class="note">Sin participantes.</span>'}</div>`:'<p class="note">Hoy no hay preguntas.</p>'}
-  <h3 class="adh">Preguntas más falladas de la semana</h3>${failH||'<p class="note">Ninguna baja del 70 % de acierto (o aún hay pocas respuestas).</p>'}
-  <h3 class="adh">Temas más flojos del grupo</h3>${temasH?`<div class="adg adt">${temasH}</div>`:'<p class="note">Todavía no hay respuestas esta semana.</p>'}
-  <h3 class="adh">Comodines</h3><p class="note">Esta semana: ${C.chu} Chulito${C.chu===1?'':'s'} lanzado${C.chu===1?'':'s'} · ${C.esc} escudo${C.esc===1?'':'s'} usado${C.esc===1?'':'s'} · ${C.f50} 50/50</p>`;
+  <details class="adsec" open><summary>Actividad de hoy</summary><div class="adbody">${open?`<div class="adg">${act||'<span class="note">Sin participantes.</span>'}</div>`:'<p class="note">Hoy no hay preguntas.</p>'}</div></details>
+  <details class="adsec"><summary>Esta semana</summary><div class="adbody"><h4 class="adh2">Preguntas más falladas</h4>${failH||'<p class="note">Ninguna baja del 70 % de acierto (o aún hay pocas respuestas).</p>'}
+  <h4 class="adh2">Temas más flojos del grupo</h4>${temasH?`<div class="adg adt">${temasH}</div>`:'<p class="note">Todavía no hay respuestas esta semana.</p>'}
+  <h4 class="adh2">Comodines</h4><p class="note">${C.chu} Chulito${C.chu===1?'':'s'} lanzado${C.chu===1?'':'s'} · ${C.esc} escudo${C.esc===1?'':'s'} usado${C.esc===1?'':'s'} · ${C.f50} 50/50</p></div></details>`;
 }
 // Pestaña «Panel»: solo la ve el administrador, en su cuenta, en los dispositivos donde ha puesto el código.
 async function adminTab(){const t=document.getElementById('tabAdmin');if(!t||!FS)return;let on=false;
@@ -913,19 +919,19 @@ async function admin(msg){
   try{R=(await fs.getDocs(fs.collection(db,'ranking'))).docs.map(d=>({id:d.id,w:d.data().weeks||{}}))}catch(e){}
   let BQ=[];try{BQ=(await fs.getDocs(fs.collection(db,'bloqueados'))).docs.map(d=>({pid:d.id,n:d.data().nombre||'(sin nombre)',k:(d.data().uids||[]).length}))}catch(e){}
   const bq=new Set(BQ.map(x=>x.pid));L=L.filter(r=>!bq.has(r.pid));
-  app.innerHTML=`${panelAdmin(L,R)}<h3 class="adh" style="margin-top:22px">Restablecer PIN</h3>
-  <p class="note" style="text-align:center;margin:0 0 12px">Restablecer el PIN de un participante. Conserva todo su progreso; después debe cambiarlo en «cambiar PIN».</p>
-  <p class="note" id="amsg" style="font-weight:600;color:var(--okt)">${msg||''}</p>
+  app.innerHTML=`${panelAdmin(L,R)}
+  <p class="note" id="amsg" style="font-weight:600;color:var(--okt);text-align:center">${msg||''}</p>
+  <h3 class="adgrp">Herramientas</h3>
+  <details class="adsec"><summary>Resumen del lunes</summary><div class="adbody"><p class="note" style="margin:0 0 10px">Muestra el resumen tal como lo verá cada uno, con los datos reales. No se envía a nadie.</p>
+  <button class="go" id="avista" style="font-size:16px;padding:10px">Vista previa del resumen</button></div></details>
+  <details class="adsec"><summary>Restablecer PIN</summary><div class="adbody"><p class="note" style="margin:0 0 8px">Conserva todo su progreso; después debe cambiarlo en «cambiar PIN».</p>
   ${L.map((r,i)=>`<div class="arow"><b class="an"></b>
     <input inputmode="numeric" maxlength="4" placeholder="PIN" data-i="${i}" style="width:5em">
     <button data-i="${i}" class="ares">Restablecer</button></div>`).join('')||'<p class="empty">Todavía no hay participantes con copia guardada. Aparecen cuando entran en la web.</p>'}
-  <h3 class="adh" style="margin-top:22px">Resumen del lunes</h3>
-  <p class="note" style="text-align:center;margin:0 0 10px">Muestra el resumen tal como lo verá cada uno, con los datos reales. No se envía a nadie.</p>
-  <button class="go" id="avista" style="font-size:16px;padding:10px">Vista previa del resumen</button>
-  <h3 class="adh" style="margin-top:22px">Expulsar</h3>
-  <p class="note" style="text-align:center;margin:0 0 12px">Le quita del ranking y bloquea su perfil y los móviles desde los que ha entrado. Se puede deshacer.</p>
+</div></details>
+  <details class="adsec"><summary>Expulsar</summary><div class="adbody"><p class="note" style="margin:0 0 8px">Le quita del ranking y bloquea su perfil y los móviles desde los que ha entrado. Se puede deshacer.</p>
   ${L.filter(r=>r.pid!==PID).map(r=>`<div class="aexp"><b class="aexn" data-p="${r.pid}"></b><button class="aex" data-p="${r.pid}">Expulsar</button></div>`).join('')}
-  ${BQ.length?`<h4 class="sumh">Expulsados</h4>`+BQ.map(r=>`<div class="aexp"><span><b class="aexn2" data-p="${r.pid}"></b> <small class="mut">· ${r.k} ${r.k===1?'dispositivo':'dispositivos'}</small></span><button class="area" data-p="${r.pid}">Readmitir</button></div>`).join(''):''}`;
+  ${BQ.length?`<h4 class="sumh">Expulsados</h4>`+BQ.map(r=>`<div class="aexp"><span><b class="aexn2" data-p="${r.pid}"></b> <small class="mut">· ${r.k} ${r.k===1?'dispositivo':'dispositivos'}</small></span><button class="area" data-p="${r.pid}">Readmitir</button></div>`).join(''):''}</div></details>`;
   app.querySelectorAll('.an').forEach((el,i)=>el.textContent=L[i].n);
   const av=document.getElementById('avista');if(av)av.onclick=()=>weeklyPopup(true);
   const nom=p=>(L.find(r=>r.pid===p)||BQ.find(r=>r.pid===p)||{}).n||'';
