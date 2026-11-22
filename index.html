@@ -350,7 +350,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-doc{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--nvac);text-decoration:none;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-top:6px}
 /*/NOV*/
 </style>
-<script>const APPV='1795347428';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795347587';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1301,12 +1301,12 @@ function nvIl(n){const t=NVIL[n.il]||NVIL.lista;return n.num?t.replace('>152<','
 const NVMES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
 function nvFecha(n){if(n.fx)return n.fx;const [y,m,d]=n.f.split('-');return `${+d} ${NVMES[m-1]} ${y}`}
 function nvVistas(){try{return JSON.parse(lsGet('nvistas')||'[]')}catch(e){return []}}
-function nvMeta(n,nw,dot){return `${dot&&nw?'<i class="nv-dot"></i>':''}<b>${esc(n.src)}</b><span>·</span><span>${nvFecha(n)}</span>${nw&&!dot?'<span class="nv-new">Nuevo</span>':''}`}
+function nvMeta(n){return `<b>${esc(n.src)}</b><span>·</span><span>${nvFecha(n)}</span>`}
 function pintaNov(){
   const el=document.getElementById('nov');if(!el||!NOV.length){if(el)el.innerHTML='';return}
   const v=nvVistas(),nw=n=>!v.includes(n.id)&&(Date.now()-new Date(n.f))<20*864e5;
   const [a,...r]=NOV,lst=NVall?r:r.slice(0,2);
-  el.innerHTML=`<h2 class="nv-h">${NOV.some(nw)?'<i></i>':''}Novedades de la oposición</h2>
+  el.innerHTML=`<h2 class="nv-h">Novedades de la oposición</h2>
   <div class="nv-lead" data-n="0"><div class="nv-img">${nvIl(a)}</div><div class="nv-m">${nvMeta(a,nw(a))}</div><h3>${esc(a.tit)}</h3>${a.ent?`<p>${esc(a.ent)}</p>`:''}</div>
   ${lst.map((n,i)=>`<div class="nv-row" data-n="${i+1}"><div><div class="nv-m">${nvMeta(n,nw(n),1)}</div><h4>${esc(n.tit)}</h4></div><div class="nv-th">${nvIl(n)}</div></div>`).join('')}
   ${!NVall&&r.length>2?'<button class="nv-more" id="nvMas">Ver más noticias</button>':''}`;
