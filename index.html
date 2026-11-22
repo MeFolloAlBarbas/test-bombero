@@ -315,7 +315,7 @@ summary{cursor:pointer}
 .aviso{position:fixed;left:50%;bottom:24px;transform:translate(-50%,160%);background:var(--ink);color:var(--bg);border-radius:99px;padding:9px 18px;font-size:14px;transition:transform .3s cubic-bezier(.2,1.3,.4,1);white-space:nowrap;z-index:60}.aviso.show{transform:translate(-50%,0)}
 .modal:has(.cq){align-items:center}.cq{max-width:340px;text-align:center}.cq-t{font-size:17px;font-weight:600;margin:4px 0 16px}.cq-b{display:grid;grid-template-columns:1fr 1fr;gap:10px}.cq-si{background:var(--kol)!important;color:#fff!important;border-color:var(--kol)!important}
 </style>
-<script>const APPV='1795345154';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795345305';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1105,7 +1105,7 @@ const BMSVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-
 function guardada(id){return ((S.guard||{})[id]||0)>0}
 function toggleGuardar(id){S.guard=S.guard||{};const on=!guardada(id);S.guard[id]=on?Date.now():-Date.now();save();return on}
 function confirmarQuitar(si){const ov=document.createElement('div');ov.className='modal';
-  ov.innerHTML='<div class="mbox cq"><p class="cq-t">¿Quitar esta pregunta de tus tarjetas?</p><div class="cq-b"><button class="btn sec" id="cqNo">Cancelar</button><button class="btn cq-si" id="cqSi">Quitar</button></div></div>';
+  ov.innerHTML='<div class="mbox cq"><p class="cq-t">¿Quitar esta pregunta de tus tarjetas?</p><div class="cq-b"><button class="btn sec" id="cqNo">Mantener</button><button class="btn cq-si" id="cqSi">Quitar</button></div></div>';
   document.body.appendChild(ov);const fin=()=>ov.remove();ov.onclick=e=>{if(e.target===ov)fin()};ov.querySelector('#cqNo').onclick=fin;ov.querySelector('#cqSi').onclick=()=>{fin();si()}}
 function aviso(t){let e=document.getElementById('aviso');if(!e){e=document.createElement('div');e.id='aviso';e.className='aviso';document.body.appendChild(e)}e.textContent=t;e.classList.remove('show');void e.offsetWidth;e.classList.add('show');clearTimeout(aviso.t);aviso.t=setTimeout(()=>e.classList.remove('show'),1700)}
 function pendienteHoyOFuturo(id){const hoy=madrid().key;for(const k in FIXED){if(k>=hoy&&FIXED[k].includes(id))return true}return false}
