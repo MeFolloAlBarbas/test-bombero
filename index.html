@@ -313,8 +313,9 @@ summary{cursor:pointer}
 .tj-mk svg{width:16px;height:16px}.tj-mk svg path{fill:currentColor}
 .tj-bien{background:var(--okb);color:var(--okt);border-radius:10px;padding:8px 12px;margin:8px 0;font-size:14px}
 .aviso{position:fixed;left:50%;bottom:24px;transform:translate(-50%,160%);background:var(--ink);color:var(--bg);border-radius:99px;padding:9px 18px;font-size:14px;transition:transform .3s cubic-bezier(.2,1.3,.4,1);white-space:nowrap;z-index:60}.aviso.show{transform:translate(-50%,0)}
+.modal:has(.cq){align-items:center}.cq{max-width:340px;text-align:center}.cq-t{font-size:17px;font-weight:600;margin:4px 0 16px}.cq-b{display:grid;grid-template-columns:1fr 1fr;gap:10px}.cq-si{background:var(--kol)!important;color:#fff!important;border-color:var(--kol)!important}
 </style>
-<script>const APPV='1795344892';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795345154';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -816,7 +817,7 @@ function tarjetas(){
   <div class="tj-face tj-back"><h3 class="tj-t">${esc(c.q.t)}</h3><p class="tj-bq">${esc(tq)}</p><div class="tj-ok">✓ ${esc(ta)}</div>${c.nr?'<div class="tj-mal">No la respondiste</div>':c.tu===c.q.c?'<div class="tj-bien">La acertaste</div>':`<div class="tj-mal">${c.tu===null||c.tu===undefined?'La dejaste en blanco':'Tú respondiste: '+esc(OT(c.q,c.tu))}</div>`}${c.q.rec?`<div class="tj-rec"><b>Para recordar:</b> ${c.q.rec}</div>`:''}${c.q.que?`<p class="tj-ex">${c.q.que}</p>`:''}${c.q.porque?`<p class="tj-ex">${c.q.porque}</p>`:''}${c.q.ojo?`<p class="tj-ex tj-ojo"><b>Ojo:</b> ${c.q.ojo}</p>`:''}</div></div></div></div>
   <div class="tj-acts"><button class="tj-nav" id="tjP" ${TJ.idx?'':'disabled'}>← Anterior</button><span class="tj-n">${TJ.idx+1} / ${L.length}</span><button class="tj-nav" id="tjN" ${TJ.idx<L.length-1?'':'disabled'}>Siguiente →</button></div>`;
   segBind();marcarTerminos(app.querySelector('.tj-back'),c.q);
-  {const mk=app.querySelector('.tj-mk');if(mk)mk.onclick=e=>{e.stopPropagation();toggleGuardar(c.q.id);aviso('Quitada de tus tarjetas');TJ.idx=Math.max(0,Math.min(TJ.idx,L.length-2));tarjetas()}}
+  {const mk=app.querySelector('.tj-mk');if(mk)mk.onclick=e=>{e.stopPropagation();confirmarQuitar(()=>{toggleGuardar(c.q.id);aviso('Quitada de tus tarjetas');TJ.idx=Math.max(0,Math.min(TJ.idx,L.length-2));tarjetas()})}}
   const cd=document.getElementById('tjC');TJ.n=L.length;
   const fit=()=>{cd.style.height='';const h=Math.max(...[...cd.querySelectorAll('.tj-face')].map(f=>f.scrollHeight));cd.style.height=Math.max(h,300)+'px'};fit();setTimeout(fit,50);
   cd.onclick=()=>{if(TJ.swiped){TJ.swiped=false;return}cd.classList.toggle('flip')};
@@ -1012,7 +1013,7 @@ function show(){
   <div id="after"></div>
   <div class="nav" id="nav"><button class="btn sec" id="blank">Dejar en blanco</button></div>`;
   app.querySelectorAll('#ops .op').forEach(b=>b.onclick=()=>answer(+b.dataset.o));
-  {const bk=document.getElementById('bmk');bk.onclick=()=>{const on=toggleGuardar(q.id);bk.classList.toggle('on',on);bk.innerHTML=(on?'<span>Guardada</span>':'')+BMSVG;if(on){bk.classList.remove('pop');void bk.offsetWidth;bk.classList.add('pop')}aviso(on?'Guardada en tus tarjetas':'Quitada de tus tarjetas')}}
+  {const bk=document.getElementById('bmk');bk.onclick=()=>{if(guardada(q.id)){confirmarQuitar(()=>{toggleGuardar(q.id);bk.classList.remove('on');bk.innerHTML=BMSVG;aviso('Quitada de tus tarjetas')});return}const on=toggleGuardar(q.id);bk.classList.toggle('on',on);bk.innerHTML=(on?'<span>Guardada</span>':'')+BMSVG;if(on){bk.classList.remove('pop');void bk.offsetWidth;bk.classList.add('pop')}aviso(on?'Guardada en tus tarjetas':'Quitada de tus tarjetas')}}
   document.getElementById('blank').onclick=()=>sim?(run.ans.push(null),next()):answer(null);
   avisoQ();
   if(run.mode==='dia'&&run.ctx){
@@ -1103,6 +1104,9 @@ function alertaPanel(t){const m=document.getElementById('amsg');if(m){m.style.co
 const BMSVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4.5L6 21z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
 function guardada(id){return ((S.guard||{})[id]||0)>0}
 function toggleGuardar(id){S.guard=S.guard||{};const on=!guardada(id);S.guard[id]=on?Date.now():-Date.now();save();return on}
+function confirmarQuitar(si){const ov=document.createElement('div');ov.className='modal';
+  ov.innerHTML='<div class="mbox cq"><p class="cq-t">¿Quitar esta pregunta de tus tarjetas?</p><div class="cq-b"><button class="btn sec" id="cqNo">Cancelar</button><button class="btn cq-si" id="cqSi">Quitar</button></div></div>';
+  document.body.appendChild(ov);const fin=()=>ov.remove();ov.onclick=e=>{if(e.target===ov)fin()};ov.querySelector('#cqNo').onclick=fin;ov.querySelector('#cqSi').onclick=()=>{fin();si()}}
 function aviso(t){let e=document.getElementById('aviso');if(!e){e=document.createElement('div');e.id='aviso';e.className='aviso';document.body.appendChild(e)}e.textContent=t;e.classList.remove('show');void e.offsetWidth;e.classList.add('show');clearTimeout(aviso.t);aviso.t=setTimeout(()=>e.classList.remove('show'),1700)}
 function pendienteHoyOFuturo(id){const hoy=madrid().key;for(const k in FIXED){if(k>=hoy&&FIXED[k].includes(id))return true}return false}
 // ===== expulsiones =====
