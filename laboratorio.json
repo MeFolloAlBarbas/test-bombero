@@ -162,7 +162,8 @@
 "dice": "Su inclinación sobre la horizontal nunca supera los 15 grados.",
 "real": "Las guías no se inclinan más de <b>15° respecto a la vertical</b> (EN 81-1, 81-2 y 81-20). La definición legal lo dice al revés: inclinación sobre la horizontal <b>superior</b> a 15°. 15° sobre la horizontal sería casi una rampa plana.",
 "exa": "Si copian la frase literal del manual, el tribunal podría darla por buena tal cual.",
-"f": "EN 81-1/81-2/81-20 · RD 1314/1997 · Directiva 2014/33/UE"
+"f": "EN 81-1/81-2/81-20 · RD 1314/1997 · Directiva 2014/33/UE",
+"q": 291
 }
 ]
 }
