@@ -350,9 +350,10 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-doc{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--nvac);text-decoration:none;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-top:6px}
 .nv-tt{touch-action:pan-y;user-select:none;-webkit-user-select:none;display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;cursor:pointer;overflow:hidden}
 .nv-tt b{flex:0 0 auto;font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:var(--nvac);color:var(--bg);padding:3px 8px;border-radius:6px}
-.nv-tw{flex:1;min-width:0;overflow:hidden;height:2.7em;position:relative;display:flex;align-items:center}
+.nv-tw{flex:1;min-width:0;overflow:hidden;height:3.3em;position:relative;display:flex;align-items:center}
 .nv-tw span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:14.5px;line-height:1.35;transition:transform .4s ease,opacity .4s}
-.nv-tw span em{font-style:normal;font-weight:600;color:var(--nvac);margin-right:4px}
+.nv-tw span em{display:block;font-style:normal;font-size:12px;font-weight:600;color:var(--nvac);line-height:1.3}
+.nv-tw span:has(em){-webkit-line-clamp:3}
 .nv-tw span{transition:transform .3s ease,opacity .3s}
 .nv-tw span.out{opacity:0;transform:translateX(-24px)}
 .nv-tw span.out.r{transform:translateX(24px)}
@@ -368,7 +369,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795348219';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795352583';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -1321,11 +1322,12 @@ function nvFecha(n){if(n.fx)return n.fx;const [y,m,d]=n.f.split('-');return `${+
 function nvVistas(){try{return JSON.parse(lsGet('nvistas')||'[]')}catch(e){return []}}
 function nvMeta(n){return `<b>${esc(n.src)}</b><span>·</span><span>${nvFecha(n)}</span>`}
 let NVT=null,NVI=0,NVsw=false;
+function nvTit(n){return (n.p===1?'<em>Especialista del Ayuntamiento</em>':'')+esc(n.tit)}
 function nvIr(k,dir){
   const x=document.getElementById('nvTx');if(!x)return;
   dir=dir||1;
   x.style.transition='';x.className='out'+(dir<0?' r':'');
-  setTimeout(()=>{NVI=(k+NOV.length)%NOV.length;x.textContent=NOV[NVI].tit;
+  setTimeout(()=>{NVI=(k+NOV.length)%NOV.length;x.innerHTML=nvTit(NOV[NVI]);
     document.querySelectorAll('#nvAll i').forEach((d,j)=>d.classList.toggle('on',j===NVI));
     x.className='in'+(dir<0?' r':'');requestAnimationFrame(()=>requestAnimationFrame(()=>x.className=''))},300);
 }
@@ -1334,7 +1336,7 @@ function pintaNov(){
   clearInterval(NVT);
   const el=document.getElementById('nov');if(!el||!NOV.length){if(el)el.innerHTML='';return}
   if(NVI>=NOV.length)NVI=0;
-  el.innerHTML=`<div class="nv-tt" id="nvTT" role="button" tabindex="0"><b>Última hora</b><div class="nv-tw"><span id="nvTx">${esc(NOV[NVI].tit)}</span></div></div>
+  el.innerHTML=`<div class="nv-tt" id="nvTT" role="button" tabindex="0"><b>Última hora</b><div class="nv-tw"><span id="nvTx">${nvTit(NOV[NVI])}</span></div></div>
   <button class="nv-dots${NVall?' open':''}" id="nvAll" aria-label="${NVall?'Ocultar':'Ver todas'} las noticias">${NOV.map((n,i)=>`<i class="${i===NVI?'on':''}"></i>`).join('')}</button>
   ${NVall?`<div class="nv-list">${NOV.map((n,i)=>`<div class="nv-li" data-n="${i}"><div class="nv-m">${nvMeta(n)}</div><h4>${esc(n.tit)}</h4></div>`).join('')}</div>`:''}`;
   const T=document.getElementById('nvTT');
