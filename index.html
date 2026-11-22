@@ -288,8 +288,11 @@ summary{cursor:pointer}
 .err-b{border-left:4px solid;border-radius:6px;padding:8px 10px;margin:0 0 8px;font-size:14px;line-height:1.45}.err-lb{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px}
 .err-d{background:var(--kob);border-color:var(--kol);color:var(--kot)}.err-d q{font-style:italic}.err-r{background:var(--okb);border-color:var(--okl);color:var(--okt)}.err-x{background:var(--wab);border-color:var(--wal);color:var(--wat)}.err-f{font-size:12px;color:var(--mut)}
 .par .gl-n{color:#2f6f73}@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .par .gl-n{color:#8fc9cb}}:root[data-theme=dark] .par .gl-n{color:#8fc9cb}
+.rk{grid-template-columns:2.2em minmax(0,1fr) auto!important;gap:10px!important;border-left:0!important;border-radius:8px!important;padding:9px 12px!important;margin:0 0 5px!important;font-size:15px!important}
+.rk .pos{text-align:center;font-weight:700}.rk .who b{font-size:15px!important}.rk .sc .ac{font-size:13px!important;opacity:.75}.rk .sc b{font-size:15px!important}
+.rk.yo{box-shadow:inset 0 0 0 2px currentColor}
 </style>
-<script>const APPV='1795312541';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795312995';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -934,7 +937,7 @@ function drawRanking(){
   ${weeksAll.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${weeksAll.map(w=>`<option value="${w}" ${w===m?'selected':''}>${w===cur?'Semana actual':'Semana del '+nice(w)}</option>`).join('')}</select>`:''}
   ${rows.map((r,i)=>{if(r.neta!==prev){pos=i+1;prev=r.neta}
     const pct=max?r.neta/max*100:0,pass=r.neta>cut;
-    return `<div class="rk ${pass?'pass':'fail'}"><span class="pos">${pos}º</span><div class="who"><b class="nm"></b>
+    return `<div class="rk ${pass?'pass':'fail'}${r.id===PID?' yo':''}"><span class="pos">${pos<=3?['🥇','🥈','🥉'][pos-1]:pos+'º'}</span><div class="who"><b class="nm"></b>
       </div>
       <div class="sc"><span class="ac">${okOf(r)}/${max}</span><b>${fmt(r.neta)} netas</b></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
   app.querySelectorAll('.rk .nm').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
