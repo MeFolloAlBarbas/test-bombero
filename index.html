@@ -304,8 +304,17 @@ summary{cursor:pointer}
 .adsec[open]>summary::after{transform:rotate(90deg)}.adsec[open]>summary{border-bottom:1px solid var(--line)}
 .adbody{padding:10px 14px 14px}.adh2{font-size:14px;margin:12px 0 6px;color:var(--mut)}.adbody .adh2:first-child{margin-top:0}
 .adgrp{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);margin:20px 0 8px}
+.qhead2{display:flex;justify-content:space-between;align-items:center;gap:10px}.qhead2 .meta{margin:0}
+.bm{border:0;background:transparent;padding:6px;margin:-6px -6px -6px 0;cursor:pointer;color:var(--mut);display:flex;align-items:center;gap:6px;font:inherit;font-size:13px;min-height:44px}
+.bm svg{width:26px;height:26px;transition:transform .25s cubic-bezier(.2,1.6,.4,1)}.bm.on{color:#2f6f73}.bm.on svg{transform:scale(1.12)}.bm.on svg path{fill:currentColor}
+.bm.pop svg{animation:bmpop .35s cubic-bezier(.2,1.6,.4,1)}@keyframes bmpop{0%{transform:scale(.7)}60%{transform:scale(1.3)}100%{transform:scale(1.12)}}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .bm.on,:root:not([data-theme=light]) .tj-mk{color:#8fc9cb}}:root[data-theme=dark] .bm.on,:root[data-theme=dark] .tj-mk{color:#8fc9cb}
+.tj-face{position:relative}.tj-mk{position:absolute;top:10px;right:10px;border:0;background:transparent;color:#2f6f73;display:flex;align-items:center;gap:4px;font:inherit;font-size:12px;font-weight:600;cursor:pointer;padding:4px;min-height:0}
+.tj-mk svg{width:16px;height:16px}.tj-mk svg path{fill:currentColor}
+.tj-bien{background:var(--okb);color:var(--okt);border-radius:10px;padding:8px 12px;margin:8px 0;font-size:14px}
+.aviso{position:fixed;left:50%;bottom:24px;transform:translate(-50%,160%);background:var(--ink);color:var(--bg);border-radius:99px;padding:9px 18px;font-size:14px;transition:transform .3s cubic-bezier(.2,1.3,.4,1);white-space:nowrap;z-index:60}.aviso.show{transform:translate(-50%,0)}
 </style>
-<script>const APPV='1795341856';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795344892';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 </head>
 <body>
 <header><div class="in"><img src="img/icon-192.png" alt="" width="40" height="40" style="image-rendering:pixelated;flex:none"><div><h1>Test Bombero Madrid</h1><small>Bombero Especialista · Ayuntamiento de Madrid</small></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header>
@@ -379,6 +388,7 @@ function merge(r){
   S.fallos=[...new Set([...(r.fallos||[]),...S.fallos])];
   for(const k in r.daily||{})S.daily[k]=Object.assign({},r.daily[k],S.daily[k]||{});
   if(r.start&&(!S.start||r.start<S.start))S.start=r.start;
+  {const g=Object.assign({},S.guard||{});for(const id in r.guard||{}){const t=r.guard[id];if(!(id in g)||Math.abs(t)>Math.abs(g[id]))g[id]=t}S.guard=g}
   S.tir=Object.assign({},r.tir||{},S.tir||{});S.gasto=Object.assign({},r.gasto||{},S.gasto||{});S.tach=Object.assign({},r.tach||{},S.tach||{});
 }
 const ABC='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
@@ -782,8 +792,11 @@ function tarjetasLista(){
   for(const k of Object.keys(S.daily).sort().reverse())for(const h of Object.keys(S.daily[k]).sort((a,b)=>b-a)){
     const d=S.daily[k][h],q=byId(d.id);if(!q||vistos.has(q.id))continue;
     const tu=d.wa!==undefined?d.wa:d.a;if(tu===q.c)continue;
-    vistos.add(q.id);L.push({q,tu,k})}
-  return L}
+    vistos.add(q.id);L.push({q,tu,k,t:parse(k)+(+h)*36e5,g:guardada(q.id)})}
+  const resp={};for(const k in S.daily)for(const h in S.daily[k]){const d=S.daily[k][h];resp[d.id]=d.wa!==undefined?d.wa:d.a}
+  for(const id in S.guard||{}){const t=S.guard[id];if(t<=0||vistos.has(+id))continue;const q=byId(+id);if(!q)continue;
+    if(!(q.id in resp)&&pendienteHoyOFuturo(q.id))continue;vistos.add(q.id);L.push({q,tu:resp[q.id],t,g:true,nr:!(q.id in resp)})}
+  return L.sort((a,b)=>b.t-a.t)}
 const TJ={idx:0};
 function tjMover(d){const i=TJ.idx+d;if(TJ.busy||i<0||i>=(TJ.n||0))return;const wr=document.getElementById('tjW');const ir=()=>{TJ.idx=i;TJ.dir=d;tarjetas();TJ.dir=0;TJ.busy=false};if(!wr||matchMedia('(prefers-reduced-motion:reduce)').matches){ir();return}TJ.busy=true;wr.classList.add('tj-out');setTimeout(ir,270)}
 document.addEventListener('keydown',e=>{if(GL.sub!=='tj'&&location.hash==='#tarjetas')return;if(e.repeat&&location.hash==='#tarjetas'&&[' ','ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();return}if(GL.sub==='glos'||location.hash!=='#tarjetas'||e.ctrlKey||e.metaKey||e.altKey||/INPUT|TEXTAREA|SELECT/.test((e.target||{}).tagName||''))return;const cd=document.getElementById('tjC');if(!cd)return;
@@ -797,12 +810,13 @@ function tarjetas(){
   if(GL.sub==='par'){app.innerHTML=seg+parecidosHtml();segBind();return}
   if(GL.sub==='err'){app.innerHTML=seg+erratasHtml();segBind();return}
   const L=tarjetasLista();if(TJ.idx>=L.length)TJ.idx=0;const c=L[TJ.idx];
-  if(!c){app.innerHTML=seg+'<div class="tj-empty">Aquí aparecerán las preguntas que falles o dejes en blanco.</div>';segBind();return}
+  if(!c){app.innerHTML=seg+'<div class="tj-empty">Aquí aparecerán las preguntas que falles, dejes en blanco o guardes con el marcapáginas.</div>';segBind();return}
   const tq=c.q.tq||c.q.q,ta=c.q.ta||OT(c.q,c.q.c);
-  app.innerHTML=seg+`<div class="tj-stage">${L.length>1?'<div class="tj-pila p2"></div><div class="tj-pila"></div>':''}<div class="tj-wrap${TJ.dir>0?' tj-in-r':TJ.dir<0?' tj-in-l':''}" id="tjW"><div class="tj-card" id="tjC"><div class="tj-face"><h3 class="tj-t">${esc(c.q.t)}</h3><div class="tj-q">${esc(tq)}</div>${qimg(c.q)}<div class="tj-hint">Toca para ver la respuesta</div></div>
-  <div class="tj-face tj-back"><h3 class="tj-t">${esc(c.q.t)}</h3><p class="tj-bq">${esc(tq)}</p><div class="tj-ok">✓ ${esc(ta)}</div><div class="tj-mal">${c.tu===null||c.tu===undefined?'La dejaste en blanco':'Tú respondiste: '+esc(OT(c.q,c.tu))}</div>${c.q.rec?`<div class="tj-rec"><b>Para recordar:</b> ${c.q.rec}</div>`:''}${c.q.que?`<p class="tj-ex">${c.q.que}</p>`:''}${c.q.porque?`<p class="tj-ex">${c.q.porque}</p>`:''}${c.q.ojo?`<p class="tj-ex tj-ojo"><b>Ojo:</b> ${c.q.ojo}</p>`:''}</div></div></div></div>
+  app.innerHTML=seg+`<div class="tj-stage">${L.length>1?'<div class="tj-pila p2"></div><div class="tj-pila"></div>':''}<div class="tj-wrap${TJ.dir>0?' tj-in-r':TJ.dir<0?' tj-in-l':''}" id="tjW"><div class="tj-card" id="tjC"><div class="tj-face">${c.g?`<button class="tj-mk" aria-label="Quitar de tus tarjetas">${BMSVG}Guardada</button>`:''}<h3 class="tj-t">${esc(c.q.t)}</h3><div class="tj-q">${esc(tq)}</div>${qimg(c.q)}<div class="tj-hint">Toca para ver la respuesta</div></div>
+  <div class="tj-face tj-back"><h3 class="tj-t">${esc(c.q.t)}</h3><p class="tj-bq">${esc(tq)}</p><div class="tj-ok">✓ ${esc(ta)}</div>${c.nr?'<div class="tj-mal">No la respondiste</div>':c.tu===c.q.c?'<div class="tj-bien">La acertaste</div>':`<div class="tj-mal">${c.tu===null||c.tu===undefined?'La dejaste en blanco':'Tú respondiste: '+esc(OT(c.q,c.tu))}</div>`}${c.q.rec?`<div class="tj-rec"><b>Para recordar:</b> ${c.q.rec}</div>`:''}${c.q.que?`<p class="tj-ex">${c.q.que}</p>`:''}${c.q.porque?`<p class="tj-ex">${c.q.porque}</p>`:''}${c.q.ojo?`<p class="tj-ex tj-ojo"><b>Ojo:</b> ${c.q.ojo}</p>`:''}</div></div></div></div>
   <div class="tj-acts"><button class="tj-nav" id="tjP" ${TJ.idx?'':'disabled'}>← Anterior</button><span class="tj-n">${TJ.idx+1} / ${L.length}</span><button class="tj-nav" id="tjN" ${TJ.idx<L.length-1?'':'disabled'}>Siguiente →</button></div>`;
   segBind();marcarTerminos(app.querySelector('.tj-back'),c.q);
+  {const mk=app.querySelector('.tj-mk');if(mk)mk.onclick=e=>{e.stopPropagation();toggleGuardar(c.q.id);aviso('Quitada de tus tarjetas');TJ.idx=Math.max(0,Math.min(TJ.idx,L.length-2));tarjetas()}}
   const cd=document.getElementById('tjC');TJ.n=L.length;
   const fit=()=>{cd.style.height='';const h=Math.max(...[...cd.querySelectorAll('.tj-face')].map(f=>f.scrollHeight));cd.style.height=Math.max(h,300)+'px'};fit();setTimeout(fit,50);
   cd.onclick=()=>{if(TJ.swiped){TJ.swiped=false;return}cd.classList.toggle('flip')};
@@ -991,13 +1005,14 @@ function show(){
   app.innerHTML=`
   <div class="top"><span>${title}${sim||run.mode==='dia'?'':' · '+fmt(run.net)+' netas'}</span><span>${run.mode==='dia'?nice(run.ctx.k):`Pregunta ${run.i+1} de ${n}`}</span></div>
   <div class="prog"><i style="width:${run.i*100/n}%"></i></div>
-  <p class="meta">${esc(q.t)}${q.d==='difícil'?`<span class="chip">${run.mode==='dia'&&run.ctx&&run.ctx.h===20?'Máxima dificultad':'Difícil'}</span>`:''}</p>
+  <div class="qhead2"><p class="meta">${esc(q.t)}${q.d==='difícil'?`<span class="chip">${run.mode==='dia'&&run.ctx&&run.ctx.h===20?'Máxima dificultad':'Difícil'}</span>`:''}</p><button class="bm${guardada(q.id)?' on':''}" id="bmk" aria-label="Guardar en mis tarjetas">${guardada(q.id)?'<span>Guardada</span>':''}${BMSVG}</button></div>
   <p class="enun">${esc(q.q)}</p>${qimg(q)}
   <div id="avq"></div>
   <div id="ops">${ord.map((o,k)=>`<button class="op" data-o="${o}">${L[k]}. ${esc(OT(q,o))}</button>`).join('')}</div>
   <div id="after"></div>
   <div class="nav" id="nav"><button class="btn sec" id="blank">Dejar en blanco</button></div>`;
   app.querySelectorAll('#ops .op').forEach(b=>b.onclick=()=>answer(+b.dataset.o));
+  {const bk=document.getElementById('bmk');bk.onclick=()=>{const on=toggleGuardar(q.id);bk.classList.toggle('on',on);bk.innerHTML=(on?'<span>Guardada</span>':'')+BMSVG;if(on){bk.classList.remove('pop');void bk.offsetWidth;bk.classList.add('pop')}aviso(on?'Guardada en tus tarjetas':'Quitada de tus tarjetas')}}
   document.getElementById('blank').onclick=()=>sim?(run.ans.push(null),next()):answer(null);
   avisoQ();
   if(run.mode==='dia'&&run.ctx){
@@ -1084,6 +1099,12 @@ function erratasHtml(){
   return `<p class="lab-in">Fallos de los manuales, contrastados con la norma.</p>`+(V.length?'':'<p class="tj-empty">Cada errata aparecerá aquí después de responder su pregunta.</p>')+(falta?`<p class="gl-mas">Por descubrir: ${falta} ${falta===1?'errata':'erratas'}.</p>`:'')+V.map(e=>`<div class="err"><div class="err-t">${esc(e.t)}</div><div class="err-m">${esc(e.tema)} · ${esc(e.m)}</div><div class="err-b err-d"><span class="err-lb">El manual dice</span><q>${esc(e.dice)}</q></div><div class="err-b err-r"><span class="err-lb">En realidad</span>${e.real}</div><div class="err-b err-x"><span class="err-lb">Ojo en el examen</span>${esc(e.exa)}</div><div class="err-f">Fuente: ${esc(e.f)}</div></div>`).join('');
 }
 function alertaPanel(t){const m=document.getElementById('amsg');if(m){m.style.color='var(--kot)';m.textContent=t}}
+// ===== preguntas guardadas en tus tarjetas =====
+const BMSVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4.5L6 21z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
+function guardada(id){return ((S.guard||{})[id]||0)>0}
+function toggleGuardar(id){S.guard=S.guard||{};const on=!guardada(id);S.guard[id]=on?Date.now():-Date.now();save();return on}
+function aviso(t){let e=document.getElementById('aviso');if(!e){e=document.createElement('div');e.id='aviso';e.className='aviso';document.body.appendChild(e)}e.textContent=t;e.classList.remove('show');void e.offsetWidth;e.classList.add('show');clearTimeout(aviso.t);aviso.t=setTimeout(()=>e.classList.remove('show'),1700)}
+function pendienteHoyOFuturo(id){const hoy=madrid().key;for(const k in FIXED){if(k>=hoy&&FIXED[k].includes(id))return true}return false}
 // ===== expulsiones =====
 async function comprobarBloqueo(pid){
   if(!FS)return false;const {fs,db,uid}=FS;
