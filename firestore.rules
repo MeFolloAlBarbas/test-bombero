@@ -102,6 +102,20 @@ service cloud.firestore {
       allow get: if request.auth != null && (request.auth.uid == u || isAdmin());
       allow list, write: if isAdmin();
     }
+    // Ranking agregado: un único documento con la fila de cada uno (p.<pid>).
+    // Lo lee cualquiera; cada persona solo puede cambiar o borrar su propia fila. El administrador, todo.
+    function filaOk(m){ return !(miPid() in m) || (m[miPid()].nombre is string && m[miPid()].nombre.size() <= 30 && m[miPid()].keys().hasOnly(['nombre','weeks'])); }
+    match /rk/{d} {
+      allow read: if true;
+      allow create: if isAdmin() || (request.auth != null && !vetado() && !bloqueado(miPid())
+        && request.resource.data.keys().hasOnly(['p'])
+        && request.resource.data.p.keys().hasOnly([miPid()]) && filaOk(request.resource.data.p));
+      allow update: if isAdmin() || (request.auth != null && !vetado() && !bloqueado(miPid())
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['p'])
+        && request.resource.data.p.diff(resource.data.p).affectedKeys().hasOnly([miPid()])
+        && filaOk(request.resource.data.p));
+      allow delete: if isAdmin();
+    }
     match /ranking/{pid} {
       allow read: if true;
       allow create, update: if request.auth != null && !vetado() && !bloqueado(pid)
