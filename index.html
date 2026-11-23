@@ -380,7 +380,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795435202';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795439303';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -851,7 +851,7 @@ function day(k){
     const head=`<span class="hr">${h}:00</span><span class="st ${cls}">${state}</span>`;
     if(locked)return `<div class="slot lk"><div class="sh">${head}</div></div>`;
     if(today&&!s.done)return `<div class="slot"><div class="sh">${head}</div></div>`;
-    return `<details class="slot" data-q="${q.id}"><summary class="sh">${head}</summary><p class="sq">${esc(q.t)}</p><p class="enun">${esc(q.q)}</p>${qimg(q)}
+    return `<details class="slot" data-q="${q.id}"><summary class="sh">${head}</summary><div class="qhead2"><p class="sq" style="margin:0">${esc(q.t)}</p>${bmBtn(q.id)}</div><p class="enun">${esc(q.q)}</p>${qimg(q)}
       ${de.sab?`<p class="sabq" style="margin:0 0 8px">Chulito de ${esc(de.sab)}: tenía 4 opciones.</p>`:''}${(()=>{const ch=s.a!==null&&s.a!==undefined?s.a:de.wa;return (de.sab&&q.o4?[0,1,2,3]:[0,1,2]).map(o=>`<div class="op rv ${o===q.c?'okc':o===ch?'koc':''}" data-o="${o}">${esc(OT(q,o))}</div>`).join('')})()}${expl(q)}</details>`;
   }).join('');
   app.innerHTML=`
@@ -860,6 +860,7 @@ function day(k){
   <p class="note" style="margin:0 0 16px">${today?'Las preguntas solo se pueden responder hoy. Mañana quedarán para revisar.':'Este día ya está cerrado: puedes revisar tus respuestas, pero no contestar.'}</p>
   ${rows}
   <div class="nav">${today&&pending()?'<button class="btn" id="bNext">Responder la siguiente</button>':''}<button class="btn sec" id="bHist">Días anteriores</button></div>`;
+  app.querySelectorAll('details.slot [data-bm]').forEach(b=>b.onclick=e=>{e.preventDefault();bmClick(b,+b.dataset.bm)});
   app.querySelectorAll('details.slot[data-q]').forEach(d=>d.addEventListener('toggle',()=>{if(d.open&&!d.dataset.v){d.dataset.v=1;marcarTerminos(d,byId(+d.dataset.q));votosEn(d.querySelectorAll('.op.rv'),+d.dataset.q)}}));
   document.getElementById('bHist').onclick=()=>go('historial');
   const bn=document.getElementById('bNext');if(bn)bn.onclick=()=>go('inicio');
@@ -906,7 +907,7 @@ function tarjetas(){
   <div class="tj-face tj-back"><h3 class="tj-t">${esc(c.q.t)}</h3><p class="tj-bq">${esc(tq)}</p><div class="tj-ok">✓ ${esc(ta)}</div>${c.nr?'<div class="tj-mal">No la respondiste</div>':c.tu===c.q.c?'<div class="tj-bien">La acertaste</div>':`<div class="tj-mal">${c.tu===null||c.tu===undefined?'La dejaste en blanco':'Tú respondiste: '+esc(OT(c.q,c.tu))}</div>`}${c.q.rec?`<div class="tj-rec"><b>Para recordar:</b> ${c.q.rec}</div>`:''}${c.q.que?`<p class="tj-ex">${c.q.que}</p>`:''}${c.q.porque?`<p class="tj-ex">${c.q.porque}</p>`:''}${c.q.ojo?`<p class="tj-ex tj-ojo"><b>Ojo:</b> ${c.q.ojo}</p>`:''}</div></div></div></div>
   <div class="tj-acts"><button class="tj-nav" id="tjP" ${TJ.idx?'':'disabled'}>← Anterior</button><span class="tj-n">${TJ.idx+1} / ${L.length}</span><button class="tj-nav" id="tjN" ${TJ.idx<L.length-1?'':'disabled'}>Siguiente →</button></div>`;
   segBind();marcarTerminos(app.querySelector('.tj-back'),c.q);
-  {const mk=app.querySelector('.tj-mk');if(mk)mk.onclick=e=>{e.stopPropagation();confirmarQuitar(()=>{toggleGuardar(c.q.id);aviso('Quitada de tus tarjetas');TJ.idx=Math.max(0,Math.min(TJ.idx,L.length-2));tarjetas()})}}
+  {const mk=app.querySelector('.tj-mk');if(mk)mk.onclick=e=>{e.stopPropagation();confirmarQuitar(()=>{toggleGuardar(c.q.id);aviso('Quitada de Fallos');TJ.idx=Math.max(0,Math.min(TJ.idx,L.length-2));tarjetas()})}}
   const cd=document.getElementById('tjC');TJ.n=L.length;
   const fit=()=>{if(!cd.isConnected)return;cd.style.height='';const h=Math.max(Math.max(...[...cd.querySelectorAll('.tj-face')].map(f=>f.scrollHeight)),300);cd.style.height=h+'px';const over=document.documentElement.scrollHeight-innerHeight;if(over>0)cd.style.height=Math.max(300,h-over)+'px'};fit();setTimeout(fit,50);window.onresize=fit;
   cd.onclick=()=>{if(TJ.swiped){TJ.swiped=false;return}cd.classList.toggle('flip')};
@@ -1102,14 +1103,14 @@ function show(){
   app.innerHTML=`
   <div class="top"><span>${title}${sim||run.mode==='dia'?'':' · '+fmt(run.net)+' netas'}</span><span>${run.mode==='dia'?nice(run.ctx.k):`Pregunta ${run.i+1} de ${n}`}</span></div>
   <div class="prog"><i style="width:${run.i*100/n}%"></i></div>
-  <div class="qhead2"><p class="meta">${esc(q.t)}${q.d==='difícil'?`<span class="chip">${run.mode==='dia'&&run.ctx&&run.ctx.h===20?'Máxima dificultad':'Difícil'}</span>`:''}</p><button class="bm${guardada(q.id)?' on':''}" id="bmk" aria-label="Guardar en mis tarjetas">${guardada(q.id)?'<span>Guardada</span>':''}${BMSVG}</button></div>
+  <div class="qhead2"><p class="meta">${esc(q.t)}${q.d==='difícil'?`<span class="chip">${run.mode==='dia'&&run.ctx&&run.ctx.h===20?'Máxima dificultad':'Difícil'}</span>`:''}</p><button class="bm${guardada(q.id)?' on':''}" id="bmk" aria-label="Guardar pregunta">${guardada(q.id)?'<span>Guardada</span>':''}${BMSVG}</button></div>
   <p class="enun">${esc(q.q)}</p>${qimg(q)}
   <div id="avq"></div>
   <div id="ops">${ord.map((o,k)=>`<button class="op" data-o="${o}">${L[k]}. ${esc(OT(q,o))}</button>`).join('')}</div>
   <div id="after"></div>
   <div class="nav" id="nav"><button class="btn sec" id="blank">Dejar en blanco</button></div>`;
   app.querySelectorAll('#ops .op').forEach(b=>b.onclick=()=>answer(+b.dataset.o));
-  {const bk=document.getElementById('bmk');bk.onclick=()=>{if(guardada(q.id)){confirmarQuitar(()=>{toggleGuardar(q.id);bk.classList.remove('on');bk.innerHTML=BMSVG;aviso('Quitada de tus tarjetas')});return}const on=toggleGuardar(q.id);bk.classList.toggle('on',on);bk.innerHTML=(on?'<span>Guardada</span>':'')+BMSVG;if(on){bk.classList.remove('pop');void bk.offsetWidth;bk.classList.add('pop')}aviso(on?'Guardada en tus tarjetas':'Quitada de tus tarjetas')}}
+  {const bk=document.getElementById('bmk');bk.onclick=()=>bmClick(bk,q.id)}
   document.getElementById('blank').onclick=()=>sim?(run.ans.push(null),next()):answer(null);
   avisoQ();
   if(run.mode==='dia'&&run.ctx){
@@ -1198,10 +1199,12 @@ function erratasHtml(){
 function alertaPanel(t){const m=document.getElementById('amsg');if(m){m.style.color='var(--kot)';m.textContent=t}}
 // ===== preguntas guardadas en tus tarjetas =====
 const BMSVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4.5L6 21z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
+function bmBtn(id){return `<button class="bm${guardada(id)?' on':''}" data-bm="${id}" aria-label="Guardar pregunta">${guardada(id)?'<span>Guardada</span>':''}${BMSVG}</button>`}
+function bmClick(bk,id){if(guardada(id)){confirmarQuitar(()=>{toggleGuardar(id);bk.classList.remove('on');bk.innerHTML=BMSVG;aviso('Quitada de Fallos')});return}const on=toggleGuardar(id);bk.classList.toggle('on',on);bk.innerHTML=(on?'<span>Guardada</span>':'')+BMSVG;if(on){bk.classList.remove('pop');void bk.offsetWidth;bk.classList.add('pop')}aviso(on?'Guardada en Laboratorio → Fallos':'Quitada de Fallos')}
 function guardada(id){return ((S.guard||{})[id]||0)>0}
 function toggleGuardar(id){S.guard=S.guard||{};const on=!guardada(id);S.guard[id]=on?Date.now():-Date.now();save();return on}
 function confirmarQuitar(si){const ov=document.createElement('div');ov.className='modal';
-  ov.innerHTML='<div class="mbox cq"><p class="cq-t">¿Quitar esta pregunta de tus tarjetas?</p><div class="cq-b"><button class="btn sec" id="cqNo">Mantener</button><button class="btn cq-si" id="cqSi">Quitar</button></div></div>';
+  ov.innerHTML='<div class="mbox cq"><p class="cq-t">¿Quitar esta pregunta de Fallos?</p><div class="cq-b"><button class="btn sec" id="cqNo">Mantener</button><button class="btn cq-si" id="cqSi">Quitar</button></div></div>';
   document.body.appendChild(ov);const fin=()=>ov.remove();ov.onclick=e=>{if(e.target===ov)fin()};ov.querySelector('#cqNo').onclick=fin;ov.querySelector('#cqSi').onclick=()=>{fin();si()}}
 function aviso(t){let e=document.getElementById('aviso');if(!e){e=document.createElement('div');e.id='aviso';e.className='aviso';document.body.appendChild(e)}e.textContent=t;e.classList.remove('show');void e.offsetWidth;e.classList.add('show');clearTimeout(aviso.t);aviso.t=setTimeout(()=>e.classList.remove('show'),1700)}
 function pendienteHoyOFuturo(id){const hoy=madrid().key;for(const k in FIXED){if(k>=hoy&&FIXED[k].includes(id))return true}return false}
