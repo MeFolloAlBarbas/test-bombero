@@ -375,7 +375,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795419491';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795420350';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -398,8 +398,8 @@ const DIAS=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'
 const MESES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 
 function madrid(){
-  const p={};new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Madrid',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);
-  return {key:`${p.year}-${p.month}-${p.day}`,hour:+p.hour};
+  const p={};new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Madrid',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);
+  return {key:`${p.year}-${p.month}-${p.day}`,hour:+p.hour,min:+p.minute};
 }
 const parse=k=>{const [y,m,d]=k.split('-').map(Number);return Date.UTC(y,m-1,d)};
 const dow=k=>new Date(parse(k)).getUTCDay();
@@ -593,8 +593,8 @@ async function tiradaRes(k){
 }
 function needTirada(){
   if(!PID||!NAME||!BANK.length)return false;
-  const {key,hour}=madrid();
-  return dow(key)!==0&&hour>=9&&!(S.tir||{})[key];
+  const {key,hour,min}=madrid();
+  return dow(key)!==0&&hour*60+min>=8*60+45&&!(S.tir||{})[key]; // tirada desde las 8:45
 }
 let ACX=null;
 function sonidoOn(){return lsGet('sonido')!=='no'}
@@ -1315,7 +1315,7 @@ function askName(change){
     if(r)return err(r);go('inicio');render()};
 }
 let lastPend=null;
-setInterval(()=>{if(!BANK.length||run||!lsGet('key'))return;const p=pending(),k=p?p.k+'-'+p.h:'';if(lastPend!==null&&k&&k!==lastPend&&(location.hash===''||location.hash==='#inicio'||location.hash==='#hoy')){home.go=false;home()}lastPend=k},30000);
+setInterval(()=>{if(!BANK.length||run||!lsGet('key'))return;if(needTirada()&&!BLOQ)showMaquina();const p=pending(),k=p?p.k+'-'+p.h:'';if(lastPend!==null&&k&&k!==lastPend&&(location.hash===''||location.hash==='#inicio'||location.hash==='#hoy')){home.go=false;home()}lastPend=k},30000);
 homeBtn.onclick=()=>go('inicio');
 window.addEventListener('hashchange',render);
 loadLocal();
