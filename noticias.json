@@ -17,20 +17,39 @@
   "p": 1
  },
  {
-  "id": "2026-08-cam-131",
-  "p": 2,
-  "f": "2026-08-06",
-  "src": "Comunidad de Madrid",
-  "il": "boe",
-  "num": "131",
-  "tit": "Comunidad de Madrid: sigue en marcha la oposición de 131 plazas",
+  "id": "2026-11-12-reconocimiento-medico",
+  "p": 1,
+  "f": "2026-11-12",
+  "src": "Especialista del Ayuntamiento",
+  "il": "calendario",
+  "tit": "Especialista del Ayuntamiento: reconocimiento médico",
+  "ent": "El tercer ejercicio, el reconocimiento médico, se celebró del 16 al 19 de noviembre.",
   "txt": [
-   "La Comunidad de Madrid convocó 131 plazas de Bombero Especialista Conductor (Orden 877/2026), por oposición libre seguida de un curso selectivo. El plazo de solicitudes fue del 9 de abril al 7 de mayo de 2026.",
-   "En julio se publicaron las listas provisionales de admitidos y excluidos, con plazo para subsanar hasta el 20 de julio. Después se ha modificado varias veces la composición del tribunal; la última, en el BOCM del 6 de agosto."
+   "El tribunal de las 152 plazas acordó el 11 de noviembre convocar al tercer ejercicio, el reconocimiento médico, a quienes figuran en la lista definitiva de aprobados de las pruebas físicas. Las citas fueron los días 16, 17, 18 y 19 de noviembre, por turnos según el anexo del anuncio.",
+   "La prueba se hizo en dos sitios: el laboratorio del Centro Municipal de Salud de la calle Montesa, 22, y el Instituto Médico Fabiola de Mora y Aragón, en la Dehesa de la Villa. La realiza el Servicio de Prevención de Riesgos Laborales del Ayuntamiento y comprueba que nadie esté en el cuadro de exclusiones médicas de las bases.",
+   "Según las bases, se cita a 167 aspirantes (las 152 plazas más un 10 %), los de mejor nota global; la cifra puede ampliarse si hay eliminados. Era obligatorio entregar el primer día la autorización del Anexo II y llevar DNI, NIE, pasaporte o carné de conducir."
   ],
-  "clave": "Es el cuerpo autonómico: temario y pruebas distintos a los del Ayuntamiento.",
+  "clave": "Queda pendiente la lista de aptos del reconocimiento médico.",
+  "url": "https://www.madrid.es/UnidadWeb/Contenidos/Oposiciones/2025/BomberoEspecialista2025/Ficheros/152plaBomberosAnuncioTercerEjer.pdf",
+  "doc": "Ver el anuncio oficial (PDF)"
+ },
+ {
+  "id": "2026-11-17-cam-plantilla",
+  "p": 2,
+  "f": "2026-11-17",
+  "src": "Comunidad de Madrid",
+  "il": "calendario",
+  "num": 131,
+  "tit": "Comunidad de Madrid: plantilla del primer examen",
+  "ent": "Ya están publicados los cuestionarios y la plantilla provisional del primer ejercicio.",
+  "txt": [
+   "El primer ejercicio de las 131 plazas de Bombero Especialista Conductor (Orden 877/2026) se celebró el 14 de noviembre y se presentaron 845 aspirantes.",
+   "El 17 de noviembre el tribunal publicó los dos cuestionarios (el psicotécnico y el del temario) y la plantilla correctora provisional. Las reclamaciones pueden presentarse del 18 al 24 de noviembre, ambos incluidos, con la opción «Aportar documentos» de la solicitud.",
+   "Además, el 18 de noviembre el BOCM publicó una corrección de errores de la lista definitiva de admitidos y excluidos."
+  ],
+  "clave": "El plazo para reclamar contra la plantilla termina el 24 de noviembre.",
   "url": "https://www.comunidad.madrid/servicios/empleo/bomberos-bombero-especialista-c1-2026",
-  "doc": "Ver la oposición en la web de la Comunidad"
+  "doc": "Ver la página oficial"
  },
  {
   "id": "2026-07-toledo",
