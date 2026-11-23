@@ -375,7 +375,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795416422';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795419491';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -1041,7 +1041,8 @@ async function admin(msg){
 function drawRanking(){
   const docs=RK.docs,now=madrid(),cur=monday(now.key);
   const weeksAll=[...new Set([cur,...docs.flatMap(d=>Object.keys(d.w))])].filter(w=>w<=cur).sort().reverse();
-  const m=RK.sel&&weeksAll.includes(RK.sel)?RK.sel:weeksAll[0];
+  const RK_SOLO_ACTUAL=true; // de momento, solo la semana en curso
+  const m=RK_SOLO_ACTUAL?cur:(RK.sel&&weeksAll.includes(RK.sel)?RK.sel:weeksAll[0]);
   const live=m===cur&&dow(now.key)!==0;
   const max=maxSoFar(m),cut=max*CUT;
   const rows=docs.filter(d=>d.w[m]&&d.w[m].resp>0).map(d=>({id:d.id,n:d.n,...d.w[m]})).sort((a,b)=>b.neta-a.neta||b.resp-a.resp);
@@ -1049,7 +1050,7 @@ function drawRanking(){
   app.innerHTML=`
   <h2 style="font-size:19px;margin:0 0 4px;text-align:center">Ranking Semanal</h2>
   <p class="note" style="margin:0 0 12px;text-align:center"><b style="color:var(--okt)">Verde:</b> has pasado el corte · <b style="color:var(--kot)">Rojo:</b> no has pasado el corte</p>
-  ${weeksAll.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${weeksAll.map(w=>`<option value="${w}" ${w===m?'selected':''}>${w===cur?'Semana actual':'Semana del '+nice(w)}</option>`).join('')}</select>`:''}
+  ${!RK_SOLO_ACTUAL&&weeksAll.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${weeksAll.map(w=>`<option value="${w}" ${w===m?'selected':''}>${w===cur?'Semana actual':'Semana del '+nice(w)}</option>`).join('')}</select>`:''}
   ${rows.map((r,i)=>{if(r.neta!==prev){pos=i+1;prev=r.neta}
     const pct=max?r.neta/max*100:0,pass=r.neta>cut;
     return `<div class="rk ${pass?'pass':'fail'}${r.id===PID?' yo':''}"><span class="pos">${pos<=3?['🥇','🥈','🥉'][pos-1]:pos+'º'}</span><div class="who"><b class="nm"></b>
