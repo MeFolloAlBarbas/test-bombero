@@ -139,6 +139,11 @@ summary{cursor:pointer}
 .cab.shake{animation:msh .35s}
 @keyframes msh{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
 .vbox{background:var(--bg);border-radius:12px;padding:16px;max-width:360px;width:100%;max-height:80vh;overflow:auto}
+.vbox.vsel{position:relative;display:flex;flex-direction:column;overflow:hidden;max-height:85vh;max-height:85svh}
+.vsel h3{padding-right:34px}
+.vsel #vlist{flex:1 1 auto;min-height:0;overflow:auto;margin:0 -4px;padding:0 4px}
+.vsel #vno{flex:0 0 auto}
+.vx{position:absolute;top:8px;right:8px;width:36px;height:36px;border:0;border-radius:50%;background:var(--card);color:var(--ink);font-size:16px;cursor:pointer}
 .vbox h3{margin:0 0 4px;font-size:17px}
 .combar{background:var(--card);border-radius:8px;padding:10px 12px;margin:0 0 14px}
 .cpills{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
@@ -375,7 +380,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795420350';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795421888';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -679,9 +684,13 @@ async function cargarSabotajes(){
 async function elegirVictima(){
   if(!FS){const o=document.createElement('div');o.className='maq-ov';o.innerHTML='<div class="vbox"><h3>Sin conexión</h3><p class="note">Ahora mismo no se puede lanzar el Chulito. Lo conservas: inténtalo en un rato.</p><button class="btn" style="margin-top:10px">Vale</button></div>';o.querySelector('button').onclick=()=>o.remove();document.body.appendChild(o);return}
   const ov=document.createElement('div');ov.className='maq-ov';ov.id='vict';
-  ov.innerHTML=`<div class="vbox"><h3>¿A quién le lanzas el Chulito?</h3><p class="note">Su próxima pregunta tendrá 4 opciones y verá que has sido tú.</p><div id="vlist"><p class="note">Cargando compañeros…</p></div><button class="btn sec" id="vno" style="margin-top:10px">Ahora no</button></div>`;
+  ov.innerHTML=`<div class="vbox vsel"><button class="vx" id="vx" aria-label="Cerrar">✕</button><h3>¿A quién le lanzas el Chulito?</h3><p class="note">Su próxima pregunta tendrá 4 opciones y verá que has sido tú.</p><div id="vlist"><p class="note">Cargando compañeros…</p></div><button class="btn sec" id="vno" style="margin-top:10px">Ahora no</button></div>`;
   document.body.appendChild(ov);
-  document.getElementById('vno').onclick=()=>{ov.remove();render()};
+  const vCerrar=()=>{if(!ov.isConnected)return;ov.remove();window.removeEventListener('popstate',vPop);if(window.history.state&&window.history.state.vict)window.history.back();render()};
+  const vPop=()=>{if(ov.isConnected){ov.remove();window.removeEventListener('popstate',vPop);render()}};
+  window.history.pushState({vict:1},'');window.addEventListener('popstate',vPop);
+  document.getElementById('vno').onclick=vCerrar;document.getElementById('vx').onclick=vCerrar;
+  ov.onclick=e=>{if(e.target===ov)vCerrar()};
   let L=[];
   try{L=(await FS.fs.getDocs(FS.fs.collection(FS.db,'ranking'))).docs.map(d=>({pid:d.id,n:d.data().nombre||''})).filter(x=>x.pid!==PID&&x.n).sort((a,b)=>a.n.localeCompare(b.n,'es'))}catch(e){}
   const vl=document.getElementById('vlist');
@@ -703,7 +712,7 @@ async function elegirVictima(){
       gastar('chu-'+Date.now(),'chu');
       ov.querySelector('.vbox').innerHTML=`<h3>¡Chulito lanzado!</h3><p class="note">La próxima pregunta de <b></b> tendrá 4 opciones.</p><button class="btn" id="vok" style="margin-top:10px">Vale</button>`;
       ov.querySelector('.vbox b').textContent=x.n;
-      document.getElementById('vok').onclick=()=>{ov.remove();render()};
+      document.getElementById('vok').onclick=vCerrar;
     }catch(e){vl.innerHTML='<p class="note">No se ha podido lanzar por un problema de conexión. Conservas tu Chulito: inténtalo de nuevo en un rato.</p>'}
   }});
 }
