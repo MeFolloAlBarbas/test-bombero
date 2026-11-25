@@ -19,6 +19,26 @@
    "f": "Manual de ACS (Ayto. Madrid), p. 14 (UNE EN ISO 52000-1:2019)",
    "tq": "¿Calor + energía mecánica sin electricidad es cogeneración?",
    "ta": "Sí: calor + electricidad y/o energía mecánica."
+  },
+  {
+   "id": 504,
+   "t": "ACS",
+   "d": "normal",
+   "q": "Un edificio sujeto a la HE-4 estudia dos equipos de cogeneración: uno alimentado con gas natural y otro con biomasa. ¿Cuál cuenta como cogeneración renovable?",
+   "o": [
+    "La alimentada con biomasa.",
+    "Las dos, porque aprovechan el calor.",
+    "La alimentada con gas natural."
+   ],
+   "c": 0,
+   "o4": "Ninguna: la cogeneración nunca es renovable.",
+   "que": "La HE-4 pide cubrir el ACS en gran medida con <mark>energías renovables</mark> o con <mark>procesos de cogeneración renovables</mark>.",
+   "porque": "Según los comentarios del Ministerio al CTE, la cogeneración es renovable cuando está <mark>alimentada con energía de fuentes renovables</mark>. La <mark>biomasa</mark> lo es; el <mark>gas natural</mark> es un combustible <mark>fósil</mark>, así que esa cogeneración no es renovable.",
+   "ojo": "Las dos son cogeneración y las dos aprovechan el calor, pero lo que la hace <mark>renovable</mark> es el <mark>combustible</mark>. El manual pone el ejemplo del gasóleo: con gas natural pasa lo mismo, porque también es fósil.",
+   "rec": "Cogeneración renovable = <mark>combustible renovable</mark> (biomasa sí; gas natural o gasóleo no).",
+   "f": "Manual de ACS (Ayto. Madrid), p. 14 (CTE HE-4 y comentarios del MITMA)",
+   "tq": "¿Qué cogeneración es renovable: gas natural o biomasa?",
+   "ta": "La de biomasa (el combustible debe ser renovable)."
   }
  ],
  "glosario": [
