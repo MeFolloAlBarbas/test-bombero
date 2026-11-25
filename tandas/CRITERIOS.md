@@ -22,7 +22,11 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
 ## Qué es un dato bueno (acordado con el usuario el 25/11/2026)
 - **Cada dato concreto del manual es una pregunta**: cada definición, cada componente, cada cifra,
   cada rango, cada prohibición, cada «por qué», cada función. De una sola página salen 10 o más.
-  Ejemplo del usuario, una página de ACS (contadores, conducciones, depósito de expansión):
+  El ejemplo de abajo (una página de ACS que propuso el usuario) es un **esqueleto de la idea, no una
+  plantilla**: muestra el nivel de detalle y la variedad de enfoques (qué NO forma parte, rangos, dónde va,
+  por qué, función de cada parte, permitido/prohibido, supuesto de intervención). No hay que copiar esas
+  preguntas tal cual; cada tarea decide las suyas con ese espíritu y su propio criterio.
+  Ejemplo, página de ACS (contadores, conducciones, depósito de expansión):
   - componentes del contador (medidor + indicador) → «¿cuál NO forma parte?» con uno inventado creíble;
   - contador de agua fría (< 30 °C) y de caliente (30-90 °C) → rangos;
   - todo contador lleva válvula de corte a la entrada; los de ACS, además, antirretorno → ¿cuál lleva
