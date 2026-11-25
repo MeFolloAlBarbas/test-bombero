@@ -13,7 +13,7 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
   → commit y push → aviso al usuario con el enlace a `tandas/revision/AAAA-MM-DD.md`.
 - **Si `esperando_visto_bueno` tiene la fecha de una noche anterior, la tarea NO hace nada**
   (como mucho, un recordatorio en la primera tarea de la noche).
-- Normas UNE/EN: la web las detecta solas (Laboratorio → Normas) cuando la norma está en el ENUNCIADO o en la RESPUESTA CORRECTA (no cuenta si solo sale en la explicación) y aparecen solo después de responder esa pregunta. Al citar una norma, escribir siempre su código completo (p. ej. «UNE-EN 374-1»). Si es nueva, añadir su descripción en `laboratorio.json` → `nor` al aprobar el lote.
+- Normas UNE/EN: la web las detecta solas (Laboratorio → Normas) en cualquier parte del texto de una pregunta (enunciado, opciones o explicación) y la muestran solo después de que el usuario responda esa pregunta: código, qué regula y tema. Al citar una norma, escribir siempre su código completo (p. ej. «UNE-EN 374-1»). Si es nueva, añadir su descripción en `laboratorio.json` → `nor` al aprobar el lote.
 - Cuando el usuario da el visto bueno (en una conversación): `python3 scripts/aprobar.py AAAA-MM-DD`
   (opcional `--quitar id1,id2`), luego `scripts/version.sh`, commit y push. Si pide cambios en
   preguntas concretas, se corrigen en el lote antes de aprobar y se apunta el criterio aprendido aquí

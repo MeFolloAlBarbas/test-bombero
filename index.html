@@ -381,7 +381,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795617226';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795617297';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -1201,8 +1201,7 @@ function erratasHtml(){
 // ===== Laboratorio · Normas UNE/EN: se detectan solas en el texto de las preguntas =====
 const NOR_RX=/\b(?:UNE[- ](?:EN[- ])?(?:ISO[- ])?|EN[- ](?:ISO[- ])?)(\d{2,6}(?:-\d+)*)(?::\d{4})?/g;
 function normasDe(q){
-  // solo cuenta si la norma es el tema de la pregunta: en el enunciado o en la respuesta correcta (no en la explicación)
-  const t=[q.q,q.o[q.c],q.tq,q.ta].join(' ').replace(/<[^>]+>/g,' ');
+  const t=[q.q,...q.o,q.o4,q.que,q.porque,q.ojo,q.rec,q.f,q.tq,q.ta].join(' ').replace(/<[^>]+>/g,' ');
   const M={};let m;NOR_RX.lastIndex=0;
   while((m=NOR_RX.exec(t))){const k=m[1],n=m[0].replace(/:\d{4}$/,'').replace(/\s+/g,' ');if(!M[k]||n.length>M[k].length)M[k]=n}
   for(const k of Object.keys(M))if(Object.keys(M).some(x=>x.startsWith(k+'-')))delete M[k];
@@ -1216,11 +1215,11 @@ function normasHtml(){
   const num=k=>k.split('-').map(Number);
   const todas=Object.values(D).sort((a,b)=>{const x=num(a.k),y=num(b.k);return x[0]-y[0]||(x[1]||0)-(y[1]||0)});
   const V=todas.filter(e=>e.vis),falta=todas.length-V.length;
-  let h=`<p class="lab-in">Normas UNE y EN de las preguntas que has respondido. Entran en el examen: apréndete su número.</p>`;
+  let h=`<p class="lab-in">Normas UNE y EN que han salido en las preguntas que has respondido. Entran en el examen: apréndete su número.</p>`;
   if(V.length)h+=`<p class="gl-mas">${V.length} ${V.length===1?'norma':'normas'}</p>`;
   h+=V.map(e=>{const i=info[e.k]||{},qs=e.qs.filter(q=>salio(q.id));
-    return `<div class="nor"><div class="gl-n nor-n">${esc(e.n)}</div>${i.d?`<div class="nor-d">${esc(i.d)}</div>`:''}<div class="nor-m">${esc([...new Set(qs.map(q=>q.t))].join(' · '))}</div>${qs.map(q=>`<div class="nor-q">${esc(q.tq||q.q)} → <b>${esc(q.ta||OT(q,q.c))}</b></div>`).join('')}</div>`}).join('');
-  if(!V.length)h+='<p class="tj-empty">Cada norma aparecerá aquí cuando respondas una pregunta sobre ella.</p>';
+    return `<div class="nor"><div class="gl-n nor-n">${esc(e.n)}</div>${i.d?`<div class="nor-d">${esc(i.d)}</div>`:''}<div class="nor-m" style="margin:0">${esc([...new Set(qs.map(q=>q.t))].join(' · '))}</div></div>`}).join('');
+  if(!V.length)h+='<p class="tj-empty">Cada norma aparecerá aquí cuando respondas una pregunta en la que salga.</p>';
   if(falta)h+=`<p class="gl-mas">Por descubrir: ${falta} ${falta===1?'norma':'normas'}.</p>`;
   return h;
 }
