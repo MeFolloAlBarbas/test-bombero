@@ -97,12 +97,6 @@
    "total": null,
    "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
   },
-  "2.16. Intervenciones en arbolado urbano.pdf": {
-   "tema": "Arbolado urbano",
-   "hechas": "",
-   "total": null,
-   "nota": "Sin preguntas todavía. El PDF está escaneado: project_read solo devuelve el título; habría que leerlo página a página como imagen con project_search."
-  },
   "2.18. Conceptos básicos de electricidad 1.pdf": {
    "tema": "Electricidad",
    "hechas": "",
