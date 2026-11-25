@@ -3,8 +3,9 @@
 Errores (hay que corregirlos):
   - faltan campos (id, t, d, q, o con 3, c 0-2, o4, que, porque, ojo, rec, f, tq, ta) o ids repetidos
   - la explicación nombra una opción por su letra («la A», «opción B», «B)»…): las opciones se barajan
-  - repite una pregunta del banco o del propio lote (mismo criterio que scripts/similares.py)
+  - enunciado casi igual a otra pregunta del banco o del propio lote
 Avisos (mirarlos uno a uno):
+  - mismo tema y enunciado parecido: puede ser una pregunta hermana válida (otro dato del mismo párrafo)
   - la explicación trae cifras que no salen en el enunciado ni en las opciones (¿otro dato del temario?)
   - una opción es mucho más larga que las demás (la correcta no debe notarse por la longitud)
   - ningún término del glosario aparece en la pregunta (¿falta añadir sus términos?)
@@ -59,7 +60,9 @@ def main(ruta):
         for v in banco + nuevas[:k]:
             try: m = comparar(n, v)
             except Exception: m = None
-            if m and (n.get('id'), v['id']) not in ok: err.append((n.get('id'), f'se parece a #{v["id"]}: {m}'))
+            if m and (n.get('id'), v['id']) not in ok:
+                # «Casi igual» es error; «mismo tema y parecido» solo aviso: del mismo párrafo salen varias preguntas distintas
+                (err if m.startswith('enunciado casi igual') else avi).append((n.get('id'), f'se parece a #{v["id"]}: {m} (¿pregunta lo mismo?)'))
     for nombre, lista in (('ERROR', err), ('AVISO', avi)):
         for i, m in lista: print(f'{nombre} #{i}: {m}')
     print(f'{len(nuevas)} preguntas · {len(err)} errores · {len(avi)} avisos')

@@ -19,13 +19,29 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
   y en las notas del proyecto.
 - Si `parado` no es null (p. ej. «temario agotado»), la tarea no genera nada.
 
-## Qué es un dato bueno (pendiente de completar con el usuario)
-- Está en un manual subido al proyecto y se comprueba en su página.
-- No se ha preguntado ya (scripts/similares.py, que también usa scripts/reglas.py).
-- Es de los que pregunta el tribunal: cifras, plazos, distancias, definiciones, pasos de un
-  procedimiento, diferencias entre conceptos, quién hace qué.
-- Tiene respuesta clara, con distractores creíbles, sin depender de interpretaciones.
-- Si no quedan datos buenos, **no se rellena**: se para y se avisa al usuario (poner `parado`).
+## Qué es un dato bueno (acordado con el usuario el 25/11/2026)
+- **Cada dato concreto del manual es una pregunta**: cada definición, cada componente, cada cifra,
+  cada rango, cada prohibición, cada «por qué», cada función. De una sola página salen 10 o más.
+  Ejemplo del usuario, una página de ACS (contadores, conducciones, depósito de expansión):
+  - componentes del contador (medidor + indicador) → «¿cuál NO forma parte?» con uno inventado creíble;
+  - contador de agua fría (< 30 °C) y de caliente (30-90 °C) → rangos;
+  - todo contador lleva válvula de corte a la entrada; los de ACS, además, antirretorno → ¿cuál lleva
+    antirretorno? / ¿cuáles llevan válvula de corte? / ¿dónde va la válvula de corte? (3 preguntas);
+  - intervención: fuga sin apariencia → se detecta por el movimiento de la palomilla de la mariposa de registro;
+  - depósito de expansión: sus dos zonas, la función de cada una, por qué la membrana es elástica e
+    impermeable, gas = aire o nitrógeno (varias preguntas);
+  - conducciones compatibles con el fluido (no alterar su composición ni reaccionar);
+  - 50 °C trabajo normal / 70 °C tratamiento periódico (dos preguntas, cada una con su porqué);
+  - galvanizado prohibido > 60 °C / qué materiales sí se permiten (dos preguntas);
+  - cómo se comportan los termoplásticos con la temperatura;
+  - presión en ACS (no en agua fría): mínimo 1 bar, máximo 5 bar.
+- Un mismo párrafo puede dar varias preguntas siempre que cada una pregunte **algo distinto**.
+- **Reglas mnemotécnicas** en «Para recordar» cuando haya una buena (al usuario le gustó «cuerdas A:
+  la A es de Aguantan más»).
+- Requisitos: está en un manual subido y se comprueba en su página; no se ha preguntado ya; tiene
+  respuesta clara y distractores creíbles.
+- No se rellena con relleno (introducciones, títulos de figuras, obviedades). Si de verdad no quedan
+  datos, se para y se avisa (poner `parado`).
 
 ## Criterios de estilo
 - Estilo del examen real de las 152 plazas (2026): 3 opciones, una correcta (+ `o4`, la 4.ª del Chulito).
