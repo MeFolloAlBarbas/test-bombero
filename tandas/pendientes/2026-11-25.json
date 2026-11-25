@@ -161,27 +161,6 @@
    "ta": "Detecta, pero no hace de barrera."
   },
   {
-   "id": 302,
-   "t": "EPI",
-   "d": "normal",
-   "q": "Según el RD 773/1997, ¿qué contiene el anexo II?",
-   "o": [
-    "Una lista de actividades y sectores que pueden requerir EPI.",
-    "Un esquema de los riesgos según las partes del cuerpo que se protegen.",
-    "Una lista no exhaustiva de tipos de EPI según los riesgos contra los que protegen."
-   ],
-   "c": 2,
-   "o4": "Un modelo de ficha de control de los EPI.",
-   "que": "El RD 773/1997 tiene tres anexos con listas orientativas.",
-   "porque": "El <mark>anexo II</mark> es la lista <mark>no exhaustiva de tipos de EPI</mark> en relación con los riesgos contra los que protegen: no aparecen todos los EPI que existen.",
-   "ojo": "Las otras dos opciones son los anexos <mark>vecinos</mark>: riesgos por partes del cuerpo y actividades o sectores.",
-   "rec": "Anexo II = tipos de EPI (lista abierta).",
-   "f": "Guía técnica de EPI (RD 773/1997), p. 13",
-   "tq": "RD 773/1997, anexo II",
-   "ta": "Lista no exhaustiva de tipos de EPI por riesgo.",
-   "ex": 1
-  },
-  {
    "id": 303,
    "t": "EPI",
    "d": "normal",
@@ -365,27 +344,6 @@
    "cifra": 1
   },
   {
-   "id": 312,
-   "t": "EPI",
-   "d": "normal",
-   "q": "El guante de protección química del ejemplo de la guía va marcado con su pictograma junto a la norma:",
-   "o": [
-    "UNE-EN 374-1.",
-    "UNE-EN ISO 21420.",
-    "UNE-EN ISO 13688."
-   ],
-   "c": 0,
-   "o4": "UNE-EN 795.",
-   "que": "Los EPI certificados con normas armonizadas llevan <mark>pictogramas</mark> relacionados con la protección que dan.",
-   "porque": "Para la protección química de los guantes la norma es la <mark>UNE-EN 374-1</mark>.",
-   "ojo": "Las otras son normas reales de otros apartados: la 13688 es de <mark>ropa</mark> y la 21420 de requisitos <mark>generales</mark> de guantes.",
-   "rec": "Química en las manos: <mark>374</mark>.",
-   "f": "Guía técnica de EPI (RD 773/1997), p. 21",
-   "tq": "Norma del guante de protección química",
-   "ta": "UNE-EN 374-1.",
-   "cifra": 1
-  },
-  {
    "id": 313,
    "t": "EPI",
    "d": "normal",
@@ -466,27 +424,6 @@
    "tq": "Instrucciones de uso del EPI (art. 8.2)",
    "ta": "Preferentemente por escrito.",
    "ex": 1
-  },
-  {
-   "id": 317,
-   "t": "EPI",
-   "d": "normal",
-   "q": "Si un trabajador incumple sus obligaciones de uso del EPI, el empresario puede tomar medidas disciplinarias según el Estatuto de los Trabajadores, artículo:",
-   "o": [
-    "54.1",
-    "23.1",
-    "58.1"
-   ],
-   "c": 2,
-   "o4": "41.1",
-   "que": "No usar el EPI cuando la empresa lo ha prescrito es un <mark>incumplimiento</mark> del trabajador.",
-   "porque": "Puede dar lugar a <mark>medidas disciplinarias</mark> conforme al <mark>art. 58.1 del Estatuto de los Trabajadores</mark> y al convenio colectivo.",
-   "ojo": "No confundir con los artículos de la <mark>LPRL</mark> que también cita la guía.",
-   "rec": "Sanción por no usar el EPI: ET <mark>58.1</mark>.",
-   "f": "Guía técnica de EPI (RD 773/1997), p. 26",
-   "tq": "Incumplir el uso del EPI: ¿qué artículo del ET?",
-   "ta": "Art. 58.1 (medidas disciplinarias).",
-   "cifra": 1
   },
   {
    "id": 318,

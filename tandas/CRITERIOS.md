@@ -54,6 +54,10 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
   absolutos («siempre», «nunca»), detalles técnicos inventados. Las 3 opciones con forma y longitud parecidas.
 - Mezclar tipos: literal, en negativo («NO es…»), supuesto práctico, cálculo, ordenación.
 - Comprobar siempre la respuesta en el manual. Nada de memoria.
+- **No preguntar por etiquetas o números de referencia** (regla del usuario, 25/11/2026): nada de «¿qué contiene el
+  anexo II?», «¿qué artículo regula…?» o «¿qué norma UNE lleva…?». Saberse qué número tiene cada anexo, artículo o
+  norma no enseña nada. Se pregunta el contenido; la referencia puede ir en el enunciado como contexto («Según el
+  art. 7.2…, ¿de qué depende…?»), nunca como respuesta.
 - Cada pregunta enseña algo NUEVO.
 - Explicación en bloques `que` / `porque` / `ojo` / `rec` (Qué es / Por qué / Ojo / Para recordar),
   lenguaje sencillo, `<mark>` en los datos clave.
