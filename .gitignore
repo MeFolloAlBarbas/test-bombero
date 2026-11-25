@@ -1,1 +1,5 @@
 __pycache__/
+
+# Temario descifrado: nunca al repo
+temario/**/*.pdf
+temario/**/*.txt

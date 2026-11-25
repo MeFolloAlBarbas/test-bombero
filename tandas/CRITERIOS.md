@@ -26,6 +26,11 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
 - Si `parado` no es null (p. ej. «temario agotado»), la tarea no genera nada.
 
 ## Temario oficial
+- **Los manuales están en el repo, cifrados**, en `temario/` (nombres según las bases). Al empezar:
+  `TEMARIO_CLAVE='<clave de las instrucciones de la tarea>' sh scripts/temario.sh texto /tmp/temario` y trabaja
+  con esos .txt (grep para buscar datos, leer solo las páginas necesarias; marcas «=== Página N del PDF ===»).
+  Es más barato que project_read. Si falta la clave o falla, usa el proyecto como antes. NUNCA subas al repo
+  nada descifrado ni copies texto de los manuales en ficheros sin cifrar (el repo es público).
 - `tandas/TEMARIO_BASES.md`: títulos y contenido exacto de cada tema según las bases, y qué archivo corresponde a cada uno. **Solo se pregunta lo que entra en el tema** (p. ej. en leyes, solo los artículos indicados).
 
 ## Qué es un dato bueno (acordado con el usuario el 25/11/2026)
