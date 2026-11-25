@@ -381,7 +381,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795624146';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795633540';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -964,7 +964,7 @@ async function weeklyPopup(vista){
   const max=maxSoFar(prev),cut=max*CUT;let pos=0,prev2=null,mine=null;
   rows.forEach((r,i)=>{if(r.neta!==prev2){pos=i+1;prev2=r.neta}if(r.id===PID)mine={pos,...r}});
   const podium=rows.slice(0,3).map((r,i)=>`<li><span class="pm">${['🥇','🥈','🥉'][i]}</span><b class="pn"></b><span class="pt">${fmt(r.neta)} netas</span></li>`).join('');
-  const me=mine?`<div class="rk ${mine.neta>cut?'pass':'fail'}" style="margin:10px 0"><span class="pos">${mine.pos}º</span><div class="who"><b>Tú</b></div><div class="sc"><span class="ac">${okOf(mine)}/${max}</span><b>${fmt(mine.neta)} netas</b></div></div><p class="note" style="text-align:center;margin:0 0 6px">${mine.neta>cut?'¡Pasaste el corte!':'No pasaste el corte'} (más de ${fmt(cut)} netas)</p>`:'<p class="note" style="text-align:center">La semana pasada no respondiste ninguna pregunta.</p>';
+  const me=mine?`<div class="rk ${mine.neta>cut?'pass':'fail'}" style="margin:10px 0"><span class="pos">${mine.pos}º</span><div class="who"><b>Tú</b></div><div class="sc"><span class="ac" title="Aciertos / preguntas respondidas">${okOf(mine)}/${mine.resp||0}</span><b>${fmt(mine.neta)} netas</b></div></div><p class="note" style="text-align:center;margin:0 0 6px">${mine.neta>cut?'¡Pasaste el corte!':'No pasaste el corte'} (más de ${fmt(cut)} netas)</p>`:'<p class="note" style="text-align:center">La semana pasada no respondiste ninguna pregunta.</p>';
   const ov=document.createElement('div');ov.className='modal';
   ov.innerHTML=`<div class="mbox">${vista?'<p class="note" style="text-align:center;margin:0 0 6px;color:var(--int);font-weight:600">Vista previa (solo la ves tú)</p>':''}<h2 style="text-align:center;margin:0 0 2px;font-size:20px">Resumen de la semana pasada</h2>
   <p class="note" style="text-align:center;margin:0 0 10px">Del ${nice(prev)} al ${nice(keyOf(parse(prev)+5*864e5))}</p>
@@ -1084,7 +1084,7 @@ function drawRanking(){
     const pct=max?r.neta/max*100:0,pass=r.neta>cut;
     return `<div class="rk ${pass?'pass':'fail'}${r.id===PID?' yo':''}"><span class="pos">${pos<=3?['🥇','🥈','🥉'][pos-1]:pos+'º'}</span><div class="who"><b class="nm"></b>
       </div>
-      <div class="sc"><span class="ac">${okOf(r)}/${max}</span><b>${fmt(r.neta)} netas</b></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
+      <div class="sc"><span class="ac" title="Aciertos / preguntas respondidas">${okOf(r)}/${r.resp||0}</span><b>${fmt(r.neta)} netas</b></div></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}`;
   app.querySelectorAll('.rk .nm').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
   const wk=document.getElementById('wk');if(wk)wk.onchange=()=>{RK.sel=wk.value;drawRanking()};
 }
