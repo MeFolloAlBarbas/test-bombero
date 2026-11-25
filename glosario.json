@@ -2038,5 +2038,325 @@
 "tema": "Incendios de vegetación",
 "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251",
 "solo": 1
+},
+{
+"t": "Espadín",
+"a": [
+"espadín"
+],
+"d": "Guía de la motosierra por la que gira la cadena.",
+"tema": "Arbolado urbano",
+"f": "Manual de arbolado urbano (Ayto. Madrid), p. 4 del PDF",
+"solo": 1
+},
+{
+"t": "Freno de cadena",
+"a": [
+"freno de cadena"
+],
+"d": "Bloquea el giro de la cadena. Manual (guardamano adelante) o automático por inercia.",
+"tema": "Arbolado urbano",
+"f": "Manual de arbolado urbano (Ayto. Madrid), p. 6 del PDF",
+"solo": 1
+},
+{
+"t": "Perno guardacadena",
+"a": [
+"perno guardacadena",
+"perno guarda cadena"
+],
+"d": "Pieza blanda donde se clava la cadena si se rompe o se sale, parándola.",
+"tema": "Arbolado urbano",
+"f": "Manual de arbolado urbano (Ayto. Madrid), p. 6 del PDF",
+"solo": 1
+},
+{
+"t": "Válvula de descompresión",
+"a": [
+"descompresión",
+"descompresor"
+],
+"d": "Libera presión del cilindro para arrancar; se cierra sola con la primera explosión.",
+"tema": "Arbolado urbano",
+"f": "Manual de arbolado urbano (Ayto. Madrid), p. 5 del PDF",
+"solo": 1
+},
+{
+"t": "Embrague centrífugo",
+"a": [
+"embrague"
+],
+"d": "Zapatas con muelles que, al girar el motor, arrastran la campana y mueven la cadena.",
+"tema": "Arbolado urbano",
+"f": "Manual de arbolado urbano (Ayto. Madrid), p. 7 del PDF",
+"solo": 1
+},
+{
+"t": "Andarín",
+"a": [
+"andarín",
+"limitador de profundidad"
+],
+"d": "Limitador de profundidad del diente: marca cuánto entra en la madera (≈0,65 mm).",
+"tema": "Arbolado urbano",
+"f": "Manual de arbolado urbano (Ayto. Madrid), p. 8 del PDF",
+"solo": 1
+},
+{
+"t": "Galga",
+"a": [
+"galga"
+],
+"d": "Grosor de los eslabones motrices de la cadena.",
+"tema": "Arbolado urbano",
+"f": "Manual de arbolado urbano (Ayto. Madrid), p. 8 del PDF",
+"solo": 1
+},
+{
+"t": "Paso de cadena",
+"a": [
+"paso de cadena",
+"paso"
+],
+"d": "Distancia entre tres remaches dividida entre dos (1/4\", .325\", 3/8\").",
+"tema": "Arbolado urbano",
+"f": "Manual de arbolado urbano (Ayto. Madrid), p. 9 del PDF",
+"solo": 1
+},
+{
+"t": "Rebote",
+"a": [
+"rebote"
+],
+"d": "Giro violento de la motosierra hacia el usuario al tocar algo con el cuarto superior de la punta del espadín.",
+"tema": "Arbolado urbano",
+"f": "Manual de arbolado urbano (Ayto. Madrid), p. 9 del PDF",
+"solo": 1
+},
+{
+"t": "Protección anticorte",
+"a": [
+"anticorte"
+],
+"d": "Por deslizamiento (casco, punteras) o atrapamiento (ropa). Clases 1-3: 20, 24, 28 m/s.",
+"tema": "Arbolado urbano",
+"f": "Manual de arbolado urbano (Ayto. Madrid), p. 12 del PDF",
+"solo": 1
+},
+{
+"t": "Habeas corpus",
+"a": [
+"habeas corpus"
+],
+"d": "Procedimiento para llevar de inmediato ante el juez a quien está detenido ilegalmente.",
+"tema": "Constitución",
+"f": "Constitución Española, art. 17.4",
+"solo": 1
+},
+{
+"t": "Censura previa",
+"a": [
+"censura previa"
+],
+"d": "Control antes de publicar. La Constitución la prohíbe en todo caso.",
+"tema": "Constitución",
+"f": "Constitución Española, art. 20.2",
+"solo": 1
+},
+{
+"t": "Presunción de inocencia",
+"a": [
+"presunción de inocencia"
+],
+"d": "Toda persona es inocente mientras no se demuestre lo contrario.",
+"tema": "Constitución",
+"f": "Constitución Española, art. 24.2",
+"solo": 1
+},
+{
+"t": "Servicios esenciales",
+"a": [
+"servicios esenciales"
+],
+"d": "Los que deben mantenerse aunque haya huelga.",
+"tema": "Constitución",
+"f": "Constitución Española, art. 28.2",
+"solo": 1
+},
+{
+"t": "Función social de la propiedad",
+"a": [
+"función social"
+],
+"d": "Delimita el contenido del derecho de propiedad y herencia.",
+"tema": "Constitución",
+"f": "Constitución Española, art. 33.2",
+"solo": 1
+},
+{
+"t": "Cabildos y Consejos insulares",
+"a": [
+"cabildos",
+"consejos"
+],
+"d": "Administración propia de las islas en los archipiélagos.",
+"tema": "Constitución",
+"f": "Constitución Española, art. 141.4",
+"solo": 1
+},
+{
+"t": "Concejo abierto",
+"a": [
+"concejo abierto"
+],
+"d": "Régimen de municipios pequeños en que los vecinos gobiernan en asamblea.",
+"tema": "Constitución",
+"f": "Constitución Española, art. 140",
+"solo": 1
+},
+{
+"t": "Potestad reglamentaria",
+"a": [
+"potestad reglamentaria",
+"reglamentaria"
+],
+"d": "Poder de dictar reglamentos. En Madrid, del Consejo de Gobierno.",
+"tema": "Estatuto CAM",
+"f": "Estatuto de Autonomía de la Comunidad de Madrid, art. 34.2",
+"solo": 1
+},
+{
+"t": "Viento catabático",
+"a": [
+"catabático"
+],
+"d": "Brisa de montaña: de noche, el aire frío baja por la ladera.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 252",
+"solo": 1
+},
+{
+"t": "Viento anabático",
+"a": [
+"anabático"
+],
+"d": "Brisa de valle: de día, el aire sube por la ladera.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 253",
+"solo": 1
+},
+{
+"t": "Foehn",
+"a": [
+"foehn"
+],
+"d": "Viento muy cálido, seco e intenso que baja de las zonas altas. En Valencia y Murcia, «Poniente».",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 253",
+"solo": 1
+},
+{
+"t": "Inversión térmica",
+"a": [
+"inversión térmica",
+"inversión"
+],
+"d": "Aire frío debajo de aire caliente. Al romperse (a media mañana) el fuego se reactiva.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 254",
+"solo": 1
+},
+{
+"t": "Tormenta ígnea",
+"a": [
+"tormenta ígnea"
+],
+"d": "Gran incendio que crea su propio viento (efecto chimenea) y consume el oxígeno.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 255",
+"solo": 1
+},
+{
+"t": "Reventón",
+"a": [
+"reventón"
+],
+"d": "Corriente descendente de la columna de humo que golpea el suelo en abanico. Aviso: calma repentina.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 255",
+"solo": 1
+},
+{
+"t": "Tiempo de retardo",
+"a": [
+"tiempo de retardo"
+],
+"d": "Lo que tarda un combustible muerto en igualar su humedad con el ambiente (1, 10, 100, 1.000 h).",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 256",
+"solo": 1
+},
+{
+"t": "Modelos de Rothermel",
+"a": [
+"Rothermel"
+],
+"d": "13 modelos de combustible en 4 grupos: pastos, matorral, hojarasca y restos.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 257",
+"solo": 1
+},
+{
+"t": "Longitud de llama",
+"a": [
+"longitud de llama"
+],
+"d": "Distancia máxima entre la base y la punta de la llama. Referencia de intensidad.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 258",
+"solo": 1
+},
+{
+"t": "Sistema de retención",
+"a": [
+"retención"
+],
+"d": "Impide al usuario llegar a la zona con riesgo de caída.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. 56",
+"solo": 1
+},
+{
+"t": "Sistema de sujeción",
+"a": [
+"sujeción",
+"posicionamiento"
+],
+"d": "Permite trabajar apoyado en tensión o suspensión, con las manos libres.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. 56",
+"solo": 1
+},
+{
+"t": "EPI dieléctrico",
+"a": [
+"dieléctrico",
+"dieléctricos"
+],
+"d": "EPI aislante de la electricidad: desde 50 V CA o 75 V CC. Nunca como única protección.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. 60",
+"solo": 1
+},
+{
+"t": "Ayuda a la flotación",
+"a": [
+"ayuda a la flotación",
+"flotación"
+],
+"d": "Equipo de 50 N para usuarios conscientes en aguas en calma; no da la vuelta a un inconsciente.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. 60",
+"solo": 1
 }
 ]
