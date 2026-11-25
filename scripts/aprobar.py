@@ -27,9 +27,7 @@ glos += nuevos_t
 open(PQ, 'w', encoding='utf-8').write(json.dumps(banco, ensure_ascii=False, indent=0))
 open(GL, 'w', encoding='utf-8').write(json.dumps(glos, ensure_ascii=False, indent=0))
 n_nuevas = len(lote['preguntas'])
-dest = os.path.join(ROOT, 'tandas', 'aprobadas', fecha + '.json'); k = 2
-while os.path.exists(dest):  # varios lotes con la misma fecha: no pisar el archivado
-    dest = os.path.join(ROOT, 'tandas', 'aprobadas', f'{fecha}_{k}.json'); k += 1
+dest = os.path.join(ROOT, 'tandas', 'aprobadas', fecha + '.json')
 if os.path.exists(dest):  # segundo lote del mismo día (p. ej. aprobado por la tarde y otro por la noche): se suman
     prev = json.load(open(dest, encoding='utf-8'))
     lote['preguntas'] = prev['preguntas'] + lote['preguntas']; lote['glosario'] = prev.get('glosario', []) + lote.get('glosario', [])
