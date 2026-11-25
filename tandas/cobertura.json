@@ -101,7 +101,7 @@
    "tema": "Arbolado urbano",
    "hechas": "",
    "total": null,
-   "nota": "Sin preguntas todavía."
+   "nota": "Sin preguntas todavía. El PDF está escaneado: project_read solo devuelve el título; habría que leerlo página a página como imagen con project_search."
   },
   "2.18. Conceptos básicos de electricidad 1.pdf": {
    "tema": "Electricidad",
@@ -153,9 +153,9 @@
   },
   "DOC-20240402-WA0021. 1.pdf": {
    "tema": "Incendios de vegetación",
-   "hechas": "",
-   "total": null,
-   "nota": "Sin preguntas todavía."
+   "hechas": "244-251",
+   "total": 16,
+   "nota": "Páginas impresas 244-259. La p. 252 está a medias (lote 2026-11-25: ya preguntados la velocidad de los vientos de ladera ascendentes y el cambio de descendente a ascendente). Sigue en la p. 252 (vientos de valle, brisa)."
   },
   "DOC-20240402-WA0025..pdf": {
    "tema": "Apícola",

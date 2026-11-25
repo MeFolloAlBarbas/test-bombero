@@ -755,6 +755,764 @@
    "f": "Guía técnica de EPI (RD 773/1997), p. 57",
    "tq": "Equipo anticaídas que ha detenido una caída",
    "ta": "Se desecha."
+  },
+  {
+   "id": 331,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según el manual, en España los incendios provocados por el ser humano son:",
+   "o": [
+    "Más del 96 %.",
+    "Más del 76 %.",
+    "Alrededor del 50 %."
+   ],
+   "c": 0,
+   "o4": "Menos del 30 %.",
+   "que": "España es el país de la UE <mark>más afectado</mark> por los incendios forestales.",
+   "porque": "Los incendios <mark>provocados por el ser humano</mark> superan el <mark>96 %</mark>: casi todos tienen origen humano.",
+   "ojo": "Los rayos y otras causas naturales son una parte <mark>muy pequeña</mark>.",
+   "rec": "Casi todos: <mark>96 %</mark> de origen humano.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 244",
+   "tq": "Incendios de origen humano en España",
+   "ta": "Más del 96 %.",
+   "cifra": 1
+  },
+  {
+   "id": 332,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Una quema de rastrojos autorizada y controlada, ¿se considera un incendio?",
+   "o": [
+    "Sí, porque afecta a vegetación.",
+    "Sí, si supera una hectárea.",
+    "No, porque está controlada."
+   ],
+   "c": 2,
+   "o4": "Solo si se hace en verano.",
+   "que": "El incendio es el fuego que se extiende <mark>sin control</mark> y afecta a vegetación que no estaba destinada a arder.",
+   "porque": "Lo esencial es la <mark>falta de control</mark>. Las quemas de pastos o matorrales y el uso del fuego para eliminar residuos forestales, si están <mark>permitidos y controlados</mark>, no son incendios.",
+   "ojo": "Que arda vegetación no basta: lo que decide es si el fuego está <mark>controlado</mark>.",
+   "rec": "Sin control = incendio. Controlado y permitido = quema.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 244",
+   "tq": "¿Es incendio una quema controlada?",
+   "ta": "No: está controlada y permitida."
+  },
+  {
+   "id": 333,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Cuál de estos NO tiene la consideración de incendio forestal?",
+   "o": [
+    "El de un roquedo o un arenal.",
+    "El de un parque urbano sin influencia forestal.",
+    "El de un terreno agrícola abandonado con signos de estado forestal."
+   ],
+   "c": 1,
+   "o4": "El de una caseta al servicio del monte.",
+   "que": "El incendio forestal se propaga por terreno con especies forestales, y la ley amplía el concepto a otros terrenos.",
+   "porque": "También son forestales los que afectan a <mark>terrenos yermos, roquedos y arenales</mark>, a construcciones al servicio del monte y a terrenos agrícolas abandonados con signos inequívocos de estado forestal. El de un <mark>parque urbano sin influencia forestal</mark> es un incendio de <mark>vegetación en suelo urbano</mark>.",
+   "ojo": "Parece raro que un roquedo arda como «forestal», pero la definición <mark>lo incluye</mark>.",
+   "rec": "Parques, jardines y cunetas urbanas → vegetación en suelo urbano.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 244",
+   "tq": "¿Qué tipo de incendio es el de un parque urbano?",
+   "ta": "De vegetación en suelo urbano (no forestal).",
+   "ex": 1
+  },
+  {
+   "id": 334,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Los incendios en la interfaz urbano-forestal, en los que el fuego alcanza edificaciones y se propaga también por combustibles no forestales, se conocen como incendios de:",
+   "o": [
+    "Cuarta generación.",
+    "Tercera generación.",
+    "Quinta generación."
+   ],
+   "c": 0,
+   "o4": "Primera generación.",
+   "que": "La <mark>interfaz urbano-forestal</mark> es una zona con edificaciones dentro o junto a vegetación forestal.",
+   "porque": "Ese escenario se conoce como incendios de <mark>cuarta generación</mark>: el fuego llega a las casas y avanza también por la propia vivienda o la vegetación de jardines.",
+   "ojo": "Lo que la define es la mezcla de dos entornos: <mark>casas y monte</mark>.",
+   "rec": "Cuarta generación = casas en el monte.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 244",
+   "tq": "Incendios de interfaz urbano-forestal",
+   "ta": "De cuarta generación.",
+   "cifra": 1
+  },
+  {
+   "id": 335,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según la superficie afectada, un incendio de vegetación que afecta a menos de 1 ha es:",
+   "o": [
+    "Un conato.",
+    "Un foco secundario.",
+    "Un incendio."
+   ],
+   "c": 0,
+   "o4": "Un gran incendio forestal.",
+   "que": "La primera clasificación de los incendios es por la <mark>superficie afectada</mark>.",
+   "porque": "<mark>Conato</mark>: menos de 1 ha. <mark>Incendio</mark>: 1 ha o más.",
+   "ojo": "Un foco secundario no tiene que ver con la superficie: es un fuego fuera del perímetro principal.",
+   "rec": "Conato = no llega a la hectárea.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "tq": "Conato",
+   "ta": "Menos de 1 ha.",
+   "cifra": 1
+  },
+  {
+   "id": 336,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Un gran incendio forestal es el que afecta a una superficie de:",
+   "o": [
+    "500 ha o más.",
+    "1.000 ha o más.",
+    "100 ha o más."
+   ],
+   "c": 0,
+   "o4": "50 ha o más.",
+   "que": "El gran incendio forestal (GIF) es el escalón más alto de la clasificación por superficie.",
+   "porque": "Es el incendio forestal que afecta a <mark>500 ha o más</mark>.",
+   "ojo": "No confundir con el umbral de conato/incendio, que es mucho menor.",
+   "rec": "GIF: <mark>500</mark>, medio millar de hectáreas.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "tq": "Gran incendio forestal (GIF)",
+   "ta": "500 ha o más.",
+   "cifra": 1
+  },
+  {
+   "id": 337,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Cómo se detiene un fuego de suelo o subsuelo?",
+   "o": [
+    "Con una línea de defensa hasta el suelo mineral.",
+    "Con un ataque directo con agua a la llama.",
+    "Eliminando la continuidad vertical del combustible."
+   ],
+   "c": 0,
+   "o4": "Con un contrafuego.",
+   "que": "El fuego de suelo se propaga por la <mark>materia orgánica en descomposición y las raíces</mark>, despacio y en combustión incandescente.",
+   "porque": "Solo se detecta por el <mark>calor residual</mark> del suelo, y para detenerlo hay que hacer una discontinuidad: una <mark>línea de defensa hasta el suelo mineral</mark>.",
+   "ojo": "No hay apenas llama a la que atacar: el fuego va <mark>por debajo</mark>.",
+   "rec": "Fuego de suelo: se corta cavando hasta la tierra mineral.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "tq": "¿Cómo se detiene un fuego de suelo?",
+   "ta": "Con una línea de defensa hasta suelo mineral."
+  },
+  {
+   "id": 338,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "El fuego de superficie se propaga por el combustible situado sobre el suelo hasta una altura de:",
+   "o": [
+    "1,5 m.",
+    "0,5 m.",
+    "3 m."
+   ],
+   "c": 0,
+   "o4": "2,5 m.",
+   "que": "El de <mark>superficie</mark> es el tipo de incendio <mark>más frecuente</mark>.",
+   "porque": "Se propaga por la hojarasca sin descomponer, hierbas, arbustos y leños caídos, hasta <mark>1,5 m</mark> de altura.",
+   "ojo": "Si los leños están metidos en la hojarasca en descomposición, ya son combustible de <mark>suelo</mark>.",
+   "rec": "Superficie: hasta la altura del <mark>hombro</mark>, más o menos.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "tq": "Altura máxima del combustible de superficie",
+   "ta": "1,5 m.",
+   "cifra": 1
+  },
+  {
+   "id": 339,
+   "t": "Incendios de vegetación",
+   "d": "difícil",
+   "q": "Un fuego avanza por las copas de los árboles, pero si se elimina el combustible de superficie se detiene. ¿Qué tipo de fuego es?",
+   "o": [
+    "Antorcheo.",
+    "De copas activo.",
+    "De copas pasivo."
+   ],
+   "c": 2,
+   "o4": "De suelo.",
+   "que": "Hay dos fuegos de copas: el <mark>pasivo</mark> y el <mark>activo</mark>.",
+   "porque": "El <mark>pasivo</mark> va por las copas <mark>acoplado al fuego de superficie</mark>: su propagación principal es por la superficie, así que si esta se elimina, se detiene. El <mark>activo</mark> avanza por las copas <mark>independientemente</mark> de la superficie.",
+   "ojo": "El antorcheo solo corona <mark>copas aisladas</mark>; aquí el fuego avanza de copa en copa.",
+   "rec": "Pasivo = depende del de abajo. Activo = va por su cuenta.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "tq": "Fuego de copas que depende del de superficie",
+   "ta": "Copas pasivo."
+  },
+  {
+   "id": 340,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Un fuego de superficie que, por la continuidad vertical, corona algunas copas aisladas y luego sigue por superficie es un fuego de:",
+   "o": [
+    "Antorcheo.",
+    "Copas activo.",
+    "Subsuelo."
+   ],
+   "c": 0,
+   "o4": "Copas pasivo.",
+   "que": "El <mark>antorcheo</mark> es en realidad un fuego de <mark>superficie</mark>.",
+   "porque": "Por la <mark>continuidad vertical</mark> sube a <mark>copas aisladas</mark>; cuando esa continuidad desaparece, sigue propagándose por la superficie.",
+   "ojo": "No avanza de copa en copa: las copas arden <mark>sueltas</mark>, como antorchas.",
+   "rec": "Antorcheo: árboles sueltos que se encienden como antorchas.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "tq": "Antorcheo",
+   "ta": "Fuego de superficie que corona copas aisladas."
+  },
+  {
+   "id": 341,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Cuál es la parte más caliente y activa de un incendio forestal?",
+   "o": [
+    "La cabeza.",
+    "Los flancos.",
+    "La cola."
+   ],
+   "c": 0,
+   "o4": "El origen.",
+   "que": "La <mark>cabeza</mark> marca la dirección hacia la que avanza el incendio.",
+   "porque": "Es la parte <mark>más caliente y más activa</mark>. Los flancos pueden tener fuego activo pero menos caliente, y la cola arde más despacio.",
+   "ojo": "La cola suele estar <mark>cerca del origen</mark>, pero es la zona más tranquila.",
+   "rec": "Cabeza = delante y lo más fuerte.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+   "tq": "Parte más caliente de un incendio",
+   "ta": "La cabeza."
+  },
+  {
+   "id": 342,
+   "t": "Incendios de vegetación",
+   "d": "difícil",
+   "q": "Dentro del perímetro de un incendio queda una zona de combustible sin quemar. ¿Cómo se llama?",
+   "o": [
+    "Dedo.",
+    "Isla.",
+    "Bolsa."
+   ],
+   "c": 1,
+   "o4": "Foco secundario.",
+   "que": "Isla y bolsa son zonas <mark>sin quemar</mark>, pero en sitios distintos.",
+   "porque": "<mark>Isla</mark>: combustible sin quemar <mark>dentro del perímetro</mark>. <mark>Bolsa</mark>: zona sin quemar <mark>entre el incendio principal y un dedo</mark>.",
+   "ojo": "La bolsa es la tentadora: también está sin quemar, pero queda entre el frente y un dedo.",
+   "rec": "La isla está <mark>rodeada</mark> de quemado, como una isla de agua.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+   "tq": "Zona sin quemar dentro del perímetro",
+   "ta": "Isla."
+  },
+  {
+   "id": 343,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Los focos secundarios de un incendio forestal son:",
+   "o": [
+    "Zonas sin quemar dentro del perímetro.",
+    "Zonas ardiendo fuera del perímetro, por pavesas o piñas.",
+    "Los lados paralelos a la propagación."
+   ],
+   "c": 1,
+   "o4": "Las zonas que se reavivan en la cola.",
+   "que": "Los focos secundarios son <mark>áreas ardiendo fuera del perímetro principal</mark>.",
+   "porque": "Los genera el incendio principal con <mark>material incandescente</mark> como <mark>pavesas y piñas</mark>. Si crecen, pueden ser focos independientes y suelen acabar uniéndose al principal.",
+   "ojo": "Las otras definiciones son la <mark>isla</mark> y los <mark>flancos</mark>.",
+   "rec": "Secundario = fuera del perímetro, por lo que vuela.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+   "tq": "Foco secundario",
+   "ta": "Zona ardiendo fuera del perímetro (pavesas, piñas)."
+  },
+  {
+   "id": 344,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Un incendio con progresión circular, que avanza igual en todas direcciones, se da con:",
+   "o": [
+    "Viento variable y pendiente irregular.",
+    "Terreno llano, combustible homogéneo y sin viento.",
+    "Viento dominante y combustible homogéneo."
+   ],
+   "c": 1,
+   "o4": "Pendiente regular y sin viento.",
+   "que": "La forma de un incendio la marcan el <mark>viento</mark>, la <mark>topografía</mark> y el <mark>combustible</mark>.",
+   "porque": "La progresión <mark>circular</mark> se da en <mark>terreno plano</mark>, con <mark>combustible homogéneo</mark> y <mark>sin viento</mark>: nada empuja el fuego hacia un lado.",
+   "ojo": "Con un viento dominante la forma pasa a ser <mark>elíptica</mark>; con viento variable o pendientes irregulares, irregular.",
+   "rec": "Círculo = nada lo empuja.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+   "tq": "Progresión circular",
+   "ta": "Llano, combustible homogéneo y sin viento."
+  },
+  {
+   "id": 345,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "En un incendio de patrón topográfico, ¿dónde está la oportunidad de extinción?",
+   "o": [
+    "En el fondo de las vaguadas.",
+    "En las crestas, donde llega más deprisa.",
+    "Donde el incendio avance en descendente."
+   ],
+   "c": 2,
+   "o4": "En la cabeza, en subida.",
+   "que": "Los incendios <mark>topográficos</mark> tienden a quemar ollas enteras y vaguadas, y cabeza y flancos se comportan igual.",
+   "porque": "La oportunidad de extinción está donde la topografía es <mark>aliada</mark>: cuando el incendio avanza <mark>en descendente</mark>, en contra de la topografía.",
+   "ojo": "Las crestas son la meta de los incendios <mark>conducidos por viento</mark>, no el sitio para frenarlos.",
+   "rec": "Topográfico: se le espera <mark>cuesta abajo</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 247",
+   "tq": "Incendio topográfico: oportunidad de extinción",
+   "ta": "Cuando avanza en descendente.",
+   "int": 1
+  },
+  {
+   "id": 346,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "En un gran incendio que ha creado su propia burbuja meteorológica (patrón «ambiente del incendio»), ¿qué ataque es factible?",
+   "o": [
+    "Solo un ataque indirecto.",
+    "Un ataque directo a la cabeza.",
+    "Un ataque por flancos desde la cola."
+   ],
+   "c": 0,
+   "o4": "Un ataque aéreo exclusivamente.",
+   "que": "El patrón «ambiente del incendio» es un gran incendio con <mark>temperatura, humedad y viento propios</mark>.",
+   "porque": "En este caso solo es factible un <mark>ataque indirecto</mark>, programando una ventana de actuación suficiente para las maniobras.",
+   "ojo": "El ataque por flancos desde la cola es la oportunidad típica cuando un incendio de viento pasa a ser topográfico o de combustible.",
+   "rec": "Burbuja propia → solo indirecto.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 247",
+   "tq": "Patrón «ambiente del incendio»: ¿qué ataque?",
+   "ta": "Solo indirecto."
+  },
+  {
+   "id": 347,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "En España, la competencia de extinción de incendios forestales es de las comunidades autónomas. ¿Cuándo interviene el Estado?",
+   "o": [
+    "Siempre que el incendio supere las 500 ha forestales.",
+    "Si la comunidad lo solicita o el incendio afecta a varias comunidades.",
+    "Solo si hay viviendas o personas afectadas."
+   ],
+   "c": 1,
+   "o4": "Cuando lo decide el municipio afectado.",
+   "que": "La Constitución transfirió a las <mark>comunidades autónomas</mark> la regulación de la prevención y extinción de incendios forestales.",
+   "porque": "El Estado tiene competencias en estadística, estrategia forestal y coordinación de medios, e interviene <mark>si la comunidad lo solicita</mark> o si el incendio <mark>afecta a varias comunidades</mark>.",
+   "ojo": "La superficie del incendio no es el criterio.",
+   "rec": "Estado: cuando le llaman o cuando cruza fronteras autonómicas.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 247",
+   "tq": "¿Cuándo interviene el Estado en un incendio forestal?",
+   "ta": "Si la CA lo pide o afecta a varias CC. AA.",
+   "ex": 1
+  },
+  {
+   "id": 348,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según la Ley de Montes, ¿qué ocurre con los terrenos afectados por un incendio forestal?",
+   "o": [
+    "Pasan a ser propiedad del Estado.",
+    "Pueden recalificarse tras la extinción.",
+    "Hay que restaurarlos y se prohíbe el cambio de uso forestal."
+   ],
+   "c": 2,
+   "o4": "Quedan como suelo agrícola.",
+   "que": "La Ley de Montes es legislación <mark>básica</mark> que las comunidades deben respetar.",
+   "porque": "Entre sus referencias está la <mark>obligación de restaurar</mark> los terrenos quemados, <mark>prohibiendo el cambio de uso forestal</mark>.",
+   "ojo": "Así se evita que quemar un monte sirva para darle <mark>otro uso</mark>.",
+   "rec": "Monte quemado, monte se queda.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 247",
+   "tq": "Ley de Montes: terrenos quemados",
+   "ta": "Se restauran; prohibido el cambio de uso forestal."
+  },
+  {
+   "id": 349,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Por qué la conducción es un mecanismo poco eficiente para transmitir el calor entre combustibles forestales?",
+   "o": [
+    "Porque solo actúa cuesta abajo.",
+    "Porque necesita viento para actuar.",
+    "La materia vegetal conduce poco y el contacto es imperfecto."
+   ],
+   "c": 2,
+   "o4": "Porque el humo la bloquea.",
+   "que": "La <mark>conducción</mark> transmite el calor entre sólidos por contacto.",
+   "porque": "La <mark>conductividad</mark> de la materia vegetal es <mark>baja</mark> y, salvo en hojarasca y leña delgada, el <mark>contacto es imperfecto</mark>.",
+   "ojo": "Cuesta abajo el mecanismo que queda es otro: la radiación.",
+   "rec": "Conducción en el monte: mala conductora y poco contacto.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+   "tq": "¿Por qué la conducción es poco eficiente en el monte?",
+   "ta": "Baja conductividad y contacto imperfecto."
+  },
+  {
+   "id": 350,
+   "t": "Incendios de vegetación",
+   "d": "difícil",
+   "q": "Sobre la estructura de la capa de combustible, ¿qué afirmación es correcta?",
+   "o": [
+    "Ambas favorecen sobre todo la convección.",
+    "La compacidad favorece la conducción y el ahuecamiento, la radiación.",
+    "La compacidad favorece la radiación y el ahuecamiento, la conducción."
+   ],
+   "c": 1,
+   "o4": "La compacidad favorece la convección y el ahuecamiento, la conducción.",
+   "que": "<mark>Compacidad</mark>: capa apretada (pinocha de pino silvestre, hojarasca de haya). <mark>Ahuecamiento</mark>: lo contrario, con aire entre las partículas.",
+   "porque": "A mayor <mark>compacidad</mark>, más eficiente la <mark>conducción</mark> (hay contacto). El <mark>ahuecamiento</mark> favorece la <mark>radiación</mark>, porque el calor viaja por el aire entre los huecos.",
+   "ojo": "Es fácil cruzarlas. Piensa en qué necesita cada una: contacto o aire.",
+   "rec": "Compacto → contacto → conducción. Hueco → aire → radiación.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+   "tq": "Compacidad y ahuecamiento: ¿qué favorece cada uno?",
+   "ta": "Compacidad → conducción; ahuecamiento → radiación."
+  },
+  {
+   "id": 351,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué mecanismo de transmisión del calor es el responsable de que un fuego de superficie pase a ser de copas?",
+   "o": [
+    "La radiación.",
+    "La conducción.",
+    "La convección."
+   ],
+   "c": 2,
+   "o4": "La emisión de pavesas.",
+   "que": "La <mark>convección</mark> es el mecanismo que <mark>más eficazmente</mark> transmite el calor en los incendios forestales.",
+   "porque": "El aire caliente sube y calienta los combustibles más altos: así convierte los <mark>combustibles aéreos en disponibles</mark> y hace que un fuego de superficie pueda pasar a <mark>copas</mark>.",
+   "ojo": "La radiación depende de la continuidad, pero el «ascensor» del calor es el aire que sube.",
+   "rec": "Convección = el calor sube con el aire.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+   "tq": "Mecanismo del paso de superficie a copas",
+   "ta": "La convección."
+  },
+  {
+   "id": 352,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Por qué un fuego avanza mucho más despacio cuesta abajo?",
+   "o": [
+    "Porque el calor solo se transmite por radiación.",
+    "Porque la convección es más intensa.",
+    "Porque el combustible está más húmedo."
+   ],
+   "c": 0,
+   "o4": "Porque el viento siempre sopla cuesta arriba.",
+   "que": "Cuesta arriba, la <mark>convección</mark> y la pendiente secan y calientan el combustible situado encima del foco.",
+   "porque": "Cuesta abajo eso no funciona: el calor se transmite <mark>solamente por radiación</mark> y el fuego progresa <mark>mucho más lento</mark>.",
+   "ojo": "El aire caliente sube: cuesta abajo, el combustible <mark>no está encima</mark> de las llamas.",
+   "rec": "Cuesta abajo, solo radiación → lento.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+   "tq": "¿Por qué el fuego baja despacio una ladera?",
+   "ta": "Solo hay radiación."
+  },
+  {
+   "id": 353,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según el manual, ¿qué proyecciones de partículas encendidas son las más peligrosas?",
+   "o": [
+    "Las acículas de pino piñonero y las hojas de haya.",
+    "Las bellotas de encina y las hojas de roble.",
+    "Las piñas de pino carrasco y la corteza de eucalipto."
+   ],
+   "c": 2,
+   "o4": "La paja de cereal y las hojas de olivo.",
+   "que": "Los <mark>saltos de fuego</mark> son proyecciones de partículas incandescentes que crean focos fuera del perímetro.",
+   "porque": "Las proyecciones <mark>más peligrosas</mark> son las <mark>piñas del pino carrasco</mark> y la <mark>corteza del eucalipto</mark>.",
+   "ojo": "Se dan sobre todo en masas de pinos con <mark>fuego de copas</mark>.",
+   "rec": "Saltos peligrosos: <mark>piña carrasca</mark> y <mark>corteza de eucalipto</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+   "tq": "Proyecciones más peligrosas en un salto de fuego",
+   "ta": "Piñas de pino carrasco y corteza de eucalipto."
+  },
+  {
+   "id": 354,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "La proyección de partículas en masas de pinos con fuego de copas puede llegar hasta unos:",
+   "o": [
+    "50 m.",
+    "5 km.",
+    "500 m."
+   ],
+   "c": 2,
+   "o4": "2 km.",
+   "que": "Los saltos de fuego pueden originar <mark>focos secundarios</mark> fuera del perímetro.",
+   "porque": "En masas de pinos con fuego en copas, la proyección llega hasta <mark>medio kilómetro</mark>, o a pocos metros según el caso.",
+   "ojo": "Por eso un salto de fuego puede pillar a los equipos <mark>a la espalda</mark>.",
+   "rec": "Salto de fuego: hasta <mark>medio kilómetro</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+   "tq": "Distancia de los saltos de fuego en pinar",
+   "ta": "Hasta 500 m (medio kilómetro).",
+   "cifra": 1
+  },
+  {
+   "id": 355,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "El comportamiento de un incendio de vegetación depende de la «gran tríada». ¿Cuál NO forma parte de ella?",
+   "o": [
+    "El combustible vegetal.",
+    "La topografía.",
+    "Los medios de extinción disponibles."
+   ],
+   "c": 2,
+   "o4": "La meteorología.",
+   "que": "La <mark>gran tríada</mark> son los tres factores que determinan cómo se comporta un fuego de vegetación.",
+   "porque": "Son: <mark>topografía</mark> (el terreno), <mark>meteorología</mark> (clima y tiempo atmosférico) y <mark>combustible</mark> (el material vegetal que arde).",
+   "ojo": "Los medios de extinción influyen en el resultado, pero <mark>no</mark> en el comportamiento natural del fuego.",
+   "rec": "Tríada: terreno, tiempo y combustible.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 249",
+   "tq": "Gran tríada del comportamiento del fuego",
+   "ta": "Topografía, meteorología y combustible."
+  },
+  {
+   "id": 356,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Cuál es el factor topográfico más importante en el comportamiento del fuego?",
+   "o": [
+    "La pendiente.",
+    "La configuración del terreno.",
+    "La exposición."
+   ],
+   "c": 0,
+   "o4": "La altitud.",
+   "que": "Los factores topográficos son la <mark>configuración</mark>, la <mark>exposición</mark> y la <mark>pendiente</mark>.",
+   "porque": "La <mark>pendiente</mark> es el más importante: a más pendiente, <mark>más rápido sube</mark> el fuego y más lento baja.",
+   "ojo": "La exposición influye mucho en la humedad y la temperatura, pero el manual da el primer puesto a la pendiente.",
+   "rec": "Topografía: manda la <mark>pendiente</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 249",
+   "tq": "Factor topográfico más importante",
+   "ta": "La pendiente."
+  },
+  {
+   "id": 357,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Comparadas con las de umbría, las laderas de solana tienen en general:",
+   "o": [
+    "Menos temperatura y vegetación más húmeda.",
+    "La misma temperatura, pero más viento.",
+    "Más temperatura y vegetación con menos agua."
+   ],
+   "c": 2,
+   "o4": "Más humedad relativa y más combustible.",
+   "que": "La <mark>exposición</mark> es la orientación de las laderas respecto al sol.",
+   "porque": "Las de <mark>solana</mark> están más calientes y su vegetación tiene <mark>menos agua</mark> (y menos combustible). Las de <mark>umbría</mark>, menos temperatura y vegetación más húmeda.",
+   "ojo": "Menos combustible en la solana, pero <mark>más seco</mark>.",
+   "rec": "Solana = sol = seco.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 249",
+   "tq": "Solana frente a umbría",
+   "ta": "Solana: más calor y vegetación más seca."
+  },
+  {
+   "id": 358,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según el manual, un fuego con fuertes corrientes de viento se propaga hasta 100 veces más rápido. ¿Y con pendiente?",
+   "o": [
+    "Unas 50 veces más rápido.",
+    "Unas 200 veces más rápido.",
+    "Unas 20 veces más rápido."
+   ],
+   "c": 2,
+   "o4": "Unas 10 veces más rápido.",
+   "que": "Los efectos de la <mark>pendiente</mark> y del <mark>viento</mark> son parecidos, pero no igual de fuertes.",
+   "porque": "Con fuerte viento, la propagación es hasta <mark>100 veces</mark> más rápida; con pendiente, solo unas <mark>20 veces</mark>.",
+   "ojo": "El viento <mark>gana</mark> a la pendiente.",
+   "rec": "Viento ×100, pendiente ×20.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 249",
+   "tq": "Viento ×100: ¿y la pendiente?",
+   "ta": "Unas 20 veces más rápido.",
+   "cifra": 1
+  },
+  {
+   "id": 359,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Esta ladera sube 100 m en 100 m de distancia horizontal. ¿Qué pendiente tiene?",
+   "o": [
+    "50 %.",
+    "45 %.",
+    "100 %."
+   ],
+   "c": 2,
+   "o4": "90 %.",
+   "que": "La pendiente puede darse en <mark>grados</mark> o en <mark>porcentaje</mark>.",
+   "porque": "En porcentaje es desnivel ÷ distancia horizontal × 100: 100 ÷ 100 × 100 = <mark>100 %</mark>. Es la misma pendiente que un ángulo de 45°.",
+   "ojo": "El 45 % es la trampa: <mark>45 son los grados</mark>, no el porcentaje.",
+   "rec": "Sube tanto como avanza → 100 % = 45°.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 249",
+   "tq": "Pendiente de 45° en porcentaje",
+   "ta": "100 %.",
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 220 150\" role=\"img\" aria-label=\"Ladera en forma de triángulo rectángulo: 100 m de distancia horizontal y 100 m de desnivel\"><polygon points=\"20,130 180,130 180,20\" fill=\"#8fb36b\" stroke=\"#3d5a26\" stroke-width=\"2\"/><rect x=\"170\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#333\"/><g font-family=\"sans-serif\" font-size=\"13\" fill=\"#222\"><text x=\"70\" y=\"146\">100 m</text><text x=\"186\" y=\"80\">100 m</text></g></svg>"
+  },
+  {
+   "id": 360,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según el manual, ¿cuándo se alcanza normalmente la temperatura máxima del día?",
+   "o": [
+    "Al mediodía, entre las 12:00 y las 13:00 h.",
+    "A última hora, entre las 19:00 y las 20:00 h.",
+    "Por la tarde, entre las 15:00 y las 17:00 h."
+   ],
+   "c": 2,
+   "o4": "Por la mañana, entre las 10:00 y las 11:00 h.",
+   "que": "La temperatura tiene variaciones <mark>estacionales</mark> y <mark>diarias</mark>.",
+   "porque": "El periodo más fresco y húmedo es de madrugada; la máxima llega <mark>por la tarde, entre las 15:00 y las 17:00 h</mark>.",
+   "ojo": "No es al mediodía, cuando el sol está más alto: el calor <mark>se acumula</mark> y el pico llega después.",
+   "rec": "Pico de calor: <mark>a media tarde</mark>, no al mediodía.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 250",
+   "tq": "Hora de la temperatura máxima",
+   "ta": "Entre las 15:00 y las 17:00 h.",
+   "cifra": 1
+  },
+  {
+   "id": 361,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Por debajo de qué humedad relativa se dan condiciones muy favorables para el inicio y la propagación del fuego?",
+   "o": [
+    "50 %.",
+    "15 %.",
+    "30 %."
+   ],
+   "c": 2,
+   "o4": "60 %.",
+   "que": "La <mark>humedad relativa</mark> indica cuánto vapor tiene el aire respecto al máximo que admite a esa temperatura.",
+   "porque": "Con valores <mark>por debajo del 30 %</mark> se dan condiciones muy favorables para que el fuego empiece y se propague.",
+   "ojo": "Cuando el aire está saturado ya no admite más vapor.",
+   "rec": "Regla del <mark>30</mark>: por debajo, peligro.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 250",
+   "tq": "Humedad relativa peligrosa para el fuego",
+   "ta": "Por debajo del 30 %.",
+   "cifra": 1
+  },
+  {
+   "id": 362,
+   "t": "Incendios de vegetación",
+   "d": "difícil",
+   "q": "A mediodía hay 30 °C y una humedad relativa del 20 %. Si la temperatura sube a 40 °C, según la regla aproximada del manual la humedad relativa será de:",
+   "o": [
+    "30 %.",
+    "40 %.",
+    "10 %."
+   ],
+   "c": 2,
+   "o4": "20 %.",
+   "que": "La humedad relativa depende de la temperatura: el aire caliente admite más vapor, así que la proporción baja.",
+   "porque": "Regla del manual: si la temperatura <mark>sube 10 °C</mark>, la humedad relativa <mark>se reduce a la mitad</mark>; si baja 10 °C, se duplica. De 30 a 40 °C: 20 % ÷ 2 = <mark>10 %</mark>.",
+   "ojo": "La tentación es sumar o mantener: más calor = <mark>menos</mark> humedad relativa.",
+   "rec": "+10 °C → HR ÷ 2. −10 °C → HR × 2.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 250",
+   "tq": "Regla temperatura-humedad relativa",
+   "ta": "Sube 10 °C → HR a la mitad; baja 10 °C → se duplica.",
+   "int": 1
+  },
+  {
+   "id": 363,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿A cuánto equivale un nudo?",
+   "o": [
+    "1,852 km/h.",
+    "0,852 km/h.",
+    "1,609 km/h."
+   ],
+   "c": 0,
+   "o4": "1,5 km/h.",
+   "que": "La velocidad del viento se mide en m/s, km/h o <mark>nudos</mark>.",
+   "porque": "El nudo es una milla marina por hora: <mark>1 nudo = 1,852 km/h</mark>.",
+   "ojo": "El 1,609 es la milla <mark>terrestre</mark>, no la marina.",
+   "rec": "Nudo ≈ casi 2 km/h: <mark>1,852</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251",
+   "tq": "Un nudo en km/h",
+   "ta": "1,852 km/h.",
+   "cifra": 1
+  },
+  {
+   "id": 364,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "El parte meteorológico da viento de 90°. ¿Hacia dónde empujará el incendio?",
+   "o": [
+    "Hacia el este.",
+    "Hacia el sur.",
+    "Hacia el oeste."
+   ],
+   "c": 2,
+   "o4": "Hacia el norte.",
+   "que": "La dirección del viento indica <mark>de dónde procede</mark>, en grados en el sentido de las agujas del reloj desde el norte.",
+   "porque": "<mark>90° = Este</mark>: el viento viene del este y empuja el fuego <mark>hacia el oeste</mark>.",
+   "ojo": "El error típico es creer que el número dice <mark>hacia dónde va</mark> el viento.",
+   "rec": "El viento se nombra por <mark>de dónde viene</mark>: 90° es el Este.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251",
+   "tq": "Viento de 90°: ¿de dónde viene?",
+   "ta": "Del este (empuja hacia el oeste)."
+  },
+  {
+   "id": 365,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "En un mapa de isobaras, ¿qué indica que estén muy juntas?",
+   "o": [
+    "Que el viento será más flojo.",
+    "Que el viento será más fuerte.",
+    "Que habrá inversión térmica."
+   ],
+   "c": 1,
+   "o4": "Que lloverá.",
+   "que": "Las <mark>isobaras</mark> son líneas de igual presión atmosférica.",
+   "porque": "La velocidad del viento es proporcional a la diferencia de presión: cuanto <mark>más juntas</mark> las isobaras, <mark>más fuerte</mark> el viento. El viento sopla <mark>paralelo</mark> a ellas.",
+   "ojo": "Juntas significa mucha diferencia de presión en poca distancia.",
+   "rec": "Isobaras apretadas = viento fuerte.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251",
+   "tq": "Isobaras muy juntas",
+   "ta": "Viento más fuerte."
+  },
+  {
+   "id": 366,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Los vientos de ladera ascendentes, que soplan durante el día, tienen una velocidad de unos:",
+   "o": [
+    "1-10 km/h.",
+    "16-39 km/h.",
+    "6-13 km/h."
+   ],
+   "c": 2,
+   "o4": "20-30 km/h.",
+   "que": "Los <mark>vientos de ladera</mark> soplan paralelos a la pendiente: descendentes de noche y ascendentes de día.",
+   "porque": "Los <mark>ascendentes</mark> van desde la mañana hasta la puesta de sol, a unos <mark>6-13 km/h</mark>. Los <mark>descendentes</mark>, nocturnos, son más lentos: <mark>1-10 km/h</mark>.",
+   "ojo": "La opción de 16-39 km/h es la del viento que favorece los saltos de fuego.",
+   "rec": "De día, cuesta arriba y algo más rápido: <mark>6-13</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251-252",
+   "tq": "Velocidad del viento de ladera ascendente",
+   "ta": "6-13 km/h.",
+   "cifra": 1
+  },
+  {
+   "id": 367,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Tenéis un incendio controlado en una ladera a primera hora de la mañana. ¿Qué cambio de viento puede reactivarlo en pocos minutos?",
+   "o": [
+    "La llegada de la brisa nocturna.",
+    "El paso del viento de ladera de descendente a ascendente.",
+    "El paso del viento de ladera de ascendente a descendente."
+   ],
+   "c": 1,
+   "o4": "La calma total del viento.",
+   "que": "Los vientos de ladera bajan de noche y <mark>suben de día</mark>.",
+   "porque": "Si el viento de ladera (o de valle) <mark>cambia de descendente a ascendente</mark>, puede <mark>activar el fuego en pocos minutos</mark> aunque estuviera controlado. Suele ir con la ruptura de la inversión térmica y más rachas.",
+   "ojo": "El cambio contrario, al atardecer, suele <mark>calmar</mark> el fuego en la ladera.",
+   "rec": "Mañana: el viento se da la vuelta y <mark>sube</mark> → ojo al fuego controlado.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 252",
+   "tq": "Cambio de viento que reactiva un fuego controlado",
+   "ta": "De descendente a ascendente (por la mañana).",
+   "int": 1
   }
  ],
  "glosario": [
@@ -867,6 +1625,205 @@
    "d": "Calzado sin protección garantizada de los dedos (el de seguridad y el de protección sí la tienen).",
    "tema": "EPI",
    "f": "Guía técnica de EPI (RD 773/1997), p. p. 52",
+   "solo": 1
+  },
+  {
+   "t": "Conato",
+   "a": [
+    "conato"
+   ],
+   "d": "Incendio que afecta a menos de 1 ha.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "solo": 1
+  },
+  {
+   "t": "Gran incendio forestal (GIF)",
+   "a": [
+    "gran incendio forestal",
+    "GIF"
+   ],
+   "d": "Incendio forestal de 500 ha o más.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "solo": 1
+  },
+  {
+   "t": "Antorcheo",
+   "a": [
+    "antorcheo"
+   ],
+   "d": "Fuego de superficie que, por continuidad vertical, enciende copas aisladas.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "solo": 1
+  },
+  {
+   "t": "Fuego de copas pasivo",
+   "a": [
+    "copas pasivo"
+   ],
+   "d": "Fuego por las copas que depende del de superficie: si este se elimina, se detiene.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "solo": 1
+  },
+  {
+   "t": "Fuego de copas activo",
+   "a": [
+    "copas activo"
+   ],
+   "d": "Fuego por las copas independiente de la superficie. Muy intenso y difícil de controlar.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+   "solo": 1
+  },
+  {
+   "t": "Cabeza del incendio",
+   "a": [
+    "cabeza"
+   ],
+   "d": "Parte más caliente y activa; marca hacia dónde avanza el fuego.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+   "solo": 1
+  },
+  {
+   "t": "Isla",
+   "a": [
+    "isla"
+   ],
+   "d": "Zona sin quemar dentro del perímetro del incendio.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+   "solo": 1
+  },
+  {
+   "t": "Bolsa",
+   "a": [
+    "bolsa"
+   ],
+   "d": "Zona sin quemar entre el incendio principal y un dedo.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+   "solo": 1
+  },
+  {
+   "t": "Foco secundario",
+   "a": [
+    "foco secundario",
+    "focos secundarios"
+   ],
+   "d": "Zona ardiendo fuera del perímetro, por pavesas o piñas.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+   "solo": 1
+  },
+  {
+   "t": "Interfaz urbano-forestal",
+   "a": [
+    "interfaz urbano-forestal",
+    "interfaz urbano forestal",
+    "cuarta generación"
+   ],
+   "d": "Zona con edificaciones dentro o junto a vegetación forestal (incendios de cuarta generación).",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 244",
+   "solo": 1
+  },
+  {
+   "t": "Compacidad",
+   "a": [
+    "compacidad"
+   ],
+   "d": "Lo apretada que está una capa de combustible. Favorece la conducción.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+   "solo": 1
+  },
+  {
+   "t": "Ahuecamiento",
+   "a": [
+    "ahuecamiento"
+   ],
+   "d": "Aire entre las partículas de combustible. Favorece la radiación.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+   "solo": 1
+  },
+  {
+   "t": "Salto de fuego",
+   "a": [
+    "salto de fuego",
+    "saltos de fuego",
+    "pavesas"
+   ],
+   "d": "Proyección de partículas encendidas que crea focos fuera del perímetro.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+   "solo": 1
+  },
+  {
+   "t": "Gran tríada",
+   "a": [
+    "gran tríada"
+   ],
+   "d": "Topografía, meteorología y combustible: lo que decide el comportamiento del fuego.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 249",
+   "solo": 1
+  },
+  {
+   "t": "Solana y umbría",
+   "a": [
+    "solana",
+    "umbría"
+   ],
+   "d": "Solana: ladera al sol, más caliente y seca. Umbría: a la sombra, más húmeda.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 249",
+   "solo": 1
+  },
+  {
+   "t": "Humedad relativa",
+   "a": [
+    "humedad relativa"
+   ],
+   "d": "Vapor del aire respecto al máximo que admite a esa temperatura. Por debajo del 30 %, peligro.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 250",
+   "solo": 1
+  },
+  {
+   "t": "Nudo",
+   "a": [
+    "nudo",
+    "nudos"
+   ],
+   "d": "Milla marina por hora: 1,852 km/h.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251",
+   "solo": 1
+  },
+  {
+   "t": "Isobaras",
+   "a": [
+    "isobaras"
+   ],
+   "d": "Líneas de igual presión. Muy juntas = viento fuerte.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251",
+   "solo": 1
+  },
+  {
+   "t": "Vientos de ladera",
+   "a": [
+    "viento de ladera",
+    "vientos de ladera"
+   ],
+   "d": "Soplan paralelos a la pendiente: bajan de noche y suben de día.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251",
    "solo": 1
   }
  ]
