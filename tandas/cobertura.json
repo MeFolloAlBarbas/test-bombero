@@ -5,7 +5,7 @@
    "tema": "Constitución / Estatuto CAM",
    "hechas": "todo",
    "total": null,
-   "nota": "TERMINADO el 25/11/2026: el PDF solo trae una selección de artículos (CE 1, 2, 7, 9, 10, 14, 16-18, 20, 24, 25, 28, 33, 137-143; Estatuto 8, 9, 22, 34, 35) y todos sus datos están preguntados (incluidas preguntas de número de artículo). El usuario puede quitarlo del proyecto."
+   "nota": "TERMINADO el 25/11/2026: el PDF solo trae una selección de artículos (CE 1, 2, 7, 9, 10, 14, 16-18, 20, 24, 25, 28, 33, 137-143; Estatuto 8, 9, 22, 34, 35) y todos sus datos están preguntados (incluidas preguntas de número de artículo). El usuario puede quitarlo del proyecto. QUITADO del proyecto el 25/11/2026: no elegirlo."
   },
   "1.2. LEY 7 1985 LEY 22 2006.pdf": {
    "tema": "Régimen local",
@@ -131,7 +131,7 @@
    "tema": "EPI",
    "hechas": "10-26, 51-62",
    "total": null,
-   "nota": "TERMINADO el 25/11/2026: el texto del proyecto solo trae las p. 10-26 y 51-62 y sus datos están preguntados. El usuario puede quitarlo del proyecto."
+   "nota": "TERMINADO el 25/11/2026: el texto del proyecto solo trae las p. 10-26 y 51-62 y sus datos están preguntados. El usuario puede quitarlo del proyecto. QUITADO del proyecto el 25/11/2026: no elegirlo."
   },
   "2.25. Equipos de corte térmico y soldadura 1.pdf": {
    "tema": "Corte y soldadura",
@@ -149,7 +149,7 @@
    "tema": "Incendios de vegetación",
    "hechas": "244-259",
    "total": 16,
-   "nota": "TERMINADO el 25/11/2026: todos los datos del manual están preguntados. El usuario puede quitarlo del proyecto."
+   "nota": "TERMINADO el 25/11/2026: todos los datos del manual están preguntados. El usuario puede quitarlo del proyecto. QUITADO del proyecto el 25/11/2026: no elegirlo."
   },
   "DOC-20240402-WA0025..pdf": {
    "tema": "Apícola",
