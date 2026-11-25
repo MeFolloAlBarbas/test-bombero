@@ -135,9 +135,9 @@
   },
   "2.24. EPIS 1.pdf": {
    "tema": "EPI",
-   "hechas": "",
+   "hechas": "10-26, 51-52",
    "total": null,
-   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+   "nota": "El texto del proyecto solo trae las p. 10-26 y 51-62. Las p. 53-57 están a medias (lote 2026-11-25: ya preguntados casco contra golpes, clase óptica, 6 kN, anclaje FC 0, EN 795 B/E, revisión anual, desechar tras caída); quedan el resto de esas páginas y las p. 58-62."
   },
   "2.25. Equipos de corte térmico y soldadura 1.pdf": {
    "tema": "Corte y soldadura",

@@ -1,0 +1,873 @@
+{
+ "preguntas": [
+  {
+   "id": 294,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según la guía del RD 773/1997, ¿cuál de estos equipos NO puede considerarse un EPI?",
+   "o": [
+    "Un casco de seguridad.",
+    "Una pantalla de soldador de mano.",
+    "Una banqueta aislante."
+   ],
+   "c": 2,
+   "o4": "Unas orejeras acopladas al casco.",
+   "que": "Un EPI es un equipo destinado a ser <mark>llevado o sujetado</mark> por el trabajador para que le proteja.",
+   "porque": "La protección depende de una acción del trabajador: <mark>llevarlo o sujetarlo</mark>. La banqueta aislante ni se lleva ni se sujeta: está en el suelo.",
+   "ojo": "La pantalla de soldador de mano <mark>sí es EPI</mark> aunque no se lleve puesta: se <mark>sujeta</mark>.",
+   "rec": "EPI = lo <mark>llevo</mark> o lo <mark>sujeto</mark>. Si se queda en el suelo, no es EPI.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 10",
+   "tq": "¿Por qué una banqueta aislante no es EPI?",
+   "ta": "Porque no se lleva ni se sujeta."
+  },
+  {
+   "id": 295,
+   "t": "EPI",
+   "d": "normal",
+   "q": "De estos elementos intercambiables de un EPI, ¿cuál NO se considera EPI?",
+   "o": [
+    "El filtro de soldadura de un protector ocular.",
+    "La banda para el sudor de un casco.",
+    "El filtro de un equipo de protección respiratoria."
+   ],
+   "c": 1,
+   "o4": "El arnés interior de un casco de seguridad.",
+   "que": "Los <mark>componentes intercambiables esenciales</mark> para la función protectora se consideran EPI aunque solos no protejan.",
+   "porque": "Un filtro respiratorio o un filtro de soldadura son <mark>esenciales para proteger</mark>. La banda del sudor se puede cambiar, pero <mark>no influye en la protección</mark>.",
+   "ojo": "Que algo sea recambiable no lo convierte en EPI: tiene que ser <mark>esencial para proteger</mark>.",
+   "rec": "Pregunta clave: ¿si falta, deja de proteger? Sí → es EPI.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 11",
+   "tq": "¿Qué recambio de un EPI NO es EPI?",
+   "ta": "La banda para el sudor del casco."
+  },
+  {
+   "id": 296,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Cuál de estos sistemas de conexión SÍ se considera EPI?",
+   "o": [
+    "Un anclaje que necesita herramientas para instalarse.",
+    "Un anclaje que forma parte de la estructura del edificio.",
+    "La línea de aire que une un equipo respiratorio a un compresor."
+   ],
+   "c": 2,
+   "o4": "Un anclaje soldado a una máquina.",
+   "que": "Un sistema de conexión que el trabajador <mark>no lleva ni sujeta</mark> puede ser EPI si conecta el EPI a algo externo.",
+   "porque": "Condición: que su instalación <mark>no sea permanente ni precise herramientas</mark>. La línea de aire cumple; un anclaje fijo o que se instala con herramientas no.",
+   "ojo": "El anclaje fijo del edificio protege, pero <mark>no es EPI</mark>: es parte de la estructura.",
+   "rec": "Se conecta sin herramientas y no es permanente → EPI.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 11",
+   "tq": "Sistema de conexión que SÍ es EPI",
+   "ta": "La línea de aire entre equipo respiratorio y compresor."
+  },
+  {
+   "id": 297,
+   "t": "EPI",
+   "d": "normal",
+   "q": "La mascarilla que usa el personal sanitario para no contagiar a los pacientes, a efectos del RD 773/1997:",
+   "o": [
+    "Es un EPI solo si lleva marcado CE.",
+    "Es un EPI, porque se lleva puesta.",
+    "No es un EPI, porque protege a terceros."
+   ],
+   "c": 2,
+   "o4": "Es un EPI de categoría I.",
+   "que": "El trabajador usa el EPI para <mark>protegerse a sí mismo</mark>, no a otras personas.",
+   "porque": "Los equipos para proteger a <mark>personas distintas</mark> de quien los lleva no son EPI a efectos de este real decreto. Ejemplos: ropa o mascarillas sanitarias contra contagios, guantes de manipuladores de alimentos.",
+   "ojo": "Llevarlo puesto no basta: tiene que <mark>proteger al que lo lleva</mark>.",
+   "rec": "EPI = me protege <mark>a mí</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 11",
+   "tq": "¿Mascarilla para no contagiar al paciente = EPI?",
+   "ta": "No: protege a terceros."
+  },
+  {
+   "id": 298,
+   "t": "EPI",
+   "d": "difícil",
+   "q": "Un trabajador cae y queda colgado de su propio arnés. Los bomberos usan ese mismo arnés para rescatarlo. A efectos del RD 773/1997, ese arnés:",
+   "o": [
+    "No es un EPI, porque protege a un tercero.",
+    "No es un EPI, porque se usa en un rescate.",
+    "Es un EPI, porque lo llevaba antes del accidente."
+   ],
+   "c": 2,
+   "o4": "Deja de ser EPI en cuanto ha detenido la caída.",
+   "que": "Los equipos para <mark>rescatar a terceros</mark> tras una caída de altura <mark>no son EPI</mark>… con una excepción.",
+   "porque": "La excepción: si el equipo <mark>lo llevaba previamente</mark> la persona rescatada y se usa en la maniobra de rescate, sí es EPI.",
+   "ojo": "La regla general (rescate = no EPI) es la trampa: aquí el arnés ya era <mark>su EPI antes de caer</mark>.",
+   "rec": "Rescate tras caída: no es EPI, <mark>salvo que el accidentado ya lo llevara puesto</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 12",
+   "tq": "Arnés que ya llevaba el accidentado y se usa en su rescate",
+   "ta": "Sí es EPI (excepción)."
+  },
+  {
+   "id": 299,
+   "t": "EPI",
+   "d": "normal",
+   "q": "En una intervención, ¿cuál de estos equipos NO es un EPI a efectos del RD 773/1997?",
+   "o": [
+    "El equipo respiratorio que el bombero coloca a la víctima.",
+    "El equipo respiratorio que lleva el propio bombero.",
+    "El traje con el que el bombero se protege durante el rescate."
+   ],
+   "c": 0,
+   "o4": "El casco que lleva el bombero durante el salvamento.",
+   "que": "Los equipos usados para <mark>proteger o rescatar a terceras personas</mark> en emergencias no son EPI.",
+   "porque": "El equipo respiratorio que el bombero lleva para sí <mark>sí es EPI</mark>; el que le pone a la persona rescatada <mark>no</mark>. Lo que usan los servicios de salvamento para <mark>autoprotegerse</mark> sí es EPI.",
+   "ojo": "Es el mismo tipo de equipo: lo que cambia es <mark>a quién protege</mark>.",
+   "rec": "Para mí → EPI. Para la víctima → no EPI.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 12",
+   "tq": "¿Es EPI el equipo respiratorio que se pone a la víctima?",
+   "ta": "No; el que lleva el bombero sí."
+  },
+  {
+   "id": 300,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Por qué el RD 773/1997 excluye los equipos de protección de militares y policías?",
+   "o": [
+    "Porque no protegen de riesgos laborales.",
+    "Porque no encajan en la definición de EPI.",
+    "Por sus condiciones de uso, que piden ley propia."
+   ],
+   "c": 2,
+   "o4": "Porque los paga el Estado y no el empresario.",
+   "que": "Se excluyen los equipos de militares, policías y personas de los servicios de mantenimiento del orden.",
+   "porque": "La guía lo aclara: <mark>no</mark> es porque no se ajusten a la definición, sino porque las <mark>condiciones particulares</mark> en que se usan pueden hacer necesaria una <mark>legislación específica</mark>.",
+   "ojo": "La opción tentadora («no son EPI por definición») es justo lo que la guía <mark>niega</mark>.",
+   "rec": "Militares y policías: son EPI por definición, pero van <mark>por su propia ley</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 12",
+   "tq": "¿Por qué se excluyen los equipos de militares y policías?",
+   "ta": "Por sus condiciones especiales: legislación específica."
+  },
+  {
+   "id": 301,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un detector portátil de gases que lleva el trabajador queda excluido del RD 773/1997 porque:",
+   "o": [
+    "No se lleva ni se sujeta.",
+    "Detecta el peligro, pero no hace de barrera.",
+    "Solo lo usan los servicios de emergencia."
+   ],
+   "c": 1,
+   "o4": "Necesita mantenimiento por personal especializado.",
+   "que": "Se excluyen los <mark>aparatos portátiles para detectar y señalizar</mark> riesgos: detectores de gases, dosímetros…",
+   "porque": "Su objetivo no es proteger como <mark>barrera o escudo</mark>, sino <mark>detectar y valorar</mark> el peligro para actuar, por ejemplo evacuando.",
+   "ojo": "Lo lleva encima, así que la tentación es pensar que es EPI: lo que falla es que <mark>no protege</mark> por sí mismo.",
+   "rec": "Detecta ≠ protege.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 13",
+   "tq": "¿Por qué un detector de gases no es EPI?",
+   "ta": "Detecta, pero no hace de barrera."
+  },
+  {
+   "id": 302,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según el RD 773/1997, ¿qué contiene el anexo II?",
+   "o": [
+    "Una lista de actividades y sectores que pueden requerir EPI.",
+    "Un esquema de los riesgos según las partes del cuerpo que se protegen.",
+    "Una lista no exhaustiva de tipos de EPI según los riesgos contra los que protegen."
+   ],
+   "c": 2,
+   "o4": "Un modelo de ficha de control de los EPI.",
+   "que": "El RD 773/1997 tiene tres anexos con listas orientativas.",
+   "porque": "El <mark>anexo II</mark> es la lista <mark>no exhaustiva de tipos de EPI</mark> en relación con los riesgos contra los que protegen: no aparecen todos los EPI que existen.",
+   "ojo": "Las otras dos opciones son los anexos <mark>vecinos</mark>: riesgos por partes del cuerpo y actividades o sectores.",
+   "rec": "Anexo II = tipos de EPI (lista abierta).",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 13",
+   "tq": "RD 773/1997, anexo II",
+   "ta": "Lista no exhaustiva de tipos de EPI por riesgo.",
+   "ex": 1
+  },
+  {
+   "id": 303,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un trabajador necesita plantillas ortopédicas y su puesto exige calzado de seguridad. ¿Qué debe darle gratis el empresario?",
+   "o": [
+    "Las plantillas y el calzado de seguridad.",
+    "El calzado de seguridad adaptado a las plantillas.",
+    "Solo el calzado de seguridad normal."
+   ],
+   "c": 1,
+   "o4": "Nada: las plantillas son un asunto personal.",
+   "que": "El empresario debe proporcionar <mark>gratuitamente</mark> los EPI y reponerlos cuando haga falta.",
+   "porque": "La plantilla ortopédica <mark>no es EPI</mark>, así que no está obligado a darla. Pero el <mark>calzado de protección adaptado</mark> a esas plantillas <mark>sí</mark> debe darlo como EPI.",
+   "ojo": "El coste del EPI no puede recaer <mark>nunca</mark> en el trabajador, aunque sea a medida o adaptado.",
+   "rec": "Plantilla: la pone él. Zapato adaptado: lo paga la empresa.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 14",
+   "tq": "Plantillas ortopédicas + calzado de seguridad: ¿qué paga la empresa?",
+   "ta": "El calzado adaptado (la plantilla no es EPI)."
+  },
+  {
+   "id": 304,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Cuál de estas NO es una razón de la guía para considerar el EPI el último recurso?",
+   "o": [
+    "Protege solo a la persona que lo lleva.",
+    "Es más caro de mantener que las medidas colectivas.",
+    "Puede limitar los movimientos o la visibilidad."
+   ],
+   "c": 1,
+   "o4": "Su nivel real de protección es difícil de evaluar.",
+   "que": "Primero van las <mark>medidas técnicas colectivas y organizativas</mark>; el EPI es la <mark>última barrera</mark> entre la persona y el riesgo.",
+   "porque": "Razones: protege <mark>solo a quien lo lleva</mark>; su protección máxima difícilmente se alcanza y es <mark>difícil de evaluar</mark>; y puede <mark>limitar</mark> movimientos o visibilidad.",
+   "ojo": "El coste no aparece entre las razones.",
+   "rec": "EPI último: solo a mí, protege menos de lo que dice y me limita.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 15",
+   "tq": "¿Por qué el EPI es el último recurso?",
+   "ta": "Protege a uno solo, difícil de evaluar y limita."
+  },
+  {
+   "id": 305,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Mientras se implantan unas medidas técnicas, se usa el EPI como medida transitoria. ¿En qué caso NO se permite?",
+   "o": [
+    "Cuando la medida técnica tardará meses.",
+    "Cuando la exposición es corta.",
+    "Ante un riesgo grave e inminente."
+   ],
+   "c": 2,
+   "o4": "En operaciones de mantenimiento.",
+   "que": "Si las medidas técnicas u organizativas tardan en implantarse, el EPI puede usarse <mark>mientras tanto</mark>.",
+   "porque": "Nunca vale como medida transitoria cuando el trabajador está ante un <mark>riesgo grave e inminente</mark>: ahí tiene derecho a paralizar su actividad y ponerse a salvo.",
+   "ojo": "Que la medida técnica tarde mucho <mark>no</mark> impide el EPI transitorio: es justo el caso para el que existe.",
+   "rec": "Riesgo grave e inminente → se para, no se «parchea» con EPI.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 16",
+   "tq": "EPI como medida transitoria: ¿cuándo nunca?",
+   "ta": "Ante riesgo grave e inminente."
+  },
+  {
+   "id": 306,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Hay que limpiar una sierra de disco con el protector retirado y la máquina totalmente desconectada. ¿Qué dice la guía?",
+   "o": [
+    "Hace falta EPI: el riesgo de corte con el disco sigue existiendo.",
+    "Hay que limpiarla con el protector puesto.",
+    "No hace falta EPI: al estar desconectada, no hay riesgo."
+   ],
+   "c": 0,
+   "o4": "Basta con señalizar la máquina.",
+   "que": "Limpieza, mantenimiento y reparación son situaciones típicas de uso de EPI porque a veces hay que <mark>anular temporalmente</mark> una protección.",
+   "porque": "Aunque la máquina esté desconectada, con el protector quitado el <mark>riesgo de corte con el disco</mark> sigue ahí.",
+   "ojo": "Desconectar quita el riesgo de que el disco gire, <mark>no el de cortarse</mark> con sus dientes.",
+   "rec": "Protector fuera → EPI dentro.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 16",
+   "tq": "Limpiar sierra de disco sin protector y desconectada",
+   "ta": "Sí hace falta EPI: sigue el riesgo de corte.",
+   "int": 1
+  },
+  {
+   "id": 307,
+   "t": "EPI",
+   "d": "difícil",
+   "q": "En un invernadero hay que aplicar fitosanitarios con un traje de nivel 3, pero el calor y la humedad lo hacen insoportable. ¿Qué propone la guía?",
+   "o": [
+    "Usar un traje de nivel 1 y descansos frecuentes.",
+    "Usar un traje de nivel 2, más llevadero.",
+    "Mantener el nivel 3 y limitar el tiempo de uso."
+   ],
+   "c": 2,
+   "o4": "Prescindir del traje y aplicar desde fuera.",
+   "que": "El EPI debe responder a las <mark>condiciones del lugar de trabajo</mark> (calor, humedad…) sin crear riesgos nuevos, como un golpe de calor.",
+   "porque": "En vez de bajar a un traje que <mark>no protege lo suficiente</mark>, hay que <mark>limitar estrictamente el tiempo de uso</mark> a lo que dure la aplicación, planificada en la franja horaria más favorable.",
+   "ojo": "La tentación es bajar de nivel para estar más cómodo: eso deja al trabajador <mark>sin la protección necesaria</mark>.",
+   "rec": "Si el EPI agobia, se acorta el tiempo, <mark>no la protección</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 16-17",
+   "tq": "Traje de nivel 3 insoportable por calor",
+   "ta": "Mismo nivel, limitando el tiempo de uso.",
+   "int": 1
+  },
+  {
+   "id": 308,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un trabajador es alérgico al látex. ¿Qué material de guante NO le sirve?",
+   "o": [
+    "Caucho natural.",
+    "Neopreno.",
+    "Nitrilo."
+   ],
+   "c": 0,
+   "o4": "PVC.",
+   "que": "Hay que tener en cuenta el <mark>estado de salud</mark> del trabajador al elegir el EPI.",
+   "porque": "Si es alérgico al látex, el guante debe ser de otro material: la guía cita <mark>PVC, nitrilo o neopreno</mark>.",
+   "ojo": "El <mark>látex es caucho natural</mark>: cambiarle el nombre no lo hace apto.",
+   "rec": "Alergia al látex → PVC, nitrilo o neopreno.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 17, 20",
+   "tq": "Alergia al látex: ¿qué guante?",
+   "ta": "PVC, nitrilo o neopreno."
+  },
+  {
+   "id": 309,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Hay que adaptar un EPI a un trabajador con una discapacidad física. ¿Quién puede hacer la modificación?",
+   "o": [
+    "El fabricante, o alguien con su aprobación.",
+    "El empresario, si mejora el ajuste.",
+    "El propio trabajador, con formación."
+   ],
+   "c": 0,
+   "o4": "El servicio de prevención.",
+   "que": "A veces hay que usar EPI <mark>personalizados o a medida</mark>, como un calzado con suela de elevación.",
+   "porque": "La modificación debe ser <mark>realizada o aprobada por el fabricante</mark>. Si no, la <mark>certificación</mark> del equipo original no cubre al modificado.",
+   "ojo": "Ni el empresario ni el usuario deben modificar un EPI de forma <mark>no prevista</mark> por el fabricante.",
+   "rec": "EPI modificado sin el fabricante = EPI sin certificar.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 18",
+   "tq": "¿Quién puede modificar un EPI para adaptarlo?",
+   "ta": "El fabricante o alguien con su aprobación."
+  },
+  {
+   "id": 310,
+   "t": "EPI",
+   "d": "difícil",
+   "q": "Sobre los pasos para seleccionar un EPI (identificar riesgos, analizar trabajo y trabajador, definir características, comparar con el mercado…), la guía dice que:",
+   "o": [
+    "Empiezan siempre por consultar a los trabajadores.",
+    "Deben seguirse en ese orden estricto.",
+    "No tienen un orden fijo: se retroalimentan entre sí."
+   ],
+   "c": 2,
+   "o4": "Terminan cuando se entrega el EPI.",
+   "que": "La ley obliga a analizar los riesgos, definir las características del EPI y compararlas con lo que hay en el mercado.",
+   "porque": "La guía aclara que esos pasos <mark>no tienen un orden fijo, riguroso y cerrado</mark>: se hacen con <mark>interacción y retroalimentación</mark> hasta lograr la protección necesaria.",
+   "ojo": "Parece una lista ordenada, pero no lo es. Y la consulta a los trabajadores puede estar <mark>en cualquier momento</mark>, no solo al principio.",
+   "rec": "Elegir EPI es un <mark>bucle</mark>, no una escalera.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 19",
+   "tq": "Pasos para seleccionar un EPI: ¿orden?",
+   "ta": "Sin orden fijo: se retroalimentan."
+  },
+  {
+   "id": 311,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un guante de protección química, ¿de qué categoría de EPI es?",
+   "o": [
+    "Categoría III.",
+    "Categoría II.",
+    "Categoría I."
+   ],
+   "c": 0,
+   "o4": "Categoría IV.",
+   "que": "El guante químico lleva el marcado <mark>CE seguido del número del organismo notificado</mark> que controla su fabricación.",
+   "porque": "Eso es propio de la <mark>categoría III</mark>, la de los riesgos más graves.",
+   "ojo": "La categoría I es para <mark>riesgos mínimos</mark>: no encaja con productos químicos.",
+   "rec": "Químicos = riesgo grave = la más alta: III.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 20",
+   "tq": "Guante de protección química: categoría",
+   "ta": "III.",
+   "cifra": 1
+  },
+  {
+   "id": 312,
+   "t": "EPI",
+   "d": "normal",
+   "q": "El guante de protección química del ejemplo de la guía va marcado con su pictograma junto a la norma:",
+   "o": [
+    "UNE-EN 374-1.",
+    "UNE-EN ISO 21420.",
+    "UNE-EN ISO 13688."
+   ],
+   "c": 0,
+   "o4": "UNE-EN 795.",
+   "que": "Los EPI certificados con normas armonizadas llevan <mark>pictogramas</mark> relacionados con la protección que dan.",
+   "porque": "Para la protección química de los guantes la norma es la <mark>UNE-EN 374-1</mark>.",
+   "ojo": "Las otras son normas reales de otros apartados: la 13688 es de <mark>ropa</mark> y la 21420 de requisitos <mark>generales</mark> de guantes.",
+   "rec": "Química en las manos: <mark>374</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 21",
+   "tq": "Norma del guante de protección química",
+   "ta": "UNE-EN 374-1.",
+   "cifra": 1
+  },
+  {
+   "id": 313,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según el art. 7.2 del RD 773/1997, el tiempo que debe llevarse un EPI se determina en función de varios factores. ¿Cuál NO es uno de ellos?",
+   "o": [
+    "Las prestaciones del propio equipo.",
+    "La gravedad del riesgo.",
+    "La antigüedad del trabajador en el puesto."
+   ],
+   "c": 2,
+   "o4": "El tiempo o frecuencia de exposición al riesgo.",
+   "que": "El art. 7.2 fija de qué depende el tiempo de uso del EPI.",
+   "porque": "Factores: <mark>gravedad del riesgo</mark>, <mark>tiempo o frecuencia de exposición</mark>, <mark>condiciones del puesto</mark>, <mark>prestaciones del equipo</mark> y <mark>riesgos adicionales</mark> de su uso que no se hayan podido evitar.",
+   "ojo": "Todo gira en torno al riesgo, el puesto y el equipo; nada sobre la <mark>persona</mark> en ese artículo.",
+   "rec": "Riesgo, exposición, puesto, equipo y riesgos del propio equipo.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 22",
+   "tq": "Art. 7.2: ¿de qué depende el tiempo de uso del EPI?",
+   "ta": "Riesgo, exposición, puesto, equipo y riesgos adicionales.",
+   "ex": 1
+  },
+  {
+   "id": 314,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Hay normativa que prohíbe que el trabajador se lleve a casa los EPI para lavarlos. ¿En qué caso, por ejemplo?",
+   "o": [
+    "Trabajos con exposición al ruido.",
+    "Trabajos con pantallas de visualización.",
+    "Trabajos con riesgo de exposición al amianto."
+   ],
+   "c": 2,
+   "o4": "Trabajos en altura.",
+   "que": "En general, el trabajador puede encargarse de la limpieza de sus EPI siguiendo las instrucciones del fabricante.",
+   "porque": "Pero hay normas que <mark>prohíben llevarlos a casa para lavarlos</mark>: exposición a <mark>agentes biológicos</mark>, a <mark>cancerígenos</mark> y al <mark>amianto</mark>.",
+   "ojo": "La lógica: no llevar la <mark>contaminación</mark> al domicilio.",
+   "rec": "Biológicos, cancerígenos, amianto: <mark>no se lavan en casa</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 23",
+   "tq": "¿Cuándo no se pueden lavar los EPI en casa?",
+   "ta": "Biológicos, cancerígenos y amianto."
+  },
+  {
+   "id": 315,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un EPI nuevo, sin usar y guardado como indica el fabricante, ha pasado su fecha de caducidad. ¿Qué se hace?",
+   "o": [
+    "Retirarlo para que no se use.",
+    "Usarlo tras una revisión visual.",
+    "Usarlo, porque no ha sufrido desgaste."
+   ],
+   "c": 0,
+   "o4": "Usarlo solo en prácticas.",
+   "que": "Si el fabricante indica <mark>fecha de caducidad</mark>, el EPI se retira cuando se supera, se haya usado o no.",
+   "porque": "Aunque esté <mark>sin usar y bien almacenado</mark>, hay que retirarlo para evitar su uso. Una vez en uso, la caducidad depende además del uso.",
+   "ojo": "Que «esté como nuevo» no cuenta: manda la <mark>fecha</mark>.",
+   "rec": "Caducado = fuera, aunque esté sin estrenar.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 23",
+   "tq": "EPI caducado sin usar",
+   "ta": "Se retira."
+  },
+  {
+   "id": 316,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según el art. 8.2 del RD 773/1997, las instrucciones del empresario sobre la forma correcta de usar y mantener los EPI se darán:",
+   "o": [
+    "Verbalmente, al entregar el equipo.",
+    "Obligatoriamente por escrito y firmadas.",
+    "Preferentemente por escrito."
+   ],
+   "c": 2,
+   "o4": "Solo con el folleto del fabricante.",
+   "que": "El empresario debe informar <mark>antes del uso</mark> de los riesgos de los que protege el EPI y de cuándo usarlo.",
+   "porque": "Además, debe dar instrucciones <mark>preferentemente por escrito</mark> sobre cómo usarlo y mantenerlo, comprensibles para los trabajadores.",
+   "ojo": "Ojo con el matiz: «preferentemente», <mark>no</mark> «obligatoriamente». Y no basta con entregar el folleto.",
+   "rec": "Instrucciones del EPI: <mark>preferentemente</mark> por escrito.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 25",
+   "tq": "Instrucciones de uso del EPI (art. 8.2)",
+   "ta": "Preferentemente por escrito.",
+   "ex": 1
+  },
+  {
+   "id": 317,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Si un trabajador incumple sus obligaciones de uso del EPI, el empresario puede tomar medidas disciplinarias según el Estatuto de los Trabajadores, artículo:",
+   "o": [
+    "54.1",
+    "23.1",
+    "58.1"
+   ],
+   "c": 2,
+   "o4": "41.1",
+   "que": "No usar el EPI cuando la empresa lo ha prescrito es un <mark>incumplimiento</mark> del trabajador.",
+   "porque": "Puede dar lugar a <mark>medidas disciplinarias</mark> conforme al <mark>art. 58.1 del Estatuto de los Trabajadores</mark> y al convenio colectivo.",
+   "ojo": "No confundir con los artículos de la <mark>LPRL</mark> que también cita la guía.",
+   "rec": "Sanción por no usar el EPI: ET <mark>58.1</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 26",
+   "tq": "Incumplir el uso del EPI: ¿qué artículo del ET?",
+   "ta": "Art. 58.1 (medidas disciplinarias).",
+   "cifra": 1
+  },
+  {
+   "id": 318,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un trabajador ve un daño en su EPI que, a su juicio, puede restarle eficacia. Según el art. 10, debe:",
+   "o": [
+    "Informar de inmediato a su superior jerárquico directo.",
+    "Seguir usándolo y avisar al terminar la jornada.",
+    "Repararlo él mismo con piezas del fabricante."
+   ],
+   "c": 0,
+   "o4": "Informar al servicio de prevención por escrito.",
+   "que": "El art. 10 recoge las <mark>obligaciones del trabajador</mark> con los EPI.",
+   "porque": "Debe <mark>informar de inmediato a su superior jerárquico directo</mark> de cualquier defecto, anomalía o daño que pueda suponer pérdida de eficacia, para sustituirlo y no quedarse sin protección.",
+   "ojo": "Es «de inmediato» y al superior <mark>directo</mark>, no al acabar ni a otro departamento.",
+   "rec": "EPI dañado → <mark>ya</mark> y a mi jefe directo.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 26",
+   "tq": "EPI dañado: ¿qué hace el trabajador?",
+   "ta": "Informar de inmediato a su superior directo."
+  },
+  {
+   "id": 319,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un equipo de protección respiratoria tiene el extremo de su manguera de suministro fuera de la atmósfera contaminada. ¿Qué tipo de equipo es?",
+   "o": [
+    "De línea de aire comprimido.",
+    "Filtrante.",
+    "De aire fresco."
+   ],
+   "c": 2,
+   "o4": "Autónomo.",
+   "que": "Los equipos <mark>aislantes</mark> dan aire de una fuente externa no contaminada. Según la fuente, son de aire fresco, de línea de aire comprimido o autónomos.",
+   "porque": "En los de <mark>aire fresco</mark>, el extremo de la manguera está en el <mark>exterior</mark> de la atmósfera contaminada. En los de línea, el aire viene de una fuente de aire comprimido; en los autónomos, de una botella que lleva el usuario.",
+   "ojo": "El filtrante <mark>no</mark> lleva manguera de aire: purifica el aire del ambiente.",
+   "rec": "Aire fresco = la manguera «respira» <mark>fuera</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 51",
+   "tq": "Equipo respiratorio con la manguera fuera de la zona contaminada",
+   "ta": "De aire fresco."
+  },
+  {
+   "id": 320,
+   "t": "EPI",
+   "d": "normal",
+   "q": "En un adaptador facial de dos filtros, uno de los filtros está saturado. ¿Qué indica la guía?",
+   "o": [
+    "Sustituirlos por un filtro de adaptador de uno.",
+    "Cambiar solo el saturado.",
+    "Cambiar los dos filtros a la vez."
+   ],
+   "c": 2,
+   "o4": "Cambiar el saturado y anotarlo en la ficha.",
+   "que": "Los adaptadores faciales pueden llevar <mark>uno o más filtros</mark>; ambos protegen bien si se siguen las instrucciones.",
+   "porque": "Al recambiar filtros en un adaptador de más de uno, hay que <mark>recambiar los dos al mismo tiempo</mark>. Y nunca se usan filtros de adaptador de varios filtros en uno de un solo filtro.",
+   "ojo": "Cambiar solo uno parece ahorrar, pero <mark>no es lo indicado</mark>.",
+   "rec": "Dos filtros: <mark>se cambian en pareja</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 51",
+   "tq": "Adaptador de dos filtros: ¿cómo se recambian?",
+   "ta": "Los dos a la vez."
+  },
+  {
+   "id": 321,
+   "t": "EPI",
+   "d": "normal",
+   "q": "En trabajos con riesgo de exposición al amianto, el uso de equipos de protección respiratoria nunca puede superar:",
+   "o": [
+    "6 horas diarias.",
+    "4 horas diarias.",
+    "2 horas diarias."
+   ],
+   "c": 1,
+   "o4": "8 horas diarias.",
+   "que": "Es el <mark>único caso</mark> en que está regulado un límite de tiempo de uso de un equipo respiratorio para una jornada: el decreto del amianto.",
+   "porque": "Su uso no puede ser permanente: se limita al mínimo necesario y <mark>nunca más de 4 horas diarias</mark>, con pausas según la carga física y el clima.",
+   "ojo": "En el resto de casos, el tiempo de uso lo fija el empresario según la <mark>evaluación de riesgos</mark>.",
+   "rec": "Amianto: <mark>4</mark> horas, media jornada como máximo.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 51-52",
+   "tq": "Amianto: máximo de uso del equipo respiratorio",
+   "ta": "4 horas diarias.",
+   "cifra": 1
+  },
+  {
+   "id": 322,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según el material, el calzado de protección completamente fabricado de caucho o material polimérico es de:",
+   "o": [
+    "Clasificación II.",
+    "Clasificación I.",
+    "Clasificación III."
+   ],
+   "c": 0,
+   "o4": "Clasificación A.",
+   "que": "Por el material, el calzado se divide en dos clasificaciones.",
+   "porque": "<mark>Clasificación I</mark>: cuero y otros materiales. <mark>Clasificación II</mark>: todo de <mark>caucho o polimérico</mark>, recomendado en general para trabajos con mucha humedad.",
+   "ojo": "No hay clasificación III por material.",
+   "rec": "I = cuero (el clásico, el primero). II = caucho/plástico.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 52",
+   "tq": "Calzado todo de caucho o polimérico",
+   "ta": "Clasificación II.",
+   "cifra": 1
+  },
+  {
+   "id": 323,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Qué tipo de calzado NO garantiza la protección de los dedos?",
+   "o": [
+    "El calzado de trabajo.",
+    "El calzado de protección.",
+    "El calzado de seguridad."
+   ],
+   "c": 0,
+   "o4": "El calzado para bomberos.",
+   "que": "Por la protección frente a impacto y compresión en la puntera se distinguen tres tipos.",
+   "porque": "El de <mark>seguridad</mark> y el de <mark>protección</mark> sí protegen los dedos (más el de seguridad). El de <mark>trabajo</mark> <mark>no garantiza</mark> esa protección.",
+   "ojo": "El nombre engaña: «calzado de protección» sí protege los dedos, solo que <mark>menos</mark> que el de seguridad.",
+   "rec": "Seguridad > protección > trabajo (sin puntera garantizada).",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 52",
+   "tq": "¿Qué calzado no garantiza la protección de los dedos?",
+   "ta": "El calzado de trabajo."
+  },
+  {
+   "id": 324,
+   "t": "EPI",
+   "d": "normal",
+   "q": "En una zona con riesgo de caída de objetos, un trabajador lleva una «gorra contra golpes». ¿Es adecuada?",
+   "o": [
+    "Sí, porque es un casco de uso industrial.",
+    "Sí, si está certificada como EPI.",
+    "No: solo protege de golpes contra objetos duros y fijos."
+   ],
+   "c": 2,
+   "o4": "Sí, si lleva barboquejo.",
+   "que": "Los <mark>cascos contra golpes</mark> («gorras contra golpes») protegen frente a <mark>choques de la cabeza contra objetos duros y fijos</mark>.",
+   "porque": "<mark>No</mark> son adecuados contra la caída de objetos ni contra impactos de elementos en movimiento: ahí hace falta un <mark>casco de seguridad</mark>.",
+   "ojo": "Que sea un EPI certificado no lo hace válido para un riesgo para el que <mark>no está diseñado</mark>.",
+   "rec": "Gorra: yo choco con algo. Casco: algo me cae encima.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 53",
+   "tq": "¿Sirve la gorra contra golpes si caen objetos?",
+   "ta": "No: hace falta casco de seguridad."
+  },
+  {
+   "id": 325,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Los protectores oculares se clasifican en tres clases ópticas. ¿Cuál ofrece mejor calidad de visión?",
+   "o": [
+    "La clase 1.",
+    "La clase 3.",
+    "La clase 2."
+   ],
+   "c": 0,
+   "o4": "Las tres son iguales.",
+   "que": "La <mark>clase óptica</mark> mide la calidad de visión del ocular, con tres niveles: 1, 2 y 3.",
+   "porque": "La <mark>clase 1</mark> es la mejor. Cuanto peor es la clase, más incómodo resulta: un protector de <mark>clase 3</mark> no debe usarse durante largos periodos.",
+   "ojo": "No es como un nivel de protección en el que «más es mejor»: aquí el <mark>número bajo gana</mark>.",
+   "rec": "Clase óptica 1 = primera calidad.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 54",
+   "tq": "Clase óptica con mejor visión",
+   "ta": "La 1 (la 3 no para periodos largos).",
+   "cifra": 1
+  },
+  {
+   "id": 326,
+   "t": "EPI",
+   "d": "normal",
+   "q": "En un sistema anticaídas, el sistema de conexión está diseñado para limitar la fuerza sobre el cuerpo por debajo de:",
+   "o": [
+    "12 kN.",
+    "4 kN.",
+    "6 kN."
+   ],
+   "c": 2,
+   "o4": "10 kN.",
+   "que": "El <mark>sistema anticaídas</mark> no impide la caída libre: la <mark>detiene</mark> y limita la fuerza de impacto.",
+   "porque": "Su sistema de conexión absorbe energía (absorbedores, anticaídas retráctiles o deslizantes) para limitar la fuerza sobre el cuerpo por <mark>debajo de 6 kN</mark>.",
+   "ojo": "No confundir con la resistencia de otros elementos del sistema: aquí se habla de la fuerza que llega al <mark>cuerpo</mark>.",
+   "rec": "Anticaídas: el cuerpo nunca debe notar <mark>6 kN</mark> o más.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 56",
+   "tq": "Fuerza máxima sobre el cuerpo en un sistema anticaídas",
+   "ta": "Menos de 6 kN.",
+   "cifra": 1
+  },
+  {
+   "id": 327,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un trabajador con arnés anticaídas puede anclarse en cualquiera de los tres puntos del dibujo. ¿Cuál recomienda la guía siempre que sea posible?",
+   "o": [
+    "El punto 2, a la altura de la cintura.",
+    "El punto 3, a la altura de los pies.",
+    "El punto 1, por encima del trabajador."
+   ],
+   "c": 2,
+   "o4": "Cualquiera de los tres, si hay absorbedor de energía.",
+   "que": "Siempre que sea posible, hay que trabajar con un <mark>factor de caída igual a 0</mark>.",
+   "porque": "Se consigue situando el punto de anclaje <mark>por encima del trabajador</mark>: así se minimizan el riesgo de caída, la <mark>altura de caída</mark> y el <mark>efecto péndulo</mark>.",
+   "ojo": "Cuanto más bajo el anclaje, <mark>más larga</mark> y violenta sería la caída antes de que el sistema actúe.",
+   "rec": "Anclaje <mark>arriba</mark> = factor de caída 0.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 56",
+   "tq": "¿Dónde conviene situar el anclaje del anticaídas?",
+   "ta": "Por encima del trabajador (factor de caída 0).",
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 220 200\" role=\"img\" aria-label=\"Trabajador con arnés junto a una estructura con tres posibles puntos de anclaje: 1 por encima de su cabeza, 2 a la altura de la cintura y 3 a la altura de los pies\"><rect x=\"150\" y=\"10\" width=\"14\" height=\"185\" fill=\"#9aa4ad\"/><line x1=\"10\" y1=\"195\" x2=\"210\" y2=\"195\" stroke=\"#666\" stroke-width=\"2\"/><circle cx=\"95\" cy=\"62\" r=\"11\" fill=\"#f2c80f\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"95\" y1=\"73\" x2=\"95\" y2=\"130\" stroke=\"#333\" stroke-width=\"4\"/><line x1=\"95\" y1=\"85\" x2=\"125\" y2=\"105\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"95\" y1=\"85\" x2=\"70\" y2=\"108\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"95\" y1=\"130\" x2=\"80\" y2=\"190\" stroke=\"#333\" stroke-width=\"3\"/><line x1=\"95\" y1=\"130\" x2=\"110\" y2=\"190\" stroke=\"#333\" stroke-width=\"3\"/><rect x=\"86\" y=\"88\" width=\"18\" height=\"30\" fill=\"none\" stroke=\"#e05a00\" stroke-width=\"2.5\"/><g font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#fff\"><circle cx=\"157\" cy=\"30\" r=\"10\" fill=\"#1f6fb2\"/><text x=\"152\" y=\"35\">1</text><circle cx=\"157\" cy=\"110\" r=\"10\" fill=\"#1f6fb2\"/><text x=\"152\" y=\"115\">2</text><circle cx=\"157\" cy=\"185\" r=\"10\" fill=\"#1f6fb2\"/><text x=\"152\" y=\"190\">3</text></g><path d=\"M97 88 Q130 40 147 30\" fill=\"none\" stroke=\"#1f6fb2\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/></svg>"
+  },
+  {
+   "id": 328,
+   "t": "EPI",
+   "d": "difícil",
+   "q": "Según la nota de la guía sobre la norma EN 795, ¿qué tipos de dispositivos de anclaje SÍ se consideran EPI según el Reglamento (UE) 2016/425?",
+   "o": [
+    "Todos los tipos de la norma.",
+    "Los tipos B y E.",
+    "Los tipos A, C y D."
+   ],
+   "c": 1,
+   "o4": "Solo el tipo A.",
+   "que": "La norma EN 795 trata dispositivos de anclaje para <mark>un único usuario</mark>, previstos como <mark>desmontables</mark> de la estructura.",
+   "porque": "Según el Reglamento 2016/425, <mark>solo los tipos B y E</mark> son EPI; los <mark>A, C y D no</mark>.",
+   "ojo": "La trampa es pensar que todo anclaje de la norma de EPI es EPI: <mark>la mayoría no</mark>.",
+   "rec": "EPI en la EN 795: <mark>B y E</mark> («Bien Encajados» en la mochila: portátiles).",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 56",
+   "tq": "EN 795: ¿qué tipos de anclaje son EPI?",
+   "ta": "B y E (A, C y D no).",
+   "cifra": 1
+  },
+  {
+   "id": 329,
+   "t": "EPI",
+   "d": "normal",
+   "q": "En los equipos de protección contra caídas, ¿qué periodicidad mínima de revisión periódica recomienda en general la guía?",
+   "o": [
+    "Anual.",
+    "Cada dos años.",
+    "Semestral."
+   ],
+   "c": 0,
+   "o4": "Trimestral.",
+   "que": "Los equipos contra caídas necesitan <mark>revisión antes de cada uso</mark> y <mark>revisiones periódicas</mark> según el fabricante.",
+   "porque": "La guía recomienda, en general, una periodicidad <mark>mínima anual</mark>, hecha por personal competente, y conservar una ficha con su historial.",
+   "ojo": "Es un <mark>mínimo</mark> general: el fabricante puede pedir más.",
+   "rec": "Arnés: <mark>revisión cada año</mark>, como la ITV.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 57",
+   "tq": "Revisión periódica de equipos anticaídas",
+   "ta": "Mínimo anual.",
+   "cifra": 1
+  },
+  {
+   "id": 330,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un arnés anticaídas ha detenido una caída y, a simple vista, no tiene daños. ¿Qué se hace?",
+   "o": [
+    "Desecharlo.",
+    "Enviarlo al fabricante para que lo repare.",
+    "Seguir usándolo tras revisarlo."
+   ],
+   "c": 0,
+   "o4": "Usarlo solo en formación.",
+   "que": "En los equipos contra caídas, ante cualquier duda sobre su seguridad, se desechan.",
+   "porque": "La guía es clara: si el equipo <mark>ha sido utilizado para detener una caída</mark>, debe ser <mark>desechado</mark>. Tampoco se deben hacer modificaciones.",
+   "ojo": "Que no se vean daños no importa: puede tener daños <mark>internos</mark>.",
+   "rec": "Una caída, <mark>un arnés</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 57",
+   "tq": "Equipo anticaídas que ha detenido una caída",
+   "ta": "Se desecha."
+  }
+ ],
+ "glosario": [
+  {
+   "t": "Equipo de protección individual (EPI)",
+   "a": [
+    "EPI",
+    "equipo de protección individual",
+    "equipos de protección individual"
+   ],
+   "d": "Equipo que el trabajador lleva o sujeta para protegerse a sí mismo de uno o varios riesgos (RD 773/1997).",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. p. 10",
+   "solo": 1
+  },
+  {
+   "t": "Riesgo grave e inminente",
+   "a": [
+    "riesgo grave e inminente"
+   ],
+   "d": "Riesgo con alta probabilidad de materializarse pronto y causar daño grave. El trabajador puede parar su actividad y ponerse a salvo.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. p. 16",
+   "solo": 1
+  },
+  {
+   "t": "Desteridad",
+   "a": [
+    "desteridad"
+   ],
+   "d": "Sinónimo de destreza: capacidad de manipular para hacer una tarea. Se mide en guantes.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. p. 20",
+   "solo": 1
+  },
+  {
+   "t": "Categoría III (EPI)",
+   "a": [
+    "categoría III"
+   ],
+   "d": "Categoría de los EPI para los riesgos más graves: marcado CE seguido del número del organismo notificado.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. p. 20",
+   "solo": 1
+  },
+  {
+   "t": "Equipo aislante (respiratorio)",
+   "a": [
+    "equipo aislante",
+    "equipos aislantes",
+    "aire fresco"
+   ],
+   "d": "Equipo respiratorio que da aire de una fuente externa no contaminada: de aire fresco, de línea de aire comprimido o autónomo.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. p. 51",
+   "solo": 1
+  },
+  {
+   "t": "Equipo filtrante",
+   "a": [
+    "filtrante",
+    "equipos filtrantes"
+   ],
+   "d": "Equipo respiratorio que purifica el aire del ambiente con filtros. No sirve si puede faltar oxígeno.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. p. 51",
+   "solo": 1
+  },
+  {
+   "t": "Gorra contra golpes",
+   "a": [
+    "gorra contra golpes",
+    "casco contra golpes"
+   ],
+   "d": "Casco ligero contra choques de la cabeza con objetos duros y fijos. No sirve contra caída de objetos.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. p. 53",
+   "solo": 1
+  },
+  {
+   "t": "Clase óptica",
+   "a": [
+    "clase óptica",
+    "clases ópticas"
+   ],
+   "d": "Calidad de visión de un protector ocular: 1 (mejor), 2 o 3.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. p. 54",
+   "solo": 1
+  },
+  {
+   "t": "Sistema anticaídas",
+   "a": [
+    "sistema anticaídas",
+    "arnés anticaídas",
+    "anticaídas"
+   ],
+   "d": "Sistema que detiene una caída libre y limita la fuerza sobre el cuerpo. Solo admite arnés anticaídas.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. p. 56",
+   "solo": 1
+  },
+  {
+   "t": "Calzado de trabajo",
+   "a": [
+    "calzado de trabajo",
+    "calzado de seguridad",
+    "calzado de protección"
+   ],
+   "d": "Calzado sin protección garantizada de los dedos (el de seguridad y el de protección sí la tienen).",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. p. 52",
+   "solo": 1
+  }
+ ]
+}
