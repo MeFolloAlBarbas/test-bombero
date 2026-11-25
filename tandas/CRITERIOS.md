@@ -100,6 +100,7 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
 - **Un manual por tarea** (dos si son cortos), leído de corrido. Se elige con `python3 scripts/stock.py`: el tema con
   **menos preguntas sin usar** (no están en plan.json) sumando el lote de hoy; primero los manuales sin ninguna pregunta.
   Saltar los manuales que no se pueden leer como texto (escaneados) y apuntarlo en cobertura.json.
+- **Manual terminado** (todas sus páginas convertidas en preguntas): poner en su nota de cobertura.json «TERMINADO (<fecha>)… El usuario puede quitarlo del proyecto» y decirlo en el aviso de la última tarea de la noche. El proyecto está lleno (límite de texto superado) y el usuario va quitando los manuales terminados para hacer sitio.
 - Leer con `project_read` el manual y avanzar por páginas; `project_search` solo para comprobar datos sueltos.
 
 ## Calidad (cada tarea)
