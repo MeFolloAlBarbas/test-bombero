@@ -381,7 +381,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795621214';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795624146';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -450,8 +450,8 @@ function planUpTo(k){
   return PLAN[k]||[];
 }
 let FIXED={};
-function slotQ(k,h){if(k>='2026-11-21'){const ids=FIXED[k];return ids?byId(ids[h-9])||null:null}return planUpTo(k)[h-9]||null}
-const hasDay=k=>k<'2026-11-21'||!!FIXED[k];
+function slotQ(k,h){const ids=FIXED[k];return ids?byId(ids[h-9])||null:null}  // todos los días salen de plan.json (el 20/11 también, desde el 25/11: antes se calculaba con el banco y cambiaba al crecer)
+const hasDay=k=>!!FIXED[k];
 function slot(k,h){const d=(S.daily[k]||{})[h];return d?{q:byId(d.id)||slotQ(k,h),a:d.a,done:true}:{q:slotQ(k,h),a:undefined,done:false}}
 
 /* almacenamiento: navegador + cuenta (db) */
