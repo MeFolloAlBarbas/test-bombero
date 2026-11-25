@@ -2237,6 +2237,769 @@
    "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 17",
    "tq": "Grupo de presión de caudal variable",
    "ta": "Variador de frecuencia en las bombas."
+  },
+  {
+   "id": 612,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿Qué botella de oxígeno lleva el equipo portátil de oxicorte con Chemtane?",
+   "o": [
+    "De 5 litros a 300 bar.",
+    "De 5 litros a 200 bar.",
+    "De 20 litros a 200 bar."
+   ],
+   "c": 1,
+   "o4": "De 2 litros a 200 bar.",
+   "que": "La botella de oxígeno del oxicorte es pequeña: <mark>5 litros a 200 bar</mark>.",
+   "porque": "Es un equipo portátil: la botella tiene que poder ir en el carro de transporte.",
+   "ojo": "La de 20 litros a 200 bar es la de la lanza térmica, que gasta mucho más oxígeno.",
+   "rec": "Oxicorte <mark>5</mark> litros, lanza <mark>20</mark>: la lanza «traga» cuatro veces más.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 2",
+   "tq": "Botella de oxígeno del oxicorte",
+   "ta": "5 litros a 200 bar.",
+   "cifra": 1
+  },
+  {
+   "id": 613,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿A qué presión está la botella de Chemtane del equipo de oxicorte?",
+   "o": [
+    "De 6 a 8 bar, según la temperatura ambiente.",
+    "Unos 200 bar, sea cual sea la temperatura.",
+    "De 2 a 5 bar, según el espesor a cortar."
+   ],
+   "c": 0,
+   "o4": "Unos 0,5 bar.",
+   "que": "La botella de Chemtane está a <mark>6-8 bar</mark>, y la presión depende de la <mark>temperatura ambiente</mark>.",
+   "porque": "Es un gas licuado: su presión en la botella sube o baja con la temperatura, no con lo que haya dentro.",
+   "ojo": "2-5 bar es la presión de trabajo del oxígeno; 200 bar, la de su botella.",
+   "rec": "Chemtane como el butano de casa: <mark>pocos bares</mark> y según el calor.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 2",
+   "tq": "Presión de la botella de Chemtane",
+   "ta": "6-8 bar, según la temperatura ambiente.",
+   "cifra": 1
+  },
+  {
+   "id": 614,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "En el equipo de oxicorte, ¿de qué color son las liras de cada gas?",
+   "o": [
+    "Chemtane rojo y oxígeno verde.",
+    "Chemtane azul y oxígeno naranja.",
+    "Chemtane naranja y oxígeno azul."
+   ],
+   "c": 2,
+   "o4": "Las dos negras, con racores distintos.",
+   "que": "Las liras (mangueras) son <mark>naranja para el Chemtane</mark> y <mark>azul para el oxígeno</mark>.",
+   "porque": "El color evita conectar cada gas en el lado equivocado.",
+   "ojo": "En el soplete, la llave del Chemtane es roja: la lira es naranja.",
+   "rec": "<mark>Azul</mark> como el aire que respiras: el oxígeno.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 2",
+   "tq": "Colores de las liras del oxicorte",
+   "ta": "Chemtane naranja · oxígeno azul."
+  },
+  {
+   "id": 615,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Hay que alargar la instalación de oxicorte uniendo varias liras. ¿Cada cuánto se interpone una válvula antirretroceso?",
+   "o": [
+    "Cada 20 metros.",
+    "Cada 10 metros.",
+    "Cada 5 metros."
+   ],
+   "c": 1,
+   "o4": "Solo una, junto al soplete.",
+   "que": "Al unir liras hay que poner <mark>válvulas antirretroceso entre ellas cada 10 metros</mark>.",
+   "porque": "Así, si la llama retrocede, se para antes de llegar a las botellas aunque la instalación sea larga.",
+   "ojo": "Cada lira del equipo portátil mide 5 m, pero la válvula va cada 10 m.",
+   "rec": "<mark>10</mark> metros: una válvula cada dos liras.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 2",
+   "tq": "Liras empalmadas: válvula antirretroceso",
+   "ta": "Cada 10 m.",
+   "cifra": 1
+  },
+  {
+   "id": 616,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿Qué hace la válvula antirretroceso del equipo de oxicorte?",
+   "o": [
+    "Deja pasar el gas solo hacia la salida e impide que la llama vuelva a las botellas.",
+    "Corta el paso de gas en cuanto la llama del soplete se apaga.",
+    "Reduce la presión de la botella hasta la presión de trabajo."
+   ],
+   "c": 0,
+   "o4": "Mezcla el Chemtane y el oxígeno antes del soplete.",
+   "que": "La válvula antirretroceso solo deja pasar el gas <mark>en sentido de salida</mark>, de modo que la llama <mark>no puede retroceder hasta las botellas</mark>.",
+   "porque": "Es un dispositivo de seguridad: va en las conducciones de combustible y oxígeno y en el soplete.",
+   "ojo": "Bajar la presión es cosa del regulador, no de esta válvula.",
+   "rec": "Antirretroceso = <mark>calle de sentido único</mark> para el gas.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 2",
+   "tq": "Válvula antirretroceso",
+   "ta": "Gas solo hacia la salida: la llama no vuelve a las botellas."
+  },
+  {
+   "id": 617,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "En el equipo de oxicorte, ¿para qué sirve el escariador?",
+   "o": [
+    "Para encender la llama del soplete.",
+    "Para apretar el conjunto de boquilla.",
+    "Para limpiar las boquillas."
+   ],
+   "c": 2,
+   "o4": "Para medir la presión de trabajo.",
+   "que": "El <mark>escariador</mark> se usa para <mark>limpiar las boquillas</mark> del soplete.",
+   "porque": "Una boquilla sucia deforma el dardo y empeora el corte.",
+   "ojo": "Para encender se usa el chisquero, y la boquilla se aprieta con su tuerca.",
+   "rec": "<mark>Escariar</mark> = rascar por dentro: limpiar el agujero.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 2",
+   "tq": "Escariador del oxicorte",
+   "ta": "Limpia las boquillas."
+  },
+  {
+   "id": 618,
+   "t": "Corte y soldadura",
+   "d": "difícil",
+   "q": "¿Qué nivel mínimo de cristal inactínico usamos con el oxicorte? ¿Y con la lanza térmica?",
+   "o": [
+    "Ambos, nivel 5.",
+    "Oxicorte, nivel 5; lanza térmica, nivel 6.",
+    "Oxicorte, nivel 6; lanza térmica, nivel 5."
+   ],
+   "c": 1,
+   "o4": "Ambos, nivel 6.",
+   "que": "Con el <mark>oxicorte</mark>, gafas inactínicas de <mark>nivel 5 como mínimo</mark>; la pantalla de la <mark>lanza térmica</mark> lleva cristal <mark>nivel 6</mark>.",
+   "porque": "La lanza trabaja a más temperatura que el oxicorte y su luz es más intensa: necesita un filtro más oscuro.",
+   "ojo": "Lo tentador es pensar que el número es el mismo: la lanza sube uno.",
+   "rec": "Más calor, más número: <mark>oxi 5, lanza 6</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 3",
+   "tq": "Cristal inactínico: oxicorte / lanza",
+   "ta": "Oxicorte nivel 5 mínimo · lanza nivel 6.",
+   "cifra": 1
+  },
+  {
+   "id": 619,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Al cortar con oxicorte una pieza galvanizada sale un humo verde amarillento. ¿De qué es?",
+   "o": [
+    "De óxido de cinc: el cinc del recubrimiento entra en combustión.",
+    "De óxido de hierro: el acero se oxida con el chorro de oxígeno.",
+    "Del Chemtane sin quemar, por exceso de combustible."
+   ],
+   "c": 0,
+   "o4": "De cloro liberado por la pintura del recubrimiento.",
+   "que": "Al fundir el galvanizado, el <mark>cinc entra en combustión</mark> (fuego de metales) y da <mark>vapores verde amarillentos de óxido de cinc</mark>.",
+   "porque": "Pasa con todos los métodos de corte por fusión: oxicorte, plasma y lanza térmica.",
+   "ojo": "Inhalados pueden intoxicar: no es un humo inofensivo del propio corte.",
+   "rec": "Galvanizado = <mark>Zn</mark>: humo «verde Zinc».",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 3",
+   "tq": "Humo verde amarillento al cortar galvanizado",
+   "ta": "Óxido de cinc (el cinc arde)."
+  },
+  {
+   "id": 620,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Hay que cortar con oxicorte un quitamiedos de acero galvanizado. ¿Qué se recomienda hacer antes?",
+   "o": [
+    "Calentar la zona con la llama hasta que el cinc se evapore.",
+    "Mojar la zona con agua para que el cinc no se queme.",
+    "Desbastar con una amoladora el galvanizado de la zona de corte."
+   ],
+   "c": 2,
+   "o4": "Nada: el oxicorte no funde el galvanizado.",
+   "que": "Se recomienda un <mark>desbastado previo con amoladora</mark> para quitar el galvanizado del área de corte.",
+   "porque": "Así se reduce mucho la exposición a los vapores de óxido de cinc, aunque <mark>nunca por completo</mark>.",
+   "ojo": "Aun desbastado conviene cortar ventilado o con protección respiratoria.",
+   "rec": "Antes de cortar, <mark>pelar</mark> el cinc.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 3",
+   "tq": "Cortar galvanizado con oxicorte: antes…",
+   "ta": "Desbastar el galvanizado con amoladora.",
+   "int": 1
+  },
+  {
+   "id": 621,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿En cuál de estos metales NO es recomendable usar el oxicorte?",
+   "o": [
+    "Acero al carbono.",
+    "Aluminio.",
+    "Hierro."
+   ],
+   "c": 1,
+   "o4": "Acero dulce.",
+   "que": "El oxicorte no se recomienda en metales de <mark>punto de fusión bajo</mark> como el <mark>latón, el aluminio o el cobre</mark>.",
+   "porque": "Se funden antes de poder oxidarse, y el oxicorte corta oxidando el metal con el chorro de oxígeno.",
+   "ojo": "El hierro y los aceros al carbono son justo los más indicados.",
+   "rec": "<mark>Al, Cu y latón</mark>: se derriten antes de oxidarse.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 3",
+   "tq": "Oxicorte: metales no recomendables",
+   "ta": "Latón, aluminio, cobre (funden antes de oxidarse).",
+   "ex": 1
+  },
+  {
+   "id": 622,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Con el oxicorte, ¿cómo se inclina el soplete según el espesor de la chapa?",
+   "o": [
+    "Unos 45° hasta 6 mm y cada vez más perpendicular al aumentar el espesor.",
+    "Perpendicular hasta 6 mm y cada vez más inclinado al aumentar el espesor.",
+    "Siempre a 45°, sea cual sea el espesor de la chapa."
+   ],
+   "c": 0,
+   "o4": "Unos 45° hasta 25 mm y perpendicular a partir de ahí.",
+   "que": "La referencia es <mark>45° hasta espesores de 6 mm</mark>; a más espesor, el dardo se pone <mark>cada vez más perpendicular</mark>.",
+   "porque": "Inclinado en la dirección del corte, va calentando el material al que se acerca; en chapa gruesa hay que llegar al fondo.",
+   "ojo": "Los 45° son la referencia, pero no valen para todos los espesores.",
+   "rec": "<mark>6 mm</mark>: hasta ahí, 45°.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 5",
+   "tq": "Inclinación del soplete de oxicorte",
+   "ta": "45° hasta 6 mm; más perpendicular con más espesor.",
+   "cifra": 1
+  },
+  {
+   "id": 623,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "En el proceso de oxicorte, ¿qué se llama «cebado»?",
+   "o": [
+    "Encender la llama del soplete con el chisquero.",
+    "Calentar la pieza hasta que se ponga rojo cereza.",
+    "Atravesar la totalidad del espesor a cortar."
+   ],
+   "c": 2,
+   "o4": "Purgar el gas de las liras al terminar.",
+   "que": "El <mark>cebado</mark> es haber <mark>atravesado todo el espesor</mark> a cortar.",
+   "porque": "A partir de ahí ya se avanza en la dirección del corte a velocidad constante.",
+   "ojo": "El rojo cereza es la señal para abrir el chorro de oxígeno, antes del cebado.",
+   "rec": "Cebado = <mark>ya ha «calado»</mark> la pieza.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 5",
+   "tq": "Cebado (oxicorte)",
+   "ta": "Atravesar todo el espesor a cortar."
+  },
+  {
+   "id": 624,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Durante el avance del oxicorte, ¿a qué distancia se mantiene el dardo de la pieza?",
+   "o": [
+    "Entre 0,5 y 1 mm.",
+    "Entre 2 y 5 mm.",
+    "Entre 10 y 15 mm."
+   ],
+   "c": 1,
+   "o4": "Pegado a la pieza, sin separación.",
+   "que": "Se avanza con una distancia entre dardo y pieza <mark>del orden de 2 a 5 mm</mark>.",
+   "porque": "Y a velocidad constante, más lenta cuanto mayor es el espesor.",
+   "ojo": "No confundir con la presión del oxígeno, también «de 2 a 5» pero en bar.",
+   "rec": "Oxígeno <mark>2-5 bar</mark> y dardo a <mark>2-5 mm</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 5",
+   "tq": "Distancia dardo-pieza en el oxicorte",
+   "ta": "2 a 5 mm.",
+   "cifra": 1
+  },
+  {
+   "id": 625,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Al apagar el oxicorte, después de cerrar las botellas se abren las válvulas del soplete. ¿Para qué?",
+   "o": [
+    "Para purgar el gas que queda en liras y soplete.",
+    "Para enfriar la boquilla con el gas sobrante.",
+    "Para comprobar que las antirretroceso funcionan."
+   ],
+   "c": 0,
+   "o4": "Para igualar la presión de las dos botellas.",
+   "que": "Con las botellas cerradas, se abren las válvulas del soplete para <mark>purgar el gas</mark> que queda en la instalación.",
+   "porque": "Después se sueltan los reguladores y se cierran las válvulas del soplete: el equipo queda listo y sin presión.",
+   "ojo": "No es una prueba de las válvulas: es vaciar lo que queda.",
+   "rec": "Cerrar botella, <mark>vaciar manguera</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 5",
+   "tq": "Apagado del oxicorte: abrir el soplete tras cerrar botellas",
+   "ta": "Para purgar el gas que queda."
+  },
+  {
+   "id": 626,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿Qué temperatura alcanza la punta de la lanza térmica?",
+   "o": [
+    "Entre 15.000 y 20.000 °C.",
+    "Entre 3.000 y 3.500 °C.",
+    "Entre 4.000 y 5.000 °C."
+   ],
+   "c": 2,
+   "o4": "Unos 900 °C.",
+   "que": "La lanza térmica alcanza en la punta <mark>entre 4.000 y 5.000 °C</mark>.",
+   "porque": "La reacción exotérmica del hierro y el magnesio con el oxígeno da esas temperaturas, con las que funde casi cualquier material.",
+   "ojo": "3.000-3.500 °C es el oxicorte y 15.000-20.000 °C el plasma.",
+   "rec": "Orden de calor: <mark>oxicorte 3 mil, lanza 4-5 mil, plasma 15-20 mil</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 6",
+   "tq": "Temperatura de la lanza térmica",
+   "ta": "4.000-5.000 °C.",
+   "cifra": 1
+  },
+  {
+   "id": 627,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Según el manual, ¿cuánto tarda la lanza térmica en atravesar unos 250 mm de hormigón?",
+   "o": [
+    "Unos 25 segundos.",
+    "Unos 2,5 minutos.",
+    "Unos 10 minutos."
+   ],
+   "c": 1,
+   "o4": "Unos 5 segundos.",
+   "que": "Como referencia, la lanza atraviesa <mark>unos 250 mm de hormigón en 2,5 minutos</mark>.",
+   "porque": "El hormigón no arde como el acero: hay que fundirlo, y cuesta más tiempo.",
+   "ojo": "Los 5 segundos son para 25 mm de acero.",
+   "rec": "Hormigón: <mark>250 mm en 2,5 min</mark> (el mismo «25»).",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 6",
+   "tq": "Lanza térmica en hormigón",
+   "ta": "250 mm en 2,5 min.",
+   "cifra": 1
+  },
+  {
+   "id": 628,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿Se puede usar la lanza térmica sumergida en el agua?",
+   "o": [
+    "Sí, tanto en agua dulce como salada.",
+    "No: el agua apaga la reacción.",
+    "Solo en agua dulce, nunca en salada."
+   ],
+   "c": 0,
+   "o4": "Solo a menos de 1 m de profundidad.",
+   "que": "Gracias a sus altas temperaturas, la lanza <mark>se puede usar sumergida en agua dulce y en salada</mark>.",
+   "porque": "La combustión la mantiene el oxígeno que circula por dentro del tubo, no el aire de fuera.",
+   "ojo": "Parece lógico que el agua la apague, pero no es así.",
+   "rec": "Lanza = <mark>anfibia</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 6",
+   "tq": "Lanza térmica bajo el agua",
+   "ta": "Sí, en agua dulce y salada."
+  },
+  {
+   "id": 629,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿Qué requisito debe cumplir el traje aluminizado de la lanza térmica frente al metal fundido?",
+   "o": [
+    "Hacen falta al menos 40 gotas para subir su temperatura 15 ºC.",
+    "Hacen falta al menos 5 gotas para subir su temperatura 40 ºC.",
+    "Hacen falta al menos 15 gotas para subir su temperatura 40 ºC."
+   ],
+   "c": 2,
+   "o4": "Ninguna gota debe subir su temperatura.",
+   "que": "Se deben necesitar <mark>al menos 15 gotas de metal fundido para elevar su temperatura 40 ºC</mark>.",
+   "porque": "La lanza lanza proyecciones a muy alta temperatura: el traje debe aguantarlas sin pasar el calor.",
+   "ojo": "Es fácil cruzar las dos cifras: 15 gotas, 40 grados.",
+   "rec": "<mark>15 gotas → 40 grados</mark>: la cifra pequeña son las gotas.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 6",
+   "tq": "Traje aluminizado: gotas de metal",
+   "ta": "≥ 15 gotas para subir 40 ºC.",
+   "cifra": 1
+  },
+  {
+   "id": 630,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿Qué varillas de lanza térmica usa el Ayuntamiento de Madrid?",
+   "o": [
+    "De 1/4\" y de 3/8\", ambas de 90 cm.",
+    "De 1/4\" y 50 cm, y de 3/8\" y 90 cm.",
+    "De 1/4\" y 90 cm, y de 3/8\" y 50 cm."
+   ],
+   "c": 1,
+   "o4": "De 1/2\" y 1 m.",
+   "que": "Se usan varillas de <mark>1/4\" de 50 cm</mark> y de <mark>3/8\" de 90 cm</mark>.",
+   "porque": "La longitud de la varilla es lo que limita el espesor que se puede cortar.",
+   "ojo": "La más fina es también la más corta.",
+   "rec": "<mark>Fina y corta, gorda y larga</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 6",
+   "tq": "Varillas de lanza térmica (Ayto.)",
+   "ta": "1/4\" de 50 cm · 3/8\" de 90 cm.",
+   "cifra": 1
+  },
+  {
+   "id": 631,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "En la ignición de la lanza térmica, ¿cómo se conecta la batería de arranque?",
+   "o": [
+    "Cable de la antorcha al negativo y pinza del cebador al positivo.",
+    "Cable de la antorcha y pinza del cebador, ambos al positivo.",
+    "Cable de la antorcha al positivo y pinza del cebador al negativo."
+   ],
+   "c": 0,
+   "o4": "Cable de la antorcha a la botella y pinza del cebador al negativo.",
+   "que": "Se conecta el <mark>cable de la antorcha al polo negativo</mark> y la <mark>pinza del cebador al positivo</mark> de la batería.",
+   "porque": "Al rozar la varilla con el cebador se cierra el circuito y salta el chisporroteo que inicia la ignición.",
+   "ojo": "Invertirlas es el error típico.",
+   "rec": "Cebador = el que «<mark>da</mark>» la chispa: <mark>positivo</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 7",
+   "tq": "Lanza: conexión a la batería",
+   "ta": "Antorcha al − · cebador al +."
+  },
+  {
+   "id": 632,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Terminada una perforación con la lanza térmica, ¿cómo se apaga el electrodo?",
+   "o": [
+    "Soltando primero la palanca de oxígeno y sacándolo después del agujero.",
+    "Dejándolo dentro del agujero hasta que se apague solo.",
+    "Sacándolo primero del agujero y soltando después la palanca de oxígeno."
+   ],
+   "c": 2,
+   "o4": "Mojándolo en agua dentro del agujero.",
+   "que": "Hay que <mark>sacar primero el electrodo del agujero</mark> y <mark>luego liberar la palanca de oxígeno</mark>.",
+   "porque": "El electrodo sigue quemándose mientras le llegue oxígeno; se apaga al cortarlo, ya fuera del agujero.",
+   "ojo": "Aunque esté apagado, nunca se toca con la mano desnuda: guantes de soldador.",
+   "rec": "<mark>Fuera y luego suelta</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 8",
+   "tq": "Apagar la lanza tras perforar",
+   "ta": "Sacar el electrodo y luego soltar la palanca.",
+   "int": 1
+  },
+  {
+   "id": 633,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Con la lanza térmica, ¿qué es el escarnado?",
+   "o": [
+    "La separación de un material en dos partes.",
+    "La retirada de material por capas.",
+    "Atravesar un material total o parcialmente."
+   ],
+   "c": 1,
+   "o4": "La limpieza de la boquilla de la antorcha.",
+   "que": "El <mark>escarnado</mark> es la <mark>retirada de material por capas</mark>.",
+   "porque": "Sirve, por ejemplo, para grietas o para levantar soldaduras.",
+   "ojo": "Atravesar es perforar y separar es cortar: son las otras dos técnicas.",
+   "rec": "Escarnar = quitar «<mark>la carne</mark>» capa a capa.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 8",
+   "tq": "Escarnado (lanza térmica)",
+   "ta": "Retirar material por capas."
+  },
+  {
+   "id": 634,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿En qué posición de soldadura está el electrodo del dibujo?",
+   "o": [
+    "Sobre la cabeza o en techo (4G).",
+    "Vertical (3G).",
+    "Plana (1G)."
+   ],
+   "c": 0,
+   "o4": "Horizontal o en cornisa (2G).",
+   "que": "En la posición <mark>sobre la cabeza o en techo (4G)</mark> la pieza está por encima del soldador y recibe la soldadura por abajo, con el electrodo <mark>apuntando hacia arriba</mark>.",
+   "porque": "Es la inversa de la posición plana (1G), en la que el electrodo apunta hacia abajo.",
+   "ojo": "En la vertical (3G) el electrodo va casi horizontal.",
+   "rec": "Las posiciones van de la más fácil a la más difícil: <mark>1 plana, 2 cornisa, 3 vertical, 4 techo</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 18",
+   "tq": "Posición de soldadura 4G",
+   "ta": "Sobre la cabeza o en techo.",
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 200 140\" role=\"img\" aria-label=\"Una chapa horizontal arriba; por debajo, un electrodo apuntando hacia arriba, inclinado, toca la cara inferior de la chapa con chispas; abajo, la silueta de la cabeza del soldador.\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"20\" y=\"18\" width=\"160\" height=\"14\" fill=\"#8a96a3\" stroke=\"currentColor\"/><line x1=\"20\" y1=\"32\" x2=\"180\" y2=\"32\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130\" y1=\"110\" x2=\"102\" y2=\"36\" stroke=\"#c0392b\" stroke-width=\"5\" stroke-linecap=\"round\"/><rect x=\"124\" y=\"104\" width=\"14\" height=\"22\" rx=\"3\" fill=\"#444\"/><g stroke=\"#f39c12\" stroke-width=\"2\"><line x1=\"100\" y1=\"34\" x2=\"88\" y2=\"44\"/><line x1=\"102\" y1=\"34\" x2=\"104\" y2=\"48\"/><line x1=\"100\" y1=\"34\" x2=\"92\" y2=\"52\"/></g><circle cx=\"60\" cy=\"112\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M40 138 Q60 120 80 138\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>"
+  },
+  {
+   "id": 635,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿Qué gas usan los equipos de corte por plasma del Cuerpo?",
+   "o": [
+    "Una mezcla de argón e hidrógeno.",
+    "Oxígeno puro.",
+    "Solo aire comprimido."
+   ],
+   "c": 2,
+   "o4": "Nitrógeno.",
+   "que": "El plasma puede formarse con mezclas de gases (hidrógeno, argón, nitrógeno…), pero en nuestros equipos es <mark>solo aire comprimido</mark>.",
+   "porque": "El aire sale por una tobera refrigerada y el arco eléctrico lo ioniza.",
+   "ojo": "Argón, hidrógeno y nitrógeno existen, pero no en nuestros equipos.",
+   "rec": "Plasma del Cuerpo: <mark>botella de aire</mark>, como la del ERA.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 9",
+   "tq": "Gas del plasma (Cuerpo)",
+   "ta": "Solo aire comprimido."
+  },
+  {
+   "id": 636,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿Hasta qué espesor puede cortar el equipo de plasma?",
+   "o": [
+    "Hasta 12 mm.",
+    "Hasta 30-35 mm.",
+    "Hasta 60 mm."
+   ],
+   "c": 1,
+   "o4": "Hasta 150 mm.",
+   "que": "El plasma corta cualquier metal conductor de <mark>hasta 30-35 mm</mark> de espesor.",
+   "porque": "Lo limita la potencia del equipo: la corriente se regula según el espesor.",
+   "ojo": "60 mm es el máximo del oxicorte.",
+   "rec": "Plasma, la <mark>mitad</mark> que el oxicorte (60 → 30).",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 10",
+   "tq": "Espesor máximo del plasma",
+   "ta": "30-35 mm.",
+   "cifra": 1
+  },
+  {
+   "id": 637,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Antes de cortar con plasma un metal con revestimiento plástico, hay que quitar el revestimiento. ¿Por qué?",
+   "o": [
+    "Porque el arco eléctrico necesita contacto directo con el metal.",
+    "Porque el plástico atasca la tobera de la antorcha.",
+    "Porque el plástico ardería y apagaría el arco."
+   ],
+   "c": 0,
+   "o4": "Porque el plástico refleja el arco hacia la antorcha.",
+   "que": "El proceso necesita <mark>un arco eléctrico entre la pieza y la antorcha</mark>, así que hace falta <mark>contacto directo con partes metálicas</mark>.",
+   "porque": "El plástico es aislante: sin metal al descubierto no se cierra el arco.",
+   "ojo": "Por eso el plasma solo corta metales conductores.",
+   "rec": "Plasma = electricidad: <mark>sin metal a la vista, no hay arco</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 10",
+   "tq": "Plasma y revestimientos plásticos",
+   "ta": "Se quitan: el arco necesita contacto con el metal."
+  },
+  {
+   "id": 638,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Vais a cortar con plasma un buen rato en un sótano poco ventilado y usáis el casco 3M. ¿Qué tipo de equipo es?",
+   "o": [
+    "Una careta solo ocular, sin protección respiratoria.",
+    "Un equipo de respiración autónoma de circuito abierto.",
+    "Un equipo de filtrado de aire y partículas, no de respiración autónoma."
+   ],
+   "c": 2,
+   "o4": "Un equipo de aire con línea conectada a la botella del plasma.",
+   "que": "El casco 3M lleva un <mark>sistema de filtrado de aire y partículas</mark>, con ventilador en el cinturón: <mark>no es un equipo de respiración autónoma</mark>.",
+   "porque": "Se usa para protegerse de los vapores del corte en actuaciones largas o en lugares poco ventilados.",
+   "ojo": "Filtra el aire del ambiente: no sirve donde falte oxígeno.",
+   "rec": "3M: <mark>filtra</mark>, no <mark>respira por ti</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 10",
+   "tq": "Casco 3M del plasma",
+   "ta": "Filtrado de aire y partículas, no autónomo."
+  },
+  {
+   "id": 639,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿A qué presión se regula el aire en la etapa de baja del regulador del plasma?",
+   "o": [
+    "Entre 2 y 5 bar.",
+    "Entre 6 y 8 bar.",
+    "Entre 0,5 y 1,5 bar."
+   ],
+   "c": 1,
+   "o4": "Unos 200 bar.",
+   "que": "En el plasma, la salida de aire de la etapa de baja se regula <mark>entre 6 y 8 bar</mark>.",
+   "porque": "El equipo lo comprueba: sus luces de presión se ponen en verde cuando está en el rango de uso.",
+   "ojo": "2-5 bar es la presión de trabajo del oxígeno en el oxicorte.",
+   "rec": "Plasma: <mark>6-8</mark>, la misma que el Chemtane en su botella.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 11",
+   "tq": "Presión de aire del plasma",
+   "ta": "6-8 bar.",
+   "cifra": 1
+  },
+  {
+   "id": 640,
+   "t": "Corte y soldadura",
+   "d": "difícil",
+   "q": "Hay que empezar un corte con plasma en el interior de una chapa, no en el borde. ¿Cómo se coloca la antorcha?",
+   "o": [
+    "Inclinada entre 30º y 45º y, una vez iniciado el corte, girada a 90º.",
+    "A 90º desde el principio, como al empezar por el borde.",
+    "Inclinada a 45º durante todo el corte."
+   ],
+   "c": 0,
+   "o4": "Inclinada a 70º-80º durante todo el corte.",
+   "que": "Si el corte empieza <mark>en el interior</mark>, la antorcha se inclina <mark>entre 30º y 45º</mark> y, ya iniciado el corte, se gira <mark>hasta los 90º</mark>.",
+   "porque": "Así se evitan retrocesos del baño de fusión que podrían dañar la antorcha y a nosotros.",
+   "ojo": "A 90º desde el principio solo se empieza en un borde de la pieza.",
+   "rec": "Por dentro, <mark>empieza tumbada</mark> y luego derecha.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 12",
+   "tq": "Plasma: empezar en el interior de la pieza",
+   "ta": "30-45º y luego a 90º.",
+   "int": 1
+  },
+  {
+   "id": 641,
+   "t": "Corte y soldadura",
+   "d": "difícil",
+   "q": "Estás cortando con plasma y paras el corte soltando el gatillo. ¿Qué pasa con el aire comprimido?",
+   "o": [
+    "Se corta a la vez que el arco, al soltar el gatillo.",
+    "Se corta solo unos segundos después.",
+    "Sigue saliendo hasta que vuelves a pulsar el gatillo."
+   ],
+   "c": 2,
+   "o4": "Sale hasta vaciar la botella.",
+   "que": "Si se para el corte, <mark>el paso de aire comprimido sigue abierto</mark> y hay que <mark>pulsar de nuevo el gatillo</mark> para cortarlo.",
+   "porque": "Lo esperable sería que todo se parara a la vez, pero el aire no se corta solo.",
+   "ojo": "Ojo hacia dónde sale el chorro mientras sigue abierto.",
+   "rec": "Gatillo del plasma = <mark>interruptor</mark>: pulsa para encender, pulsa para apagar.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 12",
+   "tq": "Plasma: al parar el corte, el aire…",
+   "ta": "Sigue saliendo hasta pulsar otra vez el gatillo."
+  },
+  {
+   "id": 642,
+   "t": "Corte y soldadura",
+   "d": "difícil",
+   "q": "Hay que soldar con arco una chapa fina sin quemarla ni agujerearla. ¿Qué polaridad se usa?",
+   "o": [
+    "Inversa: portaelectrodo al negativo y masa al positivo.",
+    "Inversa: portaelectrodo al positivo y masa al negativo.",
+    "Directa: portaelectrodo al negativo y masa al positivo."
+   ],
+   "c": 1,
+   "o4": "Directa: portaelectrodo y masa al positivo.",
+   "que": "En <mark>polaridad inversa</mark> el portaelectrodo va al <mark>positivo</mark> y la masa al negativo; la energía se concentra en el electrodo y el baño es <mark>ancho y poco profundo</mark>.",
+   "porque": "Por eso se usa en <mark>espesores reducidos</mark>: la pieza recibe menos energía y no se quema.",
+   "ojo": "La directa (portaelectrodo al negativo) aplica más energía a la pieza: es para cordones de penetración en piezas gruesas.",
+   "rec": "<mark>Inversa → electrodo +</mark> → chapa fina.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 16",
+   "tq": "Polaridad para chapa fina",
+   "ta": "Inversa (electrodo al +, masa al −)."
+  },
+  {
+   "id": 643,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "En la numeración AWS de un electrodo, ¿qué indican las dos primeras cifras?",
+   "o": [
+    "La resistencia mínima a la tracción, en miles de psi.",
+    "Las posiciones de soldeo para las que es apto.",
+    "El tipo de revestimiento y la polaridad de uso."
+   ],
+   "c": 0,
+   "o4": "El diámetro del núcleo, en décimas de milímetro.",
+   "que": "Las <mark>dos primeras cifras</mark> son la <mark>resistencia mínima a la tracción</mark> del metal depositado, en miles de libras por pulgada cuadrada: 60 = 60.000 psi.",
+   "porque": "La tercera cifra indica las posiciones y la cuarta el revestimiento.",
+   "ojo": "La «E» del principio solo dice que es un electrodo para soldar por arco.",
+   "rec": "<mark>Primero lo fuerte</mark>: las dos primeras cifras, la resistencia.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 17",
+   "tq": "Electrodo AWS: dos primeras cifras",
+   "ta": "Resistencia mínima a la tracción (miles de psi)."
+  },
+  {
+   "id": 644,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "¿Qué electrodo tiene el Servicio de Bomberos del Ayuntamiento de Madrid?",
+   "o": [
+    "E-7010",
+    "E-8010",
+    "E-6013"
+   ],
+   "c": 2,
+   "o4": "E-6010",
+   "que": "El electrodo del que dispone el Servicio es el <mark>E-6013</mark>.",
+   "porque": "60.000 psi de resistencia, <mark>apto para todas las posiciones</mark> (1) y <mark>revestimiento de rutilo</mark> (3), que vale para CA y CC.",
+   "ojo": "E-7010 y E-8010 son los ejemplos que pone el manual de la numeración AWS.",
+   "rec": "<mark>60-1-3</mark>: todas las posiciones y sirve para cualquier corriente.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 17",
+   "tq": "Electrodo del Servicio",
+   "ta": "E-6013.",
+   "ex": 1,
+   "cifra": 1
+  },
+  {
+   "id": 645,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Al soldar con arco, ¿qué longitud de arco se considera adecuada?",
+   "o": [
+    "1/3 del diámetro del electrodo.",
+    "2/3 del diámetro del electrodo.",
+    "El doble del diámetro del electrodo."
+   ],
+   "c": 1,
+   "o4": "Igual al espesor de la pieza.",
+   "que": "La distancia adecuada entre electrodo y pieza es de <mark>unos 2/3 del diámetro del electrodo</mark>.",
+   "porque": "Por eso hay que ir acercando el electrodo según se consume: si no, el arco se alarga.",
+   "ojo": "Un arco largo (error de principiante) da mucha luz y proyecciones; uno corto ahoga el baño con la escoria.",
+   "rec": "Arco = <mark>dos tercios</mark> del grosor del electrodo.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 20",
+   "tq": "Longitud de arco adecuada",
+   "ta": "2/3 del diámetro del electrodo.",
+   "cifra": 1
+  },
+  {
+   "id": 646,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Al soldar, el electrodo suelta bolas que no se agarran a la pieza y la luz del arco es poco intensa. ¿Qué ocurre?",
+   "o": [
+    "El amperaje es demasiado bajo.",
+    "El arco es demasiado largo.",
+    "El amperaje es demasiado alto."
+   ],
+   "c": 0,
+   "o4": "La polaridad está invertida.",
+   "que": "Con <mark>amperaje bajo</mark> el arco no tiene energía para fundir el material de aporte: <mark>bolas que no agarran</mark> y luz poco intensa.",
+   "porque": "La intensidad es la energía que funde electrodo y pieza en la proporción adecuada.",
+   "ojo": "Con amperaje alto o arco largo hay mucha luz y muchas proyecciones: lo contrario.",
+   "rec": "<mark>Poca luz, poca corriente</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 20",
+   "tq": "Bolas que no agarran y poca luz",
+   "ta": "Amperaje demasiado bajo."
+  },
+  {
+   "id": 647,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "En una unión a tope con bisel, ¿qué espacio se deja por la parte inferior de las piezas?",
+   "o": [
+    "Ninguno: van en contacto.",
+    "Unos 5 a 8 mm.",
+    "Unos 2 a 3 mm."
+   ],
+   "c": 2,
+   "o4": "Unos 10 mm.",
+   "que": "Se ingletan las piezas dejando <mark>unos 2 a 3 mm</mark> por abajo.",
+   "porque": "Ese hueco es para que <mark>penetre el cordón</mark> de soldadura hasta el fondo.",
+   "ojo": "Sin hueco, el cordón se queda en la superficie.",
+   "rec": "Bisel: <mark>2-3 mm</mark>, lo que cabe el cordón.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 21",
+   "tq": "Unión a tope con bisel: hueco inferior",
+   "ta": "2-3 mm.",
+   "cifra": 1
+  },
+  {
+   "id": 648,
+   "t": "Corte y soldadura",
+   "d": "normal",
+   "q": "Según la comparativa del manual, ¿en qué vehículos del Cuerpo va la lanza térmica?",
+   "o": [
+    "En todos los vehículos de Emergencias.",
+    "Solo en Salvamento y Desescombro y en su contenedor.",
+    "En la Bomba, el Coche y el de Apeos."
+   ],
+   "c": 1,
+   "o4": "Solo en el vehículo de Apeos.",
+   "que": "La <mark>lanza térmica</mark> (y también el plasma) va <mark>solo en Salvamento y Desescombro y en su contenedor</mark>.",
+   "porque": "Son equipos especiales; el oxicorte, más sencillo, va además en la Bomba, el Coche, Apeos y Emergencias.",
+   "ojo": "La Bomba y el Coche llevan oxicorte, no lanza.",
+   "rec": "Lanza y plasma: <mark>solo S y D</mark>.",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 23",
+   "tq": "Vehículos con lanza térmica",
+   "ta": "Salvamento y Desescombro (y su contenedor).",
+   "ex": 1
   }
  ],
  "glosario": [
@@ -2784,6 +3547,111 @@
    "d": "Unión de metales de distinto potencial que provoca corrosión de uno de ellos.",
    "tema": "Agua fría",
    "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 9",
+   "solo": 1
+  },
+  {
+   "t": "Válvula antirretroceso",
+   "a": [
+    "válvula antirretroceso",
+    "válvulas antirretroceso"
+   ],
+   "d": "Dispositivo de seguridad que solo deja pasar el gas hacia la salida e impide que la llama retroceda hasta las botellas.",
+   "tema": "Corte y soldadura",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 2",
+   "solo": 1
+  },
+  {
+   "t": "Escariador",
+   "a": [
+    "escariador"
+   ],
+   "d": "Herramienta del equipo de oxicorte para limpiar las boquillas del soplete.",
+   "tema": "Corte y soldadura",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 2",
+   "solo": 1
+  },
+  {
+   "t": "Cristal inactínico",
+   "a": [
+    "inactínico",
+    "inactínicos",
+    "cristal inactínico"
+   ],
+   "d": "Vidrio filtrante que protege los ojos de la radiación luminosa del corte o la soldadura; se clasifica por niveles.",
+   "tema": "Corte y soldadura",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 3",
+   "solo": 1
+  },
+  {
+   "t": "Galvanizado",
+   "a": [
+    "galvanizado",
+    "galvanizada"
+   ],
+   "d": "Recubrimiento de un metal (normalmente acero) con cinc para protegerlo de la corrosión.",
+   "tema": "Corte y soldadura",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 3",
+   "solo": 1
+  },
+  {
+   "t": "Cebado",
+   "a": [
+    "cebado"
+   ],
+   "d": "En el oxicorte, haber atravesado todo el espesor a cortar; en la soldadura, encendido inicial del arco por un toque breve del electrodo.",
+   "tema": "Corte y soldadura",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 5",
+   "solo": 1
+  },
+  {
+   "t": "Escarnado",
+   "a": [
+    "escarnado"
+   ],
+   "d": "Retirada de material por capas (técnica de la lanza térmica).",
+   "tema": "Corte y soldadura",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 8",
+   "solo": 1
+  },
+  {
+   "t": "Plasma",
+   "a": [
+    "plasma"
+   ],
+   "d": "Gas ionizado, muy conductor de la electricidad; en corte, dardo de gas y electricidad que funde la pieza.",
+   "tema": "Corte y soldadura",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 9",
+   "solo": 1
+  },
+  {
+   "t": "Polaridad inversa",
+   "a": [
+    "polaridad inversa"
+   ],
+   "d": "En soldadura con corriente continua, portaelectrodo al positivo y masa al negativo; baño ancho y poco profundo, para chapa fina.",
+   "tema": "Corte y soldadura",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 16",
+   "solo": 1
+  },
+  {
+   "t": "Electrodo E-6013",
+   "a": [
+    "E-6013",
+    "AWS"
+   ],
+   "d": "Electrodo del Servicio según la clasificación AWS: 60.000 psi, todas las posiciones, revestimiento de rutilo.",
+   "tema": "Corte y soldadura",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 17",
+   "solo": 1
+  },
+  {
+   "t": "Escoria",
+   "a": [
+    "escoria"
+   ],
+   "d": "Capa formada por el revestimiento fundido del electrodo que flota sobre el baño y protege el cordón caliente.",
+   "tema": "Corte y soldadura",
+   "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 17",
    "solo": 1
   }
  ]

@@ -135,9 +135,9 @@
   },
   "2.25. Equipos de corte térmico y soldadura 1.pdf": {
    "tema": "Corte y soldadura",
-   "hechas": "",
-   "total": null,
-   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+   "hechas": "2-23",
+   "total": 23,
+   "nota": "Hechas p. 2-23 (lote 2026-11-25, tarea 4): 37 preguntas. Quedan datos menores sin preguntar (cifras de la tabla de electrodos y presiones de la lanza, intensidades del plasma, función eléctrica/mecánica del revestimiento, ángulos de trabajo y avance, unión por puntos, tipos de movimiento, 900 ºC de la comparativa). Ojo: el manual da 5.500 ºC como punto de fusión del hierro fundido (dato erróneo: no preguntar). Ojo: la pregunta #237 de preguntas.json dice que al apagar se cierra primero el oxígeno del soplete, pero el manual (p. 5) pone primero el Chemtane: revisar."
   },
   "2.29 SNPC quitar el final.pdf": {
    "tema": "Protección civil",
