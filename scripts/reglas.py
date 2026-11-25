@@ -1,6 +1,7 @@
 """Revisa un lote de preguntas pendientes (tandas/pendientes/AAAA-MM-DD.json) antes de pedir el visto bueno.
 
 Errores (hay que corregirlos):
+  - falta «src» (manual de temario/ y páginas del PDF de donde sale el dato)
   - faltan campos (id, t, d, q, o con 3, c 0-2, o4, que, porque, ojo, rec, f, tq, ta) o ids repetidos
   - la explicación nombra una opción por su letra («la A», «opción B», «B)»…): las opciones se barajan
   - enunciado casi igual a otra pregunta del banco o del propio lote
@@ -39,6 +40,11 @@ def main(ruta):
         if falt: err.append((i, 'faltan campos: ' + ', '.join(falt)))
         if i in ids_banco or i in vistos: err.append((i, 'id repetido'))
         vistos.add(i)
+        src = q.get('src') or {}
+        if not src.get('m') or not src.get('p'):
+            (err if os.path.basename(ruta) >= '2026-11-26' else avi).append((i, 'falta «src»: {"m": "<nombre del manual en temario/>", "p": [páginas del PDF]}'))
+        elif not os.path.exists(os.path.join(ROOT, 'temario', 'texto', src['m'] + '.txt.enc')):
+            err.append((i, f'«src.m» no es un manual de temario/: {src["m"]}'))
         if not isinstance(q.get('o'), list) or len(q['o']) != 3: err.append((i, 'o debe tener 3 opciones'))
         if q.get('c') not in (0, 1, 2): err.append((i, 'c debe ser 0, 1 o 2'))
         for c in EXPL + ['tq', 'ta']:

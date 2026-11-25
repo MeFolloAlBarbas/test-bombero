@@ -1,0 +1,4480 @@
+{
+"1": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"2": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+6
+],
+"conf": "alta"
+},
+"3": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+8
+],
+"conf": "media"
+},
+"4": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+7
+],
+"conf": "alta"
+},
+"5": {
+"m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+"p": [
+6
+],
+"conf": "alta"
+},
+"6": {
+"m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+"p": [
+6
+],
+"conf": "alta"
+},
+"7": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+19
+],
+"conf": "media"
+},
+"8": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+28
+],
+"conf": "alta"
+},
+"9": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+9
+],
+"conf": "alta"
+},
+"10": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+21
+],
+"conf": "media"
+},
+"11": {
+"m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+"p": [
+3
+],
+"conf": "alta"
+},
+"12": {
+"m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+"p": [
+18
+],
+"conf": "media"
+},
+"13": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+10
+],
+"conf": "alta"
+},
+"14": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+9
+],
+"conf": "alta"
+},
+"15": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"16": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"17": {
+"m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+"p": [
+12
+],
+"conf": "media"
+},
+"18": {
+"m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+"p": [
+46
+],
+"conf": "media"
+},
+"19": {
+"m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+"p": [
+18
+],
+"conf": "alta"
+},
+"20": {
+"m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+"p": [
+32
+],
+"conf": "media"
+},
+"21": {
+"m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
+"p": [
+29
+],
+"conf": "alta"
+},
+"22": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+12
+],
+"conf": "media"
+},
+"23": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+3
+],
+"conf": "alta"
+},
+"24": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+4
+],
+"conf": "alta"
+},
+"25": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+19
+],
+"conf": "media"
+},
+"26": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+15
+],
+"conf": "media"
+},
+"27": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+16
+],
+"conf": "alta"
+},
+"28": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+12
+],
+"conf": "alta"
+},
+"29": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+12
+],
+"conf": "alta"
+},
+"30": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+3
+],
+"conf": "alta"
+},
+"31": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+3
+],
+"conf": "alta"
+},
+"32": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+3
+],
+"conf": "media"
+},
+"33": {
+"m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+"p": [
+6
+],
+"conf": "alta"
+},
+"34": {
+"m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+"p": [
+6
+],
+"conf": "alta"
+},
+"35": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+3
+],
+"conf": "alta"
+},
+"36": {
+"m": "Bloque II - Tema 26 - Soporte vital básico",
+"p": [
+6
+],
+"conf": "alta"
+},
+"37": {
+"m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+"p": [
+28
+],
+"conf": "media"
+},
+"38": {
+"m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+"p": [
+23
+],
+"conf": "media"
+},
+"39": {
+"m": "Bloque II - Tema 32 - Información básica de los vehículos del SEI",
+"p": [
+2
+],
+"conf": "media"
+},
+"40": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. II",
+"p": [
+38
+],
+"conf": "media"
+},
+"41": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. II",
+"p": [
+39
+],
+"conf": "media"
+},
+"42": {
+"m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+"p": [
+20
+],
+"conf": "media"
+},
+"43": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta"
+},
+"44": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+12
+],
+"conf": "media"
+},
+"45": {
+"m": "Bloque II - Tema 26 - Soporte vital básico",
+"p": [
+16
+],
+"conf": "alta"
+},
+"46": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+5
+],
+"conf": "alta"
+},
+"47": {
+"m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
+"p": [
+20
+],
+"conf": "alta"
+},
+"48": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+10
+],
+"conf": "media"
+},
+"49": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. II",
+"p": [
+8
+],
+"conf": "alta"
+},
+"50": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. II",
+"p": [
+40
+],
+"conf": "media"
+},
+"51": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. II",
+"p": [
+6
+],
+"conf": "media"
+},
+"52": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. III",
+"p": [
+38
+],
+"conf": "media"
+},
+"53": {
+"m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+"p": [
+11
+],
+"conf": "alta"
+},
+"54": {
+"m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+"p": [
+21
+],
+"conf": "alta"
+},
+"55": {
+"m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+"p": [
+11
+],
+"conf": "alta"
+},
+"56": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+5
+],
+"conf": "alta"
+},
+"57": {
+"m": "Bloque II - Tema 26 - Soporte vital básico",
+"p": [
+8
+],
+"conf": "alta"
+},
+"58": {
+"m": "Bloque II - Tema 26 - Soporte vital básico",
+"p": [
+2
+],
+"conf": "media"
+},
+"59": {
+"m": "Bloque II - Tema 26 - Soporte vital básico",
+"p": [
+10
+],
+"conf": "alta"
+},
+"60": {
+"m": "Bloque II - Tema 26 - Soporte vital básico",
+"p": [
+11
+],
+"conf": "media"
+},
+"61": {
+"m": "Bloque II - Tema 27 - Atención inicial al paciente politraumatizado",
+"p": [
+6
+],
+"conf": "alta"
+},
+"62": {
+"m": "Bloque II - Tema 27 - Atención inicial al paciente politraumatizado",
+"p": [
+28
+],
+"conf": "media"
+},
+"63": {
+"m": "Bloque II - Tema 28 - Urgencias cardiocirculatorias, respiratorias y otras",
+"p": [
+18
+],
+"conf": "media"
+},
+"64": {
+"m": "Bloque II - Tema 28 - Urgencias cardiocirculatorias, respiratorias y otras",
+"p": [
+3
+],
+"conf": "alta"
+},
+"65": {
+"m": "Bloque II - Tema 28 - Urgencias cardiocirculatorias, respiratorias y otras",
+"p": [
+9
+],
+"conf": "media"
+},
+"66": {
+"m": "Bloque II - Tema 28 - Urgencias cardiocirculatorias, respiratorias y otras",
+"p": [
+21
+],
+"conf": "media"
+},
+"67": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta"
+},
+"68": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta"
+},
+"69": {
+"m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+"p": [
+20
+],
+"conf": "alta"
+},
+"70": {
+"m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+"p": [
+11
+],
+"conf": "alta"
+},
+"71": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+17
+],
+"conf": "alta"
+},
+"72": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+21
+],
+"conf": "alta"
+},
+"73": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+15
+],
+"conf": "alta"
+},
+"74": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"75": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+7
+],
+"conf": "alta"
+},
+"76": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"77": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+27
+],
+"conf": "alta"
+},
+"78": {
+"m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+"p": [
+3
+],
+"conf": "media"
+},
+"79": {
+"m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+"p": [
+10
+],
+"conf": "media"
+},
+"80": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+5
+],
+"conf": "media"
+},
+"81": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+6
+],
+"conf": "alta"
+},
+"82": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+16
+],
+"conf": "alta"
+},
+"83": {
+"m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+"p": [
+9
+],
+"conf": "media"
+},
+"84": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"85": {
+"m": "Bloque II - Tema 32 - Información básica de los vehículos del SEI",
+"p": [
+5
+],
+"conf": "media"
+},
+"86": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+7
+],
+"conf": "media"
+},
+"87": {
+"m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+"p": [
+44
+],
+"conf": "media"
+},
+"88": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+13
+],
+"conf": "media"
+},
+"89": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+7
+],
+"conf": "alta"
+},
+"90": {
+"m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+"p": [
+6
+],
+"conf": "alta"
+},
+"91": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+4
+],
+"conf": "alta"
+},
+"92": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+50
+],
+"conf": "alta"
+},
+"93": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+18
+],
+"conf": "media"
+},
+"94": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+14
+],
+"conf": "alta"
+},
+"95": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+15
+],
+"conf": "alta"
+},
+"96": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+15
+],
+"conf": "alta"
+},
+"97": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+52
+],
+"conf": "alta"
+},
+"98": {
+"m": "Bloque II - Tema 09 - Rescate en accidentes de tráfico (DGT-APRAT) II",
+"p": [
+13
+],
+"conf": "alta"
+},
+"99": {
+"m": "Bloque II - Tema 09 - Rescate en accidentes de tráfico (DGT-APRAT) II",
+"p": [
+28
+],
+"conf": "media"
+},
+"100": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+7
+],
+"conf": "alta"
+},
+"101": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+6
+],
+"conf": "media"
+},
+"102": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+3
+],
+"conf": "alta"
+},
+"103": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"104": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"105": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"106": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+10
+],
+"conf": "alta"
+},
+"107": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+18
+],
+"conf": "alta"
+},
+"108": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+13
+],
+"conf": "media"
+},
+"109": {
+"m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+"p": [
+8
+],
+"conf": "alta"
+},
+"110": {
+"m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+"p": [
+8
+],
+"conf": "alta"
+},
+"111": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+4
+],
+"conf": "alta"
+},
+"112": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+4
+],
+"conf": "alta"
+},
+"113": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+2
+],
+"conf": "alta"
+},
+"114": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+30
+],
+"conf": "media"
+},
+"115": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+10
+],
+"conf": "alta"
+},
+"116": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+3
+],
+"conf": "media"
+},
+"117": {
+"m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+"p": [
+11
+],
+"conf": "media"
+},
+"118": {
+"m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+"p": [
+11
+],
+"conf": "alta"
+},
+"119": {
+"m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+"p": [
+20
+],
+"conf": "alta"
+},
+"120": {
+"m": "Bloque II - Tema 23 - Seguridad en trabajos verticales (NTP del INSST)",
+"p": [
+8
+],
+"conf": "alta"
+},
+"121": {
+"m": "Bloque II - Tema 23 - Seguridad en trabajos verticales (NTP del INSST)",
+"p": [
+27
+],
+"conf": "media"
+},
+"122": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+22
+],
+"conf": "media"
+},
+"123": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+4
+],
+"conf": "alta"
+},
+"124": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+20
+],
+"conf": "media"
+},
+"125": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+12
+],
+"conf": "alta"
+},
+"126": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+12
+],
+"conf": "alta"
+},
+"127": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+3
+],
+"conf": "alta"
+},
+"128": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+5
+],
+"conf": "alta"
+},
+"129": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+5
+],
+"conf": "alta"
+},
+"130": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+6
+],
+"conf": "alta"
+},
+"131": {
+"m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+"p": [
+3
+],
+"conf": "media"
+},
+"132": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta"
+},
+"133": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta"
+},
+"134": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+3
+],
+"conf": "alta"
+},
+"135": {
+"m": "Bloque II - Tema 28 - Urgencias cardiocirculatorias, respiratorias y otras",
+"p": [
+4
+],
+"conf": "media"
+},
+"136": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+5
+],
+"conf": "alta"
+},
+"137": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+5
+],
+"conf": "alta"
+},
+"138": {
+"m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+"p": [
+22
+],
+"conf": "alta"
+},
+"139": {
+"m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+"p": [
+12
+],
+"conf": "alta"
+},
+"140": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+15
+],
+"conf": "alta"
+},
+"141": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+3
+],
+"conf": "media"
+},
+"142": {
+"m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
+"p": [
+20
+],
+"conf": "alta"
+},
+"143": {
+"m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+"p": [
+3
+],
+"conf": "alta"
+},
+"144": {
+"m": "Bloque II - Tema 32 - Información básica de los vehículos del SEI",
+"p": [
+4
+],
+"conf": "media"
+},
+"145": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+3
+],
+"conf": "media"
+},
+"146": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+25
+],
+"conf": "media"
+},
+"147": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+7
+],
+"conf": "alta"
+},
+"148": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. II",
+"p": [
+9
+],
+"conf": "alta"
+},
+"149": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+12
+],
+"conf": "alta"
+},
+"150": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+6
+],
+"conf": "media"
+},
+"151": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"152": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"153": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"154": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"155": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+7
+],
+"conf": "alta"
+},
+"156": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+6
+],
+"conf": "alta"
+},
+"157": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+8
+],
+"conf": "alta"
+},
+"158": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"159": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"160": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+6
+],
+"conf": "media"
+},
+"161": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+6
+],
+"conf": "media"
+},
+"162": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+16
+],
+"conf": "media"
+},
+"163": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+9
+],
+"conf": "media"
+},
+"164": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+5
+],
+"conf": "media"
+},
+"165": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+24
+],
+"conf": "media"
+},
+"166": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+26
+],
+"conf": "media"
+},
+"167": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+28
+],
+"conf": "media"
+},
+"168": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+12
+],
+"conf": "alta"
+},
+"169": {
+"m": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+"p": [
+6
+],
+"conf": "alta"
+},
+"170": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+20
+],
+"conf": "alta"
+},
+"171": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+21
+],
+"conf": "alta"
+},
+"172": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+21
+],
+"conf": "alta"
+},
+"173": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+22
+],
+"conf": "alta"
+},
+"174": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+10
+],
+"conf": "alta"
+},
+"175": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+10
+],
+"conf": "alta"
+},
+"176": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+27
+],
+"conf": "alta"
+},
+"177": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+27
+],
+"conf": "alta"
+},
+"178": {
+"m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+"p": [
+9
+],
+"conf": "media"
+},
+"179": {
+"m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+"p": [
+12
+],
+"conf": "alta"
+},
+"180": {
+"m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+"p": [
+11
+],
+"conf": "alta"
+},
+"181": {
+"m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+"p": [
+4
+],
+"conf": "alta"
+},
+"182": {
+"m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+"p": [
+4
+],
+"conf": "alta"
+},
+"183": {
+"m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+"p": [
+4
+],
+"conf": "alta"
+},
+"184": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta"
+},
+"185": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta"
+},
+"186": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta"
+},
+"187": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+3
+],
+"conf": "alta"
+},
+"188": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+2
+],
+"conf": "alta"
+},
+"189": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+8
+],
+"conf": "media"
+},
+"190": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+9
+],
+"conf": "alta"
+},
+"191": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+2
+],
+"conf": "alta"
+},
+"192": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+6
+],
+"conf": "alta"
+},
+"193": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+7
+],
+"conf": "alta"
+},
+"194": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+5
+],
+"conf": "alta"
+},
+"195": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+5
+],
+"conf": "alta"
+},
+"196": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+3
+],
+"conf": "alta"
+},
+"197": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+3
+],
+"conf": "alta"
+},
+"198": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+5
+],
+"conf": "alta"
+},
+"199": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+7
+],
+"conf": "media"
+},
+"200": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+8
+],
+"conf": "alta"
+},
+"201": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+3
+],
+"conf": "alta"
+},
+"202": {
+"m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+"p": [
+8
+],
+"conf": "alta"
+},
+"203": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+10
+],
+"conf": "alta"
+},
+"204": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+5
+],
+"conf": "alta"
+},
+"205": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+18
+],
+"conf": "media"
+},
+"206": {
+"m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+"p": [
+15
+],
+"conf": "media"
+},
+"207": {
+"m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+"p": [
+15
+],
+"conf": "media"
+},
+"208": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+16
+],
+"conf": "media"
+},
+"209": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"210": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"211": {
+"m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
+"p": [
+5
+],
+"conf": "alta"
+},
+"212": {
+"m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
+"p": [
+11
+],
+"conf": "alta"
+},
+"213": {
+"m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
+"p": [
+13
+],
+"conf": "alta"
+},
+"214": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+4
+],
+"conf": "media"
+},
+"215": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+3
+],
+"conf": "alta"
+},
+"216": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. II",
+"p": [
+10
+],
+"conf": "media"
+},
+"217": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. II",
+"p": [
+19
+],
+"conf": "alta"
+},
+"218": {
+"m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+"p": [
+4
+],
+"conf": "alta"
+},
+"219": {
+"m": "Bloque II - Tema 09 - Rescate en accidentes de tráfico (DGT-APRAT) II",
+"p": [
+12
+],
+"conf": "media"
+},
+"220": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+10
+],
+"conf": "alta"
+},
+"221": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+13
+],
+"conf": "alta"
+},
+"222": {
+"m": "Bloque II - Tema 32 - Información básica de los vehículos del SEI",
+"p": [
+13
+],
+"conf": "media"
+},
+"223": {
+"m": "Bloque II - Tema 32 - Información básica de los vehículos del SEI",
+"p": [
+27
+],
+"conf": "media"
+},
+"224": {
+"m": "Bloque II - Tema 27 - Atención inicial al paciente politraumatizado",
+"p": [
+2
+],
+"conf": "alta"
+},
+"225": {
+"m": "Bloque II - Tema 26 - Soporte vital básico",
+"p": [
+1
+],
+"conf": "alta"
+},
+"226": {
+"m": "Bloque II - Tema 26 - Soporte vital básico",
+"p": [
+4
+],
+"conf": "media"
+},
+"227": {
+"m": "Bloque II - Tema 28 - Urgencias cardiocirculatorias, respiratorias y otras",
+"p": [
+14
+],
+"conf": "media"
+},
+"228": {
+"m": "Bloque II - Tema 28 - Urgencias cardiocirculatorias, respiratorias y otras",
+"p": [
+21
+],
+"conf": "alta"
+},
+"229": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+61
+],
+"conf": "alta"
+},
+"230": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"231": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"232": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+66
+],
+"conf": "alta"
+},
+"233": {
+"m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+"p": [
+35
+],
+"conf": "alta"
+},
+"234": {
+"m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+"p": [
+48
+],
+"conf": "alta"
+},
+"235": {
+"m": "Bloque II - Tema 23 - Seguridad en trabajos verticales (NTP del INSST)",
+"p": [
+22
+],
+"conf": "alta"
+},
+"236": {
+"m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+"p": [
+36
+],
+"conf": "alta"
+},
+"237": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+6
+],
+"conf": "media"
+},
+"238": {
+"m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
+"p": [
+10
+],
+"conf": "alta"
+},
+"239": {
+"m": "Bloque II - Tema 27 - Atención inicial al paciente politraumatizado",
+"p": [
+8
+],
+"conf": "alta"
+},
+"240": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"241": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. III",
+"p": [
+4
+],
+"conf": "alta"
+},
+"242": {
+"m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
+"p": [
+29
+],
+"conf": "alta"
+},
+"243": {
+"m": "Bloque II - Tema 27 - Atención inicial al paciente politraumatizado",
+"p": [
+9
+],
+"conf": "alta"
+},
+"244": {
+"m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
+"p": [
+12
+],
+"conf": "alta"
+},
+"245": {
+"m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. III",
+"p": [
+3
+],
+"conf": "media"
+},
+"246": {
+"m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
+"p": [
+10
+],
+"conf": "alta"
+},
+"247": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+55
+],
+"conf": "alta"
+},
+"248": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+66
+],
+"conf": "alta"
+},
+"249": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+57
+],
+"conf": "alta"
+},
+"250": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+55
+],
+"conf": "alta"
+},
+"251": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+61
+],
+"conf": "media"
+},
+"252": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+17
+],
+"conf": "alta"
+},
+"253": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+61
+],
+"conf": "alta"
+},
+"254": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+17
+],
+"conf": "alta"
+},
+"255": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+61
+],
+"conf": "alta"
+},
+"256": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta"
+},
+"257": {
+"m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+"p": [
+9
+],
+"conf": "alta"
+},
+"258": {
+"m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+"p": [
+7
+],
+"conf": "alta"
+},
+"259": {
+"m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+"p": [
+3
+],
+"conf": "alta"
+},
+"260": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+3
+],
+"conf": "media"
+},
+"261": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+15
+],
+"conf": "alta"
+},
+"262": {
+"m": "Bloque II - Tema 26 - Soporte vital básico",
+"p": [
+13
+],
+"conf": "alta"
+},
+"263": {
+"m": "Bloque II - Tema 28 - Urgencias cardiocirculatorias, respiratorias y otras",
+"p": [
+42
+],
+"conf": "media"
+},
+"264": {
+"m": "Bloque II - Tema 24 - Equipos de protección individual de las vías respiratorias",
+"p": [
+10
+],
+"conf": "alta"
+},
+"265": {
+"m": "Bloque II - Tema 24 - Equipos de protección individual de las vías respiratorias",
+"p": [
+10
+],
+"conf": "alta"
+},
+"266": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+5
+],
+"conf": "alta"
+},
+"267": {
+"m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+"p": [
+20
+],
+"conf": "alta"
+},
+"268": {
+"m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+"p": [
+3
+],
+"conf": "alta"
+},
+"269": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+3
+],
+"conf": "alta"
+},
+"270": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+10
+],
+"conf": "alta"
+},
+"271": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+4
+],
+"conf": "alta"
+},
+"272": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+11
+],
+"conf": "alta"
+},
+"273": {
+"m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
+"p": [
+10
+],
+"conf": "alta"
+},
+"274": {
+"m": "Bloque II - Tema 17 - Riesgo NRBQ",
+"p": [
+52
+],
+"conf": "alta"
+},
+"275": {
+"m": "Bloque II - Tema 31 - CTE DB-SI (SI 4 a SI 6 y Anejo A)",
+"p": [
+6
+],
+"conf": "alta"
+},
+"276": {
+"m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+"p": [
+9
+],
+"conf": "alta"
+},
+"277": {
+"m": "Bloque II - Tema 28 - Urgencias cardiocirculatorias, respiratorias y otras",
+"p": [
+18
+],
+"conf": "media"
+},
+"278": {
+"m": "Bloque II - Tema 09 - Rescate en accidentes de tráfico (DGT-APRAT) II",
+"p": [
+28
+],
+"conf": "media"
+},
+"279": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"280": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"281": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"282": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"283": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"284": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"285": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"286": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"287": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"288": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"289": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"290": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"291": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"292": {
+"m": "Bloque II - Tema 11 - Edificaciones I",
+"p": [
+7
+],
+"conf": "alta"
+},
+"293": {
+"m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+"p": [
+3
+],
+"conf": "alta"
+},
+"294": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"295": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"296": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"297": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"298": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"299": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"300": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"301": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"303": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"304": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"305": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"306": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"307": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"308": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"309": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"310": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"311": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"312": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"313": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"314": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"315": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"316": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"318": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"319": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"320": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"321": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"322": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"323": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"324": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"325": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"326": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"327": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"328": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"329": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"330": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"331": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+4
+],
+"conf": "alta"
+},
+"332": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+4
+],
+"conf": "alta"
+},
+"333": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+4
+],
+"conf": "alta"
+},
+"334": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+4
+],
+"conf": "alta"
+},
+"335": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+5
+],
+"conf": "alta"
+},
+"336": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+5
+],
+"conf": "media"
+},
+"337": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+5
+],
+"conf": "alta"
+},
+"338": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+5
+],
+"conf": "alta"
+},
+"339": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+5
+],
+"conf": "alta"
+},
+"340": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+5
+],
+"conf": "alta"
+},
+"341": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+6
+],
+"conf": "alta"
+},
+"342": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+6
+],
+"conf": "alta"
+},
+"343": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+6
+],
+"conf": "media"
+},
+"344": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+6
+],
+"conf": "alta"
+},
+"345": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+7
+],
+"conf": "alta"
+},
+"346": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+7
+],
+"conf": "alta"
+},
+"347": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+7
+],
+"conf": "alta"
+},
+"348": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+7
+],
+"conf": "alta"
+},
+"349": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+8
+],
+"conf": "alta"
+},
+"350": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+8
+],
+"conf": "alta"
+},
+"351": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+8
+],
+"conf": "alta"
+},
+"352": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+8
+],
+"conf": "alta"
+},
+"353": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+8
+],
+"conf": "alta"
+},
+"354": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+8
+],
+"conf": "alta"
+},
+"355": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+9
+],
+"conf": "alta"
+},
+"356": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+9
+],
+"conf": "media"
+},
+"357": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+9
+],
+"conf": "alta"
+},
+"358": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+9
+],
+"conf": "alta"
+},
+"359": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+9
+],
+"conf": "alta"
+},
+"360": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+10
+],
+"conf": "alta"
+},
+"361": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+10
+],
+"conf": "alta"
+},
+"362": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+10
+],
+"conf": "media"
+},
+"363": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+11
+],
+"conf": "alta"
+},
+"364": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+11
+],
+"conf": "alta"
+},
+"365": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+11
+],
+"conf": "alta"
+},
+"366": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+12
+],
+"conf": "media"
+},
+"367": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+12
+],
+"conf": "alta"
+},
+"368": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+4
+],
+"conf": "alta"
+},
+"369": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+4
+],
+"conf": "alta"
+},
+"370": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+4
+],
+"conf": "alta"
+},
+"371": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+5
+],
+"conf": "alta"
+},
+"372": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+5
+],
+"conf": "alta"
+},
+"373": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+6
+],
+"conf": "alta"
+},
+"374": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+6
+],
+"conf": "media"
+},
+"375": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+6
+],
+"conf": "alta"
+},
+"376": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+6
+],
+"conf": "alta"
+},
+"377": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+7
+],
+"conf": "alta"
+},
+"378": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+7
+],
+"conf": "alta"
+},
+"379": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+7
+],
+"conf": "alta"
+},
+"380": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+8
+],
+"conf": "alta"
+},
+"381": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+9
+],
+"conf": "media"
+},
+"382": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+9
+],
+"conf": "alta"
+},
+"383": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+15
+],
+"conf": "media"
+},
+"384": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+9
+],
+"conf": "alta"
+},
+"385": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+9
+],
+"conf": "alta"
+},
+"386": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+9
+],
+"conf": "alta"
+},
+"387": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+10
+],
+"conf": "alta"
+},
+"388": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+10
+],
+"conf": "alta"
+},
+"389": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+10
+],
+"conf": "alta"
+},
+"390": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+11
+],
+"conf": "alta"
+},
+"391": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+11
+],
+"conf": "alta"
+},
+"392": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+12
+],
+"conf": "alta"
+},
+"393": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+12
+],
+"conf": "alta"
+},
+"394": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+12
+],
+"conf": "alta"
+},
+"395": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+12
+],
+"conf": "alta"
+},
+"396": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+12
+],
+"conf": "alta"
+},
+"397": {
+"m": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+"p": [
+6
+],
+"conf": "alta"
+},
+"398": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"399": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"400": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"401": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"402": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"403": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"404": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"405": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+3
+],
+"conf": "alta"
+},
+"406": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+3
+],
+"conf": "alta"
+},
+"407": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+3
+],
+"conf": "alta"
+},
+"408": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"409": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"410": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"411": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"412": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"413": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"414": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"415": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+5
+],
+"conf": "alta"
+},
+"416": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+5
+],
+"conf": "alta"
+},
+"417": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+5
+],
+"conf": "alta"
+},
+"418": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+5
+],
+"conf": "alta"
+},
+"419": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+6
+],
+"conf": "alta"
+},
+"420": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+6
+],
+"conf": "alta"
+},
+"421": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+6
+],
+"conf": "alta"
+},
+"422": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+7
+],
+"conf": "alta"
+},
+"423": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+7
+],
+"conf": "alta"
+},
+"424": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+7
+],
+"conf": "alta"
+},
+"425": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+7
+],
+"conf": "alta"
+},
+"426": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+8
+],
+"conf": "alta"
+},
+"427": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+8
+],
+"conf": "alta"
+},
+"428": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+8
+],
+"conf": "alta"
+},
+"429": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"430": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"431": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"432": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"433": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"434": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"435": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+2
+],
+"conf": "alta"
+},
+"436": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"437": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+6
+],
+"conf": "alta"
+},
+"438": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+6
+],
+"conf": "alta"
+},
+"439": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+7
+],
+"conf": "media"
+},
+"440": {
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"p": [
+4
+],
+"conf": "alta"
+},
+"441": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+12
+],
+"conf": "media"
+},
+"442": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+12
+],
+"conf": "alta"
+},
+"443": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+12
+],
+"conf": "alta"
+},
+"444": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+13
+],
+"conf": "alta"
+},
+"445": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+13
+],
+"conf": "alta"
+},
+"446": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+13
+],
+"conf": "alta"
+},
+"447": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+13
+],
+"conf": "alta"
+},
+"448": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+13
+],
+"conf": "alta"
+},
+"449": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+14
+],
+"conf": "alta"
+},
+"450": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+14
+],
+"conf": "alta"
+},
+"451": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+14
+],
+"conf": "media"
+},
+"452": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+15
+],
+"conf": "alta"
+},
+"453": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+15
+],
+"conf": "alta"
+},
+"454": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+15
+],
+"conf": "alta"
+},
+"455": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+15
+],
+"conf": "alta"
+},
+"456": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+16
+],
+"conf": "alta"
+},
+"457": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+16
+],
+"conf": "alta"
+},
+"458": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+16
+],
+"conf": "alta"
+},
+"459": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+16
+],
+"conf": "alta"
+},
+"460": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+16
+],
+"conf": "alta"
+},
+"461": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+17
+],
+"conf": "media"
+},
+"462": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+17
+],
+"conf": "alta"
+},
+"463": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+17
+],
+"conf": "alta"
+},
+"464": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+17
+],
+"conf": "alta"
+},
+"465": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+17
+],
+"conf": "alta"
+},
+"466": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+17
+],
+"conf": "alta"
+},
+"467": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+17
+],
+"conf": "alta"
+},
+"468": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+18
+],
+"conf": "alta"
+},
+"469": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+18
+],
+"conf": "alta"
+},
+"470": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+19
+],
+"conf": "alta"
+},
+"471": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+19
+],
+"conf": "alta"
+},
+"472": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+19
+],
+"conf": "alta"
+},
+"473": {
+"m": "Bloque II - Tema 05 - Incendios de vegetación",
+"p": [
+19
+],
+"conf": "alta"
+},
+"474": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"475": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"476": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"477": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"478": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"479": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"480": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"481": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"482": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"483": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"484": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"485": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"486": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"487": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"488": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"489": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"490": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"491": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"492": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"493": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"494": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"495": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"496": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"497": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"498": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"499": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"500": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"501": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"502": {
+"m": null,
+"p": [],
+"conf": "sin manual"
+},
+"503": {
+"m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+"p": [
+15
+],
+"conf": "alta",
+"pendiente": 1
+},
+"504": {
+"m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+"p": [
+15
+],
+"conf": "alta",
+"pendiente": 1
+},
+"505": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+3
+],
+"conf": "media",
+"pendiente": 1
+},
+"506": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"507": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"508": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"509": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"510": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+6
+],
+"conf": "media",
+"pendiente": 1
+},
+"511": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+6
+],
+"conf": "alta",
+"pendiente": 1
+},
+"512": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+6
+],
+"conf": "alta",
+"pendiente": 1
+},
+"513": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+6
+],
+"conf": "alta",
+"pendiente": 1
+},
+"514": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+6
+],
+"conf": "alta",
+"pendiente": 1
+},
+"515": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+7
+],
+"conf": "alta",
+"pendiente": 1
+},
+"516": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+7
+],
+"conf": "alta",
+"pendiente": 1
+},
+"517": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+7
+],
+"conf": "media",
+"pendiente": 1
+},
+"518": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+7
+],
+"conf": "alta",
+"pendiente": 1
+},
+"519": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+8
+],
+"conf": "alta",
+"pendiente": 1
+},
+"520": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+9
+],
+"conf": "alta",
+"pendiente": 1
+},
+"521": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+9
+],
+"conf": "alta",
+"pendiente": 1
+},
+"522": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+10
+],
+"conf": "alta",
+"pendiente": 1
+},
+"523": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+10
+],
+"conf": "alta",
+"pendiente": 1
+},
+"524": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+10
+],
+"conf": "alta",
+"pendiente": 1
+},
+"525": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+11
+],
+"conf": "alta",
+"pendiente": 1
+},
+"526": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+11
+],
+"conf": "alta",
+"pendiente": 1
+},
+"527": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+12
+],
+"conf": "media",
+"pendiente": 1
+},
+"528": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+12
+],
+"conf": "alta",
+"pendiente": 1
+},
+"529": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+12
+],
+"conf": "alta",
+"pendiente": 1
+},
+"530": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+13
+],
+"conf": "alta",
+"pendiente": 1
+},
+"531": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+13
+],
+"conf": "media",
+"pendiente": 1
+},
+"532": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+13
+],
+"conf": "alta",
+"pendiente": 1
+},
+"533": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+26
+],
+"conf": "media",
+"pendiente": 1
+},
+"534": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+15
+],
+"conf": "media",
+"pendiente": 1
+},
+"535": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+14
+],
+"conf": "alta",
+"pendiente": 1
+},
+"536": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+15
+],
+"conf": "alta",
+"pendiente": 1
+},
+"537": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+16
+],
+"conf": "alta",
+"pendiente": 1
+},
+"538": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+16
+],
+"conf": "alta",
+"pendiente": 1
+},
+"539": {
+"m": "Bloque II - Tema 19 - Infraestructuras eléctricas",
+"p": [
+16
+],
+"conf": "alta",
+"pendiente": 1
+},
+"540": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"541": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"542": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+13
+],
+"conf": "alta",
+"pendiente": 1
+},
+"543": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"544": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"545": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+3
+],
+"conf": "media",
+"pendiente": 1
+},
+"546": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"547": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"548": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+16
+],
+"conf": "media",
+"pendiente": 1
+},
+"549": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+5
+],
+"conf": "media",
+"pendiente": 1
+},
+"550": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+5
+],
+"conf": "alta",
+"pendiente": 1
+},
+"551": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+6
+],
+"conf": "media",
+"pendiente": 1
+},
+"552": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+6
+],
+"conf": "alta",
+"pendiente": 1
+},
+"553": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+6
+],
+"conf": "alta",
+"pendiente": 1
+},
+"554": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+6
+],
+"conf": "alta",
+"pendiente": 1
+},
+"555": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+7
+],
+"conf": "alta",
+"pendiente": 1
+},
+"556": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+7
+],
+"conf": "media",
+"pendiente": 1
+},
+"557": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+7
+],
+"conf": "media",
+"pendiente": 1
+},
+"558": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+8
+],
+"conf": "alta",
+"pendiente": 1
+},
+"559": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+8
+],
+"conf": "alta",
+"pendiente": 1
+},
+"560": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+8
+],
+"conf": "alta",
+"pendiente": 1
+},
+"561": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+8
+],
+"conf": "alta",
+"pendiente": 1
+},
+"562": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+9
+],
+"conf": "alta",
+"pendiente": 1
+},
+"563": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+9
+],
+"conf": "alta",
+"pendiente": 1
+},
+"564": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+9
+],
+"conf": "alta",
+"pendiente": 1
+},
+"565": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+10
+],
+"conf": "alta",
+"pendiente": 1
+},
+"566": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+10
+],
+"conf": "alta",
+"pendiente": 1
+},
+"567": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+11
+],
+"conf": "alta",
+"pendiente": 1
+},
+"568": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+12
+],
+"conf": "alta",
+"pendiente": 1
+},
+"569": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+13
+],
+"conf": "alta",
+"pendiente": 1
+},
+"570": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+14
+],
+"conf": "media",
+"pendiente": 1
+},
+"571": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+14
+],
+"conf": "media",
+"pendiente": 1
+},
+"572": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+15
+],
+"conf": "alta",
+"pendiente": 1
+},
+"573": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+15
+],
+"conf": "alta",
+"pendiente": 1
+},
+"574": {
+"m": "Bloque II - Tema 14 - Técnicas de estabilización de sistemas constructivos y terrenos",
+"p": [
+15
+],
+"conf": "alta",
+"pendiente": 1
+},
+"575": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"576": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"577": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"578": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"579": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"580": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"581": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"582": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"583": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+4
+],
+"conf": "media",
+"pendiente": 1
+},
+"584": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"585": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+5
+],
+"conf": "media",
+"pendiente": 1
+},
+"586": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+5
+],
+"conf": "media",
+"pendiente": 1
+},
+"587": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+5
+],
+"conf": "alta",
+"pendiente": 1
+},
+"588": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+5
+],
+"conf": "media",
+"pendiente": 1
+},
+"589": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+9
+],
+"conf": "media",
+"pendiente": 1
+},
+"590": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+6
+],
+"conf": "media",
+"pendiente": 1
+},
+"591": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+5
+],
+"conf": "media",
+"pendiente": 1
+},
+"592": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+7
+],
+"conf": "media",
+"pendiente": 1
+},
+"593": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+7
+],
+"conf": "alta",
+"pendiente": 1
+},
+"594": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+7
+],
+"conf": "alta",
+"pendiente": 1
+},
+"595": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+10
+],
+"conf": "alta",
+"pendiente": 1
+},
+"596": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+10
+],
+"conf": "alta",
+"pendiente": 1
+},
+"597": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+10
+],
+"conf": "alta",
+"pendiente": 1
+},
+"598": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+10
+],
+"conf": "alta",
+"pendiente": 1
+},
+"599": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+12
+],
+"conf": "alta",
+"pendiente": 1
+},
+"600": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+12
+],
+"conf": "alta",
+"pendiente": 1
+},
+"601": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+13
+],
+"conf": "alta",
+"pendiente": 1
+},
+"602": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+21
+],
+"conf": "media",
+"pendiente": 1
+},
+"603": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+14
+],
+"conf": "alta",
+"pendiente": 1
+},
+"604": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+15
+],
+"conf": "alta",
+"pendiente": 1
+},
+"605": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+16
+],
+"conf": "media",
+"pendiente": 1
+},
+"606": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+16
+],
+"conf": "alta",
+"pendiente": 1
+},
+"607": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+17
+],
+"conf": "alta",
+"pendiente": 1
+},
+"608": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+17
+],
+"conf": "alta",
+"pendiente": 1
+},
+"609": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+18
+],
+"conf": "alta",
+"pendiente": 1
+},
+"610": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+18
+],
+"conf": "alta",
+"pendiente": 1
+},
+"611": {
+"m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+"p": [
+18
+],
+"conf": "alta",
+"pendiente": 1
+},
+"612": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"613": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"614": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"615": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"616": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"617": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"618": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"619": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"620": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"621": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+4
+],
+"conf": "media",
+"pendiente": 1
+},
+"622": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+6
+],
+"conf": "alta",
+"pendiente": 1
+},
+"623": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+6
+],
+"conf": "alta",
+"pendiente": 1
+},
+"624": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+6
+],
+"conf": "alta",
+"pendiente": 1
+},
+"625": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+3
+],
+"conf": "media",
+"pendiente": 1
+},
+"626": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+7
+],
+"conf": "media",
+"pendiente": 1
+},
+"627": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+7
+],
+"conf": "alta",
+"pendiente": 1
+},
+"628": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+7
+],
+"conf": "alta",
+"pendiente": 1
+},
+"629": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+7
+],
+"conf": "alta",
+"pendiente": 1
+},
+"630": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+7
+],
+"conf": "media",
+"pendiente": 1
+},
+"631": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+8
+],
+"conf": "alta",
+"pendiente": 1
+},
+"632": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+9
+],
+"conf": "alta",
+"pendiente": 1
+},
+"633": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+9
+],
+"conf": "alta",
+"pendiente": 1
+},
+"634": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+19
+],
+"conf": "alta",
+"pendiente": 1
+},
+"635": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+10
+],
+"conf": "alta",
+"pendiente": 1
+},
+"636": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+24
+],
+"conf": "media",
+"pendiente": 1
+},
+"637": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+11
+],
+"conf": "media",
+"pendiente": 1
+},
+"638": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+11
+],
+"conf": "alta",
+"pendiente": 1
+},
+"639": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+12
+],
+"conf": "media",
+"pendiente": 1
+},
+"640": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+13
+],
+"conf": "alta",
+"pendiente": 1
+},
+"641": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+13
+],
+"conf": "alta",
+"pendiente": 1
+},
+"642": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+17
+],
+"conf": "alta",
+"pendiente": 1
+},
+"643": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+18
+],
+"conf": "alta",
+"pendiente": 1
+},
+"644": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+18
+],
+"conf": "alta",
+"pendiente": 1
+},
+"645": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+20
+],
+"conf": "media",
+"pendiente": 1
+},
+"646": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+21
+],
+"conf": "alta",
+"pendiente": 1
+},
+"647": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+22
+],
+"conf": "alta",
+"pendiente": 1
+},
+"648": {
+"m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
+"p": [
+24
+],
+"conf": "alta",
+"pendiente": 1
+}
+}

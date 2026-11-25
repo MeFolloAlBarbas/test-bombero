@@ -33,6 +33,16 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
   nada descifrado ni copies texto de los manuales en ficheros sin cifrar (el repo es público).
 - `tandas/TEMARIO_BASES.md`: títulos y contenido exacto de cada tema según las bases, y qué archivo corresponde a cada uno. **Solo se pregunta lo que entra en el tema** (p. ej. en leyes, solo los artículos indicados).
 
+## Mapa de cobertura (saber con seguridad qué está preguntado y qué falta)
+- **Cada pregunta nueva lleva `src`**: `{"m": "<nombre exacto del manual en temario/, sin .txt.enc>", "p": [páginas del PDF]}`
+  (las páginas son las marcas «=== Página N del PDF ===»). reglas.py da error si falta.
+- `python3 scripts/mapa.py /tmp/temario` (con el temario descifrado) genera `tandas/mapa_preguntas.json` (id → manual,
+  página, confianza) y `tandas/mapa_paginas.json` (por manual: páginas con preguntas y **páginas sin preguntas**).
+  Las preguntas antiguas sin `src` se localizan buscando su dato en el manual (confianza alta/media/baja).
+- **Antes de elegir qué preguntar**: ejecutar mapa.py y trabajar las páginas de `sin_preguntas` del manual elegido; en
+  las páginas que ya tienen preguntas, mirar esas preguntas para no repetir el dato. Al terminar, volver a ejecutarlo
+  y subir los dos mapas (solo contienen ids y números de página).
+
 ## Qué es un dato bueno (acordado con el usuario el 25/11/2026)
 - **Cada dato concreto del manual es una pregunta**: cada definición, cada componente, cada cifra,
   cada rango, cada prohibición, cada «por qué», cada función. De una sola página salen 10 o más.
