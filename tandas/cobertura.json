@@ -123,9 +123,9 @@
   },
   "2.22. Instalaciones de la edificación. Infraestructuras de agua fría consumo humano.pdf": {
    "tema": "Agua fría",
-   "hechas": "",
-   "total": null,
-   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+   "hechas": "2-17",
+   "total": 28,
+   "nota": "Hechas p. 2-17 (lote 2026-11-25, tarea 3). Siguiente: p. 18 (instalación particular). Datos menores de p. 4-17 sin preguntar todavía (llave de toma, sentido de circulación, material de armarios, red abierta, 2 tomas >18, GP desde 2 alturas, depósito auxiliar). Ojo: p. 5 (80-100 mm a hornacina) y p. 7 (>65 mm en arqueta in situ) se contradicen: no preguntar sin aclarar."
   },
   "2.24. EPIS 1.pdf": {
    "tema": "EPI",

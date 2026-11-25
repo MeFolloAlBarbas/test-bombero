@@ -1476,6 +1476,767 @@
     "No: la arcilla es cohesiva y se sostiene sola."
    ],
    "c": 1
+  },
+  {
+   "id": 575,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el Canal de Isabel II, ¿en qué orden se suceden las cuatro zonas de la red de abastecimiento?",
+   "o": [
+    "Captación, aducción, tratamiento y distribución.",
+    "Tratamiento, captación, aducción y distribución.",
+    "Captación, tratamiento, aducción y distribución."
+   ],
+   "c": 2,
+   "o4": "Captación, distribución, tratamiento y aducción.",
+   "que": "La red de abastecimiento une las fuentes con las acometidas en 4 zonas: <mark>captación → tratamiento (ETAP) → aducción → distribución</mark>.",
+   "porque": "Primero se recoge el agua bruta, luego se potabiliza, la aducción la lleva hasta los municipios y la distribución la reparte hasta las acometidas.",
+   "ojo": "La aducción va <mark>después</mark> del tratamiento: conecta las ETAP con la red de distribución.",
+   "rec": "Orden lógico del agua: <mark>la cojo, la limpio, la llevo y la reparto</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 2",
+   "tq": "Orden de las zonas de la red de abastecimiento",
+   "ta": "Captación → tratamiento → aducción → distribución."
+  },
+  {
+   "id": 576,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el Canal de Isabel II, ¿qué red, como norma general, NO discurre por suelo urbano?",
+   "o": [
+    "La red de distribución.",
+    "La red de aducción.",
+    "La red de distribución secundaria (ramales)."
+   ],
+   "c": 1,
+   "o4": "La red de transporte (arterias).",
+   "que": "La <mark>aducción</mark> conecta las estaciones de tratamiento con la red de distribución y, como norma general, su trazado <mark>no discurre por suelo urbano</mark>.",
+   "porque": "Son conducciones de gran tamaño, en forma de árbol, que atraviesan varios municipios hasta los depósitos de cada uno.",
+   "ojo": "La red de distribución es justo lo contrario: debe ir por suelo <mark>urbano o periurbano</mark> del municipio.",
+   "rec": "A-ducción = <mark>a las afueras</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 2",
+   "tq": "Red que no va por suelo urbano",
+   "ta": "La aducción."
+  },
+  {
+   "id": 577,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el Canal de Isabel II, salvo excepción justificada, la red de distribución debe ser:",
+   "o": [
+    "Mallada.",
+    "Ramificada.",
+    "Radial."
+   ],
+   "c": 0,
+   "o4": "En árbol, como la aducción.",
+   "que": "La red de distribución, salvo excepción justificada, debe ser <mark>mallada</mark> y discurrir por suelo urbano o periurbano.",
+   "porque": "En una red mallada el agua llega por varios caminos, así una avería no deja sin agua al resto de la red.",
+   "ojo": "La que suele ir en forma de árbol (ramificada) es la <mark>aducción</mark>, no la distribución.",
+   "rec": "Distribución = <mark>malla</mark> de calles.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 2",
+   "tq": "Forma obligada de la red de distribución",
+   "ta": "Mallada (salvo excepción justificada)."
+  },
+  {
+   "id": 578,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el manual, ¿cuál de estos procesos NO forma parte de la potabilización en la ETAP?",
+   "o": [
+    "Ósmosis inversa.",
+    "Preoxidación.",
+    "Floculación."
+   ],
+   "c": 0,
+   "o4": "Desinfección.",
+   "que": "En la <mark>ETAP</mark> el agua bruta pasa por <mark>preoxidación, coagulación, floculación, decantación, filtración y desinfección</mark>.",
+   "porque": "Con esos procesos se convierte el agua de cualquier captación en agua apta para consumo humano.",
+   "ojo": "La ósmosis inversa existe, pero no está entre los procesos que cita el manual.",
+   "rec": "Seis pasos: <mark>oxido, coagulo, flóculo, decanto, filtro y desinfecto</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 2",
+   "tq": "Procesos de la ETAP",
+   "ta": "Preoxidación, coagulación, floculación, decantación, filtración y desinfección."
+  },
+  {
+   "id": 579,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Hay una avería en una red de distribución mallada y se quiere cortar solo el tramo afectado. ¿Qué hace falta?",
+   "o": [
+    "Cerrar la arteria maestra de la que sale el tramo.",
+    "Los planos del tramo y personal del Canal de Isabel II.",
+    "Cerrar la llave de registro de cada edificio afectado."
+   ],
+   "c": 1,
+   "o4": "Nada: la red mallada se aísla sola al bajar la presión.",
+   "que": "En la red mallada el corte se hace con <mark>válvulas que forman sectores poligonales</mark>; por eso hacen falta <mark>los planos</mark> del tramo y el <mark>concurso de personal del CYII</mark>.",
+   "porque": "Como el agua llega por varios caminos, hay que saber exactamente qué válvulas cierran el sector de la avería.",
+   "ojo": "Cerrar la arteria dejaría sin agua mucho más que el tramo: justo lo que la red mallada permite evitar.",
+   "rec": "Malla = <mark>planos + Canal</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 3",
+   "tq": "Cortar un tramo de red mallada",
+   "ta": "Hacen falta los planos y personal del CYII.",
+   "int": 1
+  },
+  {
+   "id": 580,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "En una red de distribución ramificada, ¿qué ocurre si se corta el agua por una avería en uno de sus puntos?",
+   "o": [
+    "El agua llega al resto por otras conducciones.",
+    "Solo queda sin agua el tramo de la avería.",
+    "Queda sin agua toda la red que hay a continuación."
+   ],
+   "c": 2,
+   "o4": "Queda sin agua toda la red, también antes de la avería.",
+   "que": "En la red <mark>ramificada</mark> cada punto recibe el agua en <mark>un solo sentido</mark>: el corte deja sin suministro <mark>toda la red a continuación</mark>.",
+   "porque": "El agua solo llega por un camino, como la savia por los nervios de una hoja.",
+   "ojo": "Que el agua llegue por otros caminos es la ventaja de la red <mark>mallada</mark>.",
+   "rec": "Ramificada = <mark>un solo camino</mark>: corto la rama y todo lo que cuelga de ella se seca.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 3",
+   "tq": "Avería en red ramificada",
+   "ta": "Queda sin agua todo lo que hay detrás."
+  },
+  {
+   "id": 581,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "En la red de distribución secundaria (ramales), ¿qué se puede instalar?",
+   "o": [
+    "Solo hidrantes.",
+    "Solo acometidas.",
+    "Acometidas e hidrantes."
+   ],
+   "c": 1,
+   "o4": "Ni acometidas ni hidrantes.",
+   "que": "Los <mark>ramales</mark> (red de distribución secundaria) son el resto de conducciones de reparto, sobre las que <mark>solo</mark> se podrán instalar <mark>acometidas</mark>.",
+   "porque": "Son las conducciones más pequeñas: dan servicio a los edificios, pero no tienen tamaño para un hidrante.",
+   "ojo": "Acometidas e hidrantes a la vez solo en la red de distribución principal (distribuidor).",
+   "rec": "Ramal = rama fina: <mark>solo casas</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 3",
+   "tq": "Qué se instala en los ramales",
+   "ta": "Solo acometidas."
+  },
+  {
+   "id": 582,
+   "t": "Agua fría",
+   "d": "difícil",
+   "q": "Hay que instalar un hidrante en la red de distribución de un municipio. Según el Canal de Isabel II, ¿dónde se puede?",
+   "o": [
+    "En la principal y en los ramales.",
+    "En cualquier subred de la distribución.",
+    "Solo en la red de distribución principal (distribuidor)."
+   ],
+   "c": 2,
+   "o4": "Solo en la red de transporte (arterias).",
+   "que": "De las tres subredes de distribución, solo el <mark>distribuidor</mark> (red de distribución principal) admite <mark>acometidas e hidrantes</mark>.",
+   "porque": "En las arterias se evita poner acometidas e hidrantes y en los ramales solo se admiten acometidas.",
+   "ojo": "La tentación es pensar que, dentro de la distribución, el hidrante vale en cualquier tubería urbana. No: solo en el distribuidor.",
+   "rec": "Hidrante → <mark>distribuidor</mark>, y solo ahí.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 3",
+   "tq": "Subred donde se instalan hidrantes",
+   "ta": "Solo en el distribuidor (red principal)."
+  },
+  {
+   "id": 583,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el Canal de Isabel II, ¿qué diámetro nominal tienen las conducciones de la red de distribución secundaria (ramales)?",
+   "o": [
+    "Igual o mayor de 150 mm.",
+    "Menor de 150 mm.",
+    "Mayor de 150 mm."
+   ],
+   "c": 1,
+   "o4": "Mayor de 300 mm.",
+   "que": "Los <mark>ramales</mark> tienen un diámetro nominal <mark>&lt; 150 mm</mark>.",
+   "porque": "Son las conducciones más finas de la red: reparten a los edificios.",
+   "ojo": "Igual o mayor de 150 mm es el distribuidor (red principal).",
+   "rec": "<mark>150</mark> es la frontera: los ramales, por debajo.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 3",
+   "tq": "Diámetro de los ramales",
+   "ta": "Menor de 150 mm.",
+   "cifra": 1
+  },
+  {
+   "id": 584,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Las antiguas NIA (normas básicas para instalaciones interiores de suministro de agua) quedaron derogadas por las normas del CYII y el CTE DB HS4 a partir de:",
+   "o": [
+    "2006.",
+    "2002.",
+    "1975."
+   ],
+   "c": 0,
+   "o4": "1980.",
+   "que": "Las <mark>NIA</mark> fueron derogadas a partir de <mark>2006</mark> por las normas del CYII y el CTE DB HS4.",
+   "porque": "Ese año aparece el CTE, la normativa estatal que hoy rige estas instalaciones.",
+   "ojo": "Aun derogadas, muchas instalaciones de la ciudad se hicieron con ellas y siguen en uso.",
+   "rec": "<mark>2006</mark> = año del CTE.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 3",
+   "tq": "Año en que se derogan las NIA",
+   "ta": "2006.",
+   "cifra": 1
+  },
+  {
+   "id": 585,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el Canal de Isabel II, ¿qué elemento NO forma parte del conjunto de medida de la acometida?",
+   "o": [
+    "El grifo de comprobación.",
+    "La válvula reductora de presión.",
+    "La válvula antirretorno."
+   ],
+   "c": 1,
+   "o4": "El filtro.",
+   "que": "El <mark>conjunto de medida</mark> incluye <mark>filtro, contador, grifo de comprobación, válvula antirretorno</mark> y la tercera llave (de salida del contador).",
+   "porque": "Es el tramo donde se mide y se controla el agua que entra a la finca, justo antes del tubo de alimentación.",
+   "ojo": "La reductora de presión aparece después, en la instalación general, para los niveles de presión.",
+   "rec": "Medida: <mark>filtro, contador, compruebo, antirretorno y salgo</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 4",
+   "tq": "Elementos del conjunto de medida (CYII)",
+   "ta": "Filtro, contador, grifo de comprobación, antirretorno y llave de salida."
+  },
+  {
+   "id": 586,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el Canal de Isabel II, ¿dónde termina el primer ramal de la acometida?",
+   "o": [
+    "En la llave de salida del contador.",
+    "En la llave de corte en acera (llave de registro).",
+    "En la llave de corte general."
+   ],
+   "c": 1,
+   "o4": "En la batería de contadores.",
+   "que": "El <mark>primer ramal</mark> va desde la tubería que injerta en la red hasta la <mark>primera llave de paso en la acera</mark> o en galería (llave de corte en acera o de registro).",
+   "porque": "Después empieza el segundo ramal, que llega hasta la llave de corte general, ya dentro de la finca.",
+   "ojo": "La llave de corte general es el final del <mark>segundo</mark> ramal.",
+   "rec": "Primer ramal = <mark>primera llave</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 4",
+   "tq": "Fin del primer ramal (CYII)",
+   "ta": "En la llave de corte en acera."
+  },
+  {
+   "id": 587,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "¿Por qué la acometida se enlaza a la red con una pieza de injerto (manguito o collarín de toma)?",
+   "o": [
+    "Porque soldar o roscar directamente sobre la red está prohibido.",
+    "Porque el injerto hace de contador provisional de la obra.",
+    "Porque así la acometida puede cortarse sin avisar al Canal."
+   ],
+   "c": 0,
+   "o4": "Porque reduce la presión de la red a la de la vivienda.",
+   "que": "La pieza de injerto enlaza la acometida con la red y aporta <mark>refuerzo estructural</mark> y <mark>estanqueidad</mark>. Se usa para <mark>no soldar ni roscar directamente</mark> sobre la red, algo terminantemente prohibido por el Canal.",
+   "porque": "Soldar o roscar la tubería de la red la debilitaría y podría provocar fugas.",
+   "ojo": "No tiene nada que ver con la presión ni con medir.",
+   "rec": "Injerto = <mark>abrazo, no herida</mark>: se agarra a la tubería sin cortarla.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 4",
+   "tq": "Por qué se usa pieza de injerto",
+   "ta": "Prohibido soldar o roscar sobre la red."
+  },
+  {
+   "id": 588,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "¿Cómo se cierra la llave de acometida (llave de registro) del Canal de Isabel II?",
+   "o": [
+    "Un cuarto de vuelta (90°) en sentido contrario a las agujas del reloj.",
+    "Un cuarto de vuelta (90°) en el sentido de las agujas del reloj.",
+    "Media vuelta (180°) en el sentido de las agujas del reloj."
+   ],
+   "c": 1,
+   "o4": "Varias vueltas completas hasta el tope.",
+   "que": "Se acciona con un <mark>cuadradillo</mark>, girando <mark>1/4 de vuelta (90°)</mark>, con topes de apertura y cierre. El cierre es en el <mark>sentido de las agujas del reloj</mark>.",
+   "porque": "Es la primera posibilidad de cortar el agua a la instalación, por eso conviene saber manejarla.",
+   "ojo": "El sentido contrario a las agujas del reloj es el de apertura.",
+   "rec": "Como un grifo normal: <mark>a la derecha, cierro</mark>; y solo un cuarto.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 4",
+   "tq": "Cierre de la llave de registro",
+   "ta": "1/4 de vuelta (90°) en sentido horario.",
+   "cifra": 1
+  },
+  {
+   "id": 589,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "La fachada de un edificio tiene el armario de acometida del dibujo. ¿Qué diámetro de acometida alberga?",
+   "o": [
+    "50 o 65 mm.",
+    "30 o 40 mm.",
+    "20 mm."
+   ],
+   "c": 0,
+   "o4": "80 a 100 mm.",
+   "que": "Los armarios <mark>tipo A3</mark> son los de <mark>dos puertas</mark> y mayor tamaño, y alojan acometidas de <mark>50 y 65 mm</mark>.",
+   "porque": "El tamaño y el tipo de armario sirven para saber la sección de la acometida que hay dentro.",
+   "ojo": "Los de una sola puerta son los A1 y A2, para acometidas más pequeñas.",
+   "rec": "Dos puertas = <mark>doble de grande</mark>: la acometida gorda.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 8",
+   "tq": "Armario CYII de dos puertas (A3)",
+   "ta": "Acometida de 50 o 65 mm.",
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 200 140\" role=\"img\" aria-label=\"Fachada de ladrillo con un armario empotrado de dos puertas, el más grande de los armarios de acometida, con una flecha que indica su anchura de 850 mm\"><rect x=\"0\" y=\"0\" width=\"200\" height=\"140\" fill=\"#c8735a\"/><g stroke=\"#a85a44\" stroke-width=\"1\"><line x1=\"0\" y1=\"20\" x2=\"200\" y2=\"20\"/><line x1=\"0\" y1=\"40\" x2=\"200\" y2=\"40\"/><line x1=\"0\" y1=\"60\" x2=\"200\" y2=\"60\"/><line x1=\"0\" y1=\"80\" x2=\"200\" y2=\"80\"/><line x1=\"0\" y1=\"100\" x2=\"200\" y2=\"100\"/><line x1=\"0\" y1=\"120\" x2=\"200\" y2=\"120\"/></g><rect x=\"40\" y=\"30\" width=\"120\" height=\"80\" fill=\"#e8e4da\" stroke=\"#555\" stroke-width=\"2\"/><line x1=\"100\" y1=\"30\" x2=\"100\" y2=\"110\" stroke=\"#555\" stroke-width=\"2\"/><circle cx=\"94\" cy=\"70\" r=\"3\" fill=\"#555\"/><circle cx=\"106\" cy=\"70\" r=\"3\" fill=\"#555\"/><text x=\"70\" y=\"55\" font-size=\"9\" text-anchor=\"middle\" fill=\"#333\">CYII</text><text x=\"130\" y=\"55\" font-size=\"9\" text-anchor=\"middle\" fill=\"#333\">AGUA</text><line x1=\"40\" y1=\"122\" x2=\"160\" y2=\"122\" stroke=\"#fff\" stroke-width=\"1.5\"/><text x=\"100\" y=\"135\" font-size=\"9\" text-anchor=\"middle\" fill=\"#fff\">850 mm</text></svg>"
+  },
+  {
+   "id": 590,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "¿Qué tipo de armario del Canal de Isabel II corresponde a una acometida de 20 mm?",
+   "o": [
+    "Tipo A1.",
+    "Tipo A3.",
+    "Tipo A2."
+   ],
+   "c": 0,
+   "o4": "Arqueta de fábrica in situ.",
+   "que": "El armario <mark>tipo A1</mark> (una puerta, el más pequeño) es para acometidas de <mark>20 mm</mark>.",
+   "porque": "Los armarios están normalizados por el CYII en tres tipos, de menor a mayor según el diámetro de la acometida.",
+   "ojo": "El A2 es para 30 y 40 mm: también de una puerta, pero mayor.",
+   "rec": "<mark>A1</mark> = el número 1, el más pequeño.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 8",
+   "tq": "Armario CYII para acometida de 20 mm",
+   "ta": "Tipo A1.",
+   "ex": 1,
+   "cifra": 1
+  },
+  {
+   "id": 591,
+   "t": "Agua fría",
+   "d": "difícil",
+   "q": "¿En qué norma la llave de corte general forma parte de la acometida?",
+   "o": [
+    "En las dos.",
+    "Solo en el CTE.",
+    "Solo en la del Canal de Isabel II."
+   ],
+   "c": 2,
+   "o4": "En ninguna: es de la instalación particular.",
+   "que": "En el <mark>CTE</mark> la acometida llega hasta la llave de corte general <mark>sin incluirla</mark>; en el <mark>CYII</mark> esa llave y el resto del conjunto de medida <mark>sí</mark> se incluyen en la acometida.",
+   "porque": "Las dos normas se aplican a la vez en Madrid, pero no dividen la instalación igual.",
+   "ojo": "La tentación es pensar que en las dos es igual. Con el CTE, la llave de corte general ya es el comienzo de la instalación general.",
+   "rec": "El Canal es <mark>más generoso</mark>: su acometida llega más lejos.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 6",
+   "tq": "Llave de corte general: ¿acometida?",
+   "ta": "Solo en el CYII (en el CTE es instalación general)."
+  },
+  {
+   "id": 592,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el CTE, ¿qué elemento NO es uno de los mínimos de la acometida?",
+   "o": [
+    "El contador general.",
+    "La llave de corte en el exterior de la propiedad.",
+    "La llave de toma o el collarín de toma en carga."
+   ],
+   "c": 0,
+   "o4": "El tubo de acometida.",
+   "que": "Según el CTE la acometida tiene como mínimo: <mark>llave de toma o collarín de toma en carga</mark>, <mark>tubo de acometida</mark> y <mark>llave de corte exterior</mark> (llave de acometida).",
+   "porque": "Para el CTE el contador general ya está en la instalación general, dentro de su armario o arqueta.",
+   "ojo": "En el CYII el contador sí forma parte de la acometida (conjunto de medida); en el CTE no.",
+   "rec": "Acometida CTE = <mark>toma, tubo y llave</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 6",
+   "tq": "Elementos mínimos de la acometida (CTE)",
+   "ta": "Llave de toma o collarín, tubo de acometida y llave de acometida."
+  },
+  {
+   "id": 593,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el CTE, ¿en qué orden van los elementos del armario o arqueta del contador general?",
+   "o": [
+    "Llave de corte general, contador, filtro, antirretorno, grifo de prueba y llave de salida.",
+    "Filtro, llave de corte general, contador, antirretorno, grifo de prueba y llave de salida.",
+    "Llave de corte general, filtro, contador, grifo de prueba, antirretorno y llave de salida."
+   ],
+   "c": 2,
+   "o4": "Llave de corte general, antirretorno, contador, filtro, grifo de prueba y llave de salida.",
+   "que": "El orden es: <mark>llave de corte general → filtro en «Y» → contador → grifo o racor de prueba → antirretorno → llave de salida</mark>.",
+   "porque": "El filtro protege al contador, y el antirretorno va tras el grifo de prueba para que el edificio no altere las muestras.",
+   "ojo": "Lo que más se confunde es el final: el grifo de prueba va <mark>antes</mark> del antirretorno.",
+   "rec": "Corto, limpio, cuento, <mark>pruebo</mark> y luego cierro el paso de vuelta.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 6",
+   "tq": "Orden del armario del contador general",
+   "ta": "Corte general, filtro, contador, grifo de prueba, antirretorno, salida.",
+   "ex": 1
+  },
+  {
+   "id": 594,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "¿Por qué el dispositivo antirretorno se coloca detrás del grifo de comprobación?",
+   "o": [
+    "Para proteger el contador de los golpes de ariete.",
+    "Para poder vaciar el contador sin cortar el agua.",
+    "Para que la instalación del edificio no altere las muestras de la distribuidora."
+   ],
+   "c": 2,
+   "o4": "Para que el filtro retenga la suciedad que vuelve.",
+   "que": "El antirretorno va detrás del grifo de comprobación para que la <mark>instalación interior no contamine o altere las muestras</mark> que pueda tomar la distribuidora.",
+   "porque": "Así el agua que sale por el grifo es la de la red, sin mezcla de lo que hay dentro del edificio.",
+   "ojo": "No tiene que ver con golpes de ariete ni con vaciados.",
+   "rec": "Muestra <mark>limpia</mark>: el grifo, del lado de la red.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 6",
+   "tq": "Por qué el antirretorno va tras el grifo de comprobación",
+   "ta": "Para que el edificio no altere las muestras."
+  },
+  {
+   "id": 595,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el CTE, los materiales de las instalaciones de agua potable deben resistir sin daños temperaturas de hasta:",
+   "o": [
+    "30 °C.",
+    "60 °C.",
+    "40 °C."
+   ],
+   "c": 2,
+   "o4": "90 °C.",
+   "que": "Los materiales deben ser resistentes, sin daños ni deterioro, a <mark>temperaturas de hasta 40 °C</mark>, sin que les afecte la temperatura de su entorno.",
+   "porque": "Es un requisito general de todos los materiales para que el agua fría no se vea alterada.",
+   "ojo": "No confundir con cifras del agua caliente sanitaria, que son mucho más altas.",
+   "rec": "Agua fría que aguanta un día de <mark>40 °C</mark> de verano.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 9",
+   "tq": "Temperatura que deben resistir los materiales",
+   "ta": "Hasta 40 °C.",
+   "cifra": 1
+  },
+  {
+   "id": 596,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "¿Qué tubos quedan prohibidos expresamente en las instalaciones de agua potable?",
+   "o": [
+    "Los de PVC y los de polietileno.",
+    "Los de aluminio y los que contengan plomo.",
+    "Los de acero galvanizado y los de cobre."
+   ],
+   "c": 1,
+   "o4": "Los de polibutileno y polipropileno.",
+   "que": "Quedan <mark>prohibidos</mark> expresamente los tubos de <mark>aluminio</mark> y los que contengan <mark>plomo</mark>.",
+   "porque": "Alteran las condiciones de potabilidad del agua.",
+   "ojo": "PVC, polietileno, galvanizado y cobre están en la lista de tubos adecuados.",
+   "rec": "<mark>Al y Pb</mark>: los dos «malos» de la tabla periódica para beber.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 9",
+   "tq": "Tubos prohibidos en agua potable",
+   "ta": "Aluminio y los que contengan plomo.",
+   "ex": 1
+  },
+  {
+   "id": 597,
+   "t": "Agua fría",
+   "d": "difícil",
+   "q": "En una instalación, según el sentido del agua, hay primero un tramo de cobre y después uno de acero galvanizado. ¿Qué pasa?",
+   "o": [
+    "Se corroe el cobre, que es el que va primero.",
+    "Nada: el problema solo aparece si el galvanizado va antes.",
+    "Se forman pares galvánicos y se acelera la perforación del galvanizado."
+   ],
+   "c": 2,
+   "o4": "Se forma cal en el cobre y se obstruye.",
+   "que": "Las tuberías de cobre <mark>no se colocan antes</mark> de las de acero galvanizado: se forman <mark>pares galvánicos</mark> y el agua arrastra iones de cobre hacia el galvanizado, que <mark>acelera su perforación</mark>.",
+   "porque": "El metal que se come es el galvanizado, que recibe el cobre que arrastra el agua.",
+   "ojo": "La tentación es creer que se estropea el que va primero. Es al revés: el perjudicado es el galvanizado de después.",
+   "rec": "Mixta acero-cobre: <mark>primero acero, luego cobre</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 9",
+   "tq": "Cobre antes de galvanizado",
+   "ta": "Pares galvánicos: se perfora el galvanizado."
+  },
+  {
+   "id": 598,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Se quiere acoplar una tubería de cobre después de una de acero galvanizado, según el sentido del agua. ¿Qué exige el manual?",
+   "o": [
+    "Montar un filtro en «Y» entre ambas tuberías.",
+    "Montar una válvula de retención entre ambas tuberías.",
+    "Está prohibido en cualquier orden."
+   ],
+   "c": 1,
+   "o4": "Pintar ambas tuberías de azul.",
+   "que": "Se autoriza el acoplamiento de <mark>cobre después de acero galvanizado</mark>, montando una <mark>válvula de retención</mark> entre ambas tuberías.",
+   "porque": "La retención impide que el agua vuelva desde el cobre hacia el galvanizado.",
+   "ojo": "El orden correcto (galvanizado antes que cobre) no basta: sigue haciendo falta la válvula de retención.",
+   "rec": "Acero → <mark>retención</mark> → cobre.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 9",
+   "tq": "Cobre después de galvanizado",
+   "ta": "Con válvula de retención entre ambos.",
+   "int": 1
+  },
+  {
+   "id": 599,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "En un edificio con distribución superior (depósito en la cubierta) hay una fuga en la 3.ª planta. ¿Qué llave de seccionamiento se cierra?",
+   "o": [
+    "La de la 2.ª planta.",
+    "La llave de corte general del sótano.",
+    "La de la 4.ª planta."
+   ],
+   "c": 2,
+   "o4": "La de la propia 3.ª planta y la de la 2.ª.",
+   "que": "En la distribución superior el agua de las columnas viene <mark>de arriba</mark>: hay que cerrar la llave de la planta de <mark>encima</mark> de la fuga.",
+   "porque": "Si se cierra la de abajo, habría que esperar a que se vaciase todo el depósito de la cubierta, no solo el agua de la columna.",
+   "ojo": "Es la costumbre de la distribución inferior (cerrar la de abajo) la que aquí falla.",
+   "rec": "Agua que <mark>baja</mark>: se corta <mark>por arriba</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 11",
+   "tq": "Fuga con distribución superior",
+   "ta": "Cerrar la llave de la planta de encima.",
+   "int": 1
+  },
+  {
+   "id": 600,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "¿Qué red de distribución inferior es de uso obligado en hospitales?",
+   "o": [
+    "La distribución superior con depósito.",
+    "La red cerrada o en anillo.",
+    "La red abierta."
+   ],
+   "c": 1,
+   "o4": "La red ramificada de grupo único.",
+   "que": "La <mark>red cerrada o en anillo</mark> es de <mark>uso obligado en hospitales</mark> por su seguridad de servicio.",
+   "porque": "Reparte mejor la presión, atenúa los golpes de ariete y permite seccionar un tramo dejando con servicio al resto de columnas.",
+   "ojo": "La red abierta es más sencilla y barata, pero una avería deja sin agua todo lo que hay detrás.",
+   "rec": "Hospital = <mark>anillo</mark>: nunca puede quedarse sin agua.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 11",
+   "tq": "Red obligatoria en hospitales",
+   "ta": "Cerrada o en anillo."
+  },
+  {
+   "id": 601,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Con contador único general, ¿qué disposición es adecuada para un hotel de gran extensión horizontal?",
+   "o": [
+    "Grupo múltiple de columnas.",
+    "Contadores centralizados en batería.",
+    "Un solo grupo de columnas."
+   ],
+   "c": 0,
+   "o4": "Contadores en cada habitación.",
+   "que": "El <mark>grupo múltiple de columnas</mark> es adecuado para instalaciones de <mark>gran extensión horizontal</mark> y propiedad única, como hoteles y colegios.",
+   "porque": "Tras el contador general salen varios distribuidores y de ellos los montantes que dan servicio a las plantas.",
+   "ojo": "Un solo grupo de columnas es para extensiones <mark>verticales</mark>, como torres.",
+   "rec": "Mucho a lo <mark>ancho</mark> = <mark>muchas</mark> columnas.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 12",
+   "tq": "Contador único en hotel horizontal",
+   "ta": "Grupo múltiple de columnas."
+  },
+  {
+   "id": 602,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "En un edificio de contador único con un solo grupo de columnas, cada columna sirve como máximo a:",
+   "o": [
+    "10 plantas.",
+    "6 plantas.",
+    "20 plantas."
+   ],
+   "c": 0,
+   "o4": "12 plantas.",
+   "que": "Con un solo grupo de columnas, <mark>cada columna sirve un máximo de 10 plantas</mark>.",
+   "porque": "Por encima, la presión cambia demasiado y hace falta otro nivel de presión con su propia columna.",
+   "ojo": "No confundir con el número de plantas de todo el edificio, que puede ser mucho mayor.",
+   "rec": "<mark>10</mark> plantas por columna, como 10 dedos.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 12",
+   "tq": "Plantas máximas por columna",
+   "ta": "10.",
+   "cifra": 1
+  },
+  {
+   "id": 603,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "La batería de contadores divisionarios se sitúa en un cuarto, en vez de en un armario, cuando da servicio a:",
+   "o": [
+    "Más de 16 suministros.",
+    "Más de 60 suministros.",
+    "Más de 18 suministros."
+   ],
+   "c": 0,
+   "o4": "Más de 10 suministros.",
+   "que": "Las baterías van en un <mark>cuarto</mark> cuando dan servicio a <mark>más de 16 suministros</mark>; si no, en un armario de contadores.",
+   "porque": "Con muchos contadores hace falta espacio para manipularlos y mantenerlos.",
+   "ojo": "La cifra de 18 es la que se suele confundir con esta.",
+   "rec": "<mark>16</mark>: con más contadores, ya no caben en un armario.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 13",
+   "tq": "Batería en cuarto: desde cuántos suministros",
+   "ta": "Más de 16.",
+   "cifra": 1
+  },
+  {
+   "id": 604,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "En un cuarto de contadores la batería es de color verde. ¿De qué material es?",
+   "o": [
+    "De acero galvanizado.",
+    "De polipropileno (PPR).",
+    "De cobre."
+   ],
+   "c": 1,
+   "o4": "De acero inoxidable.",
+   "que": "Si la batería es de color <mark>verde o azulado</mark>, es de <mark>PPR (polipropileno)</mark>; las de material ferroso son de acero galvanizado.",
+   "porque": "El color de su estructura sirve para identificar su composición.",
+   "ojo": "Lo más habitual sigue siendo el galvanizado, pero ese tiene aspecto metálico, no verde.",
+   "rec": "Verde = <mark>plástico</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 14",
+   "tq": "Batería de contadores verde",
+   "ta": "Polipropileno (PPR).",
+   "int": 1
+  },
+  {
+   "id": 605,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el CTE, ¿cuál es la presión máxima en las instalaciones interiores, expresada en metros de columna de agua?",
+   "o": [
+    "50 mca.",
+    "60 mca.",
+    "15 mca."
+   ],
+   "c": 0,
+   "o4": "100 mca.",
+   "que": "La presión máxima en instalaciones interiores es de <mark>500 kPa = 5 bar = 50 mca</mark>.",
+   "porque": "Por encima se dañarían grifos y aparatos; por eso hay reductoras en las plantas bajas.",
+   "ojo": "15 mca es la mínima de fluxores y calentadores.",
+   "rec": "1 bar ≈ 10 mca: <mark>5 bar → 50 mca</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 15",
+   "tq": "Presión máxima en instalaciones interiores",
+   "ta": "50 mca (5 bar).",
+   "cifra": 1
+  },
+  {
+   "id": 606,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el manual, en la red urbana de distribución el agua circula normalmente a unos:",
+   "o": [
+    "3 bar.",
+    "9 bar.",
+    "6 bar."
+   ],
+   "c": 2,
+   "o4": "1,5 bar.",
+   "que": "En la red urbana el agua circula normalmente a <mark>unos 6 bar</mark>.",
+   "porque": "Por eso hace falta una válvula reductora en las primeras plantas: en ellas se superaría la presión máxima de las instalaciones interiores.",
+   "ojo": "No hay que confundirla con la presión que se recomienda en las viviendas, que es menor.",
+   "rec": "Red urbana: <mark>unos 6 bar</mark>, de ahí las reductoras en las plantas bajas.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 15",
+   "tq": "Presión normal de la red urbana",
+   "ta": "Unos 6 bar.",
+   "cifra": 1
+  },
+  {
+   "id": 607,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "En un grupo de presión convencional, ¿cuántas veces por hora como máximo puede funcionar cada bomba?",
+   "o": [
+    "10 veces.",
+    "20 veces.",
+    "60 veces."
+   ],
+   "c": 1,
+   "o4": "2 veces.",
+   "que": "Se instalan como mínimo dos bombas en paralelo que funcionan alternativamente; <mark>cada bomba funcionará como máximo 20 veces a la hora</mark>.",
+   "porque": "Arrancar y parar demasiadas veces desgasta el motor; el calderín evita encenderlas para pequeños consumos.",
+   "ojo": "El 60 aparece en otra norma de los grupos de presión, no en los arranques.",
+   "rec": "<mark>20</mark> arranques a la hora: uno cada 3 minutos.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 16",
+   "tq": "Arranques máximos por bomba",
+   "ta": "20 a la hora.",
+   "cifra": 1
+  },
+  {
+   "id": 608,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "En un grupo de presión convencional, ¿qué elemento enciende y apaga las bombas según la presión?",
+   "o": [
+    "La válvula de tres vías del bypass.",
+    "El grifo de vaciado del depósito.",
+    "El presostato del calderín."
+   ],
+   "c": 2,
+   "o4": "La válvula de retención.",
+   "que": "El <mark>calderín</mark> (depósito de presión) cuenta con un <mark>presostato</mark> que enciende y apaga las bombas según la presión, a través de un contactor.",
+   "porque": "Las bombas arrancan al llegar a la presión mínima y paran al alcanzar la máxima.",
+   "ojo": "La válvula de tres vías decide entre bypass y grupo, no arranca las bombas.",
+   "rec": "Presostato = <mark>termostato de la presión</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 16",
+   "tq": "Qué arranca y para las bombas del GP",
+   "ta": "El presostato del calderín."
+  },
+  {
+   "id": 609,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "En la Comunidad de Madrid, ¿cuántos grupos de presión habrá como mínimo?",
+   "o": [
+    "Uno por cada 60 suministros.",
+    "Uno por cada 16 suministros.",
+    "Uno por cada 20 suministros."
+   ],
+   "c": 0,
+   "o4": "Uno por edificio, sea cual sea su tamaño.",
+   "que": "La norma del CYII exige <mark>como mínimo un grupo de presión por cada 60 suministros</mark>.",
+   "porque": "Un solo grupo para demasiadas viviendas no podría garantizar la presión.",
+   "ojo": "16 es la cifra de la batería de contadores en cuarto, no la de los grupos de presión.",
+   "rec": "<mark>60</mark> suministros, como 60 minutos en una hora.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 17",
+   "tq": "Grupos de presión mínimos (CYII)",
+   "ta": "Uno por cada 60 suministros.",
+   "cifra": 1
+  },
+  {
+   "id": 610,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Según el Canal de Isabel II, el agua de los depósitos reguladores del grupo de presión se renovará como mínimo:",
+   "o": [
+    "1 vez cada 24 horas.",
+    "1 vez a la semana.",
+    "2 veces cada 24 horas."
+   ],
+   "c": 2,
+   "o4": "4 veces cada 24 horas.",
+   "que": "El agua almacenada se renovará <mark>al menos 2 veces cada 24 horas</mark> por razones de <mark>salubridad</mark>.",
+   "porque": "El agua parada mucho tiempo pierde calidad.",
+   "ojo": "Es un mínimo: puede renovarse más veces.",
+   "rec": "<mark>Dos al día</mark>, como el cepillado de dientes.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 17",
+   "tq": "Renovación del agua del depósito del GP",
+   "ta": "Al menos 2 veces cada 24 h.",
+   "cifra": 1
+  },
+  {
+   "id": 611,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "¿Cómo mantiene constante la presión un grupo de presión de caudal variable?",
+   "o": [
+    "Con un depósito en la cubierta que baja por gravedad.",
+    "Con un variador de frecuencia que cambia la velocidad de las bombas.",
+    "Con un calderín grande que arranca las bombas por presostato."
+   ],
+   "c": 1,
+   "o4": "Con una válvula reductora a la salida de las bombas.",
+   "que": "En el grupo de <mark>caudal variable</mark> las electrobombas funcionan con un <mark>variador de frecuencia</mark> que altera su velocidad según lo que pida la instalación.",
+   "porque": "Así la presión de salida se mantiene constante sea cual sea el caudal demandado.",
+   "ojo": "El arranque y paro con presostato y calderín es el del grupo convencional.",
+   "rec": "Variable = <mark>varía la velocidad</mark>.",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 17",
+   "tq": "Grupo de presión de caudal variable",
+   "ta": "Variador de frecuencia en las bombas."
   }
  ],
  "glosario": [
@@ -1821,6 +2582,208 @@
    "d": "Según la NTP 278, la que alcanza 0,80 m en terrenos corrientes o 1,30 m en terrenos consistentes.",
    "tema": "Técnicas de estabilización",
    "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 171",
+   "solo": 1
+  },
+  {
+   "t": "Aducción",
+   "a": [
+    "aducción"
+   ],
+   "d": "Conducciones que llevan el agua de las estaciones de tratamiento a la red de distribución; como norma, no van por suelo urbano.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 2",
+   "solo": 1
+  },
+  {
+   "t": "ETAP",
+   "a": [
+    "ETAP"
+   ],
+   "d": "Estación de tratamiento de agua potable: convierte el agua bruta en agua apta para consumo humano.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 2",
+   "solo": 1
+  },
+  {
+   "t": "Red ramificada",
+   "a": [
+    "red ramificada",
+    "ramificada"
+   ],
+   "d": "Red en la que el agua llega a cada punto por un solo camino; un corte deja sin agua todo lo que hay detrás.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 3",
+   "solo": 1
+  },
+  {
+   "t": "Distribuidor (red de agua)",
+   "a": [
+    "distribuidor"
+   ],
+   "d": "Red de distribución principal (≥ 150 mm): admite acometidas e hidrantes.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 3",
+   "solo": 1
+  },
+  {
+   "t": "Ramales (red de agua)",
+   "a": [
+    "ramales"
+   ],
+   "d": "Red de distribución secundaria (< 150 mm): solo admite acometidas.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 3",
+   "solo": 1
+  },
+  {
+   "t": "Conjunto de medida",
+   "a": [
+    "conjunto de medida"
+   ],
+   "d": "Parte de la acometida (CYII) con filtro, contador, grifo de comprobación, antirretorno y llave de salida.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 4",
+   "solo": 1
+  },
+  {
+   "t": "Llave de registro",
+   "a": [
+    "llave de registro",
+    "llave de corte en acera",
+    "llave de acometida"
+   ],
+   "d": "Llave de la acometida en la acera; primera posibilidad de corte. Cierra con 1/4 de vuelta en sentido horario.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 4",
+   "solo": 1
+  },
+  {
+   "t": "Pieza de injerto",
+   "a": [
+    "pieza de injerto",
+    "collarín de toma"
+   ],
+   "d": "Pieza que enlaza la acometida con la red sin soldar ni roscar sobre ella.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 4",
+   "solo": 1
+  },
+  {
+   "t": "Distribución superior",
+   "a": [
+    "distribución superior"
+   ],
+   "d": "Distribuidor en la azotea que alimenta por gravedad columnas descendentes.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 11",
+   "solo": 1
+  },
+  {
+   "t": "Batería de contadores",
+   "a": [
+    "batería de contadores",
+    "batería"
+   ],
+   "d": "Anillo cerrado que alimenta y soporta los contadores divisionarios con sus llaves.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 14",
+   "solo": 1
+  },
+  {
+   "t": "Calderín",
+   "a": [
+    "calderín",
+    "depósito de presión"
+   ],
+   "d": "Depósito que acumula agua a presión en el grupo de presión; su presostato enciende y apaga las bombas.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 16",
+   "solo": 1
+  },
+  {
+   "t": "Grupo de presión",
+   "a": [
+    "grupo de presión"
+   ],
+   "d": "Equipo que da más presión que la red cuando esta no llega al punto más desfavorable.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 15",
+   "solo": 1
+  },
+  {
+   "t": "Presostato",
+   "a": [
+    "presostato"
+   ],
+   "d": "Dispositivo que enciende o apaga un equipo según la presión.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 16",
+   "solo": 1
+  },
+  {
+   "t": "NIA",
+   "a": [
+    "NIA"
+   ],
+   "d": "Normas básicas para las instalaciones interiores de suministro de agua (1975), derogadas a partir de 2006 por el CTE y las normas del CYII.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 3",
+   "solo": 1
+  },
+  {
+   "t": "Dispositivo antirretorno",
+   "a": [
+    "antirretorno",
+    "dispositivo antirretorno",
+    "válvula antirretorno"
+   ],
+   "d": "Válvula que impide que el agua vuelva en sentido contrario.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 6",
+   "solo": 1
+  },
+  {
+   "t": "Agua de consumo humano",
+   "a": [
+    "agua potable",
+    "agua de consumo humano"
+   ],
+   "d": "Agua apta para beber; también lo es el ACS a efectos de requisitos.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 9",
+   "solo": 1
+  },
+  {
+   "t": "mca",
+   "a": [
+    "mca",
+    "metros de columna de agua"
+   ],
+   "d": "Metros de columna de agua: unidad de presión; 10 mca ≈ 1 bar.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 15",
+   "solo": 1
+  },
+  {
+   "t": "Válvula reductora de presión",
+   "a": [
+    "válvula reductora",
+    "reductora de presión"
+   ],
+   "d": "Válvula que baja la presión de la red para no superar la máxima de la instalación.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 15",
+   "solo": 1
+  },
+  {
+   "t": "Par galvánico",
+   "a": [
+    "pares galvánicos",
+    "par galvánico"
+   ],
+   "d": "Unión de metales de distinto potencial que provoca corrosión de uno de ellos.",
+   "tema": "Agua fría",
+   "f": "Manual de Agua fría y saneamiento (Ayto. Madrid), p. 9",
    "solo": 1
   }
  ]
