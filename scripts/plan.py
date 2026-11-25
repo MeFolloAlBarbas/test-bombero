@@ -9,9 +9,12 @@ Reglas:
 - Si no quedan preguntas suficientes para un día completo, el plan se detiene ahí.
 - Las preguntas de intervención (int=1) no se usan aquí: las coloca scripts/intervencion.py
   (una al día, a hora aleatoria). Ejecutar después: python3 scripts/intervencion.py
-Uso: python3 scripts/plan.py
+- Solo planifica hasta HORIZONTE días por delante de hoy (21 por defecto; --hasta AAAA-MM-DD para otro
+  límite). Las preguntas que sobran se quedan en el banco, sin día, para cuando haya más por hora.
+Uso: python3 scripts/plan.py [--hasta AAAA-MM-DD]
 """
-import json, random, datetime as dt, os
+import json, random, datetime as dt, os, sys
+from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BANK = json.load(open(os.path.join(ROOT, 'preguntas.json'), encoding='utf-8'))
@@ -20,13 +23,17 @@ INICIO = dt.date(2026, 11, 21)
 YA_USADAS_ANTES = {1, 7, 11, 12, 13, 15, 16, 20, 22, 26, 33, 34, 36, 38, 39,  # preguntas del 20/11/2026
                    71}  # 23/11 19:00: la vio casi todo el mundo (el plan se cambió a la 293)
 
+HOY = dt.datetime.now(ZoneInfo('Europe/Madrid')).date()
+HORIZONTE = 21
+HASTA = dt.date.fromisoformat(sys.argv[sys.argv.index('--hasta') + 1]) if '--hasta' in sys.argv else HOY + dt.timedelta(days=HORIZONTE)
+
 plan = json.load(open(PLAN_F, encoding='utf-8')) if os.path.exists(PLAN_F) else {}
 usadas = set(YA_USADAS_ANTES) | {i for ids in plan.values() for i in ids}
 libres = [q for q in sorted(BANK, key=lambda q: q['id']) if q['id'] not in usadas]
 
 dia = max([dt.date.fromisoformat(k) for k in plan] + [INICIO - dt.timedelta(days=1)]) + dt.timedelta(days=1)
 nuevos = 0
-while True:
+while dia <= HASTA:
     if dia.weekday() == 6:  # domingo
         dia += dt.timedelta(days=1); continue
     dificiles = [q for q in libres if q['d'] == 'difícil']
