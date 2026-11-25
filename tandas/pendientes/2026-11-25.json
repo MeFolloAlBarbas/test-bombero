@@ -344,6 +344,27 @@
    "cifra": 1
   },
   {
+   "id": 312,
+   "t": "EPI",
+   "d": "normal",
+   "q": "El guante de protección química del ejemplo de la guía va marcado con su pictograma junto a la norma:",
+   "o": [
+    "UNE-EN 374-1.",
+    "UNE-EN ISO 21420.",
+    "UNE-EN ISO 13688."
+   ],
+   "c": 0,
+   "o4": "UNE-EN 795.",
+   "que": "Los EPI certificados con normas armonizadas llevan <mark>pictogramas</mark> relacionados con la protección que dan.",
+   "porque": "Para la protección química de los guantes la norma es la <mark>UNE-EN 374-1</mark>.",
+   "ojo": "Las otras son normas reales de otros apartados: la 13688 es de <mark>ropa</mark> y la 21420 de requisitos <mark>generales</mark> de guantes.",
+   "rec": "Química en las manos: <mark>374</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 21",
+   "tq": "Norma del guante de protección química",
+   "ta": "UNE-EN 374-1.",
+   "cifra": 1
+  },
+  {
    "id": 313,
    "t": "EPI",
    "d": "normal",
