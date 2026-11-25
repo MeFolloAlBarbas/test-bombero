@@ -26,9 +26,16 @@ nuevos_t = [g for g in lote.get('glosario', []) if g['t'].lower() not in ya]
 glos += nuevos_t
 open(PQ, 'w', encoding='utf-8').write(json.dumps(banco, ensure_ascii=False, indent=0))
 open(GL, 'w', encoding='utf-8').write(json.dumps(glos, ensure_ascii=False, indent=0))
-shutil.move(ruta, os.path.join(ROOT, 'tandas', 'aprobadas', fecha + '.json'))
+n_nuevas = len(lote['preguntas'])
+dest = os.path.join(ROOT, 'tandas', 'aprobadas', fecha + '.json')
+if os.path.exists(dest):  # segundo lote del mismo día (p. ej. aprobado por la tarde y otro por la noche): se suman
+    prev = json.load(open(dest, encoding='utf-8'))
+    lote['preguntas'] = prev['preguntas'] + lote['preguntas']; lote['glosario'] = prev.get('glosario', []) + lote.get('glosario', [])
+    open(dest, 'w', encoding='utf-8').write(json.dumps(lote, ensure_ascii=False, indent=1)); os.remove(ruta)
+else:
+    shutil.move(ruta, dest)
 EF = os.path.join(ROOT, 'tandas', 'estado.json'); est = json.load(open(EF, encoding='utf-8'))
 est['esperando_visto_bueno'] = None; est['ultimo_aprobado'] = fecha
 open(EF, 'w', encoding='utf-8').write(json.dumps(est, ensure_ascii=False, indent=1) + '\n')
-print(f'Aprobadas {len(lote["preguntas"])} preguntas y {len(nuevos_t)} términos del glosario.')
+print(f'Aprobadas {n_nuevas} preguntas y {len(nuevos_t)} términos del glosario.')
 subprocess.run(['sh', os.path.join(ROOT, 'scripts', 'calendario.sh')], check=True)
