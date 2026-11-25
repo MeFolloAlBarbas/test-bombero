@@ -43,7 +43,7 @@ def main(ruta):
         if q.get('c') not in (0, 1, 2): err.append((i, 'c debe ser 0, 1 o 2'))
         for c in EXPL + ['tq', 'ta']:
             m = LETRA_EXACTA.search(limpio(q.get(c, '')))
-            if m and (n.get('id'), v['id']) not in ok: err.append((i, f'«{c}» nombra una opción por su letra: «{m.group(0)}»'))
+            if m: err.append((i, f'«{c}» nombra una opción por su letra: «{m.group(0)}»'))
         if isinstance(q.get('o'), list) and len(q['o']) == 3:
             base = nums(q['q']) | set().union(*(nums(o) for o in q['o'] + [q.get('o4', '')]))
             extra = set().union(*(nums(q.get(c, '')) for c in EXPL)) - base - {'0', '1', '2'}

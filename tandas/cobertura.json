@@ -129,9 +129,9 @@
   },
   "2.24. EPIS 1.pdf": {
    "tema": "EPI",
-   "hechas": "10-26, 51-52",
+   "hechas": "10-26, 51-62",
    "total": null,
-   "nota": "El texto del proyecto solo trae las p. 10-26 y 51-62. Las p. 53-57 están a medias (lote 2026-11-25: ya preguntados casco contra golpes, clase óptica, 6 kN, anclaje FC 0, EN 795 B/E, revisión anual, desechar tras caída); quedan el resto de esas páginas y las p. 58-62."
+   "nota": "TERMINADO el 25/11/2026: el texto del proyecto solo trae las p. 10-26 y 51-62 y sus datos están preguntados. El usuario puede quitarlo del proyecto."
   },
   "2.25. Equipos de corte térmico y soldadura 1.pdf": {
    "tema": "Corte y soldadura",
@@ -147,9 +147,9 @@
   },
   "DOC-20240402-WA0021. 1.pdf": {
    "tema": "Incendios de vegetación",
-   "hechas": "244-251",
+   "hechas": "244-259",
    "total": 16,
-   "nota": "Páginas impresas 244-259. La p. 252 está a medias (lote 2026-11-25: ya preguntados la velocidad de los vientos de ladera ascendentes y el cambio de descendente a ascendente). Sigue en la p. 252 (vientos de valle, brisa)."
+   "nota": "TERMINADO el 25/11/2026: todos los datos del manual están preguntados. El usuario puede quitarlo del proyecto."
   },
   "DOC-20240402-WA0025..pdf": {
    "tema": "Apícola",

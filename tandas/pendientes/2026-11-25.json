@@ -1483,6 +1483,1266 @@
    "tq": "Detención preventiva de 72 horas: ¿qué artículo?",
    "ta": "Art. 17.2 CE.",
    "cifra": 1
+  },
+  {
+   "id": 441,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Cómo soplan los vientos de valle a lo largo del día?",
+   "o": [
+    "Siempre valle arriba.",
+    "Valle abajo de día y valle arriba de noche.",
+    "Valle arriba de día y valle abajo de noche."
+   ],
+   "c": 2,
+   "o4": "Siempre valle abajo.",
+   "que": "Los vientos de valle soplan paralelos al eje del valle, por diferencias de temperatura y presión.",
+   "porque": "De <mark>día</mark>, el sol calienta el aire y crea corrientes <mark>hacia las partes altas</mark>; de <mark>noche</mark> soplan <mark>valle abajo</mark>. El cambio es más lento si se mueven grandes masas de aire.",
+   "ojo": "Funcionan igual que los vientos de ladera: suben de día, bajan de noche.",
+   "rec": "Día = sube. Noche = baja.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 252",
+   "tq": "Vientos de valle: dirección de día y de noche",
+   "ta": "De día valle arriba; de noche valle abajo."
+  },
+  {
+   "id": 442,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Cómo se comporta la brisa marina?",
+   "o": [
+    "De día sopla de la tierra al mar; de noche al revés y más fuerte.",
+    "De día sopla del mar a la tierra; de noche al revés y más suave.",
+    "Sopla siempre del mar a la tierra."
+   ],
+   "c": 1,
+   "o4": "Solo sopla de noche.",
+   "que": "La brisa marina se debe a la diferencia de temperatura entre la tierra y el agua.",
+   "porque": "De <mark>día</mark> la tierra está más caliente: sube el aire y lo sustituye el aire fresco <mark>del mar</mark>. De <mark>noche</mark> el agua está más caliente y el mecanismo <mark>se invierte</mark>, pero con <mark>menos fuerza</mark>, porque la diferencia de temperatura es menor.",
+   "ojo": "Las brisas nocturnas suelen ser <mark>más suaves</mark>.",
+   "rec": "Día: mar → tierra. Noche: tierra → mar (flojita).",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 252",
+   "tq": "Brisa marina de día y de noche",
+   "ta": "Día del mar a tierra; noche al revés y más suave."
+  },
+  {
+   "id": 443,
+   "t": "Incendios de vegetación",
+   "d": "difícil",
+   "q": "¿Qué afirmación es correcta sobre los vientos catabático y anabático?",
+   "o": [
+    "Ambos bajan por la ladera, de día y de noche.",
+    "El catabático baja de noche por la ladera; el anabático sube de día.",
+    "El catabático sube de día por la ladera; el anabático baja de noche."
+   ],
+   "c": 1,
+   "o4": "Ambos son vientos marinos.",
+   "que": "Son las brisas de montaña y de valle.",
+   "porque": "El <mark>catabático</mark> (brisa de montaña) se forma de <mark>noche</mark>: el aire junto al suelo se enfría, pesa más y <mark>baja</mark> por la pendiente. El <mark>anabático</mark> (brisa de valle) se forma de <mark>día</mark> y <mark>sube</mark> por la ladera.",
+   "ojo": "Se cruzan fácilmente: «cata» = abajo (como catacumba); «ana» = arriba.",
+   "rec": "Catabático = <mark>cae</mark> de noche. Anabático = <mark>asciende</mark> de día.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 252-253",
+   "tq": "Catabático y anabático",
+   "ta": "Catabático baja de noche · anabático sube de día."
+  },
+  {
+   "id": 444,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué nubes indican la presencia de olas de montaña?",
+   "o": [
+    "Los cúmulos lenticulares sobre las crestas.",
+    "Los estratos bajos en el valle.",
+    "Los pirocúmulos sobre el incendio."
+   ],
+   "c": 0,
+   "o4": "Los cumulonimbos.",
+   "que": "Las <mark>olas de montaña</mark> son ondas de aire a sotavento de una cordillera cuando una masa de aire rápida y estable la cruza perpendicularmente.",
+   "porque": "Un indicador de su presencia son unas nubes muy llamativas sobre las crestas: los <mark>cúmulos lenticulares</mark>.",
+   "ojo": "Si las ondas tocan el suelo, pueden producir un viento caliente y muy seco, parecido al foehn pero más suave.",
+   "rec": "Lenticular (con forma de lenteja) = <mark>ola de montaña</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 253",
+   "tq": "Nubes que indican olas de montaña",
+   "ta": "Cúmulos lenticulares."
+  },
+  {
+   "id": 445,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según el manual, se han llegado a medir vientos foehn de hasta:",
+   "o": [
+    "100 km/h, con una humedad relativa del 10 %.",
+    "145 km/h, con una humedad relativa del 3 %.",
+    "200 km/h, con una humedad relativa del 1 %."
+   ],
+   "c": 1,
+   "o4": "60 km/h, con una humedad relativa del 30 %.",
+   "que": "Los vientos <mark>foehn</mark> (terrales) son muy cálidos, secos e intensos y soplan de las zonas altas a las bajas.",
+   "porque": "Se han medido de hasta <mark>145 km/h</mark> con una humedad relativa del <mark>3 %</mark>. Suelen terminar bruscamente y no duran más de tres días.",
+   "ojo": "Pueden hacer que un incendio sea realmente <mark>incontrolable</mark>.",
+   "rec": "Foehn récord: <mark>145 km/h y 3 %</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 253",
+   "tq": "Foehn: máximos medidos",
+   "ta": "145 km/h y 3 % de humedad relativa.",
+   "cifra": 1
+  },
+  {
+   "id": 446,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Cuánto suelen durar como máximo los vientos foehn?",
+   "o": [
+    "Tres días.",
+    "Una semana.",
+    "Un día."
+   ],
+   "c": 0,
+   "o4": "Unas horas.",
+   "que": "El foehn es un viento terral muy cálido y seco.",
+   "porque": "Suelen <mark>terminar bruscamente</mark> y <mark>no duran más de tres días</mark>.",
+   "ojo": "Afectan sobre todo a zonas costeras, donde la vegetación se seca muy rápido.",
+   "rec": "Foehn: como mucho <mark>3 días</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 253",
+   "tq": "Duración máxima del foehn",
+   "ta": "Tres días.",
+   "cifra": 1
+  },
+  {
+   "id": 447,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Cómo se llama el viento tipo foehn en la Comunidad Valenciana y la Región de Murcia?",
+   "o": [
+    "Cierzo.",
+    "Levante.",
+    "Poniente."
+   ],
+   "c": 2,
+   "o4": "Tramontana.",
+   "que": "Cada zona da al foehn un nombre propio, normalmente según la dirección del viento.",
+   "porque": "En la Comunidad Valenciana y la Región de Murcia se llama <mark>Poniente</mark>; en Rumanía, Austrum; en el sur de Chile, Puelche.",
+   "ojo": "El Levante viene del mar, así que es húmedo: lo contrario de un foehn.",
+   "rec": "En Valencia y Murcia, el foehn viene de <mark>poniente</mark> (del interior).",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 253",
+   "tq": "Foehn en Valencia y Murcia",
+   "ta": "Poniente."
+  },
+  {
+   "id": 448,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿A partir de qué velocidad del viento en superficie los remolinos de fuego tienden a desplazarse con el viento?",
+   "o": [
+    "15 o 20 km/h.",
+    "7 u 8 km/h.",
+    "30 km/h."
+   ],
+   "c": 1,
+   "o4": "2 o 3 km/h.",
+   "que": "Un remolino o vórtice de fuego es una columna de aire que sube girando y levanta humo, escombros y fuego.",
+   "porque": "Cuando el viento en superficie supera los <mark>7 u 8 km/h</mark>, los remolinos tienden a desplazarse con el viento. Pueden durar minutos o más de una hora.",
+   "ojo": "El vórtice es <mark>horizontal</mark> si gira paralelo al suelo y <mark>vertical</mark> si gira perpendicular.",
+   "rec": "Remolinos: con más de <mark>7-8 km/h</mark> se van con el viento.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 253",
+   "tq": "Remolinos de fuego: desplazamiento con el viento",
+   "ta": "Con más de 7-8 km/h de viento.",
+   "cifra": 1
+  },
+  {
+   "id": 449,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Un incendio en el fondo de un valle ha estado contenido toda la noche bajo una inversión térmica. ¿Cuándo es probable que se reactive?",
+   "o": [
+    "A media mañana, cuando se rompe la inversión.",
+    "Al atardecer, cuando se forma la inversión.",
+    "De madrugada, cuando la inversión es más profunda."
+   ],
+   "c": 0,
+   "o4": "A medianoche, con la brisa de montaña.",
+   "que": "En la <mark>inversión térmica</mark> el aire frío queda debajo del caliente: en el valle hace más frío y hay más humedad, y los incendios suelen estar contenidos.",
+   "porque": "A <mark>media mañana</mark> se calienta antes el fondo del valle, se puede <mark>romper la inversión</mark> y llega aire de golpe desde las laderas: el fuego gana velocidad y la llama, longitud.",
+   "ojo": "La inversión nocturna alcanza su máxima profundidad al <mark>amanecer</mark>: ahí el fuego está más contenido, no menos.",
+   "rec": "Inversión rota a media mañana → <mark>fuego despierta</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 254",
+   "tq": "Fuego contenido bajo inversión térmica: ¿cuándo se reactiva?",
+   "ta": "A media mañana, al romperse la inversión.",
+   "int": 1
+  },
+  {
+   "id": 450,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según su mecanismo de formación, ¿cuál de estas NO es uno de los cuatro tipos de inversión térmica del manual?",
+   "o": [
+    "Inversión por subsidencia.",
+    "Inversión marina.",
+    "Inversión convectiva."
+   ],
+   "c": 2,
+   "o4": "Inversión frontal.",
+   "que": "La inversión térmica rompe la regla de que la temperatura baja con la altura.",
+   "porque": "Tipos: <mark>nocturna o de radiación</mark>, <mark>frontal</mark>, <mark>marina</mark> y <mark>por subsidencia</mark>.",
+   "ojo": "La «convectiva» no existe: la convección hace que el aire caliente suba, lo contrario de una inversión.",
+   "rec": "Inversiones: Noche, Frente, Mar, Subsidencia.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 254",
+   "tq": "Tipos de inversión térmica",
+   "ta": "Nocturna, frontal, marina y por subsidencia."
+  },
+  {
+   "id": 451,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Por qué la inversión por subsidencia favorece los incendios?",
+   "o": [
+    "Porque genera tormentas secas con muchos rayos.",
+    "Porque trae aire frío y húmedo desde el mar.",
+    "Por crear aire caliente, seco y estable durante días."
+   ],
+   "c": 2,
+   "o4": "Porque aumenta la humedad de los combustibles.",
+   "que": "Se forma cuando el aire de niveles medios, ligado a un <mark>anticiclón</mark>, se hunde y se calienta por compresión.",
+   "porque": "Resulta una capa de aire <mark>caliente, seco y muy estable</mark> que puede durar <mark>días</mark>, cada vez más cálida y seca. Provoca <mark>sequía y altas temperaturas</mark>.",
+   "ojo": "Es más frecuente en las cimas y al final del verano y del otoño.",
+   "rec": "Subsidencia = anticiclón que aplasta y <mark>reseca</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 254-255",
+   "tq": "Inversión por subsidencia",
+   "ta": "Aire caliente, seco y estable durante días."
+  },
+  {
+   "id": 452,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "En una tormenta ígnea, ¿por qué moriría alguien atrapado cerca o debajo del fuego?",
+   "o": [
+    "Por la caída de rayos.",
+    "Por falta de oxígeno.",
+    "Por el frío del aire que baja."
+   ],
+   "c": 1,
+   "o4": "Por la lluvia ácida.",
+   "que": "La <mark>tormenta ígnea</mark> se da en grandes incendios tan intensos que crean su propio sistema de viento (efecto chimenea).",
+   "porque": "El aire caliente sube con fuerza y el aire de alrededor es <mark>succionado hacia el fuego</mark>. Quien quede atrapado cerca o debajo moriría por <mark>falta de oxígeno</mark>.",
+   "ojo": "Además irradia tanto calor que enciende combustible más allá del propio fuego.",
+   "rec": "Tormenta ígnea: el fuego <mark>se bebe el oxígeno</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 255",
+   "tq": "Tormenta ígnea: peligro para el atrapado",
+   "ta": "Muere por falta de oxígeno."
+  },
+  {
+   "id": 453,
+   "t": "Incendios de vegetación",
+   "d": "difícil",
+   "q": "Trabajáis cerca de un gran incendio con una intensa columna de convección. De repente, el viento que entraba hacia el fuego se calma. ¿Qué puede indicar?",
+   "o": [
+    "Que el incendio está perdiendo intensidad.",
+    "Que un reventón está a punto de golpear el suelo.",
+    "Que se ha formado una inversión térmica."
+   ],
+   "c": 1,
+   "o4": "Que el incendio ha pasado a ser topográfico.",
+   "que": "El <mark>reventón</mark> es una corriente descendente: el aire de la columna se enfría, baja y se extiende en abanico al llegar al suelo.",
+   "porque": "Indicadores: que <mark>empiece a llover</mark>, el desarrollo de una <mark>columna de convección intensa</mark> y que, cuando el flujo de entrada se transforma en reventón, <mark>los vientos se calmen</mark>: el viento de salida está a punto de golpear el suelo.",
+   "ojo": "La calma parece buena señal, y ahí está la trampa.",
+   "rec": "Calma de golpe junto a una columna gorda = <mark>¡reventón!</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 255",
+   "tq": "Calma del viento junto a una columna intensa",
+   "ta": "Un reventón está a punto de llegar al suelo.",
+   "int": 1
+  },
+  {
+   "id": 454,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según la tabla de nivel de riesgo, ¿qué tres condiciones se valoran?",
+   "o": [
+    "Temperatura de más de 30 °C, humedad de menos del 35 % y viento de 30 km/h o más.",
+    "Temperatura de más de 35 °C, humedad de menos del 30 % y viento de 20 km/h o más.",
+    "Temperatura de más de 25 °C, humedad de menos del 40 % y viento de 40 km/h o más."
+   ],
+   "c": 0,
+   "o4": "Temperatura de más de 30 °C, humedad de menos del 50 % y viento de 50 km/h o más.",
+   "que": "El riesgo potencial de un incendio se valora con la temperatura, la humedad y el viento.",
+   "porque": "Condiciones: temperatura <mark>de más de 30 °C</mark>, humedad relativa <mark>de menos del 35 %</mark> y viento vivo o más fuerte, <mark>desde 30 km/h</mark>.",
+   "ojo": "Es fácil cruzar los números: 30 grados, 35 % y 30 km/h.",
+   "rec": "Regla del <mark>30-35-30</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 255",
+   "tq": "Tabla de riesgo: las tres condiciones",
+   "ta": "T > 30 °C · HR < 35 % · viento ≥ 30 km/h.",
+   "cifra": 1
+  },
+  {
+   "id": 455,
+   "t": "Incendios de vegetación",
+   "d": "difícil",
+   "q": "Hay más de 30 °C, humedad relativa del 25 % y viento de 35 km/h, y el incendio avanza por una pendiente. ¿Qué nivel de riesgo le da la tabla?",
+   "o": [
+    "Grave.",
+    "Extremo.",
+    "Extremo a nivel máximo."
+   ],
+   "c": 2,
+   "o4": "Moderado.",
+   "que": "La tabla cuenta cuántas condiciones coinciden: temperatura alta (más de 30 grados), humedad escasa (menos del 35 por ciento) y viento desde 30 km/h.",
+   "porque": "<mark>Grave</mark>: 2 condiciones. <mark>Extremo</mark>: las 3. <mark>Extremo a nivel máximo</mark>: las 3 <mark>más incendio en pendiente</mark>. Aquí se cumplen las tres y además hay pendiente.",
+   "ojo": "Con las tres condiciones la tentación es «extremo», pero la pendiente lo sube al máximo.",
+   "rec": "2 = grave · 3 = extremo · 3 + pendiente = extremo máximo.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 255",
+   "tq": "Tabla de riesgo: tres condiciones + pendiente",
+   "ta": "Extremo a nivel máximo."
+  },
+  {
+   "id": 456,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según su diámetro, ¿qué combustibles son los «finos»?",
+   "o": [
+    "Los de 5 a 25 mm, como ramillas.",
+    "Los de 25 a 75 mm, como ramas.",
+    "Los de 0 a 5 mm, como hojarasca, pasto y acículas."
+   ],
+   "c": 2,
+   "o4": "Los de más de 75 mm, como troncos.",
+   "que": "Cuanto más pequeño es el combustible, antes pierde humedad y antes alcanza la temperatura de ignición.",
+   "porque": "<mark>Finos</mark>: 0-5 mm (hojarasca, pasto, acículas). <mark>Regulares</mark>: 5-25 mm. <mark>Medianos</mark>: 25-75 mm. <mark>Gruesos</mark>: más de 75 mm.",
+   "ojo": "Los finos son los que mejor arden y propagan.",
+   "rec": "Tamaños: <mark>5 · 25 · 75</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 256",
+   "tq": "Combustibles finos",
+   "ta": "0-5 mm (hojarasca, pasto, acículas).",
+   "cifra": 1
+  },
+  {
+   "id": 457,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué es el tiempo de retardo de un combustible muerto?",
+   "o": [
+    "El tiempo que tarda en arder desde que le llega la llama.",
+    "El tiempo que tarda en apagarse una vez quemado.",
+    "El tiempo que tarda en igualar su humedad con la del ambiente."
+   ],
+   "c": 2,
+   "o4": "El tiempo entre la ignición y la llama visible.",
+   "que": "El contenido de humedad del combustible muerto cambia con la humedad del aire.",
+   "porque": "El <mark>tiempo de retardo</mark> es lo que tarda un combustible muerto en <mark>equilibrar su humedad</mark> con la humedad relativa del ambiente. Se mide en horas y depende de su forma y tamaño.",
+   "ojo": "No tiene que ver con lo que tarda en arder.",
+   "rec": "Retardo = cuánto tarda en <mark>ponerse al día</mark> con la humedad del aire.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 256",
+   "tq": "Tiempo de retardo",
+   "ta": "Lo que tarda en igualar su humedad con el ambiente."
+  },
+  {
+   "id": 458,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Un combustible de una hora de tiempo de retardo tiene un diámetro de:",
+   "o": [
+    "Entre 6 mm y 2,5 cm.",
+    "Menos de 6 mm.",
+    "Entre 2,5 y 7,5 cm."
+   ],
+   "c": 1,
+   "o4": "Entre 7,5 y 20 cm.",
+   "que": "Según su tiempo de retardo, los combustibles muertos son de 1, 10, 100 y 1.000 horas.",
+   "porque": "<mark>1 hora</mark>: menos de 6 mm (hierbas, pinochas, hojas). <mark>10 horas</mark>: de 6 mm a 2,5 cm. <mark>100 horas</mark>: de 2,5 a 7,5 cm. <mark>1.000 horas</mark>: de 7,5 a 20 cm (cepas, troncos).",
+   "ojo": "A más grosor, más tarda en secarse o mojarse.",
+   "rec": "1 h <mark>6 mm</mark> · 10 h <mark>2,5 cm</mark> · 100 h <mark>7,5 cm</mark> · 1.000 h <mark>20 cm</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 256",
+   "tq": "Combustible de 1 hora",
+   "ta": "Menos de 6 mm.",
+   "cifra": 1
+  },
+  {
+   "id": 459,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué tiempo de retardo tienen cepas y troncos de 7,5 a 20 cm?",
+   "o": [
+    "100 horas.",
+    "1.000 horas.",
+    "10 horas."
+   ],
+   "c": 1,
+   "o4": "10.000 horas.",
+   "que": "El tiempo de retardo crece con el tamaño del combustible.",
+   "porque": "Los de <mark>7,5 a 20 cm</mark>, como cepas y troncos, son de <mark>1.000 horas</mark>.",
+   "ojo": "Los de 2,5 a 7,5 cm (ramas mayores, restos de poda) son de 100 horas.",
+   "rec": "Troncos: <mark>mil horas</mark> en secarse.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 256",
+   "tq": "Combustible de 7,5 a 20 cm: tiempo de retardo",
+   "ta": "1.000 horas.",
+   "cifra": 1
+  },
+  {
+   "id": 460,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué es la «cantidad disponible» de combustible?",
+   "o": [
+    "La que realmente se consume en un incendio.",
+    "Toda la fitomasa presente en la zona.",
+    "La que previsiblemente no arderá."
+   ],
+   "c": 0,
+   "o4": "La que se puede retirar antes del incendio.",
+   "que": "La cantidad de combustible se divide en total, disponible y restante.",
+   "porque": "<mark>Total</mark>: toda la fitomasa, que ardería en un fuego muy intenso con sequía máxima. <mark>Disponible</mark>: la que <mark>realmente se consume</mark>, según su humedad y su distribución. <mark>Restante</mark>: la que previsiblemente no arderá.",
+   "ojo": "Las otras opciones son las definiciones de la cantidad total y la restante.",
+   "rec": "Total = todo · disponible = lo que arde · restante = lo que queda.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 256",
+   "tq": "Cantidad disponible de combustible",
+   "ta": "La que realmente se consume en el incendio."
+  },
+  {
+   "id": 461,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué tipo de continuidad del combustible influye en que un fuego de superficie pase a ser de copas?",
+   "o": [
+    "La continuidad horizontal.",
+    "La continuidad vertical.",
+    "La compactación."
+   ],
+   "c": 1,
+   "o4": "La densidad.",
+   "que": "La distribución del combustible puede ser horizontal o vertical.",
+   "porque": "La <mark>continuidad vertical</mark> influye en la posibilidad de que un incendio de superficie pase a <mark>copas</mark>. La <mark>horizontal</mark> influye en la dirección y la velocidad de propagación.",
+   "ojo": "Matorral bajo los árboles = escalera para el fuego.",
+   "rec": "Vertical = <mark>escalera a las copas</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 257",
+   "tq": "Continuidad que permite el paso a copas",
+   "ta": "La continuidad vertical."
+  },
+  {
+   "id": 462,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Cuántos modelos de combustible describe el sistema de Rothermel y en cuántos grupos?",
+   "o": [
+    "13 modelos en 4 grupos.",
+    "12 modelos en 4 grupos.",
+    "13 modelos en 3 grupos."
+   ],
+   "c": 0,
+   "o4": "10 modelos en 5 grupos.",
+   "que": "El sistema se desarrolló en Estados Unidos en los años setenta y es el primer dato de entrada de los programas de predicción (como Behave).",
+   "porque": "Describe <mark>13 modelos</mark> en <mark>4 grupos</mark>: pastos, matorral, hojarasca bajo arbolado y ramaje y restos de operaciones silvícolas.",
+   "ojo": "Cada distractor cambia solo uno de los dos números.",
+   "rec": "Rothermel: <mark>13 en 4</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 257",
+   "tq": "Modelos de Rothermel",
+   "ta": "13 modelos en 4 grupos.",
+   "cifra": 1
+  },
+  {
+   "id": 463,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "En los modelos de Rothermel, ¿qué grupo forman los modelos 4 a 7?",
+   "o": [
+    "Matorral.",
+    "Pastos.",
+    "Hojarasca bajo arbolado."
+   ],
+   "c": 0,
+   "o4": "Ramaje y restos.",
+   "que": "Los 13 modelos se reparten en cuatro grupos.",
+   "porque": "<mark>Pastos</mark>: 1-3. <mark>Matorral</mark>: 4-7. <mark>Hojarasca bajo arbolado</mark>: 8-10. <mark>Ramaje y restos</mark>: 11-13.",
+   "ojo": "Van de lo más fino (pasto) a lo más grueso (restos de corta).",
+   "rec": "Pasto 3 · matorral 4 · hojarasca 3 · restos 3.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 257",
+   "tq": "Rothermel: modelos 4-7",
+   "ta": "Matorral.",
+   "cifra": 1
+  },
+  {
+   "id": 464,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "En el modelo 3 de Rothermel, ¿qué altura media tiene el pasto?",
+   "o": [
+    "1 m.",
+    "2 m.",
+    "0,5 m."
+   ],
+   "c": 0,
+   "o4": "1,5 m.",
+   "que": "Los modelos 1 a 3 son de pastos.",
+   "porque": "En el modelo 3 la propagación la gobiernan herbáceas finas (un tercio o más secas) con una <mark>altura media de 1 m</mark>, como un <mark>campo de cereal sin cosechar</mark>.",
+   "ojo": "Su carga de combustible es mayor que la de los modelos 1 y 2.",
+   "rec": "Modelo 3 = <mark>cereal sin segar</mark>, 1 m.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 257",
+   "tq": "Rothermel modelo 3: altura del pasto",
+   "ta": "1 m (cereal sin cosechar).",
+   "cifra": 1
+  },
+  {
+   "id": 465,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué diferencia el modelo 1 del modelo 2 de Rothermel?",
+   "o": [
+    "El tipo de árbol dominante.",
+    "La altura del pasto.",
+    "Cuánto matorral o arbolado hay."
+   ],
+   "c": 2,
+   "o4": "La humedad del suelo.",
+   "que": "En los dos la propagación es rápida y la gobiernan herbáceas finas.",
+   "porque": "En el <mark>modelo 1</mark> el matorral o arbolado ocupa <mark>menos de un tercio</mark> del área. En el <mark>modelo 2</mark>, <mark>de un tercio a dos tercios</mark>, y las intensidades son mayores (puede haber pavesas).",
+   "ojo": "La altura de 1 m es la del modelo 3.",
+   "rec": "Modelo 1: < 1/3 de matorral · modelo 2: de 1/3 a 2/3.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 257",
+   "tq": "Diferencia entre los modelos 1 y 2",
+   "ta": "La parte ocupada por matorral o arbolado."
+  },
+  {
+   "id": 466,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué velocidad de viento necesita el modelo 6 de Rothermel para propagarse por las copas del matorral?",
+   "o": [
+    "Más de 13 km/h.",
+    "Más de 30 km/h.",
+    "Más de 5 km/h."
+   ],
+   "c": 0,
+   "o4": "No necesita viento.",
+   "que": "El modelo 6 es de matorral y restos secos de cortas de frondosas.",
+   "porque": "Se propaga por las copas del matorral, más inflamable que en el modelo 5, y requiere <mark>vientos de más de 13 km/h</mark>. Con poco viento, el fuego baja al suelo.",
+   "ojo": "El matorral es más viejo, pero no tan alto como en el modelo 4.",
+   "rec": "Modelo 6: hace falta viento de más de <mark>13</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 257",
+   "tq": "Rothermel modelo 6: viento necesario",
+   "ta": "Más de 13 km/h.",
+   "cifra": 1
+  },
+  {
+   "id": 467,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué modelo de Rothermel corresponde a bosques cerrados con hojarasca compacta y poco matorral, con fuegos lentos y poca altura de llama?",
+   "o": [
+    "El modelo 9.",
+    "El modelo 10.",
+    "El modelo 8."
+   ],
+   "c": 2,
+   "o4": "El modelo 11.",
+   "que": "Los modelos 8 a 10 son de hojarasca bajo arbolado.",
+   "porque": "El <mark>modelo 8</mark> son bosques cerrados de coníferas o frondosas con <mark>hojarasca compacta</mark> (pinares de hoja corta, abetos, alerces): fuegos superficiales <mark>lentos</mark>, peligrosos solo en las peores condiciones.",
+   "ojo": "El 9 tiene hojarasca menos compacta (más rápido) y el 10, bosques con plagas o restos caídos (más intenso).",
+   "rec": "Hojarasca: 8 compacta · 9 suelta · 10 enfermo.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 257-258",
+   "tq": "Rothermel: hojarasca compacta, fuegos lentos",
+   "ta": "Modelo 8."
+  },
+  {
+   "id": 468,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Según la clasificación del manual, ¿cuál de estas especies es muy inflamable durante casi todo el año?",
+   "o": [
+    "El eucalipto.",
+    "El quejigo.",
+    "El madroño."
+   ],
+   "c": 0,
+   "o4": "El enebro.",
+   "que": "El manual recoge un listado de especies según su inflamabilidad.",
+   "porque": "Muy inflamables <mark>casi todo el año</mark>: brezo, <mark>eucalipto</mark>, retama, tojo, pino carrasco, encina, romero y tomillo. El <mark>madroño</mark>, el <mark>enebro</mark> y el <mark>quejigo</mark> son <mark>medianamente</mark> inflamables.",
+   "ojo": "Hay un tercer grupo, muy inflamables solo en verano, como la jara pringosa o el pino piñonero.",
+   "rec": "Todo el año: eucalipto, pino carrasco, romero, tomillo…",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 258",
+   "tq": "Especie muy inflamable casi todo el año",
+   "ta": "El eucalipto (también brezo, pino carrasco, encina, romero…)."
+  },
+  {
+   "id": 469,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué es la longitud de llama?",
+   "o": [
+    "La distancia que avanza el frente en un minuto.",
+    "La altura de la llama medida en vertical.",
+    "La máxima distancia entre la base y la punta de la llama."
+   ],
+   "c": 2,
+   "o4": "El ancho del frente de llamas.",
+   "que": "La longitud de llama sirve de referencia de la <mark>intensidad del fuego</mark>.",
+   "porque": "Es la <mark>máxima distancia entre la base y la punta</mark> de la llama. Si la llama está inclinada por el viento o la pendiente, se mide sobre ese ángulo.",
+   "ojo": "No es la altura: con viento, la llama puede ser larga pero baja.",
+   "rec": "Longitud ≠ altura: se mide <mark>a lo largo</mark> de la llama.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 258",
+   "tq": "Longitud de llama",
+   "ta": "Distancia máxima entre la base y la punta."
+  },
+  {
+   "id": 470,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué tipo de velocidad de propagación permite determinar los medios humanos y mecánicos necesarios para extinción, remate y control?",
+   "o": [
+    "La lineal.",
+    "La areal.",
+    "La perimetral."
+   ],
+   "c": 2,
+   "o4": "La vertical.",
+   "que": "La velocidad de propagación se puede medir de tres formas.",
+   "porque": "<mark>Lineal</mark>: permite fijar las líneas de control (cuánto tarda el fuego en llegar). <mark>Perimetral</mark>: lo que crece el perímetro; determina los <mark>recursos</mark> para las labores sobre él. <mark>Areal</mark>: el área afectada y el daño previsible.",
+   "ojo": "Las labores de extinción, remate y control se hacen sobre el perímetro.",
+   "rec": "Lineal → líneas · perimetral → recursos · areal → daño.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 259",
+   "tq": "Velocidad perimetral",
+   "ta": "Determina los medios para extinción, remate y control."
+  },
+  {
+   "id": 471,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "Una nube de polvo vista desde un puesto de vigilancia es, según la clasificación del humo por su origen, un humo:",
+   "o": [
+    "Ilegítimo.",
+    "Falso.",
+    "Legítimo."
+   ],
+   "c": 1,
+   "o4": "Neutro.",
+   "que": "Por su origen, el humo puede ser legítimo, ilegítimo o falso.",
+   "porque": "<mark>Legítimos</mark>: quemas autorizadas, fábricas, hornos. <mark>Ilegítimos</mark>: incendios, quemas ilegales. <mark>Falsos</mark>: nubes de polvo, de polen…",
+   "ojo": "Un humo falso no es humo, aunque lo parezca.",
+   "rec": "Polvo o polen = <mark>falso</mark>.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 259",
+   "tq": "Nube de polvo: tipo de humo",
+   "ta": "Humo falso."
+  },
+  {
+   "id": 472,
+   "t": "Incendios de vegetación",
+   "d": "normal",
+   "q": "¿Qué indica una columna de humo gris-negro?",
+   "o": [
+    "Pastizal y fuego de poca intensidad.",
+    "Matorral denso, eucalipto o pinar y fuego de alta intensidad.",
+    "Bosque de coníferas como el pino insigne."
+   ],
+   "c": 1,
+   "o4": "Pastos secos.",
+   "que": "El color del humo se relaciona con la <mark>intensidad</mark> del incendio.",
+   "porque": "<mark>Gris-negro</mark>: matorrales densos, eucaliptos, pinares y encinares, fuego de <mark>alta intensidad</mark>. <mark>Blanco</mark>: pastizales, poca intensidad. <mark>Amarillo</mark>: coníferas como el pino insigne. <mark>Blanco azulado</mark>: pastos secos.",
+   "ojo": "Cuanto más oscuro, más intenso.",
+   "rec": "Negro = <mark>fuerte</mark> · blanco = flojo.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 259",
+   "tq": "Humo gris-negro",
+   "ta": "Matorral denso o pinar, alta intensidad."
+  },
+  {
+   "id": 473,
+   "t": "Incendios de vegetación",
+   "d": "difícil",
+   "q": "Una columna de humo forma un ángulo de unos 45° con el suelo. Según el manual, ¿qué indica?",
+   "o": [
+    "Vientos de unos 20 a 30 nudos y foco peligroso.",
+    "Poco viento y propagación lenta.",
+    "Vientos muy fuertes en la base del incendio."
+   ],
+   "c": 0,
+   "o4": "Inversión térmica sobre el incendio.",
+   "que": "El ángulo de la columna con la horizontal informa del viento.",
+   "porque": "<mark>Vertical</mark> (80-90°): poco viento, propagación lenta. <mark>Diagonal</mark> (40-50°): vientos de <mark>20 a 30 nudos</mark>; foco <mark>peligroso</mark>. <mark>Tumbada</mark> (unos 20°): vientos fuertes en la base.",
+   "ojo": "A 45° no está tumbada, pero ya indica bastante viento.",
+   "rec": "Vertical tranquilo · diagonal peligroso · tumbado muy fuerte.",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 259",
+   "tq": "Humo a unos 45°",
+   "ta": "Diagonal: vientos de 20-30 nudos, foco peligroso."
+  },
+  {
+   "id": 474,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿En qué se diferencian los cascos de altas prestaciones de los cascos de protección normales?",
+   "o": [
+    "Son eléctricamente aislantes.",
+    "Protegen además contra golpes con objetos fijos.",
+    "Protegen más frente a la caída de objetos y frente a impactos laterales."
+   ],
+   "c": 2,
+   "o4": "Pesan menos.",
+   "que": "Los cascos de uso industrial general son: de protección (o de seguridad), de altas prestaciones y contra golpes.",
+   "porque": "Los de <mark>altas prestaciones</mark> ofrecen <mark>mayor protección contra la caída de objetos</mark> y además frente a <mark>impactos laterales</mark>.",
+   "ojo": "Los eléctricamente aislantes son un tipo de casco para aplicaciones específicas.",
+   "rec": "Altas prestaciones = arriba <mark>y de lado</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 53",
+   "tq": "Casco de altas prestaciones",
+   "ta": "Más protección contra caída de objetos e impactos laterales."
+  },
+  {
+   "id": 475,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Cuál de estas acciones con el casco de protección desaconseja la guía?",
+   "o": [
+    "Ponerle pegatinas.",
+    "Llevar la visera derecha con la cabeza recta.",
+    "Usar el barboquejo en trabajos en altura."
+   ],
+   "c": 0,
+   "o4": "Guardarlo protegido de la luz solar directa.",
+   "que": "La guía da varias pautas de uso del casco.",
+   "porque": "Hay que llevarlo con la <mark>visera derecha</mark>, usar el <mark>barboquejo en trabajos en altura</mark> y guardarlo sin luz solar directa. <mark>No modificarlo</mark>: ni agujeros, ni pintura, ni marcas, ni <mark>pegatinas</mark>.",
+   "ojo": "Una pegatina parece inofensiva, pero puede alterar el material.",
+   "rec": "Casco: <mark>tal cual viene</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 53",
+   "tq": "Casco: modificaciones",
+   "ta": "Nada de agujeros, pintura, marcas ni pegatinas."
+  },
+  {
+   "id": 476,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según la guía, ¿cuál de estas situaciones obliga a desechar un casco de protección?",
+   "o": [
+    "Que cruja al combarlo.",
+    "Que lleve más de un año en uso.",
+    "Que esté sucio por fuera."
+   ],
+   "c": 0,
+   "o4": "Que se haya mojado.",
+   "que": "El casco pierde su protección con los golpes, el desgaste y el tiempo.",
+   "porque": "Se desecha después de un <mark>impacto significativo</mark>, si tiene <mark>arañazos profundos</mark>, está desgastado o deformado, <mark>cruje al combarlo</mark>, tiene el arnés dañado o supera su vida útil.",
+   "ojo": "La suciedad se limpia y los años no cuentan por sí solos: manda la <mark>vida útil</mark> que indique el fabricante.",
+   "rec": "Golpe, arañazo, crujido, arnés roto o caducado → <mark>fuera</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 53",
+   "tq": "Motivos para desechar un casco",
+   "ta": "Impacto, arañazos profundos, cruje, arnés dañado, vida útil."
+  },
+  {
+   "id": 477,
+   "t": "EPI",
+   "d": "difícil",
+   "q": "Unas gafas de montura integral con ventilación indirecta, ¿frente a qué pueden proteger según la guía?",
+   "o": [
+    "Frente a polvo fino, polvo grueso y gotas.",
+    "Frente a gases y polvo fino.",
+    "Solo frente a polvo grueso y gotas de líquidos."
+   ],
+   "c": 2,
+   "o4": "Frente a cualquier riesgo ocular.",
+   "que": "Las gafas de montura integral se ajustan a la cara y protegen desde todos los ángulos. Su ventilación evita el empañamiento, pero resta hermeticidad.",
+   "porque": "Con ventilación <mark>directa</mark> no sirven para gases, polvo fino, polvo grueso ni gotas. Con ventilación <mark>indirecta</mark> solo pueden proteger frente a <mark>polvo grueso</mark> y <mark>gotas de líquidos</mark>.",
+   "ojo": "La tentadora incluye el polvo fino: ninguna montura ventilada protege de él.",
+   "rec": "Ventilación indirecta: <mark>polvo grueso y gotas</mark>, nada más.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 53",
+   "tq": "Montura integral con ventilación indirecta",
+   "ta": "Solo polvo grueso y gotas de líquidos."
+  },
+  {
+   "id": 478,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Los oculares de malla (de plástico, textil o metálica), ¿frente a qué protegen principalmente?",
+   "o": [
+    "Frente a impactos de partículas.",
+    "Frente a radiaciones ópticas.",
+    "Frente a salpicaduras de líquidos."
+   ],
+   "c": 0,
+   "o4": "Frente a gases.",
+   "que": "Los oculares pueden ser de vidrio, de material orgánico (policarbonato, acetato…) o de malla.",
+   "porque": "Los de <mark>malla</mark> protegen principalmente frente a <mark>impactos de partículas</mark>.",
+   "ojo": "Por los agujeros de la malla pasan líquidos, gases y radiación.",
+   "rec": "Malla = <mark>golpes</mark>, no líquidos.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 54",
+   "tq": "Oculares de malla",
+   "ta": "Frente a impactos de partículas."
+  },
+  {
+   "id": 479,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Qué protectores auditivos permiten la comunicación en los periodos de silencio y protegen del ruido impulsivo o intermitente?",
+   "o": [
+    "Los dependientes del nivel.",
+    "Los tapones moldeables.",
+    "Los de reducción activa del ruido (ANR)."
+   ],
+   "c": 0,
+   "o4": "Las orejeras pasivas.",
+   "que": "Los protectores no pasivos añaden funciones con componentes mecánicos o electrónicos.",
+   "porque": "Los <mark>dependientes del nivel</mark> atenúan distinto según el ruido exterior: protegen del ruido <mark>impulsivo o intermitente</mark> y permiten la <mark>comunicación en los silencios</mark>.",
+   "ojo": "Los de reducción activa del ruido (ANR) cancelan el sonido y son eficaces sobre todo a <mark>bajas frecuencias</mark>.",
+   "rec": "Dependiente del nivel: <mark>baja si hay ruido, deja oír si no</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 55",
+   "tq": "Protector auditivo dependiente del nivel",
+   "ta": "Atenúa según el ruido y deja hablar en los silencios."
+  },
+  {
+   "id": 480,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Qué protectores auditivos son especialmente eficaces a bajas frecuencias?",
+   "o": [
+    "Los tapones premoldeados.",
+    "Los de reducción activa del ruido (ANR).",
+    "Los dependientes del nivel."
+   ],
+   "c": 1,
+   "o4": "Las orejeras con arnés de nuca.",
+   "que": "Los protectores con reducción activa del ruido (ANR) tienen un sistema electrónico de cancelación del sonido.",
+   "porque": "Son <mark>particularmente eficaces a bajas frecuencias</mark>.",
+   "ojo": "Los dependientes del nivel sirven para ruido impulsivo y permiten comunicarse.",
+   "rec": "ANR = <mark>graves</mark> fuera.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 55",
+   "tq": "Protectores ANR",
+   "ta": "Eficaces a bajas frecuencias."
+  },
+  {
+   "id": 481,
+   "t": "EPI",
+   "d": "normal",
+   "q": "En unas orejeras, ¿qué señal obliga a sustituirlas según la guía?",
+   "o": [
+    "El endurecimiento de las almohadillas.",
+    "Que hayan cambiado de color.",
+    "Que estén sucias por fuera."
+   ],
+   "c": 0,
+   "o4": "Que se usen con casco.",
+   "que": "Los protectores auditivos se sustituyen ante cualquier signo de deterioro.",
+   "porque": "En las orejeras se vigila la <mark>rotura de los casquetes</mark>, las <mark>grietas</mark> o el <mark>endurecimiento de las almohadillas</mark>, la <mark>pérdida de presión del arnés</mark> o cualquier signo que afecte al aislamiento.",
+   "ojo": "Si las almohadillas se endurecen, ya no sellan contra la cabeza.",
+   "rec": "Almohadilla dura = <mark>orejera nueva</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 55",
+   "tq": "Orejeras: motivo de sustitución",
+   "ta": "Almohadillas endurecidas, grietas, casquetes rotos, arnés flojo."
+  },
+  {
+   "id": 482,
+   "t": "EPI",
+   "d": "difícil",
+   "q": "¿Qué diferencia hay entre un sistema de retención y uno de sujeción (posicionamiento)?",
+   "o": [
+    "El de retención detiene la caída; el de sujeción la impide.",
+    "El de retención impide llegar a la zona de caída; el de sujeción permite trabajar apoyado en tensión.",
+    "El de retención permite trabajar apoyado; el de sujeción impide llegar al borde."
+   ],
+   "c": 1,
+   "o4": "Ninguna: son el mismo sistema.",
+   "que": "Ni el sistema de retención ni el de sujeción están previstos para <mark>detener</mark> una caída: ambos la previenen.",
+   "porque": "El de <mark>retención</mark> impide que el usuario <mark>alcance las zonas con riesgo</mark> de caída restringiendo su desplazamiento. El de <mark>sujeción</mark> permite <mark>trabajar apoyado en tensión o suspensión</mark>, con las manos libres; suele complementarse con un anticaídas.",
+   "ojo": "Detener la caída es cosa del <mark>sistema anticaídas</mark>.",
+   "rec": "Retención = <mark>no llegas</mark> · sujeción = <mark>te apoyas</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 56",
+   "tq": "Retención y sujeción",
+   "ta": "Retención: no llegas al borde · sujeción: trabajas apoyado."
+  },
+  {
+   "id": 483,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Qué dispositivo de prensión del cuerpo es el único que se puede usar en un sistema anticaídas?",
+   "o": [
+    "El cinturón de sujeción.",
+    "El arnés anticaídas.",
+    "El arnés de asiento."
+   ],
+   "c": 1,
+   "o4": "El arnés de salvamento.",
+   "que": "Todo sistema de protección contra caídas tiene un dispositivo de prensión del cuerpo unido a un anclaje mediante un sistema de conexión.",
+   "porque": "El <mark>arnés anticaídas</mark> es el <mark>único</mark> dispositivo de prensión del cuerpo que se puede usar en un sistema anticaídas.",
+   "ojo": "En los arneses multiuso hay que tener claros cuáles son los puntos de enganche anticaídas.",
+   "rec": "Anticaídas = <mark>solo arnés anticaídas</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 56-57",
+   "tq": "Dispositivo de prensión en un sistema anticaídas",
+   "ta": "Solo el arnés anticaídas."
+  },
+  {
+   "id": 484,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según la guía, ¿se puede usar un equipo de amarre para detener una caída?",
+   "o": [
+    "Sí, si el anclaje está por encima.",
+    "Sí, siempre que sea de cinta.",
+    "No sin un medio de absorción de energía."
+   ],
+   "c": 2,
+   "o4": "Sí, si mide menos de 2 m.",
+   "que": "El equipo de amarre une el arnés al anclaje.",
+   "porque": "Un equipo de amarre <mark>no se puede utilizar sin un medio de absorción de energía</mark> para detener una caída.",
+   "ojo": "También es esencial comprobar el <mark>espacio libre bajo el usuario</mark> para que no choque contra el suelo.",
+   "rec": "Amarre para caídas = <mark>con absorbedor</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 57",
+   "tq": "Equipo de amarre para detener una caída",
+   "ta": "Solo con absorbedor de energía."
+  },
+  {
+   "id": 485,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Los guantes de protección contra riesgos mecánicos protegen frente a cinco riesgos. ¿Cuál NO es uno de ellos?",
+   "o": [
+    "La perforación.",
+    "El rasgado.",
+    "La vibración."
+   ],
+   "c": 2,
+   "o4": "La abrasión.",
+   "que": "Todos los guantes cumplen los requisitos generales de la UNE-EN ISO 21420 más su norma específica.",
+   "porque": "Los guantes contra riesgos mecánicos protegen frente a <mark>abrasión, corte, rasgado, perforación e impacto</mark>.",
+   "ojo": "Para las vibraciones hay guantes <mark>antivibraciones</mark>, que son otro tipo.",
+   "rec": "Mecánicos: Abrasión, Corte, Rasgado, Perforación, Impacto.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 57",
+   "tq": "Guantes mecánicos: los cinco riesgos",
+   "ta": "Abrasión, corte, rasgado, perforación e impacto."
+  },
+  {
+   "id": 486,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un guante de categoría I, ¿qué expresión debe llevar en el embalaje?",
+   "o": [
+    "«Sólo para riesgos mínimos».",
+    "«Uso profesional».",
+    "«No reutilizable»."
+   ],
+   "c": 0,
+   "o4": "«Categoría III».",
+   "que": "Hay guantes destinados a proteger solo contra <mark>riesgos mínimos</mark>: son de categoría I.",
+   "porque": "Van marcados en el embalaje con la expresión <mark>«sólo para riesgos mínimos»</mark> y solo se usan cuando el propio usuario puede juzgar su eficacia.",
+   "ojo": "«No reutilizable» es lo que lleva la ropa de un solo uso.",
+   "rec": "Categoría I = <mark>riesgos mínimos</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 57",
+   "tq": "Marcado del guante de categoría I",
+   "ta": "«Sólo para riesgos mínimos»."
+  },
+  {
+   "id": 487,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Si un guante mecánico tiene un nivel 1 o superior en resistencia al rasgado, ¿cuándo no debe usarse?",
+   "o": [
+    "Cuando hay riesgo de corte con cuchillo.",
+    "Cuando se manipulan productos químicos.",
+    "Cuando hay riesgo de atrapamiento por partes móviles de máquinas."
+   ],
+   "c": 2,
+   "o4": "Cuando hace frío.",
+   "que": "Los guantes mecánicos dan distintos niveles de prestación para cada riesgo.",
+   "porque": "Con un nivel <mark>igual o superior a 1</mark> en <mark>rasgado</mark>, no deben usarse si hay <mark>riesgo de atrapamiento</mark> por partes móviles de máquinas: el guante no se rompería y arrastraría la mano. El fabricante debe avisarlo.",
+   "ojo": "Parece raro que un guante más resistente sea más peligroso, y esa es la clave.",
+   "rec": "Guante que no se rasga + máquina que atrapa = <mark>mano dentro</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 57-58",
+   "tq": "Guante resistente al rasgado y máquinas",
+   "ta": "No usarlo con riesgo de atrapamiento."
+  },
+  {
+   "id": 488,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un guante que protege frente a microorganismos y que además ha superado el ensayo frente a virus, ¿cómo lo indica?",
+   "o": [
+    "Con la letra V en el embalaje.",
+    "Con la palabra «virus» bajo el pictograma.",
+    "Con un pictograma de color rojo."
+   ],
+   "c": 1,
+   "o4": "Con el número 374-5.",
+   "que": "Los guantes contra microorganismos son una barrera efectiva frente a bacterias y hongos.",
+   "porque": "Si también protegen frente a <mark>virus</mark>, es porque han superado un ensayo adicional, y bajo el pictograma aparece la palabra <mark>«virus»</mark>.",
+   "ojo": "Sin esa palabra, el guante no garantiza protección frente a virus.",
+   "rec": "Sin la palabra «virus», <mark>no hay protección frente a virus</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 58",
+   "tq": "Guante con protección frente a virus",
+   "ta": "La palabra «virus» bajo el pictograma."
+  },
+  {
+   "id": 489,
+   "t": "EPI",
+   "d": "normal",
+   "q": "La ropa de protección «contra el frío» está indicada para ambientes con una temperatura del aire de:",
+   "o": [
+    "Por debajo de 0 °C y hasta −30 °C.",
+    "Por encima de −5 °C.",
+    "Por debajo de −5 °C y hasta −50 °C."
+   ],
+   "c": 2,
+   "o4": "Por debajo de −50 °C.",
+   "que": "La guía distingue dos prendas para el frío.",
+   "porque": "Ropa <mark>contra ambientes fríos</mark>: temperatura <mark>superior a −5 °C</mark>. Ropa <mark>contra el frío</mark>: <mark>por debajo de −5 °C y hasta −50 °C</mark>.",
+   "ojo": "Los nombres se parecen mucho: la frontera está en −5 °C.",
+   "rec": "«Ambientes fríos» = poco frío · «contra el frío» = mucho frío.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 58",
+   "tq": "Ropa «contra el frío»",
+   "ta": "De −5 °C a −50 °C.",
+   "cifra": 1
+  },
+  {
+   "id": 490,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Qué frase debe llevar marcada la ropa de protección de un solo uso?",
+   "o": [
+    "«Un solo uso».",
+    "«Desechable».",
+    "«No reutilizable»."
+   ],
+   "c": 2,
+   "o4": "«Sólo para riesgos mínimos».",
+   "que": "Toda la ropa de protección lleva los pictogramas de los riesgos frente a los que protege.",
+   "porque": "La ropa de un solo uso debe marcarse con la frase <mark>«No reutilizable»</mark>.",
+   "ojo": "«Sólo para riesgos mínimos» es la de los guantes de categoría I.",
+   "rec": "Un solo uso = <mark>«No reutilizable»</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 58",
+   "tq": "Marcado de la ropa de un solo uso",
+   "ta": "«No reutilizable»."
+  },
+  {
+   "id": 491,
+   "t": "EPI",
+   "d": "normal",
+   "q": "La ropa de protección contra la contaminación radiactiva, ¿frente a qué NO protege?",
+   "o": [
+    "Frente a la contaminación radiactiva en partículas.",
+    "Frente a partículas sólidas en el aire.",
+    "Frente a la radiación ionizante."
+   ],
+   "c": 2,
+   "o4": "Frente al polvo.",
+   "que": "Esta ropa protege el cuerpo y el sistema respiratorio frente a <mark>partículas sólidas</mark> en el aire, incluida la contaminación radiactiva.",
+   "porque": "Pero <mark>no protege contra la radiación ionizante</mark> ni contra la contaminación de pacientes tratados con sustancias radiactivas.",
+   "ojo": "Detiene las <mark>partículas</mark>, no la <mark>radiación</mark>.",
+   "rec": "Ropa antirradiactiva: para el polvo, <mark>no para los rayos</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 58-59",
+   "tq": "Ropa contra contaminación radiactiva: limitación",
+   "ta": "No protege contra la radiación ionizante."
+  },
+  {
+   "id": 492,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Cuándo están previstos los trajes de inmersión?",
+   "o": [
+    "Cuando el usuario puede quedar inconsciente.",
+    "Siempre que se trabaje cerca del agua.",
+    "Cuando el agua fría agrava el riesgo de ahogamiento."
+   ],
+   "c": 2,
+   "o4": "Para bucear.",
+   "que": "Hay dos grandes grupos de protección contra el ahogamiento: trajes de inmersión y equipos de flotación.",
+   "porque": "Los <mark>trajes de inmersión</mark> se usan cuando el <mark>agua fría</mark> agrava el riesgo (hipotermia, choque por frío): alargan el tiempo de supervivencia. Los <mark>chalecos y ayudas a la flotación</mark>, cuando la temperatura del agua no lo agrava.",
+   "ojo": "Para el riesgo de quedar inconsciente lo que importa es que el chaleco <mark>dé la vuelta</mark> a la persona.",
+   "rec": "Agua fría → <mark>traje de inmersión</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 59",
+   "tq": "Trajes de inmersión",
+   "ta": "Cuando el agua fría agrava el riesgo de ahogamiento."
+  },
+  {
+   "id": 493,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un chaleco salvavidas para alta mar (aguas agitadas) y ropa de mal tiempo es de:",
+   "o": [
+    "275 N.",
+    "150 N.",
+    "100 N."
+   ],
+   "c": 1,
+   "o4": "50 N.",
+   "que": "Los chalecos salvavidas mantienen las vías respiratorias de una persona inconsciente fuera del agua.",
+   "porque": "<mark>100 N</mark>: aguas en calma y ropa ligera. <mark>150 N</mark>: alta mar y ropa de mal tiempo. <mark>275 N</mark>: alta mar en condiciones extremas y ropa de protección.",
+   "ojo": "50 N es una ayuda a la flotación, no un chaleco salvavidas.",
+   "rec": "Chalecos: 100 calma · 150 alta mar · 275 extremo.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 60",
+   "tq": "Chaleco salvavidas para alta mar",
+   "ta": "150 N.",
+   "cifra": 1
+  },
+  {
+   "id": 494,
+   "t": "EPI",
+   "d": "normal",
+   "q": "¿Por qué una ayuda a la flotación de 50 N no debe usarse si el usuario puede quedar inconsciente?",
+   "o": [
+    "Porque no flota con ropa de mal tiempo.",
+    "Porque solo sirve en agua dulce.",
+    "Porque no tiene capacidad de auto-enderezamiento."
+   ],
+   "c": 2,
+   "o4": "Porque pesa demasiado.",
+   "que": "Las ayudas a la flotación permiten a un usuario <mark>consciente</mark> mantenerse a flote en aguas en calma cerca de la orilla.",
+   "porque": "Carecen de <mark>capacidad de auto-enderezamiento</mark>: no dan la vuelta a una persona inconsciente. Si eso puede pasar, hay que elegir un <mark>chaleco salvavidas</mark>.",
+   "ojo": "La de 50 N es solo para buenos nadadores, en aguas en calma o cerca de la costa o de una ayuda.",
+   "rec": "Ayuda a la flotación = solo para <mark>conscientes</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 60",
+   "tq": "Ayuda a la flotación y usuario inconsciente",
+   "ta": "No sirve: no da la vuelta a la persona."
+  },
+  {
+   "id": 495,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según la guía, ¿a partir de qué tensión hay que seleccionar un equipo dieléctrico (en lugares secos)?",
+   "o": [
+    "50 V en corriente alterna o 75 V en corriente continua.",
+    "230 V en corriente alterna o 400 V en continua.",
+    "75 V en corriente alterna o 50 V en corriente continua."
+   ],
+   "c": 0,
+   "o4": "24 V en alterna o 50 V en continua.",
+   "que": "Los EPI <mark>dieléctricos</mark> son aislantes de la electricidad.",
+   "porque": "Se seleccionan cuando se trabaja con tensiones a partir de <mark>50 V en alterna</mark> o <mark>75 V en continua</mark>. Esos niveles son para lugares secos; en lugares húmedos o mojados los niveles son más bajos.",
+   "ojo": "La trampa es intercambiar los dos números.",
+   "rec": "Dieléctrico desde <mark>50 alterna / 75 continua</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 60",
+   "tq": "Tensión a partir de la que hace falta EPI dieléctrico",
+   "ta": "50 V CA o 75 V CC.",
+   "cifra": 1
+  },
+  {
+   "id": 496,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un casco eléctricamente aislante para instalaciones de baja tensión protege hasta:",
+   "o": [
+    "36 kV en alterna o 54 kV en continua.",
+    "500 V en alterna o 750 V en continua.",
+    "1.000 V en alterna o 1.500 V en continua."
+   ],
+   "c": 2,
+   "o4": "250 V en alterna.",
+   "que": "Cada EPI dieléctrico protege hasta una tensión.",
+   "porque": "El <mark>casco</mark> aislante de baja tensión protege hasta <mark>1.000 V en alterna</mark> o <mark>1.500 V en continua</mark>. La <mark>ropa</mark> aislante de baja tensión, hasta 500 V CA o 750 V CC; los <mark>guantes</mark>, según su clase, hasta 36 kV CA.",
+   "ojo": "Que 1.000 V sea el límite de la baja tensión ayuda a recordarlo.",
+   "rec": "Casco <mark>1.000/1.500</mark> · ropa <mark>500/750</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 60",
+   "tq": "Casco aislante de baja tensión",
+   "ta": "Hasta 1.000 V CA o 1.500 V CC.",
+   "cifra": 1
+  },
+  {
+   "id": 497,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según la guía, ¿puede usarse un EPI dieléctrico como único elemento de protección frente al choque eléctrico?",
+   "o": [
+    "Sí, si es de la clase adecuada.",
+    "Sí, si se trata de guantes dieléctricos.",
+    "No: siempre junto con otros EPI compatibles."
+   ],
+   "c": 2,
+   "o4": "Sí, en baja tensión.",
+   "que": "Los principales EPI dieléctricos son guantes, casco, calzado y ropa aislante.",
+   "porque": "<mark>Ninguno</mark> debe usarse como <mark>único elemento de protección</mark>: hay que usar a la vez otros equipos compatibles y adecuados al nivel de tensión. Además, no deben presentar ningún defecto antes de cada uso.",
+   "ojo": "Se elige según la parte del cuerpo que podría tocar el elemento en tensión.",
+   "rec": "Dieléctrico: <mark>nunca solo</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 60-61",
+   "tq": "EPI dieléctrico como única protección",
+   "ta": "No: siempre combinado con otros equipos."
+  },
+  {
+   "id": 498,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según la guía, ¿cuándo puede existir riesgo de choque y arco eléctrico?",
+   "o": [
+    "Con más de 1.000 V, sea cual sea la potencia.",
+    "Con más de 250 V y potencias de 125 kVA o más.",
+    "Con más de 50 V y potencias de 10 kVA o más."
+   ],
+   "c": 1,
+   "o4": "Con más de 400 V y potencias de 250 kVA o más.",
+   "que": "El arco eléctrico produce grandes riesgos térmicos.",
+   "porque": "Puede haber riesgo de choque y arco cuando se trabaja con tensiones <mark>superiores a 250 V</mark> (alterna o continua) y el punto está alimentado por potencias <mark>iguales o superiores a 125 kVA</mark>.",
+   "ojo": "Hacen falta las <mark>dos</mark> condiciones: tensión y potencia.",
+   "rec": "Arco: <mark>250 V + 125 kVA</mark> (uno es el doble del otro).",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 61",
+   "tq": "Riesgo de arco eléctrico",
+   "ta": "Más de 250 V y 125 kVA o más.",
+   "cifra": 1
+  },
+  {
+   "id": 499,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Un EPI ha estado expuesto a un arco eléctrico, pero no se le ven defectos. ¿Qué indica la guía?",
+   "o": [
+    "No volver a usarlo.",
+    "Lavarlo y volver a usarlo.",
+    "Revisarlo y seguir usándolo si no hay daños."
+   ],
+   "c": 0,
+   "o4": "Usarlo solo en baja tensión.",
+   "que": "La protección frente al arco puede deteriorarse aunque no se note.",
+   "porque": "<mark>No se deben volver a usar</mark> los EPI expuestos a un arco, <mark>incluso aunque no se perciban defectos</mark> a simple vista.",
+   "ojo": "Además, en estos trabajos ningún EPI debe tener partes metálicas sin proteger con solapas.",
+   "rec": "Arco recibido = <mark>EPI retirado</mark>.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 61",
+   "tq": "EPI expuesto a un arco eléctrico",
+   "ta": "No se vuelve a usar."
+  },
+  {
+   "id": 500,
+   "t": "EPI",
+   "d": "normal",
+   "q": "Según la guía, ¿a partir de qué energía térmica incidente se recomienda proteger cabeza, extremidades y tronco frente al arco?",
+   "o": [
+    "Más de 2 cal/cm².",
+    "Más de 25 cal/cm².",
+    "Más de 8 cal/cm²."
+   ],
+   "c": 2,
+   "o4": "Más de 40 cal/cm².",
+   "que": "La energía incidente de un arco se mide en cal/cm² o kJ/m².",
+   "porque": "Se recomienda que a partir de energías térmicas incidentes <mark>superiores a 8 cal/cm²</mark> se protejan la <mark>cabeza, extremidades y tronco</mark>.",
+   "ojo": "Para las manos se pueden combinar guantes dieléctricos sobre guantes ignífugos.",
+   "rec": "Más de <mark>8</mark> cal/cm² → todo el cuerpo cubierto.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 61",
+   "tq": "Arco: energía para proteger todo el cuerpo",
+   "ta": "Más de 8 cal/cm².",
+   "cifra": 1
+  },
+  {
+   "id": 501,
+   "t": "EPI",
+   "d": "normal",
+   "q": "En atmósferas explosivas, ¿qué valor debe tener la resistencia del trabajador junto con la del suelo?",
+   "o": [
+    "Menos de 10⁴ Ω.",
+    "Menos de 10⁸ Ω.",
+    "Más de 10⁸ Ω."
+   ],
+   "c": 1,
+   "o4": "Más de 10¹² Ω.",
+   "que": "En atmósferas explosivas hay que evitar que el trabajador acumule carga electrostática y produzca una chispa.",
+   "porque": "Lo más importante es asegurarse de que la resistencia del trabajador con el suelo sea <mark>inferior a 10⁸ Ω</mark>, para que la carga se disipe.",
+   "ojo": "Si fuera mayor, la carga se acumularía: lo contrario de lo que se busca.",
+   "rec": "ATEX: <mark>menos de 10⁸ Ω</mark>, que la carga se vaya al suelo.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 61-62",
+   "tq": "Resistencia trabajador-suelo en atmósfera explosiva",
+   "ta": "Menos de 10⁸ Ω.",
+   "cifra": 1
+  },
+  {
+   "id": 502,
+   "t": "EPI",
+   "d": "difícil",
+   "q": "En una atmósfera explosiva sin riesgo de choque ni arco eléctrico, ¿qué calzado puede usarse? ¿Y si hay riesgo de choque y arco?",
+   "o": [
+    "Sin riesgo: solo antiestático. Con riesgo: conductor.",
+    "Sin riesgo: conductor o antiestático. Con riesgo: conductor.",
+    "Sin riesgo: conductor o antiestático. Con riesgo: antiestático."
+   ],
+   "c": 2,
+   "o4": "En los dos casos, calzado aislante.",
+   "que": "En atmósferas explosivas el calzado debe evitar la acumulación de carga.",
+   "porque": "Si <mark>hay riesgo de choque y arco</mark>: calzado <mark>antiestático</mark>, que protege del paso de corriente hasta 250 V CA. Si <mark>no hay riesgo</mark> de paso de corriente, puede considerarse también el <mark>conductor</mark>.",
+   "ojo": "El conductor deja pasar la corriente: solo vale si no hay riesgo eléctrico.",
+   "rec": "Conductor solo si <mark>no hay tensión</mark> peligrosa.",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 61",
+   "tq": "Calzado en atmósfera explosiva",
+   "ta": "Sin riesgo eléctrico: conductor o antiestático · con riesgo: antiestático."
   }
  ],
  "glosario": [
@@ -1670,6 +2930,140 @@
    "d": "Poder de dictar reglamentos. En Madrid, del Consejo de Gobierno.",
    "tema": "Estatuto CAM",
    "f": "Estatuto de Autonomía de la Comunidad de Madrid, art. 34.2",
+   "solo": 1
+  },
+  {
+   "t": "Viento catabático",
+   "a": [
+    "catabático"
+   ],
+   "d": "Brisa de montaña: de noche, el aire frío baja por la ladera.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 252",
+   "solo": 1
+  },
+  {
+   "t": "Viento anabático",
+   "a": [
+    "anabático"
+   ],
+   "d": "Brisa de valle: de día, el aire sube por la ladera.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 253",
+   "solo": 1
+  },
+  {
+   "t": "Foehn",
+   "a": [
+    "foehn"
+   ],
+   "d": "Viento muy cálido, seco e intenso que baja de las zonas altas. En Valencia y Murcia, «Poniente».",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 253",
+   "solo": 1
+  },
+  {
+   "t": "Inversión térmica",
+   "a": [
+    "inversión térmica",
+    "inversión"
+   ],
+   "d": "Aire frío debajo de aire caliente. Al romperse (a media mañana) el fuego se reactiva.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 254",
+   "solo": 1
+  },
+  {
+   "t": "Tormenta ígnea",
+   "a": [
+    "tormenta ígnea"
+   ],
+   "d": "Gran incendio que crea su propio viento (efecto chimenea) y consume el oxígeno.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 255",
+   "solo": 1
+  },
+  {
+   "t": "Reventón",
+   "a": [
+    "reventón"
+   ],
+   "d": "Corriente descendente de la columna de humo que golpea el suelo en abanico. Aviso: calma repentina.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 255",
+   "solo": 1
+  },
+  {
+   "t": "Tiempo de retardo",
+   "a": [
+    "tiempo de retardo"
+   ],
+   "d": "Lo que tarda un combustible muerto en igualar su humedad con el ambiente (1, 10, 100, 1.000 h).",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 256",
+   "solo": 1
+  },
+  {
+   "t": "Modelos de Rothermel",
+   "a": [
+    "Rothermel"
+   ],
+   "d": "13 modelos de combustible en 4 grupos: pastos, matorral, hojarasca y restos.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 257",
+   "solo": 1
+  },
+  {
+   "t": "Longitud de llama",
+   "a": [
+    "longitud de llama"
+   ],
+   "d": "Distancia máxima entre la base y la punta de la llama. Referencia de intensidad.",
+   "tema": "Incendios de vegetación",
+   "f": "Manual de incendios, parte 6: Incendios de vegetación, p. 258",
+   "solo": 1
+  },
+  {
+   "t": "Sistema de retención",
+   "a": [
+    "retención"
+   ],
+   "d": "Impide al usuario llegar a la zona con riesgo de caída.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 56",
+   "solo": 1
+  },
+  {
+   "t": "Sistema de sujeción",
+   "a": [
+    "sujeción",
+    "posicionamiento"
+   ],
+   "d": "Permite trabajar apoyado en tensión o suspensión, con las manos libres.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 56",
+   "solo": 1
+  },
+  {
+   "t": "EPI dieléctrico",
+   "a": [
+    "dieléctrico",
+    "dieléctricos"
+   ],
+   "d": "EPI aislante de la electricidad: desde 50 V CA o 75 V CC. Nunca como única protección.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 60",
+   "solo": 1
+  },
+  {
+   "t": "Ayuda a la flotación",
+   "a": [
+    "ayuda a la flotación",
+    "flotación"
+   ],
+   "d": "Equipo de 50 N para usuarios conscientes en aguas en calma; no da la vuelta a un inconsciente.",
+   "tema": "EPI",
+   "f": "Guía técnica de EPI (RD 773/1997), p. 60",
    "solo": 1
   }
  ]
