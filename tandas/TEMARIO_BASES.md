@@ -19,7 +19,7 @@ Todos están cifrados en `temario/` con el nombre «Bloque X - Tema NN - Título
 | II.5 Incendios de vegetación | temario: Bloque II - Tema 05 (Manual de incendios parte 6, Tragsa/CEIS) |
 | II.6 y II.7 Trabajos verticales (Manual ANETVA) | DOC-20251111-WA0001 (cap. II) · DOC-20251119-WA0018 (cap. III) |
 | II.8 y II.9 Rescate en accidentes de tráfico (DGT-APRAT) | 2.8 APRAT I · 2.9 APRAT II |
-| II.10 Rescate apícola y de otras especies | DOC-20240402-WA0025 |
+| II.10 Rescate apícola y de otras especies + Rescate en ascensores | DOC-20240402-WA0025 · temario: Bloque II - Tema 10 - Rescate en ascensores |
 | II.11, II.12 y II.13 Edificaciones | 2.11 · 2.12 · 2.13 |
 | II.14 Técnicas de estabilización | DOC-20240402-WA0027 |
 | II.15 Accesos forzados | 2.15 |
@@ -32,7 +32,6 @@ Todos están cifrados en `temario/` con el nombre «Bloque X - Tema NN - Título
 | II.22 Agua fría consumo humano | 2.22 |
 | II.23 Seguridad en trabajos verticales (NTP INSST) | DOC-20240402-WA0036 |
 | II.24 Guía técnica INSST de EPI + EPI de vías respiratorias | temario: Bloque II - Tema 24 - Guía técnica del INSST · DOC-20240402-WA0034 |
-| (extra, fuera de las bases) Rescate en ascensores | temario: Extra - Rescate en ascensores (ya hay preguntas; no generar más salvo que lo pida el usuario) |
 | II.25 Corte térmico y soldadura | 2.25 |
 | II.26 Soporte vital básico | DOC-20240402-WA0041 |
 | II.27 Politraumatizado | DOC-20240402-WA0042 |

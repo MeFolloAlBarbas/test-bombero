@@ -55,6 +55,11 @@
   "chars": 109376
  },
  {
+  "tema": "Bloque II - Tema 10 - Rescate en ascensores",
+  "paginas_pdf": 18,
+  "chars": 55053
+ },
+ {
   "tema": "Bloque II - Tema 11 - Edificaciones I",
   "paginas_pdf": 40,
   "chars": 138682
@@ -183,10 +188,5 @@
   "tema": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. III",
   "paginas_pdf": 47,
   "chars": 96228
- },
- {
-  "tema": "Extra - Rescate en ascensores (no está en las bases)",
-  "paginas_pdf": 18,
-  "chars": 55053
  }
 ]
