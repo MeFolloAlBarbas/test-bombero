@@ -381,7 +381,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795617297';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795617400';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -1211,7 +1211,8 @@ function normasHtml(){
   const hechas=new Set();for(const k in S.daily)for(const h in S.daily[k])hechas.add(S.daily[k][h].id);
   const salio=id=>hechas.has(id);  // solo después de haberla respondido
   const D={},info={};(LAB.nor||[]).forEach(x=>info[x.k]=x);
-  for(const q of BANK){const M=normasDe(q);for(const k in M){const e=D[k]||(D[k]={k,n:M[k],qs:[],vis:false});if(M[k].length>e.n.length)e.n=M[k];e.qs.push(q);if(salio(q.id))e.vis=true}}
+  for(const q of BANK){const M=normasDe(q);for(const k in M){if(!info[k])continue;  // solo normas comprobadas en el temario (laboratorio.json → nor)
+const e=D[k]||(D[k]={k,n:M[k],qs:[],vis:false});if(M[k].length>e.n.length)e.n=M[k];e.qs.push(q);if(salio(q.id))e.vis=true}}
   const num=k=>k.split('-').map(Number);
   const todas=Object.values(D).sort((a,b)=>{const x=num(a.k),y=num(b.k);return x[0]-y[0]||(x[1]||0)-(y[1]||0)});
   const V=todas.filter(e=>e.vis),falta=todas.length-V.length;
