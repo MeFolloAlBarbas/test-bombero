@@ -17,7 +17,8 @@ cob = json.load(open(os.path.join(ROOT, 'tandas', 'cobertura.json'), encoding='u
 temas = set(q['t'] for q in P) | set(enlote)
 ALIAS = {'Síntomas clínicos': ['DOC-20240402-WA0043..pdf'], 'Patología cardiovascular': ['DOC-20240402-WA0043..pdf'],
          'Electricidad': ['2.18. Conceptos básicos de electricidad 1.pdf'],
-         'Ascensores': ['(manual NO está en el proyecto: no se pueden hacer más)']}
+         'Ascensores': ['(manual NO está en el proyecto: no se pueden hacer más)'],
+         'Arbolado urbano': ['(PDF solo en el chat, no en el proyecto: las tareas nocturnas lo saltan)']}
 def manuales(t):
     if t in ALIAS: return ALIAS[t]
     return [m for m, v in cob.items() if t.lower().split(' (')[0] in v['tema'].lower()]

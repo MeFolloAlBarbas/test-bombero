@@ -3,9 +3,9 @@
  "manuales": {
   "1.1. CE y ESTATUTO DE AUTONOM A DE LA CAM.pdf": {
    "tema": "Constitución / Estatuto CAM",
-   "hechas": "",
+   "hechas": "todo",
    "total": null,
-   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+   "nota": "TERMINADO el 25/11/2026: el PDF solo trae una selección de artículos (CE 1, 2, 7, 9, 10, 14, 16-18, 20, 24, 25, 28, 33, 137-143; Estatuto 8, 9, 22, 34, 35) y todos sus datos están preguntados (incluidas preguntas de número de artículo). El usuario puede quitarlo del proyecto."
   },
   "1.2. LEY 7 1985 LEY 22 2006.pdf": {
    "tema": "Régimen local",
@@ -216,6 +216,12 @@
    "hechas": "",
    "total": null,
    "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+  },
+  "Arbolado urbano (PDF pasado por el chat)": {
+   "tema": "Arbolado urbano",
+   "hechas": "1-12",
+   "total": 41,
+   "nota": "NO está en el proyecto (no cabía): solo se puede trabajar en un chat en el que el usuario pase el PDF. Las tareas nocturnas lo saltan. Siguiente: p. 13 (arranque, accidentes, medidas preventivas, intervención, evaluación del árbol, cortes, apeo, altura)."
   }
  }
 }

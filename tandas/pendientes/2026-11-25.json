@@ -1,0 +1,1676 @@
+{
+ "preguntas": [
+  {
+   "id": 368,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "Según el manual, ¿qué porcentaje de las intervenciones anuales representan las de arbolado?",
+   "o": [
+    "El 27 %.",
+    "El 17 %.",
+    "El 7 %."
+   ],
+   "c": 1,
+   "o4": "El 37 %.",
+   "que": "Madrid tiene muchísimo arbolado viario y en zonas verdes, y eso genera muchas salidas.",
+   "porque": "Las intervenciones en arbolado representan cada año el <mark>17 %</mark> del total.",
+   "ojo": "Aumentan los días de <mark>tormentas, temporales o vendavales</mark>.",
+   "rec": "Arbolado: casi <mark>1 de cada 6</mark> salidas (17 %).",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 4 del PDF",
+   "tq": "Intervenciones en arbolado: % del total anual",
+   "ta": "El 17 %.",
+   "cifra": 1
+  },
+  {
+   "id": 369,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "Según los estudios que cita el manual, ¿qué parte de los accidentes en intervenciones de arbolado provoca la motosierra?",
+   "o": [
+    "El 50 %.",
+    "El 25 %.",
+    "El 75 %."
+   ],
+   "c": 2,
+   "o4": "El 90 %.",
+   "que": "La motosierra es una de las herramientas <mark>más peligrosas</mark> y se usa a diario.",
+   "porque": "El <mark>75 %</mark> de los accidentes en este tipo de intervención los provoca la motosierra.",
+   "ojo": "Por eso el manual insiste en formarse en el uso del EPI y de los dispositivos de seguridad.",
+   "rec": "Motosierra: <mark>3 de cada 4</mark> accidentes.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 4 del PDF",
+   "tq": "Accidentes en arbolado causados por la motosierra",
+   "ta": "El 75 %.",
+   "cifra": 1
+  },
+  {
+   "id": 370,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Qué combustible usa la motosierra de motor de explosión del manual?",
+   "o": [
+    "Gasóleo con aceite mineral.",
+    "Gasolina de 95 octanos sola.",
+    "Mezcla de gasolina de 95 octanos y aceite sintético."
+   ],
+   "c": 2,
+   "o4": "Mezcla de gasolina de 98 octanos y aceite de cadena.",
+   "que": "Las motosierras más comunes tienen un motor de explosión de <mark>dos tiempos</mark>, monocilíndrico.",
+   "porque": "Usan <mark>mezcla de gasolina de 95 octanos y aceite sintético</mark>: así lubrican y explotan a la vez, porque no tienen cárter con aceite para lubricar.",
+   "ojo": "El aceite de la cadena va en <mark>otro depósito</mark>, cerca de la cadena; el de combustible, en la parte más alejada de ella.",
+   "rec": "2 tiempos = <mark>mezcla</mark> (gasolina 95 + aceite sintético).",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 4 del PDF",
+   "tq": "Combustible de la motosierra de 2 tiempos",
+   "ta": "Gasolina de 95 octanos + aceite sintético."
+  },
+  {
+   "id": 371,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Qué hace la válvula de descompresión de la motosierra?",
+   "o": [
+    "Libera parte de la presión del cilindro para facilitar el arranque.",
+    "Libera gases de escape cuando el motor se calienta.",
+    "Reduce la presión del aceite de la cadena."
+   ],
+   "c": 0,
+   "o4": "Corta el combustible si la cadena se rompe.",
+   "que": "Es un <mark>elemento de confort</mark>: reduce el esfuerzo y la fatiga.",
+   "porque": "Está en la cámara de compresión. Al pulsarla abre un pequeño orificio que <mark>libera parte de la presión</mark> y facilita el arranque. Con la <mark>primera explosión se cierra sola</mark>.",
+   "ojo": "Junto con el ElastoStart permite arrancar casi sin tirones.",
+   "rec": "Descompresor: menos presión → arranque fácil → se cierra solo.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 5 del PDF",
+   "tq": "Válvula de descompresión de la motosierra",
+   "ta": "Libera presión para arrancar; se cierra sola."
+  },
+  {
+   "id": 372,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Para qué sirven las grapas (garras) de la motosierra?",
+   "o": [
+    "Para sujetar la cadena al espadín.",
+    "Para colgar la motosierra del arnés.",
+    "Para apoyarla en el tronco y hacer palanca."
+   ],
+   "c": 2,
+   "o4": "Para frenar la cadena si rebota.",
+   "que": "Las grapas son unos dientes junto al órgano de corte.",
+   "porque": "Dan un <mark>punto de apoyo</mark> en el tronco: al clavarlas se evita tirar de la máquina hacia atrás, se gana equilibrio, se evitan movimientos bruscos y sirven de <mark>palanca</mark>.",
+   "ojo": "Al cortar con la parte inferior del espadín la máquina tiende a salir <mark>hacia delante</mark>: las grapas lo compensan.",
+   "rec": "Grapas = apoyo y palanca.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 5 del PDF",
+   "tq": "Grapas de la motosierra",
+   "ta": "Apoyo en el tronco y palanca."
+  },
+  {
+   "id": 373,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Cómo se activa manualmente el freno de cadena?",
+   "o": [
+    "Empujando el guardamano hacia delante con el dorso de la mano izquierda.",
+    "Tirando del guardamano hacia atrás con la mano derecha.",
+    "Soltando el acelerador con la mano derecha."
+   ],
+   "c": 0,
+   "o4": "Pulsando el botón de parada.",
+   "que": "El freno de cadena <mark>bloquea el giro</mark> de la cadena; es uno de los elementos de seguridad más importantes.",
+   "porque": "Se activa empujando el <mark>protector guardamano hacia delante</mark> con el <mark>dorso de la mano izquierda</mark>, sin soltar la empuñadura delantera.",
+   "ojo": "El guardamano está puesto para que el freno salte solo si hay un rebote.",
+   "rec": "Freno: guardamano <mark>adelante</mark>, dorso de la <mark>izquierda</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 6 del PDF",
+   "tq": "Cómo se activa el freno de cadena a mano",
+   "ta": "Guardamano adelante con el dorso de la mano izquierda."
+  },
+  {
+   "id": 374,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "Según el manual, ¿cuándo debe estar activado el freno de cadena?",
+   "o": [
+    "Solo al transportar la motosierra.",
+    "Solo cuando se trabaja en altura.",
+    "Siempre en marcha, salvo al cortar."
+   ],
+   "c": 2,
+   "o4": "Solo si la cadena está desafilada.",
+   "que": "El freno de cadena impide que la cadena gire.",
+   "porque": "Debe estar <mark>activo antes de arrancar</mark> y <mark>en todo momento</mark> con la motosierra arrancada. <mark>Solo se desactiva en el momento del corte</mark>.",
+   "ojo": "Desplazarse con la máquina en marcha y el freno quitado es justo lo que no hay que hacer.",
+   "rec": "Freno puesto siempre; se quita <mark>solo para cortar</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 6 del PDF",
+   "tq": "¿Cuándo debe estar activado el freno de cadena?",
+   "ta": "Siempre, salvo en el momento del corte."
+  },
+  {
+   "id": 375,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "Con el freno automático (de inercia), ¿cuánto se reduce el ángulo de rebote?",
+   "o": [
+    "A 1/3.",
+    "A la mitad.",
+    "A 1/4."
+   ],
+   "c": 0,
+   "o4": "A cero.",
+   "que": "El freno se activa solo (Quick-Stop, de inercia) si hay un rebote o un golpe fuerte.",
+   "porque": "La cadena se detiene en fracciones de segundo, reduciendo a <mark>1/3</mark> el ángulo de rebote.",
+   "ojo": "Reduce el rebote, pero <mark>no lo elimina</mark>.",
+   "rec": "Freno de inercia: rebote a un <mark>tercio</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 6 del PDF",
+   "tq": "Freno automático: reducción del ángulo de rebote",
+   "ta": "A 1/3.",
+   "cifra": 1
+  },
+  {
+   "id": 376,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Por qué el perno guardacadena es de un material blando, como aluminio o plástico?",
+   "o": [
+    "Para que la cadena de acero se clave en él y se pare.",
+    "Para aligerar el peso total de la motosierra.",
+    "Para que no raye el espadín al montarlo en la máquina."
+   ],
+   "c": 0,
+   "o4": "Para que se funda si el motor se calienta.",
+   "que": "El perno guardacadena actúa cuando la cadena <mark>se rompe o se sale</mark>.",
+   "porque": "Como es de material <mark>más blando</mark> que el acero de la cadena, los dientes <mark>se clavan en él</mark>, se para el giro y se reducen las consecuencias.",
+   "ojo": "La rotura de la cadena suele deberse a mal engrase, afilado, tensado o almacenamiento.",
+   "rec": "Perno blando + cadena dura = la cadena <mark>se clava y se para</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 6 del PDF",
+   "tq": "¿Por qué el perno guardacadena es blando?",
+   "ta": "Para que la cadena se clave en él y se pare."
+  },
+  {
+   "id": 377,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "Tu motosierra pierde potencia y gasta más combustible de lo normal. ¿Cuál es la avería más probable según el manual?",
+   "o": [
+    "El perno guardacadena está gastado.",
+    "El filtro de aire está sucio.",
+    "La cadena está demasiado tensa."
+   ],
+   "c": 1,
+   "o4": "El tapón de combustible está mal ajustado.",
+   "que": "El filtro de aire retiene las impurezas del aire que entra al motor.",
+   "porque": "Si está <mark>sucio</mark>, la admisión de aire queda comprometida: <mark>pierde potencia y aumenta el consumo</mark>. Hay que limpiarlo después de cada intervención.",
+   "ojo": "La cadena demasiado tensa produce otra avería: que el <mark>embrague patine</mark>.",
+   "rec": "Menos potencia y más consumo → <mark>filtro</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 7 del PDF",
+   "tq": "Pérdida de potencia y aumento de consumo",
+   "ta": "Filtro de aire sucio.",
+   "int": 1
+  },
+  {
+   "id": 378,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "Con el motor al ralentí, la cadena se mueve sola. ¿A qué se debe según el manual?",
+   "o": [
+    "El freno de cadena tiene demasiada tensión.",
+    "La cadena está demasiado floja en el espadín.",
+    "Muelles del embrague flojos o ralentí mal ajustado."
+   ],
+   "c": 2,
+   "o4": "Falta aceite de cadena.",
+   "que": "El giro de la cadena se consigue con un <mark>embrague centrífugo</mark>: unas zapatas unidas por muelles que, al girar el motor, se abren y arrastran la campana.",
+   "porque": "Si los <mark>muelles han perdido tensión</mark>, las zapatas transmiten movimiento aun con pocas revoluciones. También pasa si el <mark>ralentí está mal ajustado</mark>.",
+   "ojo": "Si el freno no para la cadena enseguida, su tensión es insuficiente: esa máquina no se usa.",
+   "rec": "Cadena que gira al ralentí → muelles del embrague o ralentí.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 7 del PDF",
+   "tq": "La cadena gira al ralentí",
+   "ta": "Muelles de las zapatas flojos o ralentí mal ajustado."
+  },
+  {
+   "id": 379,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Por qué patina el embrague de la motosierra, según el manual?",
+   "o": [
+    "Por una cadena demasiado floja.",
+    "Por suciedad en el filtro de aire.",
+    "Por una cadena demasiado tensa o grasa en las zapatas."
+   ],
+   "c": 2,
+   "o4": "Por falta de mezcla en el depósito.",
+   "que": "La campana del embrague está unida al piñón que mueve la cadena.",
+   "porque": "Una cadena <mark>demasiado tensa</mark> bloquea el giro de la campana y las zapatas giran dentro sin efecto. También patina si ha caído <mark>grasa o aceite</mark> sobre las zapatas.",
+   "ojo": "Si la máquina se calienta, la causa es otra: virutas en el sistema de refrigeración.",
+   "rec": "Embrague que patina: cadena <mark>muy tensa</mark> o zapatas con grasa.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 7 del PDF",
+   "tq": "¿Por qué patina el embrague?",
+   "ta": "Cadena muy tensa o grasa en las zapatas."
+  },
+  {
+   "id": 380,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "La distancia entre el limitador de profundidad (andarín) y el filo del diente suele estar entre 0,50 y 0,80 mm. ¿Qué distancia general da el manual como adecuada?",
+   "o": [
+    "0,80 mm.",
+    "0,65 mm.",
+    "0,50 mm."
+   ],
+   "c": 1,
+   "o4": "1 mm.",
+   "que": "Esa distancia es la <mark>profundidad de corte</mark>: cuánto entra el diente en la madera.",
+   "porque": "Con una distancia general de <mark>0,65 mm</mark> se consigue un corte suave, preciso y sin astillas, sin vibraciones ni enganchones.",
+   "ojo": "Los extremos del rango (0,50 y 0,80) dependen del tipo de madera.",
+   "rec": "Profundidad: <mark>0,65</mark>, justo en medio.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 8 del PDF",
+   "tq": "Profundidad de corte adecuada (andarín-filo)",
+   "ta": "0,65 mm (rango 0,50-0,80).",
+   "cifra": 1
+  },
+  {
+   "id": 381,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Qué es la galga de una cadena de motosierra?",
+   "o": [
+    "El grosor de los eslabones motrices.",
+    "La distancia entre tres remaches dividida entre dos.",
+    "El número de eslabones motrices."
+   ],
+   "c": 0,
+   "o4": "La altura del limitador de profundidad.",
+   "que": "El <mark>eslabón motriz</mark> es el que va por dentro del carril del espadín; tiene forma de aleta de tiburón.",
+   "porque": "Su <mark>espesor</mark> es la <mark>galga</mark>. Debe encajar a la perfección en el carril para evitar deformaciones, rozamientos y vibraciones.",
+   "ojo": "La distancia entre tres remaches entre dos es el <mark>paso</mark>; el número de eslabones motrices, la <mark>longitud</mark>.",
+   "rec": "Galga = <mark>grosor</mark>. Paso = distancia. Longitud = cuántos.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 8 del PDF",
+   "tq": "Galga de la cadena",
+   "ta": "Grosor de los eslabones motrices."
+  },
+  {
+   "id": 382,
+   "t": "Arbolado urbano",
+   "d": "difícil",
+   "q": "Paso, longitud y galga definen una cadena. ¿Qué afirmación es correcta?",
+   "o": [
+    "La longitud es el número de eslabones motrices y la galga, su grosor.",
+    "El paso es el grosor del eslabón y la galga, la distancia entre remaches.",
+    "La longitud se mide en centímetros de cadena y la galga es el número de dientes."
+   ],
+   "c": 0,
+   "o4": "El paso es el número de dientes de corte y la longitud, la del espadín.",
+   "que": "Las tres medidas suelen venir impresas en el espadín.",
+   "porque": "<mark>Paso</mark>: distancia entre tres remaches dividida entre dos. <mark>Longitud</mark>: número de eslabones motrices (se cuentan los de una fila y se multiplica por dos). <mark>Galga</mark>: grosor de los eslabones motrices.",
+   "ojo": "La longitud <mark>no</mark> son centímetros ni dientes de corte: son los eslabones que van <mark>por dentro</mark> del espadín.",
+   "rec": "Paso = distancia · Longitud = cuántos motrices · Galga = grosor.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 9 del PDF",
+   "tq": "Paso, longitud y galga",
+   "ta": "Paso: distancia · longitud: nº de motrices · galga: grosor."
+  },
+  {
+   "id": 383,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Con qué zona del espadín se produce el rebote si toca algo accidentalmente?",
+   "o": [
+    "La zona 2: el cuarto inferior de la punta.",
+    "La zona 3: la parte inferior del espadín.",
+    "La zona 1: el cuarto superior de la punta."
+   ],
+   "c": 2,
+   "o4": "Con cualquier zona, si la cadena está desafilada.",
+   "que": "El <mark>rebote</mark> es el giro violento de la motosierra hacia el cuerpo del usuario.",
+   "porque": "Se produce al tocar algo (nudos, clavos, el suelo…) con el <mark>cuarto superior de la punta</mark> del espadín.",
+   "ojo": "Los sistemas antirrebote (eslabón motriz o remache de seguridad) lo reducen, pero hacen el corte <mark>más lento</mark>.",
+   "rec": "Rebote = <mark>arriba en la punta</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 9 del PDF",
+   "tq": "Zona del espadín que provoca el rebote",
+   "ta": "El cuarto superior de la punta.",
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 240 90\" role=\"img\" aria-label=\"Espadín de motosierra visto de lado con tres zonas numeradas: 1 en el cuarto superior de la punta, 2 en el cuarto inferior de la punta y 3 en la parte inferior del espadín\"><rect x=\"5\" y=\"30\" width=\"45\" height=\"34\" rx=\"4\" fill=\"#e05a00\"/><path d=\"M50 34 H200 A13 13 0 0 1 200 60 H50 Z\" fill=\"#9aa4ad\" stroke=\"#333\" stroke-width=\"1.5\"/><path d=\"M50 34 H200 A13 13 0 0 1 200 60 H50\" fill=\"none\" stroke=\"#333\" stroke-width=\"3\" stroke-dasharray=\"3 3\"/><g font-family=\"sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#fff\"><circle cx=\"214\" cy=\"18\" r=\"10\" fill=\"#1f6fb2\"/><text x=\"209\" y=\"23\">1</text><circle cx=\"214\" cy=\"78\" r=\"10\" fill=\"#1f6fb2\"/><text x=\"209\" y=\"83\">2</text><circle cx=\"120\" cy=\"78\" r=\"10\" fill=\"#1f6fb2\"/><text x=\"115\" y=\"83\">3</text></g><line x1=\"206\" y1=\"24\" x2=\"204\" y2=\"35\" stroke=\"#1f6fb2\" stroke-width=\"1.5\"/><line x1=\"206\" y1=\"72\" x2=\"204\" y2=\"59\" stroke=\"#1f6fb2\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"68\" x2=\"120\" y2=\"61\" stroke=\"#1f6fb2\" stroke-width=\"1.5\"/></svg>"
+  },
+  {
+   "id": 384,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Qué inconveniente tienen los sistemas antirrebote de la cadena?",
+   "o": [
+    "Hacen que el corte sea más lento.",
+    "Hacen que la cadena se desafile antes.",
+    "Impiden usar el freno de cadena."
+   ],
+   "c": 0,
+   "o4": "Solo sirven en motosierras eléctricas.",
+   "que": "El antirrebote se consigue con un <mark>eslabón motriz de seguridad</mark> (con una protuberancia) o con un <mark>remache de unión de seguridad</mark>.",
+   "porque": "Cambian el ángulo de entrada del diente en la punta para que no tropiece. Hacen el trabajo más seguro, pero el <mark>corte más lento</mark>.",
+   "ojo": "No sustituyen al freno de cadena: son complementarios.",
+   "rec": "Antirrebote: <mark>más seguro, más lento</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 9 del PDF",
+   "tq": "Inconveniente del sistema antirrebote",
+   "ta": "El corte es más lento."
+  },
+  {
+   "id": 385,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "Una motosierra de entre 40 y 50 cm³ de cilindrada, ¿qué paso de cadena lleva según el manual?",
+   "o": [
+    ".325\".",
+    "1/4\".",
+    "3/8\"."
+   ],
+   "c": 0,
+   "o4": "1/2\".",
+   "que": "El <mark>paso</mark> determina cómo encaja la cadena en el espadín y en los piñones.",
+   "porque": "Pasos habituales: <mark>1/4\"</mark> para máquinas de baja potencia o eléctricas; <mark>.325\"</mark> para cilindradas de <mark>40 a 50 cm³</mark>; <mark>3/8\"</mark> para 60 cm³ o más.",
+   "ojo": "A más cilindrada, más paso.",
+   "rec": "Pequeña 1/4\" · media .325\" · grande 3/8\".",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 9 del PDF",
+   "tq": "Paso de cadena para 40-50 cm³",
+   "ta": ".325\".",
+   "cifra": 1
+  },
+  {
+   "id": 386,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Hasta qué longitud de espadín se usa la secuencia estándar de dientes de corte?",
+   "o": [
+    "Hasta 81 cm.",
+    "Hasta 61 cm.",
+    "Hasta 45 cm."
+   ],
+   "c": 1,
+   "o4": "Hasta 100 cm.",
+   "que": "La colocación de los dientes de corte depende de la <mark>longitud del espadín</mark>.",
+   "porque": "Secuencia <mark>estándar</mark>: hasta 61 cm. <mark>Con semisalto</mark>: de 61 a 81 cm. <mark>Con salto</mark>: de 81 cm en adelante.",
+   "ojo": "A mayor longitud, más distancia entre dientes.",
+   "rec": "Estándar <mark>61</mark> · semisalto hasta <mark>81</mark> · salto más de 81.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 9 del PDF",
+   "tq": "Secuencia estándar de dientes: longitud de espadín",
+   "ta": "Hasta 61 cm.",
+   "cifra": 1
+  },
+  {
+   "id": 387,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Cuál de estas señales NO indica por sí sola que la cadena esté mal afilada?",
+   "o": [
+    "Que salga polvo al cortar madera podrida.",
+    "Que la cadena no penetre sola y haya que hacer fuerza.",
+    "Que el corte se desvíe hacia un lado."
+   ],
+   "c": 0,
+   "o4": "Que salga humo del espadín con buen engrase y tensión.",
+   "que": "Una cadena bien afilada entra sola en la madera y saca <mark>virutas</mark>.",
+   "porque": "Señales de mal afilado: no penetra por sí misma, saca polvo en madera <mark>sana</mark>, sale humo del espadín (con engrase y tensión correctos) o el corte se desvía. Pero con madera <mark>podrida</mark> sale polvo aunque la cadena esté bien afilada.",
+   "ojo": "El polvo solo es señal de mal afilado si la madera está <mark>sana</mark>.",
+   "rec": "Virutas = afilada. Polvo en madera sana = sin filo.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 10 del PDF",
+   "tq": "Polvo al cortar: ¿siempre es mal afilado?",
+   "ta": "No: con madera podrida sale polvo aunque esté afilada."
+  },
+  {
+   "id": 388,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "Al afilar con la lima redonda y el portalimas, ¿qué ángulo marca la plantilla en la parte superior?",
+   "o": [
+    "45°.",
+    "30°.",
+    "15°."
+   ],
+   "c": 1,
+   "o4": "60°.",
+   "que": "Se sujeta la máquina estable entre las piernas y se pone la lima sobre el diente.",
+   "porque": "Se le da un ángulo de <mark>30°</mark> como marca la plantilla, con la lima paralela al suelo (a 90° con la vertical de la cadena), y el mismo número de pasadas a todos los dientes (2-3).",
+   "ojo": "Nunca se lima con la plantilla puesta: la plantilla solo sirve para <mark>comprobar</mark>.",
+   "rec": "Afilado: <mark>30°</mark> arriba, <mark>90°</mark> con la vertical.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 10 del PDF",
+   "tq": "Ángulo de afilado con la lima redonda",
+   "ta": "30° (plantilla), lima a 90° con la vertical.",
+   "cifra": 1
+  },
+  {
+   "id": 389,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "Según el manual, ¿cada cuánto se suele dar un asentamiento al filo de la cadena?",
+   "o": [
+    "Cada dos depósitos gastados.",
+    "Al final de cada jornada.",
+    "Cada cinco depósitos gastados."
+   ],
+   "c": 0,
+   "o4": "Una vez a la semana.",
+   "que": "Cortar con una cadena desafilada obliga a hacer fuerza con los brazos, se pierde control y aumenta el riesgo.",
+   "porque": "Es preferible parar y dar un asentamiento al filo con el kit; se suele hacer <mark>cada dos depósitos gastados</mark>.",
+   "ojo": "No existe un kit de afilado <mark>universal</mark>: depende del paso de la cadena.",
+   "rec": "Asentamiento: cada <mark>2 depósitos</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 10 del PDF",
+   "tq": "Frecuencia del asentamiento del filo",
+   "ta": "Cada dos depósitos gastados.",
+   "cifra": 1
+  },
+  {
+   "id": 390,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Por qué hay que comprobar siempre el nivel de aceite de cadena antes de trabajar?",
+   "o": [
+    "Porque sin aceite de cadena la máquina no arranca.",
+    "Porque ese aceite también lubrica el motor.",
+    "Si se agota antes que la gasolina, no da ninguna señal."
+   ],
+   "c": 2,
+   "o4": "Porque el depósito de aceite es más grande que el de gasolina.",
+   "que": "El aceite de cadena reduce fricción, calentamiento y desgaste de cadena, espadín y piñones.",
+   "porque": "Si se acaba la gasolina, la máquina se para sola. Pero si se agota el <mark>aceite antes que el combustible</mark>, <mark>no hay ninguna señal</mark> y se puede averiar.",
+   "ojo": "El motor se lubrica con la <mark>mezcla</mark>, no con el aceite de cadena.",
+   "rec": "Sin gasolina se para; sin aceite <mark>sigue</mark> (y se rompe).",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 11 del PDF",
+   "tq": "¿Por qué comprobar el aceite de cadena antes de cortar?",
+   "ta": "Si se acaba antes que la gasolina, no avisa."
+  },
+  {
+   "id": 391,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Cómo sabes que la cadena está bien tensada?",
+   "o": [
+    "No se puede mover a mano por el espadín.",
+    "Cuelga un poco por debajo del espadín.",
+    "No cuelga por debajo y corre suave al tirar."
+   ],
+   "c": 2,
+   "o4": "Suena al pasar la mano por encima.",
+   "que": "El tensado se hace con el motor apagado y el freno inactivo: se aflojan las tuercas de la tapa y se aprieta el tornillo tensor tirando del espadín hacia arriba desde la punta.",
+   "porque": "Está bien cuando <mark>no cuelga por debajo</mark> del espadín, pero al tirar de ella <mark>corre suavemente</mark> por el carril con la máquina parada.",
+   "ojo": "Al cortar, el calor <mark>dilata y estira</mark> la cadena: hay que vigilarla durante el trabajo.",
+   "rec": "Ni cuelga ni se atasca.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 11 del PDF",
+   "tq": "Cadena bien tensada",
+   "ta": "No cuelga y corre suave al tirar."
+  },
+  {
+   "id": 392,
+   "t": "Arbolado urbano",
+   "d": "difícil",
+   "q": "Las protecciones anticorte funcionan por deslizamiento o por atrapamiento. ¿Qué afirmación es correcta?",
+   "o": [
+    "Todas las prendas anticorte protegen por deslizamiento.",
+    "El casco protege por deslizamiento y las perneras, por atrapamiento.",
+    "El casco protege por atrapamiento y las perneras, por deslizamiento."
+   ],
+   "c": 1,
+   "o4": "Las botas protegen por atrapamiento y los guantes, por deslizamiento.",
+   "que": "Ningún EPI evita el peligro, pero reduce mucho las consecuencias.",
+   "porque": "<mark>Deslizamiento</mark>: la cadena no consigue morder el material y se desvía (casco, punteras de las botas). <mark>Atrapamiento</mark>: los dientes enganchan las fibras interiores, las arrastran hasta el piñón y este se bloquea (perneras, chaquetilla, guantes y polainas).",
+   "ojo": "Lo duro <mark>desvía</mark>; lo textil <mark>atrapa</mark>.",
+   "rec": "Casco y punteras resbalan; la ropa atrapa.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 12 del PDF",
+   "tq": "Anticorte: deslizamiento y atrapamiento",
+   "ta": "Casco y punteras: deslizamiento · ropa: atrapamiento."
+  },
+  {
+   "id": 393,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "En la ropa anticorte para motosierra, ¿a qué velocidad de cadena corresponde la clase 1?",
+   "o": [
+    "20 m/s.",
+    "24 m/s.",
+    "28 m/s."
+   ],
+   "c": 0,
+   "o4": "16 m/s.",
+   "que": "La ropa anticorte se clasifica según la <mark>velocidad de cadena</mark> que aguanta el tejido.",
+   "porque": "Clase 1: <mark>20 m/s</mark>. Clase 2: <mark>24 m/s</mark>. Clase 3: <mark>28 m/s</mark>.",
+   "ojo": "Las prendas del manual (chaqueta, perneras, polainas, guantes) son de clase 1.",
+   "rec": "Clases: 20, 24, 28 (de 4 en 4).",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 12 del PDF",
+   "tq": "Ropa anticorte clase 1",
+   "ta": "20 m/s (clase 2: 24; clase 3: 28).",
+   "cifra": 1
+  },
+  {
+   "id": 394,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Qué norma regula las chaquetas de protección para usuarios de motosierra?",
+   "o": [
+    "UNE-EN ISO 11393-6.",
+    "UNE-EN ISO 11393-5.",
+    "UNE-EN ISO 11393-2."
+   ],
+   "c": 0,
+   "o4": "UNE-EN 397.",
+   "que": "La serie <mark>UNE-EN ISO 11393</mark> regula la ropa de protección para usuarios de sierras de cadena.",
+   "porque": "Chaquetas: <mark>11393-6</mark>. Perneras (piernas): <mark>11393-2</mark>. Guantes: <mark>11393-4</mark>. Polainas: <mark>11393-5</mark>.",
+   "ojo": "La UNE-EN 397 es la del <mark>casco</mark>.",
+   "rec": "Piernas 2 · guantes 4 · polainas 5 · chaqueta 6.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 12 del PDF",
+   "tq": "Norma de la chaqueta anticorte",
+   "ta": "UNE-EN ISO 11393-6.",
+   "cifra": 1
+  },
+  {
+   "id": 395,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "En los protectores de piernas anticorte, ¿qué tipo cubre todo el contorno de ambas piernas?",
+   "o": [
+    "El tipo C.",
+    "El tipo B.",
+    "El tipo A."
+   ],
+   "c": 0,
+   "o4": "El tipo D.",
+   "que": "Los protectores de piernas se clasifican en tipos A, B y C según la zona que cubren.",
+   "porque": "Tipo <mark>A</mark>: la parte delantera más una franja trasera. Tipo <mark>B</mark>: como el A más otra franja en la pierna izquierda. Tipo <mark>C</mark>: <mark>todo el contorno</mark> de ambas piernas.",
+   "ojo": "Cuanto más avanza la letra, <mark>más zona</mark> cubre.",
+   "rec": "A → B → C: cada vez más; C = <mark>completo</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 12 del PDF",
+   "tq": "Protector de piernas que cubre todo el contorno",
+   "ta": "El tipo C."
+  },
+  {
+   "id": 396,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "Tu pernera anticorte tiene un enganchón pequeño por el que se ven las fibras protectoras. ¿Qué haces?",
+   "o": [
+    "Coserla y seguir usándola.",
+    "Sustituirla.",
+    "Seguir usándola si el enganchón es pequeño."
+   ],
+   "c": 1,
+   "o4": "Cubrirlo con cinta americana.",
+   "que": "La eficacia del material anticorte depende de su uso, mantenimiento y almacenaje.",
+   "porque": "Cuando sufre un enganchón, <mark>por pequeño que sea</mark>, que deje ver las fibras protectoras, hay que <mark>sustituirla</mark>. Tras un accidente también pierde sus propiedades porque las fibras se descolocan.",
+   "ojo": "Si se moja, se deja secar <mark>estirada</mark>; y lejos del tubo de escape y de disolventes o ácidos.",
+   "rec": "Fibras a la vista = <mark>prenda fuera</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 12 del PDF",
+   "tq": "Pernera anticorte con fibras a la vista",
+   "ta": "Se sustituye.",
+   "int": 1
+  },
+  {
+   "id": 397,
+   "t": "Arbolado urbano",
+   "d": "normal",
+   "q": "¿Qué hace el seguro del acelerador de la motosierra?",
+   "o": [
+    "Limita la velocidad máxima de la cadena.",
+    "Impide acelerar si no se agarra firmemente la empuñadura trasera.",
+    "Para el motor si la máquina cae al suelo."
+   ],
+   "c": 1,
+   "o4": "Bloquea el acelerador durante el transporte.",
+   "que": "Es un <mark>elemento de seguridad</mark>: actúa ante pérdidas de control.",
+   "porque": "Evita <mark>aceleraciones involuntarias</mark>: el acelerador solo funciona si se mantiene pulsado el seguro, es decir, con la <mark>empuñadura trasera bien agarrada</mark>.",
+   "ojo": "No limita la velocidad: solo impide acelerar sin querer.",
+   "rec": "Sin mano en la empuñadura trasera, <mark>no acelera</mark>.",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 6 del PDF",
+   "tq": "Seguro del acelerador",
+   "ta": "Solo acelera con la empuñadura trasera agarrada."
+  },
+  {
+   "id": 398,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 1.2 CE, la soberanía nacional reside en:",
+   "o": [
+    "El pueblo español.",
+    "El Rey.",
+    "Las Cortes Generales."
+   ],
+   "c": 0,
+   "o4": "La Nación española.",
+   "que": "La soberanía es el poder supremo del que salen todos los demás.",
+   "porque": "Reside en el <mark>pueblo español</mark>, del que emanan los poderes del Estado.",
+   "ojo": "Las Cortes <mark>representan</mark> al pueblo, pero la soberanía no es suya.",
+   "rec": "Soberanía = <mark>pueblo</mark>.",
+   "f": "Constitución Española, art. 1.2",
+   "tq": "Art. 1.2 CE: ¿dónde reside la soberanía nacional?",
+   "ta": "En el pueblo español."
+  },
+  {
+   "id": 399,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 2 CE, la Constitución reconoce y garantiza el derecho a la autonomía de:",
+   "o": [
+    "Las Comunidades Autónomas ya constituidas.",
+    "Los municipios y provincias.",
+    "Las nacionalidades y regiones que integran la Nación."
+   ],
+   "c": 2,
+   "o4": "Los territorios históricos.",
+   "que": "El art. 2 se fundamenta en la <mark>indisoluble unidad</mark> de la Nación española.",
+   "porque": "Reconoce y garantiza el derecho a la autonomía de las <mark>nacionalidades y regiones</mark> que la integran y la <mark>solidaridad</mark> entre todas ellas.",
+   "ojo": "La autonomía de municipios y provincias aparece después, en el título de organización territorial.",
+   "rec": "Unidad + autonomía de <mark>nacionalidades y regiones</mark> + solidaridad.",
+   "f": "Constitución Española, art. 2",
+   "tq": "Art. 2 CE: autonomía de quién",
+   "ta": "Nacionalidades y regiones."
+  },
+  {
+   "id": 400,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 7 CE, la estructura interna y el funcionamiento de sindicatos y asociaciones empresariales deberán ser:",
+   "o": [
+    "Democráticos.",
+    "Independientes del Estado y de los partidos.",
+    "Aprobados por el Gobierno."
+   ],
+   "c": 0,
+   "o4": "Paritarios.",
+   "que": "Sindicatos y asociaciones empresariales defienden los intereses económicos y sociales que les son propios.",
+   "porque": "Su creación y actividad son <mark>libres</mark> dentro del respeto a la Constitución y a la ley, y su estructura interna y funcionamiento deben ser <mark>democráticos</mark>.",
+   "ojo": "Es la misma exigencia que la Constitución hace a los partidos políticos.",
+   "rec": "Sindicatos: libres y <mark>democráticos</mark> por dentro.",
+   "f": "Constitución Española, art. 7",
+   "tq": "Art. 7 CE: funcionamiento de sindicatos",
+   "ta": "Democrático."
+  },
+  {
+   "id": 401,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 9.2 CE, ¿a quién corresponde promover las condiciones para que la libertad y la igualdad sean reales y efectivas?",
+   "o": [
+    "A los ciudadanos.",
+    "A los poderes públicos.",
+    "Al Defensor del Pueblo."
+   ],
+   "c": 1,
+   "o4": "A los sindicatos.",
+   "que": "El art. 9.2 recoge la llamada <mark>igualdad material</mark>.",
+   "porque": "Corresponde a los <mark>poderes públicos</mark> promover esas condiciones, remover los obstáculos que impidan su plenitud y facilitar la participación de todos en la vida política, económica, cultural y social.",
+   "ojo": "El art. 9.1 sujeta a <mark>ciudadanos y poderes públicos</mark> a la Constitución; el 9.2 solo encarga a los <mark>poderes públicos</mark>.",
+   "rec": "9.2: los <mark>poderes públicos</mark> promueven y remueven obstáculos.",
+   "f": "Constitución Española, art. 9.2",
+   "tq": "Art. 9.2 CE: ¿quién promueve la igualdad real?",
+   "ta": "Los poderes públicos."
+  },
+  {
+   "id": 402,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "¿Cuál de estos principios NO aparece entre los que garantiza el art. 9.3 CE?",
+   "o": [
+    "La jerarquía normativa.",
+    "La irrevocabilidad de los actos administrativos.",
+    "La interdicción de la arbitrariedad de los poderes públicos."
+   ],
+   "c": 1,
+   "o4": "La publicidad de las normas.",
+   "que": "El art. 9.3 enumera los principios del Estado de Derecho.",
+   "porque": "Garantiza: <mark>legalidad</mark>, <mark>jerarquía normativa</mark>, <mark>publicidad de las normas</mark>, irretroactividad de las disposiciones sancionadoras no favorables, <mark>seguridad jurídica</mark>, <mark>responsabilidad</mark> e <mark>interdicción de la arbitrariedad</mark> de los poderes públicos.",
+   "ojo": "La «irrevocabilidad de los actos administrativos» es inventada.",
+   "rec": "9.3: legalidad, jerarquía, publicidad, irretroactividad, seguridad, responsabilidad, interdicción.",
+   "f": "Constitución Española, art. 9.3",
+   "tq": "Art. 9.3 CE: principios",
+   "ta": "Legalidad, jerarquía, publicidad, irretroactividad, seguridad jurídica, responsabilidad, interdicción.",
+   "ex": 1
+  },
+  {
+   "id": 403,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 10.2 CE, las normas sobre derechos fundamentales se interpretarán de conformidad con:",
+   "o": [
+    "Las leyes orgánicas que los desarrollen.",
+    "La jurisprudencia del Tribunal Supremo.",
+    "La Declaración Universal y los tratados ratificados."
+   ],
+   "c": 2,
+   "o4": "La Carta de las Naciones Unidas.",
+   "que": "El art. 10 abre el título de los derechos y deberes fundamentales.",
+   "porque": "Esas normas se interpretan conforme a la <mark>Declaración Universal de Derechos Humanos</mark> y los <mark>tratados y acuerdos internacionales</mark> sobre esas materias ratificados por España.",
+   "ojo": "El art. 10.1 dice que la dignidad de la persona es <mark>fundamento del orden político y de la paz social</mark>.",
+   "rec": "Derechos fundamentales → se leen con la <mark>Declaración Universal</mark>.",
+   "f": "Constitución Española, art. 10.2",
+   "tq": "Art. 10.2 CE: interpretación de los derechos",
+   "ta": "Conforme a la Declaración Universal y los tratados ratificados."
+  },
+  {
+   "id": 404,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 10.1 CE, la dignidad de la persona y los derechos inviolables que le son inherentes son fundamento de:",
+   "o": [
+    "El orden político y la paz social.",
+    "El ordenamiento jurídico y la soberanía.",
+    "La convivencia y la igualdad."
+   ],
+   "c": 0,
+   "o4": "La unidad de la Nación.",
+   "que": "El art. 10.1 enumera la dignidad, los derechos inviolables, el libre desarrollo de la personalidad y el respeto a la ley y a los derechos de los demás.",
+   "porque": "Todo ello es <mark>fundamento del orden político y de la paz social</mark>.",
+   "ojo": "No confundir con los <mark>valores superiores</mark> del art. 1.1 (libertad, justicia, igualdad, pluralismo).",
+   "rec": "Dignidad → <mark>orden político y paz social</mark>.",
+   "f": "Constitución Española, art. 10.1",
+   "tq": "Art. 10.1 CE: la dignidad es fundamento de…",
+   "ta": "El orden político y la paz social."
+  },
+  {
+   "id": 405,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "El art. 14 CE prohíbe la discriminación por varias razones que cita expresamente. ¿Cuál NO cita?",
+   "o": [
+    "La opinión.",
+    "El nacimiento.",
+    "La edad."
+   ],
+   "c": 2,
+   "o4": "La religión.",
+   "que": "Los españoles son <mark>iguales ante la ley</mark>.",
+   "porque": "Cita expresamente: <mark>nacimiento, raza, sexo, religión, opinión</mark> o cualquier otra condición o circunstancia personal o social.",
+   "ojo": "La edad entra en «cualquier otra condición», pero <mark>no se nombra</mark>.",
+   "rec": "NaRaSeReOp: nacimiento, raza, sexo, religión, opinión.",
+   "f": "Constitución Española, art. 14",
+   "tq": "Art. 14 CE: motivos de discriminación citados",
+   "ta": "Nacimiento, raza, sexo, religión, opinión."
+  },
+  {
+   "id": 406,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 16.3 CE, sobre las confesiones religiosas:",
+   "o": [
+    "Ninguna tendrá carácter estatal.",
+    "Todas tendrán la misma financiación pública.",
+    "La católica tendrá carácter oficial."
+   ],
+   "c": 0,
+   "o4": "Ninguna podrá recibir cooperación pública.",
+   "que": "España es un Estado <mark>aconfesional</mark>.",
+   "porque": "<mark>Ninguna confesión tendrá carácter estatal</mark>. Los poderes públicos tienen en cuenta las creencias de la sociedad y mantienen relaciones de <mark>cooperación</mark> con la Iglesia Católica y las demás confesiones.",
+   "ojo": "Aconfesional no es hostil: hay <mark>cooperación</mark>.",
+   "rec": "Ninguna estatal, pero cooperación con todas.",
+   "f": "Constitución Española, art. 16.3",
+   "tq": "Art. 16.3 CE: confesiones",
+   "ta": "Ninguna tendrá carácter estatal."
+  },
+  {
+   "id": 407,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 16.2 CE, nadie podrá ser obligado a declarar sobre:",
+   "o": [
+    "Su ideología, religión o creencias.",
+    "Su domicilio y su patrimonio.",
+    "Su afiliación sindical y política."
+   ],
+   "c": 0,
+   "o4": "Sus datos de salud.",
+   "que": "El art. 16 garantiza la libertad ideológica, religiosa y de culto.",
+   "porque": "Nadie podrá ser obligado a declarar sobre su <mark>ideología, religión o creencias</mark>.",
+   "ojo": "Es un apartado distinto del derecho a no declarar del <mark>detenido</mark>.",
+   "rec": "Ideología, religión, creencias: <mark>nadie te obliga a decirlas</mark>.",
+   "f": "Constitución Española, art. 16.2",
+   "tq": "Art. 16.2 CE: no obligado a declarar sobre…",
+   "ta": "Ideología, religión o creencias."
+  },
+  {
+   "id": 408,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 17.3 CE, ¿cuándo debe ser informada una persona detenida de sus derechos y de las razones de su detención?",
+   "o": [
+    "En un plazo máximo de 24 horas.",
+    "Al pasar a disposición judicial.",
+    "De forma inmediata."
+   ],
+   "c": 2,
+   "o4": "Antes de 72 horas.",
+   "que": "El art. 17 protege la libertad y la seguridad personal.",
+   "porque": "Debe ser informada <mark>de forma inmediata</mark> y de modo comprensible. No puede ser obligada a declarar y se le garantiza la <mark>asistencia de abogado</mark> en las diligencias policiales y judiciales.",
+   "ojo": "El plazo de horas es el de la <mark>detención preventiva</mark>, no el de la información.",
+   "rec": "Información al detenido: <mark>ya</mark>.",
+   "f": "Constitución Española, art. 17.3",
+   "tq": "Art. 17.3 CE: información al detenido",
+   "ta": "De forma inmediata."
+  },
+  {
+   "id": 409,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 17.4 CE, ¿para qué sirve el procedimiento de «habeas corpus»?",
+   "o": [
+    "Para fijar la duración máxima de la prisión provisional.",
+    "Para poner de inmediato a disposición judicial a quien esté detenido ilegalmente.",
+    "Para recurrir una sanción administrativa."
+   ],
+   "c": 1,
+   "o4": "Para pedir la libertad bajo fianza.",
+   "que": "El habeas corpus lo regula la ley por mandato del art. 17.4.",
+   "porque": "Sirve para producir la <mark>inmediata puesta a disposición judicial</mark> de toda persona <mark>detenida ilegalmente</mark>.",
+   "ojo": "El plazo máximo de la prisión provisional también lo fija la ley, pero es otra cosa.",
+   "rec": "Habeas corpus = detenido ilegal → <mark>al juez, ya</mark>.",
+   "f": "Constitución Española, art. 17.4",
+   "tq": "Habeas corpus (art. 17.4 CE)",
+   "ta": "Poner de inmediato ante el juez al detenido ilegalmente."
+  },
+  {
+   "id": 410,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 18.3 CE, el secreto de las comunicaciones se garantiza salvo:",
+   "o": [
+    "Consentimiento de la policía.",
+    "Resolución judicial.",
+    "Flagrante delito."
+   ],
+   "c": 1,
+   "o4": "Orden del Ministerio del Interior.",
+   "que": "El art. 18 protege el honor, la intimidad, el domicilio y las comunicaciones.",
+   "porque": "Se garantiza el secreto de las comunicaciones (postales, telegráficas y telefónicas), <mark>salvo resolución judicial</mark>.",
+   "ojo": "El <mark>flagrante delito</mark> es una excepción del <mark>domicilio</mark>, no de las comunicaciones.",
+   "rec": "Comunicaciones: solo el <mark>juez</mark>.",
+   "f": "Constitución Española, art. 18.3",
+   "tq": "Art. 18.3 CE: excepción al secreto de las comunicaciones",
+   "ta": "Resolución judicial."
+  },
+  {
+   "id": 411,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 18.4 CE, ¿qué limitará la ley para garantizar el honor y la intimidad?",
+   "o": [
+    "El acceso a los archivos públicos.",
+    "La libertad de prensa.",
+    "El uso de la informática."
+   ],
+   "c": 2,
+   "o4": "Las grabaciones en lugares públicos.",
+   "que": "El art. 18.1 garantiza el derecho al <mark>honor</mark>, a la <mark>intimidad</mark> personal y familiar y a la <mark>propia imagen</mark>.",
+   "porque": "La ley limitará el <mark>uso de la informática</mark> para garantizar el honor y la intimidad y el pleno ejercicio de los derechos.",
+   "ojo": "Es la base de la protección de datos personales.",
+   "rec": "18.4 = informática.",
+   "f": "Constitución Española, art. 18.4",
+   "tq": "Art. 18.4 CE: la ley limitará…",
+   "ta": "El uso de la informática."
+  },
+  {
+   "id": 412,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 20.2 CE, el ejercicio de la libertad de expresión e información no puede restringirse mediante:",
+   "o": [
+    "Ninguna resolución judicial.",
+    "Ningún tipo de censura previa.",
+    "Ninguna ley orgánica."
+   ],
+   "c": 1,
+   "o4": "Ningún límite.",
+   "que": "El art. 20 reconoce la libertad de expresión, de creación, de cátedra y de información.",
+   "porque": "Su ejercicio no puede restringirse mediante <mark>ningún tipo de censura previa</mark>.",
+   "ojo": "Sí tienen <mark>límites</mark> (honor, intimidad, propia imagen, juventud e infancia) y un juez puede acordar el secuestro de publicaciones.",
+   "rec": "Censura previa: <mark>nunca</mark>.",
+   "f": "Constitución Española, art. 20.2",
+   "tq": "Art. 20.2 CE: prohibición",
+   "ta": "Ningún tipo de censura previa."
+  },
+  {
+   "id": 413,
+   "t": "Constitución",
+   "d": "difícil",
+   "q": "Según el art. 20.4 CE, las libertades de expresión e información tienen su límite especialmente en el derecho al honor, a la intimidad, a la propia imagen y…",
+   "o": [
+    "… a la protección de la juventud y de la infancia.",
+    "… al secreto profesional.",
+    "… a la seguridad nacional."
+   ],
+   "c": 0,
+   "o4": "… a la igualdad ante la ley.",
+   "que": "Estas libertades no son ilimitadas.",
+   "porque": "Tienen su límite en los demás derechos del Título I, en las leyes que los desarrollen y, especialmente, en el derecho al <mark>honor</mark>, a la <mark>intimidad</mark>, a la <mark>propia imagen</mark> y a la <mark>protección de la juventud y de la infancia</mark>.",
+   "ojo": "El secreto profesional sale en el mismo artículo, pero como <mark>garantía</mark> de los periodistas, no como límite.",
+   "rec": "Límites: honor, intimidad, imagen, <mark>juventud e infancia</mark>.",
+   "f": "Constitución Española, art. 20.4",
+   "tq": "Art. 20.4 CE: límites de la libertad de expresión",
+   "ta": "Honor, intimidad, propia imagen, juventud e infancia."
+  },
+  {
+   "id": 414,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 20.1 d) CE, ¿qué información se tiene derecho a comunicar o recibir libremente?",
+   "o": [
+    "La información oficial.",
+    "La información veraz.",
+    "Toda la información pública."
+   ],
+   "c": 1,
+   "o4": "La información contrastada por dos fuentes.",
+   "que": "El art. 20.1 recoge varias libertades: expresión, creación, cátedra e información.",
+   "porque": "Se tiene derecho a comunicar o recibir libremente <mark>información veraz</mark> por cualquier medio. La ley regula la <mark>cláusula de conciencia</mark> y el <mark>secreto profesional</mark>.",
+   "ojo": "La palabra clave es <mark>veraz</mark>.",
+   "rec": "Información: <mark>veraz</mark>.",
+   "f": "Constitución Española, art. 20.1",
+   "tq": "Art. 20.1 d) CE: ¿qué información?",
+   "ta": "La información veraz."
+  },
+  {
+   "id": 415,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "¿Cuál de estos NO es uno de los derechos que recoge el art. 24.2 CE?",
+   "o": [
+    "A no declarar contra sí mismo.",
+    "A ser juzgado por un jurado popular.",
+    "A la presunción de inocencia."
+   ],
+   "c": 1,
+   "o4": "Al juez ordinario predeterminado por la ley.",
+   "que": "El art. 24.2 recoge las garantías del proceso.",
+   "porque": "Incluye: <mark>juez ordinario predeterminado</mark> por la ley, defensa y asistencia de letrado, ser informado de la acusación, proceso público sin dilaciones indebidas, medios de prueba, <mark>no declarar contra sí mismo</mark>, no confesarse culpable y <mark>presunción de inocencia</mark>.",
+   "ojo": "El jurado popular <mark>no aparece</mark> entre estos derechos.",
+   "rec": "Juez predeterminado, letrado, acusación, proceso público, prueba, no declarar, inocencia.",
+   "f": "Constitución Española, art. 24.2",
+   "tq": "Art. 24.2 CE: garantías del proceso",
+   "ta": "Juez predeterminado, letrado, prueba, no declarar, presunción de inocencia…",
+   "ex": 1
+  },
+  {
+   "id": 416,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 24.2 CE, la ley regulará los casos en que no se estará obligado a declarar sobre hechos presuntamente delictivos por razón de:",
+   "o": [
+    "Cargo público o inmunidad.",
+    "Parentesco o secreto profesional.",
+    "Edad o enfermedad."
+   ],
+   "c": 1,
+   "o4": "Miedo a represalias.",
+   "que": "Normalmente hay obligación de declarar como testigo.",
+   "porque": "La ley regula los casos en que, por razón de <mark>parentesco</mark> o de <mark>secreto profesional</mark>, no se está obligado a declarar.",
+   "ojo": "No confundir con el derecho del acusado a <mark>no declarar contra sí mismo</mark>.",
+   "rec": "Exentos de declarar: <mark>familia</mark> y <mark>secreto profesional</mark>.",
+   "f": "Constitución Española, art. 24.2",
+   "tq": "Art. 24.2 CE: exentos de declarar",
+   "ta": "Parentesco o secreto profesional."
+  },
+  {
+   "id": 417,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 25.2 CE, las penas privativas de libertad estarán orientadas hacia:",
+   "o": [
+    "La reeducación y la reinserción social.",
+    "El castigo y la prevención.",
+    "La reparación del daño a la víctima."
+   ],
+   "c": 0,
+   "o4": "La protección de la sociedad.",
+   "que": "El art. 25 recoge el principio de legalidad penal y los fines de la pena.",
+   "porque": "Las penas privativas de libertad y las medidas de seguridad se orientan a la <mark>reeducación y reinserción social</mark> y <mark>no pueden consistir en trabajos forzados</mark>.",
+   "ojo": "El preso conserva los derechos fundamentales salvo los limitados por la condena, y tiene derecho a un <mark>trabajo remunerado</mark>.",
+   "rec": "Pena = <mark>reeducar y reinsertar</mark>.",
+   "f": "Constitución Española, art. 25.2",
+   "tq": "Art. 25.2 CE: fin de las penas",
+   "ta": "Reeducación y reinserción social."
+  },
+  {
+   "id": 418,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 25.1 CE, nadie puede ser condenado o sancionado por acciones u omisiones que en el momento de producirse:",
+   "o": [
+    "Ya hayan prescrito según el Código Penal.",
+    "No constituyan delito, falta o infracción administrativa.",
+    "No hayan sido denunciadas por la víctima."
+   ],
+   "c": 1,
+   "o4": "No hayan causado daño.",
+   "que": "Es el <mark>principio de legalidad</mark> penal y sancionador.",
+   "porque": "Nadie puede ser condenado o sancionado por acciones u omisiones que <mark>en el momento de producirse</mark> no constituyan delito, falta o infracción administrativa según la legislación vigente entonces.",
+   "ojo": "Cuenta la ley <mark>de cuando ocurrió</mark>, no la de después.",
+   "rec": "Sin ley previa, <mark>no hay sanción</mark>.",
+   "f": "Constitución Española, art. 25.1",
+   "tq": "Art. 25.1 CE: principio de legalidad",
+   "ta": "No se sanciona lo que no era infracción cuando ocurrió."
+  },
+  {
+   "id": 419,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 28.1 CE, ¿a quiénes podrá la ley limitar o exceptuar el derecho a sindicarse?",
+   "o": [
+    "A los cuerpos armados y de disciplina militar.",
+    "A todos los funcionarios públicos.",
+    "A los servicios esenciales, como bomberos."
+   ],
+   "c": 0,
+   "o4": "A los jueces y fiscales únicamente.",
+   "que": "Todos tienen derecho a <mark>sindicarse libremente</mark>.",
+   "porque": "La ley podrá limitarlo o exceptuarlo para las <mark>Fuerzas o Institutos armados</mark> y Cuerpos sometidos a disciplina militar. Para los <mark>funcionarios</mark>, solo regulará sus peculiaridades.",
+   "ojo": "Los funcionarios <mark>sí</mark> pueden sindicarse, con peculiaridades.",
+   "rec": "Sindicarse: limitable solo a lo <mark>militar</mark>.",
+   "f": "Constitución Española, art. 28.1",
+   "tq": "Art. 28.1 CE: limitación de la sindicación",
+   "ta": "Fuerzas armadas y cuerpos con disciplina militar."
+  },
+  {
+   "id": 420,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 28.2 CE, la ley que regule el derecho de huelga establecerá garantías para asegurar:",
+   "o": [
+    "El cobro del salario durante la huelga.",
+    "La negociación previa obligatoria.",
+    "El mantenimiento de los servicios esenciales de la comunidad."
+   ],
+   "c": 2,
+   "o4": "La duración máxima de la huelga.",
+   "que": "Se reconoce el derecho a la huelga de los trabajadores para defender sus intereses.",
+   "porque": "La ley que lo regule establecerá las garantías precisas para asegurar el <mark>mantenimiento de los servicios esenciales</mark> de la comunidad.",
+   "ojo": "Por eso en servicios como los de emergencias hay <mark>servicios mínimos</mark>.",
+   "rec": "Huelga sí, pero con <mark>servicios esenciales</mark>.",
+   "f": "Constitución Española, art. 28.2",
+   "tq": "Art. 28.2 CE: garantía en la huelga",
+   "ta": "Mantenimiento de los servicios esenciales."
+  },
+  {
+   "id": 421,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 33.2 CE, ¿qué delimita el contenido del derecho a la propiedad privada y a la herencia?",
+   "o": [
+    "El interés general del Estado.",
+    "La voluntad del propietario.",
+    "Su función social, de acuerdo con las leyes."
+   ],
+   "c": 2,
+   "o4": "El Código Civil.",
+   "que": "El art. 33.1 reconoce el derecho a la <mark>propiedad privada</mark> y a la <mark>herencia</mark>.",
+   "porque": "Su contenido lo delimita la <mark>función social</mark> de estos derechos, de acuerdo con las leyes.",
+   "ojo": "La expropiación exige causa de utilidad pública o interés social e indemnización (art. 33.3).",
+   "rec": "Propiedad: sí, pero con <mark>función social</mark>.",
+   "f": "Constitución Española, art. 33.2",
+   "tq": "Art. 33.2 CE: límite de la propiedad",
+   "ta": "Su función social."
+  },
+  {
+   "id": 422,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 138.2 CE, las diferencias entre los Estatutos de las Comunidades Autónomas:",
+   "o": [
+    "Deberán ser aprobadas por el Senado.",
+    "Solo podrán afectar a la lengua y la cultura.",
+    "No podrán implicar privilegios económicos o sociales."
+   ],
+   "c": 2,
+   "o4": "Se compensarán con el Fondo de Compensación.",
+   "que": "El art. 138 desarrolla el principio de <mark>solidaridad</mark>.",
+   "porque": "Las diferencias entre Estatutos <mark>no pueden implicar, en ningún caso, privilegios económicos o sociales</mark>.",
+   "ojo": "El art. 138.1 añade que el Estado atenderá en particular al <mark>hecho insular</mark>.",
+   "rec": "Estatutos distintos, pero <mark>sin privilegios</mark>.",
+   "f": "Constitución Española, art. 138.2",
+   "tq": "Art. 138.2 CE: diferencias entre Estatutos",
+   "ta": "No pueden implicar privilegios económicos o sociales."
+  },
+  {
+   "id": 423,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 139 CE, ¿qué no puede hacer ninguna autoridad?",
+   "o": [
+    "Dictar normas distintas en cada Comunidad.",
+    "Crear tributos propios en su territorio.",
+    "Obstaculizar la libre circulación de personas y bienes."
+   ],
+   "c": 2,
+   "o4": "Establecer servicios públicos propios.",
+   "que": "El art. 139.1 dice que todos los españoles tienen los <mark>mismos derechos y obligaciones</mark> en cualquier parte del territorio.",
+   "porque": "Ninguna autoridad puede adoptar medidas que, directa o indirectamente, <mark>obstaculicen la libertad de circulación y establecimiento</mark> de las personas y la <mark>libre circulación de bienes</mark>.",
+   "ojo": "Las Comunidades sí pueden tener normas distintas en sus competencias.",
+   "rec": "España: un solo espacio, <mark>sin fronteras interiores</mark>.",
+   "f": "Constitución Española, art. 139",
+   "tq": "Art. 139 CE: prohibición a las autoridades",
+   "ta": "Obstaculizar la libre circulación de personas y bienes."
+  },
+  {
+   "id": 424,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 140 CE, ¿cómo son elegidos los concejales?",
+   "o": [
+    "Por la Diputación provincial.",
+    "Por los alcaldes, entre los vecinos.",
+    "Por los vecinos, por sufragio universal y directo."
+   ],
+   "c": 2,
+   "o4": "Por sufragio indirecto de los partidos.",
+   "que": "El art. 140 garantiza la <mark>autonomía de los municipios</mark>, con personalidad jurídica plena.",
+   "porque": "Los concejales los eligen <mark>los vecinos</mark> por <mark>sufragio universal, igual, libre, directo y secreto</mark>. El gobierno municipal corresponde al Ayuntamiento (alcalde y concejales).",
+   "ojo": "La ley regulará el régimen de <mark>concejo abierto</mark>.",
+   "rec": "Concejales: <mark>los vecinos votan</mark>.",
+   "f": "Constitución Española, art. 140",
+   "tq": "Art. 140 CE: elección de concejales",
+   "ta": "Por los vecinos, sufragio universal, igual, libre, directo y secreto."
+  },
+  {
+   "id": 425,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 141.1 CE, ¿cómo debe aprobarse cualquier alteración de los límites provinciales?",
+   "o": [
+    "Por la Comunidad Autónoma afectada.",
+    "Por el Gobierno mediante real decreto.",
+    "Por las Cortes Generales mediante ley orgánica."
+   ],
+   "c": 2,
+   "o4": "Por referéndum en las provincias afectadas.",
+   "que": "La provincia es una entidad local con personalidad jurídica propia: agrupa municipios y es división territorial del Estado.",
+   "porque": "Cualquier alteración de sus límites debe aprobarla las <mark>Cortes Generales mediante ley orgánica</mark>.",
+   "ojo": "Las Comunidades Autónomas no pueden cambiar los límites provinciales.",
+   "rec": "Límites provinciales: <mark>Cortes + ley orgánica</mark>.",
+   "f": "Constitución Española, art. 141.1",
+   "tq": "Art. 141.1 CE: alterar límites provinciales",
+   "ta": "Cortes Generales, ley orgánica."
+  },
+  {
+   "id": 426,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 141.4 CE, en los archipiélagos, las islas tienen su administración propia en forma de:",
+   "o": [
+    "Diputaciones insulares.",
+    "Cabildos o Consejos.",
+    "Mancomunidades."
+   ],
+   "c": 1,
+   "o4": "Cortes insulares.",
+   "que": "El gobierno de las provincias se encomienda a <mark>Diputaciones</mark> u otras corporaciones representativas.",
+   "porque": "En los archipiélagos, las islas tienen además administración propia en forma de <mark>Cabildos</mark> (Canarias) o <mark>Consejos</mark> (Baleares).",
+   "ojo": "La Constitución también permite crear agrupaciones de municipios distintas de la provincia.",
+   "rec": "Islas: <mark>Cabildos o Consejos</mark>.",
+   "f": "Constitución Española, art. 141.4",
+   "tq": "Art. 141.4 CE: administración de las islas",
+   "ta": "Cabildos o Consejos."
+  },
+  {
+   "id": 427,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "Según el art. 142 CE, las Haciendas locales se nutrirán fundamentalmente de:",
+   "o": [
+    "Tributos propios y participación en los del Estado y CC. AA.",
+    "Subvenciones europeas y préstamos bancarios.",
+    "Tasas por servicios municipales y multas."
+   ],
+   "c": 0,
+   "o4": "Transferencias de la Diputación.",
+   "que": "Las Haciendas locales deben tener <mark>medios suficientes</mark> para sus funciones.",
+   "porque": "Se nutren fundamentalmente de <mark>tributos propios</mark> y de <mark>participación en los del Estado y de las Comunidades Autónomas</mark>.",
+   "ojo": "Las tasas son tributos propios, pero no son la respuesta completa.",
+   "rec": "Haciendas locales: <mark>propios + participación</mark>.",
+   "f": "Constitución Española, art. 142",
+   "tq": "Art. 142 CE: financiación local",
+   "ta": "Tributos propios y participación en los del Estado y CC. AA."
+  },
+  {
+   "id": 428,
+   "t": "Constitución",
+   "d": "difícil",
+   "q": "Según el art. 143.2 CE, ¿quiénes tienen la iniciativa del proceso autonómico y en qué plazo deben cumplirse los requisitos?",
+   "o": [
+    "Todas las Diputaciones interesadas y la mitad de los municipios; en seis meses.",
+    "Todas las Diputaciones interesadas y dos tercios de los municipios con mayoría del censo; en seis meses.",
+    "Todas las Diputaciones interesadas y dos tercios de los municipios con mayoría del censo; en un año."
+   ],
+   "c": 1,
+   "o4": "Las Cortes Generales a propuesta del Gobierno; en cinco años.",
+   "que": "Las provincias limítrofes con características comunes, los territorios insulares y las provincias con entidad regional histórica pueden constituirse en Comunidades Autónomas.",
+   "porque": "La iniciativa corresponde a <mark>todas las Diputaciones interesadas</mark> (u órgano interinsular) y a las <mark>dos terceras partes de los municipios</mark> cuya población sea al menos la mayoría del censo de cada provincia o isla. Plazo: <mark>seis meses</mark> desde el primer acuerdo.",
+   "ojo": "Cada distractor falla en un solo dato: la fracción de municipios o el plazo.",
+   "rec": "Iniciativa: Diputaciones + <mark>2/3</mark> de municipios · plazo <mark>6 meses</mark>.",
+   "f": "Constitución Española, art. 143.2",
+   "tq": "Art. 143.2 CE: iniciativa autonómica",
+   "ta": "Diputaciones + 2/3 de municipios (mayoría del censo) · 6 meses."
+  },
+  {
+   "id": 429,
+   "t": "Estatuto CAM",
+   "d": "normal",
+   "q": "¿Cómo define el Estatuto al Gobierno de la Comunidad de Madrid?",
+   "o": [
+    "El órgano que ejerce la potestad legislativa.",
+    "El órgano colegiado que dirige la política de la Comunidad.",
+    "El órgano unipersonal que representa a la Comunidad."
+   ],
+   "c": 1,
+   "o4": "El órgano consultivo de la Asamblea.",
+   "que": "Las instituciones de la Comunidad son la Asamblea, el Gobierno y el Presidente.",
+   "porque": "El Gobierno es el <mark>órgano colegiado</mark> que <mark>dirige la política</mark> de la Comunidad. Le corresponden las funciones <mark>ejecutivas y administrativas</mark> y la <mark>potestad reglamentaria</mark> en materias no reservadas a la Asamblea.",
+   "ojo": "La potestad <mark>legislativa</mark> es de la Asamblea.",
+   "rec": "Gobierno: colegiado, dirige, ejecuta y reglamenta.",
+   "f": "Estatuto de Autonomía de la Comunidad de Madrid, art. 22.1",
+   "tq": "Gobierno de la Comunidad de Madrid",
+   "ta": "Órgano colegiado que dirige la política de la Comunidad."
+  },
+  {
+   "id": 430,
+   "t": "Estatuto CAM",
+   "d": "normal",
+   "q": "En la Comunidad de Madrid, los Consejeros son nombrados y cesados por:",
+   "o": [
+    "El Presidente de la Comunidad.",
+    "El Rey, a propuesta de la Asamblea.",
+    "La Asamblea de Madrid."
+   ],
+   "c": 0,
+   "o4": "El Consejo de Gobierno.",
+   "que": "El Gobierno está compuesto por el Presidente, el o los Vicepresidentes (en su caso) y los Consejeros.",
+   "porque": "Los miembros del Gobierno son <mark>nombrados y cesados por el Presidente</mark>.",
+   "ojo": "La Asamblea controla al Gobierno, pero no nombra a sus miembros.",
+   "rec": "Consejeros: los pone y los quita el <mark>Presidente</mark>.",
+   "f": "Estatuto de Autonomía de la Comunidad de Madrid, art. 22.2",
+   "tq": "Nombramiento de los miembros del Gobierno de Madrid",
+   "ta": "El Presidente de la Comunidad."
+  },
+  {
+   "id": 431,
+   "t": "Estatuto CAM",
+   "d": "difícil",
+   "q": "Según el Estatuto de Autonomía de Madrid, en las materias de su competencia, ¿a quién corresponde cada potestad?",
+   "o": [
+    "La legislativa y la reglamentaria, a la Asamblea; la ejecutiva, al Consejo de Gobierno.",
+    "La legislativa, al Consejo de Gobierno; la reglamentaria, a la Asamblea.",
+    "La legislativa, a la Asamblea; la reglamentaria y la ejecutiva, al Consejo de Gobierno."
+   ],
+   "c": 2,
+   "o4": "Todas, a la Asamblea de Madrid.",
+   "que": "Las competencias de la Comunidad de Madrid se refieren a su territorio.",
+   "porque": "La <mark>potestad legislativa</mark> corresponde a la <mark>Asamblea</mark>; la <mark>reglamentaria</mark> y la <mark>función ejecutiva</mark>, al <mark>Consejo de Gobierno</mark>.",
+   "ojo": "La tentadora da a la Asamblea también la reglamentaria: es del Gobierno.",
+   "rec": "Asamblea hace leyes; Gobierno hace reglamentos y ejecuta.",
+   "f": "Estatuto de Autonomía de la Comunidad de Madrid, art. 34.2",
+   "tq": "Potestades en la Comunidad de Madrid",
+   "ta": "Legislativa: Asamblea · reglamentaria y ejecutiva: Consejo de Gobierno."
+  },
+  {
+   "id": 432,
+   "t": "Estatuto CAM",
+   "d": "normal",
+   "q": "Según el Estatuto de Autonomía de Madrid, ¿cómo se exige la responsabilidad de la Administración de la Comunidad y de sus funcionarios?",
+   "o": [
+    "Según lo que establezca la Asamblea de Madrid.",
+    "Ante el Tribunal Superior de Justicia, según el propio Estatuto.",
+    "En los términos que establezca la legislación del Estado."
+   ],
+   "c": 2,
+   "o4": "Según el convenio colectivo de los funcionarios.",
+   "que": "La Administración de la Comunidad de Madrid tiene <mark>personalidad jurídica</mark> y <mark>plena capacidad de obrar</mark>.",
+   "porque": "Su responsabilidad, y la de sus autoridades y funcionarios, se exige en los mismos términos y casos que establezca la <mark>legislación del Estado</mark> en la materia.",
+   "ojo": "No es una regulación propia de la Comunidad.",
+   "rec": "Responsabilidad: <mark>ley del Estado</mark>.",
+   "f": "Estatuto de Autonomía de la Comunidad de Madrid, art. 35",
+   "tq": "Responsabilidad de la Administración de Madrid",
+   "ta": "Según la legislación del Estado."
+  },
+  {
+   "id": 433,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "¿Qué artículo de la Constitución establece que la forma política del Estado español es la Monarquía parlamentaria?",
+   "o": [
+    "El 1.2.",
+    "El 1.3.",
+    "El 2."
+   ],
+   "c": 1,
+   "o4": "El 56.1.",
+   "que": "El art. 1 tiene tres apartados con los pilares del Estado.",
+   "porque": "<mark>1.1</mark>: Estado social y democrático de Derecho y valores superiores. <mark>1.2</mark>: soberanía en el pueblo. <mark>1.3</mark>: <mark>Monarquía parlamentaria</mark>.",
+   "ojo": "El art. 2 trata de la unidad de la Nación y la autonomía.",
+   "rec": "Art. 1: Estado (1) · soberanía (2) · Monarquía (3).",
+   "f": "Constitución Española, art. 1.3",
+   "tq": "Monarquía parlamentaria: ¿qué artículo?",
+   "ta": "Art. 1.3 CE.",
+   "cifra": 1
+  },
+  {
+   "id": 434,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "¿Qué establece el art. 9.1 de la Constitución?",
+   "o": [
+    "Que se garantiza la jerarquía normativa y la seguridad jurídica.",
+    "Que ciudadanos y poderes públicos están sujetos a la Constitución y al resto del ordenamiento.",
+    "Que los poderes públicos deben promover la igualdad real y efectiva."
+   ],
+   "c": 1,
+   "o4": "Que la soberanía reside en el pueblo español.",
+   "que": "El art. 9 tiene tres apartados muy preguntados.",
+   "porque": "<mark>9.1</mark>: <mark>sujeción</mark> de ciudadanos y poderes públicos a la Constitución. <mark>9.2</mark>: igualdad real y efectiva. <mark>9.3</mark>: principios (legalidad, jerarquía, publicidad…).",
+   "ojo": "Las otras dos opciones son el 9.2 y el 9.3.",
+   "rec": "9.1 sujeción · 9.2 igualdad real · 9.3 principios.",
+   "f": "Constitución Española, art. 9.1",
+   "tq": "Art. 9.1 CE",
+   "ta": "Ciudadanos y poderes públicos sujetos a la CE.",
+   "cifra": 1
+  },
+  {
+   "id": 435,
+   "t": "Constitución",
+   "d": "difícil",
+   "q": "¿En qué artículo de la Constitución se garantiza la irretroactividad de las disposiciones sancionadoras no favorables?",
+   "o": [
+    "En el 9.3.",
+    "En el 25.1.",
+    "En el 9.2."
+   ],
+   "c": 0,
+   "o4": "En el 24.2.",
+   "que": "La irretroactividad y la legalidad penal se confunden a menudo.",
+   "porque": "La irretroactividad de las disposiciones sancionadoras no favorables está en el <mark>9.3</mark>, junto a la legalidad, la jerarquía normativa, la seguridad jurídica… El <mark>25.1</mark> es el principio de legalidad penal: no se sanciona lo que no era infracción cuando ocurrió.",
+   "ojo": "El 25.1 suena a lo mismo, pero el artículo que nombra la irretroactividad es el <mark>9.3</mark>.",
+   "rec": "Irretroactividad: <mark>9.3</mark>.",
+   "f": "Constitución Española, art. 9.3",
+   "tq": "Irretroactividad sancionadora: ¿qué artículo?",
+   "ta": "Art. 9.3 CE.",
+   "cifra": 1
+  },
+  {
+   "id": 436,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "¿Qué artículo de la Constitución prohíbe cualquier tipo de censura previa?",
+   "o": [
+    "El 20.2.",
+    "El 18.4.",
+    "El 20.5."
+   ],
+   "c": 0,
+   "o4": "El 16.2.",
+   "que": "El art. 20 regula la libertad de expresión e información.",
+   "porque": "<mark>20.2</mark>: no puede restringirse mediante ningún tipo de <mark>censura previa</mark>. <mark>20.5</mark>: el secuestro de publicaciones solo por resolución judicial.",
+   "ojo": "El 18.4 es el del uso de la informática.",
+   "rec": "Censura: <mark>20.2</mark> · secuestro: <mark>20.5</mark>.",
+   "f": "Constitución Española, art. 20.2",
+   "tq": "Censura previa: ¿qué artículo?",
+   "ta": "Art. 20.2 CE.",
+   "cifra": 1
+  },
+  {
+   "id": 437,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "¿En qué artículo de la Constitución se reconoce el derecho de huelga?",
+   "o": [
+    "En el 7.",
+    "En el 28.1.",
+    "En el 28.2."
+   ],
+   "c": 2,
+   "o4": "En el 37.1.",
+   "que": "El art. 28 reúne la libertad sindical y la huelga.",
+   "porque": "<mark>28.1</mark>: libertad sindical. <mark>28.2</mark>: <mark>huelga</mark>, con garantías para los servicios esenciales.",
+   "ojo": "El 7 es el de sindicatos y asociaciones empresariales en general.",
+   "rec": "Art. 28: sindicato (1) · huelga (2).",
+   "f": "Constitución Española, art. 28.2",
+   "tq": "Derecho de huelga: ¿qué artículo?",
+   "ta": "Art. 28.2 CE.",
+   "cifra": 1
+  },
+  {
+   "id": 438,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "¿Qué artículo de la Constitución reconoce el derecho a la propiedad privada y a la herencia?",
+   "o": [
+    "El 33.3.",
+    "El 38.",
+    "El 33.1."
+   ],
+   "c": 2,
+   "o4": "El 31.1.",
+   "que": "El art. 33 trata de la propiedad.",
+   "porque": "<mark>33.1</mark>: reconoce la propiedad privada y la herencia. <mark>33.2</mark>: su función social. <mark>33.3</mark>: expropiación con causa e indemnización.",
+   "ojo": "El 33.3 es el de la expropiación.",
+   "rec": "33: reconoce (1) · función social (2) · expropiación (3).",
+   "f": "Constitución Española, art. 33.1",
+   "tq": "Propiedad privada y herencia: ¿qué artículo?",
+   "ta": "Art. 33.1 CE.",
+   "cifra": 1
+  },
+  {
+   "id": 439,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "El capítulo de Administración local de la Constitución empieza en el art. 140. ¿De qué trata ese artículo?",
+   "o": [
+    "Las Haciendas locales.",
+    "La provincia y las Diputaciones.",
+    "La autonomía y el gobierno de los municipios."
+   ],
+   "c": 2,
+   "o4": "Las Comunidades Autónomas.",
+   "que": "El capítulo de Administración local va del art. 140 al 142.",
+   "porque": "<mark>140</mark>: <mark>municipios</mark> (Ayuntamiento, alcalde, concejales). <mark>141</mark>: provincia e islas. <mark>142</mark>: Haciendas locales.",
+   "ojo": "Las Comunidades Autónomas empiezan en el 143.",
+   "rec": "140 municipio · 141 provincia · 142 haciendas · 143 CC. AA.",
+   "f": "Constitución Española, art. 140",
+   "tq": "Art. 140 CE",
+   "ta": "Autonomía y gobierno de los municipios.",
+   "cifra": 1
+  },
+  {
+   "id": 440,
+   "t": "Constitución",
+   "d": "normal",
+   "q": "¿En qué artículo de la Constitución está el plazo máximo de 72 horas de la detención preventiva?",
+   "o": [
+    "En el 17.2.",
+    "En el 24.2.",
+    "En el 17.3."
+   ],
+   "c": 0,
+   "o4": "En el 25.1.",
+   "que": "El art. 17 regula la libertad personal y la detención.",
+   "porque": "<mark>17.2</mark>: detención preventiva, máximo <mark>72 horas</mark>. <mark>17.3</mark>: información inmediata y abogado. <mark>17.4</mark>: habeas corpus.",
+   "ojo": "El 24.2 son las garantías del proceso judicial.",
+   "rec": "17: libertad (1) · 72 h (2) · derechos (3) · habeas corpus (4).",
+   "f": "Constitución Española, art. 17.2",
+   "tq": "Detención preventiva de 72 horas: ¿qué artículo?",
+   "ta": "Art. 17.2 CE.",
+   "cifra": 1
+  }
+ ],
+ "glosario": [
+  {
+   "t": "Espadín",
+   "a": [
+    "espadín"
+   ],
+   "d": "Guía de la motosierra por la que gira la cadena.",
+   "tema": "Arbolado urbano",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 4 del PDF",
+   "solo": 1
+  },
+  {
+   "t": "Freno de cadena",
+   "a": [
+    "freno de cadena"
+   ],
+   "d": "Bloquea el giro de la cadena. Manual (guardamano adelante) o automático por inercia.",
+   "tema": "Arbolado urbano",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 6 del PDF",
+   "solo": 1
+  },
+  {
+   "t": "Perno guardacadena",
+   "a": [
+    "perno guardacadena",
+    "perno guarda cadena"
+   ],
+   "d": "Pieza blanda donde se clava la cadena si se rompe o se sale, parándola.",
+   "tema": "Arbolado urbano",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 6 del PDF",
+   "solo": 1
+  },
+  {
+   "t": "Válvula de descompresión",
+   "a": [
+    "descompresión",
+    "descompresor"
+   ],
+   "d": "Libera presión del cilindro para arrancar; se cierra sola con la primera explosión.",
+   "tema": "Arbolado urbano",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 5 del PDF",
+   "solo": 1
+  },
+  {
+   "t": "Embrague centrífugo",
+   "a": [
+    "embrague"
+   ],
+   "d": "Zapatas con muelles que, al girar el motor, arrastran la campana y mueven la cadena.",
+   "tema": "Arbolado urbano",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 7 del PDF",
+   "solo": 1
+  },
+  {
+   "t": "Andarín",
+   "a": [
+    "andarín",
+    "limitador de profundidad"
+   ],
+   "d": "Limitador de profundidad del diente: marca cuánto entra en la madera (≈0,65 mm).",
+   "tema": "Arbolado urbano",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 8 del PDF",
+   "solo": 1
+  },
+  {
+   "t": "Galga",
+   "a": [
+    "galga"
+   ],
+   "d": "Grosor de los eslabones motrices de la cadena.",
+   "tema": "Arbolado urbano",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 8 del PDF",
+   "solo": 1
+  },
+  {
+   "t": "Paso de cadena",
+   "a": [
+    "paso de cadena",
+    "paso"
+   ],
+   "d": "Distancia entre tres remaches dividida entre dos (1/4\", .325\", 3/8\").",
+   "tema": "Arbolado urbano",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 9 del PDF",
+   "solo": 1
+  },
+  {
+   "t": "Rebote",
+   "a": [
+    "rebote"
+   ],
+   "d": "Giro violento de la motosierra hacia el usuario al tocar algo con el cuarto superior de la punta del espadín.",
+   "tema": "Arbolado urbano",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 9 del PDF",
+   "solo": 1
+  },
+  {
+   "t": "Protección anticorte",
+   "a": [
+    "anticorte"
+   ],
+   "d": "Por deslizamiento (casco, punteras) o atrapamiento (ropa). Clases 1-3: 20, 24, 28 m/s.",
+   "tema": "Arbolado urbano",
+   "f": "Manual de arbolado urbano (Ayto. Madrid), p. 12 del PDF",
+   "solo": 1
+  },
+  {
+   "t": "Habeas corpus",
+   "a": [
+    "habeas corpus"
+   ],
+   "d": "Procedimiento para llevar de inmediato ante el juez a quien está detenido ilegalmente.",
+   "tema": "Constitución",
+   "f": "Constitución Española, art. 17.4",
+   "solo": 1
+  },
+  {
+   "t": "Censura previa",
+   "a": [
+    "censura previa"
+   ],
+   "d": "Control antes de publicar. La Constitución la prohíbe en todo caso.",
+   "tema": "Constitución",
+   "f": "Constitución Española, art. 20.2",
+   "solo": 1
+  },
+  {
+   "t": "Presunción de inocencia",
+   "a": [
+    "presunción de inocencia"
+   ],
+   "d": "Toda persona es inocente mientras no se demuestre lo contrario.",
+   "tema": "Constitución",
+   "f": "Constitución Española, art. 24.2",
+   "solo": 1
+  },
+  {
+   "t": "Servicios esenciales",
+   "a": [
+    "servicios esenciales"
+   ],
+   "d": "Los que deben mantenerse aunque haya huelga.",
+   "tema": "Constitución",
+   "f": "Constitución Española, art. 28.2",
+   "solo": 1
+  },
+  {
+   "t": "Función social de la propiedad",
+   "a": [
+    "función social"
+   ],
+   "d": "Delimita el contenido del derecho de propiedad y herencia.",
+   "tema": "Constitución",
+   "f": "Constitución Española, art. 33.2",
+   "solo": 1
+  },
+  {
+   "t": "Cabildos y Consejos insulares",
+   "a": [
+    "cabildos",
+    "consejos"
+   ],
+   "d": "Administración propia de las islas en los archipiélagos.",
+   "tema": "Constitución",
+   "f": "Constitución Española, art. 141.4",
+   "solo": 1
+  },
+  {
+   "t": "Concejo abierto",
+   "a": [
+    "concejo abierto"
+   ],
+   "d": "Régimen de municipios pequeños en que los vecinos gobiernan en asamblea.",
+   "tema": "Constitución",
+   "f": "Constitución Española, art. 140",
+   "solo": 1
+  },
+  {
+   "t": "Potestad reglamentaria",
+   "a": [
+    "potestad reglamentaria",
+    "reglamentaria"
+   ],
+   "d": "Poder de dictar reglamentos. En Madrid, del Consejo de Gobierno.",
+   "tema": "Estatuto CAM",
+   "f": "Estatuto de Autonomía de la Comunidad de Madrid, art. 34.2",
+   "solo": 1
+  }
+ ]
+}
