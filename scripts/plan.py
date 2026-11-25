@@ -17,7 +17,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BANK = json.load(open(os.path.join(ROOT, 'preguntas.json'), encoding='utf-8'))
 PLAN_F = os.path.join(ROOT, 'plan.json')
 INICIO = dt.date(2026, 11, 21)
-YA_USADAS_ANTES = {1, 7, 11, 12, 13, 15, 16, 20, 22, 26, 33, 34, 36, 38, 39}  # preguntas del 20/11/2026
+YA_USADAS_ANTES = {1, 7, 11, 12, 13, 15, 16, 20, 22, 26, 33, 34, 36, 38, 39,  # preguntas del 20/11/2026
+                   71}  # 23/11 19:00: la vio casi todo el mundo (el plan se cambió a la 293)
 
 plan = json.load(open(PLAN_F, encoding='utf-8')) if os.path.exists(PLAN_F) else {}
 usadas = set(YA_USADAS_ANTES) | {i for ids in plan.values() for i in ids}

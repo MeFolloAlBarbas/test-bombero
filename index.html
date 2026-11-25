@@ -380,7 +380,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795439303';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795610854';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -1343,8 +1343,11 @@ function askName(change){
     nb.disabled=true;const r=change?await changePin(pin):await login(name,pin);nb.disabled=false;
     if(r)return err(r);go('inicio');render()};
 }
-let lastPend=null;
-setInterval(()=>{if(!BANK.length||run||!lsGet('key'))return;if(needTirada()&&!BLOQ)showMaquina();const p=pending(),k=p?p.k+'-'+p.h:'';if(lastPend!==null&&k&&k!==lastPend&&(location.hash===''||location.hash==='#inicio'||location.hash==='#hoy')){home.go=false;home()}lastPend=k},30000);
+let lastPend=null,lastHora=null;
+// Al cambiar la hora se vuelven a leer plan.json y preguntas.json (por si el calendario ha cambiado)
+function recargarDatos(){return Promise.all([fetch('preguntas.json?t='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}),fetch('plan.json?t='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()})]).then(([d,p])=>{if(Array.isArray(d)&&d.length)BANK=d;if(p&&typeof p==='object')FIXED=p}).catch(()=>{})}
+setInterval(()=>{if(!BANK.length)return;const m=madrid(),hk=m.key+'-'+m.hour;if(lastHora!==null&&hk!==lastHora){lastHora=hk;recargarDatos().then(chkPend);return}lastHora=hk;chkPend()},30000);
+function chkPend(){if(!BANK.length||run||!lsGet('key'))return;if(needTirada()&&!BLOQ)showMaquina();const p=pending(),k=p?p.k+'-'+p.h:'';if(lastPend!==null&&k&&k!==lastPend&&(location.hash===''||location.hash==='#inicio'||location.hash==='#hoy')){home.go=false;home()}lastPend=k}
 homeBtn.onclick=()=>go('inicio');
 window.addEventListener('hashchange',render);
 loadLocal();
