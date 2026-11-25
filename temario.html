@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Temario</title>
+<link rel="icon" href="img/favicon.png">
+<style>
+:root{--bg:#f6f4ef;--fg:#222;--card:#fff;--line:#e3ded3;--ac:#2f6f73;--mut:#777}
+@media(prefers-color-scheme:dark){:root{--bg:#16181a;--fg:#e8e6e1;--card:#202326;--line:#33373b;--ac:#8fc9cb;--mut:#9a9a9a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:640px;margin:0 auto;padding:18px 14px 40px}
+h1{font-size:22px;margin:4px 0 14px;display:flex;align-items:center;gap:10px}
+h1 img{width:34px;height:34px}
+h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin:22px 4px 8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+label{display:block;font-size:14px;color:var(--mut);margin-bottom:6px}
+input[type=password]{width:100%;font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--fg)}
+.row{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:14px;color:var(--mut)}
+button{font:inherit;cursor:pointer}
+.btn{margin-top:12px;width:100%;padding:11px;border:0;border-radius:9px;background:var(--ac);color:#fff;font-weight:600}
+@media(prefers-color-scheme:dark){.btn{color:#10292a}}
+.err{color:#c0392b;font-size:14px;min-height:18px;margin-top:8px}
+ul{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+li+li{border-top:1px solid var(--line)}
+.tema{display:flex;width:100%;text-align:left;gap:12px;align-items:center;padding:12px 14px;background:none;border:0;color:var(--fg)}
+.tema:active{background:var(--line)}
+.num{flex:none;min-width:38px;font-weight:700;color:var(--ac);font-size:14px}
+.tit{flex:1}
+.pg{flex:none;font-size:12px;color:var(--mut)}
+.tema.cargando .pg::after{content:" · abriendo…"}
+.pie{margin-top:22px;text-align:center;font-size:13px;color:var(--mut)}
+.pie button{background:none;border:0;color:var(--ac);text-decoration:underline;font-size:13px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <h1><img src="img/icon-192.png" alt="">Temario</h1>
+
+  <div id="login" class="card">
+    <label for="clave">Clave del temario</label>
+    <input id="clave" type="password" autocomplete="current-password" placeholder="Escribe tu clave">
+    <div class="row"><input id="recordar" type="checkbox" checked><label for="recordar" style="margin:0">Recordarla en este dispositivo</label></div>
+    <button id="entrar" class="btn">Entrar</button>
+    <div id="err" class="err"></div>
+  </div>
+
+  <div id="lista" hidden></div>
+  <div class="pie" id="pie" hidden><button id="salir">Olvidar la clave en este dispositivo</button></div>
+</main>
+<script>
+(()=>{
+const LS='temarioClave';
+let CLAVE=null, INDICE=[];
+const $=id=>document.getElementById(id);
+const enc=s=>s.split('/').map(encodeURIComponent).join('/');
+
+// Descifra el formato de «openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt» (Salted__ + sal + datos)
+async function descifrar(buf,clave){
+  const b=new Uint8Array(buf);
+  if(new TextDecoder().decode(b.slice(0,8))!=='Salted__')throw new Error('formato');
+  const sal=b.slice(8,16),datos=b.slice(16);
+  const base=await crypto.subtle.importKey('raw',new TextEncoder().encode(clave),'PBKDF2',false,['deriveBits']);
+  const bits=new Uint8Array(await crypto.subtle.deriveBits({name:'PBKDF2',salt:sal,iterations:200000,hash:'SHA-256'},base,384));
+  const k=await crypto.subtle.importKey('raw',bits.slice(0,32),'AES-CBC',false,['decrypt']);
+  return crypto.subtle.decrypt({name:'AES-CBC',iv:bits.slice(32,48)},k,datos);
+}
+async function bajar(ruta){
+  const r=await fetch(enc(ruta),{cache:'no-cache'});
+  if(!r.ok)throw new Error('No se ha podido descargar');
+  return r.arrayBuffer();
+}
+async function probar(clave){
+  // comprueba la clave con el manual más pequeño (su texto)
+  const menor=INDICE.reduce((a,b)=>a.chars<b.chars?a:b);
+  const plano=await descifrar(await bajar(`temario/texto/${menor.tema}.txt.enc`),clave);
+  if(!new TextDecoder().decode(plano.slice(0,40)).includes('Página'))throw new Error('clave');
+}
+function partes(n){ // «Bloque II - Tema 21 - Título» o «Bloque II - Temas 06 y 07 - Título»
+  const m=n.match(/^Bloque (I+) - Temas? ([\d y]+) - (.*)$/);
+  return m?{b:m[1],t:m[2].replace(/\b0(\d)/g,'$1').replace(' y ','-'),tit:m[3]}:{b:'',t:'',tit:n};
+}
+function pintar(){
+  const grupos={I:'Bloque I · Conocimientos comunes',II:'Bloque II · Conocimientos específicos'};
+  let h='';
+  for(const b of ['I','II']){
+    const items=INDICE.filter(x=>partes(x.tema).b===b);
+    if(!items.length)continue;
+    h+=`<h2>${grupos[b]}</h2><ul>`;
+    for(const x of items){const p=partes(x.tema);
+      h+=`<li><button class="tema" data-n="${encodeURIComponent(x.tema)}"><span class="num">${p.t}</span><span class="tit">${p.tit}</span><span class="pg">${x.paginas_pdf} p.</span></button></li>`;}
+    h+='</ul>';
+  }
+  $('lista').innerHTML=h;
+  $('lista').querySelectorAll('.tema').forEach(el=>el.onclick=()=>abrir(el,decodeURIComponent(el.dataset.n)));
+}
+async function abrir(el,nombre){
+  // la ventana se abre ya (si no, el móvil la bloquea) y se llena cuando el PDF está listo
+  const w=window.open('','_blank');
+  el.classList.add('cargando');
+  try{
+    const pdf=await descifrar(await bajar(`temario/pdf/${nombre}.pdf.enc`),CLAVE);
+    const url=URL.createObjectURL(new Blob([pdf],{type:'application/pdf'}));
+    if(w){w.location.href=url}else{location.href=url}
+    setTimeout(()=>URL.revokeObjectURL(url),600000);
+  }catch(e){if(w)w.close();alert('No se ha podido abrir el manual. Comprueba la conexión e inténtalo otra vez.')}
+  el.classList.remove('cargando');
+}
+async function entrar(clave,silencioso){
+  $('err').textContent=silencioso?'':'Comprobando…';
+  try{
+    await probar(clave);
+    CLAVE=clave;
+    try{ if($('recordar').checked||silencioso)localStorage.setItem(LS,clave); }catch(e){}
+    $('login').hidden=true;$('lista').hidden=false;$('pie').hidden=false;pintar();
+  }catch(e){
+    $('err').textContent=e.message==='clave'||e.name==='OperationError'?'Clave incorrecta.':'No se ha podido comprobar la clave. Revisa la conexión.';
+    try{ if(silencioso)localStorage.removeItem(LS) }catch(_){}
+  }
+}
+$('entrar').onclick=()=>{const c=$('clave').value.trim();if(c)entrar(c,false)};
+$('clave').onkeydown=e=>{if(e.key==='Enter')$('entrar').click()};
+$('salir').onclick=()=>{try{localStorage.removeItem(LS)}catch(e){};location.reload()};
+window.__descifrar=descifrar;
+fetch('temario/indice.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
+  const clave=x=>{const m=x.tema.match(/^Bloque (I+) - Temas? (\d+)/);return m?(m[1].length*100+ +m[2])*10:9999};
+  INDICE=d.sort((a,b)=>clave(a)-clave(b)||a.tema.localeCompare(b.tema,'es'));
+  let g=null;try{g=localStorage.getItem(LS)}catch(e){}
+  if(g)entrar(g,true);
+}).catch(()=>{$('err').textContent='No se ha podido cargar el índice del temario.'});
+})();
+</script>
+</body>
+</html>
