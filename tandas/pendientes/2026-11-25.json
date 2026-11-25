@@ -757,6 +757,725 @@
    "tq": "¿Tiempo de actuación de un disyuntor ante una falla?",
    "ta": "Medio ciclo (10 ms).",
    "cifra": 1
+  },
+  {
+   "id": 540,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Según el temario, ¿qué es un apeo?",
+   "o4": "Un sistema que contiene el terreno por debajo de la rasante.",
+   "que": "Un <mark>apeo</mark> es una construcción auxiliar <mark>provisional</mark> que detiene movimientos incontrolados y transmite <mark>hasta el suelo</mark> los esfuerzos que la estructura no puede absorber por su estado.",
+   "porque": "Es provisional: da seguridad mientras se decide y ejecuta la reparación; no sustituye al elemento dañado para siempre.",
+   "ojo": "Lo que contiene el terreno bajo la rasante es una <mark>entibación</mark>. Contraste: la definición coincide con la habitual en construcción (apeo = soporte provisional).",
+   "rec": "Apeo = <mark>muleta provisional</mark> del edificio.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 158",
+   "tq": "¿Qué es un apeo?",
+   "ta": "Construcción provisional que lleva al suelo los esfuerzos que la estructura no absorbe.",
+   "o": [
+    "Una estructura auxiliar que solo se usa mientras se construye el edificio.",
+    "Un refuerzo permanente que sustituye al elemento estructural dañado.",
+    "Una construcción provisional que lleva al suelo los esfuerzos que la estructura ya no absorbe."
+   ],
+   "c": 2
+  },
+  {
+   "id": 541,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "La administración local tiene un doble papel ante un edificio con patologías. ¿En cuál se encuadra la intervención de bomberos?",
+   "o4": "Ejecutar la reparación definitiva del edificio.",
+   "que": "La administración local <mark>vigila</mark> el deber de conservación de los propietarios y además <mark>actúa de oficio y con carácter subsidiario</mark> en urgencias y grave peligro (posible desplome sobre la vía pública, otros inmuebles…).",
+   "porque": "Los bomberos no inspeccionan el mantenimiento: acuden cuando hay <mark>peligro inmediato</mark> y no se puede esperar al propietario.",
+   "ojo": "Vigilar la conservación también es papel municipal, pero no es el de bomberos.",
+   "rec": "Bomberos = <mark>urgencia y grave peligro</mark>, de oficio.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 158",
+   "tq": "Edificio dañado: ¿en qué papel municipal entran los bomberos?",
+   "ta": "Actuar de oficio y subsidiariamente en urgencia y grave peligro.",
+   "o": [
+    "Tramitar el expediente contradictorio de ruina que pida el propietario.",
+    "Actuar de oficio y subsidiariamente en situaciones de urgencia y grave peligro.",
+    "Vigilar que los propietarios cumplan su deber de conservación."
+   ],
+   "c": 1
+  },
+  {
+   "id": 542,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "¿Qué se estabiliza con una entibación?",
+   "o4": "Fachadas con desprendimientos de aplacado.",
+   "que": "Las <mark>entibaciones</mark> estabilizan estructuras <mark>enterradas</mark> (bajo la rasante); los <mark>apeos</mark>, las aéreas; y lo que no se puede estabilizar se sanea o demuele.",
+   "porque": "Al excavar se retira terreno y aparecen empujes que pueden hacer deslizar las paredes; la entibación los contrarresta.",
+   "ojo": "No confundir con el apeo, que trabaja sobre la rasante.",
+   "rec": "En-<mark>tib</mark>ación: bajo <mark>tierra</mark>; apeo: al aire.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 159",
+   "tq": "Entibación: ¿qué estabiliza?",
+   "ta": "Estructuras enterradas (bajo la rasante).",
+   "o": [
+    "Elementos que no se pueden estabilizar y hay que derribar.",
+    "Estructuras aéreas, sobre la rasante del terreno.",
+    "Estructuras enterradas, bajo la rasante del terreno."
+   ],
+   "c": 2
+  },
+  {
+   "id": 543,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Según el temario, la madera estandarizada para apeos debe tener una clase resistente:",
+   "o4": "D30, según la UNE-EN 338.",
+   "que": "La madera estandarizada para apeos es de clase resistente <mark>C18</mark> (UNE-EN 338): conífera de baja resistencia.",
+   "porque": "Fijar una clase común permite usar un sistema de cálculo básico igual para todos los apeos.",
+   "ojo": "Contraste: C18 existe en la UNE-EN 338 y es una clase de conífera habitual en España. Las clases D son de frondosas.",
+   "rec": "C18: «<mark>C</mark>» de <mark>conífera</mark> (pino).",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 159",
+   "tq": "Clase resistente de la madera de apeos",
+   "ta": "C18 (UNE-EN 338).",
+   "ex": 1,
+   "o": [
+    "C14, según la UNE-EN 338.",
+    "C24, según la UNE-EN 338.",
+    "C18, según la UNE-EN 338."
+   ],
+   "c": 2
+  },
+  {
+   "id": 544,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "En la madera de apeos, ¿qué fija la UNE-EN 1912?",
+   "o4": "Las deformaciones máximas de los tablones.",
+   "que": "La <mark>UNE-EN 1912</mark> asigna clases resistentes a <mark>especies</mark>; el temario la cita para las especies admitidas en España: <mark>pino silvestre, pinaster o insignis</mark>.",
+   "porque": "Cada norma fija una cosa: la UNE-EN 338 la clase (C18), la UNE 56544 la calidad visual (ME-2) y la UNE-EN 1912 la especie.",
+   "ojo": "Contraste: la UNE-EN 1912 relaciona especie y procedencia con su clase resistente; el temario la usa así.",
+   "rec": "19<mark>12</mark>: la del <mark>árbol</mark> (especie).",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 159",
+   "tq": "UNE-EN 1912 en la madera de apeos",
+   "ta": "Especies: pino silvestre, pinaster o insignis.",
+   "o": [
+    "La calidad visual ME-2 de nudos y fendas.",
+    "La clase resistente C18.",
+    "Las especies: pino silvestre, pinaster o insignis."
+   ],
+   "c": 2
+  },
+  {
+   "id": 545,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Según la calidad ME-2 (UNE 56544), ¿qué curvatura de canto máxima admite un tablón de apeo?",
+   "o4": "Menos de 5 mm.",
+   "que": "La calidad <mark>ME-2</mark> limita la <mark>curvatura de canto a menos de 12 mm</mark>.",
+   "porque": "Un tablón torcido no apoya bien y trabaja con excentricidad: pierde resistencia.",
+   "ojo": "Los 20 mm son la curvatura de <mark>cara</mark>, más permisiva. Contraste: coincide con la UNE 56544.",
+   "rec": "El canto es más estrecho y más exigente: <mark>canto 12</mark>, cara 20.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 159",
+   "tq": "ME-2: curvatura de canto máxima",
+   "ta": "Menos de 12 mm.",
+   "cifra": 1,
+   "o": [
+    "Menos de 12 mm.",
+    "Menos de 20 mm.",
+    "Menos de 30 mm."
+   ],
+   "c": 0
+  },
+  {
+   "id": 546,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "¿Qué módulo de elasticidad paralelo (de Young) da el temario a la madera estandarizada C18?",
+   "o4": "3,8 kN/mm²",
+   "que": "Para la C18, el temario da un <mark>módulo de elasticidad paralelo E = 9,0 kN/mm²</mark>.",
+   "porque": "Indica lo rígida que es la madera en la dirección de sus fibras: cuanto mayor, menos se deforma.",
+   "ojo": "0,56 kN/mm² es el módulo <mark>transversal</mark> (G), no el de Young. Contraste: coincide con la UNE-EN 338 para C18.",
+   "rec": "C18 → E = <mark>9</mark> (la mitad de 18).",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 160",
+   "tq": "C18: módulo de Young",
+   "ta": "9,0 kN/mm²",
+   "cifra": 1,
+   "o": [
+    "21 kN/mm²",
+    "0,56 kN/mm²",
+    "9,0 kN/mm²"
+   ],
+   "c": 2
+  },
+  {
+   "id": 547,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "¿Qué densidad media tiene la madera estandarizada C18 de los apeos?",
+   "o4": "250 kg/m³",
+   "que": "La madera estandarizada tiene una <mark>densidad media de 380 kg/m³</mark>.",
+   "porque": "Es madera blanda de conífera, ligera: algo más de un tercio de lo que pesa el agua.",
+   "ojo": "Contraste: coincide con la UNE-EN 338 para C18.",
+   "rec": "C18 es ligera: <mark>380 kg/m³</mark>, ni la mitad de lo que pesa el agua.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 160",
+   "tq": "C18: densidad media",
+   "ta": "380 kg/m³",
+   "cifra": 1,
+   "o": [
+    "560 kg/m³",
+    "380 kg/m³",
+    "900 kg/m³"
+   ],
+   "c": 1
+  },
+  {
+   "id": 548,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "En la evolución de la madera para apeos, ¿qué es un rollizo?",
+   "o4": "Un tablón de poca sección para arriostrar.",
+   "que": "De los <mark>postes</mark> (fustes casi sin tratar) se pasó a los <mark>rollizos</mark> (fustes <mark>sin corteza</mark> y de <mark>diámetro uniforme</mark>) y después a los tablones escuadrados.",
+   "porque": "Cuanto más homogénea es la pieza, mejor se conoce su comportamiento y más fácil es combinar varias iguales.",
+   "ojo": "La pieza mecanizada y homogénea es el <mark>tablón</mark>, que es lo que usan hoy los bomberos.",
+   "rec": "Poste → rollizo (sin corteza) → tablón: de más <mark>bruto</mark> a más <mark>pulido</mark>.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 160",
+   "tq": "¿Qué es un rollizo?",
+   "ta": "Fuste sin corteza y de diámetro uniforme.",
+   "o": [
+    "Una pieza mecanizada de escuadría homogénea.",
+    "Un fuste al que apenas se le han quitado las ramas.",
+    "Un fuste sin corteza y con un diámetro uniforme."
+   ],
+   "c": 2
+  },
+  {
+   "id": 549,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "¿Qué medidas aproximadas tiene el tablón, pieza elemental de los apeos de madera?",
+   "o4": "250 x 100 mm",
+   "que": "El <mark>tablón</mark> ronda los <mark>200 x 70 mm</mark> de sección.",
+   "porque": "Es la escuadría estándar con la que se calculan los apeos; varias iguales se combinan entre sí.",
+   "ojo": "Las piezas de menor sección son las riostras, que no son elementos portantes. Dato propio del temario (criterio del CEIS Guadalajara), escuadría comercial habitual.",
+   "rec": "Tablón: «<mark>20 x 7</mark>» en centímetros.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 161",
+   "tq": "Tablón de apeo: medidas",
+   "ta": "200 x 70 mm",
+   "cifra": 1,
+   "o": [
+    "100 x 50 mm",
+    "200 x 70 mm",
+    "150 x 50 mm"
+   ],
+   "c": 1
+  },
+  {
+   "id": 550,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "En un apeo, ¿por qué las riostras trabajan solo a tracción?",
+   "o4": "Porque se fabrican con madera más blanda que los tablones.",
+   "que": "Las <mark>riostras</mark> son de <mark>menor sección</mark> y trabajan <mark>única y exclusivamente a tracción</mark>: comprimidas, <mark>pandearían</mark>.",
+   "porque": "Una pieza delgada estirada aguanta bien; empujada por los extremos se dobla. Por eso se colocan en aspa: siempre hay una estirada.",
+   "ojo": "La madera de apeo resiste <mark>muy bien a compresión</mark>; el problema de la riostra es su esbeltez, no el material.",
+   "rec": "Riostra fina: <mark>tira, no empuja</mark>.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 161",
+   "tq": "Riostras: ¿por qué solo a tracción?",
+   "ta": "Por su poca sección: comprimidas pandearían.",
+   "o": [
+    "Porque la madera resiste peor a compresión que a tracción.",
+    "Porque su sección reducida haría que pandearan si se comprimieran.",
+    "Porque solo se pueden clavar por el canto de los tablones."
+   ],
+   "c": 1
+  },
+  {
+   "id": 551,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Según el temario, los puntales telescópicos deben estar certificados conforme a la norma:",
+   "o4": "UNE-EN 74",
+   "que": "Los <mark>puntales telescópicos</mark> regulables de acero se certifican según la <mark>UNE-EN 1065</mark>.",
+   "porque": "La norma los clasifica por resistencia y longitud máxima, así se sabe cuánto aguanta cada uno.",
+   "ojo": "Contraste: la EN 1065 es, en efecto, la norma europea de puntales telescópicos de acero; la EN 12811 y la EN 1004 son de andamios.",
+   "rec": "Puntal → <mark>EN 1065</mark>; las de andamios son otras.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 161",
+   "tq": "Norma de los puntales telescópicos",
+   "ta": "UNE-EN 1065.",
+   "ex": 1,
+   "o": [
+    "UNE-EN 1004",
+    "UNE-EN 12811",
+    "UNE-EN 1065"
+   ],
+   "c": 2
+  },
+  {
+   "id": 552,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "En un puntal telescópico, ¿qué pieza tiene los agujeros para el ajuste aproximado de la longitud?",
+   "o4": "La tuerca de ajuste.",
+   "que": "El <mark>tubo interior</mark>, el de menor diámetro, tiene <mark>agujeros</mark> para el ajuste aproximado y se desliza dentro del exterior; el ajuste fino lo da la tuerca sobre la rosca del tubo exterior.",
+   "porque": "Primero se fija la altura aproximada con el pasador en un agujero y luego se afina girando la tuerca.",
+   "ojo": "El tubo exterior es el que lleva un extremo <mark>roscado</mark>, no la fila de agujeros.",
+   "rec": "Interior = <mark>agujeros</mark>; exterior = <mark>rosca</mark>.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 162",
+   "tq": "Puntal: ¿qué tubo tiene los agujeros?",
+   "ta": "El interior.",
+   "o": [
+    "El tubo interior.",
+    "La placa de asiento.",
+    "El tubo exterior."
+   ],
+   "c": 0
+  },
+  {
+   "id": 553,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Según la UNE-EN 1065, ¿qué resistencia nominal mínima tiene un puntal de clase A de 3 m (A30)?",
+   "o4": "12,8 kN",
+   "que": "El <mark>puntal A30</mark> garantiza una resistencia nominal de <mark>17 kN</mark>; es el que usa el temario para calcular sus apeos.",
+   "porque": "Es el puntal más comercializado: se puede conseguir incluso en cualquier obra cercana en una urgencia.",
+   "ojo": "Contraste: coincide con la tabla de la EN 1065. 34 kN es el de clase C de 3 m.",
+   "rec": "<mark>A30 = 17 kN</mark>: el puntal de obra de siempre, y la base de cálculo del temario.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 162",
+   "tq": "Puntal A30: resistencia",
+   "ta": "17 kN.",
+   "cifra": 1,
+   "o": [
+    "34 kN",
+    "20,4 kN",
+    "17 kN"
+   ],
+   "c": 2
+  },
+  {
+   "id": 554,
+   "t": "Técnicas de estabilización",
+   "d": "difícil",
+   "q": "Dos puntales de clase A, un A25 y un A40, cada uno extendido a su longitud máxima. ¿Cuál tiene mayor resistencia nominal?",
+   "o4": "Depende de cómo se coloque el pasador.",
+   "que": "En la EN 1065, dentro de una misma clase, la resistencia <mark>baja al aumentar la longitud</mark>: A25 = <mark>20,4 kN</mark>; A40 = <mark>12,8 kN</mark>.",
+   "porque": "Cuanto más largo y esbelto está el tubo, más fácil es que pandee: aguanta menos carga.",
+   "ojo": "La tentación es pensar que el puntal grande es «más fuerte». La clase no fija una resistencia única. Contraste: valores de la tabla de la EN 1065.",
+   "rec": "Puntal más <mark>largo</mark>, más <mark>flojo</mark>.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 162",
+   "tq": "A25 o A40 a su longitud máxima: ¿cuál aguanta más?",
+   "ta": "El A25 (20,4 kN frente a 12,8 kN).",
+   "o": [
+    "El A25.",
+    "Ambos igual, porque la clase fija la resistencia.",
+    "El A40, porque es un puntal mayor."
+   ],
+   "c": 0
+  },
+  {
+   "id": 555,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Según datos de fabricantes que recoge el temario, ¿cuánto pierde un puntal si la carga tiene una excentricidad de solo 2,5 cm?",
+   "o4": "Nada, si el pasador está bien metido.",
+   "que": "Con una <mark>excentricidad de 2,5 cm</mark>, la capacidad del puntal se reduce <mark>entre un 25 % y un 50 %</mark>, según la altura desplegada.",
+   "porque": "Una carga descentrada dobla el tubo además de comprimirlo: por eso el aplomado y el arriostramiento son básicos.",
+   "ojo": "Es un dato de fabricantes recogido por el temario; no figura en la EN 1065 como tal.",
+   "rec": "<mark>2,5 cm</mark> torcido = hasta la <mark>mitad</mark> de fuerza perdida.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 163",
+   "tq": "Excentricidad de 2,5 cm en un puntal: pérdida",
+   "ta": "Entre un 25 % y un 50 %.",
+   "cifra": 1,
+   "o": [
+    "Entre un 25 % y un 50 % de su capacidad.",
+    "Entre un 5 % y un 10 % de su capacidad.",
+    "Más de un 75 % de su capacidad."
+   ],
+   "c": 0
+  },
+  {
+   "id": 556,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Para clavar tablones con pretaladro, ¿qué diámetro debe tener el taladro?",
+   "o4": "Un cuarto del diámetro del clavo.",
+   "que": "El <mark>pretaladro</mark> se hace de <mark>2/3 a 3/4 del diámetro</mark> del clavo.",
+   "porque": "El clavo, al entrar, separa las fibras y raja la madera; el pretaladro evita esas fisuras y la unión resiste más.",
+   "ojo": "Si el taladro es igual que el clavo, este queda suelto y no agarra. Dato propio del temario (criterio del CEIS Guadalajara), no de una norma.",
+   "rec": "Taladro <mark>algo menor</mark> que el clavo: que entre justo.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 163",
+   "tq": "Pretaladro para clavos: diámetro",
+   "ta": "De 2/3 a 3/4 del diámetro del clavo.",
+   "cifra": 1,
+   "o": [
+    "La mitad del diámetro del clavo.",
+    "El mismo diámetro que el clavo.",
+    "Entre 2/3 y 3/4 del diámetro del clavo."
+   ],
+   "c": 2
+  },
+  {
+   "id": 557,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Un clavo liso de 6 mm de diámetro y 120 mm entre tablones, ¿qué resistencia tiene con pretaladro según el temario?",
+   "o4": "0,5 kN por clavo.",
+   "que": "Ese clavo resiste <mark>1,0 kN sin pretaladro</mark> y <mark>1,5 kN con pretaladro</mark>: el pretaladro aumenta la resistencia un 50 %.",
+   "porque": "Sin pretaladro, el clavo abre fisuras en la madera y debilita la unión.",
+   "ojo": "1,0 kN es el valor <mark>sin</mark> pretaladro. Dato propio del temario (criterio del CEIS Guadalajara), no de una norma.",
+   "rec": "Pretaladro = <mark>la mitad más</mark>: de 1 a 1,5.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 163",
+   "tq": "Clavo 6 x 120 con pretaladro: resistencia",
+   "ta": "1,5 kN por clavo.",
+   "cifra": 1,
+   "o": [
+    "1,5 kN por clavo.",
+    "1,0 kN por clavo.",
+    "3,0 kN por clavo."
+   ],
+   "c": 0
+  },
+  {
+   "id": 558,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "En piezas de apeo que trabajan a compresión con riesgo de pandeo, ¿cada cuánto se recomienda poner las bridas como máximo?",
+   "o4": "Cada metro y medio.",
+   "que": "Las bridas nunca se separan más de 1 m, pero en piezas a compresión con pandeo se recomienda <mark>no superar los 50 cm</mark>.",
+   "porque": "Cuanto más juntas están las bridas, más trabajan los tablones como una sola pieza y menos pandean.",
+   "ojo": "El metro es el límite absoluto, no lo recomendado. Dato propio del temario (criterio del CEIS Guadalajara), no de una norma.",
+   "rec": "Bridas: «<mark>medio metro</mark>, máximo uno».",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 164",
+   "tq": "Bridas en piezas comprimidas: separación recomendada",
+   "ta": "No más de 50 cm.",
+   "cifra": 1,
+   "o": [
+    "Cada 50 cm.",
+    "Cada 10 cm.",
+    "Cada metro."
+   ],
+   "c": 0
+  },
+  {
+   "id": 559,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Al embridar los tablones de un pie derecho, ¿a qué distancia de los extremos se coloca siempre una brida?",
+   "o4": "Justo en el extremo.",
+   "que": "Siempre se coloca una brida a <mark>unos 10 cm de los extremos</mark>.",
+   "porque": "Así los extremos, donde se reciben y entregan las cargas, no se abren.",
+   "ojo": "50 cm es la separación recomendada entre bridas, no la distancia al extremo. Dato propio del temario (criterio del CEIS Guadalajara), no de una norma.",
+   "rec": "Extremo: a <mark>un palmo corto</mark> (10 cm).",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 164",
+   "tq": "Brida junto al extremo: distancia",
+   "ta": "Unos 10 cm.",
+   "cifra": 1,
+   "o": [
+    "A unos 25 cm.",
+    "A unos 50 cm.",
+    "A unos 10 cm."
+   ],
+   "c": 2
+  },
+  {
+   "id": 560,
+   "t": "Técnicas de estabilización",
+   "d": "difícil",
+   "q": "En un pie derecho de tablones embridados, se reduce la distancia entre bridas de un metro a la mitad. ¿Qué puede pasar con su carga a compresión con pandeo?",
+   "o4": "Se reduce, porque hay más taladros.",
+   "que": "El temario dice que al reducir la distancia entre bridas <mark>de un metro a la mitad</mark>, la capacidad a compresión con pandeo <mark>puede cuadriplicarse</mark>.",
+   "porque": "La carga de pandeo depende del <mark>cuadrado</mark> de la longitud libre: la mitad de longitud da cuatro veces más carga.",
+   "ojo": "La tentación es pensar «la mitad de distancia, el doble de carga». Contraste: coincide con la fórmula de pandeo de Euler.",
+   "rec": "Pandeo: <mark>mitad de tramo, cuatro veces</mark> más fuerte.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 164",
+   "tq": "Bridas de 1 m a 0,5 m: carga a pandeo",
+   "ta": "Puede cuadriplicarse.",
+   "o": [
+    "Se duplica exactamente.",
+    "No cambia: depende solo de los tablones.",
+    "Puede cuadriplicarse."
+   ],
+   "c": 2
+  },
+  {
+   "id": 561,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "¿Cada cuánto hay que revisar el apriete de las bridas de un apeo y por qué?",
+   "o4": "Solo después de una carga dinámica imprevista.",
+   "que": "El apriete de las bridas se revisa <mark>semanalmente</mark>, por las <mark>dilataciones de la madera en dirección perpendicular a sus fibras</mark>.",
+   "porque": "La madera se hincha y encoge con la humedad sobre todo a lo ancho: la brida se afloja y los tablones dejan de trabajar juntos.",
+   "ojo": "Las bridas además se colocan contrapeadas (inclinadas alternando sentido) para arriostrar en todas las direcciones. Dato propio del temario (criterio del CEIS Guadalajara), no de una norma.",
+   "rec": "Bridas: <mark>revisión de cada semana</mark>.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 164",
+   "tq": "Apriete de bridas: ¿cada cuánto se revisa?",
+   "ta": "Semanalmente (dilataciones perpendiculares a las fibras).",
+   "o": [
+    "Semanalmente, por las dilataciones de la madera perpendiculares a las fibras.",
+    "Diariamente, por las vibraciones del tráfico cercano.",
+    "Mensualmente, por la corrosión de las pletinas de acero."
+   ],
+   "c": 0
+  },
+  {
+   "id": 562,
+   "t": "Técnicas de estabilización",
+   "d": "difícil",
+   "q": "Vas a templar un pie derecho con cuñas más gruesas que las habituales. ¿Qué cambia al cortar el pie derecho?",
+   "o4": "Hay que añadir una brida más.",
+   "que": "El espesor de la cuña determina la longitud de corte: <mark>a mayor sección de cuña, menor longitud de pieza</mark>.",
+   "porque": "La cuña ocupa el hueco entre el pie derecho y el durmiente: cuanto más gruesa, más hueco hay que dejar.",
+   "ojo": "Las cuñas, además, deben ser de la <mark>misma calidad</mark> que los tablones o se deforman y no templan bien.",
+   "rec": "Cuña <mark>gorda</mark>, pieza <mark>corta</mark>.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 165",
+   "tq": "Cuñas más gruesas: ¿cómo se corta la pieza?",
+   "ta": "Más corta.",
+   "o": [
+    "Nada: la cuña solo ajusta y no afecta al corte.",
+    "Hay que cortarlo más largo.",
+    "Hay que cortarlo más corto."
+   ],
+   "c": 2
+  },
+  {
+   "id": 563,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Según el temario, ¿qué limita la resistencia de un ejión?",
+   "o4": "Su sección trapezoidal.",
+   "que": "El <mark>ejión</mark> trabaja a compresión paralela a las fibras y sin pandeo: su capacidad es muy alta, así que su límite lo marcan las <mark>uniones metálicas</mark> que lo fijan.",
+   "porque": "Por eso su longitud depende del número de clavos que necesite: más carga, más clavos, ejión más largo.",
+   "ojo": "La sección trapezoidal es tradicional pero no imprescindible: vale un trozo de tablón bien cortado.",
+   "rec": "Ejión: <mark>tanto aguanta como sus clavos</mark>.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 165",
+   "tq": "¿Qué limita la resistencia de un ejión?",
+   "ta": "Las uniones (clavos o tornillos) que lo fijan.",
+   "o": [
+    "El pandeo de la pieza.",
+    "La compresión perpendicular a sus fibras.",
+    "Los clavos o tornillos que lo fijan."
+   ],
+   "c": 2
+  },
+  {
+   "id": 564,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Según el temario, ¿cuál es uno de los errores más frecuentes al arriostrar un apeo?",
+   "o4": "Colocar las riostras en las zonas altas del apeo.",
+   "que": "Un error frecuente es arriostrar <mark>solo en la dirección</mark> de los elementos verticales, dejando sin arriostrar la <mark>perpendicular</mark>: el conjunto queda inestable ante impactos laterales.",
+   "porque": "Un apeo es tridimensional: hay que impedir que se mueva en los dos sentidos.",
+   "ojo": "Las triangulaciones son precisamente la forma normal de arriostrar, y las riostras sí son de menor sección.",
+   "rec": "Arriostrar en <mark>las dos direcciones</mark>, como una mesa.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 165",
+   "tq": "Error frecuente al arriostrar un apeo",
+   "ta": "Arriostrar solo en una dirección.",
+   "o": [
+    "Arriostrar solo en la dirección de los elementos verticales y no en la perpendicular.",
+    "Usar riostras de menor sección que los tablones.",
+    "Arriostrar con triangulaciones en vez de con piezas paralelas."
+   ],
+   "c": 0
+  },
+  {
+   "id": 565,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Al unir cables de acero con abrazaderas, ¿dónde debe quedar el ramal que trabaja a tracción?",
+   "o4": "Fuera de la abrazadera, sin apretar.",
+   "que": "El ramal <mark>a tracción</mark> va en la garganta del <mark>cuerpo</mark>; el ramal <mark>inerte</mark>, en la del <mark>estribo</mark> (la U).",
+   "porque": "El estribo aplasta el cable; si apretara el ramal que trabaja, lo dañaría justo donde más carga tiene.",
+   "ojo": "Contraste: coincide con la NTP 155 del INSST sobre cables de acero.",
+   "rec": "El estribo (la U) <mark>muerde al muerto</mark>.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 166",
+   "tq": "Abrazaderas de cable: ¿dónde va el ramal tenso?",
+   "ta": "En la garganta del cuerpo.",
+   "o": [
+    "En la garganta del estribo.",
+    "Es indiferente si el apriete es alterno.",
+    "En la garganta del cuerpo de la abrazadera."
+   ],
+   "c": 2
+  },
+  {
+   "id": 566,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Como norma general, ¿qué separación debe haber entre las abrazaderas de un cable de acero?",
+   "o4": "Siempre 20 cm, sea cual sea el cable.",
+   "que": "La separación entre abrazaderas es de <mark>6 a 8 veces el diámetro</mark> del cable.",
+   "porque": "Muy juntas no reparten el agarre; muy separadas, el cable puede deslizar entre ellas.",
+   "ojo": "Contraste: coincide con la NTP 155 del INSST.",
+   "rec": "Abrazaderas: «<mark>de 6 a 8</mark>» diámetros, como las horas de un turno corto.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 166",
+   "tq": "Separación entre abrazaderas de cable",
+   "ta": "De 6 a 8 veces el diámetro.",
+   "cifra": 1,
+   "o": [
+    "Entre 15 y 20 veces el diámetro del cable.",
+    "Entre 2 y 3 veces el diámetro del cable.",
+    "Entre 6 y 8 veces el diámetro del cable."
+   ],
+   "c": 2
+  },
+  {
+   "id": 567,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Si falla el anclaje de un pasador tensado con ranas de encofrado, ¿por dónde suele fallar?",
+   "o4": "Por el arrancamiento del muro.",
+   "que": "Según el temario, cuando fracasa el anclaje <mark>no se rompe la barra</mark> de corrugado: falla la <mark>fijación de la rana</mark>.",
+   "porque": "La barra aguanta mucho más que el agarre de la rana; por eso el pasador debe sobresalir de la rana, para que no la «escupa».",
+   "ojo": "Dato propio del temario (criterio del CEIS Guadalajara), no de una norma.",
+   "rec": "Falla la <mark>rana</mark>, no la varilla.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 167",
+   "tq": "Pasador con ranas: ¿qué falla?",
+   "ta": "La fijación de la rana, no la barra.",
+   "o": [
+    "Por la rotura de la barra corrugada.",
+    "Por la fijación de la rana.",
+    "Por el aplastamiento del tablón."
+   ],
+   "c": 1
+  },
+  {
+   "id": 568,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "¿Qué herramienta de medición tiene tres tubos de acero telescópicos con palomillas y placas regulables para tomar ángulos y longitudes?",
+   "o4": "La plomada.",
+   "que": "El <mark>escantillón</mark> tiene <mark>tres tubos telescópicos</mark> con palomillas de apriete y placas regulables en los extremos para calcular <mark>ángulos y longitud</mark>.",
+   "porque": "Se ajusta al hueco real y luego se traslada la medida a la pieza que hay que cortar.",
+   "ojo": "La falsa escuadra también traslada ángulos, pero es una hoja corrediza, no tubos telescópicos.",
+   "rec": "Escantillón = <mark>telescopio</mark> de medir.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 168",
+   "tq": "¿Qué es un escantillón?",
+   "ta": "Tres tubos telescópicos con palomillas y placas para tomar ángulos y longitudes.",
+   "o": [
+    "El escantillón.",
+    "La falsa escuadra.",
+    "El flexómetro."
+   ],
+   "c": 0
+  },
+  {
+   "id": 569,
+   "t": "Técnicas de estabilización",
+   "d": "difícil",
+   "q": "Analizado un terreno, su ángulo de rozamiento teórico es mayor que el ángulo del talud de la zanja. ¿Qué hay que hacer?",
+   "o4": "Entibar solo si hay víctimas dentro.",
+   "que": "Si el <mark>ángulo de rozamiento</mark> del terreno es <mark>mayor</mark> que el del talud, el desnivel es <mark>estable</mark> y no hace falta protección. Si es menor, hay que entibar.",
+   "porque": "El terreno se sostiene solo mientras su pendiente no supere la que su rozamiento puede aguantar.",
+   "ojo": "La tentación es leerlo al revés. Contraste: es el criterio general de estabilidad de taludes.",
+   "rec": "Rozamiento <mark>gana</mark> al talud → estable.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 169",
+   "tq": "Rozamiento del terreno mayor que el talud: ¿entibar?",
+   "ta": "No: es estable.",
+   "o": [
+    "Nada: el desnivel es estable y no hace falta entibar.",
+    "Entibar, porque el talud supera al rozamiento.",
+    "Hacer al menos una entibación ligera."
+   ],
+   "c": 0
+  },
+  {
+   "id": 570,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "¿Qué tipo de entibación muestra el dibujo?",
+   "o4": "Pronto.",
+   "que": "La <mark>entibación ligera</mark> solo tiene <mark>largueros y codales</mark>, sin cabeceros ni tablas que revistan el terreno.",
+   "porque": "Se usa cuando el terreno tiene un ángulo de rozamiento muy alto y gran cohesión: casi se sostiene solo.",
+   "ojo": "Pronto no es un tipo de entibación sino un método de montaje. Contraste: los tres tipos son los de la NTE-ADZ.",
+   "rec": "Ligera = <mark>esqueleto</mark>: piezas sueltas y mucho terreno a la vista.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 170",
+   "tq": "Entibación solo con largueros y codales",
+   "ta": "Ligera.",
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 200 140\" role=\"img\" aria-label=\"Sección de una zanja: en cada pared hay solo dos piezas verticales separadas, unidas entre paredes por codales horizontales; casi todo el terreno queda a la vista\"><rect x=\"0\" y=\"0\" width=\"200\" height=\"140\" fill=\"#d9c49a\"/><rect x=\"60\" y=\"0\" width=\"80\" height=\"140\" fill=\"#f4f1ea\"/><line x1=\"0\" y1=\"0.5\" x2=\"200\" y2=\"0.5\" stroke=\"#6b5a3a\"/><rect x=\"60\" y=\"8\" width=\"8\" height=\"125\" fill=\"#a0522d\"/><rect x=\"132\" y=\"8\" width=\"8\" height=\"125\" fill=\"#a0522d\"/><rect x=\"68\" y=\"35\" width=\"64\" height=\"6\" fill=\"#555\"/><rect x=\"68\" y=\"95\" width=\"64\" height=\"6\" fill=\"#555\"/><text x=\"30\" y=\"75\" font-size=\"9\" text-anchor=\"middle\" fill=\"#4a3b22\">Terreno</text><text x=\"170\" y=\"75\" font-size=\"9\" text-anchor=\"middle\" fill=\"#4a3b22\">Terreno</text><text x=\"100\" y=\"70\" font-size=\"9\" text-anchor=\"middle\" fill=\"#333\">Zanja</text></svg>",
+   "o": [
+    "Cuajada.",
+    "Semicuajada.",
+    "Ligera."
+   ],
+   "c": 2
+  },
+  {
+   "id": 571,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "En una entibación semicuajada, ¿qué porcentaje de la superficie del terreno queda revestida?",
+   "o4": "El 75 %.",
+   "que": "La entibación <mark>semicuajada</mark> reviste el <mark>50 %</mark> del terreno; la cuajada, todo.",
+   "porque": "Se usa en terrenos con más cohesión que los que piden cuajada: no hace falta tapar toda la pared.",
+   "ojo": "Contraste: los tipos cuajada, semicuajada y ligera son los de la NTE-ADZ.",
+   "rec": "<mark>Semi</mark> = la <mark>mitad</mark>.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 170",
+   "tq": "Entibación semicuajada: superficie revestida",
+   "ta": "El 50 %.",
+   "cifra": 1,
+   "o": [
+    "El 50 %.",
+    "El 100 %.",
+    "El 25 %."
+   ],
+   "c": 0
+  },
+  {
+   "id": 572,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Según la NTP 278, ¿a partir de qué profundidad se considera peligrosa una excavación en terrenos corrientes?",
+   "o4": "2,50 m",
+   "que": "La NTP 278 considera peligrosa toda excavación que alcance <mark>0,80 m en terrenos corrientes</mark> (y 1,30 m en terrenos consistentes).",
+   "porque": "Es una profundidad con la que un desprendimiento ya puede oprimir el tórax de quien trabaja dentro.",
+   "ojo": "1,30 m es para terrenos <mark>consistentes</mark>. Contraste: coincide literalmente con la NTP 278 del INSST.",
+   "rec": "Corriente <mark>0,80</mark>, consistente 1,30: el terreno flojo avisa antes.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 171",
+   "tq": "NTP 278: profundidad peligrosa en terreno corriente",
+   "ta": "0,80 m.",
+   "cifra": 1,
+   "o": [
+    "1,30 m",
+    "1,50 m",
+    "0,80 m"
+   ],
+   "c": 2
+  },
+  {
+   "id": 573,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "En una emergencia, ¿a partir de qué profundidad aproximada indica el temario que se debe empezar a entibar?",
+   "o4": "Unos 3,50 m.",
+   "que": "En emergencia se empieza a entibar a profundidades en las que una persona quedaría <mark>completamente cubierta</mark>: <mark>unos 1,50 m</mark>.",
+   "porque": "Antes se abre un hueco para que la víctima respire y, si no se la puede liberar directamente, se entiba.",
+   "ojo": "La norma marca entibar desde 1,30 m; los 1,50 m son el criterio del temario para emergencias.",
+   "rec": "<mark>1,50 m</mark> ≈ una persona agachada: si la tapa, se entiba.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 171",
+   "tq": "Emergencia: profundidad para empezar a entibar",
+   "ta": "Unos 1,50 m.",
+   "cifra": 1,
+   "o": [
+    "Unos 0,80 m.",
+    "Unos 2,50 m.",
+    "Unos 1,50 m."
+   ],
+   "c": 2
+  },
+  {
+   "id": 574,
+   "t": "Técnicas de estabilización",
+   "d": "normal",
+   "q": "Rescate en una zanja de 2 m de profundidad excavada en arcilla, a 3 m de un vial. Según el temario, ¿hay que entibar?",
+   "o4": "Solo si llueve o hay agua en el fondo.",
+   "que": "En <mark>arcillas</mark> se entiba automáticamente cuando la zanja está cerca de un vial o cimentación: a una distancia <mark>inferior a dos veces su profundidad</mark>. Aquí, 3 m es menos que 2 x 2 = 4 m.",
+   "porque": "El peso y las vibraciones del vial empujan el terreno hacia la zanja aunque la arcilla sea cohesiva.",
+   "ojo": "En gravas y arenas se entiba siempre; en arcillas depende de esa distancia.",
+   "rec": "Arcilla: si el vial está <mark>a menos de dos profundidades</mark>, se entiba.",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 171",
+   "tq": "Zanja en arcilla de 2 m a 3 m de un vial: ¿entibar?",
+   "ta": "Sí (está a menos de 2 veces su profundidad).",
+   "int": 1,
+   "o": [
+    "Solo si la zanja supera los 2,50 m de profundidad.",
+    "Sí: está a menos de dos veces su profundidad del vial.",
+    "No: la arcilla es cohesiva y se sostiene sola."
+   ],
+   "c": 1
   }
  ],
  "glosario": [
@@ -940,6 +1659,168 @@
    "d": "Subestación al final de las líneas de 2.ª categoría de la que salen las de 3.ª hacia los CT.",
    "tema": "Instalaciones eléctricas",
    "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 2 y 5",
+   "solo": 1
+  },
+  {
+   "t": "Apeo",
+   "a": [
+    "apeo",
+    "apeos"
+   ],
+   "d": "Construcción auxiliar provisional que detiene movimientos de un edificio y lleva al suelo los esfuerzos que la estructura no puede absorber.",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 158",
+   "solo": 1
+  },
+  {
+   "t": "Entibación",
+   "a": [
+    "entibación",
+    "entibaciones",
+    "entibar"
+   ],
+   "d": "Apeo del terreno: estabiliza estructuras enterradas, bajo la rasante (zanjas, pozos, vaciados).",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 169",
+   "solo": 1
+  },
+  {
+   "t": "Riostra",
+   "a": [
+    "riostra",
+    "riostras",
+    "arriostrar",
+    "arriostramiento"
+   ],
+   "d": "Pieza de poca sección que mantiene en posición los elementos principales del apeo; trabaja solo a tracción.",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 161",
+   "solo": 1
+  },
+  {
+   "t": "Puntal telescópico",
+   "a": [
+    "puntal telescópico",
+    "puntales telescópicos",
+    "puntal",
+    "puntales"
+   ],
+   "d": "Apoyo provisional de acero, regulable en longitud, que trabaja a compresión (UNE-EN 1065).",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 161",
+   "solo": 1
+  },
+  {
+   "t": "Brida (apeos)",
+   "a": [
+    "brida",
+    "bridas",
+    "embridados",
+    "embridar"
+   ],
+   "d": "Dos pletinas de acero unidas con tornillos que aprietan varios tablones para que trabajen como una sola pieza.",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 164",
+   "solo": 1
+  },
+  {
+   "t": "Cuña (apeos)",
+   "a": [
+    "cuña",
+    "cuñas"
+   ],
+   "d": "Pieza de madera de sección triangular que ajusta los elementos del apeo y permite su entrada en carga progresiva (templado).",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 165",
+   "solo": 1
+  },
+  {
+   "t": "Ejión",
+   "a": [
+    "ejión",
+    "ejiones"
+   ],
+   "d": "Pieza de madera clavada a otra que sirve de tope o apoyo de un segundo elemento que acomete a ella.",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 165",
+   "solo": 1
+  },
+  {
+   "t": "Pie derecho",
+   "a": [
+    "pie derecho",
+    "pies derechos"
+   ],
+   "d": "Pieza vertical de madera escuadrada (dos o más tablones embridados) que recibe la carga de la sopanda y la lleva al durmiente.",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 172",
+   "solo": 1
+  },
+  {
+   "t": "Escantillón",
+   "a": [
+    "escantillón"
+   ],
+   "d": "Herramienta de tres tubos telescópicos con palomillas y placas regulables para tomar ángulos y longitudes.",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 168",
+   "solo": 1
+  },
+  {
+   "t": "Codal",
+   "a": [
+    "codal",
+    "codales"
+   ],
+   "d": "Pieza horizontal que trabaja a compresión entre dos apoyos para mantener su separación.",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 169",
+   "solo": 1
+  },
+  {
+   "t": "Entibación ligera / semicuajada / cuajada",
+   "a": [
+    "entibación ligera",
+    "semicuajada",
+    "cuajada"
+   ],
+   "d": "Tipos de entibación según el terreno revestido: ligera (sin cabeceros), semicuajada (50 %) y cuajada (100 %).",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 170",
+   "solo": 1
+  },
+  {
+   "t": "Pretaladro",
+   "a": [
+    "pretaladro"
+   ],
+   "d": "Taladro previo, de 2/3 a 3/4 del diámetro del clavo, que evita que la madera se raje al clavar.",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 163",
+   "solo": 1
+  },
+  {
+   "t": "Abrazadera de cable (perrillo)",
+   "a": [
+    "abrazadera",
+    "abrazaderas",
+    "perrillo",
+    "perrillos"
+   ],
+   "d": "Pieza de cuerpo y estribo en U que aprieta dos ramales de un cable de acero para unirlos o hacer un ojal.",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 166",
+   "solo": 1
+  },
+  {
+   "t": "Excavación peligrosa (NTP 278)",
+   "a": [
+    "excavación",
+    "excavaciones"
+   ],
+   "d": "Según la NTP 278, la que alcanza 0,80 m en terrenos corrientes o 1,30 m en terrenos consistentes.",
+   "tema": "Técnicas de estabilización",
+   "f": "Manual de Técnicas de estabilización (Riesgos tecnológicos), p. 171",
    "solo": 1
   }
  ]
