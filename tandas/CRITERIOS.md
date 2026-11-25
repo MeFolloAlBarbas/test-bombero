@@ -95,8 +95,10 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
   una duda concreta.
 - **`tandas/cobertura.json`**: qué páginas de cada manual ya se han convertido en preguntas. Cada tarea
   sigue donde lo dejó la anterior y, al terminar, actualiza `hechas` (solo números de página, nunca texto).
-- **Un manual por tarea** (dos si son cortos), leído de corrido, sacando todas sus preguntas de esas
-  páginas. Elegir el manual con menos preguntas en el banco o con más páginas sin hacer.
+- **5 tareas por noche** (desde el 25/11/2026, pedido del usuario: tener pronto preguntas de TODOS los temas).
+- **Un manual por tarea** (dos si son cortos), leído de corrido. Se elige con `python3 scripts/stock.py`: el tema con
+  **menos preguntas sin usar** (no están en plan.json) sumando el lote de hoy; primero los manuales sin ninguna pregunta.
+  Saltar los manuales que no se pueden leer como texto (escaneados) y apuntarlo en cobertura.json.
 - Leer con `project_read` el manual y avanzar por páginas; `project_search` solo para comprobar datos sueltos.
 
 ## Calidad (cada tarea)
