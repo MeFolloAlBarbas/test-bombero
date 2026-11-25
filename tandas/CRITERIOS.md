@@ -4,6 +4,11 @@ Este fichero es la referencia para las tareas programadas que generan preguntas 
 (y para cualquier conversación que haga una tanda). Copia de los criterios de las notas del
 proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las notas del proyecto.
 
+## Regla de oro (usuario, 25/11/2026)
+- **Una pregunta que ya le ha salido a alguien no vuelve a salir nunca.** No se borra (se guarda para un futuro
+  apartado de repaso de pasadas), pero el calendario no la vuelve a usar. Tampoco se cambia nunca un día de hoy o
+  anterior en plan.json. `scripts/sin_repetir.py` lo comprueba al ampliar el calendario.
+
 ## Visto bueno diario (regla del usuario, 25/11/2026)
 - Cada noche se hace **un lote**: unas `por_noche` preguntas (tandas/estado.json), repartidas en
   varias tareas de unas `por_tarea` cada una.
