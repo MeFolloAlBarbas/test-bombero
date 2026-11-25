@@ -84,9 +84,21 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
   fuentes fiables; la explicación dice cómo es realmente y cómo lo pone el temario. Van en el lote
   marcadas y el usuario las revisa una a una (revision.py las pone aparte).
 
+## Ahorro de uso (25/11/2026, pedido del usuario)
+- **No leer enteras las notas del proyecto**: este fichero basta. Solo `project_search` en las notas si hay
+  una duda concreta.
+- **`tandas/cobertura.json`**: qué páginas de cada manual ya se han convertido en preguntas. Cada tarea
+  sigue donde lo dejó la anterior y, al terminar, actualiza `hechas` (solo números de página, nunca texto).
+- **Un manual por tarea** (dos si son cortos), leído de corrido, sacando todas sus preguntas de esas
+  páginas. Elegir el manual con menos preguntas en el banco o con más páginas sin hacer.
+- Leer con `project_read` el manual y avanzar por páginas; `project_search` solo para comprobar datos sueltos.
+
 ## Calidad (cada tarea)
-1. Leer el manual del tema en el proyecto y comprobar cada respuesta en su página.
+1. Comprobar cada respuesta en su página del manual mientras se escribe.
 2. `python3 scripts/reglas.py tandas/pendientes/AAAA-MM-DD.json`: corregir todos los errores y mirar
    los avisos uno a uno.
-3. Revisión independiente: un agente que no ha escrito las preguntas las responde sin ver la solución
-   y busca cada dato en el manual. Si falla una o no encuentra el dato, se corrige o se quita.
+3. Revisión independiente con un agente en **modelo Sonnet** (herramienta Agent, `model: "sonnet"`), que no
+   ha escrito las preguntas: recibe enunciados y opciones barajadas, responde y da la página del dato.
+   Revisa **todas** las difíciles, de concepto, estilo examen, intervención, dibujo y las de Edificaciones /
+   Estabilización; de las de **cifras**, una de cada tres (al azar). Si falla una o no encuentra el dato,
+   se corrige o se quita (y si falla una de cifras, se revisan todas las de cifras de esa tarea).
