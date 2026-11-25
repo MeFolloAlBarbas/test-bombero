@@ -39,6 +39,724 @@
    "f": "Manual de ACS (Ayto. Madrid), p. 14 (CTE HE-4 y comentarios del MITMA)",
    "tq": "¿Qué cogeneración es renovable: gas natural o biomasa?",
    "ta": "La de biomasa (el combustible debe ser renovable)."
+  },
+  {
+   "id": 505,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, ¿qué tensión nominal tienen las líneas de la red de distribución de 1.ª categoría (red de reparto)?",
+   "o": [
+    "Inferior a 220 kV y superior a 66 kV.",
+    "Igual o inferior a 66 kV y superior a 30 kV.",
+    "Igual o inferior a 30 kV y superior a 1 kV."
+   ],
+   "c": 0,
+   "o4": "Igual o superior a 220 kV.",
+   "que": "La red de <mark>1.ª categoría</mark>, también llamada <mark>red de reparto</mark>, es la primera etapa de la distribución alrededor de los núcleos de consumo.",
+   "porque": "Va justo por debajo de la red de transporte: empieza donde esta acaba (<mark>menos de 220 kV</mark>) y llega hasta <mark>más de 66 kV</mark>.",
+   "ojo": "El rango de 66 a 30 kV es el de la categoría siguiente: no los cruces.",
+   "rec": "Las categorías van bajando: <mark>1.ª = de 220 a 66 kV</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 2",
+   "tq": "¿Tensión de la red de distribución de 1.ª categoría?",
+   "ta": "Menos de 220 kV y más de 66 kV.",
+   "cifra": 1
+  },
+  {
+   "id": 506,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Las empresas distribuidoras llamaban antiguamente «Red de Media Tensión» a una de las categorías de la red de distribución. ¿A cuál?",
+   "o": [
+    "A la de 1.ª categoría.",
+    "A la de 2.ª categoría.",
+    "A la de 3.ª categoría."
+   ],
+   "c": 2,
+   "o4": "A la red de baja tensión.",
+   "que": "La red de <mark>3.ª categoría</mark> es la que antes se conocía como <mark>Red de Media Tensión</mark>.",
+   "porque": "Es la de tensión más baja dentro de la alta tensión: une las subestaciones de reparto con los centros de transformación o con grandes consumidores.",
+   "ojo": "Hoy no existe oficialmente la «media tensión»: todo lo que supera 1 kV es alta tensión, repartida en categorías.",
+   "rec": "La <mark>3.ª</mark> es la última de la AT, la «media».",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 2",
+   "tq": "¿Qué categoría era la antigua «Red de Media Tensión»?",
+   "ta": "La 3.ª categoría."
+  },
+  {
+   "id": 507,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "¿Qué hace con la tensión una subestación de maniobra de la red de transporte?",
+   "o": [
+    "La eleva hasta la tensión de transporte.",
+    "La mantiene: toma el valor de las líneas que concurren en ella.",
+    "La reduce a valores aptos para el reparto."
+   ],
+   "c": 1,
+   "o4": "La convierte de alterna a continua.",
+   "que": "Las <mark>subestaciones de maniobra</mark> interconectan dos o más circuitos de la red de transporte.",
+   "porque": "Su trabajo es conectar y maniobrar, no transformar: la tensión <mark>se mantiene constante</mark>.",
+   "ojo": "Elevar es cosa de la estación elevadora y reducir, de la subestación transformadora.",
+   "rec": "Maniobra = <mark>conecta, no transforma</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 2",
+   "tq": "¿Transforma la tensión una subestación de maniobra?",
+   "ta": "No: solo interconecta circuitos."
+  },
+  {
+   "id": 508,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "En un alternador, ¿cómo se llama la parte fija donde están alojadas las bobinas que generan la corriente?",
+   "o": [
+    "Estator.",
+    "Rotor.",
+    "Turbina."
+   ],
+   "c": 0,
+   "o4": "Inducido móvil.",
+   "que": "El <mark>estator</mark> es la parte <mark>fija</mark> del alternador, donde se alojan las bobinas.",
+   "porque": "Su nombre viene de «estático»: no se mueve. Lo que gira es el rotor.",
+   "ojo": "La turbina no forma parte de la parte eléctrica: es la que hace girar el eje.",
+   "rec": "<mark>EStator = EStático</mark>; Rotor = Rota.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 3",
+   "tq": "¿Parte fija del alternador con las bobinas?",
+   "ta": "El estator."
+  },
+  {
+   "id": 509,
+   "t": "Instalaciones eléctricas",
+   "d": "difícil",
+   "q": "Faraday generaba corriente alterna haciendo girar una espira entre los polos de un imán. En los alternadores de las centrales eléctricas, ¿qué elemento gira?",
+   "o": [
+    "La bobina, entre los dos polos del imán.",
+    "El imán, entre las bobinas.",
+    "Las bobinas y el imán, en sentidos opuestos."
+   ],
+   "c": 1,
+   "o4": "Ninguno: el campo varía sin movimiento.",
+   "que": "En las centrales <mark>la bobina no rota</mark>: es el <mark>imán el que gira</mark> a velocidad angular constante entre las bobinas.",
+   "porque": "Al girar el imán cambia constantemente la polaridad del campo y eso induce en las bobinas la corriente alterna.",
+   "ojo": "La tentación es quedarse con el experimento de Faraday, donde giraba la espira. En la central es al revés.",
+   "rec": "Faraday giraba la espira; la central <mark>gira el imán</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 3",
+   "tq": "¿Qué gira en el alternador de una central?",
+   "ta": "El imán, entre las bobinas fijas."
+  },
+  {
+   "id": 510,
+   "t": "Instalaciones eléctricas",
+   "d": "difícil",
+   "q": "En el transformador de una estación elevadora, ¿qué devanado tiene más espiras?",
+   "o": [
+    "El primario.",
+    "Los dos, el mismo número.",
+    "El secundario."
+   ],
+   "c": 2,
+   "o4": "Depende de la frecuencia de la red.",
+   "que": "En las estaciones elevadoras el primario tiene <mark>menos espiras</mark> que el secundario.",
+   "porque": "Se quiere que la tensión de <mark>salida</mark> sea mayor que la de entrada: a más vueltas en el secundario, más tensión.",
+   "ojo": "En un transformador reductor (subestación o CT) es justo al revés: más espiras en el primario.",
+   "rec": "Elevar = <mark>más vueltas a la salida</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 5",
+   "tq": "¿Qué devanado tiene más espiras en un transformador elevador?",
+   "ta": "El secundario."
+  },
+  {
+   "id": 511,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, ¿qué tensiones de salida suelen dar las subestaciones transformadoras (al final de la línea de transporte y entre la 1.ª y la 2.ª categoría)?",
+   "o": [
+    "66, 45 o 30 kV.",
+    "20, 15 u 11 kV.",
+    "400, 220 o 132 kV."
+   ],
+   "c": 0,
+   "o4": "400/230 V.",
+   "que": "Las <mark>subestaciones transformadoras</mark> hacen una primera reducción: suelen salir <mark>66, 45 o 30 kV</mark>.",
+   "porque": "Reciben la tensión de transporte y la bajan para facilitar la distribución antes de llegar a los centros de consumo.",
+   "ojo": "400, 220 o 132 kV es lo que les entra, no lo que sale.",
+   "rec": "Salida de la transformadora: <mark>66-45-30</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 5",
+   "tq": "¿Salida habitual de una subestación transformadora?",
+   "ta": "66, 45 o 30 kV.",
+   "cifra": 1
+  },
+  {
+   "id": 512,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, ¿qué tensiones de salida suelen dar las subestaciones transformadoras de reparto, de las que parten las líneas de 3.ª categoría?",
+   "o": [
+    "66, 45 o 30 kV.",
+    "20, 15 u 11 kV.",
+    "De 3 a 36 kV."
+   ],
+   "c": 1,
+   "o4": "400/230 V.",
+   "que": "Las <mark>subestaciones de reparto</mark> están al final de las líneas de 2.ª categoría y suelen dar <mark>20, 15 u 11 kV</mark>.",
+   "porque": "De ellas salen las líneas de 3.ª categoría que alimentan los centros de transformación.",
+   "ojo": "66, 45 o 30 kV es lo que les entra (sale de la subestación transformadora anterior).",
+   "rec": "Reparto: <mark>20-15-11</mark>, la tensión que llega a los CT.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 5",
+   "tq": "¿Salida habitual de una subestación de reparto?",
+   "ta": "20, 15 u 11 kV.",
+   "cifra": 1
+  },
+  {
+   "id": 513,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, ¿cómo se define un transformador eléctrico?",
+   "o": [
+    "Máquina rotativa de corriente alterna que varía la frecuencia y la potencia manteniendo el voltaje y la intensidad.",
+    "Máquina estática de corriente continua que varía el voltaje y la frecuencia manteniendo la intensidad y la potencia.",
+    "Máquina estática de corriente alterna que varía el voltaje o la intensidad manteniendo la frecuencia y la potencia."
+   ],
+   "c": 2,
+   "o4": "Máquina rotativa que transforma energía mecánica en eléctrica por inducción.",
+   "que": "El transformador es una <mark>máquina estática</mark> de <mark>corriente alterna</mark> que cambia el voltaje o la intensidad.",
+   "porque": "Lo que <mark>no cambia</mark> es la <mark>frecuencia</mark> ni la <mark>potencia</mark>: si sube la tensión, baja la intensidad.",
+   "ojo": "La máquina rotativa que convierte energía mecánica en eléctrica es el alternador, no el transformador.",
+   "rec": "Transformador: <mark>estático, alterna, misma frecuencia y potencia</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 5",
+   "tq": "¿Qué mantiene constante un transformador?",
+   "ta": "La frecuencia y la potencia.",
+   "ex": 1
+  },
+  {
+   "id": 514,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "En el núcleo de un transformador, ¿qué son las culatas?",
+   "o": [
+    "La parte que une las columnas entre sí.",
+    "La parte donde se montan los devanados.",
+    "El barniz que aísla el hilo de cobre."
+   ],
+   "c": 0,
+   "o4": "Las aletas de refrigeración de la cuba.",
+   "que": "El núcleo, de chapas de acero al silicio aisladas, tiene dos partes: <mark>columnas</mark> y <mark>culatas</mark>.",
+   "porque": "En las columnas se montan los devanados; las <mark>culatas</mark> hacen la <mark>unión entre las columnas</mark> y cierran el camino del flujo magnético.",
+   "ojo": "Es fácil cruzarlas: los devanados van en las columnas, no en las culatas.",
+   "rec": "Columnas = <mark>de pie, con bobinas</mark>; culatas = <mark>tumbadas, unen</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 5",
+   "tq": "¿Qué son las culatas del núcleo de un transformador?",
+   "ta": "La parte que une las columnas."
+  },
+  {
+   "id": 515,
+   "t": "Instalaciones eléctricas",
+   "d": "difícil",
+   "q": "Según la Ley del Sector Eléctrico, ¿a qué red pertenece una línea submarina que une una isla con la península?",
+   "o": [
+    "Al transporte secundario, solo si supera 220 kV.",
+    "Al transporte primario, sea cual sea su tensión.",
+    "A la distribución de 1.ª categoría."
+   ],
+   "c": 1,
+   "o4": "A ninguna: es una conexión internacional.",
+   "que": "Forman parte del <mark>transporte primario</mark> las interconexiones con los sistemas eléctricos <mark>no peninsulares</mark>, como las líneas submarinas a las islas.",
+   "porque": "Estas interconexiones cuentan como transporte primario <mark>independientemente de su tensión</mark>.",
+   "ojo": "Lo normal es clasificar por tensión, y eso lleva a pensar en el secundario; aquí manda la función de la línea.",
+   "rec": "Islas e internacionales: <mark>primario siempre</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 6",
+   "tq": "¿Qué red es la línea submarina isla-península?",
+   "ta": "Transporte primario, sea cual sea la tensión."
+  },
+  {
+   "id": 516,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, la red de transporte primario es la de tensión nominal igual o superior a:",
+   "o": [
+    "220 kV.",
+    "400 kV.",
+    "380 kV."
+   ],
+   "c": 2,
+   "o4": "132 kV.",
+   "que": "El <mark>transporte primario</mark> es la red de <mark>380 kV</mark> o más.",
+   "porque": "El resto de la red de transporte (por debajo del primario) es el transporte secundario.",
+   "ojo": "220 kV es el límite del secundario y de la categoría especial: no lo cruces con el del primario.",
+   "rec": "Primario = el más alto = <mark>380</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 6",
+   "tq": "¿Tensión del transporte primario?",
+   "ta": "380 kV o más.",
+   "cifra": 1
+  },
+  {
+   "id": 517,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según la Ley 24/2013, del Sector Eléctrico, ¿cuál de estos elementos NO se considera red de transporte?",
+   "o": [
+    "Las conexiones de las centrales con la red, es decir, las estaciones elevadoras.",
+    "Las instalaciones de conexión internacional, cualquiera que sea su tensión.",
+    "Las líneas de tensión igual o superior a 220 kV no incluidas en el primario."
+   ],
+   "c": 0,
+   "o4": "Las interconexiones con los territorios no peninsulares.",
+   "que": "La ley excluye de la red de transporte las <mark>centrales</mark>, sus <mark>conexiones con la red</mark> (las <mark>estaciones elevadoras</mark>) y las líneas directas a consumidores desde ellas.",
+   "porque": "La red de transporte empieza <mark>después</mark> de la estación elevadora y llega hasta las subestaciones que bajan la tensión para distribuir.",
+   "ojo": "Aunque la estación elevadora ya trabaja a tensión de transporte, la ley la deja fuera.",
+   "rec": "Transporte = <mark>de la elevadora (sin incluirla) a la subestación</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 6",
+   "tq": "¿La estación elevadora es red de transporte?",
+   "ta": "No: la ley la excluye.",
+   "ex": 1
+  },
+  {
+   "id": 518,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Intervenís por un incidente en una línea de la red de transporte. ¿Con quién hay que contactar?",
+   "o": [
+    "Con la distribuidora de la zona, directamente desde el lugar.",
+    "Con Red Eléctrica de España, a través de nuestra Central de Comunicaciones.",
+    "Con el Ayuntamiento, propietario de las líneas."
+   ],
+   "c": 1,
+   "o4": "Con la empresa que generó la energía.",
+   "que": "<mark>Red Eléctrica de España</mark> gestiona la red de transporte como <mark>transportista único</mark>.",
+   "porque": "Por eso es la empresa con la que hay que contactar, y se hace <mark>a través de la Central de Comunicaciones</mark>.",
+   "ojo": "Las distribuidoras gestionan la distribución, no el transporte.",
+   "rec": "Transporte = <mark>REE</mark>, vía Central.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 6",
+   "tq": "¿A quién se avisa por una línea de transporte?",
+   "ta": "A Red Eléctrica de España, vía la Central.",
+   "int": 1
+  },
+  {
+   "id": 519,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, ¿dónde se utilizan principalmente las redes radiales (líneas en antena)?",
+   "o": [
+    "En los núcleos urbanos.",
+    "En la red de transporte.",
+    "En áreas rurales."
+   ],
+   "c": 2,
+   "o4": "En los polígonos industriales.",
+   "que": "Las <mark>redes radiales</mark> se alimentan solo por un extremo y se usan sobre todo en <mark>áreas rurales</mark>.",
+   "porque": "Allí las cargas están dispersas y hay poca densidad: este tipo de red sale más barato.",
+   "ojo": "Su punto débil es que una avería deja sin suministro a todo lo que queda detrás; por eso en ciudad se usan redes cerradas.",
+   "rec": "Radial = <mark>rural</mark> (las dos empiezan por R).",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 7",
+   "tq": "¿Dónde se usan las redes radiales?",
+   "ta": "En áreas rurales."
+  },
+  {
+   "id": 520,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, ¿qué inconveniente tiene la red mallada?",
+   "o": [
+    "Mayor complejidad y posibles tensiones de cortocircuito elevadas.",
+    "Deja sin suministro a todo lo que queda tras una avería.",
+    "Responde mal a los picos de demanda."
+   ],
+   "c": 0,
+   "o4": "Aumenta las caídas de tensión.",
+   "que": "La <mark>red mallada</mark> es la más extendida por su seguridad de suministro, pero es más <mark>compleja</mark> de diseñar y proteger y puede tener <mark>tensiones de cortocircuito elevadas</mark>.",
+   "porque": "Al estar todo interconectado, un cortocircuito recibe aporte desde muchos puntos a la vez.",
+   "ojo": "Responder bien a los picos de demanda y reducir las caídas de tensión son ventajas de la mallada, no inconvenientes.",
+   "rec": "Mallada: <mark>segura pero compleja</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 8",
+   "tq": "¿Inconveniente de la red mallada?",
+   "ta": "Complejidad y cortocircuitos elevados."
+  },
+  {
+   "id": 521,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "En una red en huso, ¿qué es un circuito cero?",
+   "o": [
+    "El centro que refleja la energía procedente de la subestación.",
+    "Una línea de socorro que une directamente los dos extremos de la red.",
+    "El conductor que pone a tierra el neutro de la red."
+   ],
+   "c": 1,
+   "o4": "La línea que alimenta un único centro de transformación.",
+   "que": "Los <mark>circuitos cero</mark>, también llamados <mark>líneas de socorro</mark> o de interconexión, unen directamente ambos extremos del huso.",
+   "porque": "Aportan un grado más de seguridad: si hay una avería, la energía tiene otro camino.",
+   "ojo": "El que «refleja» la energía es el centro de reflexión, otro elemento del huso.",
+   "rec": "Circuito cero = <mark>línea de socorro</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 8",
+   "tq": "¿Qué es el circuito cero de una red en huso?",
+   "ta": "Una línea de socorro que une los extremos."
+  },
+  {
+   "id": 522,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, ¿cuál de estas tensiones NO es de uso preferente en las redes de alta tensión?",
+   "o": [
+    "66 kV.",
+    "132 kV.",
+    "45 kV."
+   ],
+   "c": 2,
+   "o4": "380 kV.",
+   "que": "Las tensiones de uso preferente en AT son <mark>20, 66, 132, 220 y 380 kV</mark>.",
+   "porque": "Hay otras tensiones en servicio, pero no están entre las preferentes.",
+   "ojo": "Los 45 kV existen (son salida habitual de algunas subestaciones), pero no figuran en la lista.",
+   "rec": "Preferentes: <mark>20-66-132-220-380</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 9",
+   "tq": "¿Tensiones de uso preferente en AT?",
+   "ta": "20, 66, 132, 220 y 380 kV.",
+   "cifra": 1
+  },
+  {
+   "id": 523,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Una línea aérea de alta tensión emite un zumbido y se ve un halo luminoso alrededor de los cables en un día de niebla. Según el manual, ¿qué ocurre?",
+   "o": [
+    "Es el efecto corona: no es peligroso para la salud y aumenta con la humedad.",
+    "Es un arco eléctrico a tierra: la línea está en cortocircuito.",
+    "Es un aislador perforado: la torre está en tensión."
+   ],
+   "c": 0,
+   "o4": "Es la descarga del cable de guarda.",
+   "que": "El <mark>efecto corona</mark> es la ionización del aire alrededor de los conductores de AT. Se nota como un <mark>zumbido</mark> y chispas o un <mark>halo luminoso</mark>.",
+   "porque": "Se acusa más con lluvia o niebla porque hay más humedad. Supone una gran pérdida de carga, pero <mark>no representa peligro para la salud</mark>.",
+   "ojo": "Que una línea de AT zumbe no indica por sí solo una avería.",
+   "rec": "Corona = <mark>halo + zumbido</mark>, peor con humedad.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 9",
+   "tq": "¿Qué es el zumbido con halo en una línea de AT?",
+   "ta": "El efecto corona: no es peligroso."
+  },
+  {
+   "id": 524,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "¿Para qué sirve el cable de guarda de una línea aérea de alta tensión?",
+   "o": [
+    "Para sostener los aisladores y el conductor.",
+    "Para proteger las torres contra las descargas atmosféricas.",
+    "Para poner a tierra el neutro de la línea."
+   ],
+   "c": 1,
+   "o4": "Para señalizar la línea a las aeronaves.",
+   "que": "El <mark>cable de guarda</mark> protege las torres contra las <mark>descargas eléctricas atmosféricas</mark> (rayos).",
+   "porque": "Va por encima de los conductores y recibe el rayo antes que ellos.",
+   "ojo": "Las que sostienen aisladores y conductor son las crucetas.",
+   "rec": "Cable de guarda = <mark>guarda del rayo</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 9",
+   "tq": "¿Para qué sirve el cable de guarda?",
+   "ta": "Protege las torres de los rayos."
+  },
+  {
+   "id": 525,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Para estimar la tensión de una línea aérea, ¿qué indicador considera el manual más fiable?",
+   "o": [
+    "El número de discos de la cadena de aisladores.",
+    "El color de los conductores.",
+    "La altura y la forma del apoyo."
+   ],
+   "c": 2,
+   "o4": "La distancia entre torres.",
+   "que": "Contar los discos de la cadena de aisladores da solo un valor de referencia: <mark>muchas veces no se cumple</mark>.",
+   "porque": "Las compañías asignan un tipo de apoyo distinto a cada tensión, así que la <mark>altura y morfología del apoyo</mark> es un indicador más fiable.",
+   "ojo": "El método de los discos es el más conocido, pero el manual avisa de que falla a menudo.",
+   "rec": "Discos = orientativo; <mark>apoyo = fiable</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 10",
+   "tq": "¿Qué indica mejor la tensión: discos o apoyo?",
+   "ta": "La altura y forma del apoyo."
+  },
+  {
+   "id": 526,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Hay un accidente en una torre de alta tensión. ¿Qué dato de la torre debéis facilitar a la compañía eléctrica?",
+   "o": [
+    "Su número de identificación.",
+    "El número de discos de sus aisladores.",
+    "El color de sus balizas."
+   ],
+   "c": 0,
+   "o4": "Su altura aproximada.",
+   "que": "Cada torre de AT tiene un <mark>número de identificación</mark> que hay que dar a la compañía en caso de intervención.",
+   "porque": "Con él los operarios la <mark>localizan</mark> y pueden cortar el suministro o mandar a sus técnicos.",
+   "ojo": "Contar discos sirve como mucho para estimar la tensión, no para localizar la torre.",
+   "rec": "Torre = <mark>matrícula</mark>: dar su número.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 10",
+   "tq": "¿Qué dato de la torre se da a la compañía?",
+   "ta": "Su número de identificación.",
+   "int": 1
+  },
+  {
+   "id": 527,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Cuando una línea aérea de alta tensión cruza una de baja tensión, ¿cuál pasa por debajo?",
+   "o": [
+    "La de alta tensión.",
+    "La de baja tensión.",
+    "Cualquiera de las dos."
+   ],
+   "c": 1,
+   "o4": "Ninguna: deben cruzar al mismo nivel.",
+   "que": "En el cruzamiento de líneas aéreas, las de <mark>baja tensión pasan por debajo</mark> de las de alta.",
+   "porque": "Si un conductor de BT se rompe y cae, no toca la línea de AT.",
+   "ojo": "Bajo tierra la regla se invierte: allí la AT va más profunda.",
+   "rec": "En el aire, <mark>la AT manda arriba</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 11",
+   "tq": "Cruce aéreo AT-BT: ¿cuál va debajo?",
+   "ta": "La de baja tensión."
+  },
+  {
+   "id": 528,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Una línea aérea de alta tensión cruza un teleférico. ¿Qué distancia mínima debe mantener?",
+   "o": [
+    "1,5 m.",
+    "8 m.",
+    "4 m."
+   ],
+   "c": 2,
+   "o4": "2,5 m.",
+   "que": "La línea eléctrica cruza <mark>por encima</mark> del teleférico, salvo caso justificado, a <mark>4 m</mark> como mínimo.",
+   "porque": "Un teleférico tiene cables y cabinas en movimiento: necesita más margen que un cruce entre líneas.",
+   "ojo": "1,5 m es la distancia entre líneas eléctricas o de telecomunicaciones que se cruzan en distintos apoyos.",
+   "rec": "Entre líneas, 1,5 m; con un teleférico, <mark>4 m</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 11",
+   "tq": "¿Distancia mínima de una línea de AT a un teleférico?",
+   "ta": "4 m, pasando por encima.",
+   "cifra": 1
+  },
+  {
+   "id": 529,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Una línea aérea de AT cruza una de BT en distintos apoyos. ¿Qué distancia mínima debe haber entre sus conductores desnudos?",
+   "o": [
+    "1,5 m.",
+    "4 m.",
+    "0,25 m."
+   ],
+   "c": 0,
+   "o4": "2,5 m.",
+   "que": "Cuando el cruce se hace en distintos apoyos, entre los conductores desnudos debe haber <mark>al menos 1,5 m</mark>.",
+   "porque": "Así ni el viento ni la dilatación de los cables los hacen tocarse.",
+   "ojo": "4 m es para los teleféricos; no los cruces.",
+   "rec": "Cruce de líneas: <mark>metro y medio</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 11",
+   "tq": "¿Distancia mínima en un cruce aéreo AT-BT?",
+   "ta": "1,5 m.",
+   "cifra": 1
+  },
+  {
+   "id": 530,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "En una zanja con cables directamente enterrados de AT, BT y telecomunicaciones, ¿qué nivel ocupa la alta tensión?",
+   "o": [
+    "El 1, el más superficial.",
+    "El 2, el intermedio.",
+    "El 3, el más profundo."
+   ],
+   "c": 2,
+   "o4": "El mismo que la BT, separada en horizontal.",
+   "que": "Cuando se entierran directamente, cada cable va a un nivel: la <mark>AT en el más profundo</mark>, la BT encima y las telecomunicaciones en el más superficial.",
+   "porque": "Quien excave se encuentra primero los cables menos peligrosos y la cinta de señalización le avisa antes de llegar.",
+   "ojo": "En el aire es al revés: allí la AT va por encima.",
+   "rec": "Bajo tierra, <mark>cuanto más tensión, más hondo</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 12",
+   "tq": "Zanja: ¿a qué nivel va la AT?",
+   "ta": "Al más profundo.",
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 200 150\" role=\"img\" aria-label=\"Sección de una zanja con tres cables enterrados a distintas profundidades, numerados 1 arriba, 2 en medio y 3 abajo\"><rect x=\"0\" y=\"0\" width=\"200\" height=\"20\" fill=\"#9aa3ad\"/><text x=\"100\" y=\"14\" font-size=\"10\" text-anchor=\"middle\" fill=\"#fff\">Acera</text><rect x=\"40\" y=\"20\" width=\"120\" height=\"125\" fill=\"#d9c49a\" stroke=\"#6b5a3a\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"36\" x2=\"150\" y2=\"36\" stroke=\"#e8a317\" stroke-width=\"3\" stroke-dasharray=\"6 3\"/><text x=\"100\" y=\"31\" font-size=\"8\" text-anchor=\"middle\" fill=\"#333\">cinta de señalización</text><circle cx=\"100\" cy=\"62\" r=\"8\" fill=\"#555\" stroke=\"#222\"/><text x=\"125\" y=\"66\" font-size=\"12\" fill=\"#222\">1</text><circle cx=\"100\" cy=\"94\" r=\"8\" fill=\"#555\" stroke=\"#222\"/><text x=\"125\" y=\"98\" font-size=\"12\" fill=\"#222\">2</text><circle cx=\"100\" cy=\"126\" r=\"8\" fill=\"#555\" stroke=\"#222\"/><text x=\"125\" y=\"130\" font-size=\"12\" fill=\"#222\">3</text></svg>"
+  },
+  {
+   "id": 531,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, ¿cómo se identifican los cables subterráneos de alta tensión?",
+   "o": [
+    "Son cuatro conductores: negro, marrón, gris y azul.",
+    "Son tres conductores de color rojo (los antiguos, negros).",
+    "Son tres conductores de color amarillo y verde."
+   ],
+   "c": 1,
+   "o4": "Son un solo conductor desnudo.",
+   "que": "Los cables subterráneos de AT se reconocen por ser <mark>tres conductores rojos</mark>.",
+   "porque": "Aún pueden encontrarse en servicio <mark>conductores antiguos de color negro</mark>.",
+   "ojo": "Negro, marrón, gris y azul son los colores de una red de BT (tres fases y neutro).",
+   "rec": "AT bajo tierra: <mark>tres rojos</mark>, peligro.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 12",
+   "tq": "¿Cómo son los cables subterráneos de AT?",
+   "ta": "Tres conductores rojos (antiguos negros)."
+  },
+  {
+   "id": 532,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "En una galería no registrable, ¿qué canalización NO se admite?",
+   "o": [
+    "La de gas.",
+    "La de baja tensión.",
+    "La de alumbrado público."
+   ],
+   "c": 0,
+   "o4": "La de telecomunicaciones.",
+   "que": "En las <mark>galerías no registrables</mark> se admiten cables de AT, BT, alumbrado, control y comunicación, pero <mark>no canalizaciones de gas</mark>.",
+   "porque": "El agua solo se admite si se asegura que una fuga no afectará a los demás servicios (por ejemplo, en una zanja de doble cuerpo estanco).",
+   "ojo": "El agua no está prohibida del todo: depende de que una fuga no afecte al resto.",
+   "rec": "Galería con cables: <mark>gas nunca</mark>; agua, solo aislada.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 12",
+   "tq": "¿Qué canalización no se admite en una galería no registrable?",
+   "ta": "La de gas."
+  },
+  {
+   "id": 533,
+   "t": "Instalaciones eléctricas",
+   "d": "difícil",
+   "q": "Una línea subterránea de AT tiene que cruzar una tubería de gas. Según el manual, ¿cómo se instala siempre que sea posible?",
+   "o": [
+    "Por debajo de la tubería, a 0,25 m como mínimo.",
+    "Por debajo de la tubería, a 0,20 m como mínimo.",
+    "Por encima de la tubería, a 0,20 m como mínimo."
+   ],
+   "c": 2,
+   "o4": "Al mismo nivel, separada 0,40 m en horizontal.",
+   "que": "Siempre que sea posible, los cables de AT van <mark>por encima</mark> de las canalizaciones de agua o gas, a <mark>0,20 m</mark> como mínimo.",
+   "porque": "Así quien trabaje en la tubería no se encuentra la AT en medio.",
+   "ojo": "Con otros cables de energía (BT) pasa al revés: la AT va <mark>por debajo</mark>, a 0,25 m. Por eso tienta poner la AT siempre abajo.",
+   "rec": "AT: <mark>debajo de la BT, encima del agua y el gas</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 13",
+   "tq": "Cruce subterráneo AT-gas: ¿posición y distancia?",
+   "ta": "Encima, a 0,20 m mínimo."
+  },
+  {
+   "id": 534,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Hay que abrir un circuito de alta tensión que está con tensión y cuya carga no conocemos. ¿Sobre qué elemento se actúa?",
+   "o": [
+    "Sobre el seccionador, que deja el corte a la vista.",
+    "Sobre el interruptor, que corta en carga sin generar arco.",
+    "Sobre el seccionador, si antes se comprueba que no hay carga."
+   ],
+   "c": 1,
+   "o4": "Sobre el transformador de intensidad.",
+   "que": "El <mark>interruptor</mark> abre y cierra el circuito <mark>en carga</mark>, con un corte rápido y a suficiente distancia para no generar arco.",
+   "porque": "Como bomberos <mark>no podemos saber la carga</mark> de un circuito, así que <mark>nunca manipularemos un seccionador bajo tensión</mark>: este solo abre en vacío.",
+   "ojo": "El seccionador sí deja el corte a la vista, pero se usa después, con el circuito ya sin carga.",
+   "rec": "Primero <mark>interruptor</mark> (corta), luego seccionador (asegura).",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 14 y 16",
+   "tq": "¿Qué se acciona para abrir un circuito con carga desconocida?",
+   "ta": "El interruptor, nunca el seccionador.",
+   "int": 1
+  },
+  {
+   "id": 535,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "En la aparamenta de una subestación, ¿cómo se disponen los transformadores de intensidad?",
+   "o": [
+    "En serie.",
+    "En paralelo.",
+    "En derivación a tierra."
+   ],
+   "c": 0,
+   "o4": "Fuera del circuito.",
+   "que": "Los <mark>transformadores de intensidad</mark> miden la intensidad y protegen, y se disponen <mark>en serie</mark>.",
+   "porque": "Para medir la intensidad, toda la corriente de la línea tiene que pasar por ellos.",
+   "ojo": "Funcionan de forma parecida a los de tensión, pero cambia cómo se conectan.",
+   "rec": "Intensidad = <mark>en serie</mark>, la corriente pasa por dentro.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 13",
+   "tq": "¿Cómo se conecta un transformador de intensidad?",
+   "ta": "En serie."
+  },
+  {
+   "id": 536,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, ¿qué temperaturas puede alcanzar el arco eléctrico al abrirse un interruptor de potencia?",
+   "o": [
+    "Entre 1.000 °C y 2.500 °C.",
+    "Entre 10.000 °C y 25.000 °C.",
+    "Entre 2.500 °C y 10.000 °C."
+   ],
+   "c": 2,
+   "o4": "Unos 500 °C.",
+   "que": "Al separarse los contactos aparece el <mark>arco eléctrico</mark>, que puede alcanzar <mark>entre 2.500 °C y 10.000 °C</mark>.",
+   "porque": "Esa temperatura ioniza el medio extintor (aceite, gas, SF6 o vacío) y lo vuelve conductor; luego su movimiento enfría y rompe el arco.",
+   "ojo": "Recuerda los dos extremos: el arco empieza ya en miles de grados.",
+   "rec": "Arco: <mark>de 2.500 a 10.000 °C</mark> (de 2,5 a 10 mil).",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 14",
+   "tq": "¿Temperatura del arco en un interruptor de potencia?",
+   "ta": "Entre 2.500 y 10.000 °C.",
+   "cifra": 1
+  },
+  {
+   "id": 537,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, un fusible de intensidad nominal 200 A funde si durante un tiempo se sobrepasan:",
+   "o": [
+    "200 A.",
+    "300 A.",
+    "400 A."
+   ],
+   "c": 1,
+   "o4": "250 A.",
+   "que": "Un fusible funde si se sobrepasa durante un tiempo <mark>1,5 veces</mark> su intensidad nominal.",
+   "porque": "200 A × 1,5 = <mark>300 A</mark>.",
+   "ojo": "No funde nada más llegar a su nominal: tiene un margen.",
+   "rec": "Fusible: funde a <mark>vez y media</mark> su nominal.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 15",
+   "tq": "¿A qué intensidad funde un fusible de 200 A?",
+   "ta": "A 300 A (1,5 veces la nominal).",
+   "cifra": 1
+  },
+  {
+   "id": 538,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "En redes de trazado mayoritariamente aéreo, tras una avería, ¿cuántos reenganches automáticos hace un reconectador y en cuánto tiempo?",
+   "o": [
+    "3 reenganches en menos de 3 minutos.",
+    "3 reenganches en menos de 1 minuto.",
+    "5 reenganches en menos de 3 minutos."
+   ],
+   "c": 0,
+   "o4": "1 reenganche en menos de 10 ms.",
+   "que": "En redes mayoritariamente aéreas el reconectador hace <mark>3 reenganches automáticos en menos de 3 minutos</mark>.",
+   "porque": "Muchas fallas son transitorias y se resuelven solas. A partir del tercero, la compañía prueba a reconectar desde su control y, si sigue, pone la línea a tierra y la revisa.",
+   "ojo": "Una línea que parece caída puede volver a tener tensión sola: hay que tratarla siempre como en tensión.",
+   "rec": "Reconectador: <mark>3 y 3</mark> (tres veces en tres minutos).",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 15",
+   "tq": "¿Reenganches de un reconectador en red aérea?",
+   "ta": "3 en menos de 3 minutos.",
+   "cifra": 1
+  },
+  {
+   "id": 539,
+   "t": "Instalaciones eléctricas",
+   "d": "normal",
+   "q": "Según el manual, ¿en cuánto tiempo detecta, abre y elimina una falla un disyuntor o reconectador?",
+   "o": [
+    "En un ciclo completo (50 ms).",
+    "En medio segundo (500 ms).",
+    "En medio ciclo (10 ms)."
+   ],
+   "c": 2,
+   "o4": "En 3 minutos.",
+   "que": "El disyuntor detecta, abre y elimina una falla en <mark>medio ciclo (10 ms)</mark>.",
+   "porque": "Por eso se instala en serie con el fusible: actúa antes que él y, si la falla era transitoria, la resuelve sin fundirlo.",
+   "ojo": "A 50 Hz un ciclo dura 20 ms; medio ciclo, 10 ms.",
+   "rec": "<mark>Medio ciclo = 10 ms</mark>.",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 15",
+   "tq": "¿Tiempo de actuación de un disyuntor ante una falla?",
+   "ta": "Medio ciclo (10 ms).",
+   "cifra": 1
   }
  ],
  "glosario": [
@@ -50,6 +768,178 @@
    "d": "Generación simultánea, en el mismo proceso, de energía térmica y eléctrica y/o mecánica (UNE EN ISO 52000-1:2019).",
    "tema": "ACS",
    "f": "Manual de ACS, p. 14",
+   "solo": 1
+  },
+  {
+   "t": "Subestación de maniobra",
+   "a": [
+    "subestación de maniobra",
+    "subestaciones de maniobra"
+   ],
+   "d": "Subestación que interconecta circuitos de la red de transporte sin transformar la tensión.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 2",
+   "solo": 1
+  },
+  {
+   "t": "Estator",
+   "a": [
+    "estator"
+   ],
+   "d": "Parte fija del alternador donde se alojan las bobinas que generan la corriente.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 3",
+   "solo": 1
+  },
+  {
+   "t": "Estación elevadora",
+   "a": [
+    "estación elevadora",
+    "estaciones elevadoras"
+   ],
+   "d": "Estación junto a la central que eleva la tensión de generación a la de transporte.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 5",
+   "solo": 1
+  },
+  {
+   "t": "Transformador eléctrico",
+   "a": [
+    "transformador eléctrico"
+   ],
+   "d": "Máquina estática de corriente alterna que varía la tensión o la intensidad manteniendo frecuencia y potencia.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 5",
+   "solo": 1
+  },
+  {
+   "t": "Red radial",
+   "a": [
+    "red radial",
+    "redes radiales",
+    "líneas en antena"
+   ],
+   "d": "Red alimentada por un solo extremo; una avería deja sin suministro lo que queda detrás.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 7",
+   "solo": 1
+  },
+  {
+   "t": "Red mallada",
+   "a": [
+    "red mallada"
+   ],
+   "d": "Red de anillos y líneas interconectados en malla: la más segura y extendida.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 8",
+   "solo": 1
+  },
+  {
+   "t": "Circuito cero",
+   "a": [
+    "circuito cero",
+    "circuitos cero",
+    "línea de socorro"
+   ],
+   "d": "Línea de socorro que une directamente los extremos de una red en huso.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 8",
+   "solo": 1
+  },
+  {
+   "t": "Efecto corona",
+   "a": [
+    "efecto corona"
+   ],
+   "d": "Ionización del aire alrededor de conductores de AT: zumbido y halo; no es peligroso para la salud.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 9",
+   "solo": 1
+  },
+  {
+   "t": "Cable de guarda",
+   "a": [
+    "cable de guarda"
+   ],
+   "d": "Cable de una línea aérea de AT que protege las torres de las descargas atmosféricas.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 9",
+   "solo": 1
+  },
+  {
+   "t": "Galería no registrable",
+   "a": [
+    "galería no registrable",
+    "galerías no registrables"
+   ],
+   "d": "Galería sin circulación de personal, con tapas que necesitan maquinaria; no admite gas.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 12",
+   "solo": 1
+  },
+  {
+   "t": "Seccionador",
+   "a": [
+    "seccionador",
+    "seccionadores"
+   ],
+   "d": "Aparato que abre o cierra el circuito en vacío y deja el corte a la vista; nunca se maniobra bajo tensión.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 13 y 16",
+   "solo": 1
+  },
+  {
+   "t": "Interruptor de potencia",
+   "a": [
+    "interruptor de potencia"
+   ],
+   "d": "Aparato que abre y cierra el circuito en carga sin generar arco.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 14",
+   "solo": 1
+  },
+  {
+   "t": "Reconectador",
+   "a": [
+    "reconectador",
+    "disyuntor"
+   ],
+   "d": "Interruptor automático telemandado con reenganche que elimina fallas transitorias.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 15",
+   "solo": 1
+  },
+  {
+   "t": "Transporte primario",
+   "a": [
+    "transporte primario"
+   ],
+   "d": "Red de transporte de 380 kV o más, más las interconexiones internacionales y con las islas.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 6",
+   "solo": 1
+  },
+  {
+   "t": "Alternador",
+   "a": [
+    "alternador",
+    "alternadores"
+   ],
+   "d": "Máquina que transforma energía mecánica en eléctrica, generando corriente alterna por inducción.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 3",
+   "solo": 1
+  },
+  {
+   "t": "Subestación de reparto",
+   "a": [
+    "subestación de reparto",
+    "subestaciones de reparto",
+    "subestaciones transformadoras de reparto"
+   ],
+   "d": "Subestación al final de las líneas de 2.ª categoría de la que salen las de 3.ª hacia los CT.",
+   "tema": "Instalaciones eléctricas",
+   "f": "Manual de Infraestructuras eléctricas (Ayto. Madrid), p. 2 y 5",
    "solo": 1
   }
  ]

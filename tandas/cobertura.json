@@ -105,9 +105,9 @@
   },
   "2.19. Instalaciones eléctricas 1.pdf": {
    "tema": "Instalaciones eléctricas",
-   "hechas": "",
-   "total": null,
-   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+   "hechas": "Infraestructuras 1-15",
+   "total": 45,
+   "nota": "El PDF tiene dos partes con numeración propia: «Infraestructuras eléctricas» (30 p.) e «Instalaciones eléctricas de los edificios» (15 p.). Hechas: Infraestructuras p. 1-15 (del p. 16 solo la nota del seccionador). Siguiente: Infraestructuras p. 16. En cobertura, «hechas» indica la parte."
   },
   "20. Instalaciones de la edificación. ACS.pdf": {
    "tema": "ACS",
