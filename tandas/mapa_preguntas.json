@@ -1,6 +1,6 @@
 {
 "1": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
@@ -98,14 +98,18 @@
 "conf": "alta"
 },
 "15": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+16
+],
+"conf": "media"
 },
 "16": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+15
+],
+"conf": "alta"
 },
 "17": {
 "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
@@ -507,23 +511,25 @@
 "conf": "alta"
 },
 "74": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
 "conf": "alta"
 },
 "75": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 7
 ],
 "conf": "alta"
 },
 "76": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
+"p": [
+10
+],
+"conf": "alta"
 },
 "77": {
 "m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
@@ -575,9 +581,11 @@
 "conf": "media"
 },
 "84": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+13
+],
+"conf": "alta"
 },
 "85": {
 "m": "Bloque II - Tema 32 - Información básica de los vehículos del SEI",
@@ -706,19 +714,25 @@
 "conf": "alta"
 },
 "103": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+4
+],
+"conf": "alta"
 },
 "104": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+4
+],
+"conf": "alta"
 },
 "105": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+8
+],
+"conf": "alta"
 },
 "106": {
 "m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
@@ -875,21 +889,21 @@
 "conf": "alta"
 },
 "128": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 5
 ],
 "conf": "alta"
 },
 "129": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 5
 ],
 "conf": "alta"
 },
 "130": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 6
 ],
@@ -1036,63 +1050,67 @@
 "conf": "media"
 },
 "151": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "152": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "153": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "154": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
 "conf": "alta"
 },
 "155": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 7
 ],
 "conf": "alta"
 },
 "156": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 6
 ],
 "conf": "alta"
 },
 "157": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 8
 ],
 "conf": "alta"
 },
 "158": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
+"p": [
+10
+],
+"conf": "alta"
 },
 "159": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
+"p": [
+10
+],
+"conf": "alta"
 },
 "160": {
 "m": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
@@ -1438,14 +1456,18 @@
 "conf": "media"
 },
 "209": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+12
+],
+"conf": "media"
 },
 "210": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+8
+],
+"conf": "media"
 },
 "211": {
 "m": "Bloque II - Tema 10 - Rescate apícola y de otras especies",
@@ -1581,14 +1603,18 @@
 "conf": "alta"
 },
 "230": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+18
+],
+"conf": "media"
 },
 "231": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+18
+],
+"conf": "media"
 },
 "232": {
 "m": "Bloque II - Tema 17 - Riesgo NRBQ",
@@ -1647,9 +1673,11 @@
 "conf": "alta"
 },
 "240": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+17
+],
+"conf": "alta"
 },
 "241": {
 "m": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. III",
@@ -1918,69 +1946,95 @@
 "conf": "media"
 },
 "279": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+7
+],
+"conf": "media"
 },
 "280": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+12
+],
+"conf": "media"
 },
 "281": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+7
+],
+"conf": "alta"
 },
 "282": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+4
+],
+"conf": "alta"
 },
 "283": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+6
+],
+"conf": "alta"
 },
 "284": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+3
+],
+"conf": "alta"
 },
 "285": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+4
+],
+"conf": "alta"
 },
 "286": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+7
+],
+"conf": "alta"
 },
 "287": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+16
+],
+"conf": "alta"
 },
 "288": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+8
+],
+"conf": "alta"
 },
 "289": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+8
+],
+"conf": "alta"
 },
 "290": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+15
+],
+"conf": "alta"
 },
 "291": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Extra - Rescate en ascensores (no está en las bases)",
+"p": [
+3
+],
+"conf": "alta"
 },
 "292": {
 "m": "Bloque II - Tema 11 - Edificaciones I",
@@ -1997,179 +2051,249 @@
 "conf": "alta"
 },
 "294": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+2
+],
+"conf": "alta"
 },
 "295": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+3
+],
+"conf": "alta"
 },
 "296": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+3
+],
+"conf": "alta"
 },
 "297": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+3
+],
+"conf": "alta"
 },
 "298": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+4
+],
+"conf": "alta"
 },
 "299": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+4
+],
+"conf": "alta"
 },
 "300": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+4
+],
+"conf": "alta"
 },
 "301": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+5
+],
+"conf": "alta"
 },
 "303": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+6
+],
+"conf": "alta"
 },
 "304": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+7
+],
+"conf": "alta"
 },
 "305": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+8
+],
+"conf": "alta"
 },
 "306": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+8
+],
+"conf": "alta"
 },
 "307": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+8
+],
+"conf": "media"
 },
 "308": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+12
+],
+"conf": "alta"
 },
 "309": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+9
+],
+"conf": "media"
 },
 "310": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+11
+],
+"conf": "alta"
 },
 "311": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+12
+],
+"conf": "alta"
 },
 "312": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+13
+],
+"conf": "alta"
 },
 "313": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+14
+],
+"conf": "media"
 },
 "314": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+15
+],
+"conf": "alta"
 },
 "315": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+15
+],
+"conf": "media"
 },
 "316": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+17
+],
+"conf": "alta"
 },
 "318": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+18
+],
+"conf": "alta"
 },
 "319": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+19
+],
+"conf": "alta"
 },
 "320": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Equipos de protección individual de las vías respiratorias",
+"p": [
+4
+],
+"conf": "media"
 },
 "321": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+20
+],
+"conf": "alta"
 },
 "322": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+20
+],
+"conf": "alta"
 },
 "323": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+20
+],
+"conf": "alta"
 },
 "324": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+21
+],
+"conf": "alta"
 },
 "325": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+22
+],
+"conf": "alta"
 },
 "326": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+24
+],
+"conf": "alta"
 },
 "327": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+24
+],
+"conf": "alta"
 },
 "328": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+24
+],
+"conf": "alta"
 },
 "329": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+25
+],
+"conf": "alta"
 },
 "330": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+25
+],
+"conf": "alta"
 },
 "331": {
 "m": "Bloque II - Tema 05 - Incendios de vegetación",
@@ -2641,293 +2765,301 @@
 "conf": "alta"
 },
 "398": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "399": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "400": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "401": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "402": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "403": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "404": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "405": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 3
 ],
 "conf": "alta"
 },
 "406": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 3
 ],
 "conf": "alta"
 },
 "407": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 3
 ],
 "conf": "alta"
 },
 "408": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
 "conf": "alta"
 },
 "409": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
 "conf": "alta"
 },
 "410": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
 "conf": "alta"
 },
 "411": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
 "conf": "alta"
 },
 "412": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
 "conf": "alta"
 },
 "413": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
 "conf": "alta"
 },
 "414": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
 "conf": "alta"
 },
 "415": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 5
 ],
 "conf": "alta"
 },
 "416": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 5
 ],
 "conf": "alta"
 },
 "417": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 5
 ],
 "conf": "alta"
 },
 "418": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 5
 ],
 "conf": "alta"
 },
 "419": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 6
 ],
 "conf": "alta"
 },
 "420": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 6
 ],
 "conf": "alta"
 },
 "421": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 6
 ],
 "conf": "alta"
 },
 "422": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 7
 ],
 "conf": "alta"
 },
 "423": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 7
 ],
 "conf": "alta"
 },
 "424": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 7
 ],
 "conf": "alta"
 },
 "425": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 7
 ],
 "conf": "alta"
 },
 "426": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 8
 ],
 "conf": "alta"
 },
 "427": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 8
 ],
 "conf": "alta"
 },
 "428": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 8
 ],
 "conf": "alta"
 },
 "429": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
+"p": [
+10
+],
+"conf": "alta"
 },
 "430": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
+"p": [
+10
+],
+"conf": "alta"
 },
 "431": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
+"p": [
+10
+],
+"conf": "alta"
 },
 "432": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
+"p": [
+10
+],
+"conf": "alta"
 },
 "433": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "434": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "435": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 2
 ],
 "conf": "alta"
 },
 "436": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
 "conf": "alta"
 },
 "437": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 6
 ],
 "conf": "alta"
 },
 "438": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 6
 ],
 "conf": "alta"
 },
 "439": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 7
 ],
 "conf": "media"
 },
 "440": {
-"m": "Bloque I - Tema 01 - La Constitución Española de 1978",
+"m": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
 "p": [
 4
 ],
@@ -3165,149 +3297,207 @@
 "conf": "alta"
 },
 "474": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+20
+],
+"conf": "media"
 },
 "475": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+21
+],
+"conf": "alta"
 },
 "476": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+21
+],
+"conf": "alta"
 },
 "477": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+22
+],
+"conf": "media"
 },
 "478": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+22
+],
+"conf": "alta"
 },
 "479": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+23
+],
+"conf": "alta"
 },
 "480": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+23
+],
+"conf": "alta"
 },
 "481": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+23
+],
+"conf": "alta"
 },
 "482": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+24
+],
+"conf": "alta"
 },
 "483": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+24
+],
+"conf": "media"
 },
 "484": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+25
+],
+"conf": "alta"
 },
 "485": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+25
+],
+"conf": "alta"
 },
 "486": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+25
+],
+"conf": "alta"
 },
 "487": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+26
+],
+"conf": "alta"
 },
 "488": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+26
+],
+"conf": "alta"
 },
 "489": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+26
+],
+"conf": "alta"
 },
 "490": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+27
+],
+"conf": "alta"
 },
 "491": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+26
+],
+"conf": "alta"
 },
 "492": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+27
+],
+"conf": "alta"
 },
 "493": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+28
+],
+"conf": "alta"
 },
 "494": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+28
+],
+"conf": "alta"
 },
 "495": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+28
+],
+"conf": "alta"
 },
 "496": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+28
+],
+"conf": "alta"
 },
 "497": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+28
+],
+"conf": "media"
 },
 "498": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+29
+],
+"conf": "alta"
 },
 "499": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+29
+],
+"conf": "alta"
 },
 "500": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+29
+],
+"conf": "alta"
 },
 "501": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+29
+],
+"conf": "alta"
 },
 "502": {
-"m": null,
-"p": [],
-"conf": "sin manual"
+"m": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+"p": [
+29
+],
+"conf": "alta"
 },
 "503": {
 "m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
@@ -4328,7 +4518,7 @@
 "630": {
 "m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
 "p": [
-7
+24
 ],
 "conf": "media",
 "pendiente": 1
@@ -4473,6 +4663,334 @@
 "m": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
 "p": [
 24
+],
+"conf": "alta",
+"pendiente": 1
+},
+"649": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta",
+"pendiente": 1
+},
+"650": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta",
+"pendiente": 1
+},
+"651": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta",
+"pendiente": 1
+},
+"652": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta",
+"pendiente": 1
+},
+"653": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta",
+"pendiente": 1
+},
+"654": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta",
+"pendiente": 1
+},
+"655": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta",
+"pendiente": 1
+},
+"656": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"657": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"658": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"659": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"660": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"661": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"662": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"663": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"664": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"665": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"666": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"667": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"668": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"669": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"670": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"671": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"672": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"673": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"674": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"675": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"676": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"677": {
+"m": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
+"p": [
+1
+],
+"conf": "alta",
+"pendiente": 1
+},
+"678": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"679": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+2
+],
+"conf": "alta",
+"pendiente": 1
+},
+"680": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"681": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+3
+],
+"conf": "media",
+"pendiente": 1
+},
+"682": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+3
+],
+"conf": "alta",
+"pendiente": 1
+},
+"683": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+4
+],
+"conf": "media",
+"pendiente": 1
+},
+"684": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"685": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"686": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"687": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"688": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+4
+],
+"conf": "alta",
+"pendiente": 1
+},
+"689": {
+"m": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
+"p": [
+4
 ],
 "conf": "alta",
 "pendiente": 1

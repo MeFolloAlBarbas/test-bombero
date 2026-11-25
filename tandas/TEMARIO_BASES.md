@@ -6,7 +6,7 @@ Texto del Anexo III (documento público). **Solo se pregunta lo que entra en cad
 Todos están cifrados en `temario/` con el nombre «Bloque X - Tema NN - Título» (ver temario/indice.json).
 | Tema | Archivo(s) del proyecto |
 |---|---|
-| I.1 La Constitución Española de 1978 | temario: Bloque I - Tema 01 (Constitución, BOE consolidado: arts. del temario) |
+| I.1 La Constitución Española de 1978 | temario: Bloque I - Tema 01 (Constitución + Estatuto de Autonomía de la CAM) |
 | I.2 Ley 7/1985 Bases de Régimen Local | 1.2 LEY 7 1985 LEY 22 2006 |
 | I.3 RDL 2/2004 Haciendas Locales | 1.3 RD LEGISLATIVO 2 2004 |
 | I.4 y I.5 RDL 5/2015 EBEP | 1.4 - 1.5 RD LEGISLATIVO 5 2015 - LEBEP |
@@ -31,7 +31,8 @@ Todos están cifrados en `temario/` con el nombre «Bloque X - Tema NN - Título
 | II.21 Gas natural | 2.21 |
 | II.22 Agua fría consumo humano | 2.22 |
 | II.23 Seguridad en trabajos verticales (NTP INSST) | DOC-20240402-WA0036 |
-| II.24 Guía técnica INSST de EPI + EPI de vías respiratorias | 2.24 EPIS (quitado el 25/11; FALTA en temario/) · DOC-20240402-WA0034 |
+| II.24 Guía técnica INSST de EPI + EPI de vías respiratorias | temario: Bloque II - Tema 24 - Guía técnica del INSST · DOC-20240402-WA0034 |
+| (extra, fuera de las bases) Rescate en ascensores | temario: Extra - Rescate en ascensores (ya hay preguntas; no generar más salvo que lo pida el usuario) |
 | II.25 Corte térmico y soldadura | 2.25 |
 | II.26 Soporte vital básico | DOC-20240402-WA0041 |
 | II.27 Politraumatizado | DOC-20240402-WA0042 |

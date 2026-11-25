@@ -1,6 +1,6 @@
 [
  {
-  "tema": "Bloque I - Tema 01 - La Constitución Española de 1978",
+  "tema": "Bloque I - Tema 01 - La Constitución Española de 1978 y Estatuto de Autonomía de la Comunidad de Madrid",
   "paginas_pdf": 10,
   "chars": 17774
  },
@@ -125,6 +125,11 @@
   "chars": 74676
  },
  {
+  "tema": "Bloque II - Tema 24 - Guía técnica del INSST de equipos de protección individual",
+  "paginas_pdf": 30,
+  "chars": 126498
+ },
+ {
   "tema": "Bloque II - Tema 25 - Equipos de corte térmico y soldadura",
   "paginas_pdf": 24,
   "chars": 50814
@@ -178,5 +183,10 @@
   "tema": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. III",
   "paginas_pdf": 47,
   "chars": 96228
+ },
+ {
+  "tema": "Extra - Rescate en ascensores (no está en las bases)",
+  "paginas_pdf": 18,
+  "chars": 55053
  }
 ]

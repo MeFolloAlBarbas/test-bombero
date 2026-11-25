@@ -24,12 +24,12 @@ TEMAS = {
  'Técnicas de estabilización': ['Bloque II - Tema 14'], 'Accesos forzados': ['Bloque II - Tema 15'], 'Arbolado urbano': ['Bloque II - Tema 16'],
  'NRBQ': ['Bloque II - Tema 17'], 'Electricidad': ['Bloque II - Tema 18'], 'Instalaciones eléctricas': ['Bloque II - Tema 19'],
  'ACS': ['Bloque II - Tema 20'], 'Gas y GLP': ['Bloque II - Tema 21'], 'Agua fría': ['Bloque II - Tema 22'],
- 'EPI': ['Bloque II - Tema 24'], 'Corte y soldadura': ['Bloque II - Tema 25'], 'Sanitario (SVB)': ['Bloque II - Tema 26'],
+ 'EPI': ['Bloque II - Tema 24'], 'Estatuto CAM': ['Bloque I - Tema 01'], 'Ascensores': ['Extra - Rescate en ascensores'], 'Corte y soldadura': ['Bloque II - Tema 25'], 'Sanitario (SVB)': ['Bloque II - Tema 26'],
  'Atención sanitaria': ['Bloque II - Tema 27', 'Bloque II - Tema 26', 'Bloque II - Tema 28'],
  'Patología cardiovascular': ['Bloque II - Tema 28'], 'Síntomas clínicos': ['Bloque II - Tema 28'],
  'Reglamento Bomberos': ['Bloque II - Tema 29 - Reglamento'], 'Protección civil': ['Bloque II - Tema 29 - Ley 17'],
  'CTE DB-SI': ['Bloque II - Tema 30', 'Bloque II - Tema 31'], 'Vehículos': ['Bloque II - Tema 32'],
- # Sin manual del temario (no están en las bases o no se han subido): Ascensores, Estatuto CAM, y parte de EPI (guía INSST)
+ # Ascensores no está en las bases: su manual va como «Extra»
 }
 VACIAS = set('''a al algo ante como con contra cual cuando de del desde donde el ella en entre es esa ese esta este
 esto fue ha han hasta hay la las le les lo los mas muy no o otra otro para pero por que quien se segun ser si sin
@@ -60,8 +60,6 @@ def preguntas():
     return Q
 
 def localizar(q, man, df, npag):
-    if 'guía técnica' in (q.get('f') or '').lower() or 'rd 773' in (q.get('f') or '').lower():
-        return None  # Guía técnica del INSST de EPI: aún no está en temario/
     cands = [m for m in man for pre in TEMAS.get(q['t'], []) if m.startswith(pre)]
     if not cands: return None
     clave = toks(q['o'][q['c']]) * 3 + toks(q.get('que', '')) * 2 + toks(q.get('porque', '')) + toks(q.get('rec', '')) + toks(q['q'])
