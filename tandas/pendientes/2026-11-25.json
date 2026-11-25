@@ -1,0 +1,36 @@
+{
+ "preguntas": [
+  {
+   "id": 503,
+   "t": "ACS",
+   "d": "difícil",
+   "q": "Un motor mueve directamente un compresor, sin generador eléctrico, y el calor de sus gases se aprovecha para calentar el ACS. Según la UNE EN ISO 52000-1:2019, ¿es cogeneración?",
+   "o": [
+    "No: la cogeneración siempre tiene que producir electricidad.",
+    "No: la energía mecánica no cuenta, solo la térmica y la eléctrica.",
+    "Sí: produce a la vez energía térmica y mecánica en el mismo proceso."
+   ],
+   "c": 2,
+   "o4": "Solo si el motor funciona con biomasa.",
+   "que": "La UNE EN ISO 52000-1:2019 define la <mark>cogeneración</mark> como la generación simultánea, en el <mark>mismo proceso</mark>, de energía térmica y eléctrica <mark>y/o</mark> energía mecánica.",
+   "porque": "Ese «y/o» significa que siempre hay <mark>calor</mark> y, además, <mark>electricidad, energía mecánica o las dos</mark>. Aquí hay calor aprovechado y movimiento que acciona el compresor: es cogeneración aunque <mark>no haya electricidad</mark>.",
+   "ojo": "La tentación es pensar que cogeneración es solo «calor + electricidad», el caso más habitual. Y que sea <mark>renovable</mark> o no (biomasa sí, gasóleo no) es otra cuestión: no cambia que sea cogeneración.",
+   "rec": "Cogeneración = <mark>calor + (electricidad y/o movimiento)</mark>, de un mismo proceso.",
+   "f": "Manual de ACS (Ayto. Madrid), p. 14 (UNE EN ISO 52000-1:2019)",
+   "tq": "¿Calor + energía mecánica sin electricidad es cogeneración?",
+   "ta": "Sí: calor + electricidad y/o energía mecánica."
+  }
+ ],
+ "glosario": [
+  {
+   "t": "Cogeneración",
+   "a": [
+    "cogeneración"
+   ],
+   "d": "Generación simultánea, en el mismo proceso, de energía térmica y eléctrica y/o mecánica (UNE EN ISO 52000-1:2019).",
+   "tema": "ACS",
+   "f": "Manual de ACS, p. 14",
+   "solo": 1
+  }
+ ]
+}
