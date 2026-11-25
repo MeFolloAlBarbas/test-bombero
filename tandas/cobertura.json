@@ -27,9 +27,9 @@
   },
   "1.6. LEY 39 2015 - PROCEDIMIENTO ADMINISTRATIVO COM N DE LAS AAPP.pdf": {
    "tema": "Procedimiento administrativo",
-   "hechas": "",
+   "hechas": "2-4",
    "total": null,
-   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+   "nota": "Hechas p. 2-4 (arts. 1-5; lote 2026-11-25, tarea 5). Sin preguntar aún de esas páginas: universidades públicas (2.2.c), asociaciones con intereses colectivos (4.2), habilitación para transacciones electrónicas (5.7). Siguiente: p. 5 (art. 13). Antes de los lotes ya había preguntas de arts. 3, 21, 24, 56, 77, 80, 82, 83, 102-104: comprobar."
   },
   "1.8. LEY 31 1995 - PRL.pdf": {
    "tema": "PRL",
@@ -141,9 +141,9 @@
   },
   "2.29 SNPC quitar el final.pdf": {
    "tema": "Protección civil",
-   "hechas": "",
-   "total": null,
-   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+   "hechas": "1-4",
+   "total": 4,
+   "nota": "TERMINADO (2026-11-25): el PDF solo trae el Título I (arts. 1-7 quáter) y todos sus datos están preguntados (lote 2026-11-25, tarea 5, más las preguntas anteriores del banco). El usuario puede quitarlo del proyecto."
   },
   "DOC-20240402-WA0021. 1.pdf": {
    "tema": "Incendios de vegetación",

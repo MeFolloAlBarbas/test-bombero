@@ -3000,6 +3000,833 @@
    "tq": "Vehículos con lanza térmica",
    "ta": "Salvamento y Desescombro (y su contenedor).",
    "ex": 1
+  },
+  {
+   "id": 649,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 2 de la Ley 17/2015, la situación en la que personas y bienes están expuestos en mayor o menor medida a un peligro inminente o latente se denomina:",
+   "o": [
+    "Vulnerabilidad.",
+    "Riesgo.",
+    "Amenaza."
+   ],
+   "c": 2,
+   "o4": "Emergencia ordinaria.",
+   "que": "La <mark>amenaza</mark> es estar <mark>expuesto</mark> a un peligro <mark>inminente o latente</mark>.",
+   "porque": "Describe la exposición: hay un peligro cerca y las personas o bienes están a su alcance.",
+   "ojo": "No confundir con el riesgo, que es la posibilidad de que esa amenaza llegue a afectar.",
+   "rec": "Amenaza = <mark>estar expuesto</mark>; riesgo = <mark>que llegue a pasar</mark>.",
+   "f": "Ley 17/2015, art. 2",
+   "tq": "Amenaza (Ley 17/2015)",
+   "ta": "Exposición a un peligro inminente o latente."
+  },
+  {
+   "id": 650,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 2 de la Ley 17/2015, ¿qué son los servicios esenciales?",
+   "o": [
+    "Los que una comunidad no puede atender con sus propios medios en una catástrofe.",
+    "Los necesarios para mantener las funciones sociales básicas, la salud, la seguridad y el bienestar.",
+    "Los que prestan los cuerpos de bomberos y la policía durante una emergencia."
+   ],
+   "c": 1,
+   "o4": "Los que el Estado declara prioritarios en el estado de alarma.",
+   "que": "Son los servicios <mark>necesarios</mark> para las <mark>funciones sociales básicas</mark>, la salud, la seguridad, el bienestar social y económico y el funcionamiento de las instituciones.",
+   "porque": "Su interrupción paraliza la vida normal; por eso la recuperación tras una emergencia busca restablecerlos.",
+   "ojo": "La definición no se limita a los servicios de emergencia: incluye también el funcionamiento de las Administraciones.",
+   "rec": "Esenciales = <mark>los que mantienen la vida normal</mark> en marcha.",
+   "f": "Ley 17/2015, art. 2",
+   "tq": "Servicios esenciales",
+   "ta": "Los necesarios para las funciones sociales básicas, salud, seguridad y bienestar."
+  },
+  {
+   "id": 651,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Además de crear el Sistema Nacional de Protección Civil, la Ley 17/2015 regula las competencias en la materia de:",
+   "o": [
+    "Las Entidades Locales.",
+    "Las Comunidades Autónomas.",
+    "La Administración General del Estado."
+   ],
+   "c": 2,
+   "o4": "Las entidades de voluntariado.",
+   "que": "El objeto de la ley es establecer el Sistema Nacional y regular las competencias de la <mark>Administración General del Estado</mark>.",
+   "porque": "Es una ley estatal: fija lo que hace el Estado y coordina a todos; cada comunidad autónoma regula las suyas en sus propias leyes.",
+   "ojo": "El Sistema integra a todas las Administraciones, pero la ley solo regula las competencias del Estado.",
+   "rec": "Ley estatal → <mark>competencias del Estado</mark>.",
+   "f": "Ley 17/2015, art. 1",
+   "tq": "¿Qué competencias regula la Ley 17/2015?",
+   "ta": "Las de la Administración General del Estado."
+  },
+  {
+   "id": 652,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 1 de la Ley 17/2015, el Sistema Nacional de Protección Civil es el instrumento esencial para asegurar, en las políticas públicas de protección civil:",
+   "o": [
+    "La centralización, la rapidez y la gratuidad.",
+    "La autonomía, la eficiencia y la jerarquía.",
+    "La coordinación, la cohesión y la eficacia."
+   ],
+   "c": 2,
+   "o4": "La prevención, la respuesta y la recuperación.",
+   "que": "El Sistema sirve para asegurar la <mark>coordinación, la cohesión y la eficacia</mark> de las políticas de protección civil.",
+   "porque": "Muchas Administraciones actúan a la vez; el Sistema existe para que lo hagan de forma coordinada y eficaz.",
+   "ojo": "La prevención, respuesta y recuperación son actuaciones del Sistema, no los fines de este artículo.",
+   "rec": "Tres «C/E»: <mark>Coordinación, Cohesión y Eficacia</mark>.",
+   "f": "Ley 17/2015, art. 1",
+   "tq": "Fines del Sistema Nacional de PC",
+   "ta": "Coordinación, cohesión y eficacia."
+  },
+  {
+   "id": 653,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "¿Cuál de estas NO es una de las actuaciones del Sistema Nacional de Protección Civil según el art. 3 de la Ley 17/2015?",
+   "o": [
+    "Adoptar medidas de recuperación.",
+    "Prever los riesgos colectivos.",
+    "Sancionar a los responsables de las emergencias."
+   ],
+   "c": 2,
+   "o4": "Planificar los medios y medidas necesarios.",
+   "que": "Las actuaciones son: <mark>prever, planificar, intervenir, recuperar y coordinar/evaluar</mark>.",
+   "porque": "Siguen el ciclo de una emergencia: antes, durante y después, más el seguimiento del propio Sistema.",
+   "ojo": "Sancionar no aparece entre las actuaciones del Sistema.",
+   "rec": "<mark>Prever → Planificar → Intervenir → Recuperar → Evaluar</mark>.",
+   "f": "Ley 17/2015, art. 3",
+   "tq": "¿Cuáles son las actuaciones del SNPC?",
+   "ta": "Prever, planificar, intervenir, recuperar y coordinar/evaluar."
+  },
+  {
+   "id": 654,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 3 de la Ley 17/2015, conocer anticipadamente los riesgos colectivos y evitar que se produzcan o reducir sus daños es la actuación de:",
+   "o": [
+    "Prever.",
+    "Planificar.",
+    "Recuperar."
+   ],
+   "c": 0,
+   "o4": "Intervenir.",
+   "que": "<mark>Prever</mark> es conocer los riesgos <mark>de antemano</mark> para evitarlos o reducir los daños.",
+   "porque": "Es la fase previa a todo: si se conoce el riesgo, se puede evitar o preparar.",
+   "ojo": "Planificar es organizar los medios y medidas para afrontarlo, que viene después.",
+   "rec": "<mark>Prever = ver antes</mark>.",
+   "f": "Ley 17/2015, art. 3",
+   "tq": "Actuación de prever (SNPC)",
+   "ta": "Conocer los riesgos antes para evitarlos o reducir daños."
+  },
+  {
+   "id": 655,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 3 de la Ley 17/2015, restablecer las infraestructuras y los servicios esenciales y paliar los daños de una emergencia corresponde a:",
+   "o": [
+    "La planificación.",
+    "La intervención operativa.",
+    "Las medidas de recuperación."
+   ],
+   "c": 2,
+   "o4": "La coordinación y evaluación.",
+   "que": "Las <mark>medidas de recuperación</mark> sirven para <mark>restablecer</mark> infraestructuras y servicios esenciales y paliar daños.",
+   "porque": "Es lo que se hace después de la emergencia, para volver a la normalidad.",
+   "ojo": "La intervención operativa es la respuesta inmediata durante la emergencia.",
+   "rec": "<mark>Recuperar = volver a la normalidad</mark>.",
+   "f": "Ley 17/2015, art. 3",
+   "tq": "¿Qué busca la recuperación (SNPC)?",
+   "ta": "Restablecer infraestructuras y servicios esenciales."
+  },
+  {
+   "id": 656,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "La Ley 17/2015 enumera los principios que rigen el Sistema Nacional de Protección Civil. ¿Cuál de ellos se ha inventado?",
+   "o": [
+    "Subsidiariedad.",
+    "Jerarquía.",
+    "Solidaridad interterritorial."
+   ],
+   "c": 1,
+   "o4": "Accesibilidad universal.",
+   "que": "Los principios son: colaboración, cooperación, coordinación, solidaridad interterritorial, subsidiariedad, eficiencia, participación, inclusión y accesibilidad universal. La <mark>jerarquía no está</mark>.",
+   "porque": "El Sistema une a Administraciones con competencias propias: se basa en colaborar y coordinarse, no en mandar unas sobre otras.",
+   "ojo": "Coordinación sí es principio; jerarquía, no.",
+   "rec": "Principios de <mark>trabajar juntos</mark>, no de mandar.",
+   "f": "Ley 17/2015, art. 3",
+   "tq": "¿Es la jerarquía principio del SNPC?",
+   "ta": "No."
+  },
+  {
+   "id": 657,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 4 de la Ley 17/2015, ¿qué órgano aprueba las líneas básicas de la Estrategia del Sistema Nacional de Protección Civil?",
+   "o": [
+    "La Conferencia de Presidentes.",
+    "El Consejo de Ministros.",
+    "El Consejo Nacional de Protección Civil."
+   ],
+   "c": 2,
+   "o4": "El Ministerio de Defensa.",
+   "que": "Las <mark>líneas básicas</mark> de la Estrategia del Sistema las aprueba el <mark>Consejo Nacional de Protección Civil</mark>.",
+   "porque": "También aprueba las directrices para su implantación, seguimiento y evaluación periódica.",
+   "ojo": "No confundir con la Estrategia Nacional de la Administración General del Estado, que aprueba otro órgano.",
+   "rec": "Estrategia <mark>del Sistema</mark> → Consejo <mark>Nacional de PC</mark>.",
+   "f": "Ley 17/2015, art. 4",
+   "tq": "¿Quién aprueba las líneas básicas de la Estrategia del SNPC?",
+   "ta": "El Consejo Nacional de Protección Civil."
+  },
+  {
+   "id": 658,
+   "t": "Protección civil",
+   "d": "difícil",
+   "q": "Según el art. 4 de la Ley 17/2015, la Estrategia Nacional de Protección Civil, que alinea las actuaciones de la Administración General del Estado, la aprueba:",
+   "o": [
+    "El Consejo Nacional de Protección Civil, a propuesta del Ministro del Interior.",
+    "El Consejo de Seguridad Nacional, a propuesta del Ministro del Interior.",
+    "El Consejo de Ministros, a propuesta del Consejo Nacional de Protección Civil."
+   ],
+   "c": 1,
+   "o4": "El Ministro del Interior, a propuesta del Consejo de Seguridad Nacional.",
+   "que": "La <mark>Estrategia Nacional</mark> (la del Estado) la aprueba el <mark>Consejo de Seguridad Nacional</mark>, a propuesta del <mark>Ministro del Interior</mark>.",
+   "porque": "La protección civil es parte de la seguridad pública, y la estrategia del Estado se encaja en la Seguridad Nacional.",
+   "ojo": "La tentadora es el Consejo Nacional de Protección Civil: ese aprueba las líneas básicas de la Estrategia del Sistema, no la Estrategia Nacional.",
+   "rec": "Estrategia <mark>Nacional</mark> → <mark>Seguridad Nacional</mark>; la propone Interior.",
+   "f": "Ley 17/2015, art. 4",
+   "tq": "¿Quién aprueba la Estrategia Nacional de PC?",
+   "ta": "El Consejo de Seguridad Nacional, a propuesta de Interior."
+  },
+  {
+   "id": 659,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 4 de la Ley 17/2015, para implementar la Estrategia del Sistema Nacional de Protección Civil podrán establecerse:",
+   "o": [
+    "Planes quinquenales o programas autonómicos.",
+    "Planes de actuación anuales o programas sectoriales.",
+    "Reglamentos de urgencia o bandos municipales."
+   ],
+   "c": 1,
+   "o4": "Convenios con entidades de voluntariado.",
+   "que": "La Estrategia puede desarrollarse con <mark>planes de actuación anuales</mark> o <mark>programas sectoriales</mark>.",
+   "porque": "Así se concreta año a año o por sectores lo que la Estrategia fija a largo plazo.",
+   "ojo": "Los planes son anuales, aunque la Estrategia se revise cada más tiempo.",
+   "rec": "Estrategia → <mark>planes anuales o por sectores</mark>.",
+   "f": "Ley 17/2015, art. 4",
+   "tq": "¿Cómo se implementa la Estrategia del SNPC?",
+   "ta": "Con planes anuales o programas sectoriales."
+  },
+  {
+   "id": 660,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 5 de la Ley 17/2015, ¿quién tiene derecho a ser atendido por las Administraciones públicas en caso de catástrofe?",
+   "o": [
+    "Solo los empadronados en el municipio afectado.",
+    "Solo los ciudadanos de nacionalidad española.",
+    "Todos los residentes en el territorio español."
+   ],
+   "c": 2,
+   "o4": "Solo quienes tengan un seguro que lo cubra.",
+   "que": "El derecho es de <mark>todos los residentes</mark> en el territorio español.",
+   "porque": "No depende de la nacionalidad ni del municipio: basta con residir en España.",
+   "ojo": "No dice «españoles», dice «residentes».",
+   "rec": "Catástrofe: <mark>atención para todo residente</mark>.",
+   "f": "Ley 17/2015, art. 5",
+   "tq": "¿Quién tiene derecho a atención en catástrofe?",
+   "ta": "Todos los residentes en España."
+  },
+  {
+   "id": 661,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "En una catástrofe, la atención a los afectados no llega a todos a la vez. ¿Qué límites admite la Ley 17/2015 a ese derecho?",
+   "o": [
+    "Las condiciones peligrosas de la situación y la disponibilidad de medios.",
+    "El presupuesto anual del servicio de emergencias.",
+    "La nacionalidad y la edad del afectado."
+   ],
+   "c": 0,
+   "o4": "La previa declaración de zona catastrófica.",
+   "que": "Las únicas limitaciones son las <mark>condiciones peligrosas inherentes</mark> a la catástrofe y la <mark>disponibilidad de medios</mark> y recursos.",
+   "porque": "No se puede exigir lo imposible: si entrar es demasiado peligroso o no hay medios, la atención se ve limitada.",
+   "ojo": "No hace falta ninguna declaración previa para tener el derecho.",
+   "rec": "Límites: <mark>el peligro y los medios</mark>.",
+   "f": "Ley 17/2015, art. 5",
+   "tq": "Límites al derecho de atención en catástrofe",
+   "ta": "El peligro de la situación y los medios disponibles."
+  },
+  {
+   "id": 662,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 5 de la Ley 17/2015, los poderes públicos velarán por que la atención de los ciudadanos en caso de catástrofe sea:",
+   "o": [
+    "Prioritaria en las capitales de provincia.",
+    "Proporcional a la población de cada comunidad.",
+    "Equivalente, cualquiera que sea el lugar de residencia."
+   ],
+   "c": 2,
+   "o4": "Gratuita solo para quienes no tengan recursos.",
+   "que": "La atención debe ser <mark>equivalente</mark> en cualquier lugar de residencia.",
+   "porque": "Es una aplicación de la igualdad de derechos de todos los españoles en cualquier parte del territorio.",
+   "ojo": "No hay prioridad por tamaño de población ni por capitales.",
+   "rec": "Vivas donde vivas, <mark>la misma atención</mark>.",
+   "f": "Ley 17/2015, art. 5",
+   "tq": "¿Cómo debe ser la atención en catástrofe según el lugar?",
+   "ta": "Equivalente en cualquier lugar de residencia."
+  },
+  {
+   "id": 663,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 5 de la Ley 17/2015, en caso de emergencia los servicios públicos competentes deben:",
+   "o": [
+    "Identificar lo antes posible a las víctimas e informar a sus familiares.",
+    "Esperar a la autorización judicial para informar a los familiares.",
+    "Publicar la lista de víctimas en el boletín oficial."
+   ],
+   "c": 0,
+   "o4": "Informar a los familiares solo cuando acabe la emergencia.",
+   "que": "Deben <mark>identificar lo más rápidamente posible</mark> a las víctimas y dar <mark>información precisa a sus familiares</mark> o allegados.",
+   "porque": "La incertidumbre de las familias es parte del daño de una catástrofe.",
+   "ojo": "No hay que esperar al final de la emergencia: debe hacerse lo antes posible.",
+   "rec": "Víctimas: <mark>identificar rápido e informar a la familia</mark>.",
+   "f": "Ley 17/2015, art. 5",
+   "tq": "¿Qué deben hacer los servicios con las víctimas?",
+   "ta": "Identificarlas rápido e informar a sus familiares."
+  },
+  {
+   "id": 664,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 6 de la Ley 17/2015, todos tienen derecho a ser informados por los poderes públicos acerca de:",
+   "o": [
+    "Los riesgos colectivos importantes que les afecten y cómo prevenirlos.",
+    "Cualquier riesgo individual de su vivienda.",
+    "Los planes de intervención internos de los bomberos."
+   ],
+   "c": 0,
+   "o4": "Las sanciones impuestas a las empresas de riesgo.",
+   "que": "El derecho cubre los <mark>riesgos colectivos importantes</mark>, las medidas previstas y adoptadas y las <mark>conductas</mark> que deben seguir para prevenirlos.",
+   "porque": "La protección civil trata riesgos que afectan a colectivos, no los riesgos privados de cada uno.",
+   "ojo": "Riesgos colectivos, no individuales.",
+   "rec": "Información: <mark>riesgo, medidas y qué hacer yo</mark>.",
+   "f": "Ley 17/2015, art. 6",
+   "tq": "¿Sobre qué hay derecho a ser informado (Ley 17/2015)?",
+   "ta": "Riesgos colectivos, medidas y conductas a seguir."
+  },
+  {
+   "id": 665,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 7 de la Ley 17/2015, ¿cómo pueden participar los ciudadanos en la elaboración de las normas y planes de protección civil?",
+   "o": [
+    "Solo mediante el voto en un referéndum local.",
+    "Solo a través de los partidos políticos.",
+    "Directamente o a través de entidades representativas de sus intereses."
+   ],
+   "c": 2,
+   "o4": "Solo si están inscritos como voluntarios.",
+   "que": "Los ciudadanos pueden participar <mark>directamente</mark> o mediante <mark>entidades representativas</mark> de sus intereses.",
+   "porque": "Las normas y planes les afectan, así que la ley les reconoce el derecho a participar en ellos.",
+   "ojo": "No hace falta ser voluntario: el voluntariado es una vía para participar en las tareas, no en las normas.",
+   "rec": "Participar: <mark>por uno mismo o por una entidad</mark>.",
+   "f": "Ley 17/2015, art. 7",
+   "tq": "¿Cómo participan los ciudadanos en los planes de PC?",
+   "ta": "Directamente o por entidades representativas."
+  },
+  {
+   "id": 666,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 7 bis de la Ley 17/2015, ¿quiénes están sujetos al deber de colaborar en la protección civil cuando lo requiera la autoridad?",
+   "o": [
+    "Los ciudadanos y las personas jurídicas.",
+    "Solo los funcionarios de las Administraciones.",
+    "Solo las empresas que generan riesgo."
+   ],
+   "c": 0,
+   "o4": "Solo los voluntarios inscritos.",
+   "que": "El deber alcanza a los <mark>ciudadanos</mark> y a las <mark>personas jurídicas</mark>, que colaboran <mark>personal o materialmente</mark>.",
+   "porque": "En una emergencia pueden hacer falta personas y medios de cualquiera.",
+   "ojo": "Hace falta el requerimiento de la autoridad competente: no es una obligación espontánea.",
+   "rec": "Deber de colaborar: <mark>personas y empresas</mark>, si la autoridad lo pide.",
+   "f": "Ley 17/2015, art. 7 bis",
+   "tq": "¿Quién tiene deber de colaborar en PC?",
+   "ta": "Ciudadanos y personas jurídicas, si la autoridad lo requiere."
+  },
+  {
+   "id": 667,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Durante una emergencia, la autoridad de protección civil exige ayuda personal a un grupo de vecinos, entre ellos un chico de 16 años. Según el art. 7 bis de la Ley 17/2015:",
+   "o": [
+    "El chico no está obligado: la obligación es a partir de la mayoría de edad.",
+    "El chico está obligado si sus padres lo autorizan por escrito.",
+    "Todos están obligados, sea cual sea su edad."
+   ],
+   "c": 0,
+   "o4": "Solo están obligados los mayores de 21 años.",
+   "que": "Las <mark>prestaciones personales</mark> obligan a cualquier persona <mark>a partir de la mayoría de edad</mark>.",
+   "porque": "Se protege a los menores: no se les puede imponer una prestación personal en una emergencia.",
+   "ojo": "La edad es la mayoría de edad (18 años), no otra.",
+   "rec": "Prestación personal: <mark>solo mayores de edad</mark>.",
+   "f": "Ley 17/2015, art. 7 bis",
+   "tq": "¿Desde qué edad obliga la prestación personal en PC?",
+   "ta": "Desde la mayoría de edad.",
+   "int": 1
+  },
+  {
+   "id": 668,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "¿Cuál de estas medidas NO prevé el art. 7 bis de la Ley 17/2015 cuando la emergencia lo haga necesario?",
+   "o": [
+    "La suspensión de actividades.",
+    "La requisa temporal de bienes.",
+    "La expropiación definitiva de bienes."
+   ],
+   "c": 2,
+   "o4": "La ocupación transitoria de bienes.",
+   "que": "La ley permite la <mark>requisa temporal</mark>, la <mark>intervención u ocupación transitoria</mark> de bienes y la <mark>suspensión de actividades</mark>. Nada definitivo.",
+   "porque": "Son medidas para salir de la emergencia: duran lo que dura la necesidad.",
+   "ojo": "Todas las medidas son temporales o transitorias: la definitiva es la trampa.",
+   "rec": "Medidas de emergencia: <mark>temporales, nunca definitivas</mark>.",
+   "f": "Ley 17/2015, art. 7 bis",
+   "tq": "¿Puede la autoridad de PC expropiar definitivamente?",
+   "ta": "No: requisa temporal, ocupación transitoria o suspensión."
+  },
+  {
+   "id": 669,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 7 bis de la Ley 17/2015, las medidas restrictivas de derechos y las que imponen prestaciones personales o materiales:",
+   "o": [
+    "Duran como máximo quince días, prorrogables una vez.",
+    "Se mantienen hasta que el Gobierno declare el estado de alarma.",
+    "Duran solo el tiempo estrictamente necesario y deben ser adecuadas a la emergencia."
+   ],
+   "c": 2,
+   "o4": "Duran hasta que se apruebe el plan de recuperación.",
+   "que": "Tienen una <mark>vigencia limitada al tiempo estrictamente necesario</mark> y deben ser <mark>adecuadas</mark> a la entidad de la emergencia.",
+   "porque": "Restringen derechos, así que solo se justifican mientras dure la necesidad y en su justa medida.",
+   "ojo": "La ley no fija un número de días: el límite es la necesidad.",
+   "rec": "Sin plazo fijo: <mark>lo estrictamente necesario</mark>.",
+   "f": "Ley 17/2015, art. 7 bis",
+   "tq": "¿Cuánto duran las medidas restrictivas de PC?",
+   "ta": "El tiempo estrictamente necesario."
+  },
+  {
+   "id": 670,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 7 bis de la Ley 17/2015, los servicios de vigilancia y protección frente a riesgos de las empresas públicas o privadas se consideran:",
+   "o": [
+    "Colaboradores en la protección civil a todos los efectos.",
+    "Parte del voluntariado de protección civil.",
+    "Servicios privados sin relación con la protección civil."
+   ],
+   "c": 0,
+   "o4": "Agentes de la autoridad durante la emergencia.",
+   "que": "Se consideran, a todos los efectos, <mark>colaboradores en la protección civil</mark>.",
+   "porque": "Por eso se les pueden asignar cometidos en los planes y la autoridad puede requerirles en emergencias.",
+   "ojo": "No son voluntariado: son servicios de las propias empresas.",
+   "rec": "Seguridad de empresa = <mark>colaborador de PC</mark>.",
+   "f": "Ley 17/2015, art. 7 bis",
+   "tq": "¿Qué son los servicios de seguridad de las empresas para la PC?",
+   "ta": "Colaboradores en la protección civil."
+  },
+  {
+   "id": 671,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Una industria química puede originar emergencias en su entorno. Según el art. 7 bis de la Ley 17/2015, la instalación y el mantenimiento de las señales de alarma a la población de la zona corren a cargo de:",
+   "o": [
+    "La comunidad autónoma.",
+    "El ayuntamiento del municipio.",
+    "El titular de la industria."
+   ],
+   "c": 2,
+   "o4": "Los vecinos afectados, a partes iguales.",
+   "que": "El titular del centro debe hacer <mark>a su cargo</mark> la instalación y el mantenimiento de los <mark>sistemas de alarma a la población</mark>.",
+   "porque": "Quien genera el riesgo paga los medios para avisar a quienes podrían sufrirlo.",
+   "ojo": "No lo paga la Administración: es una obligación del titular de la actividad.",
+   "rec": "<mark>Quien genera el riesgo, paga la alarma</mark>.",
+   "f": "Ley 17/2015, art. 7 bis",
+   "tq": "¿Quién paga las alarmas a la población de una industria de riesgo?",
+   "ta": "El titular de la industria.",
+   "int": 1
+  },
+  {
+   "id": 672,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 7 bis de la Ley 17/2015, los medios de comunicación están obligados a colaborar con las autoridades en la difusión de informaciones preventivas y operativas:",
+   "o": [
+    "A cambio de una compensación fijada por ley.",
+    "Solo si son de titularidad pública.",
+    "De manera gratuita."
+   ],
+   "c": 2,
+   "o4": "Solo si se declara el estado de alarma.",
+   "que": "Los medios de comunicación deben colaborar <mark>de manera gratuita</mark> en la difusión.",
+   "porque": "En una emergencia, que la información llegue rápido a todos salva vidas y no puede depender de un pago.",
+   "ojo": "La obligación alcanza a todos los medios, públicos y privados.",
+   "rec": "Medios: <mark>difunden gratis</mark>.",
+   "f": "Ley 17/2015, art. 7 bis",
+   "tq": "¿Cobran los medios por difundir avisos de PC?",
+   "ta": "No: colaboran gratis."
+  },
+  {
+   "id": 673,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Un vecino se acerca a grabar con el móvil un incendio forestal que avanza hacia su urbanización, desoyendo a los agentes. Según el art. 7 ter de la Ley 17/2015, incumple:",
+   "o": [
+    "El deber de cautela y autoprotección.",
+    "El deber de información.",
+    "El deber de participación."
+   ],
+   "c": 0,
+   "o4": "El deber de secreto.",
+   "que": "El <mark>deber de cautela y autoprotección</mark> obliga a <mark>no generar riesgos ni exponerse a ellos</mark> y, una vez sobrevenida la emergencia, a <mark>seguir las indicaciones</mark> de los agentes.",
+   "porque": "Exponerse sin necesidad pone en peligro a la persona y a quienes tendrían que rescatarla.",
+   "ojo": "No es un deber de participación ni de información: lo que incumple es no exponerse y no seguir a los agentes.",
+   "rec": "Cautela: <mark>no te expongas y haz caso</mark>.",
+   "f": "Ley 17/2015, art. 7 ter",
+   "tq": "Deber de cautela y autoprotección",
+   "ta": "No generar riesgos ni exponerse y seguir a los agentes.",
+   "int": 1
+  },
+  {
+   "id": 674,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 7 ter de la Ley 17/2015, las Administraciones competentes promoverán, entre las empresas y entidades que generen riesgo:",
+   "o": [
+    "La creación de cuerpos de bomberos privados.",
+    "La contratación obligatoria de un seguro de catástrofes.",
+    "La constitución de organizaciones de autoprotección."
+   ],
+   "c": 2,
+   "o4": "La formación de agrupaciones de voluntarios.",
+   "que": "Promueven <mark>organizaciones de autoprotección</mark> entre las empresas que generen riesgo.",
+   "porque": "Su fin es facilitar a esas empresas una adecuada información y asesoramiento.",
+   "ojo": "Las agrupaciones de voluntarios son otra cosa: el voluntariado de protección civil.",
+   "rec": "Empresas de riesgo → <mark>organizaciones de autoprotección</mark>.",
+   "f": "Ley 17/2015, art. 7 ter",
+   "tq": "¿Qué promueven las Administraciones entre empresas de riesgo?",
+   "ta": "Organizaciones de autoprotección."
+  },
+  {
+   "id": 675,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 7 quáter de la Ley 17/2015, la colaboración del voluntariado de protección civil:",
+   "o": [
+    "Supone una relación de empleo temporal con la Administración.",
+    "Se hace a título individual y da derecho a un salario mínimo.",
+    "Se hace a través de entidades de voluntariado y nunca supone relación de empleo."
+   ],
+   "c": 2,
+   "o4": "Solo es posible si se declara una catástrofe.",
+   "que": "Los voluntarios actúan <mark>a través de las entidades de voluntariado</mark> en que se integran, y su colaboración <mark>no entraña nunca relación de empleo</mark> con la Administración.",
+   "porque": "Es participación ciudadana libre, no un trabajo.",
+   "ojo": "No actúan por libre: siguen las directrices de su entidad.",
+   "rec": "Voluntario: <mark>por su entidad y sin contrato</mark>.",
+   "f": "Ley 17/2015, art. 7 quáter",
+   "tq": "¿El voluntario de PC tiene relación laboral?",
+   "ta": "No; actúa a través de su entidad de voluntariado."
+  },
+  {
+   "id": 676,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "Según el art. 7 quáter de la Ley 17/2015, ¿qué puede complementar las comunicaciones disponibles ordinariamente por los servicios de protección civil?",
+   "o": [
+    "La red de telefonía de las empresas de riesgo.",
+    "La red de comunicaciones de emergencia de radioaficionados voluntarios.",
+    "La emisora de cada ayuntamiento."
+   ],
+   "c": 1,
+   "o4": "La red de comunicaciones de las Fuerzas Armadas.",
+   "que": "La red de comunicaciones de emergencia formada por <mark>radioaficionados voluntarios</mark> puede complementar las de protección civil.",
+   "porque": "Si en una catástrofe caen las redes habituales, los radioaficionados pueden seguir comunicando.",
+   "ojo": "La ley habla de voluntarios radioaficionados, no de redes de empresas ni militares.",
+   "rec": "Si cae la red, <mark>los radioaficionados</mark>.",
+   "f": "Ley 17/2015, art. 7 quáter",
+   "tq": "¿Quién puede complementar las comunicaciones de PC?",
+   "ta": "La red de radioaficionados voluntarios."
+  },
+  {
+   "id": 677,
+   "t": "Protección civil",
+   "d": "normal",
+   "q": "El esquema muestra, en orden, las actuaciones del Sistema Nacional de Protección Civil del art. 3 de la Ley 17/2015. ¿Cuál falta en la casilla con la interrogación?",
+   "o": [
+    "Intervención operativa de respuesta inmediata.",
+    "Información a los ciudadanos.",
+    "Declaración de zona catastrófica."
+   ],
+   "c": 0,
+   "o4": "Requisa temporal de bienes.",
+   "que": "Entre planificar y recuperar va la <mark>intervención operativa de respuesta inmediata</mark> en caso de emergencia.",
+   "porque": "Es la fase de «durante»: después de preparar los medios y antes de restablecer los servicios.",
+   "ojo": "Informar a los ciudadanos es un derecho de la ley, pero no una de estas cinco actuaciones.",
+   "rec": "<mark>Prever → Planificar → Intervenir → Recuperar → Evaluar</mark>.",
+   "f": "Ley 17/2015, art. 3",
+   "tq": "Actuación entre planificar y recuperar",
+   "ta": "La intervención operativa de respuesta inmediata.",
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 300 90\" role=\"img\" aria-label=\"Cinco casillas en fila unidas por flechas: Prever, Planificar, una interrogación, Recuperar y Coordinar y evaluar\"><defs><marker id=\"fpc\" markerWidth=\"6\" markerHeight=\"6\" refX=\"5\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 z\" fill=\"#555\"/></marker></defs><g font-size=\"9\" text-anchor=\"middle\" fill=\"#222\"><rect x=\"4\" y=\"25\" width=\"50\" height=\"40\" rx=\"6\" fill=\"#cfe3f5\" stroke=\"#2b6ca3\"/><text x=\"29\" y=\"48\">Prever</text><rect x=\"64\" y=\"25\" width=\"50\" height=\"40\" rx=\"6\" fill=\"#cfe3f5\" stroke=\"#2b6ca3\"/><text x=\"89\" y=\"48\">Planificar</text><rect x=\"124\" y=\"25\" width=\"50\" height=\"40\" rx=\"6\" fill=\"#ffe3b3\" stroke=\"#c27c0e\" stroke-width=\"2\"/><text x=\"149\" y=\"52\" font-size=\"20\" font-weight=\"bold\" fill=\"#c27c0e\">?</text><rect x=\"184\" y=\"25\" width=\"50\" height=\"40\" rx=\"6\" fill=\"#cfe3f5\" stroke=\"#2b6ca3\"/><text x=\"209\" y=\"48\">Recuperar</text><rect x=\"244\" y=\"25\" width=\"52\" height=\"40\" rx=\"6\" fill=\"#cfe3f5\" stroke=\"#2b6ca3\"/><text x=\"270\" y=\"43\">Coordinar</text><text x=\"270\" y=\"55\">y evaluar</text></g><g stroke=\"#555\" stroke-width=\"1.5\" marker-end=\"url(#fpc)\"><line x1=\"54\" y1=\"45\" x2=\"62\" y2=\"45\"/><line x1=\"114\" y1=\"45\" x2=\"122\" y2=\"45\"/><line x1=\"174\" y1=\"45\" x2=\"182\" y2=\"45\"/><line x1=\"234\" y1=\"45\" x2=\"242\" y2=\"45\"/></g><text x=\"150\" y=\"84\" font-size=\"8\" text-anchor=\"middle\" fill=\"#666\">Antes · Durante · Después</text></svg>"
+  },
+  {
+   "id": 678,
+   "t": "Procedimiento administrativo",
+   "d": "normal",
+   "q": "¿Cuál de estos NO forma parte del objeto de la Ley 39/2015 según su art. 1?",
+   "o": [
+    "El régimen de los contratos del sector público.",
+    "El procedimiento sancionador.",
+    "La reclamación de responsabilidad de las Administraciones."
+   ],
+   "c": 0,
+   "o4": "Los requisitos de validez y eficacia de los actos administrativos.",
+   "que": "La ley regula la validez y eficacia de los actos, el <mark>procedimiento común</mark> (incluidos el <mark>sancionador</mark> y el de <mark>responsabilidad</mark>) y los principios de la iniciativa legislativa y la potestad reglamentaria.",
+   "porque": "Unifica en una sola ley lo que antes estaba disperso, sancionador y responsabilidad incluidos.",
+   "ojo": "Los contratos públicos tienen su propia ley.",
+   "rec": "Ley 39: <mark>actos y procedimiento, sanciones y responsabilidad incluidas</mark>.",
+   "f": "Ley 39/2015, art. 1",
+   "tq": "¿Incluye la Ley 39/2015 el procedimiento sancionador?",
+   "ta": "Sí, y el de responsabilidad patrimonial."
+  },
+  {
+   "id": 679,
+   "t": "Procedimiento administrativo",
+   "d": "difícil",
+   "q": "Un reglamento municipal quiere añadir un trámite nuevo, no previsto en la Ley 39/2015, a un procedimiento. Según su art. 1.2:",
+   "o": [
+    "Puede, siempre que el trámite sea eficaz, proporcionado y motivado.",
+    "Puede, porque los reglamentos pueden fijar especialidades del procedimiento.",
+    "No puede: los trámites adicionales solo se pueden incluir mediante ley."
+   ],
+   "c": 2,
+   "o4": "Puede, si lo aprueba el Pleno por mayoría absoluta.",
+   "que": "<mark>Solo mediante ley</mark>, y si es eficaz, proporcionado, necesario y motivado, pueden incluirse trámites adicionales o distintos.",
+   "porque": "Por reglamento solo se fijan especialidades concretas (órganos, plazos, formas de iniciación y terminación, publicación e informes), no trámites nuevos.",
+   "ojo": "La trampa: eficaz, proporcionado y motivado son requisitos, pero de una ley; un reglamento no basta aunque los cumpla.",
+   "rec": "Trámite nuevo → <mark>ley</mark>; especialidades → reglamento.",
+   "f": "Ley 39/2015, art. 1",
+   "tq": "¿Se puede añadir un trámite nuevo por reglamento?",
+   "ta": "No, solo por ley.",
+   "ex": 1
+  },
+  {
+   "id": 680,
+   "t": "Procedimiento administrativo",
+   "d": "normal",
+   "q": "Según el art. 2.1 de la Ley 39/2015, ¿cuál de estos NO forma parte del sector público al que se aplica la ley?",
+   "o": [
+    "Las Corporaciones de Derecho Público.",
+    "Las Entidades que integran la Administración Local.",
+    "El sector público institucional."
+   ],
+   "c": 0,
+   "o4": "Las Administraciones de las Comunidades Autónomas.",
+   "que": "El sector público lo forman la AGE, las CCAA, las <mark>Entidades Locales</mark> y el <mark>sector público institucional</mark>.",
+   "porque": "Las <mark>Corporaciones de Derecho Público</mark> (como los colegios profesionales) se rigen por su normativa específica y la Ley 39 solo se les aplica <mark>supletoriamente</mark>.",
+   "ojo": "Que se les aplique supletoriamente no las hace parte del sector público.",
+   "rec": "Sector público: <mark>Estado, CCAA, Local e institucional</mark>.",
+   "f": "Ley 39/2015, art. 2",
+   "tq": "¿Las Corporaciones de Derecho Público son sector público (Ley 39)?",
+   "ta": "No; ley supletoria."
+  },
+  {
+   "id": 681,
+   "t": "Procedimiento administrativo",
+   "d": "difícil",
+   "q": "Según el art. 2.3 de la Ley 39/2015, ¿cuál de estas entidades NO tiene la consideración de Administración Pública?",
+   "o": [
+    "Un organismo público dependiente del Estado.",
+    "Una entidad de derecho público vinculada a una comunidad autónoma.",
+    "Una entidad de derecho privado dependiente de un ayuntamiento."
+   ],
+   "c": 2,
+   "o4": "Una Entidad que integra la Administración Local.",
+   "que": "Son Administraciones Públicas la AGE, las CCAA, las Entidades Locales y los <mark>organismos públicos y entidades de derecho público</mark> vinculados o dependientes.",
+   "porque": "Las <mark>entidades de derecho privado</mark> forman parte del sector público institucional, pero <mark>no son Administración Pública</mark>: la ley solo se les aplica en lo que se refiera a ellas y cuando ejercen potestades administrativas.",
+   "ojo": "La trampa: depender de una Administración no basta; tiene que ser de derecho público.",
+   "rec": "Administración = <mark>derecho público</mark>.",
+   "f": "Ley 39/2015, art. 2",
+   "tq": "¿Una entidad de derecho privado dependiente es Administración Pública?",
+   "ta": "No."
+  },
+  {
+   "id": 682,
+   "t": "Procedimiento administrativo",
+   "d": "normal",
+   "q": "Según el art. 3 de la Ley 39/2015, los grupos de afectados, las uniones sin personalidad jurídica y los patrimonios independientes tienen capacidad de obrar ante las Administraciones:",
+   "o": [
+    "Siempre, igual que las personas jurídicas.",
+    "Nunca, porque no tienen personalidad jurídica.",
+    "Cuando la Ley así lo declare expresamente."
+   ],
+   "c": 2,
+   "o4": "Solo si se inscriben en un registro público.",
+   "que": "Tienen capacidad de obrar <mark>cuando la Ley lo declare expresamente</mark>.",
+   "porque": "No tienen personalidad jurídica, así que solo pueden actuar si una ley se lo reconoce.",
+   "ojo": "Ni siempre ni nunca: depende de que una ley lo diga.",
+   "rec": "Sin personalidad → <mark>solo si la ley lo dice</mark>.",
+   "f": "Ley 39/2015, art. 3",
+   "tq": "Capacidad de obrar de grupos sin personalidad",
+   "ta": "Solo cuando una ley lo declare expresamente."
+  },
+  {
+   "id": 683,
+   "t": "Procedimiento administrativo",
+   "d": "normal",
+   "q": "Según el art. 4 de la Ley 39/2015, quien tiene intereses legítimos que pueden resultar afectados por la resolución, sin haber iniciado el procedimiento, es interesado:",
+   "o": [
+    "Solo si lo cita la Administración.",
+    "Si se persona antes de la resolución definitiva.",
+    "Desde el inicio, aunque no se persone."
+   ],
+   "c": 1,
+   "o4": "Solo si presenta un recurso contra la resolución.",
+   "que": "Es interesado si <mark>se persona</mark> en el procedimiento <mark>mientras no haya recaído resolución definitiva</mark>.",
+   "porque": "Un interés legítimo es más débil que un derecho: por eso tiene que dar el paso de personarse.",
+   "ojo": "Quien tiene derechos (no solo intereses) que pueden resultar afectados es interesado sin necesidad de personarse.",
+   "rec": "Interés legítimo → <mark>personarse a tiempo</mark>.",
+   "f": "Ley 39/2015, art. 4",
+   "tq": "¿Cuándo es interesado quien tiene un interés legítimo afectado?",
+   "ta": "Si se persona antes de la resolución definitiva."
+  },
+  {
+   "id": 684,
+   "t": "Procedimiento administrativo",
+   "d": "normal",
+   "q": "Según el art. 4.3 de la Ley 39/2015, si la condición de interesado deriva de una relación jurídica transmisible, el derecho-habiente sucede en esa condición:",
+   "o": [
+    "Cualquiera que sea el estado del procedimiento.",
+    "Solo antes de que se dicte la propuesta de resolución.",
+    "Solo si el procedimiento no ha pasado del trámite de audiencia."
+   ],
+   "c": 0,
+   "o4": "Solo si lo autoriza el órgano instructor.",
+   "que": "El derecho-habiente sucede como interesado <mark>cualquiera que sea el estado del procedimiento</mark>.",
+   "porque": "Si el derecho se transmite (por ejemplo, por herencia o venta), quien lo recibe sigue el procedimiento donde esté.",
+   "ojo": "No hay ninguna fase límite ni autorización.",
+   "rec": "Se hereda la posición <mark>en cualquier momento</mark>.",
+   "f": "Ley 39/2015, art. 4",
+   "tq": "Sucesión en la condición de interesado",
+   "ta": "Cualquiera que sea el estado del procedimiento."
+  },
+  {
+   "id": 685,
+   "t": "Procedimiento administrativo",
+   "d": "normal",
+   "q": "Según el art. 5 de la Ley 39/2015, para un acto de mero trámite hecho en nombre de otra persona, la representación:",
+   "o": [
+    "Se presume.",
+    "Debe acreditarse ante notario.",
+    "Debe acreditarse siempre."
+   ],
+   "c": 0,
+   "o4": "Solo vale si es apud acta.",
+   "que": "Para los actos de <mark>mero trámite</mark> la representación <mark>se presume</mark>.",
+   "porque": "Solo hay que acreditarla para lo importante: solicitudes, declaraciones responsables, comunicaciones, recursos, desistir o renunciar.",
+   "ojo": "Para interponer un recurso o renunciar a un derecho en nombre de otro sí hay que acreditarla.",
+   "rec": "<mark>Mero trámite, mera presunción</mark>.",
+   "f": "Ley 39/2015, art. 5",
+   "tq": "¿Hay que acreditar la representación para un mero trámite?",
+   "ta": "No, se presume."
+  },
+  {
+   "id": 686,
+   "t": "Procedimiento administrativo",
+   "d": "normal",
+   "q": "Según el art. 5 de la Ley 39/2015, ¿para cuál de estos actos en nombre de otra persona hay que acreditar la representación?",
+   "o": [
+    "Preguntar por el estado de tramitación.",
+    "Desistir de una acción.",
+    "Pedir una copia de un documento del expediente."
+   ],
+   "c": 1,
+   "o4": "Aportar un documento que pidió el órgano.",
+   "que": "Hay que acreditarla para <mark>formular solicitudes, presentar declaraciones responsables o comunicaciones, interponer recursos, desistir de acciones y renunciar a derechos</mark>.",
+   "porque": "Son actos que deciden sobre los derechos del representado; los de mero trámite no lo hacen.",
+   "ojo": "Las gestiones de mero trámite no exigen acreditarla: se presume.",
+   "rec": "Lo que <mark>pide, recurre, desiste o renuncia</mark>, se acredita.",
+   "f": "Ley 39/2015, art. 5",
+   "tq": "¿Hay que acreditar la representación para desistir?",
+   "ta": "Sí."
+  },
+  {
+   "id": 687,
+   "t": "Procedimiento administrativo",
+   "d": "normal",
+   "q": "Según el art. 5.6 de la Ley 39/2015, si falta o es insuficiente la acreditación de la representación, el órgano debe conceder para subsanarla un plazo de:",
+   "o": [
+    "Cinco días.",
+    "Quince días.",
+    "Diez días."
+   ],
+   "c": 2,
+   "o4": "Un mes.",
+   "que": "El plazo para subsanar es de <mark>diez días</mark> (o más si las circunstancias lo requieren).",
+   "porque": "Mientras, el acto se tiene por realizado si luego se aporta la acreditación o se subsana.",
+   "ojo": "Si las circunstancias lo requieren, el órgano puede dar un plazo mayor, pero nunca menor.",
+   "rec": "Subsanar representación: <mark>10 días</mark>.",
+   "f": "Ley 39/2015, art. 5",
+   "tq": "Plazo para subsanar la representación",
+   "ta": "Diez días.",
+   "cifra": 1
+  },
+  {
+   "id": 688,
+   "t": "Procedimiento administrativo",
+   "d": "normal",
+   "q": "Según el art. 5 de la Ley 39/2015, ¿pueden las personas jurídicas actuar en representación de otras ante las Administraciones?",
+   "o": [
+    "Sí, siempre que esté previsto en sus Estatutos.",
+    "Sí, siempre, sin ningún requisito.",
+    "No, solo pueden hacerlo las personas físicas."
+   ],
+   "c": 0,
+   "o4": "Solo si son colegios profesionales.",
+   "que": "Las personas jurídicas pueden representar a otras <mark>si lo prevén sus Estatutos</mark>.",
+   "porque": "Las personas físicas solo necesitan tener capacidad de obrar; las jurídicas, además, que su norma interna lo permita.",
+   "ojo": "No es «siempre»: el requisito de los Estatutos es la clave.",
+   "rec": "Persona jurídica representante: <mark>si lo dicen sus Estatutos</mark>.",
+   "f": "Ley 39/2015, art. 5",
+   "tq": "¿Puede una persona jurídica representar a otra?",
+   "ta": "Sí, si lo prevén sus Estatutos."
+  },
+  {
+   "id": 689,
+   "t": "Procedimiento administrativo",
+   "d": "normal",
+   "q": "Según el art. 5 de la Ley 39/2015, ¿cuál de estas formas se entiende que acredita la representación?",
+   "o": [
+    "El apoderamiento apud acta por comparecencia personal o electrónica.",
+    "Una fotocopia del DNI del representado.",
+    "Una declaración verbal del representante ante el funcionario."
+   ],
+   "c": 0,
+   "o4": "Un correo electrónico del representado.",
+   "que": "Se entiende acreditada con el <mark>apoderamiento apud acta</mark> (comparecencia personal o en la sede electrónica) o con la inscripción en el <mark>registro electrónico de apoderamientos</mark>.",
+   "porque": "En general vale cualquier medio que deje constancia fidedigna de su existencia.",
+   "ojo": "Una simple fotocopia del DNI no deja constancia de que se haya dado la representación.",
+   "rec": "<mark>Apud acta o registro de apoderamientos</mark>.",
+   "f": "Ley 39/2015, art. 5",
+   "tq": "¿Cómo se acredita la representación?",
+   "ta": "Apud acta o registro electrónico de apoderamientos."
   }
  ],
  "glosario": [
@@ -3652,6 +4479,79 @@
    "d": "Capa formada por el revestimiento fundido del electrodo que flota sobre el baño y protege el cordón caliente.",
    "tema": "Corte y soldadura",
    "f": "Manual de Equipos de corte térmico y soldadura (Ayto. Madrid), p. 17",
+   "solo": 1
+  },
+  {
+   "t": "Sistema Nacional de Protección Civil",
+   "a": [
+    "Sistema Nacional de Protección Civil",
+    "SNPC"
+   ],
+   "d": "Integra la protección civil de todas las Administraciones para dar una respuesta coordinada: prever, planificar, intervenir, recuperar y evaluar.",
+   "tema": "Protección civil",
+   "f": "Ley 17/2015, art. 3",
+   "solo": 1
+  },
+  {
+   "t": "Deber de cautela y autoprotección",
+   "a": [
+    "deber de cautela",
+    "autoprotección"
+   ],
+   "d": "Obligación de no generar riesgos ni exponerse a ellos y, en una emergencia, seguir las indicaciones de los agentes.",
+   "tema": "Protección civil",
+   "f": "Ley 17/2015, art. 7 ter",
+   "solo": 1
+  },
+  {
+   "t": "Requisa",
+   "a": [
+    "requisa"
+   ],
+   "d": "Toma temporal de bienes por la autoridad para hacer frente a una emergencia; los perjuicios se indemnizan.",
+   "tema": "Protección civil",
+   "f": "Ley 17/2015, art. 7 bis",
+   "solo": 1
+  },
+  {
+   "t": "Corporaciones de Derecho Público",
+   "a": [
+    "Corporaciones de Derecho Público"
+   ],
+   "d": "Entidades como los colegios profesionales; se rigen por su normativa específica y la Ley 39/2015 solo supletoriamente.",
+   "tema": "Procedimiento administrativo",
+   "f": "Ley 39/2015, art. 2",
+   "solo": 1
+  },
+  {
+   "t": "Interesado",
+   "a": [
+    "interesado",
+    "interesados"
+   ],
+   "d": "Quien promueve el procedimiento, quien tiene derechos que pueden resultar afectados o quien, con un interés legítimo afectado, se persona antes de la resolución definitiva.",
+   "tema": "Procedimiento administrativo",
+   "f": "Ley 39/2015, art. 4",
+   "solo": 1
+  },
+  {
+   "t": "Apud acta",
+   "a": [
+    "apud acta"
+   ],
+   "d": "Apoderamiento hecho por comparecencia personal o electrónica ante la Administración para acreditar la representación.",
+   "tema": "Procedimiento administrativo",
+   "f": "Ley 39/2015, art. 5",
+   "solo": 1
+  },
+  {
+   "t": "Mero trámite",
+   "a": [
+    "mero trámite"
+   ],
+   "d": "Acto o gestión que no decide sobre los derechos del interesado; para hacerlo en su nombre se presume la representación.",
+   "tema": "Procedimiento administrativo",
+   "f": "Ley 39/2015, art. 5",
    "solo": 1
   }
  ]
