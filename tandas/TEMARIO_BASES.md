@@ -3,9 +3,10 @@
 Texto del Anexo III (documento público). **Solo se pregunta lo que entra en cada tema** (artículos y apartados indicados).
 
 ## Correspondencia con los archivos (nombres de las bases)
+Todos están cifrados en `temario/` con el nombre «Bloque X - Tema NN - Título» (ver temario/indice.json).
 | Tema | Archivo(s) del proyecto |
 |---|---|
-| I.1 La Constitución Española de 1978 | 1.1 CE y ESTATUTO (quitado del proyecto el 25/11) |
+| I.1 La Constitución Española de 1978 | temario: Bloque I - Tema 01 (Constitución, BOE consolidado: arts. del temario) |
 | I.2 Ley 7/1985 Bases de Régimen Local | 1.2 LEY 7 1985 LEY 22 2006 |
 | I.3 RDL 2/2004 Haciendas Locales | 1.3 RD LEGISLATIVO 2 2004 |
 | I.4 y I.5 RDL 5/2015 EBEP | 1.4 - 1.5 RD LEGISLATIVO 5 2015 - LEBEP |
@@ -15,14 +16,14 @@ Texto del Anexo III (documento público). **Solo se pregunta lo que entra en cad
 | II.1 Teoría del fuego | (sin manual) |
 | II.2 y II.3 Incendios de interior. Ventilación | (sin manual) |
 | II.4 Hidráulica | (sin manual) |
-| II.5 Incendios de vegetación | DOC-20240402-WA0021 (quitado del proyecto el 25/11) |
+| II.5 Incendios de vegetación | temario: Bloque II - Tema 05 (Manual de incendios parte 6, Tragsa/CEIS) |
 | II.6 y II.7 Trabajos verticales (Manual ANETVA) | DOC-20251111-WA0001 (cap. II) · DOC-20251119-WA0018 (cap. III) |
 | II.8 y II.9 Rescate en accidentes de tráfico (DGT-APRAT) | 2.8 APRAT I · 2.9 APRAT II |
 | II.10 Rescate apícola y de otras especies | DOC-20240402-WA0025 |
 | II.11, II.12 y II.13 Edificaciones | 2.11 · 2.12 · 2.13 |
 | II.14 Técnicas de estabilización | DOC-20240402-WA0027 |
 | II.15 Accesos forzados | 2.15 |
-| II.16 Intervenciones en arbolado urbano | 2.16 (quitado del proyecto el 25/11) |
+| II.16 Intervenciones en arbolado urbano | temario: Bloque II - Tema 16 |
 | II.17 Riesgo NRBQ | DOC-20240402-WA0032 |
 | II.18 Conceptos básicos de electricidad | 2.18 |
 | II.19 Infraestructuras eléctricas | 2.19 |
@@ -30,7 +31,7 @@ Texto del Anexo III (documento público). **Solo se pregunta lo que entra en cad
 | II.21 Gas natural | 2.21 |
 | II.22 Agua fría consumo humano | 2.22 |
 | II.23 Seguridad en trabajos verticales (NTP INSST) | DOC-20240402-WA0036 |
-| II.24 Guía técnica INSST de EPI + EPI de vías respiratorias | 2.24 EPIS (quitado el 25/11) · DOC-20240402-WA0034 |
+| II.24 Guía técnica INSST de EPI + EPI de vías respiratorias | 2.24 EPIS (quitado el 25/11; FALTA en temario/) · DOC-20240402-WA0034 |
 | II.25 Corte térmico y soldadura | 2.25 |
 | II.26 Soporte vital básico | DOC-20240402-WA0041 |
 | II.27 Politraumatizado | DOC-20240402-WA0042 |

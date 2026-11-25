@@ -1,5 +1,10 @@
 [
  {
+  "tema": "Bloque I - Tema 01 - La Constitución Española de 1978",
+  "paginas_pdf": 10,
+  "chars": 17774
+ },
+ {
   "tema": "Bloque I - Tema 02 - Ley 7-1985 Reguladora de las Bases de Régimen Local",
   "paginas_pdf": 18,
   "chars": 47100
@@ -8,11 +13,6 @@
   "tema": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
   "paginas_pdf": 9,
   "chars": 22069
- },
- {
-  "tema": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
-  "paginas_pdf": 29,
-  "chars": 89387
  },
  {
   "tema": "Bloque I - Tema 06 - Ley 39-2015 Procedimiento Administrativo Común",
@@ -30,14 +30,14 @@
   "chars": 65031
  },
  {
-  "tema": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. II",
-  "paginas_pdf": 78,
-  "chars": 151981
+  "tema": "Bloque I - Temas 04 y 05 - RDL 5-2015 Estatuto Básico del Empleado Público",
+  "paginas_pdf": 29,
+  "chars": 89387
  },
  {
-  "tema": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. III",
-  "paginas_pdf": 47,
-  "chars": 96228
+  "tema": "Bloque II - Tema 05 - Incendios de vegetación",
+  "paginas_pdf": 19,
+  "chars": 71720
  },
  {
   "tema": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
@@ -78,6 +78,11 @@
   "tema": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
   "paginas_pdf": 48,
   "chars": 105727
+ },
+ {
+  "tema": "Bloque II - Tema 16 - Intervenciones en arbolado urbano",
+  "paginas_pdf": 41,
+  "chars": 116579
  },
  {
   "tema": "Bloque II - Tema 17 - Riesgo NRBQ",
@@ -140,14 +145,14 @@
   "chars": 121742
  },
  {
-  "tema": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
-  "paginas_pdf": 26,
-  "chars": 69784
- },
- {
   "tema": "Bloque II - Tema 29 - Ley 17-2015 del Sistema Nacional de Protección Civil",
   "paginas_pdf": 4,
   "chars": 12879
+ },
+ {
+  "tema": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+  "paginas_pdf": 26,
+  "chars": 69784
  },
  {
   "tema": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
@@ -163,5 +168,15 @@
   "tema": "Bloque II - Tema 32 - Información básica de los vehículos del SEI",
   "paginas_pdf": 31,
   "chars": 41163
+ },
+ {
+  "tema": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. II",
+  "paginas_pdf": 78,
+  "chars": 151981
+ },
+ {
+  "tema": "Bloque II - Temas 06 y 07 - Trabajos verticales (Manual ANETVA) - Cap. III",
+  "paginas_pdf": 47,
+  "chars": 96228
  }
 ]
