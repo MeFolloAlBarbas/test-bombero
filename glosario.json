@@ -1750,5 +1750,293 @@
 "tema": "Edificaciones",
 "f": "Edificaciones I, 2.4",
 "solo": 1
+},
+{
+"t": "Equipo de protección individual (EPI)",
+"a": [
+"EPI",
+"equipo de protección individual",
+"equipos de protección individual"
+],
+"d": "Equipo que el trabajador lleva o sujeta para protegerse a sí mismo de uno o varios riesgos (RD 773/1997).",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. p. 10",
+"solo": 1
+},
+{
+"t": "Desteridad",
+"a": [
+"desteridad"
+],
+"d": "Sinónimo de destreza: capacidad de manipular para hacer una tarea. Se mide en guantes.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. p. 20",
+"solo": 1
+},
+{
+"t": "Categoría III (EPI)",
+"a": [
+"categoría III"
+],
+"d": "Categoría de los EPI para los riesgos más graves: marcado CE seguido del número del organismo notificado.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. p. 20",
+"solo": 1
+},
+{
+"t": "Equipo aislante (respiratorio)",
+"a": [
+"equipo aislante",
+"equipos aislantes",
+"aire fresco"
+],
+"d": "Equipo respiratorio que da aire de una fuente externa no contaminada: de aire fresco, de línea de aire comprimido o autónomo.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. p. 51",
+"solo": 1
+},
+{
+"t": "Equipo filtrante",
+"a": [
+"filtrante",
+"equipos filtrantes"
+],
+"d": "Equipo respiratorio que purifica el aire del ambiente con filtros. No sirve si puede faltar oxígeno.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. p. 51",
+"solo": 1
+},
+{
+"t": "Gorra contra golpes",
+"a": [
+"gorra contra golpes",
+"casco contra golpes"
+],
+"d": "Casco ligero contra choques de la cabeza con objetos duros y fijos. No sirve contra caída de objetos.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. p. 53",
+"solo": 1
+},
+{
+"t": "Clase óptica",
+"a": [
+"clase óptica",
+"clases ópticas"
+],
+"d": "Calidad de visión de un protector ocular: 1 (mejor), 2 o 3.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. p. 54",
+"solo": 1
+},
+{
+"t": "Sistema anticaídas",
+"a": [
+"sistema anticaídas",
+"arnés anticaídas",
+"anticaídas"
+],
+"d": "Sistema que detiene una caída libre y limita la fuerza sobre el cuerpo. Solo admite arnés anticaídas.",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. p. 56",
+"solo": 1
+},
+{
+"t": "Calzado de trabajo",
+"a": [
+"calzado de trabajo",
+"calzado de seguridad",
+"calzado de protección"
+],
+"d": "Calzado sin protección garantizada de los dedos (el de seguridad y el de protección sí la tienen).",
+"tema": "EPI",
+"f": "Guía técnica de EPI (RD 773/1997), p. p. 52",
+"solo": 1
+},
+{
+"t": "Conato",
+"a": [
+"conato"
+],
+"d": "Incendio que afecta a menos de 1 ha.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+"solo": 1
+},
+{
+"t": "Gran incendio forestal (GIF)",
+"a": [
+"gran incendio forestal",
+"GIF"
+],
+"d": "Incendio forestal de 500 ha o más.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+"solo": 1
+},
+{
+"t": "Antorcheo",
+"a": [
+"antorcheo"
+],
+"d": "Fuego de superficie que, por continuidad vertical, enciende copas aisladas.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+"solo": 1
+},
+{
+"t": "Fuego de copas pasivo",
+"a": [
+"copas pasivo"
+],
+"d": "Fuego por las copas que depende del de superficie: si este se elimina, se detiene.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+"solo": 1
+},
+{
+"t": "Fuego de copas activo",
+"a": [
+"copas activo"
+],
+"d": "Fuego por las copas independiente de la superficie. Muy intenso y difícil de controlar.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 245",
+"solo": 1
+},
+{
+"t": "Cabeza del incendio",
+"a": [
+"cabeza"
+],
+"d": "Parte más caliente y activa; marca hacia dónde avanza el fuego.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+"solo": 1
+},
+{
+"t": "Isla",
+"a": [
+"isla"
+],
+"d": "Zona sin quemar dentro del perímetro del incendio.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+"solo": 1
+},
+{
+"t": "Bolsa",
+"a": [
+"bolsa"
+],
+"d": "Zona sin quemar entre el incendio principal y un dedo.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+"solo": 1
+},
+{
+"t": "Foco secundario",
+"a": [
+"foco secundario",
+"focos secundarios"
+],
+"d": "Zona ardiendo fuera del perímetro, por pavesas o piñas.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 246",
+"solo": 1
+},
+{
+"t": "Compacidad",
+"a": [
+"compacidad"
+],
+"d": "Lo apretada que está una capa de combustible. Favorece la conducción.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+"solo": 1
+},
+{
+"t": "Ahuecamiento",
+"a": [
+"ahuecamiento"
+],
+"d": "Aire entre las partículas de combustible. Favorece la radiación.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+"solo": 1
+},
+{
+"t": "Salto de fuego",
+"a": [
+"salto de fuego",
+"saltos de fuego",
+"pavesas"
+],
+"d": "Proyección de partículas encendidas que crea focos fuera del perímetro.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 248",
+"solo": 1
+},
+{
+"t": "Gran tríada",
+"a": [
+"gran tríada"
+],
+"d": "Topografía, meteorología y combustible: lo que decide el comportamiento del fuego.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 249",
+"solo": 1
+},
+{
+"t": "Solana y umbría",
+"a": [
+"solana",
+"umbría"
+],
+"d": "Solana: ladera al sol, más caliente y seca. Umbría: a la sombra, más húmeda.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 249",
+"solo": 1
+},
+{
+"t": "Humedad relativa",
+"a": [
+"humedad relativa"
+],
+"d": "Vapor del aire respecto al máximo que admite a esa temperatura. Por debajo del 30 %, peligro.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 250",
+"solo": 1
+},
+{
+"t": "Nudo",
+"a": [
+"nudo",
+"nudos"
+],
+"d": "Milla marina por hora: 1,852 km/h.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251",
+"solo": 1
+},
+{
+"t": "Isobaras",
+"a": [
+"isobaras"
+],
+"d": "Líneas de igual presión. Muy juntas = viento fuerte.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251",
+"solo": 1
+},
+{
+"t": "Vientos de ladera",
+"a": [
+"viento de ladera",
+"vientos de ladera"
+],
+"d": "Soplan paralelos a la pendiente: bajan de noche y suben de día.",
+"tema": "Incendios de vegetación",
+"f": "Manual de incendios, parte 6: Incendios de vegetación, p. 251",
+"solo": 1
 }
 ]

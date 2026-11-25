@@ -286,7 +286,8 @@ summary{cursor:pointer}
 .gl-t.lock .gl-n{color:var(--mut);letter-spacing:.15em}.gl-t.lock .gl-d{color:var(--mut);font-size:13px}.gl-mas{font-size:13px;color:var(--mut);margin:8px 0 0}
 .gl-n,.gpt{color:#2f6f73}@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .gl-n,:root:not([data-theme=light]) .gpt{color:#8fc9cb}}:root[data-theme=dark] .gl-n,:root[data-theme=dark] .gpt{color:#8fc9cb}
 .gl-n{font-size:17px}
-.seg{grid-template-columns:repeat(4,1fr)!important}.seg button{font-size:14px;padding:0 2px}
+.seg{grid-template-columns:repeat(5,1fr)!important}.seg button{font-size:13px;padding:0 1px}
+.nor{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 12px}.nor-n{font-weight:700;font-size:17px}.nor-d{font-size:15px;line-height:1.4;margin:2px 0 4px}.nor-m{font-size:12px;color:var(--mut);margin:0 0 8px}.nor-q{background:var(--card);border-radius:8px;padding:7px 10px;font-size:14px;line-height:1.4;margin:6px 0 0}.nor-q b{color:var(--okt)}
 .lab-in{font-size:14px;color:var(--mut);margin:0 0 14px}
 .par{border:1px solid var(--line);border-radius:12px;margin:0 0 12px;overflow:hidden}.par-c{font-size:12px;color:var(--mut);padding:8px 12px 0}
 .par-2{display:grid;grid-template-columns:1fr 1fr}.par-l{padding:8px 12px 10px}.par-l+.par-l{border-left:1px solid var(--line)}
@@ -380,7 +381,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795610854';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795616646';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -895,11 +896,12 @@ document.addEventListener('keydown',e=>{if(GL.sub!=='tj'&&location.hash==='#tarj
 
 function tarjetas(){
   run=null;homeBtn.hidden=true;gCerrar();
-  const seg=`<div class="seg">${[['tj','Fallos'],['glos','Glosario'],['par','Parecidos'],['err','Erratas']].map(([k,t])=>`<button data-s="${k}" class="${GL.sub===k?'on':''}">${t}</button>`).join('')}</div>`;
+  const seg=`<div class="seg">${[['tj','Fallos'],['glos','Glosario'],['par','Parecidos'],['err','Erratas'],['nor','Normas']].map(([k,t])=>`<button data-s="${k}" class="${GL.sub===k?'on':''}">${t}</button>`).join('')}</div>`;
   const segBind=()=>app.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>{GL.sub=b.dataset.s;tarjetas()});
   if(GL.sub==='glos'){app.innerHTML=seg+glosarioHtml();segBind();glosarioBind();return}
   if(GL.sub==='par'){app.innerHTML=seg+parecidosHtml();segBind();return}
   if(GL.sub==='err'){app.innerHTML=seg+erratasHtml();segBind();return}
+  if(GL.sub==='nor'){app.innerHTML=seg+normasHtml();segBind();return}
   const L=tarjetasLista();if(TJ.idx>=L.length)TJ.idx=0;const c=L[TJ.idx];
   if(!c){app.innerHTML=seg+'<div class="tj-empty">Aquí aparecerán las preguntas que falles, dejes en blanco o guardes con el marcapáginas.</div>';segBind();return}
   const tq=c.q.tq||c.q.q,ta=c.q.ta||OT(c.q,c.q.c);
@@ -1195,6 +1197,31 @@ function erratasHtml(){
   const hechas=new Set();for(const k in S.daily)for(const h in S.daily[k])hechas.add(S.daily[k][h].id);
   const V=LAB.err.filter(e=>!e.q||hechas.has(e.q)),falta=LAB.err.length-V.length;
   return `<p class="lab-in">Fallos de los manuales, contrastados con la norma.</p>`+(V.length?'':'<p class="tj-empty">Cada errata del manual aparecerá aquí después de responder su pregunta.</p>')+(falta?`<p class="gl-mas">Por descubrir: ${falta} ${falta===1?'errata':'erratas'}.</p>`:'')+V.map(e=>`<div class="err"><div class="err-t">${esc(e.t)}</div><div class="err-m">${esc(e.tema)} · ${esc(e.m)}</div><div class="err-b err-d"><span class="err-lb">El manual dice</span><q>${esc(e.dice)}</q></div><div class="err-b err-r"><span class="err-lb">En realidad</span>${e.real}</div><div class="err-b err-x"><span class="err-lb">Ojo en el examen</span>${esc(e.exa)}</div><div class="err-f">Fuente: ${esc(e.f)}</div></div>`).join('');
+}
+// ===== Laboratorio · Normas UNE/EN: se detectan solas en el texto de las preguntas =====
+const NOR_RX=/\b(?:UNE[- ](?:EN[- ])?(?:ISO[- ])?|EN[- ](?:ISO[- ])?)(\d{2,6}(?:-\d+)*)(?::\d{4})?/g;
+function normasDe(q){
+  const t=[q.q,...q.o,q.o4,q.que,q.porque,q.ojo,q.rec,q.f,q.tq,q.ta].join(' ').replace(/<[^>]+>/g,' ');
+  const M={};let m;NOR_RX.lastIndex=0;
+  while((m=NOR_RX.exec(t))){const k=m[1],n=m[0].replace(/:\d{4}$/,'').replace(/\s+/g,' ');if(!M[k]||n.length>M[k].length)M[k]=n}
+  for(const k of Object.keys(M))if(Object.keys(M).some(x=>x.startsWith(k+'-')))delete M[k];
+  return M;
+}
+function normasHtml(){
+  const hoy=madrid().key,hechas=new Set();for(const k in S.daily)for(const h in S.daily[k])hechas.add(S.daily[k][h].id);
+  const salio=id=>hechas.has(id)||Object.keys(FIXED).some(k=>k<hoy&&FIXED[k].includes(id));
+  const D={},info={};(LAB.nor||[]).forEach(x=>info[x.k]=x);
+  for(const q of BANK){const M=normasDe(q);for(const k in M){const e=D[k]||(D[k]={k,n:M[k],qs:[],vis:false});if(M[k].length>e.n.length)e.n=M[k];e.qs.push(q);if(salio(q.id))e.vis=true}}
+  const num=k=>k.split('-').map(Number);
+  const todas=Object.values(D).sort((a,b)=>{const x=num(a.k),y=num(b.k);return x[0]-y[0]||(x[1]||0)-(y[1]||0)});
+  const V=todas.filter(e=>e.vis),falta=todas.length-V.length;
+  let h=`<p class="lab-in">Normas UNE y EN que han salido en las preguntas. Entran en el examen: apréndete su número.</p>`;
+  if(V.length)h+=`<p class="gl-mas">${V.length} ${V.length===1?'norma':'normas'}</p>`;
+  h+=V.map(e=>{const i=info[e.k]||{},qs=e.qs.filter(q=>salio(q.id));
+    return `<div class="nor"><div class="gl-n nor-n">${esc(e.n)}</div>${i.d?`<div class="nor-d">${esc(i.d)}</div>`:''}<div class="nor-m">${esc([...new Set(qs.map(q=>q.t))].join(' · '))}</div>${qs.map(q=>`<div class="nor-q">${esc(q.tq||q.q)} → <b>${esc(q.ta||OT(q,q.c))}</b></div>`).join('')}</div>`}).join('');
+  if(!V.length)h+='<p class="tj-empty">Cada norma aparecerá aquí cuando salga en una pregunta.</p>';
+  if(falta)h+=`<p class="gl-mas">Por descubrir: ${falta} ${falta===1?'norma':'normas'}.</p>`;
+  return h;
 }
 function alertaPanel(t){const m=document.getElementById('amsg');if(m){m.style.color='var(--kot)';m.textContent=t}}
 // ===== preguntas guardadas en tus tarjetas =====
