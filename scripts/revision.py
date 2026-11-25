@@ -1,7 +1,7 @@
 """Crea tandas/revision/AAAA-MM-DD.md para que el usuario supervise el lote antes de darle el visto bueno.
 
-- Muestra: unas 10 preguntas completas, de temas y tipos distintos (cifras, concepto, examen, intervención,
-  dibujo, difícil), con la correcta marcada y toda la explicación.
+- TODAS las preguntas completas (petición del usuario, 25/11/2026), por orden de id, con la correcta marcada y
+  toda la explicación. Con --muestra N, solo una muestra de N de temas y tipos distintos.
 - Aparte, TODAS las de Edificaciones y Técnicas de estabilización: necesitan el visto bueno una a una.
 - Al final, la lista completa en forma de tarjeta (pregunta corta → respuesta corta).
 Uso: python3 scripts/revision.py 2026-11-25 [--muestra 10]
@@ -9,7 +9,7 @@ Uso: python3 scripts/revision.py 2026-11-25 [--muestra 10]
 import json, os, re, sys, random
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 fecha = sys.argv[1]
-N = int(sys.argv[sys.argv.index('--muestra') + 1]) if '--muestra' in sys.argv else 10
+N = int(sys.argv[sys.argv.index('--muestra') + 1]) if '--muestra' in sys.argv else None
 lote = json.load(open(os.path.join(ROOT, 'tandas', 'pendientes', fecha + '.json'), encoding='utf-8'))
 Q = lote['preguntas']
 DELICADOS = ('edificaci', 'estabiliza')
@@ -38,7 +38,8 @@ grupos = {}
 for q in normales: grupos.setdefault(tipo(q), []).append(q)
 for g in grupos.values(): rnd.shuffle(g)
 muestra, temas = [], set()
-while len(muestra) < min(N, len(normales)):
+if N is None: muestra = sorted(normales, key=lambda q: q['id'])
+while N is not None and len(muestra) < min(N, len(normales)):
     avanzo = False
     for g in grupos.values():
         for q in g:
@@ -54,7 +55,7 @@ L = [f'# Revisión del lote del {fecha}', '',
      f'{len(Q)} preguntas nuevas, ids {min(q["id"] for q in Q)}-{max(q["id"] for q in Q)}. '
      'No están en la web: entran cuando des el visto bueno, y hasta entonces no se hace el lote siguiente.', '',
      'Para responder, abre una conversación en el proyecto y di: «visto bueno al lote del ' + fecha + '», '
-     'o di qué preguntas quitar o cambiar y por qué.', '', f'## Muestra ({len(muestra)} preguntas)', '']
+     'o di qué preguntas quitar o cambiar y por qué.', '', (f'## Todas las preguntas ({len(muestra)})' if N is None else f'## Muestra ({len(muestra)} preguntas)'), '']
 for q in muestra: L += ficha(q)
 dl = [q for q in Q if delicada(q)]
 if dl:

@@ -9,7 +9,7 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
   varias tareas de unas `por_tarea` cada una.
 - El lote se guarda en `tandas/pendientes/AAAA-MM-DD.json` (`{"preguntas": [...], "glosario": [...]}`).
   **No entra en `preguntas.json` ni en la web** hasta que el usuario da el visto bueno.
-- Al terminar el lote: `python3 scripts/reglas.py` sin errores → `python3 scripts/revision.py AAAA-MM-DD`
+- Al terminar el lote: `python3 scripts/reglas.py` sin errores → `python3 scripts/revision.py AAAA-MM-DD` (pone todas las preguntas completas)
   → commit y push → aviso al usuario con el enlace a `tandas/revision/AAAA-MM-DD.md`.
 - **Si `esperando_visto_bueno` tiene la fecha de una noche anterior, la tarea NO hace nada**
   (como mucho, un recordatorio en la primera tarea de la noche).
