@@ -39,8 +39,13 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
 - `python3 scripts/mapa.py /tmp/temario` (con el temario descifrado) genera `tandas/mapa_preguntas.json` (id → manual,
   página, confianza) y `tandas/mapa_paginas.json` (por manual: páginas con preguntas y **páginas sin preguntas**).
   Las preguntas antiguas sin `src` se localizan buscando su dato en el manual (confianza alta/media/baja).
-- **Antes de elegir qué preguntar**: ejecutar mapa.py y trabajar las páginas de `sin_preguntas` del manual elegido; en
-  las páginas que ya tienen preguntas, mirar esas preguntas para no repetir el dato. Al terminar, volver a ejecutarlo
+- **Qué cuenta como «ya preguntado»: SOLO el dato que es el objeto de una pregunta** (lo que se pregunta y su respuesta
+  correcta, resumido en `tq` → `ta`). Lo que aparece en la explicación, en los distractores o en el contexto NO cuenta.
+  Ejemplo (pregunta 75, art. 140 CE, alcaldes elegidos por concejales o vecinos): siguen libres el concejo abierto o la
+  personalidad jurídica plena de los municipios, aunque salgan en su explicación.
+- Por eso una página «con preguntas» **no está terminada**: casi siempre le quedan datos. Orden de trabajo: primero las
+  páginas de `sin_preguntas`; después, las páginas con preguntas, leyendo sus `tq`/`ta` para saber qué dato está
+  cogido y sacando pregunta de todos los demás datos de la página. Al terminar, volver a ejecutarlo
   y subir los dos mapas (solo contienen ids y números de página).
 
 ## Lo que pregunta el examen real (152 plazas, 2026: 90 + 5 de reserva; en temario/ como «Extra - Examen teórico…», cifrado)
@@ -105,8 +110,9 @@ Reparto aproximado de las 90 (para priorizar temas; nunca copiar sus preguntas):
 - Explicación en bloques `que` / `porque` / `ojo` / `rec` (Qué es / Por qué / Ojo / Para recordar),
   lenguaje sencillo, `<mark>` en los datos clave.
 - **Nunca nombrar una opción por su letra** (se barajan): referirse a su contenido.
-- **La explicación solo usa el dato que se pregunta**: nada de otros datos del temario que puedan ser
-  futuras preguntas; como mucho, el de la opción tentadora.
+- **La explicación puede contar otros datos del temario** (contexto, datos relacionados): al usuario le parece bien
+  (26/11, sustituye a la regla del 25/11). **Pero esos datos NO cuentan como ya preguntados**: siguen libres para
+  futuras preguntas.
 - **Preguntas de solo cifras** (campo `cifra: 1`): un tipo más entre las normales cortas, junto a las
   de concepto. Explicación sencilla: un truco para recordar la cifra o la comparación con el dato con
   el que se suele confundir.

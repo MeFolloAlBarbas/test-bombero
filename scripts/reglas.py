@@ -53,7 +53,6 @@ def main(ruta):
         if isinstance(q.get('o'), list) and len(q['o']) == 3:
             base = nums(q['q']) | set().union(*(nums(o) for o in q['o'] + [q.get('o4', '')]))
             extra = set().union(*(nums(q.get(c, '')) for c in EXPL)) - base - {'0', '1', '2'}
-            if extra: avi.append((i, 'cifras en la explicación que no están en la pregunta: ' + ', '.join(sorted(extra))))
             L = [len(limpio(o)) for o in q['o']]
             if max(L) > 1.6 * (sorted(L)[1] or 1) and max(L) - sorted(L)[1] > 25:
                 avi.append((i, f'una opción es mucho más larga (longitudes {L})'))
