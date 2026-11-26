@@ -207,9 +207,9 @@
   },
   "DOC-20240414-WA0000. 1.pdf": {
    "tema": "CTE DB-SI (SI 1-3)",
-   "hechas": "",
-   "total": null,
-   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+   "hechas": "1-12",
+   "total": 30,
+   "nota": "En temario/ como «Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)» (texto oficial del CTE, 30 págs.). Hechas p. 1-12 (lote 2026-11-26, tarea 5: 35 preguntas; introducción, SI 1-1 tablas 1.1 y 1.2, inicio de tabla 2.1). Sin preguntar aún de esas páginas: objetivo del requisito (origen accidental), SI 6 (tiempo necesario), plan de emergencia y discapacidad, reformas que no menoscaben condiciones, privación de libertad, ascensor con sector inferior de riesgo mínimo, sectores de riesgo mínimo sin límite, establecimientos de un centro comercial EI 60 (nota 4), centro comercial exento con evacuación descendente ≤10 m y ascendente ≤4 m, PC sin espectáculos >500 m², excepción hospitalaria 25 m, revestimientos B-s1,d0/BFL-s1 y EI 120 de grandes recintos, tabla 1.2 Comercial/PC/Hosp y aparcamiento, techo de cubierta solo R, equipos en cubierta excluidos, tabla 2.1: almacén de residuos, lavanderías/vestuarios, riesgo bajo de cocinas y calderas. Siguiente: p. 13 (resto de tabla 2.1). Antes de los lotes ya había #37, #38, #83, #261 (SI 1-3) y el resto de CTE en SI 4-5."
   },
   "DOC-20240414-WA0001..pdf": {
    "tema": "CTE DB-SI (SI 4-6)",

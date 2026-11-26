@@ -4181,6 +4181,941 @@
      19
     ]
    }
+  },
+  {
+   "id": 848,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "¿Qué exigencia básica del CTE es la SI 5?",
+   "o": [
+    "Instalaciones de protección contra incendios.",
+    "Intervención de los bomberos.",
+    "Evacuación de ocupantes."
+   ],
+   "c": 1,
+   "o4": "Resistencia al fuego de la estructura.",
+   "que": "SI 5 = <mark>Intervención de los bomberos</mark>: se facilitará la intervención de los equipos de rescate y de extinción.",
+   "porque": "El DB-SI tiene seis secciones, una por exigencia: SI 1 propagación interior, SI 2 exterior, SI 3 evacuación, SI 4 instalaciones, SI 5 bomberos, SI 6 estructura.",
+   "ojo": "Instalaciones de protección contra incendios es la <mark>SI 4</mark>, justo la anterior; evacuación es la SI 3.",
+   "rec": "Orden lógico del incendio: no se extiende dentro (1) ni fuera (2), la gente sale (3), se detecta y apaga (4), llegan los bomberos (5) y la estructura aguanta (6).",
+   "f": "CTE DB-SI, Introducción, art. 11 (pág. 3-4)",
+   "tq": "Exigencia SI 5",
+   "ta": "Intervención de los bomberos.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "id": 849,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Según el DB-SI, un almacenamiento integrado en un establecimiento de uso no industrial se considera zona de uso industrial cuando su carga de fuego total, ponderada y corregida, excede de:",
+   "o": [
+    "6 × 10⁶ MJ.",
+    "3 × 10⁵ MJ.",
+    "3 × 10⁶ MJ."
+   ],
+   "c": 2,
+   "o4": "1 × 10⁶ MJ.",
+   "que": "Por encima de <mark>3 × 10⁶ MJ</mark> (3 millones de MJ) el almacén se trata como zona de uso industrial y se rige por el Reglamento de seguridad contra incendios en los establecimientos industriales.",
+   "porque": "Un almacén tan cargado de combustible se parece más a una industria que al uso del edificio donde está.",
+   "ojo": "Si en ese almacén está prevista la presencia de público, se le aplican además las condiciones del CTE para su uso.",
+   "rec": "«3 millones»: tres ceros de MJ… seis veces (10⁶).",
+   "f": "CTE DB-SI, Introducción, nota (1) (pág. 3)",
+   "tq": "Almacén integrado → uso industrial si…",
+   "ta": "Carga de fuego > 3 × 10⁶ MJ.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     3
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 850,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Os avisan de un incendio en una nave-garaje de autobuses urbanos. ¿Qué normativa regula sus condiciones de protección contra incendios según el DB-SI?",
+   "o": [
+    "El DB-SI, en su uso Aparcamiento.",
+    "El Reglamento de establecimientos industriales.",
+    "El DB-SI, en su uso Comercial."
+   ],
+   "c": 1,
+   "o4": "El DB SU, por ser una zona de circulación de vehículos.",
+   "que": "Los <mark>garajes para vehículos de transporte de personas o de mercancías</mark> se consideran zona de uso industrial: se les aplica el <mark>Reglamento de establecimientos industriales</mark>, no el DB-SI.",
+   "porque": "El DB-SI excluye de su ámbito los edificios y zonas de uso industrial a los que se aplica ese reglamento.",
+   "ojo": "El uso Aparcamiento del DB-SI es para coches particulares; un garaje de autobuses o camiones es «industrial».",
+   "rec": "Autobús o camión = trabajo = industria.",
+   "f": "CTE DB-SI, Introducción, nota (1) (pág. 3)",
+   "tq": "Garaje de autobuses o camiones",
+   "ta": "Uso industrial (Reglamento de establecimientos industriales).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     3,
+     4
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 851,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Según los criterios de aplicación del DB-SI, ¿qué condiciones se aplican a una residencia geriátrica cuyos ocupantes, en su mayoría, necesitan ayuda para evacuar?",
+   "o": [
+    "Las del uso Residencial Vivienda.",
+    "Las del uso Hospitalario.",
+    "Las del uso Residencial Público."
+   ],
+   "c": 1,
+   "o4": "Las del uso Administrativo.",
+   "que": "Edificios cuyos ocupantes precisen en su mayoría ayuda para evacuar (<mark>residencias geriátricas o de discapacitados, centros de educación especial</mark>) → condiciones del <mark>uso Hospitalario</mark>.",
+   "porque": "Lo que cuenta es cómo se evacúa a la gente: si no pueden salir solos, se les trata como a pacientes de hospital.",
+   "ojo": "Parece Residencial Público (se duerme allí), pero el DB manda el Hospitalario. Y al revés: lo sanitario ambulatorio se trata como Administrativo.",
+   "rec": "No pueden salir solos → como en un hospital.",
+   "f": "CTE DB-SI, Introducción, criterios de aplicación 3 (pág. 5)",
+   "tq": "Residencia geriátrica: ¿qué uso?",
+   "ta": "Hospitalario.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 852,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "A un centro de salud de carácter ambulatorio (sin hospitalización), ¿qué condiciones particulares de uso le aplica el DB-SI?",
+   "o": [
+    "Las del uso Pública Concurrencia.",
+    "Las del uso Hospitalario.",
+    "Las del uso Administrativo."
+   ],
+   "c": 2,
+   "o4": "Las del uso Residencial Público.",
+   "que": "Los edificios o zonas de uso sanitario o asistencial <mark>de carácter ambulatorio</mark> siguen las condiciones del <mark>uso Administrativo</mark>.",
+   "porque": "Los pacientes llegan andando y se van el mismo día: evacuan como en una oficina.",
+   "ojo": "No confundir con las residencias geriátricas o de discapacitados, que van como Hospitalario porque sus ocupantes necesitan ayuda para salir.",
+   "rec": "Ambulatorio = se va andando = oficina.",
+   "f": "CTE DB-SI, Introducción, criterios de aplicación 4 (pág. 5)",
+   "tq": "Sanitario ambulatorio: ¿qué uso?",
+   "ta": "Administrativo.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 853,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "En el CTE, ¿dónde figuran las soluciones para los elementos de circulación (pasillos, escaleras, rampas) y el alumbrado de emergencia?",
+   "o": [
+    "En el DB SI, sección SI 4.",
+    "En el DB SU (Seguridad de utilización).",
+    "En el DB SI, sección SI 3."
+   ],
+   "c": 1,
+   "o4": "En el DB HE (Ahorro de energía).",
+   "que": "La seguridad de las personas al desplazarse, en uso normal y en emergencia, va en el requisito <mark>«Seguridad de utilización»</mark>: el <mark>DB SU</mark> recoge pasillos, escaleras, rampas, iluminación normal y alumbrado de emergencia.",
+   "porque": "Así cada requisito básico tiene su DB; el DB-SI no repite lo que ya está en el DB SU.",
+   "ojo": "La SI 3 trata la evacuación (salidas, recorridos, anchuras), pero el alumbrado de emergencia está en el DB SU.",
+   "rec": "SU = moverse Sin sUstos; SI = Incendio.",
+   "f": "CTE DB-SI, Introducción, nota (2) (pág. 4)",
+   "tq": "Alumbrado de emergencia y escaleras: ¿qué DB?",
+   "ta": "DB SU (Seguridad de utilización).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 854,
+   "t": "CTE DB-SI",
+   "d": "difícil",
+   "q": "En un edificio de viviendas existente se transforma en vivienda un local que era una oficina. Según los criterios de aplicación del DB-SI, ¿qué ocurre con los elementos comunes de evacuación del edificio?",
+   "o": [
+    "Solo deben adaptarse los de la planta del local.",
+    "Deben adaptarse al DB-SI hasta el espacio exterior seguro.",
+    "No es preciso aplicarles el DB-SI."
+   ],
+   "c": 2,
+   "o4": "Deben adaptarse si el local supera 500 m².",
+   "que": "Es la <mark>excepción</mark>: al transformar en vivienda zonas de otro uso en un edificio de Residencial Vivienda existente <mark>no es preciso aplicar el DB a los elementos comunes de evacuación</mark>.",
+   "porque": "La regla general en un cambio de uso parcial es aplicar el DB a esa parte y a los medios de evacuación que la sirven hasta el espacio exterior seguro; pero convertir algo en vivienda dentro de un edificio de viviendas no empeora la evacuación común.",
+   "ojo": "La opción tentadora («hasta el espacio exterior seguro») es la regla general, que aquí no se aplica.",
+   "rec": "Si se convierte en «más de lo mismo» (vivienda en edificio de viviendas), no hay que tocar la escalera común.",
+   "f": "CTE DB-SI, Introducción, criterios de aplicación 5 (pág. 5)",
+   "tq": "Local → vivienda en edificio de viviendas existente",
+   "ta": "No hay que aplicar el DB a los elementos comunes de evacuación.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 855,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "¿Qué norma deben cumplir los dispositivos de cierre automático de las puertas resistentes al fuego?",
+   "o": [
+    "UNE-EN 1155.",
+    "UNE-EN 1158.",
+    "UNE-EN 1154."
+   ],
+   "c": 2,
+   "o4": "UNE-EN 1125.",
+   "que": "El cierre automático de las puertas resistentes al fuego es un dispositivo de cierre controlado conforme a <mark>UNE-EN 1154</mark>.",
+   "porque": "La puerta solo compartimenta si está cerrada: el cierre automático garantiza que vuelva a cerrarse tras pasar.",
+   "ojo": "Las tres normas son de herrajes y van seguidas: <mark>1155</mark> es la retención electromagnética (puertas que están abiertas) y <mark>1158</mark> el coordinador de hojas.",
+   "rec": "1154 cierra · 1155 retiene · 1158 coordina (de menor a mayor: cerrar, retener, coordinar).",
+   "f": "CTE DB-SI, Introducción, apartado V.3 (pág. 6)",
+   "tq": "Cierre automático de puertas RF",
+   "ta": "UNE-EN 1154.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 856,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Las puertas resistentes al fuego de dos hojas, además del cierre automático, ¿qué deben llevar?",
+   "o": [
+    "Un dispositivo de retención electromagnética (UNE-EN 1155).",
+    "Una barra antipánico en cada hoja (UNE-EN 1125).",
+    "Un dispositivo de coordinación de hojas (UNE-EN 1158)."
+   ],
+   "c": 2,
+   "o4": "Un fusible térmico en el marco (UNE-EN 1154).",
+   "que": "Las puertas de dos hojas deben llevar además un <mark>dispositivo de coordinación de hojas</mark> conforme a <mark>UNE-EN 1158</mark>.",
+   "porque": "El coordinador hace que las hojas cierren en el orden correcto; si la hoja con el tope cierra después, la puerta queda entreabierta y no compartimenta.",
+   "ojo": "La retención electromagnética (UNE-EN 1155) es para las puertas que permanecen habitualmente abiertas, no para las de dos hojas.",
+   "rec": "Dos hojas → hay que coordinarlas (1158, el número más alto para la puerta «más grande»).",
+   "f": "CTE DB-SI, Introducción, apartado V.3 (pág. 6)",
+   "tq": "Puerta RF de dos hojas: ¿qué más lleva?",
+   "ta": "Coordinador de hojas (UNE-EN 1158).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 857,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Una puerta resistente al fuego prevista para permanecer habitualmente abierta, ¿de qué dispositivo debe disponer?",
+   "o": [
+    "Retención electromagnética conforme a UNE-EN 1155.",
+    "Retención mecánica con fusible conforme a UNE-EN 1154.",
+    "Cierre por gravedad conforme a UNE-EN 1158."
+   ],
+   "c": 0,
+   "o4": "Calzo de seguridad conforme a UNE-EN 1125.",
+   "que": "Las puertas que deben estar habitualmente abiertas llevan un <mark>dispositivo de retención electromagnética</mark> para puertas batientes conforme a <mark>UNE-EN 1155</mark>.",
+   "porque": "El electroimán la mantiene abierta en el día a día y, al cortar la corriente (alarma de incendio), la suelta y el cierre automático la cierra.",
+   "ojo": "Nada de cuñas ni calzos: la puerta tiene que poder cerrarse sola en caso de incendio.",
+   "rec": "1155: «la imán-tiene» abierta.",
+   "f": "CTE DB-SI, Introducción, apartado V.4 (pág. 6)",
+   "tq": "Puerta RF habitualmente abierta",
+   "ta": "Retención electromagnética (UNE-EN 1155).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 858,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "¿Conforme a qué norma se determina la clasificación E 30 de las puertas de piso de los ascensores que comunican sectores de incendio?",
+   "o": [
+    "UNE-EN 81-58.",
+    "UNE-EN 81-72.",
+    "UNE-EN 81-20."
+   ],
+   "c": 0,
+   "o4": "UNE-EN 1154.",
+   "que": "La E 30 de las puertas de piso de ascensor se determina conforme a <mark>UNE-EN 81-58</mark>: ensayo de resistencia al fuego de las puertas de piso.",
+   "porque": "La puerta de ascensor se ensaya con su propia norma porque no es una puerta de paso normal.",
+   "ojo": "La familia UNE-EN 81 es toda de ascensores; el «-58» es el ensayo de fuego de las puertas de piso.",
+   "rec": "81 = ascensores; 58 = puertas de piso al fuego.",
+   "f": "CTE DB-SI, SI 1-1, nota (*) (pág. 9)",
+   "tq": "Norma de la E 30 de puertas de ascensor",
+   "ta": "UNE-EN 81-58.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     9
+    ]
+   }
+  },
+  {
+   "id": 859,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "¿Cuándo pueden duplicarse las superficies máximas de los sectores de incendio de la tabla 1.1 del DB-SI?",
+   "o": [
+    "Cuando el sector disponga de detección automática.",
+    "Cuando el sector tenga sistema de control de humo.",
+    "Cuando el sector esté protegido con extinción automática."
+   ],
+   "c": 2,
+   "o4": "Cuando la altura de evacuación no supere 15 m.",
+   "que": "Las superficies máximas de la tabla 1.1 <mark>pueden duplicarse</mark> cuando el sector está protegido con una <mark>instalación automática de extinción</mark>.",
+   "porque": "Los rociadores controlan el fuego en su inicio, así que el incendio tiene menos posibilidades de crecer y se puede admitir un sector más grande.",
+   "ojo": "La detección avisa pero no apaga: no permite duplicar.",
+   "rec": "Rociadores → ×2.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores (pág. 9)",
+   "tq": "¿Cuándo se duplica la superficie del sector?",
+   "ta": "Con extinción automática.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     9
+    ]
+   }
+  },
+  {
+   "id": 860,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Al calcular la superficie construida de un sector de incendio, ¿qué elemento contenido en él NO se computa?",
+   "o": [
+    "Una escalera protegida.",
+    "Un aseo de uso público.",
+    "Un pasillo no protegido."
+   ],
+   "c": 0,
+   "o4": "Un despacho.",
+   "que": "No forman parte del sector a efectos de su superficie: <mark>locales de riesgo especial, escaleras y pasillos protegidos, vestíbulos de independencia y escaleras compartimentadas como sector</mark>.",
+   "porque": "Esos recintos ya están compartimentados por su cuenta, así que no suman fuego al sector que los contiene.",
+   "ojo": "Un pasillo cuenta si no es protegido; lo que lo saca del cómputo es estar protegido.",
+   "rec": "Lo que ya tiene su propia «caja» contra el fuego no suma.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores (pág. 9)",
+   "tq": "¿Qué no computa en la superficie de un sector?",
+   "ta": "Riesgo especial, escaleras y pasillos protegidos, vestíbulos.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     9
+    ]
+   }
+  },
+  {
+   "id": 861,
+   "t": "CTE DB-SI",
+   "d": "difícil",
+   "q": "Un ascensor comunica un aparcamiento con las plantas de viviendas (sectores distintos). En su acceso desde el aparcamiento, ¿qué exige el DB-SI?",
+   "o": [
+    "Siempre un vestíbulo de independencia con puerta EI2 30-C5.",
+    "Una puerta E 30 o un vestíbulo, a elegir.",
+    "Basta con una puerta E 30 en el acceso."
+   ],
+   "c": 0,
+   "o4": "Ninguna medida si hay extinción automática.",
+   "que": "En general cada acceso al ascensor lleva <mark>puerta E 30 o vestíbulo de independencia con puerta EI2 30-C5</mark>, pero en <mark>zonas de riesgo especial o de uso Aparcamiento se debe disponer siempre el vestíbulo</mark>.",
+   "porque": "En un aparcamiento el humo de un coche ardiendo es mucho y muy tóxico: la puerta del ascensor sola no basta para que no suba por el hueco.",
+   "ojo": "La opción «a elegir» es la regla general; el aparcamiento es justo la excepción.",
+   "rec": "Garaje o riesgo especial → vestíbulo siempre.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores (pág. 9)",
+   "tq": "Ascensor en aparcamiento",
+   "ta": "Siempre vestíbulo de independencia (puerta EI2 30-C5).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     9
+    ]
+   }
+  },
+  {
+   "id": 862,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "En un edificio cuyo uso principal es Residencial Vivienda, ¿hasta qué superficie construida puede una oficina no constituir sector de incendio diferenciado del resto del edificio?",
+   "o": [
+    "250 m².",
+    "500 m².",
+    "1.000 m²."
+   ],
+   "c": 1,
+   "o4": "2.500 m².",
+   "que": "Todo establecimiento debe ser sector diferenciado, salvo en edificios de vivienda los de uso <mark>Docente, Administrativo o Residencial Público de hasta 500 m²</mark>.",
+   "porque": "Una oficina pequeña en un edificio de viviendas tiene un riesgo parecido al de las propias viviendas.",
+   "ojo": "No vale para cualquier uso: un comercio o un bar sí tienen que ser sector aparte aunque sean pequeños.",
+   "rec": "500 m²: el número que más se repite en la tabla 1.1.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores, tabla 1.1 (pág. 9)",
+   "tq": "Oficina en edificio de viviendas sin sector propio",
+   "ta": "Hasta 500 m² (Docente, Administrativo, Residencial Público).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     9
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 863,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Una zona de uso Pública Concurrencia, subsidiaria del uso principal del edificio, debe constituir sector de incendio diferente cuando su ocupación excede de:",
+   "o": [
+    "500 personas.",
+    "1.000 personas.",
+    "100 personas."
+   ],
+   "c": 0,
+   "o4": "250 personas.",
+   "que": "Una zona de <mark>Pública Concurrencia</mark> integrada en otro uso es sector propio si su <mark>ocupación supera 500 personas</mark>.",
+   "porque": "En Pública Concurrencia el límite se da en personas y no en m², porque el riesgo está en evacuar a mucha gente.",
+   "ojo": "Para las zonas Administrativas, Comerciales, Docentes o de alojamiento el límite es de <mark>500 m²</mark>: mismo número, distinta unidad.",
+   "rec": "500 m² para las zonas «de trabajo», 500 personas para las de público.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores, tabla 1.1 (pág. 10)",
+   "tq": "Zona de Pública Concurrencia: sector propio si…",
+   "ta": "Ocupación > 500 personas.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     10
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 864,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Un aparcamiento convencional integrado en un edificio de otro uso y que no excede de 100 m², ¿cómo se considera según el DB-SI?",
+   "o": [
+    "Local de riesgo especial bajo.",
+    "Sector de incendio diferenciado.",
+    "Local de riesgo especial medio."
+   ],
+   "c": 0,
+   "o4": "Sector de riesgo mínimo.",
+   "que": "Los aparcamientos convencionales de <mark>hasta 100 m²</mark> se consideran <mark>local de riesgo especial bajo</mark>; por encima de 100 m², sector de incendio diferente.",
+   "porque": "Un garaje pequeño (pocas plazas) no justifica un sector propio, pero sí protegerlo como local de riesgo.",
+   "ojo": "Los aparcamientos <mark>robotizados</mark> son sector diferente con cualquier superficie.",
+   "rec": "Hasta 100 m² = local de riesgo bajo; más de 100 = sector.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores, tabla 1.1 y nota (2) (pág. 10-11)",
+   "tq": "Aparcamiento convencional ≤ 100 m²",
+   "ta": "Local de riesgo especial bajo.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "id": 865,
+   "t": "CTE DB-SI",
+   "d": "difícil",
+   "q": "Un espacio diáfano puede constituir un único sector que supere los límites de superficie si, entre otras condiciones:",
+   "o": [
+    "Al menos el 90 % está en una planta y el 75 % de su perímetro es fachada.",
+    "Al menos el 75 % está en una planta y el 90 % de su perímetro es fachada.",
+    "Al menos el 90 % está en una planta y el 50 % de su perímetro es fachada."
+   ],
+   "c": 0,
+   "o4": "Al menos el 75 % está en una planta y el 75 % de su perímetro es fachada.",
+   "que": "Condiciones del espacio diáfano: <mark>al menos el 90 % en una planta</mark>, salidas directas al espacio libre exterior, <mark>al menos el 75 % del perímetro en fachada</mark> y ninguna zona habitable encima.",
+   "porque": "Si casi todo está a nivel de calle y rodeado de fachada, la gente sale enseguida y los bomberos atacan desde fuera.",
+   "ojo": "Las cifras se intercambian con facilidad: la grande (90) es la planta, la otra (75) la fachada.",
+   "rec": "«Planta noventa, fachada setenta y cinco»: primero el suelo (lo más), luego las paredes.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores, tabla 1.1 (pág. 10)",
+   "tq": "Espacio diáfano como un solo sector",
+   "ta": "≥ 90 % en una planta y ≥ 75 % del perímetro en fachada.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     10
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 866,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "En un edificio de uso Residencial Vivienda, ¿qué resistencia al fuego deben tener, como mínimo, los elementos que separan las viviendas entre sí?",
+   "o": [
+    "EI 60.",
+    "EI 30.",
+    "EI 90."
+   ],
+   "c": 0,
+   "o4": "EI 120.",
+   "que": "Los elementos que separan viviendas entre sí deben ser <mark>al menos EI 60</mark>.",
+   "porque": "Cada vivienda no es un sector de incendio, pero esa separación da una hora al vecino.",
+   "ojo": "EI 60 es también lo que se pide entre establecimientos de un centro comercial y a las paredes de las habitaciones de hotel.",
+   "rec": "Entre vecinos, una hora (60).",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores, tabla 1.1 (pág. 10)",
+   "tq": "Separación entre viviendas",
+   "ta": "EI 60.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     10
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 867,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "En un centro comercial que ocupa todo un edificio protegido íntegramente con extinción automática y con altura de evacuación no mayor de 10 m, ¿qué superficie máxima puede tener cada sector?",
+   "o": [
+    "2.500 m².",
+    "10.000 m².",
+    "5.000 m²."
+   ],
+   "c": 1,
+   "o4": "4.000 m².",
+   "que": "En uso Comercial el sector es de 2.500 m² en general y de <mark>10.000 m²</mark> en establecimientos o centros que ocupan <mark>todo un edificio con extinción automática</mark> y <mark>altura de evacuación ≤ 10 m</mark>.",
+   "porque": "Edificio entero, rociadores y poca altura: se evacúa rápido y el fuego se controla al inicio.",
+   "ojo": "5.000 m² sería solo duplicar los 2.500; aquí se permite más del doble. 4.000 m² es el de Docente.",
+   "rec": "Centro comercial con todo a favor: 10.000 m², 10 m de altura.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores, tabla 1.1 (pág. 10)",
+   "tq": "Centro comercial con rociadores y h ≤ 10 m",
+   "ta": "Sector de hasta 10.000 m².",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     10
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 868,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "En un centro comercial, ¿cuándo debe un cine constituir un sector de incendio diferenciado?",
+   "o": [
+    "Cuando su superficie supere 500 m².",
+    "Cuando su superficie supere 2.500 m².",
+    "Siempre, cualquiera que sea su superficie."
+   ],
+   "c": 2,
+   "o4": "Cuando su aforo supere 500 personas.",
+   "que": "En centros comerciales, todo establecimiento de Pública Concurrencia con <mark>espectáculos</mark> (cines, teatros, discotecas, salas de baile…) es sector diferenciado <mark>cualquiera que sea su superficie</mark>.",
+   "porque": "Mucha gente a oscuras y concentrada: se separa siempre del resto del centro.",
+   "ojo": "Los 500 m² son para los de Pública Concurrencia <mark>sin espectáculos</mark> (p. ej. restaurantes).",
+   "rec": "Si hay espectáculo, siempre aparte.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores, tabla 1.1 (pág. 10)",
+   "tq": "Cine en centro comercial",
+   "ta": "Siempre sector diferenciado.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     10
+    ]
+   }
+  },
+  {
+   "id": 869,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "En un colegio de dos plantas, ¿qué superficie construida máxima puede tener cada sector de incendio?",
+   "o": [
+    "4.000 m².",
+    "2.500 m².",
+    "1.500 m²."
+   ],
+   "c": 0,
+   "o4": "10.000 m².",
+   "que": "Uso Docente: con más de una planta, sectores de <mark>hasta 4.000 m²</mark>; si tiene <mark>una sola planta</mark>, no es preciso compartimentarlo.",
+   "porque": "Los alumnos están organizados y se evacúan con simulacros, por eso se permite más que los 2.500 m² generales.",
+   "ojo": "2.500 m² es el límite general y el de Administrativo; 1.500 m² es el de las plantas de hospitalización.",
+   "rec": "Docente: 4 (4.000 m²), como los cuatro cursos de la ESO.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores, tabla 1.1 (pág. 10)",
+   "tq": "Sector en Docente de varias plantas",
+   "ta": "4.000 m² (una planta: sin compartimentar).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     10
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 870,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "En un hospital, las plantas con hospitalización o con unidades especiales (quirófanos, UVI) deben dividirse en al menos dos sectores. ¿Qué superficie máxima puede tener cada uno?",
+   "o": [
+    "1.000 m².",
+    "1.500 m².",
+    "2.500 m²."
+   ],
+   "c": 1,
+   "o4": "4.000 m².",
+   "que": "Al menos <mark>dos sectores de hasta 1.500 m²</mark> cada uno, con espacio para albergar a los pacientes de un sector contiguo.",
+   "porque": "A los pacientes no se les evacúa a la calle: se les pasa al sector de al lado (evacuación horizontal).",
+   "ojo": "Excepción: plantas de hasta 1.500 m² con salidas directas al espacio exterior seguro y recorridos de hasta 25 m. En otras zonas del hospital, 2.500 m².",
+   "rec": "Hospital: sectores pequeños (1.500) para mover camas al de al lado.",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores, tabla 1.1 (pág. 10)",
+   "tq": "Sectores en plantas de hospitalización",
+   "ta": "Al menos 2, de hasta 1.500 m².",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     10
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 871,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "En un hotel de más de 500 m², ¿qué resistencia al fuego deben tener las habitaciones (que no sean local de riesgo especial)?",
+   "o": [
+    "Paredes EI 90 y puertas de acceso EI2 45-C5.",
+    "Paredes EI 30 y puertas de acceso EI2 15-C5.",
+    "Paredes EI 60 y puertas de acceso EI2 30-C5."
+   ],
+   "c": 2,
+   "o4": "Paredes EI 120 y puertas de acceso EI2 60-C5.",
+   "que": "Residencial Público: habitaciones y oficios de planta con <mark>paredes EI 60</mark> y, en establecimientos de <mark>más de 500 m²</mark>, <mark>puertas EI2 30-C5</mark>.",
+   "porque": "La gente duerme y tarda en reaccionar: cada habitación es una pequeña «caja» que retrasa el fuego.",
+   "ojo": "Si el hotel no supera 500 m², se exigen las paredes EI 60 pero no esas puertas.",
+   "rec": "Hotel: pared 60, puerta la mitad (30).",
+   "f": "CTE DB-SI, SI 1-1 Compartimentación en sectores, tabla 1.1 (pág. 10)",
+   "tq": "Habitación de hotel > 500 m²",
+   "ta": "Paredes EI 60 · puertas EI2 30-C5.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     10
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 872,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Un auditorio con público sentado en asientos fijos puede ser un sector de más de 2.500 m² si, entre otras condiciones, la densidad de carga de fuego de revestimientos y mobiliario fijo no excede de:",
+   "o": [
+    "200 MJ/m².",
+    "400 MJ/m².",
+    "100 MJ/m²."
+   ],
+   "c": 0,
+   "o4": "50 MJ/m².",
+   "que": "Cines, teatros, auditorios, museos, polideportivos… pueden superar 2.500 m² si: compartimentados <mark>EI 120</mark>, salidas a sector de riesgo mínimo o al exterior, revestimientos B-s1,d0 / BFL-s1, <mark>carga de fuego ≤ 200 MJ/m²</mark> y nada habitable encima.",
+   "porque": "Con poco material que arda y bien separado, un recinto grande y diáfano no es peligroso.",
+   "ojo": "No confundir con el sector de riesgo mínimo, que pide 40 MJ/m² en conjunto y 50 MJ/m² por recinto.",
+   "rec": "Gran auditorio: 200 MJ/m² y 120 minutos de pared.",
+   "f": "CTE DB-SI, SI 1-1, tabla 1.1 (pág. 11)",
+   "tq": "Auditorio > 2.500 m²: carga de fuego máx.",
+   "ta": "200 MJ/m².",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     11
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 873,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "¿Qué exige el DB-SI a las cajas escénicas de los teatros?",
+   "o": [
+    "Que se comuniquen con la sala por un vestíbulo de independencia.",
+    "Que constituyan un sector de incendio diferenciado.",
+    "Que formen parte del sector del público sentado."
+   ],
+   "c": 1,
+   "o4": "Que no tengan ninguna zona habitable encima.",
+   "que": "Las <mark>cajas escénicas deben constituir un sector de incendio diferenciado</mark>.",
+   "porque": "La caja escénica acumula decorados, telas y focos: mucha carga de fuego junto a mucho público.",
+   "ojo": "Aunque el espacio del público sentado pueda ser un gran sector de más de 2.500 m², el escenario va siempre aparte.",
+   "rec": "Escenario = caja propia.",
+   "f": "CTE DB-SI, SI 1-1, tabla 1.1 (pág. 11)",
+   "tq": "Caja escénica",
+   "ta": "Sector de incendio diferenciado.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 874,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Los aparcamientos robotizados situados debajo de otro uso deben compartimentarse en sectores de incendio que no excedan de:",
+   "o": [
+    "2.500 m³.",
+    "10.000 m².",
+    "10.000 m³."
+   ],
+   "c": 2,
+   "o4": "5.000 m³.",
+   "que": "Aparcamientos robotizados bajo otro uso: sectores de <mark>hasta 10.000 m³</mark> (volumen, no superficie).",
+   "porque": "En un robotizado los coches se apilan en altura, así que lo que importa es el volumen y no los m².",
+   "ojo": "Las paredes que lo separan, bajo rasante, deben ser <mark>EI 180</mark> si es robotizado (EI 120 si es convencional).",
+   "rec": "Robot = coches en 3D → m³.",
+   "f": "CTE DB-SI, SI 1-1, tabla 1.1 (pág. 11)",
+   "tq": "Aparcamiento robotizado bajo otro uso",
+   "ta": "Sectores ≤ 10.000 m³.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     11
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 875,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Hospital con altura de evacuación de 20 m. Entre dos sectores de una planta sobre rasante hay paso directo, sin vestíbulo. ¿Qué puerta se necesita?",
+   "o": [
+    "EI2 60-C5.",
+    "EI2 120-C5.",
+    "EI2 30-C5."
+   ],
+   "c": 0,
+   "o4": "EI2 90-C5.",
+   "que": "Hospitalario con 15 < h ≤ 28 m → pared <mark>EI 120</mark>. La puerta de paso entre sectores es <mark>EI2 t-C5 con t = la mitad</mark> de la pared → <mark>EI2 60-C5</mark>.",
+   "porque": "Una puerta se cierra sola y se abre a menudo: se le exige la mitad que a la pared que atraviesa.",
+   "ojo": "EI2 30-C5 sería la cuarta parte, que solo vale si se pasa por un vestíbulo de independencia con dos puertas.",
+   "rec": "Puerta directa = mitad; con vestíbulo y dos puertas = cuarta parte.",
+   "f": "CTE DB-SI, SI 1-1, tabla 1.2 (pág. 11)",
+   "tq": "Puerta de paso entre sectores (directa)",
+   "ta": "EI2 t-C5, t = mitad de la pared.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     11
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 876,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Edificio de oficinas con altura de evacuación de 30 m (ver esquema). El paso entre dos sectores se hace a través de un vestíbulo de independencia con dos puertas. ¿Qué resistencia mínima debe tener cada puerta?",
+   "o": [
+    "EI2 60-C5.",
+    "EI2 30-C5.",
+    "EI2 120-C5."
+   ],
+   "c": 1,
+   "o4": "EI2 15-C5.",
+   "que": "Administrativo con h > 28 m → pared <mark>EI 120</mark>. Con vestíbulo de independencia y dos puertas, cada puerta tiene <mark>la cuarta parte</mark>: 120 / 4 = <mark>EI2 30-C5</mark>.",
+   "porque": "Las dos puertas y el vestíbulo suman su protección, por eso cada una puede ser más «floja».",
+   "ojo": "Sin vestíbulo sería la mitad (EI2 60-C5). Y nunca menos de EI2 30-C5: es el mínimo que pide el Anejo A para las puertas del vestíbulo.",
+   "rec": "Dos puertas → cada una un cuarto.",
+   "f": "CTE DB-SI, SI 1-1, tabla 1.2 (pág. 11)",
+   "tq": "Puerta con vestíbulo de independencia",
+   "ta": "EI2 t-C5, t = cuarta parte (mín. EI2 30-C5).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     11
+    ]
+   },
+   "ex": 1,
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 320 150\" role=\"img\" aria-label=\"Planta esquemática: dos sectores de incendio separados por una pared EI 120; el paso entre ellos se hace a través de un vestíbulo de independencia con dos puertas, marcadas con interrogación\"><g font-size=\"11\" fill=\"#222\" text-anchor=\"middle\"><rect x=\"10\" y=\"20\" width=\"130\" height=\"110\" fill=\"#fde2c8\" stroke=\"#a0522d\"/><rect x=\"180\" y=\"20\" width=\"130\" height=\"110\" fill=\"#d6e6f5\" stroke=\"#3d5a73\"/><rect x=\"140\" y=\"20\" width=\"40\" height=\"110\" fill=\"#555\"/><rect x=\"135\" y=\"55\" width=\"50\" height=\"40\" fill=\"#f4f4f4\" stroke=\"#222\"/><rect x=\"133\" y=\"65\" width=\"5\" height=\"20\" fill=\"#2e8b57\"/><rect x=\"182\" y=\"65\" width=\"5\" height=\"20\" fill=\"#2e8b57\"/><text x=\"75\" y=\"70\">Sector A</text><text x=\"75\" y=\"85\">(oficinas)</text><text x=\"245\" y=\"70\">Sector B</text><text x=\"245\" y=\"85\">(oficinas)</text><text x=\"160\" y=\"15\">Pared EI 120</text><text x=\"160\" y=\"110\" font-size=\"9\" fill=\"#fff\">vestíbulo</text><text x=\"122\" y=\"60\" font-size=\"13\" fill=\"#2e8b57\">?</text><text x=\"198\" y=\"60\" font-size=\"13\" fill=\"#2e8b57\">?</text><text x=\"160\" y=\"146\" font-size=\"10\">Altura de evacuación del edificio: 30 m</text></g></svg>"
+  },
+  {
+   "id": 877,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Edificio de viviendas con altura de evacuación de 20 m. ¿Qué resistencia al fuego deben tener las paredes que separan un sector sobre rasante del resto del edificio?",
+   "o": [
+    "EI 90.",
+    "EI 120.",
+    "EI 60."
+   ],
+   "c": 0,
+   "o4": "EI 180.",
+   "que": "Residencial Vivienda (y Residencial Público, Docente, Administrativo) sobre rasante: <mark>h ≤ 15 m → EI 60</mark>; <mark>15 < h ≤ 28 m → EI 90</mark>; <mark>h > 28 m → EI 120</mark>.",
+   "porque": "Cuanto más alto el edificio, más tarda la evacuación y la llegada de los bomberos: más resistencia.",
+   "ojo": "Para Comercial, Pública Concurrencia y Hospitalario la escala va un escalón por encima: EI 90 / EI 120 / EI 180.",
+   "rec": "Viviendas: 60-90-120 al subir de 15 y de 28 m.",
+   "f": "CTE DB-SI, SI 1-1, tabla 1.2 (pág. 11)",
+   "tq": "Paredes de sector, vivienda 15 < h ≤ 28 m",
+   "ta": "EI 90.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     11
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 878,
+   "t": "CTE DB-SI",
+   "d": "difícil",
+   "q": "Según la tabla 1.2 del DB-SI, ¿qué resistencia al fuego se exige a las paredes de un sector de riesgo mínimo situado en planta bajo rasante?",
+   "o": [
+    "EI 120, como sobre rasante.",
+    "EI 180, por estar bajo rasante.",
+    "No se admite bajo rasante."
+   ],
+   "c": 2,
+   "o4": "EI 90, por ser de riesgo mínimo.",
+   "que": "En la tabla 1.2, para el sector de riesgo mínimo bajo rasante pone <mark>«no se admite»</mark>; sobre rasante, EI 120 a cualquier altura.",
+   "porque": "Por definición, un sector de riesgo mínimo es solo de circulación y <mark>no puede estar bajo rasante</mark>.",
+   "ojo": "La opción tentadora es EI 120, que es lo que la tabla pide al resto de usos bajo rasante.",
+   "rec": "Riesgo mínimo = siempre arriba (sobre rasante).",
+   "f": "CTE DB-SI, SI 1-1, tabla 1.2 (pág. 11)",
+   "tq": "Sector de riesgo mínimo bajo rasante",
+   "ta": "No se admite.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 879,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Un techo que separa un sector de incendio de la planta superior, ¿qué característica de resistencia al fuego debe tener?",
+   "o": [
+    "Solo R, por ser elemento estructural.",
+    "REI, por ser portante y compartimentador.",
+    "EI, la misma que las paredes."
+   ],
+   "c": 1,
+   "o4": "E, por ser horizontal.",
+   "que": "Cuando el techo separa de una planta superior debe tener al menos la resistencia de las paredes pero como <mark>REI en lugar de EI</mark>.",
+   "porque": "Además de compartimentar (EI), soporta la planta de arriba (R): por eso las tres letras.",
+   "ojo": "Solo R vale para una cubierta no utilizada ni prevista para evacuación, salvo en las franjas de la SI 2, donde vuelve a ser REI.",
+   "rec": "R = Resiste carga · E = Estanco a llamas · I = aIsla del calor.",
+   "f": "CTE DB-SI, SI 1-1, tabla 1.2, nota (3) (pág. 12)",
+   "tq": "Techo que separa de la planta superior",
+   "ta": "REI (no solo EI).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     12
+    ]
+   }
+  },
+  {
+   "id": 880,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Acudís a un incendio en la cocina de un restaurante con 40 kW de potencia instalada y sin sistema automático de extinción en sus aparatos. Según el DB-SI, ¿qué tipo de local era esa cocina?",
+   "o": [
+    "Local de riesgo especial bajo.",
+    "Local de riesgo especial medio.",
+    "Local de riesgo especial alto."
+   ],
+   "c": 1,
+   "o4": "No es local de riesgo especial.",
+   "que": "Cocinas según potencia instalada: <mark>20-30 kW bajo</mark>, <mark>30-50 kW medio</mark>, <mark>más de 50 kW alto</mark>. Con 40 kW → <mark>medio</mark>.",
+   "porque": "A más potencia, más calor y grasa acumulada: más riesgo de incendio.",
+   "ojo": "Hasta 20 kW no es local de riesgo especial. Y en usos distintos de Hospitalario y Residencial Público, una cocina con sus aparatos protegidos por <mark>extinción automática</mark> deja de considerarse local de riesgo especial (ese sistema es obligatorio por encima de 50 kW).",
+   "rec": "Cocinas: 20-30-50 (como sumar de 10 en 10 y luego 20).",
+   "f": "CTE DB-SI, SI 1-2, tabla 2.1 y nota (1) (pág. 12 y 14)",
+   "tq": "Cocina de 40 kW",
+   "ta": "Riesgo especial medio (30-50 kW).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     12,
+     14
+    ]
+   },
+   "int": 1,
+   "cifra": 1
+  },
+  {
+   "id": 881,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "¿A partir de qué potencia útil nominal una sala de calderas es local de riesgo especial alto?",
+   "o": [
+    "Más de 200 kW.",
+    "Más de 600 kW.",
+    "Más de 70 kW."
+   ],
+   "c": 1,
+   "o4": "Más de 400 kW.",
+   "que": "Salas de calderas: <mark>70-200 kW bajo</mark>, <mark>200-600 kW medio</mark>, <mark>más de 600 kW alto</mark>.",
+   "porque": "Una caldera grande quema mucho combustible y suele tener depósito o acometida de gas cerca.",
+   "ojo": "70 kW es donde empieza el riesgo bajo, y 200 kW donde empieza el medio.",
+   "rec": "Calderas: 70 · 200 · 600.",
+   "f": "CTE DB-SI, SI 1-2, tabla 2.1 (pág. 12)",
+   "tq": "Sala de calderas de riesgo alto",
+   "ta": "Más de 600 kW.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     12
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 882,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "¿Qué volumen construido convierte un almacén de elementos combustibles (mobiliario, lencería…) en local de riesgo especial alto?",
+   "o": [
+    "Más de 200 m³.",
+    "Más de 400 m³.",
+    "Más de 100 m³."
+   ],
+   "c": 1,
+   "o4": "Más de 600 m³.",
+   "que": "Talleres de mantenimiento, almacenes de combustibles, archivos y depósitos de libros: <mark>100-200 m³ bajo</mark>, <mark>200-400 m³ medio</mark>, <mark>más de 400 m³ alto</mark>.",
+   "porque": "Se mide en volumen porque lo que arde se apila en altura.",
+   "ojo": "En los almacenes de residuos el criterio es la superficie (m²), no el volumen.",
+   "rec": "Almacenes: 100-200-400, cada uno el doble del anterior.",
+   "f": "CTE DB-SI, SI 1-2, tabla 2.1 (pág. 12)",
+   "tq": "Almacén de combustibles de riesgo alto",
+   "ta": "Más de 400 m³.",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     12
+    ]
+   },
+   "cifra": 1
   }
  ],
  "glosario": [
@@ -4840,6 +5775,63 @@
    "d": "Norma que fija las clases de seguridad de las puertas según tiempo de resistencia, tipo de ladrón y herramientas.",
    "tema": "Accesos forzados",
    "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Vestíbulo de independencia",
+   "a": [
+    "vestíbulo de independencia",
+    "vestíbulos de independencia"
+   ],
+   "d": "Recinto solo de circulación entre dos o más recintos o zonas, para dar más garantía de compartimentación. Solo comunica con las zonas a independizar, aseos de planta y ascensores. Paredes EI 120; sus puertas, la cuarta parte de la resistencia del elemento que separa las zonas y al menos EI2 30-C5.",
+   "tema": "CTE DB-SI",
+   "f": "CTE DB-SI, Anejo SI A",
+   "solo": 1
+  },
+  {
+   "t": "Sector de riesgo mínimo",
+   "a": [
+    "sector de riesgo mínimo",
+    "sectores de riesgo mínimo"
+   ],
+   "d": "Sector de incendio destinado exclusivamente a circulación, que no está bajo rasante y cuya densidad de carga de fuego no excede de 40 MJ/m² en conjunto ni de 50 MJ/m² en ningún recinto. No tiene límite de superficie.",
+   "tema": "CTE DB-SI",
+   "f": "CTE DB-SI, Anejo SI A",
+   "solo": 1
+  },
+  {
+   "t": "Local de riesgo especial",
+   "a": [
+    "local de riesgo especial",
+    "locales de riesgo especial",
+    "zona de riesgo especial"
+   ],
+   "d": "Local o zona integrada en un edificio que, por su uso y tamaño (talleres, almacenes, cocinas, salas de calderas…), se clasifica en riesgo bajo, medio o alto según la tabla 2.1 de la SI 1 y debe cumplir condiciones propias de compartimentación.",
+   "tema": "CTE DB-SI",
+   "f": "CTE DB-SI, SI 1-2",
+   "solo": 1
+  },
+  {
+   "t": "EI / REI",
+   "a": [
+    "EI",
+    "REI",
+    "EI2"
+   ],
+   "d": "Clasificaciones de resistencia al fuego: R = capacidad portante, E = integridad (no deja pasar llamas ni gases), I = aislamiento térmico; el número son los minutos. Una pared compartimentadora es EI; un forjado que además soporta carga es REI. En puertas, EI2 t-C5 (C5 = cierre automático muy duradero).",
+   "tema": "CTE DB-SI",
+   "f": "CTE DB-SI, SI 1-1",
+   "solo": 1
+  },
+  {
+   "t": "Densidad de carga de fuego",
+   "a": [
+    "densidad de carga de fuego",
+    "carga de fuego"
+   ],
+   "d": "Carga de fuego (energía que puede liberar lo que hay en un recinto, en MJ) por unidad de superficie construida (MJ/m²).",
+   "tema": "CTE DB-SI",
+   "f": "CTE DB-SI, Anejo SI A",
    "solo": 1
   }
  ]
