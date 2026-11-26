@@ -1,0 +1,1182 @@
+{
+ "preguntas": [
+  {
+   "id": 690,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Según el manual, ¿cuál de estos elementos NO caracteriza a una fuerza en edificación?",
+   "o": [
+    "Su masa.",
+    "Su punto de aplicación.",
+    "Su dirección."
+   ],
+   "c": 0,
+   "o4": "Su sentido.",
+   "que": "Una fuerza se caracteriza por su <mark>módulo (magnitud), dirección y sentido</mark> y por su <mark>punto de aplicación</mark>.",
+   "porque": "Es una magnitud vectorial: no basta con saber cuánto empuja, hay que saber hacia dónde y dónde se aplica.",
+   "ojo": "La masa interviene en el cálculo (F = m · a), pero no es un atributo de la fuerza. <b>Contraste:</b> es la definición clásica de vector fuerza; el manual la recoge bien.",
+   "rec": "Fuerza = <mark>MDS + punto</mark> (Módulo, Dirección, Sentido y punto de aplicación).",
+   "f": "Edificaciones I, 2.1 Fuerza (pág. 22)",
+   "tq": "Elementos que caracterizan una fuerza",
+   "ta": "Módulo, dirección, sentido y punto de aplicación.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 691,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Con qué otro nombre se conoce la 1.ª ley de Newton?",
+   "o": [
+    "Principio de inercia.",
+    "Principio de acción y reacción.",
+    "Ley fundamental de la dinámica."
+   ],
+   "c": 0,
+   "o4": "Principio de conservación de la energía.",
+   "que": "1.ª ley: todo cuerpo sigue en reposo o en movimiento rectilíneo uniforme si no actúa una fuerza externa: <mark>principio de inercia</mark>.",
+   "porque": "Sin fuerza, el cuerpo «persevera» en su estado: eso es la inercia.",
+   "ojo": "La 3.ª es la de <mark>acción y reacción</mark> y la 2.ª es F = m · a. <b>Contraste:</b> correcto en el manual.",
+   "rec": "1.ª Inercia · 2.ª F = m·a · 3.ª Acción-reacción.",
+   "f": "Edificaciones I, 2.1 Fuerza (pág. 22)",
+   "tq": "Otro nombre de la 1.ª ley de Newton",
+   "ta": "Principio de inercia.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 692,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Cómo se calcula el momento de un par de fuerzas?",
+   "o": [
+    "Una de las fuerzas dividida entre la distancia perpendicular.",
+    "La suma de las dos fuerzas por la distancia entre ellas.",
+    "Una de las fuerzas por la distancia perpendicular entre ellas."
+   ],
+   "c": 2,
+   "o4": "La suma de las dos fuerzas dividida entre la distancia.",
+   "que": "Par de fuerzas: dos fuerzas <mark>paralelas, de igual módulo y sentidos contrarios</mark>. Su momento = <mark>F · d</mark>, siendo d la distancia perpendicular entre ellas (<b>brazo del par</b>).",
+   "porque": "Las dos fuerzas son iguales: basta multiplicar una de ellas por el brazo. A mayor brazo, mayor momento.",
+   "ojo": "No se suman las dos fuerzas. Unidad: N·m (el manual dice «Newtons por metro», pero es newton por metro en el sentido de producto, N·m). <b>Contraste:</b> definición correcta.",
+   "rec": "Momento = <mark>F × brazo</mark>.",
+   "f": "Edificaciones I, 2.2 Momentos (pág. 23)",
+   "tq": "Momento de un par de fuerzas",
+   "ta": "F · d (distancia perpendicular entre ellas).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 693,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Para impedir que un par de fuerzas haga girar un cuerpo, debe aparecer un momento igual y de sentido contrario. ¿Cómo lo llama el manual?",
+   "o": [
+    "Momento restaurador o de vuelco.",
+    "Momento flector o de inercia.",
+    "Momento resistente o de empotramiento."
+   ],
+   "c": 2,
+   "o4": "Momento torsor o de giro.",
+   "que": "Para evitar la rotación, el cuerpo genera una reacción de igual magnitud y sentido contrario: el <mark>momento resistente</mark> o <mark>momento de empotramiento</mark>.",
+   "porque": "Es lo que hace un empotramiento: impide el giro del extremo de la pieza.",
+   "ojo": "El «momento restaurador» aparece en el apartado de equilibrio (cuerpo que vuelve a su posición), no aquí. <b>Contraste:</b> terminología correcta.",
+   "rec": "Empotrar = <mark>no dejar girar</mark>.",
+   "f": "Edificaciones I, 2.2 Momentos (pág. 23)",
+   "tq": "Momento que impide el giro de un par",
+   "ta": "Momento resistente o de empotramiento.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 694,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Un bombero sujeta una garrafa pesada pegada al cuerpo, con el brazo vertical, y luego la sostiene con el brazo extendido en horizontal. ¿Por qué le cuesta mucho más la segunda vez?",
+   "o": [
+    "Aparece un momento (peso × distancia al hombro) que debe equilibrar con su musculatura.",
+    "Porque el peso de la garrafa aumenta al alejarla del cuerpo.",
+    "Porque el brazo extendido anula la reacción vertical del hombro."
+   ],
+   "c": 0,
+   "o4": "Porque desaparece el momento que había con el brazo vertical.",
+   "que": "Con el brazo vertical, peso y reacción están <mark>alineados</mark>: el brazo de palanca es cero y no hay momento. En horizontal, aparece un momento <mark>P · d</mark>.",
+   "porque": "Ese momento hay que contrarrestarlo con un <mark>momento de empotramiento</mark> en el hombro: un esfuerzo añadido, aunque la carga sea la misma.",
+   "ojo": "El peso no cambia; lo que cambia es la distancia a la vertical del hombro. <b>Contraste:</b> el ejemplo del manual (bolsa de la compra) es correcto.",
+   "rec": "Más lejos del hombro → <mark>más momento</mark> → más esfuerzo.",
+   "f": "Edificaciones I, 2.2 Momentos, ejemplo (pág. 23)",
+   "tq": "Carga con el brazo horizontal: ¿por qué cuesta más?",
+   "ta": "Aparece un momento P · d que hay que equilibrar.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     5
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 695,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Con una barra de uña se quiere levantar un escombro de 600 N situado a 0,5 m del punto de apoyo. Si la mano empuja a 1,5 m del apoyo (ver esquema), ¿qué fuerza mínima hay que hacer?",
+   "o": [
+    "200 N.",
+    "300 N.",
+    "1.800 N."
+   ],
+   "c": 0,
+   "o4": "600 N.",
+   "que": "Palanca en equilibrio: <mark>P · dp = R · dr</mark>. Aquí P · 1,5 = 600 · 0,5 = 300 → <mark>P = 200 N</mark>.",
+   "porque": "El brazo de potencia es el triple que el de resistencia, así que basta un tercio de la fuerza.",
+   "ojo": "1.800 N sale de multiplicar en vez de dividir. Para mover más con la misma fuerza: <mark>alargar el brazo de potencia</mark> o acercar la carga al apoyo. <b>Contraste:</b> ley de la palanca correcta en el manual.",
+   "rec": "Brazo × 3 → fuerza ÷ 3.",
+   "f": "Edificaciones I, 2.2 Momentos, palanca (pág. 23)",
+   "tq": "Palanca: P · dp = R · dr",
+   "ta": "Fuerza × su brazo = resistencia × su brazo.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     5
+    ]
+   },
+   "ex": 1,
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 300 120\" role=\"img\" aria-label=\"Palanca: barra horizontal sobre un apoyo triangular. A la izquierda, a 0,5 m del apoyo, una carga R de 600 N; a la derecha, a 1,5 m del apoyo, una fuerza P desconocida hacia abajo\"><g font-size=\"11\" fill=\"#222\" text-anchor=\"middle\"><rect x=\"20\" y=\"52\" width=\"260\" height=\"8\" rx=\"2\" fill=\"#c9a26b\" stroke=\"#7a5a2b\"/><polygon points=\"85,60 70,90 100,90\" fill=\"#9fb4c7\" stroke=\"#3d5a73\"/><line x1=\"10\" y1=\"90\" x2=\"290\" y2=\"90\" stroke=\"#555\"/><rect x=\"22\" y=\"28\" width=\"26\" height=\"24\" fill=\"#d97b6c\" stroke=\"#8a3b30\"/><text x=\"35\" y=\"22\">R = 600 N</text><line x1=\"270\" y1=\"20\" x2=\"270\" y2=\"48\" stroke=\"#2b6ca3\" stroke-width=\"2.5\"/><polygon points=\"264,42 276,42 270,52\" fill=\"#2b6ca3\"/><text x=\"270\" y=\"14\">P = ?</text><line x1=\"35\" y1=\"104\" x2=\"85\" y2=\"104\" stroke=\"#555\"/><text x=\"60\" y=\"117\">0,5 m</text><line x1=\"85\" y1=\"104\" x2=\"270\" y2=\"104\" stroke=\"#555\"/><text x=\"178\" y=\"117\">1,5 m</text><text x=\"85\" y=\"78\" font-size=\"9\">apoyo</text></g></svg>"
+  },
+  {
+   "id": 696,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Según el manual, ¿qué condiciones deben cumplirse para que un cuerpo esté en equilibrio estático?",
+   "o": [
+    "Que la suma de momentos sea cero, aunque haya fuerzas.",
+    "Que la suma de fuerzas sea cero, aunque haya momentos.",
+    "Que la suma de fuerzas y la suma de momentos sean cero."
+   ],
+   "c": 2,
+   "o4": "Que todas las fuerzas sean verticales.",
+   "que": "Las cargas producen <mark>empujes (fuerzas)</mark> y <mark>giros (momentos)</mark>. En equilibrio: <mark>∑F = 0 y ∑M = 0</mark>.",
+   "porque": "Si sobra fuerza, el cuerpo se desplaza; si sobra momento, gira. Tienen que anularse las dos cosas.",
+   "ojo": "Un par de fuerzas tiene ∑F = 0 y aun así hace girar el cuerpo. <b>Contraste:</b> correcto.",
+   "rec": "Ni se mueve (∑F = 0) ni gira (∑M = 0).",
+   "f": "Edificaciones I, 2.3 Equilibrio (pág. 24)",
+   "tq": "Condiciones de equilibrio estático",
+   "ta": "∑F = 0 y ∑M = 0.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 697,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Qué afirmación sobre el centro de gravedad es correcta según el manual?",
+   "o": [
+    "Puede estar fuera del material del cuerpo, como en una esfera hueca.",
+    "Siempre coincide con un punto material del cuerpo.",
+    "Siempre está en la base de apoyo del cuerpo."
+   ],
+   "c": 0,
+   "o4": "Solo existe en cuerpos macizos.",
+   "que": "Centro de gravedad: punto en el que puede considerarse <mark>concentrado todo el peso</mark> del cuerpo.",
+   "porque": "<mark>No tiene por qué ser un punto material</mark>: en una esfera hueca está en el centro, donde no hay material.",
+   "ojo": "Lo mismo pasa en un aro o en una pieza en forma de L. <b>Contraste:</b> correcto.",
+   "rec": "Esfera hueca: el centro de gravedad está <mark>en el aire</mark>.",
+   "f": "Edificaciones I, 2.3 Equilibrio (pág. 24)",
+   "tq": "¿Está siempre el centro de gravedad dentro del material?",
+   "ta": "No: p. ej., en una esfera hueca está en el centro vacío.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 698,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "En una intervención, un armario metálico alto queda inclinado contra una pared dañada. Según el criterio del manual, ¿cuándo volcará por sí solo si se retira el apoyo?",
+   "o": [
+    "Si la vertical de su centro de gravedad cae fuera de su base de apoyo.",
+    "Si la vertical de su centro de gravedad cae dentro de su base.",
+    "Si su centro de gravedad está por encima de la mitad de su altura."
+   ],
+   "c": 0,
+   "o4": "Solo si recibe un impacto lateral.",
+   "que": "Un objeto apoyado está en <mark>equilibrio estable</mark> si la vertical que pasa por su centro de gravedad <mark>corta la base de apoyo</mark>.",
+   "porque": "Si se inclina un poco, aparece un <mark>momento restaurador</mark> que lo devuelve. Si el centro de gravedad sale de la base, ya no hay momento restaurador y gira hasta otra posición: vuelca.",
+   "ojo": "La altura del centro de gravedad influye en cuánto se puede inclinar antes de volcar, pero el criterio es si su vertical cae dentro o fuera de la base. <b>Contraste:</b> correcto.",
+   "rec": "Vertical del CDG <mark>dentro de la base → aguanta</mark>; fuera → vuelca.",
+   "f": "Edificaciones I, 2.3 Equilibrio (pág. 24)",
+   "tq": "¿Cuándo vuelca un objeto apoyado?",
+   "ta": "Cuando la vertical de su CDG cae fuera de la base.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     6
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 699,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Según el manual, ¿qué ocurre cuando un material supera su límite de elasticidad?",
+   "o": [
+    "Se rompe de inmediato, sin deformarse más.",
+    "Sus deformaciones pasan a ser permanentes y suele perder sección y resistencia.",
+    "Sigue recuperando su forma al retirar la carga, pero más despacio."
+   ],
+   "c": 1,
+   "o4": "Aumenta su módulo de elasticidad.",
+   "que": "Hasta el <mark>límite de elasticidad</mark> el comportamiento es elástico (deformación recuperable). A partir de ahí es <mark>plástico</mark>: deformación permanente.",
+   "porque": "Los esfuerzos superiores al límite elástico alteran los enlaces moleculares; suele ir acompañado de <mark>pérdida de sección y de resistencia</mark>.",
+   "ojo": "Superar el límite elástico no es romper: entre el límite elástico y la rotura está toda la zona plástica. <b>Contraste:</b> correcto.",
+   "rec": "Elástico = <mark>vuelve</mark>; plástico = <mark>se queda</mark>.",
+   "f": "Edificaciones I, 2.4 Elasticidad (pág. 25)",
+   "tq": "Qué pasa al superar el límite de elasticidad",
+   "ta": "Deformación permanente (plástica), con pérdida de sección y resistencia.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 700,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Qué indica un coeficiente de conductividad térmica bajo en un material?",
+   "o": [
+    "Que es mejor aislante.",
+    "Que transmite mejor el calor.",
+    "Que se dilata menos con el calor."
+   ],
+   "c": 0,
+   "o4": "Que resiste más temperatura antes de fundir.",
+   "que": "La conductividad térmica (W/m·K) cuantifica la capacidad de <mark>conducir el calor</mark>. <mark>Cuanto más bajo, más aislante</mark>.",
+   "porque": "Por eso corcho, fibra de vidrio o poliuretano (valores de centésimas) son buenos aislantes.",
+   "ojo": "La dilatación es otro coeficiente distinto (α). En el manual el símbolo de la conductividad aparece como «a»; lo habitual es λ. <b>Contraste:</b> correcto.",
+   "rec": "Conductividad <mark>baja = aísla</mark>.",
+   "f": "Edificaciones I, 2.5.1 Conductividad térmica (pág. 25)",
+   "tq": "Conductividad térmica baja significa…",
+   "ta": "Mejor aislante.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 701,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Según la tabla de conductividad térmica del manual, ¿cuál de estos materiales conduce MEJOR el calor?",
+   "o": [
+    "Aluminio.",
+    "Acero.",
+    "Acero inoxidable."
+   ],
+   "c": 0,
+   "o4": "Hierro.",
+   "que": "Valores del manual (W/m·K): <mark>aluminio 209</mark>, hierro 80, acero 47-58, acero inoxidable 14-16.",
+   "porque": "El aluminio conduce unas cuatro veces más que el acero: en un incendio transmite el calor muy rápido.",
+   "ojo": "El inoxidable es el peor conductor de los metales de la tabla. <b>Contraste:</b> los valores reales son de ese orden (aluminio ≈ 200-237; acero al carbono ≈ 45-55; inoxidable ≈ 15).",
+   "rec": "<mark>Al > Fe > acero > inox</mark>.",
+   "f": "Edificaciones I, 2.5.1 Conductividad térmica, tabla 2 (pág. 25)",
+   "tq": "Metal de la tabla que mejor conduce el calor",
+   "ta": "El aluminio (209 W/m·K).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     7
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 702,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Según el manual, ¿qué coeficiente de dilatación térmica lineal tiene aproximadamente el acero, y cómo es el del hormigón?",
+   "o": [
+    "0,0012 por ºC; el del hormigón es casi el mismo.",
+    "0,000012 por ºC; el del hormigón es casi el mismo.",
+    "0,000012 por ºC; el del hormigón es diez veces mayor."
+   ],
+   "c": 1,
+   "o4": "0,00012 por ºC; el del hormigón es la mitad.",
+   "que": "Acero: <mark>α ≈ 0,000012 1/ºC</mark> (1,2·10⁻⁵). El del hormigón es <mark>aproximadamente el mismo</mark>.",
+   "porque": "Por eso funcionan juntos en el hormigón armado: con la temperatura se dilatan casi igual y no se despegan.",
+   "ojo": "El «hasta 10 veces más» del manual se refiere a la deformación bajo carga (módulo de elasticidad), no a la dilatación. <b>Contraste:</b> correcto (acero ≈ 12·10⁻⁶; hormigón ≈ 10-12·10⁻⁶).",
+   "rec": "Acero ≈ hormigón ≈ <mark>12 millonésimas</mark> por grado y metro.",
+   "f": "Edificaciones I, 2.5.2 Dilatación térmica (pág. 25)",
+   "tq": "Coeficiente de dilatación del acero (y del hormigón)",
+   "ta": "≈ 0,000012 1/ºC; el del hormigón, casi igual.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     7
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 703,
+   "t": "Edificaciones",
+   "d": "difícil",
+   "q": "Una viga de hormigón armado de 10 m pasa en un incendio de 20 ºC a 400 ºC. Con α = 0,000012 1/ºC, ¿cuánto se alarga?",
+   "o": [
+    "Unos 4,6 cm.",
+    "Unos 0,5 cm.",
+    "Unos 5,8 cm."
+   ],
+   "c": 0,
+   "o4": "Unos 46 cm.",
+   "que": "Dilatación lineal: <mark>ΔL = α · L · ΔT</mark> = 0,000012 · 10 m · <mark>380 ºC</mark> = 0,0456 m ≈ <mark>4,6 cm</mark>.",
+   "porque": "El salto de temperatura es 400 − 20 = 380 ºC. Ese alargamiento provoca <mark>empujes laterales</mark> que pueden colapsar la estructura.",
+   "ojo": "<b>Errata del temario:</b> el manual hace la cuenta con 480 ºC en vez de 380 ºC y obtiene 5,76 cm. La cuenta bien hecha da 4,56 cm. Si en el examen copian el ejemplo literal, la opción de 5,76 cm podría darse por buena.",
+   "rec": "ΔL = α · L · <mark>(Tfinal − Tinicial)</mark>.",
+   "f": "Edificaciones I, 2.5.2 Dilatación térmica, ejemplo (pág. 26)",
+   "tq": "Viga de 10 m de 20 a 400 ºC: alargamiento",
+   "ta": "≈ 4,56 cm (el manual pone 5,76 por errata).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     8
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 704,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Según el CTE DB SE-AE recogido en el manual, ¿cuál de estas acciones es ACCIDENTAL?",
+   "o": [
+    "El impacto.",
+    "La nieve.",
+    "El viento."
+   ],
+   "c": 0,
+   "o4": "Las acciones térmicas.",
+   "que": "Acciones accidentales: debidas a riesgos naturales o accidentes por riesgos antrópicos: <mark>sismo, incendio e impacto</mark>.",
+   "porque": "Nieve, viento y acciones térmicas son <mark>variables</mark>: pueden actuar o no y su cuantía cambia en el tiempo.",
+   "ojo": "En el impacto, el CTE excluye los impactos premeditados. <b>Contraste:</b> coincide con el CTE DB SE-AE.",
+   "rec": "Accidentales: <mark>SII</mark> (Sismo, Incendio, Impacto).",
+   "f": "Edificaciones I, 3. Acciones en la edificación (pág. 26)",
+   "tq": "Acciones accidentales del CTE",
+   "ta": "Sismo, incendio e impacto.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     8
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 705,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Cuál de estas NO es una acción permanente según el manual?",
+   "o": [
+    "Las acciones del terreno.",
+    "Las acciones térmicas.",
+    "El pretensado."
+   ],
+   "c": 1,
+   "o4": "El peso propio.",
+   "que": "Permanentes (constantes durante la vida útil): <mark>peso propio, pretensado y acciones del terreno</mark>.",
+   "porque": "Las <mark>acciones térmicas</mark> varían con la temperatura exterior: son variables, junto a sobrecarga de uso, barandillas, viento y nieve.",
+   "ojo": "El pretensado sí es permanente, aunque en una intervención solo se comprueba si sigue actuando. <b>Contraste:</b> coincide con el CTE DB SE-AE.",
+   "rec": "Permanentes: <mark>peso, pretensado y terreno</mark>.",
+   "f": "Edificaciones I, 3. Acciones en la edificación (pág. 26)",
+   "tq": "Acciones permanentes del CTE",
+   "ta": "Peso propio, pretensado y acciones del terreno.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     8
+    ]
+   }
+  },
+  {
+   "id": 706,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Según la tabla de pesos del manual, ¿qué peso específico se toma para el hormigón armado con armados ordinarios?",
+   "o": [
+    "19 kN/m³.",
+    "24 kN/m³.",
+    "25 kN/m³."
+   ],
+   "c": 2,
+   "o4": "28 kN/m³.",
+   "que": "Hormigón: <mark>24 kN/m³</mark>, que en hormigón armado con armados ordinarios <mark>aumenta 1 kN/m³</mark>: 25 kN/m³.",
+   "porque": "El acero de las armaduras pesa unas tres veces más que el hormigón; por eso suma ese kilonewton.",
+   "ojo": "24 es el hormigón en masa; 19-23 es el mortero de cemento. <b>Contraste:</b> coincide con el CTE DB SE-AE.",
+   "rec": "Hormigón <mark>24 + 1 = 25</mark> si va armado.",
+   "f": "Edificaciones I, 3.1.1 Peso propio, tabla 4 (pág. 26)",
+   "tq": "Peso específico del hormigón armado",
+   "ta": "25 kN/m³ (24 + 1).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     8
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 707,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Qué peso específico da el manual para el acero?",
+   "o": [
+    "24-28 kN/m³.",
+    "3,5-5,0 kN/m³.",
+    "77-78,5 kN/m³."
+   ],
+   "c": 2,
+   "o4": "19-23 kN/m³.",
+   "que": "Acero: <mark>77-78,5 kN/m³</mark>; es el material más pesado de la tabla.",
+   "porque": "Es unas tres veces el hormigón y unas veinte veces la madera.",
+   "ojo": "24-28 es la piedra natural y 3,5-5 la madera. <b>Contraste:</b> coincide con el CTE DB SE-AE.",
+   "rec": "Acero ≈ <mark>78</mark>; hormigón ≈ 25; madera ≈ 4.",
+   "f": "Edificaciones I, 3.1.1 Peso propio, tabla 4 (pág. 26)",
+   "tq": "Peso específico del acero",
+   "ta": "77-78,5 kN/m³.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     8
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 708,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "En viviendas, ¿qué valor medio puede adoptarse para el peso de la tabiquería (particiones interiores) según el manual?",
+   "o": [
+    "7 kN/m².",
+    "1 kN/m².",
+    "3 kN/m²."
+   ],
+   "c": 1,
+   "o4": "0,5 kN/m².",
+   "que": "Particiones interiores (h = 3 m): 3-5 kN/m; pero <mark>en viviendas se puede adoptar el valor medio de 1 kN/m²</mark>.",
+   "porque": "Así se reparte el peso de los tabiques por toda la superficie del forjado en vez de por metro de tabique.",
+   "ojo": "7 kN/m es el cerramiento exterior de 3 m de altura, y va por metro lineal, no por m². <b>Contraste:</b> coincide con el CTE DB SE-AE.",
+   "rec": "Tabiques en vivienda: <mark>1 kN/m²</mark>.",
+   "f": "Edificaciones I, 3.1.1 Peso propio, tabla 6 (pág. 26)",
+   "tq": "Peso medio de la tabiquería en viviendas",
+   "ta": "1 kN/m².",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     8
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 709,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Qué sobrecarga de uso uniforme corresponde a las zonas con dormitorios (viviendas, hospitales, hoteles)?",
+   "o": [
+    "1 kN/m².",
+    "2 kN/m².",
+    "5 kN/m²."
+   ],
+   "c": 1,
+   "o4": "3 kN/m².",
+   "que": "Zonas con dormitorios (acceso restringido): <mark>2 kN/m²</mark> de carga uniforme.",
+   "porque": "Es la carga que debe soportar el forjado por el uso: personas, muebles, enseres.",
+   "ojo": "5 kN/m² es la de uso comercial y zonas de aglomeración; 1 kN/m², la de cubiertas sin uso público. En la tabla del manual la carga concentrada aparece como «2 kN/m²»: en el CTE es <mark>2 kN</mark> (las cargas concentradas van en kN). <b>Contraste:</b> coincide con el CTE DB SE-AE.",
+   "rec": "Vivienda: <mark>2 y 2</mark> (2 kN/m² y 2 kN).",
+   "f": "Edificaciones I, 3.2.1 Sobrecarga de uso, tabla 7 (pág. 27)",
+   "tq": "Sobrecarga de uso en zonas con dormitorios",
+   "ta": "2 kN/m².",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     9
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 710,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "En áreas de circulación y aparcamiento de vehículos ligeros, ¿qué carga concentrada da la tabla de sobrecargas de uso?",
+   "o": [
+    "7 kN.",
+    "2 kN.",
+    "20 kN."
+   ],
+   "c": 2,
+   "o4": "50 kN.",
+   "que": "Aparcamiento de vehículos ligeros: <mark>2 kN/m²</mark> uniforme y <mark>20 kN</mark> concentrada.",
+   "porque": "La concentrada representa el peso de un vehículo apoyado en sus ruedas (el CTE la reparte en dos cargas de 10 kN separadas 1,8 m).",
+   "ojo": "La uniforme es baja (2 kN/m²) pero la concentrada es la más alta de la tabla. <b>Contraste:</b> coincide con el CTE DB SE-AE.",
+   "rec": "Coche: <mark>2 repartido, 20 concentrado</mark>.",
+   "f": "Edificaciones I, 3.2.1 Sobrecarga de uso, tabla 7 (pág. 27)",
+   "tq": "Carga concentrada en aparcamiento de vehículos ligeros",
+   "ta": "20 kN (uniforme 2 kN/m²).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     9
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 711,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "En una intervención, ¿qué resistencia máxima a fuerza horizontal debemos suponer en barandillas y elementos divisorios, según el manual?",
+   "o": [
+    "1 kN/m.",
+    "0,5 kN/m.",
+    "3 kN/m."
+   ],
+   "c": 1,
+   "o4": "5 kN/m.",
+   "que": "Aunque el CTE exige resistencias mínimas, como no conocemos su estado real, el manual dice que consideremos <mark>como máximo 0,5 kN/m</mark>.",
+   "porque": "Una barandilla puede estar oxidada o mal anclada: no hay que fiarse de ella para apoyarse o anclar.",
+   "ojo": "El manual dice que el CTE pide 1-3 kN/m según el uso; en realidad el CTE pide <mark>0,8, 1,6 o 3,0 kN/m</mark> según la categoría de uso.",
+   "rec": "Barandilla en intervención: <mark>medio kilonewton</mark> por metro y gracias.",
+   "f": "Edificaciones I, 3.2.2 Acciones sobre barandillas (pág. 27)",
+   "tq": "Resistencia a suponer en barandillas en intervención",
+   "ta": "Como máximo 0,5 kN/m.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     9
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 712,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Qué valor simplificado de acción del viento puede adoptarse en cualquier punto del territorio español?",
+   "o": [
+    "1,0 kN/m².",
+    "0,5 kN/m².",
+    "1,5 kN/m²."
+   ],
+   "c": 1,
+   "o4": "2,5 kN/m².",
+   "que": "De forma simplificada, en cualquier punto de España puede adoptarse <mark>0,5 kN/m²</mark>.",
+   "porque": "El viento ejerce presiones y succiones que dependen de la forma, altura y pendiente de cubierta y de la zona.",
+   "ojo": "El esquema de la página del manual pone «Viento 5 kN/m²»: es una errata; el texto del manual y el CTE dan 0,5 kN/m² (presión dinámica qb). 1,0 kN/m² es la nieve.",
+   "rec": "Viento <mark>0,5</mark>; nieve <mark>1,0</mark>: la nieve pesa el doble.",
+   "f": "Edificaciones I, 3.2.3 Viento (pág. 27)",
+   "tq": "Valor simplificado del viento en España",
+   "ta": "0,5 kN/m².",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     9
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 713,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "En edificios con estructura de hormigón o acero, ¿cuándo pueden no considerarse las acciones térmicas?",
+   "o": [
+    "Si el edificio tiene menos de 40 m de altura.",
+    "Si hay juntas de dilatación cada 40 m como máximo.",
+    "Si hay juntas de dilatación cada 60 m como máximo."
+   ],
+   "c": 1,
+   "o4": "Si hay juntas de dilatación cada 20 m como mínimo.",
+   "que": "Pueden no considerarse las acciones térmicas si hay <mark>juntas de dilatación cada 40 m máximo</mark>.",
+   "porque": "Con juntas, cada tramo puede dilatarse libremente y no empuja a los vecinos.",
+   "ojo": "Son 40 m de longitud de elemento continuo, no de altura. <b>Contraste:</b> coincide con el CTE DB SE-AE.",
+   "rec": "<mark>40 m</mark> sin junta como mucho.",
+   "f": "Edificaciones I, 3.2.4 Acciones térmicas (pág. 27)",
+   "tq": "Distancia máxima entre juntas de dilatación",
+   "ta": "40 m (hormigón o acero).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     9
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 714,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "En cubiertas planas de edificios situados a menos de 1.000 m de altitud, ¿qué carga de nieve basta considerar?",
+   "o": [
+    "1,0 kN/m².",
+    "2,0 kN/m².",
+    "0,5 kN/m²."
+   ],
+   "c": 0,
+   "o4": "5 kN/m².",
+   "que": "Cubiertas planas en localidades de altitud <mark>inferior a 1.000 m</mark>: basta con <mark>1,0 kN/m²</mark>.",
+   "porque": "Por encima de esa altitud, o con otra inclinación, hay que calcularla según la zona climática.",
+   "ojo": "0,5 kN/m² es el viento simplificado. <b>Contraste:</b> coincide con el CTE DB SE-AE.",
+   "rec": "Nieve: <mark>1 kN por debajo de 1.000 m</mark>.",
+   "f": "Edificaciones I, 3.2.5 Nieve (pág. 27)",
+   "tq": "Carga de nieve en cubierta plana (< 1.000 m)",
+   "ta": "1,0 kN/m².",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     9
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 715,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Según el manual, ¿a partir de qué aceleración se consideran peligrosos los sismos?",
+   "o": [
+    "Más de 0,4 veces la gravedad.",
+    "Más de 0,04 veces la gravedad.",
+    "Más de 0,004 veces la gravedad."
+   ],
+   "c": 1,
+   "o4": "Más de 1 vez la gravedad.",
+   "que": "Se consideran peligrosos los sismos con aceleración <mark>superior a 0,04 g</mark>. La norma es la sismorresistente (RD 997/2002, de 27 de septiembre).",
+   "porque": "Por debajo de ese valor de aceleración sísmica básica, la norma sismorresistente no obliga a calcular el edificio frente a sismo.",
+   "ojo": "El manual llama a la norma «NCSR02»; su nombre correcto es <mark>NCSE-02</mark>.",
+   "rec": "Sismo peligroso: <mark>0,04 g</mark> (cuatro centésimas).",
+   "f": "Edificaciones I, 3.3.1 Sismo (pág. 27)",
+   "tq": "Aceleración a partir de la que un sismo es peligroso",
+   "ta": "0,04 g.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     9
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 716,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Para impactos de vehículos de hasta 30 kN de peso total, ¿qué fuerzas de cálculo se consideran?",
+   "o": [
+    "50 kN paralela a la vía y 25 kN perpendicular, no simultáneas.",
+    "50 kN paralela a la vía y 25 kN perpendicular, simultáneas.",
+    "25 kN paralela a la vía y 50 kN perpendicular, no simultáneas."
+   ],
+   "c": 0,
+   "o4": "30 kN en cualquier dirección.",
+   "que": "Vehículos de hasta <mark>30 kN</mark>: <mark>50 kN en la dirección paralela</mark> a la vía y <mark>25 kN en la perpendicular</mark>, que <mark>no actúan a la vez</mark>.",
+   "porque": "El golpe en el sentido de la marcha es el más fuerte: el doble que el lateral.",
+   "ojo": "Quedan excluidos los impactos premeditados. <b>Contraste:</b> coincide con el CTE DB SE-AE.",
+   "rec": "Paralelo <mark>50</mark>, perpendicular <mark>25</mark>, nunca juntos.",
+   "f": "Edificaciones I, 3.3.3 Impacto (pág. 28)",
+   "tq": "Impacto de vehículo ≤ 30 kN: fuerzas de cálculo",
+   "ta": "50 kN paralela y 25 kN perpendicular, no simultáneas.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     10
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 717,
+   "t": "Edificaciones",
+   "d": "difícil",
+   "q": "¿A qué equivale una tensión de 1 N/mm²?",
+   "o": [
+    "A 1 MPa, unos 10 kg/cm².",
+    "A 1 kPa, unos 0,01 kg/cm².",
+    "A 100 MPa, unos 1.000 kg/cm²."
+   ],
+   "c": 0,
+   "o4": "A 1 kN/m².",
+   "que": "1 N/mm² = <mark>1 MPa</mark> (megapascal) ≈ <mark>10 kg/cm²</mark>. Es la unidad de tensión que usa el manual.",
+   "porque": "1 kg de fuerza ≈ 9,8 N, y 1 cm² = 100 mm²: 1 kg/cm² ≈ 0,1 N/mm². Por tanto 1 N/mm² ≈ 10 kg/cm².",
+   "ojo": "<b>Errata del temario:</b> el manual escribe «1 N/mm² = 1 kg/cm² = 1 MPa». La igualdad con el MPa es correcta, pero con el kg/cm² no: hay un factor 10. Si en el examen sale la frase literal del manual, ojo.",
+   "rec": "<mark>1 MPa = 1 N/mm² ≈ 10 kg/cm²</mark>.",
+   "f": "Edificaciones I, 4. Esfuerzos / tensiones (pág. 28)",
+   "tq": "Equivalencia de 1 N/mm²",
+   "ta": "1 MPa ≈ 10 kg/cm² (el manual pone 1 kg/cm²: errata).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     10
+    ]
+   }
+  },
+  {
+   "id": 718,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Qué diferencia hay entre la tensión de rotura y la tensión de trabajo de un material?",
+   "o": [
+    "La de rotura está ponderada por coeficientes de seguridad; la de trabajo, no.",
+    "La de trabajo está ponderada por coeficientes de seguridad; la de rotura, no.",
+    "La de trabajo es siempre mayor que la de rotura."
+   ],
+   "c": 1,
+   "o4": "Ninguna: son dos nombres de la misma tensión.",
+   "que": "<b>Rotura</b>: tensión máxima que soporta el material en laboratorio, <mark>sin coeficientes de seguridad</mark>. <b>Trabajo</b>: umbral máximo para trabajar con seguridad, <mark>ponderada por coeficientes de seguridad</mark>.",
+   "porque": "Nunca se calcula un elemento para que trabaje al borde de la rotura: se deja un margen.",
+   "ojo": "El manual añade que la de trabajo suele ser del orden del 70-80 % del límite elástico: es una orientación del manual, no un valor normativo general.",
+   "rec": "Rotura = <mark>laboratorio</mark>; trabajo = <mark>con margen</mark>.",
+   "f": "Edificaciones I, 4. Esfuerzos / tensiones (pág. 28)",
+   "tq": "Tensión de rotura vs. tensión de trabajo",
+   "ta": "La de trabajo lleva coeficientes de seguridad.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     10
+    ]
+   }
+  },
+  {
+   "id": 719,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Qué elemento constructivo cita el manual como ejemplo típico de pieza que trabaja a tracción?",
+   "o": [
+    "El tirante.",
+    "El puntal.",
+    "El pie derecho."
+   ],
+   "c": 0,
+   "o4": "El muro de fábrica.",
+   "que": "Tracción: las partículas tienden a separarse, el material <mark>se estira</mark>. Ejemplo: el <mark>tirante</mark>.",
+   "porque": "El tirante «tira»: une dos puntos que tienden a separarse (p. ej., los pies de una cercha).",
+   "ojo": "Pilar, soporte, pie derecho, muro de fábrica y puntales trabajan a <mark>compresión</mark>. <b>Contraste:</b> correcto.",
+   "rec": "Tirante <mark>tira</mark>; puntal <mark>aprieta</mark>.",
+   "f": "Edificaciones I, 4.1.2 Tracción (pág. 28)",
+   "tq": "Elemento típico a tracción",
+   "ta": "El tirante.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     10
+    ]
+   }
+  },
+  {
+   "id": 720,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Qué esfuerzo se produce cuando una pieza recibe dos fuerzas de direcciones paralelas pero no coincidentes y sentidos opuestos?",
+   "o": [
+    "Compresión.",
+    "Tracción.",
+    "Cortante."
+   ],
+   "c": 2,
+   "o4": "Torsión.",
+   "que": "<mark>Cortante, cortadura o cizalladura</mark>: las partículas se <mark>deslizan</mark> unas respecto a otras.",
+   "porque": "Como unas tijeras: dos hojas que empujan en sentidos opuestos por líneas muy próximas. Ejemplo: el <mark>encuentro de una viga con un pilar</mark>.",
+   "ojo": "En tracción y compresión las fuerzas tienen la <mark>misma dirección</mark> (coincidente). <b>Contraste:</b> correcto.",
+   "rec": "Paralelas y desplazadas = <mark>tijera</mark> = cortante.",
+   "f": "Edificaciones I, 4.1.3 Cortante (pág. 28)",
+   "tq": "Fuerzas paralelas no coincidentes y opuestas",
+   "ta": "Cortante (cizalladura).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     10
+    ]
+   }
+  },
+  {
+   "id": 721,
+   "t": "Edificaciones",
+   "d": "difícil",
+   "q": "Una viga en voladizo (empotrada en un extremo y libre en el otro) soporta una carga. ¿Dónde aparecen las tracciones por flexión?",
+   "o": [
+    "En la fibra neutra.",
+    "En las fibras superiores.",
+    "En las fibras inferiores."
+   ],
+   "c": 1,
+   "o4": "En toda la sección por igual.",
+   "que": "En una viga biapoyada, tracciones abajo y compresiones arriba. En un <mark>voladizo la flexión se invierte</mark>: <mark>tracciones arriba</mark> y compresiones abajo.",
+   "porque": "La pieza se curva hacia abajo desde el empotramiento: la cara de arriba se estira y la de abajo se acorta.",
+   "ojo": "Por eso en voladizos de hormigón la armadura principal va <mark>arriba</mark>; en un balcón dañado, las grietas de tracción aparecen en la cara superior junto al empotramiento. En la fibra neutra no hay tensiones de flexión. <b>Contraste:</b> correcto.",
+   "rec": "Biapoyada: sonrisa (tracción abajo). Voladizo: <mark>tracción arriba</mark>.",
+   "f": "Edificaciones I, 4.2.1 Flexión (pág. 29)",
+   "tq": "Voladizo: ¿dónde están las tracciones?",
+   "ta": "En las fibras superiores (flexión invertida).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 722,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "En la sección de una viga a flexión, ¿dónde alcanza su valor máximo el esfuerzo cortante vertical?",
+   "o": [
+    "En la fibra neutra.",
+    "Es igual en toda la sección.",
+    "En las fibras extremas."
+   ],
+   "c": 0,
+   "o4": "En la fibra inferior.",
+   "que": "El cortante vertical <mark>alcanza su máximo en la fibra neutra</mark> y decrece de forma no lineal hacia las caras.",
+   "porque": "En la fibra neutra solo hay tensiones de cortante; en las fibras extremas solo hay tensiones normales (compresiones o tracciones de la flexión).",
+   "ojo": "Fibra neutra: línea que pasa por el centro de gravedad de la sección y <mark>no sufre tensiones de flexión</mark>. <b>Contraste:</b> correcto para las secciones habituales (en una rectangular, la distribución es parabólica con el máximo en el centro).",
+   "rec": "Flexión <mark>en los bordes</mark>, cortante <mark>en el centro</mark>.",
+   "f": "Edificaciones I, 4.2.1 Cortantes y flexiones (pág. 30)",
+   "tq": "Dónde es máximo el cortante vertical en la sección",
+   "ta": "En la fibra neutra.",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     12
+    ]
+   }
+  },
+  {
+   "id": 723,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "La viga del esquema está apoyada en sus extremos y lleva una carga uniformemente repartida; su diagrama de cortantes es una recta inclinada. ¿Qué forma tiene su diagrama de momentos flectores?",
+   "o": [
+    "Un valor constante.",
+    "Una parábola.",
+    "Una recta inclinada."
+   ],
+   "c": 1,
+   "o4": "Un triángulo con el vértice en un apoyo.",
+   "que": "Cargas <mark>uniformemente repartidas</mark>: el cortante varía <mark>linealmente</mark> y el flector de forma <mark>parabólica</mark>.",
+   "porque": "Con cargas <mark>puntuales</mark>, en cambio, el cortante es constante entre cargas y el flector varía linealmente entre ellas.",
+   "ojo": "Donde el diagrama de cortantes corta el eje (aquí, el centro) el flector es <mark>máximo</mark>. <b>Errata del temario:</b> el manual dice que esos puntos son de «momento nulo»; en realidad cortante nulo = momento máximo (los puntos de momento nulo son otros).",
+   "rec": "Repartida: cortante <mark>recta</mark>, flector <mark>curva</mark>. Puntual: cortante <mark>escalón</mark>, flector <mark>recta</mark>.",
+   "f": "Edificaciones I, 4.2.1 Diagramas de cortantes y flectores (pág. 31)",
+   "tq": "Carga repartida: forma del diagrama de flectores",
+   "ta": "Parábola (cortante lineal).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     13
+    ]
+   },
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 300 150\" role=\"img\" aria-label=\"Viga apoyada en sus dos extremos con una carga uniformemente repartida. Debajo, dos diagramas: uno en línea recta inclinada que cruza el eje en el centro y otro en forma de interrogación\"><g font-size=\"10\" fill=\"#222\"><g stroke=\"#2b6ca3\"><line x1=\"40\" y1=\"8\" x2=\"40\" y2=\"24\"/><line x1=\"60\" y1=\"8\" x2=\"60\" y2=\"24\"/><line x1=\"80\" y1=\"8\" x2=\"80\" y2=\"24\"/><line x1=\"100\" y1=\"8\" x2=\"100\" y2=\"24\"/><line x1=\"120\" y1=\"8\" x2=\"120\" y2=\"24\"/><line x1=\"140\" y1=\"8\" x2=\"140\" y2=\"24\"/><line x1=\"160\" y1=\"8\" x2=\"160\" y2=\"24\"/><line x1=\"180\" y1=\"8\" x2=\"180\" y2=\"24\"/><line x1=\"200\" y1=\"8\" x2=\"200\" y2=\"24\"/><line x1=\"220\" y1=\"8\" x2=\"220\" y2=\"24\"/><line x1=\"240\" y1=\"8\" x2=\"240\" y2=\"24\"/><line x1=\"260\" y1=\"8\" x2=\"260\" y2=\"24\"/></g><line x1=\"40\" y1=\"8\" x2=\"260\" y2=\"8\" stroke=\"#2b6ca3\"/><rect x=\"40\" y=\"25\" width=\"220\" height=\"7\" fill=\"#c9a26b\" stroke=\"#7a5a2b\"/><polygon points=\"40,32 32,44 48,44\" fill=\"#9fb4c7\" stroke=\"#3d5a73\"/><polygon points=\"260,32 252,44 268,44\" fill=\"#9fb4c7\" stroke=\"#3d5a73\"/><text x=\"4\" y=\"78\">Cortante</text><line x1=\"40\" y1=\"78\" x2=\"260\" y2=\"78\" stroke=\"#888\"/><line x1=\"40\" y1=\"62\" x2=\"260\" y2=\"94\" stroke=\"#c0392b\" stroke-width=\"2\"/><text x=\"4\" y=\"122\">Flector</text><line x1=\"40\" y1=\"112\" x2=\"260\" y2=\"112\" stroke=\"#888\"/><text x=\"150\" y=\"136\" text-anchor=\"middle\" font-size=\"22\" fill=\"#c0392b\">?</text></g></svg>"
+  },
+  {
+   "id": 724,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "Según el manual, ¿qué tipo de materiales absorben energía antes de romperse gracias a su ductilidad y trabajan bien a compresión y a tracción?",
+   "o": [
+    "Los tenaces, como la piedra o el ladrillo.",
+    "Los tenaces, como la madera o el acero.",
+    "Los frágiles, como la piedra o el ladrillo."
+   ],
+   "c": 1,
+   "o4": "Los másicos, como el adobe o el tapial.",
+   "que": "<b>Tenaces</b>: absorben energía antes de fracturarse por su <mark>ductilidad</mark>; trabajan bien a compresión y a tracción, por lo que soportan flexiones. Ej.: <mark>madera y acero</mark>.",
+   "porque": "<b>Frágiles</b>: buenos a compresión, malos a tracción, <mark>no soportan flexiones</mark>; materiales «másicos» como piedra y ladrillo.",
+   "ojo": "Un muro de ladrillo aguanta mucho peso encima, pero no sirve como viga. <b>Contraste:</b> clasificación correcta.",
+   "rec": "Tenaz <mark>se dobla</mark>; frágil <mark>se parte</mark>.",
+   "f": "Edificaciones I, 5. Materiales de construcción (pág. 32)",
+   "tq": "Materiales tenaces: ejemplos",
+   "ta": "Madera y acero (dúctiles; compresión y tracción).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     14
+    ]
+   }
+  },
+  {
+   "id": 725,
+   "t": "Edificaciones",
+   "d": "normal",
+   "q": "¿Qué roca pone el manual como ejemplo de roca ígnea extrusiva o volcánica?",
+   "o": [
+    "La caliza.",
+    "El basalto.",
+    "El granito."
+   ],
+   "c": 1,
+   "o4": "La arenisca.",
+   "que": "Ígneas <mark>intrusivas o plutónicas</mark> (el magma se solidifica dentro de la corteza): <mark>granito</mark>. <mark>Extrusivas o volcánicas</mark> (en la superficie): <mark>basalto</mark>.",
+   "porque": "Las extrusivas se enfrían rápido en superficie; el manual dice que son más oscuras que las intrusivas.",
+   "ojo": "Caliza y arenisca son sedimentarias. El manual dice que las extrusivas son «menos densas» que las intrusivas, pero el basalto es en realidad <mark>más denso</mark> que el granito (≈ 2,9-3,0 frente a ≈ 2,7 t/m³); el propio manual le da 30 kN/m³ en la tabla de pesos.",
+   "rec": "<mark>G</mark>ranito dentro (<mark>G</mark>uardado); <mark>B</mark>asalto fuera (<mark>B</mark>rota).",
+   "f": "Edificaciones I, 5.1.1 Materiales pétreos naturales (pág. 33)",
+   "tq": "Ejemplo de roca ígnea extrusiva",
+   "ta": "El basalto (intrusiva: granito).",
+   "src": {
+    "m": "Bloque II - Tema 11 - Edificaciones I",
+    "p": [
+     15
+    ]
+   }
+  }
+ ],
+ "glosario": [
+  {
+   "t": "Par de fuerzas",
+   "a": [
+    "par de fuerzas",
+    "brazo del par"
+   ],
+   "d": "Dos fuerzas paralelas, de igual módulo y sentidos contrarios. Su momento es una de las fuerzas por la distancia perpendicular entre ellas (brazo del par).",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 2.2",
+   "solo": 1
+  },
+  {
+   "t": "Momento de empotramiento",
+   "a": [
+    "momento de empotramiento",
+    "momento resistente"
+   ],
+   "d": "Momento igual y de sentido contrario que genera un cuerpo o un apoyo para impedir el giro producido por un par de fuerzas.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 2.2",
+   "solo": 1
+  },
+  {
+   "t": "Centro de gravedad",
+   "a": [
+    "centro de gravedad"
+   ],
+   "d": "Punto en el que puede considerarse concentrado el peso de un cuerpo. No tiene por qué ser un punto del material (esfera hueca).",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 2.3",
+   "solo": 1
+  },
+  {
+   "t": "Límite de elasticidad",
+   "a": [
+    "límite de elasticidad",
+    "límite elástico"
+   ],
+   "d": "Umbral de tensión a partir del cual el material deja de recuperar su forma y se deforma de manera permanente (comportamiento plástico).",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 2.4",
+   "solo": 1
+  },
+  {
+   "t": "Conductividad térmica",
+   "a": [
+    "conductividad térmica"
+   ],
+   "d": "Capacidad de un material para conducir el calor (W/m·K). Cuanto más baja, más aislante.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 2.5.1",
+   "solo": 1
+  },
+  {
+   "t": "Coeficiente de dilatación térmica",
+   "a": [
+    "coeficiente de dilatación",
+    "dilatación lineal"
+   ],
+   "d": "Alargamiento por cada grado de aumento de temperatura y metro de longitud. Acero y hormigón ≈ 0,000012 1/ºC. ΔL = α · L · ΔT.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 2.5.2",
+   "solo": 1
+  },
+  {
+   "t": "Acciones accidentales",
+   "a": [
+    "acción accidental",
+    "acciones accidentales"
+   ],
+   "d": "Cargas debidas a riesgos naturales o accidentes por riesgos antrópicos: sismo, incendio e impacto (CTE DB SE-AE).",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 3",
+   "solo": 1
+  },
+  {
+   "t": "Tensión de trabajo",
+   "a": [
+    "tensión de trabajo",
+    "tensión de rotura"
+   ],
+   "d": "Tensión máxima para que una estructura trabaje con seguridad, ponderada por coeficientes de seguridad (la de rotura no lleva coeficientes).",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 4",
+   "solo": 1
+  },
+  {
+   "t": "Tirante",
+   "a": [
+    "tirante"
+   ],
+   "d": "Elemento que trabaja a tracción, uniendo dos puntos que tienden a separarse.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 4.1.2",
+   "solo": 1
+  },
+  {
+   "t": "Fibra neutra",
+   "a": [
+    "fibra neutra"
+   ],
+   "d": "Línea imaginaria que pasa por el centro de gravedad de la sección de una pieza a flexión y no sufre tensiones de flexión; en ella el cortante vertical es máximo.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 4.2.1",
+   "solo": 1
+  },
+  {
+   "t": "Voladizo",
+   "a": [
+    "voladizo"
+   ],
+   "d": "Pieza empotrada en un extremo y libre en el otro; a flexión tiene tracciones arriba y compresiones abajo.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 4.2.1",
+   "solo": 1
+  },
+  {
+   "t": "Materiales tenaces y frágiles",
+   "a": [
+    "material tenaz",
+    "materiales tenaces",
+    "materiales frágiles"
+   ],
+   "d": "Tenaces (madera, acero): dúctiles, trabajan a compresión y tracción. Frágiles (piedra, ladrillo): buenos a compresión, malos a tracción, no soportan flexiones.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 5",
+   "solo": 1
+  },
+  {
+   "t": "Sobrecarga de uso",
+   "a": [
+    "sobrecarga de uso",
+    "sobrecargas de uso"
+   ],
+   "d": "Peso que debe soportar la estructura por el uso del edificio (personas, muebles...). Viviendas: 2 kN/m² y 2 kN.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 3.2.1",
+   "solo": 1
+  },
+  {
+   "t": "Peso específico",
+   "a": [
+    "peso específico"
+   ],
+   "d": "Peso por unidad de volumen (kN/m³). Hormigón 24 (armado 25), acero 77-78,5, madera 3,5-5.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 3.1.1",
+   "solo": 1
+  },
+  {
+   "t": "Junta de dilatación",
+   "a": [
+    "junta de dilatación",
+    "juntas de dilatación"
+   ],
+   "d": "Corte en la estructura que deja dilatar libremente cada tramo. En hormigón o acero, cada 40 m como máximo para no considerar acciones térmicas.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 3.2.4",
+   "solo": 1
+  },
+  {
+   "t": "Palanca",
+   "a": [
+    "palanca",
+    "barra de uña"
+   ],
+   "d": "Barra rígida que gira sobre un punto de apoyo (fulcro). Equilibrio: P · dp = R · dr.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 2.2",
+   "solo": 1
+  },
+  {
+   "t": "Cortante",
+   "a": [
+    "cortante",
+    "cizalladura",
+    "cortadura"
+   ],
+   "d": "Esfuerzo por dos fuerzas paralelas no coincidentes de sentidos opuestos: las partículas se deslizan entre sí.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 4.1.3",
+   "solo": 1
+  },
+  {
+   "t": "Rocas ígneas",
+   "a": [
+    "roca ígnea",
+    "rocas ígneas",
+    "extrusiva",
+    "intrusiva"
+   ],
+   "d": "Proceden de la solidificación del magma: intrusivas o plutónicas (granito) y extrusivas o volcánicas (basalto).",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 5.1.1",
+   "solo": 1
+  },
+  {
+   "t": "Leyes de Newton",
+   "a": [
+    "ley de Newton",
+    "principio de inercia",
+    "acción y reacción"
+   ],
+   "d": "1.ª, principio de inercia; 2.ª, F = m · a; 3.ª, principio de acción y reacción.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 2.1",
+   "solo": 1
+  },
+  {
+   "t": "Equilibrio estático",
+   "a": [
+    "equilibrio estático"
+   ],
+   "d": "Estado sin movimientos relativos: suma de fuerzas y suma de momentos iguales a cero.",
+   "tema": "Edificaciones",
+   "f": "Edificaciones I, 2.3",
+   "solo": 1
+  }
+ ]
+}

@@ -69,9 +69,9 @@
   },
   "2.11. Edificaciones I 1.pdf": {
    "tema": "Edificaciones (DELICADO)",
-   "hechas": "",
-   "total": null,
-   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+   "hechas": "4-15",
+   "total": 40,
+   "nota": "Manual con datos mal: contrastar. En temario/ como «Bloque II - Tema 11 - Edificaciones I» (PDF p. 1-3 portada; texto desde p. 4). Hechas p. 4-15 (lote 2026-11-26, tarea 1; contrastado con CTE DB SE-AE). Siguiente: p. 15-16 (rocas sedimentarias y metamórficas en adelante). Antes ya estaba la #292 (ley de Hooke, p. 7). Erratas detectadas (no preguntar el dato literal): p. 8 dilatación con 480 ºC en vez de 380 (5,76 cm → 4,56 cm); p. 9 esquema «Viento 5 kN/m²» (es 0,5); p. 9 tabla 7 C5 concentrada 7 kN (CTE: 4 kN; 7 es C4/D2) y concentradas escritas en kN/m²; p. 9 barandillas «1-3 kN/m» (CTE 0,8/1,6/3,0); p. 9 «NCSR02» (es NCSE-02); p. 10 «1 N/mm² = 1 kg/cm²» (≈10 kg/cm²); p. 13 cortante nulo = «momento nulo» (es momento máximo); p. 7 madera con «importante deformación térmica en la dirección de la fibra» (es al revés); p. 15 extrusivas «menos densas» (el basalto es más denso que el granito). Datos dudosos sin preguntar: signo de momentos (p. 5), empuje del terreno tabla 5 (p. 8), tensión de trabajo 70-80 % (p. 10), pandeo = «flexión compuesta» y ejemplos de pandeo/torsión (p. 11)."
   },
   "2.12. Edificaciones II 1.pdf": {
    "tema": "Edificaciones (DELICADO)",
