@@ -43,6 +43,23 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
   las páginas que ya tienen preguntas, mirar esas preguntas para no repetir el dato. Al terminar, volver a ejecutarlo
   y subir los dos mapas (solo contienen ids y números de página).
 
+## Lo que pregunta el examen real (152 plazas, 2026: 90 + 5 de reserva; en temario/ como «Extra - Examen teórico…», cifrado)
+Reparto aproximado de las 90 (para priorizar temas; nunca copiar sus preguntas):
+- Bloque I: 17 (Constitución 2 · Régimen local 1 · Haciendas 3 · EBEP 4 · Ley 39/2015 2 · Igualdad, incl. Ley 4/2023, 3 · PRL 2).
+- Teoría del fuego, incendios de interior/ventilación (VPP), hidráulica y meteorología: ~10 (manuales II.1-II.4 aún sin subir).
+- **Edificaciones (II.11-13): 8** · APRAT: 7 · ANETVA/NTP trabajos verticales: 6 · Sanitario (SVB, politrauma, urgencias): 5 ·
+  ACS/calefacción/climatización: 5 · CTE DB-SI: 4-5 · Electricidad + instalaciones eléctricas: 6 · Agua fría y saneamiento: 4 ·
+  Gas: 3 · NRBQ: 3 · Arbolado (motosierra): 2 · Vehículos: 2 · EPI: 2 · Corte y soldadura: 2 · Incendios de vegetación: 2 ·
+  Apícola + ascensores: 2 · Accesos forzados: 1 · Reglamento del Cuerpo: 1 · Protección civil: 1.
+- Rasgos: enunciados que citan la ley y el artículo («Según el artículo 18 del RDL 5/2015…») pero preguntan el contenido, no el
+  número; opciones casi idénticas que cambian una palabra o cifra; muchos **supuestos de intervención** con datos concretos
+  (corte de suministro en un local, caldera que echa humo blanco, colector con atmósfera peligrosa, rescatado tras 35 s de
+  electrización); **cálculos con tablas del CTE** (dotación de BIE, extintores, hospital, uso administrativo con m² y altura);
+  lectura de tablas del manual (solubilidad NRBQ «tabla 9»); ordenación de pasos (Rautek); «señale la incorrecta / es falso que»;
+  definiciones del glosario de la NTP o de la Ley 17/2015; designaciones normalizadas (GL 28 h, electrodos, UNE-EN 437, UNE-EN 1891).
+- Consecuencia: dar prioridad a Edificaciones (hoy casi sin preguntas), instalaciones (ACS, agua, gas, electricidad), APRAT,
+  trabajos verticales, sanitario y CTE con supuestos numéricos.
+
 ## Qué es un dato bueno (acordado con el usuario el 25/11/2026)
 - **Cada dato concreto del manual es una pregunta**: cada definición, cada componente, cada cifra,
   cada rango, cada prohibición, cada «por qué», cada función. De una sola página salen 10 o más.
