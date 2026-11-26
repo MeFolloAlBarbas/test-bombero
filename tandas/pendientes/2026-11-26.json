@@ -957,6 +957,1110 @@
      15
     ]
    }
+  },
+  {
+   "id": 726,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la LO 3/2007, la igualdad de trato supone la ausencia de discriminación por razón de sexo y, «especialmente», de la derivada de… ¿cuál NO cita la ley en ese punto?",
+   "o": [
+    "El estado civil.",
+    "La orientación sexual.",
+    "La asunción de obligaciones familiares."
+   ],
+   "c": 1,
+   "o4": "La maternidad.",
+   "que": "El art. 3 destaca <mark>la maternidad, la asunción de obligaciones familiares y el estado civil</mark>.",
+   "porque": "Son las causas que más a menudo han perjudicado a las mujeres en el empleo y en la vida social.",
+   "ojo": "La orientación sexual no está en la LO 3/2007: la protege la <mark>Ley 4/2023</mark> (personas LGTBI).",
+   "rec": "<mark>MOE</mark>: Maternidad, Obligaciones familiares, Estado civil.",
+   "f": "LO 3/2007, art. 3",
+   "tq": "Causas que el art. 3 LO 3/2007 destaca",
+   "ta": "Maternidad, obligaciones familiares y estado civil.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     3
+    ]
+   }
+  },
+  {
+   "id": 727,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la LO 3/2007, la igualdad de trato y de oportunidades entre mujeres y hombres es, en el ordenamiento jurídico:",
+   "o": [
+    "Un criterio orientativo que solo se usa cuando la norma no dice nada.",
+    "Un principio informador que se integra en la interpretación y aplicación de las normas.",
+    "Un derecho que solo vincula a los poderes públicos, no a los particulares."
+   ],
+   "c": 1,
+   "o4": "Un principio programático sin efectos en la aplicación de las normas.",
+   "que": "Es un <mark>principio informador del ordenamiento jurídico</mark>: se integra y observa al <mark>interpretar y aplicar</mark> todas las normas.",
+   "porque": "Así, cualquier norma debe leerse de la forma que mejor respete la igualdad entre mujeres y hombres.",
+   "ojo": "No es algo «subsidiario» ni solo para las Administraciones: la ley obliga también a personas físicas y jurídicas privadas.",
+   "rec": "Informador = <mark>informa (impregna) todas</mark> las normas.",
+   "f": "LO 3/2007, art. 4",
+   "tq": "Igualdad en el ordenamiento (art. 4 LO 3/2007)",
+   "ta": "Principio informador: se integra al interpretar y aplicar normas.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     3
+    ]
+   }
+  },
+  {
+   "id": 728,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Una trabajadora autónoma denuncia que le impiden acceder a una actividad profesional por ser mujer. ¿Alcanza la LO 3/2007 al trabajo por cuenta propia?",
+   "o": [
+    "No: solo protege el empleo por cuenta ajena.",
+    "Solo si la actividad es de titularidad pública.",
+    "Sí: el acceso al empleo incluye el trabajo por cuenta propia."
+   ],
+   "c": 2,
+   "o4": "Solo si está afiliada a una organización empresarial.",
+   "que": "El art. 5 garantiza la igualdad en el <mark>acceso al empleo, incluso al trabajo por cuenta propia</mark>, en el empleo privado y en el público.",
+   "porque": "La discriminación puede darse también al darse de alta como autónoma o al entrar en una profesión.",
+   "ojo": "El mismo artículo cubre la formación y promoción profesional, las condiciones de trabajo (<mark>incluidas las retributivas y las de despido</mark>) y la afiliación a sindicatos, organizaciones empresariales o profesionales.",
+   "rec": "Empleo = <mark>ajeno y propio</mark>, público y privado.",
+   "f": "LO 3/2007, art. 5",
+   "tq": "¿La LO 3/2007 cubre el trabajo autónomo?",
+   "ta": "Sí: el acceso al empleo incluye la cuenta propia.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     3
+    ]
+   }
+  },
+  {
+   "id": 729,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según el art. 6.1 de la LO 3/2007, hay discriminación directa cuando una persona, en atención a su sexo, es tratada de manera menos favorable que otra en situación comparable. ¿Qué situaciones incluye?",
+   "o": [
+    "Que sea o haya sido tratada así, pero no si solo pudiera serlo.",
+    "Que sea, haya sido o pudiera ser tratada así.",
+    "Solo que lo sea en el momento de la denuncia."
+   ],
+   "c": 1,
+   "o4": "Solo que el trato se haya repetido en el tiempo.",
+   "que": "La definición abarca a quien <mark>sea, haya sido o pudiera ser</mark> tratada de forma menos favorable por su sexo.",
+   "porque": "Incluye el trato pasado y el hipotético: basta compararlo con cómo se trataría a otra persona en situación comparable.",
+   "ojo": "Las tres opciones de distractor recortan los tiempos verbales: la ley no exige que sea actual ni repetido.",
+   "rec": "Directa: <mark>es, fue o podría ser</mark>.",
+   "f": "LO 3/2007, art. 6.1",
+   "tq": "Discriminación directa: ¿incluye el trato hipotético?",
+   "ta": "Sí: sea, haya sido o pudiera ser tratada.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     3
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 730,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "¿Qué tendría que acreditarse para que una práctica neutra que perjudica a las personas de un sexo NO se considere discriminación indirecta según la LO 3/2007?",
+   "o": [
+    "Que la empresa demuestra que no tenía intención de discriminar.",
+    "Que se justifica objetivamente por una finalidad legítima, con medios necesarios y adecuados.",
+    "Que afecta a menos de la mitad de la plantilla de ese sexo."
+   ],
+   "c": 1,
+   "o4": "Que la aprueba la representación de los trabajadores.",
+   "que": "La excepción del art. 6.2: la práctica puede <mark>justificarse objetivamente</mark> por una <mark>finalidad legítima</mark> y con medios <mark>necesarios y adecuados</mark>.",
+   "porque": "Lo que cuenta es el efecto y su justificación, no la intención de quien la aplica.",
+   "ojo": "No hay ningún umbral de porcentaje ni vale el acuerdo con la representación de la plantilla.",
+   "rec": "Indirecta se salva con <mark>fin legítimo + medios necesarios y adecuados</mark>.",
+   "f": "LO 3/2007, art. 6.2",
+   "tq": "Cuándo no hay discriminación indirecta",
+   "ta": "Fin legítimo y medios necesarios y adecuados.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     3
+    ]
+   }
+  },
+  {
+   "id": 731,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Un jefe ordena a la responsable de selección descartar a las candidatas embarazadas, pero ella no llega a cumplirlo. Según la LO 3/2007, esa orden:",
+   "o": [
+    "No es discriminación porque no llegó a ejecutarse.",
+    "Solo sería discriminación indirecta.",
+    "Se considera discriminatoria en cualquier caso."
+   ],
+   "c": 2,
+   "o4": "Solo es discriminatoria si se da por escrito.",
+   "que": "Art. 6.3: <mark>toda orden de discriminar</mark>, directa o indirectamente, por razón de sexo se considera discriminatoria <mark>en cualquier caso</mark>.",
+   "porque": "La orden ya es la conducta reprochable; no hace falta que nadie llegue a sufrir el trato.",
+   "ojo": "Además, el trato desfavorable por embarazo sería discriminación directa (art. 8). La Ley 4/2023 tiene una regla parecida para la «inducción, orden o instrucción de discriminar».",
+   "rec": "<mark>Ordenar discriminar = discriminar</mark>.",
+   "f": "LO 3/2007, art. 6.3",
+   "tq": "Orden de discriminar por sexo",
+   "ta": "Discriminatoria en cualquier caso.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     3
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 732,
+   "t": "Igualdad",
+   "d": "difícil",
+   "q": "Un compañero hace a una bombera comentarios de naturaleza sexual «sin intención de molestar», pero crean un entorno ofensivo para ella. Según la LO 3/2007:",
+   "o": [
+    "Es acoso sexual: basta con que produzca el efecto de atentar contra su dignidad.",
+    "Es acoso por razón de sexo, no acoso sexual.",
+    "No es acoso sexual: falta el propósito de atentar contra su dignidad."
+   ],
+   "c": 0,
+   "o4": "Solo sería acoso si hubiera contacto físico.",
+   "que": "Acoso sexual (art. 7.1): comportamiento <mark>verbal o físico</mark> de naturaleza sexual que tenga <mark>el propósito o produzca el efecto</mark> de atentar contra la dignidad, en particular si crea un entorno intimidatorio, degradante u ofensivo.",
+   "porque": "Dice «propósito <b>o</b> efecto»: la intención no es necesaria si el resultado se produce.",
+   "ojo": "La tentadora es la de «falta el propósito». Como el comportamiento es de naturaleza sexual, es acoso <b>sexual</b>, no «por razón de sexo».",
+   "rec": "Acoso: <mark>propósito O efecto</mark> (con uno basta).",
+   "f": "LO 3/2007, art. 7.1",
+   "tq": "¿El acoso sexual exige intención?",
+   "ta": "No: basta con que produzca el efecto.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     3
+    ]
+   }
+  },
+  {
+   "id": 733,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Un mando ridiculiza a una compañera por ser mujer («esto no es trabajo para mujeres»), sin ninguna connotación sexual, creando un entorno degradante. Según la LO 3/2007, es:",
+   "o": [
+    "Acoso sexual.",
+    "Discriminación indirecta.",
+    "Acoso por razón de sexo."
+   ],
+   "c": 2,
+   "o4": "Una conducta que la ley no regula.",
+   "que": "Acoso por razón de sexo (art. 7.2): comportamiento realizado <mark>en función del sexo</mark> de una persona, que atenta contra su dignidad y crea un entorno intimidatorio, degradante u ofensivo.",
+   "porque": "No es acoso sexual porque el comportamiento no es de <mark>naturaleza sexual</mark>; se le ataca por ser mujer.",
+   "ojo": "Los dos acosos se consideran en todo caso discriminatorios.",
+   "rec": "<mark>Sexual</mark> = contenido sexual; <mark>por razón de sexo</mark> = por ser mujer u hombre.",
+   "f": "LO 3/2007, art. 7.2",
+   "tq": "Acoso sin contenido sexual, por ser mujer",
+   "ta": "Acoso por razón de sexo.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     3
+    ]
+   }
+  },
+  {
+   "id": 734,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "A una funcionaria le dan a entender que su ascenso depende de que acepte proposiciones sexuales. Además de acoso, ¿cómo lo califica la LO 3/2007?",
+   "o": [
+    "Discriminación indirecta por razón de sexo.",
+    "Discriminación por asociación.",
+    "Acto de discriminación por razón de sexo."
+   ],
+   "c": 2,
+   "o4": "Una infracción solo penal, ajena a esta ley.",
+   "que": "Art. 7.4: <mark>condicionar un derecho o una expectativa de derecho</mark> a aceptar una situación de acoso se considera también <mark>acto de discriminación por razón de sexo</mark>.",
+   "porque": "Un ascenso es una expectativa de derecho: ligarlo a ceder al acoso es discriminar.",
+   "ojo": "La definición de acoso sexual es «sin perjuicio de lo establecido en el Código Penal»: la vía penal no excluye esta ley. La discriminación por asociación es un concepto de la Ley 4/2023.",
+   "rec": "<mark>Chantaje</mark> (derecho a cambio de acoso) = discriminación.",
+   "f": "LO 3/2007, art. 7.4",
+   "tq": "Condicionar un derecho a aceptar el acoso",
+   "ta": "También es discriminación por razón de sexo.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     3
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 735,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la LO 3/2007, una cláusula de un contrato que causa discriminación por razón de sexo es:",
+   "o": [
+    "Anulable a petición de la persona afectada en el plazo de un año.",
+    "Válida, pero da derecho a una indemnización.",
+    "Nula y sin efecto."
+   ],
+   "c": 2,
+   "o4": "Válida si la firmaron libremente ambas partes.",
+   "que": "Art. 10: los actos y cláusulas que constituyan o causen discriminación por razón de sexo son <mark>nulos y sin efecto</mark>.",
+   "porque": "Además dan lugar a <mark>reparaciones o indemnizaciones reales, efectivas y proporcionadas</mark> al perjuicio y, en su caso, a sanciones eficaces y disuasorias.",
+   "ojo": "La nulidad no depende de que la persona la pida en un plazo ni del consentimiento: la cláusula no vale nunca.",
+   "rec": "Discriminar = <mark>NULO</mark> + reparar + sancionar.",
+   "f": "LO 3/2007, art. 10",
+   "tq": "Cláusula discriminatoria por sexo",
+   "ta": "Nula y sin efecto.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 736,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la LO 3/2007, ¿quién puede adoptar medidas de acción positiva a favor de las mujeres?",
+   "o": [
+    "Solo los poderes públicos, nunca los particulares.",
+    "Solo las empresas de más de 50 personas.",
+    "Los poderes públicos y también los particulares."
+   ],
+   "c": 2,
+   "o4": "Solo los tribunales.",
+   "que": "Art. 11: los <mark>poderes públicos</mark> adoptarán medidas específicas en favor de las mujeres, y <mark>también las personas físicas y jurídicas privadas</mark> podrán adoptarlas en los términos de la ley.",
+   "porque": "Corregir desigualdades de hecho interesa a toda la sociedad, no solo a la Administración.",
+   "ojo": "Para los poderes públicos es un deber («adoptarán»); para los privados, una posibilidad («podrán»).",
+   "rec": "Públicos <mark>deben</mark>, privados <mark>pueden</mark>.",
+   "f": "LO 3/2007, art. 11",
+   "tq": "Quién puede adoptar acciones positivas",
+   "ta": "Poderes públicos (deben) y privados (pueden).",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 737,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Una bombera que ya ha dejado el servicio quiere reclamar ante los tribunales por la discriminación que sufrió. Según la LO 3/2007:",
+   "o": [
+    "Puede pedir la tutela judicial aunque la relación haya terminado.",
+    "Ya no puede: la tutela exige que la relación siga vigente.",
+    "Solo puede en los tres meses siguientes al cese."
+   ],
+   "c": 0,
+   "o4": "Solo puede reclamar el Ministerio Fiscal en su nombre.",
+   "que": "Art. 12.1: cualquier persona puede recabar de los tribunales la tutela del derecho a la igualdad <mark>incluso tras la terminación de la relación</mark> en la que se produjo la discriminación.",
+   "porque": "Muchas personas no se atreven a reclamar mientras dura la relación laboral; la ley no les cierra la puerta al terminar.",
+   "ojo": "La ley no fija aquí ningún plazo de tres meses.",
+   "rec": "La tutela <mark>sobrevive al cese</mark>.",
+   "f": "LO 3/2007, art. 12.1",
+   "tq": "¿Tutela judicial tras acabar la relación?",
+   "ta": "Sí, incluso tras su terminación.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     4
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 738,
+   "t": "Igualdad",
+   "d": "difícil",
+   "q": "En un juicio por acoso sexual en el trabajo, un sindicato con interés legítimo quiere demandar en lugar de la víctima. Según la LO 3/2007:",
+   "o": [
+    "Puede, como cualquier persona jurídica con interés legítimo.",
+    "Puede, pero solo en el orden contencioso-administrativo.",
+    "No puede: la persona acosada es la única legitimada."
+   ],
+   "c": 2,
+   "o4": "Puede si lo autoriza la Inspección de Trabajo.",
+   "que": "Art. 12.3: en los litigios sobre <mark>acoso sexual y acoso por razón de sexo</mark>, la <mark>persona acosada es la única legitimada</mark>.",
+   "porque": "Es una excepción a la regla general del art. 12.2 (personas físicas y jurídicas con interés legítimo): en el acoso decide solo la víctima.",
+   "ojo": "La tentadora es la regla general del interés legítimo, que no se aplica al acoso.",
+   "rec": "Acoso: <mark>solo la víctima</mark> demanda.",
+   "f": "LO 3/2007, art. 12.3",
+   "tq": "Legitimación en litigios por acoso sexual",
+   "ta": "Solo la persona acosada.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 739,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según el art. 12.2 de la LO 3/2007, en los procesos civiles, sociales y contencioso-administrativos sobre la defensa del derecho a la igualdad, la capacidad y legitimación para intervenir corresponden a…",
+   "o": [
+    "Solo las personas físicas directamente afectadas.",
+    "Solo el Ministerio Fiscal y los sindicatos más representativos.",
+    "Las personas físicas y jurídicas con interés legítimo que determinen las leyes de esos procesos."
+   ],
+   "c": 2,
+   "o4": "Cualquier persona, aunque no tenga interés legítimo.",
+   "que": "Corresponden a las <mark>personas físicas y jurídicas con interés legítimo</mark>, determinadas en las leyes reguladoras de cada proceso.",
+   "porque": "Así pueden intervenir, por ejemplo, asociaciones o sindicatos que defienden la igualdad.",
+   "ojo": "<b>Excepción:</b> en el acoso sexual y por razón de sexo, solo la persona acosada está legitimada.",
+   "rec": "Regla general: <mark>interés legítimo</mark>; acoso: solo la víctima.",
+   "f": "LO 3/2007, art. 12.2",
+   "tq": "Legitimación general en procesos de igualdad",
+   "ta": "Personas físicas y jurídicas con interés legítimo.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     4
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 740,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "En un procedimiento no penal en el que la demandante alega discriminación por razón de sexo, ¿a quién corresponde probar la ausencia de discriminación?",
+   "o": [
+    "A la persona demandada.",
+    "Al órgano judicial, de oficio.",
+    "A la persona que demanda."
+   ],
+   "c": 0,
+   "o4": "A la Inspección de Trabajo.",
+   "que": "Art. 13.1: corresponde a la <mark>persona demandada</mark> probar la <mark>ausencia de discriminación</mark> en las medidas adoptadas y su <mark>proporcionalidad</mark>.",
+   "porque": "Es la inversión de la carga de la prueba: quien discrimina suele tener los datos y es muy difícil para la víctima demostrarlo.",
+   "ojo": "El juez, a instancia de parte, puede pedir informe o dictamen a los organismos públicos competentes si lo cree útil.",
+   "rec": "<mark>Prueba quien es acusado</mark> de discriminar.",
+   "f": "LO 3/2007, art. 13.1",
+   "tq": "Carga de la prueba en discriminación por sexo",
+   "ta": "La parte demandada prueba que no discriminó.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 741,
+   "t": "Igualdad",
+   "d": "difícil",
+   "q": "La inversión de la carga de la prueba de la LO 3/2007 (la parte demandada debe probar que no discriminó) se aplica en los procesos…",
+   "o": [
+    "De todos los órdenes, incluido el penal.",
+    "Solo del orden social (laboral).",
+    "De todos los órdenes salvo el penal."
+   ],
+   "c": 2,
+   "o4": "Solo del orden penal, por la gravedad de las conductas.",
+   "que": "Art. 13.2: la inversión de la carga de la prueba <mark>no se aplica a los procesos penales</mark>.",
+   "porque": "En el proceso penal rige la <mark>presunción de inocencia</mark>: la acusación tiene que probar el delito.",
+   "ojo": "La tentadora es «incluido el penal», por la idea de que la regla protege siempre a la víctima.",
+   "rec": "Penal = <mark>presunción de inocencia</mark>, sin inversión.",
+   "f": "LO 3/2007, art. 13.2",
+   "tq": "¿Inversión de la prueba en procesos penales?",
+   "ta": "No: se excluyen los procesos penales.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 742,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según el art. 1 de la LO 3/2007, la ley persigue, en desarrollo de los arts. 9.2 y 14 de la Constitución, alcanzar una sociedad…",
+   "o": [
+    "Más democrática, más justa y más solidaria.",
+    "Más libre, más igualitaria y más plural.",
+    "Más justa, más próspera y más segura."
+   ],
+   "c": 0,
+   "o4": "Más democrática, más libre y más tolerante.",
+   "que": "Objetivo final del art. 1.1: una sociedad <mark>más democrática, más justa y más solidaria</mark>.",
+   "porque": "La ley busca hacer efectiva la igualdad de trato y de oportunidades eliminando la discriminación de la mujer en todos los ámbitos.",
+   "ojo": "La ley cita singularmente las esferas política, civil, laboral, económica, social y cultural.",
+   "rec": "<mark>DJS</mark>: Democrática, Justa, Solidaria.",
+   "f": "LO 3/2007, art. 1.1",
+   "tq": "Sociedad que persigue la LO 3/2007",
+   "ta": "Más democrática, más justa y más solidaria.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     2
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 743,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Una empresa con sede en Francia contrata personal para una obra en Madrid. ¿Le obliga la LO 3/2007?",
+   "o": [
+    "No: solo obliga a empresas con domicilio social en España.",
+    "Sí: obliga a toda persona física o jurídica que se encuentre o actúe en territorio español.",
+    "Solo si la mayoría de su plantilla tiene nacionalidad española."
+   ],
+   "c": 1,
+   "o4": "Solo si contrata con una Administración española.",
+   "que": "Art. 2.2: las obligaciones de la ley se aplican a toda persona física o jurídica que <mark>se encuentre o actúe en territorio español</mark>, <mark>cualquiera que sea su nacionalidad, domicilio o residencia</mark>.",
+   "porque": "Lo que importa es dónde se actúa, no de dónde es la empresa.",
+   "ojo": "La Ley 4/2023 usa un criterio parecido y añade «resida» y otras circunstancias (origen, religión, edad, situación administrativa…).",
+   "rec": "Ámbito = <mark>territorio</mark>, no nacionalidad.",
+   "f": "LO 3/2007, art. 2.2",
+   "tq": "A quién obliga la LO 3/2007",
+   "ta": "A quien se encuentre o actúe en España.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     2
+    ]
+   }
+  },
+  {
+   "id": 744,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "¿De qué fecha es la Ley Orgánica 3/2007 para la igualdad efectiva de mujeres y hombres?",
+   "o": [
+    "28 de febrero de 2007.",
+    "8 de marzo de 2007.",
+    "22 de marzo de 2007."
+   ],
+   "c": 2,
+   "o4": "23 de marzo de 2007.",
+   "que": "Es la <mark>LO 3/2007, de 22 de marzo</mark>. Se publicó en el BOE del 23 de marzo de 2007.",
+   "porque": "No confundir la fecha de la ley con la de su publicación en el BOE.",
+   "ojo": "El 28 de febrero es la fecha de la Ley 4/2023 (personas trans y LGTBI); el 8 de marzo, el Día de la Mujer, es un distractor típico.",
+   "rec": "Ley del <mark>22</mark>-M, BOE del <mark>23</mark>-M (un día después).",
+   "f": "LO 3/2007, encabezado",
+   "tq": "Fecha de la LO 3/2007",
+   "ta": "22 de marzo de 2007.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     1
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 745,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "¿De qué fecha es la Ley 4/2023 para la igualdad real y efectiva de las personas trans y para la garantía de los derechos de las personas LGTBI?",
+   "o": [
+    "28 de junio de 2023.",
+    "28 de febrero de 2023.",
+    "22 de marzo de 2023."
+   ],
+   "c": 1,
+   "o4": "1 de marzo de 2023.",
+   "que": "Es la <mark>Ley 4/2023, de 28 de febrero</mark>; se publicó en el BOE del 1 de marzo de 2023.",
+   "porque": "La fecha de la ley es la de su firma; la de publicación es posterior.",
+   "ojo": "El 22 de marzo es el día de la LO 3/2007; el 28 de junio (Día del Orgullo) es un distractor típico.",
+   "rec": "Ley 4/2023: <mark>último día de febrero</mark>.",
+   "f": "Ley 4/2023, encabezado",
+   "tq": "Fecha de la Ley 4/2023",
+   "ta": "28 de febrero de 2023.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     5
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 746,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "En la Ley 4/2023, ¿qué significa la «I» de LGTBI?",
+   "o": [
+    "Personas de identidad no binaria.",
+    "Intersexuales.",
+    "Personas en proceso de transición."
+   ],
+   "c": 1,
+   "o4": "Personas queer.",
+   "que": "LGTBI = <mark>lesbianas, gais, trans, bisexuales e intersexuales</mark> (art. 1.1).",
+   "porque": "La ley protege a estas personas y también a sus familias.",
+   "ojo": "La ley define la intersexualidad como la condición de quienes nacen con características sexuales que no encajan en las nociones socialmente establecidas de cuerpos masculinos o femeninos.",
+   "rec": "L-G-T-B-<mark>I</mark>: la última es <mark>I</mark>ntersexual.",
+   "f": "Ley 4/2023, art. 1.1",
+   "tq": "Qué es la «I» de LGTBI",
+   "ta": "Intersexuales.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 747,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Además de garantizar la igualdad de las personas LGTBI, ¿qué regula también la Ley 4/2023 según su objeto?",
+   "o": [
+    "El matrimonio entre personas del mismo sexo.",
+    "La rectificación registral del sexo y del nombre.",
+    "La adopción por parejas homoparentales."
+   ],
+   "c": 1,
+   "o4": "La concesión de asilo por persecución por orientación sexual.",
+   "que": "Art. 1.3: la ley regula el <mark>procedimiento y requisitos para la rectificación registral relativa al sexo</mark> y, en su caso, nombre, sus efectos y medidas derivadas.",
+   "porque": "Es una de las grandes novedades de la ley (de ahí «personas trans» en su título).",
+   "ojo": "El matrimonio entre personas del mismo sexo no se regula en esta ley.",
+   "rec": "Ley <mark>trans</mark> → cambio de <mark>sexo y nombre en el Registro</mark>.",
+   "f": "Ley 4/2023, art. 1.3",
+   "tq": "¿Qué más regula la Ley 4/2023?",
+   "ta": "La rectificación registral del sexo y nombre.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 748,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Una persona migrante en situación administrativa irregular sufre discriminación en Madrid por ser trans. ¿Se le aplica la Ley 4/2023?",
+   "o": [
+    "No: exige residencia legal en España.",
+    "Sí: se aplica cualquiera que sea su situación administrativa.",
+    "Solo si ha solicitado protección internacional."
+   ],
+   "c": 1,
+   "o4": "Solo si lleva más de un año empadronada.",
+   "que": "Art. 2: se aplica a toda persona que <mark>resida, se encuentre o actúe en territorio español</mark>, cualquiera que sea su nacionalidad, origen, religión, domicilio, residencia, edad, estado civil o <mark>situación administrativa</mark>.",
+   "porque": "La protección frente a la discriminación no depende de tener los papeles en regla.",
+   "ojo": "Comparado con la LO 3/2007 (nacionalidad, domicilio o residencia), la Ley 4/2023 enumera más circunstancias.",
+   "rec": "Ámbito = <mark>estar en España</mark>, con papeles o sin ellos.",
+   "f": "Ley 4/2023, art. 2",
+   "tq": "¿Ley 4/2023 a personas en situación irregular?",
+   "ta": "Sí, cualquiera que sea su situación administrativa.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 749,
+   "t": "Igualdad",
+   "d": "difícil",
+   "q": "Según la Ley 4/2023, denegar ajustes razonables a una persona con discapacidad se considera…",
+   "o": [
+    "Discriminación directa.",
+    "Discriminación por asociación.",
+    "Discriminación indirecta."
+   ],
+   "c": 0,
+   "o4": "Acoso discriminatorio.",
+   "que": "Art. 3.a: «Se considerará <mark>discriminación directa</mark> la <mark>denegación de ajustes razonables</mark> a las personas con discapacidad».",
+   "porque": "Ajustes razonables: modificaciones y adaptaciones necesarias del ambiente físico, social y actitudinal, que <mark>no impongan una carga desproporcionada o indebida</mark>, para que la persona con discapacidad ejerza sus derechos en igualdad.",
+   "ojo": "La tentadora es «indirecta» (parece una omisión neutra), pero la ley la incluye expresamente en la definición de directa.",
+   "rec": "Negar el ajuste = <mark>directa</mark>.",
+   "f": "Ley 4/2023, art. 3.a",
+   "tq": "Denegar ajustes razonables (Ley 4/2023)",
+   "ta": "Es discriminación directa.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 750,
+   "t": "Igualdad",
+   "d": "difícil",
+   "q": "Una mujer trans con discapacidad sufre una forma específica de discriminación porque ambas causas concurren e interactúan entre sí. Según la Ley 4/2023, es discriminación…",
+   "o": [
+    "Interseccional.",
+    "Por asociación.",
+    "Múltiple."
+   ],
+   "c": 0,
+   "o4": "Indirecta.",
+   "que": "Art. 3.c: hay discriminación <mark>interseccional</mark> cuando <mark>concurren o interactúan</mark> diversas causas generando una <mark>forma específica</mark> de discriminación.",
+   "porque": "La múltiple es ser discriminada por dos o más causas <mark>de manera simultánea o consecutiva</mark>; la interseccional, cuando se combinan y crean algo distinto.",
+   "ojo": "Las causas pueden ser de esta ley o de la Ley 15/2022, integral para la igualdad de trato y la no discriminación (como la discapacidad).",
+   "rec": "Inter<mark>sección</mark> = las causas se <mark>cruzan</mark> y crean algo nuevo.",
+   "f": "Ley 4/2023, art. 3.c",
+   "tq": "Causas que interactúan y crean una forma específica",
+   "ta": "Discriminación interseccional.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 751,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "El esquema muestra a una persona discriminada por dos causas de la Ley 4/2023, a la vez o una tras otra, cada una por separado y sin combinarse. ¿Qué tipo de discriminación es?",
+   "o": [
+    "Múltiple.",
+    "Interseccional.",
+    "Por error."
+   ],
+   "c": 0,
+   "o4": "Por asociación.",
+   "que": "Art. 3.c: hay discriminación <mark>múltiple</mark> cuando una persona es discriminada, <mark>de manera simultánea o consecutiva</mark>, por <mark>dos o más causas</mark> de esta ley y/o de la Ley 15/2022.",
+   "porque": "En la múltiple, las causas se suman; en la interseccional, interactúan y generan una forma específica de discriminación.",
+   "ojo": "La discriminación por error se basa en una apreciación incorrecta de las características de la persona.",
+   "rec": "<mark>Múltiple = suma</mark>; interseccional = mezcla.",
+   "f": "Ley 4/2023, art. 3.c",
+   "tq": "Dos o más causas, a la vez o seguidas",
+   "ta": "Discriminación múltiple.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   },
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 320 170\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"12\"><rect x=\"10\" y=\"20\" width=\"90\" height=\"34\" rx=\"6\" fill=\"none\" stroke=\"currentColor\"/><text x=\"55\" y=\"42\" text-anchor=\"middle\" fill=\"currentColor\">Causa 1</text><rect x=\"10\" y=\"110\" width=\"90\" height=\"34\" rx=\"6\" fill=\"none\" stroke=\"currentColor\"/><text x=\"55\" y=\"132\" text-anchor=\"middle\" fill=\"currentColor\">Causa 2</text><line x1=\"100\" y1=\"37\" x2=\"215\" y2=\"77\" stroke=\"#d9534f\" stroke-width=\"2\"/><line x1=\"100\" y1=\"127\" x2=\"215\" y2=\"93\" stroke=\"#d9534f\" stroke-width=\"2\"/><polygon points=\"215,77 203,77 207,70\" fill=\"#d9534f\"/><polygon points=\"215,93 203,93 207,100\" fill=\"#d9534f\"/><circle cx=\"250\" cy=\"62\" r=\"11\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"250\" y1=\"73\" x2=\"250\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"232\" y1=\"85\" x2=\"268\" y2=\"85\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"250\" y1=\"105\" x2=\"236\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"250\" y1=\"105\" x2=\"264\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"160\" y=\"160\" text-anchor=\"middle\" fill=\"currentColor\">a la vez o una tras otra, cada una por separado</text></svg>"
+  },
+  {
+   "id": 752,
+   "t": "Igualdad",
+   "d": "difícil",
+   "q": "La Ley 4/2023 define el acoso discriminatorio por el entorno que crea. ¿Qué calificativo de ese entorno aparece en la Ley 4/2023 y NO en la definición de acoso de la LO 3/2007?",
+   "o": [
+    "Hostil.",
+    "Ofensivo.",
+    "Degradante."
+   ],
+   "c": 0,
+   "o4": "Intimidatorio.",
+   "que": "Ley 4/2023, art. 3.d: entorno <mark>intimidatorio, hostil, degradante, humillante u ofensivo</mark>. LO 3/2007, art. 7: entorno <mark>intimidatorio, degradante u ofensivo</mark>.",
+   "porque": "La Ley 4/2023 añade <mark>hostil</mark> y <mark>humillante</mark>.",
+   "ojo": "Degradante, ofensivo e intimidatorio están en las dos leyes: por eso tientan.",
+   "rec": "La ley nueva añade <mark>H + H</mark>: Hostil y Humillante.",
+   "f": "Ley 4/2023, art. 3.d; LO 3/2007, art. 7",
+   "tq": "Entorno del acoso: ¿qué añade la Ley 4/2023?",
+   "ta": "Hostil y humillante.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 753,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "En un campamento municipal no admiten a una niña porque sus dos madres son lesbianas. Según la Ley 4/2023, es discriminación…",
+   "o": [
+    "Por error.",
+    "Interseccional.",
+    "Por asociación."
+   ],
+   "c": 2,
+   "o4": "Indirecta.",
+   "que": "Art. 3.e: hay discriminación <mark>por asociación</mark> cuando una persona, por su <mark>relación con otra</mark> en la que concurre una causa de discriminación (orientación, identidad sexual, expresión de género o características sexuales), recibe un trato discriminatorio.",
+   "porque": "La niña no es discriminada por algo suyo, sino por la orientación sexual de sus madres.",
+   "ojo": "Por error: se discrimina por una apreciación incorrecta de las características de la persona.",
+   "rec": "<mark>Asociación</mark> = te discriminan por <mark>con quién</mark> estás.",
+   "f": "Ley 4/2023, art. 3.e",
+   "tq": "Discriminado por su relación con una persona LGTBI",
+   "ta": "Discriminación por asociación.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 754,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la Ley 4/2023, las medidas de acción positiva son diferencias de trato orientadas a prevenir, eliminar y compensar la discriminación o desventaja en su dimensión…",
+   "o": [
+    "Individual o personal.",
+    "Colectiva o social.",
+    "Laboral o económica."
+   ],
+   "c": 1,
+   "o4": "Familiar o privada.",
+   "que": "Art. 3.f: diferencias de trato contra la discriminación o desventaja <mark>en su dimensión colectiva o social</mark>.",
+   "porque": "Se dirigen a corregir desigualdades de un grupo, no casos aislados.",
+   "ojo": "Como en la LO 3/2007, se aplican <mark>mientras subsistan</mark> las situaciones que las justifican y deben ser <mark>razonables y proporcionadas</mark>.",
+   "rec": "Acción positiva = <mark>grupo</mark>, no individuo.",
+   "f": "Ley 4/2023, art. 3.f",
+   "tq": "Dimensión de las acciones positivas (Ley 4/2023)",
+   "ta": "Colectiva o social.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 755,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la Ley 4/2023, ¿cómo se llama la manifestación que cada persona hace de su identidad sexual?",
+   "o": [
+    "Orientación sexual.",
+    "Identidad sexual.",
+    "Expresión de género."
+   ],
+   "c": 2,
+   "o4": "Características sexuales.",
+   "que": "Art. 3.j: <mark>expresión de género</mark> = manifestación que cada persona hace de su identidad sexual.",
+   "porque": "Identidad sexual: vivencia interna del sexo. Orientación sexual: atracción física, sexual o afectiva hacia una persona.",
+   "ojo": "Las tres definiciones se confunden a menudo: la expresión es lo que se <b>muestra</b>, la identidad lo que se <b>siente</b>.",
+   "rec": "Identidad = <mark>dentro</mark>; expresión = <mark>fuera</mark>; orientación = <mark>hacia quién</mark>.",
+   "f": "Ley 4/2023, art. 3.j",
+   "tq": "Manifestación de la identidad sexual",
+   "ta": "Expresión de género.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 756,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la Ley 4/2023, la identidad sexual:",
+   "o": [
+    "Puede o no corresponder con el sexo asignado al nacer.",
+    "Es la atracción física, sexual o afectiva hacia otra persona.",
+    "Debe acreditarse con un informe médico."
+   ],
+   "c": 0,
+   "o4": "Es la manifestación externa del sexo de cada persona.",
+   "que": "Art. 3.i: identidad sexual es la <mark>vivencia interna e individual del sexo</mark> tal y como cada persona la siente y autodefine, <mark>pudiendo o no corresponder con el sexo asignado al nacer</mark>.",
+   "porque": "Se basa en cómo se siente y se define cada persona.",
+   "ojo": "La atracción es la orientación sexual; la manifestación externa, la expresión de género.",
+   "rec": "Identidad = <mark>cómo me siento</mark>.",
+   "f": "Ley 4/2023, art. 3.i",
+   "tq": "Identidad sexual (Ley 4/2023)",
+   "ta": "Vivencia interna del sexo; puede no coincidir con el asignado.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 757,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la Ley 4/2023, una persona trans es aquella…",
+   "o": [
+    "Cuya identidad sexual no se corresponde con el sexo asignado al nacer.",
+    "Que se ha sometido a un tratamiento médico de reasignación.",
+    "Que ha completado la rectificación registral de su sexo."
+   ],
+   "c": 0,
+   "o4": "Nacida con características sexuales que no encajan en lo masculino o femenino.",
+   "que": "Art. 3.k: <mark>persona trans</mark> = persona cuya <mark>identidad sexual no se corresponde con el sexo asignado al nacer</mark>.",
+   "porque": "La definición no exige ningún trámite registral ni tratamiento médico.",
+   "ojo": "Nacer con características sexuales que no encajan en lo socialmente establecido es la <mark>intersexualidad</mark>, otra cosa.",
+   "rec": "Trans = <mark>identidad ≠ sexo asignado</mark>.",
+   "f": "Ley 4/2023, art. 3.k",
+   "tq": "Persona trans (Ley 4/2023)",
+   "ta": "Identidad sexual distinta del sexo asignado al nacer.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 758,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la Ley 4/2023, la condición de las personas nacidas con características biológicas, anatomía sexual, órganos reproductivos o patrón cromosómico que no se corresponden con las nociones socialmente establecidas de cuerpos masculinos o femeninos es la…",
+   "o": [
+    "Expresión de género.",
+    "Intersexualidad.",
+    "Transexualidad."
+   ],
+   "c": 1,
+   "o4": "Identidad sexual.",
+   "que": "Art. 3.g: <mark>intersexualidad</mark>.",
+   "porque": "Es una condición <mark>biológica de nacimiento</mark>, no una vivencia ni una manifestación.",
+   "ojo": "No confundir con persona trans (identidad sexual distinta del sexo asignado al nacer).",
+   "rec": "Inter<mark>sexual</mark> = el <mark>cuerpo</mark>; trans = la <mark>identidad</mark>.",
+   "f": "Ley 4/2023, art. 3.g",
+   "tq": "Intersexualidad (Ley 4/2023)",
+   "ta": "Características sexuales de nacimiento fuera de lo masculino/femenino establecido.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 759,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la Ley 4/2023, las familias homoparentales están formadas por personas lesbianas, gais o bisexuales con descendientes…",
+   "o": [
+    "De cualquier edad, siempre que convivan en el domicilio.",
+    "Solo menores adoptados legalmente.",
+    "Menores bajo su guarda, tutela o patria potestad, o mayores con discapacidad a cargo."
+   ],
+   "c": 2,
+   "o4": "Solo biológicos de uno de sus miembros.",
+   "que": "Art. 3.l: familias homoparentales = personas lesbianas, gais o bisexuales con descendientes <mark>menores</mark> de forma estable bajo <mark>guarda, tutela o patria potestad</mark>, o con descendientes <mark>mayores con discapacidad a cargo</mark>.",
+   "porque": "Son un tipo de <mark>familia LGTBI</mark>: aquella en la que uno o más integrantes son personas LGTBI.",
+   "ojo": "Los hijos mayores sin discapacidad no entran en la definición.",
+   "rec": "Homoparental: <mark>menores</mark> o <mark>mayores con discapacidad</mark>.",
+   "f": "Ley 4/2023, art. 3.l",
+   "tq": "Familia homoparental (Ley 4/2023)",
+   "ta": "LGB con menores a cargo o mayores con discapacidad.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 760,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Agreden e insultan a un hombre heterosexual porque lo creen gay. Según las definiciones de la Ley 4/2023, ¿es homofobia?",
+   "o": [
+    "No: es discriminación por asociación.",
+    "No: solo hay homofobia si la víctima es homosexual.",
+    "Sí: incluye el rechazo a quienes son percibidos como homosexuales."
+   ],
+   "c": 2,
+   "o4": "Solo si la víctima lo denuncia.",
+   "que": "Art. 3.n: homofobia es el rechazo, prejuicio o intolerancia hacia las personas homosexuales por el hecho de serlo <mark>o ser percibidas como tales</mark>.",
+   "porque": "Lo que cuenta es el prejuicio del agresor, no la orientación real de la víctima.",
+   "ojo": "La misma coletilla está en LGTBIfobia, bifobia y transfobia. No es por asociación: no le atacan por su relación con otra persona.",
+   "rec": "Fobia: <mark>serlo o parecerlo</mark>.",
+   "f": "Ley 4/2023, art. 3.n",
+   "tq": "Homofobia contra quien parece homosexual",
+   "ta": "Sí: «o ser percibidas como tales».",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 761,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según la Ley 4/2023, para que la inducción a discriminar sea discriminatoria, ha de ser…",
+   "o": [
+    "Escrita, expresa y reiterada.",
+    "Pública, reiterada y dolosa.",
+    "Concreta, directa y eficaz."
+   ],
+   "c": 2,
+   "o4": "Genérica, aunque no llegue a producir efectos.",
+   "que": "Art. 3.p: la inducción ha de ser <mark>concreta, directa y eficaz</mark> para hacer surgir en otra persona una actuación discriminatoria.",
+   "porque": "Una incitación vaga o que no puede mover a nadie a discriminar no entra en esta definición.",
+   "ojo": "Toda inducción, orden o instrucción de discriminar es discriminatoria; la ley solo pone estas condiciones a la inducción.",
+   "rec": "Inducción <mark>CDE</mark>: Concreta, Directa, Eficaz.",
+   "f": "Ley 4/2023, art. 3.p",
+   "tq": "Requisitos de la inducción a discriminar",
+   "ta": "Concreta, directa y eficaz.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     8
+    ]
+   }
+  },
+  {
+   "id": 762,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "¿Qué periodo de vigencia tuvo el II Plan de Igualdad entre Mujeres y Hombres del Ayuntamiento de Madrid y sus OO.AA.?",
+   "o": [
+    "2020-2022.",
+    "2022-2024.",
+    "2017-2019."
+   ],
+   "c": 1,
+   "o4": "2019-2021.",
+   "que": "Ámbito municipal: <mark>I Plan 2017-2019</mark> y <mark>II Plan 2022-2024</mark>.",
+   "porque": "El III Plan sigue al II.",
+   "ojo": "Entre el I y el II hay un hueco (2020-2021): no son años seguidos.",
+   "rec": "I = 20<mark>17</mark>; II = 20<mark>22</mark> (suma 5).",
+   "f": "III Plan de Igualdad, 1.4 Ámbito municipal",
+   "tq": "Vigencia del II Plan de Igualdad municipal",
+   "ta": "2022-2024.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     10
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 763,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "En el III Plan de Igualdad del Ayuntamiento de Madrid, el objetivo «alcanzar la paridad en la representación» pertenece a la línea de intervención…",
+   "o": [
+    "La comunicación.",
+    "La institución.",
+    "Las personas."
+   ],
+   "c": 1,
+   "o4": "La organización.",
+   "que": "Línea 1, <mark>la institución</mark>: 1.1 incorporar el principio de igualdad en la gestión y organización, 1.2 implementación, seguimiento, evaluación y difusión del plan, <mark>1.3 alcanzar la paridad en la representación</mark>.",
+   "porque": "La representación institucional es cosa de la propia organización municipal.",
+   "ojo": "Los objetivos de empleo, formación, teletrabajo o conciliación están en «las personas».",
+   "rec": "Institución = <mark>gestión, plan y paridad</mark>.",
+   "f": "III Plan de Igualdad, 4.3 (línea 1)",
+   "tq": "Línea del objetivo de paridad en la representación",
+   "ta": "La institución (línea 1).",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     12
+    ]
+   }
+  },
+  {
+   "id": 764,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "En el III Plan de Igualdad del Ayuntamiento de Madrid, el objetivo «utilizar un lenguaje inclusivo y no discriminatorio» pertenece a la línea…",
+   "o": [
+    "La comunicación.",
+    "La institución.",
+    "Las personas."
+   ],
+   "c": 0,
+   "o4": "La formación.",
+   "que": "Línea 2, <mark>la comunicación</mark>: 2.1 utilizar un lenguaje inclusivo y no discriminatorio y 2.2 eliminar el sexismo y los estereotipos de género.",
+   "porque": "El lenguaje es la herramienta básica de la comunicación municipal.",
+   "ojo": "La línea de la comunicación solo tiene esos dos objetivos.",
+   "rec": "Comunicación = <mark>lenguaje + estereotipos</mark>.",
+   "f": "III Plan de Igualdad, 4.3 (línea 2)",
+   "tq": "Línea del objetivo de lenguaje inclusivo",
+   "ta": "La comunicación (línea 2).",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     12
+    ]
+   }
+  },
+  {
+   "id": 765,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "¿Cuál de estos objetivos del III Plan de Igualdad del Ayuntamiento de Madrid NO pertenece a la línea «Las personas»?",
+   "o": [
+    "Incorporar el principio de igualdad en la gestión y la organización municipal.",
+    "Propiciar la conciliación de los tiempos de vida.",
+    "Asegurar el acceso al teletrabajo en condiciones de igualdad."
+   ],
+   "c": 0,
+   "o4": "Promover la igualdad salarial cuando se detecten disparidades.",
+   "que": "Incorporar la igualdad en la gestión y organización es el objetivo 1.1, de la línea <mark>la institución</mark>.",
+   "porque": "«Las personas» (línea 3) reúne lo que afecta a la plantilla: acceso al empleo y promoción, sexismo, <mark>teletrabajo</mark>, provisión de puestos, <mark>igualdad salarial</mark>, formación, <mark>conciliación</mark> y prevención del acoso y la violencia de género.",
+   "ojo": "La línea 3 es la que más objetivos tiene (3.1 a 3.8).",
+   "rec": "Personas = <mark>lo que vive la plantilla</mark>.",
+   "f": "III Plan de Igualdad, 4.3 (líneas 1 y 3)",
+   "tq": "Objetivo de gestión y organización: ¿qué línea?",
+   "ta": "La institución (no las personas).",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     12
+    ]
+   }
+  },
+  {
+   "id": 766,
+   "t": "Igualdad",
+   "d": "difícil",
+   "q": "En el III Plan de Igualdad del Ayuntamiento de Madrid, ¿en qué líneas de intervención hay un objetivo de eliminar o suprimir el sexismo y los estereotipos?",
+   "o": [
+    "En la comunicación y en las personas.",
+    "Solo en la comunicación.",
+    "Solo en la institución."
+   ],
+   "c": 0,
+   "o4": "Solo en las personas.",
+   "que": "Aparece dos veces: <mark>2.2 eliminar el sexismo y los estereotipos de género</mark> (la comunicación) y <mark>3.2 suprimir el sexismo y la estereotipación</mark> (las personas).",
+   "porque": "Se ataca el sexismo en los mensajes del Ayuntamiento y también en el trato a la plantilla.",
+   "ojo": "La tentadora es «solo en la comunicación», porque es la más conocida.",
+   "rec": "Sexismo: <mark>2.2 y 3.2</mark> (el mismo número en dos líneas).",
+   "f": "III Plan de Igualdad, 4.3 (líneas 2 y 3)",
+   "tq": "Líneas con objetivo contra el sexismo",
+   "ta": "Comunicación (2.2) y personas (3.2).",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     12
+    ]
+   }
+  },
+  {
+   "id": 767,
+   "t": "Igualdad",
+   "d": "normal",
+   "q": "Según el III Plan de Igualdad del Ayuntamiento de Madrid, el objetivo de prevenir e intervenir en situaciones de especial protección se refiere a…",
+   "o": [
+    "Los acosos por sexo, orientación o identidad, y la violencia de género.",
+    "Solo el acoso sexual que sufre la plantilla municipal.",
+    "Solo la violencia de género fuera del ámbito laboral."
+   ],
+   "c": 0,
+   "o4": "Solo el acoso laboral o mobbing.",
+   "que": "Objetivo 3.8 (las personas): situaciones de especial protección: <mark>acoso sexual, por razón de sexo u orientación sexual e identidad y expresión de género, y violencia de género</mark>.",
+   "porque": "Agrupa en un objetivo todas las situaciones en las que una persona necesita protección especial.",
+   "ojo": "El acoso laboral sin componente de sexo o género no se cita en este objetivo.",
+   "rec": "3.8 = <mark>acosos + violencia de género</mark>.",
+   "f": "III Plan de Igualdad, 4.3 (objetivo 3.8)",
+   "tq": "Situaciones de especial protección (III Plan)",
+   "ta": "Acosos por sexo, orientación o identidad y violencia de género.",
+   "src": {
+    "m": "Bloque I - Tema 07 - LO 3-2007 Igualdad efectiva de mujeres y hombres",
+    "p": [
+     12
+    ]
+   }
   }
  ],
  "glosario": [
@@ -1176,6 +2280,156 @@
    "d": "Estado sin movimientos relativos: suma de fuerzas y suma de momentos iguales a cero.",
    "tema": "Edificaciones",
    "f": "Edificaciones I, 2.3",
+   "solo": 1
+  },
+  {
+   "t": "Discriminación múltiple",
+   "a": [
+    "discriminación múltiple"
+   ],
+   "d": "Ser discriminado de manera simultánea o consecutiva por dos o más causas (Ley 4/2023 o Ley 15/2022).",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.c",
+   "solo": 1
+  },
+  {
+   "t": "Discriminación interseccional",
+   "a": [
+    "discriminación interseccional",
+    "interseccional"
+   ],
+   "d": "La que se produce cuando varias causas de discriminación concurren o interactúan y generan una forma específica de discriminación.",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.c",
+   "solo": 1
+  },
+  {
+   "t": "Discriminación por asociación",
+   "a": [
+    "discriminación por asociación"
+   ],
+   "d": "Trato discriminatorio a una persona por su relación con otra en la que concurre una causa de discriminación (orientación, identidad sexual, expresión de género o características sexuales).",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.e",
+   "solo": 1
+  },
+  {
+   "t": "Acoso discriminatorio",
+   "a": [
+    "acoso discriminatorio"
+   ],
+   "d": "Conducta por una causa de discriminación de la Ley 4/2023 que atenta contra la dignidad y crea un entorno intimidatorio, hostil, degradante, humillante u ofensivo.",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.d",
+   "solo": 1
+  },
+  {
+   "t": "Ajustes razonables",
+   "a": [
+    "ajustes razonables",
+    "ajuste razonable"
+   ],
+   "d": "Modificaciones y adaptaciones necesarias del ambiente físico, social y actitudinal, sin carga desproporcionada o indebida, para que una persona con discapacidad ejerza sus derechos en igualdad. Denegarlos es discriminación directa.",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.a",
+   "solo": 1
+  },
+  {
+   "t": "Intersexualidad",
+   "a": [
+    "intersexualidad",
+    "intersexual",
+    "intersexuales"
+   ],
+   "d": "Condición de quienes nacen con características biológicas, anatomía sexual, órganos reproductivos o patrón cromosómico que no se corresponden con las nociones socialmente establecidas de cuerpos masculinos o femeninos.",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.g",
+   "solo": 1
+  },
+  {
+   "t": "Orientación sexual",
+   "a": [
+    "orientación sexual"
+   ],
+   "d": "Atracción física, sexual o afectiva hacia una persona: heterosexual, homosexual o bisexual.",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.h",
+   "solo": 1
+  },
+  {
+   "t": "Identidad sexual",
+   "a": [
+    "identidad sexual"
+   ],
+   "d": "Vivencia interna e individual del sexo tal y como cada persona la siente y autodefine; puede o no corresponder con el sexo asignado al nacer.",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.i",
+   "solo": 1
+  },
+  {
+   "t": "Expresión de género",
+   "a": [
+    "expresión de género"
+   ],
+   "d": "Manifestación que cada persona hace de su identidad sexual.",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.j",
+   "solo": 1
+  },
+  {
+   "t": "Persona trans",
+   "a": [
+    "persona trans",
+    "personas trans"
+   ],
+   "d": "Persona cuya identidad sexual no se corresponde con el sexo asignado al nacer.",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.k",
+   "solo": 1
+  },
+  {
+   "t": "Familia homoparental",
+   "a": [
+    "familia homoparental",
+    "familias homoparentales",
+    "familia LGTBI"
+   ],
+   "d": "Familia LGTBI formada por personas lesbianas, gais o bisexuales con descendientes menores bajo guarda, tutela o patria potestad, o mayores con discapacidad a cargo.",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.l",
+   "solo": 1
+  },
+  {
+   "t": "LGTBIfobia",
+   "a": [
+    "LGTBIfobia",
+    "homofobia",
+    "bifobia",
+    "transfobia"
+   ],
+   "d": "Actitud, conducta o discurso de rechazo, prejuicio o intolerancia hacia las personas LGTBI (o homosexuales, bisexuales, trans) por serlo o ser percibidas como tales.",
+   "tema": "Igualdad",
+   "f": "Ley 4/2023, art. 3.m-o",
+   "solo": 1
+  },
+  {
+   "t": "Inversión de la carga de la prueba",
+   "a": [
+    "carga de la prueba"
+   ],
+   "d": "En procesos por discriminación por sexo, la parte demandada debe probar que no discriminó y que sus medidas son proporcionadas. No se aplica en los procesos penales.",
+   "tema": "Igualdad",
+   "f": "LO 3/2007, art. 13",
+   "solo": 1
+  },
+  {
+   "t": "Principio informador",
+   "a": [
+    "principio informador"
+   ],
+   "d": "Principio que se integra y observa en la interpretación y aplicación de todas las normas; así es la igualdad de trato y de oportunidades entre mujeres y hombres.",
+   "tema": "Igualdad",
+   "f": "LO 3/2007, art. 4",
    "solo": 1
   }
  ]
