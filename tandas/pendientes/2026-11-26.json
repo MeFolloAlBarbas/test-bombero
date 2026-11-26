@@ -3226,6 +3226,961 @@
    "ex": 1,
    "dib": 1,
    "img": "<svg viewBox=\"0 0 300 170\" role=\"img\" aria-label=\"Gráfica de la curva de Drinker: eje vertical probabilidad de reanimación, eje horizontal minutos desde la parada. La curva es alta y casi plana hasta el minuto 4 (marcado) y después baja en línea recta.\"><g font-size=\"11\" fill=\"#222\" font-family=\"sans-serif\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"140\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"140\" x2=\"285\" y2=\"140\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"12\" y=\"80\" transform=\"rotate(-90 12 80)\" text-anchor=\"middle\">Probabilidad (%)</text><text x=\"165\" y=\"165\" text-anchor=\"middle\">Minutos desde la parada</text><polyline points=\"40,36 128,44 238,132\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3\"/><line x1=\"128\" y1=\"44\" x2=\"128\" y2=\"140\" stroke=\"#888\" stroke-dasharray=\"4 3\"/><text x=\"128\" y=\"154\" text-anchor=\"middle\">4</text><text x=\"40\" y=\"154\" text-anchor=\"middle\">0</text><text x=\"196\" y=\"70\">−10 % / min</text></g></svg>"
+  },
+  {
+   "id": 812,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Según las estadísticas de 2022 que recoge el manual, de las 26.000 intervenciones en la ciudad de Madrid, ¿cuántas fueron aperturas de puertas?",
+   "o": [
+    "Más de 3.000.",
+    "Más de 2.400.",
+    "Más de 6.000."
+   ],
+   "c": 0,
+   "o4": "Más de 1.000.",
+   "que": "En 2022 hubo <mark>más de 3.000 aperturas de puertas</mark> (clave SEHV) de un total de 26.000 intervenciones.",
+   "porque": "Y eso sin contar las aperturas que se hacen dentro de otras salidas (incendios, fugas de agua, ayudas a otros servicios).",
+   "ojo": "<mark>2.400</mark> no son aperturas: son los <mark>rescates</mark> que resultaron de todas esas intervenciones.",
+   "rec": "Más de 3.000 puertas, más de 2.400 rescates: casi cada puerta abierta acaba en alguien que necesitaba ayuda.",
+   "f": "Accesos forzados, Prólogo (pág. 3)",
+   "tq": "Aperturas de puertas en Madrid (2022)",
+   "ta": "Más de 3.000 de 26.000.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     3
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 813,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "¿Con qué clave de intervención se registran en Madrid las aperturas de puertas?",
+   "o": [
+    "SAPV.",
+    "SEHV.",
+    "SEAP."
+   ],
+   "c": 1,
+   "o4": "SEPU.",
+   "que": "Las aperturas de puertas tienen su propia clave: <mark>SEHV</mark>.",
+   "porque": "Aun así, es difícil contar todos los accesos forzados del año, porque muchos se hacen dentro de salidas con otra clave (incendio, fuga de agua, olor a gas…).",
+   "ojo": "Que haya clave propia no significa que todas las aperturas salgan con ella: es raro que en una guardia no se haga ningún acceso forzado.",
+   "rec": "SEHV: la clave de «abrir la puerta».",
+   "f": "Accesos forzados, 1.2 Tipos de intervenciones (pág. 4)",
+   "tq": "Clave de apertura de puertas",
+   "ta": "SEHV.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 814,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Según el manual, ¿qué parques están especializados en las intervenciones con enjambres?",
+   "o": [
+    "El 1.º y el 12.º.",
+    "El 9.º y el 10.º.",
+    "El 8.º y el 12.º."
+   ],
+   "c": 0,
+   "o4": "El 1.º y el 8.º.",
+   "que": "Los parques <mark>1.º y 12.º</mark> se especializan en <mark>enjambres</mark>.",
+   "porque": "La ciudad tiene 21 distritos muy distintos, y cada parque se adapta a lo que más le sale.",
+   "ojo": "El <mark>9.º y el 10.º</mark> son los de <mark>RBQ</mark>; el <mark>8.º</mark> es el que más fuegos de pastos tiene en verano.",
+   "rec": "Abejas: 1 y 12 (como el reloj, de la 1 a las 12). Químicos: 9 y 10, seguidos.",
+   "f": "Accesos forzados, 1.1 Morfología de la ciudad (pág. 4)",
+   "tq": "Parques de enjambres",
+   "ta": "1.º y 12.º.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 815,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "En una apertura por violencia de género, ¿cuál es el papel de bomberos según el manual?",
+   "o": [
+    "Abren y entran los primeros para asegurar a la víctima.",
+    "Solo prestan medios a Policía Nacional, que es quien entra.",
+    "Abren y entran junto con la policía y los sanitarios."
+   ],
+   "c": 1,
+   "o4": "Esperan a una orden judicial para abrir.",
+   "que": "En violencia de género bomberos <mark>únicamente presta medios a Policía Nacional</mark>: una vez abierta la puerta, <mark>entran ellos</mark>.",
+   "porque": "Es una intervención de seguridad ciudadana: la competencia y el riesgo de dentro son de la policía.",
+   "ojo": "Es lo mismo que en las aperturas a petición de la policía por un delito: apoyo en la apertura, sin entrar salvo que lo pidan y confirmen zona segura.",
+   "rec": "Violencia de género: bomberos abre, la policía entra.",
+   "f": "Accesos forzados, 1.2 Tipos de intervenciones (pág. 4)",
+   "tq": "Violencia de género: papel de bomberos",
+   "ta": "Prestar medios a la Policía Nacional; entran ellos.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 816,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "¿Por qué en un incendio en vivienda es fundamental que la puerta no sufra daños al forzarla?",
+   "o": [
+    "Para que el seguro cubra después los daños.",
+    "Para poder controlar la ventilación.",
+    "Para que no se pierda el agua de la instalación."
+   ],
+   "c": 1,
+   "o4": "Para que los vecinos no puedan entrar.",
+   "que": "En incendio en vivienda la puerta debe quedar <mark>sin daños</mark> para <mark>controlar la ventilación</mark> lo mejor posible.",
+   "porque": "Una puerta que ya no cierra deja entrar aire sin control y puede avivar el fuego; una puerta sana permite abrir y cerrar a voluntad.",
+   "ojo": "Además es una intervención crítica por la prisa: hay que abrir rápido y bien.",
+   "rec": "Puerta sana = ventilación en tus manos.",
+   "f": "Accesos forzados, 1.2 Tipos de intervenciones (pág. 4)",
+   "tq": "Incendio en vivienda: por qué no dañar la puerta",
+   "ta": "Para controlar la ventilación.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 817,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "El manual agrupa en tres tipos las herramientas de acceso forzado. ¿Cuál de estos NO es uno de ellos?",
+   "o": [
+    "Hidráulicas.",
+    "Específicas de cerrajería.",
+    "De batería."
+   ],
+   "c": 0,
+   "o4": "Manuales.",
+   "que": "Los tres tipos son <mark>manuales, de batería y específicas de cerrajería</mark>.",
+   "porque": "Manuales: las de cualquier caja (alicates, tenacillas, lima, brocas y puntas Torx). De batería: radial, fresadora y taladro. Específicas: solo sirven para abrir puertas (micas, extractor de campana…).",
+   "ojo": "Las hidráulicas son de rescate en tráfico o estabilización, no de este manual.",
+   "rec": "Accesos forzados: M-B-E (Manuales, Batería, Específicas).",
+   "f": "Accesos forzados, 1.3 Herramientas (pág. 5)",
+   "tq": "Tipos de herramientas de acceso forzado",
+   "ta": "Manuales, de batería y específicas de cerrajería.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 818,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "¿Cuál de estas herramientas de batería NO está entre las tres que llevará el Maletín de Apertura de Puertas (MAP)?",
+   "o": [
+    "Amoladora recta (fresadora).",
+    "Taladro percutor.",
+    "Atornillador de impacto."
+   ],
+   "c": 2,
+   "o4": "Amoladora angular (radial).",
+   "que": "Las tres de batería del MAP son la <mark>amoladora angular (radial)</mark>, la <mark>amoladora recta (fresadora)</mark> y el <mark>taladro percutor</mark>.",
+   "porque": "Se están implantando ahora para cortar, fresar y taladrar sin depender de cables ni generadores.",
+   "ojo": "La fresadora es una amoladora RECTA; la radial es la ANGULAR. No las confundas.",
+   "rec": "Batería del MAP: cortar (radial), fresar (fresadora), taladrar (taladro).",
+   "f": "Accesos forzados, 1.3.2 Herramientas de batería (pág. 5)",
+   "tq": "Herramientas de batería del MAP",
+   "ta": "Radial, fresadora y taladro percutor.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 819,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Según el manual, ¿para qué se usa la mordaza de presión y dónde se lleva?",
+   "o": [
+    "Para partir cilindros; va dentro del MAP.",
+    "Para cortar cadenillas; va dentro del MAP.",
+    "Para partir cilindros; va en la caja de herramientas del vehículo."
+   ],
+   "c": 2,
+   "o4": "Para cortar cadenillas; va en la caja del vehículo.",
+   "que": "La <mark>mordaza de presión</mark> se usa para <mark>partir cilindros</mark> y va en la <mark>caja de herramientas del vehículo</mark>.",
+   "porque": "No se puede duplicar para meter otra en el MAP, así que se queda en la caja del vehículo.",
+   "ojo": "La mayor parte de la herramienta sí está en el MAP; la mordaza es el ejemplo de la que no.",
+   "rec": "Mordaza: «muerde» el cilindro y lo parte.",
+   "f": "Accesos forzados, 1.3 Herramientas (pág. 5)",
+   "tq": "Mordaza de presión",
+   "ta": "Partir cilindros; en la caja del vehículo.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 820,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Según la definición del Código Penal que recoge el manual, ¿cuál de estos lugares se considera morada?",
+   "o": [
+    "Un trastero sin uso de vivienda, a cualquier hora.",
+    "Un local abierto al público, fuera de horas de apertura.",
+    "Un local abierto al público, en horas de apertura."
+   ],
+   "c": 1,
+   "o4": "Un vehículo aparcado en la vía pública.",
+   "que": "Para el Código Penal, morada es <mark>el domicilio, un despacho profesional u oficina, o un establecimiento mercantil o local abierto al público fuera de horas de apertura</mark>.",
+   "porque": "Fuera de horario, el local deja de estar abierto a cualquiera y pasa a protegerse como un espacio privado.",
+   "ojo": "Durante el horario de apertura no es morada: cualquiera puede entrar.",
+   "rec": "Local cerrado al público = morada.",
+   "f": "Accesos forzados, 2.1 Introducción (pág. 6)",
+   "tq": "Morada (Código Penal)",
+   "ta": "Domicilio, despacho u oficina, o local abierto al público fuera de horario.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 821,
+   "t": "Accesos forzados",
+   "d": "difícil",
+   "q": "Una puerta da a una vivienda con varios moradores: uno autoriza la entrada y otro se niega. Sin emergencia, ¿qué voluntad prevalece?",
+   "o": [
+    "La del morador de más edad.",
+    "La que prohíbe la entrada.",
+    "La que autoriza la entrada."
+   ],
+   "c": 1,
+   "o4": "La del que figure en el contrato.",
+   "que": "Con varios moradores <mark>prevalece la voluntad prohibitiva</mark>.",
+   "porque": "La inviolabilidad del domicilio protege a cada uno de los que viven allí: basta que uno se oponga para que no haya consentimiento válido.",
+   "ojo": "Lo tentador es pensar que con un «sí» basta. No: el consentimiento del titular solo vale si nadie de dentro se opone. (Otra cosa es la emergencia, que es otro supuesto de entrada.)",
+   "rec": "Basta un «no» para cerrar la puerta.",
+   "f": "Accesos forzados, 2.1.1 Derechos de los ciudadanos (pág. 7)",
+   "tq": "Varios moradores en desacuerdo",
+   "ta": "Prevalece la voluntad prohibitiva.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     7
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 822,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "El propietario de un piso alquilado pide a bomberos que entren, pero el inquilino que vive en él se opone. No hay emergencia. ¿Qué voluntad prevalece?",
+   "o": [
+    "La del propietario, por ser el titular.",
+    "La del inquilino, por ser el morador.",
+    "La del primero que lo haya pedido."
+   ],
+   "c": 1,
+   "o4": "La de la Policía Municipal presente.",
+   "que": "Si hay conflicto entre propietario y morador (inquilino), <mark>prevalece la voluntad del morador</mark>.",
+   "porque": "Lo que se protege es la vida privada de quien vive en la casa, no la propiedad del inmueble.",
+   "ojo": "Ser dueño no da derecho a entrar en la morada de otro: si no hay consentimiento del morador, resolución judicial, flagrante delito o emergencia, no se entra.",
+   "rec": "Manda quien mora, no quien cobra.",
+   "f": "Accesos forzados, 2.1.1 Derechos de los ciudadanos (pág. 7)",
+   "tq": "Propietario frente a inquilino",
+   "ta": "Prevalece el morador (inquilino).",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     7
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 823,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Cuando el acceso a un domicilio se hace por resolución judicial, ¿qué condición señala el manual?",
+   "o": [
+    "Solo si el titular firma antes su conformidad.",
+    "Con FCSE y/o un representante del juzgado.",
+    "Siempre con la presencia del Jefe de Guardia."
+   ],
+   "c": 1,
+   "o4": "Solo en días y horas hábiles.",
+   "que": "Con resolución judicial se entra <mark>siempre en presencia de las FCSE y/o de un representante del órgano judicial</mark> que la dictó.",
+   "porque": "La autoridad que ampara la entrada debe estar allí; bomberos solo aporta la apertura.",
+   "ojo": "El <mark>flagrante delito</mark> no lo valora bomberos: lo determinan siempre las <mark>FCSE y/o Policías Locales</mark>.",
+   "rec": "Papel del juez = alguien del juzgado o la policía delante.",
+   "f": "Accesos forzados, 2.1.1 Derechos de los ciudadanos (pág. 7)",
+   "tq": "Entrada por resolución judicial",
+   "ta": "Con FCSE y/o representante del órgano judicial.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 824,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "En un acceso por flagrante delito, ¿quién determina que existe esa circunstancia?",
+   "o": [
+    "Las FCSE y/o las Policías Locales.",
+    "El Jefe de Guardia de bomberos.",
+    "El mando de bomberos en el lugar."
+   ],
+   "c": 0,
+   "o4": "El juez de guardia por teléfono.",
+   "que": "El flagrante delito es una circunstancia que <mark>siempre determinan las FCSE y/o Policías Locales</mark>.",
+   "porque": "Valorar si se está cometiendo un delito es tarea policial, no de un servicio de emergencias.",
+   "ojo": "Los tres supuestos de la CE para entrar son: consentimiento del titular, resolución judicial y flagrante delito. Bomberos no decide ninguno de los dos últimos.",
+   "rec": "Delito → lo dice la policía.",
+   "f": "Accesos forzados, 2.1.1 Derechos de los ciudadanos (pág. 7)",
+   "tq": "Flagrante delito: quién lo determina",
+   "ta": "Las FCSE y/o Policías Locales.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 825,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Según la Ley 17/2015 del Sistema Nacional de Protección Civil, cuando una emergencia exige entrar en un domicilio, ¿qué ley se aplica?",
+   "o": [
+    "La LO 4/2015, de protección de la seguridad ciudadana.",
+    "La Ley 40/2015, de Régimen Jurídico del Sector Público.",
+    "La LO 10/1995, del Código Penal."
+   ],
+   "c": 0,
+   "o4": "La Ley 39/2015, de Procedimiento Administrativo.",
+   "que": "La Ley 17/2015 remite a la <mark>LO 4/2015 de protección de la seguridad ciudadana</mark>, que considera causa legítima evitar <mark>daños inminentes y graves</mark> a personas y cosas en catástrofe, calamidad, ruina inminente u otros casos de extrema y urgente necesidad.",
+   "porque": "Así la entrada por emergencia tiene base legal propia, distinta del consentimiento o la orden judicial.",
+   "ojo": "El Código Penal sale en el tema por los delitos (allanamiento, omisión de socorro…), y la Ley 40/2015 por la responsabilidad patrimonial.",
+   "rec": "Emergencia en casa ajena → ley de seguridad ciudadana.",
+   "f": "Accesos forzados, 2.1.1 Derechos de los ciudadanos (pág. 7)",
+   "tq": "Entrada en domicilio por emergencia",
+   "ta": "Se aplica la LO 4/2015 de seguridad ciudadana.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     7
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 826,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Según el manual, ¿qué porcentaje de los accesos forzados de bomberos son intervenciones urgentes?",
+   "o": [
+    "El 99,99 %.",
+    "El 75 %.",
+    "El 90 %."
+   ],
+   "c": 0,
+   "o4": "El 50 %.",
+   "que": "Las intervenciones urgentes son el <mark>99,99 %</mark>; las no urgentes, el <mark>0,01 %</mark>.",
+   "porque": "Casi todo es emergencia: incendio, persona en riesgo, peligro estructural o delito en el interior.",
+   "ojo": "Las no urgentes son aperturas programadas por colaboración con FCSE y Justicia (desalojos judiciales, expedientes de ruina…).",
+   "rec": "Urgentes: todas menos una de cada diez mil.",
+   "f": "Accesos forzados, 2.2.1 Clasificación de intervenciones (pág. 8)",
+   "tq": "Porcentaje de intervenciones urgentes",
+   "ta": "99,99 %.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     8
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 827,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "En una apertura no urgente programada (p. ej., un desalojo judicial), ¿cuál es la misión de bomberos según el manual?",
+   "o": [
+    "Abrir y entrar los primeros para asegurar el inmueble.",
+    "Abrir sin entrar, salvo que lo pidan y confirmen que es zona segura.",
+    "Abrir solo si el morador da su consentimiento."
+   ],
+   "c": 1,
+   "o4": "Entrar y hacer el inventario de daños.",
+   "que": "En estas aperturas bomberos presta apoyo en la apertura <mark>sin acceder al interior</mark>, salvo que <mark>soliciten expresamente su colaboración y confirmen que es zona segura</mark>.",
+   "porque": "No es una emergencia: es colaboración con las FCSE y la Administración de Justicia, que son quienes actúan dentro.",
+   "ojo": "La negativa del mando a colaborar, si la activación la validó el Jefe de Guardia o la Jefatura, puede suponer responsabilidad.",
+   "rec": "Programada: abrimos, no entramos.",
+   "f": "Accesos forzados, 2.2.1 Clasificación de intervenciones (pág. 8)",
+   "tq": "Apertura no urgente: misión",
+   "ta": "Abrir sin entrar salvo petición y zona segura.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     8
+    ]
+   }
+  },
+  {
+   "id": 828,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "¿Cuál de estos NO es uno de los criterios del estado de necesidad que debe valorar el mando?",
+   "o": [
+    "Que la situación no la haya provocado intencionadamente el interviniente.",
+    "Que el mal causado no sea mayor que el que se trate de evitar.",
+    "Que el morador haya dado su consentimiento previo."
+   ],
+   "c": 2,
+   "o4": "Que el necesitado no tenga obligación de sacrificarse por su oficio.",
+   "que": "Los criterios son: que <mark>el mal causado no sea mayor que el que se evita</mark> (pirámide del bien jurídico), que <mark>la situación no la haya provocado el interviniente</mark> y que <mark>el necesitado no tenga obligación de sacrificarse</mark> por su oficio o cargo.",
+   "porque": "El estado de necesidad exime de responsabilidad penal cuando se causa un daño (romper una puerta) para evitar otro mayor.",
+   "ojo": "Si hubiera consentimiento no haría falta estado de necesidad: ya sería una entrada lícita por sí misma.",
+   "rec": "Mal menor, no provocado, sin deber de sacrificio.",
+   "f": "Accesos forzados, 2.2.2 Valoración del mando (pág. 8)",
+   "tq": "Criterios del estado de necesidad",
+   "ta": "Mal menor, no provocado, sin obligación de sacrificarse.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     8
+    ]
+   }
+  },
+  {
+   "id": 829,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Según el manual, ¿qué principios de actuación tiene un servicio de emergencias?",
+   "o": [
+    "Proporcionalidad, rapidez y discreción.",
+    "Legalidad, proporcionalidad y buena fe.",
+    "Legalidad, jerarquía y eficacia."
+   ],
+   "c": 1,
+   "o4": "Jerarquía, disciplina y buena fe.",
+   "que": "Los principios de actuación son <mark>legalidad, proporcionalidad y buena fe</mark>.",
+   "porque": "Aun así, actuar con esos principios no impide tener que responder de una actuación negligente.",
+   "ojo": "Bomberos no está facultado <mark>explícitamente</mark> para la «entrada y registro» (las FCSE sí); se entiende incluido <mark>implícitamente</mark> por su deber de proteger a personas y bienes.",
+   "rec": "L-P-B: Ley, Proporción y Buena fe.",
+   "f": "Accesos forzados, 2.2.2 Valoración del mando (pág. 9)",
+   "tq": "Principios de actuación",
+   "ta": "Legalidad, proporcionalidad y buena fe.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     9
+    ]
+   }
+  },
+  {
+   "id": 830,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "El Reglamento del Cuerpo sujeta a los bomberos a responsabilidad por sus actos u omisiones. Si tras una actuación negligente se impone al interviniente una multa por el daño material causado, ¿qué responsabilidad es?",
+   "o": [
+    "Penal.",
+    "Patrimonial.",
+    "Disciplinaria."
+   ],
+   "c": 1,
+   "o4": "Contable.",
+   "que": "Multa o sanción por un <mark>daño material</mark> = <mark>responsabilidad patrimonial</mark>.",
+   "porque": "Las otras dos: una falta administrativa da responsabilidad <mark>disciplinaria</mark>; una pena por falta o delito, responsabilidad <mark>penal</mark>.",
+   "ojo": "Una misma actuación negligente puede generar las tres a la vez. La patrimonial de la Administración se desarrolla en la Ley 40/2015.",
+   "rec": "Patrimonio dañado → responsabilidad patrimonial.",
+   "f": "Accesos forzados, 2.2.3 Responsabilidad del interviniente (pág. 9)",
+   "tq": "Multa por daño material",
+   "ta": "Responsabilidad patrimonial.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     9
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 831,
+   "t": "Accesos forzados",
+   "d": "difícil",
+   "q": "Bomberos fuerza por error la puerta de una vivienda equivocada. Según la tabla del manual, ¿qué responsabilidades acarrea?",
+   "o": [
+    "Disciplinaria y penal, no patrimonial.",
+    "Solo disciplinaria.",
+    "Penal y patrimonial, no disciplinaria."
+   ],
+   "c": 2,
+   "o4": "Disciplinaria, penal y patrimonial.",
+   "que": "La <mark>acción indebida</mark> (vivienda equivocada o entrada injustificada, como un grifo goteando) es <mark>allanamiento de morada</mark>: responsabilidad <mark>penal y patrimonial</mark>, <mark>no disciplinaria</mark>.",
+   "porque": "Penal por el delito de allanamiento; patrimonial por los daños causados a la puerta.",
+   "ojo": "La <mark>inacción</mark> (no entrar tras un reconocimiento insuficiente y había alguien) es omisión del deber de socorro: <mark>solo penal</mark>.",
+   "rec": "Puerta equivocada: delito + puerta que pagar.",
+   "f": "Accesos forzados, 2.2.3 Responsabilidad del interviniente (pág. 9)",
+   "tq": "Acción indebida: responsabilidades",
+   "ta": "Penal y patrimonial (allanamiento).",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     9
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 832,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Según el manual, ¿qué pena de prisión puede tener un allanamiento de morada con el agravante de agente de la autoridad?",
+   "o": [
+    "De 15 a 24 meses.",
+    "De 3 a 12 meses.",
+    "De 6 a 12 meses."
+   ],
+   "c": 0,
+   "o4": "De 12 a 18 meses.",
+   "que": "Con el agravante de agente de la autoridad: <mark>prisión de 15 a 24 meses</mark> e <mark>inhabilitación de 6 a 12 años</mark>.",
+   "porque": "La condición de agente de la autoridad agrava el allanamiento, porque se abusa de una posición pública.",
+   "ojo": "<mark>De 3 a 12 meses</mark> es la multa por omisión del deber de socorro (y por desobediencia). No las mezcles.",
+   "rec": "Allanamiento agravado: entre 1 año y cuarto y 2 años de cárcel.",
+   "f": "Accesos forzados, 2.2.3 Responsabilidad del interviniente (pág. 9)",
+   "tq": "Allanamiento agravado: prisión",
+   "ta": "15 a 24 meses (e inhabilitación de 6 a 12 años).",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     9
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 833,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Según el manual, ¿qué pena tiene el delito de omisión del deber de socorro?",
+   "o": [
+    "Prisión de 15 a 24 meses.",
+    "Multa de 3 a 12 meses.",
+    "Multa de 12 a 18 meses."
+   ],
+   "c": 1,
+   "o4": "Prisión de 6 a 12 meses.",
+   "que": "La omisión del deber de socorro se castiga con <mark>multa de 3 a 12 meses</mark>.",
+   "porque": "Es no socorrer a las víctimas de un accidente o desastre pudiendo hacerlo sin grave peligro propio ni de terceros.",
+   "ojo": "En bomberos, como hay obligación legal de socorrer, la omisión se puede equiparar a causar el daño y considerarse un agravante.",
+   "rec": "No socorrer: de 3 a 12 meses de multa (un trimestre a un año).",
+   "f": "Accesos forzados, 2.2.3 Responsabilidad del interviniente (pág. 10)",
+   "tq": "Omisión del deber de socorro: pena",
+   "ta": "Multa de 3 a 12 meses.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     10
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 834,
+   "t": "Accesos forzados",
+   "d": "difícil",
+   "q": "En una apertura programada validada por el Jefe de Guardia, un bombero desobedece abiertamente la orden de su mando. ¿Qué es según el EBEP y qué responsabilidad conlleva en la tabla del manual?",
+   "o": [
+    "Delito de desobediencia; solo responsabilidad penal.",
+    "Falta grave; responsabilidad disciplinaria y penal.",
+    "Falta muy grave; solo responsabilidad disciplinaria."
+   ],
+   "c": 2,
+   "o4": "Falta leve; solo responsabilidad patrimonial.",
+   "que": "La desobediencia abierta a las órdenes de un superior es <mark>falta muy grave</mark> en el EBEP y, en la tabla del manual, da <mark>solo responsabilidad disciplinaria</mark>.",
+   "porque": "Las sanciones van del apercibimiento y demérito a la suspensión de empleo y sueldo, e incluso la separación del servicio.",
+   "ojo": "El <mark>delito de desobediencia</mark> es otra cosa: negarse a cumplir una <mark>resolución judicial</mark> (solo penal). Tampoco hay falta si la orden es una infracción manifiesta del ordenamiento.",
+   "rec": "Orden del jefe → disciplina; orden del juez → penal.",
+   "f": "Accesos forzados, 2.2.3 Responsabilidad del interviniente (pág. 10)",
+   "tq": "Incumplir la orden del superior",
+   "ta": "Falta muy grave; solo disciplinaria.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     10
+    ]
+   }
+  },
+  {
+   "id": 835,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "La norma UNE-EN 1627 establece clases de seguridad para las puertas. ¿De cuál de estos factores NO dependen?",
+   "o": [
+    "Del material de la hoja de la puerta.",
+    "De las herramientas necesarias para la apertura.",
+    "Del tiempo de resistencia ante un ataque."
+   ],
+   "c": 0,
+   "o4": "Del tipo de ladrón que realiza el ataque.",
+   "que": "Las clases dependen del <mark>tiempo de resistencia</mark> ante un ataque, del <mark>tipo de ladrón</mark> y de las <mark>herramientas</mark> necesarias.",
+   "porque": "Por eso invertir en una puerta mejor es «<mark>comprar tiempo</mark>»: incluso una de la clase más alta acaba abriéndose.",
+   "ojo": "El manual la cita como «UNE 1627 de 2011»; su código completo es UNE-EN 1627.",
+   "rec": "Clases de puertas: Tiempo, Ladrón, Herramienta.",
+   "f": "Accesos forzados, 3.1 Normativa aplicable (pág. 11)",
+   "tq": "UNE-EN 1627: de qué dependen las clases",
+   "ta": "Tiempo de resistencia, tipo de ladrón y herramientas.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 836,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "¿Cuántas bisagras suele tener una puerta estándar de madera?",
+   "o": [
+    "Tres.",
+    "Cuatro.",
+    "Dos."
+   ],
+   "c": 0,
+   "o4": "Cinco.",
+   "que": "Las puertas estándar de madera suelen tener <mark>tres bisagras</mark> metálicas, sin refuerzo antipalanca.",
+   "porque": "Son puertas sencillas: tablero de madera sin refuerzo metálico y cerco recibido con <mark>grapas y espuma de poliuretano</mark>.",
+   "ojo": "Las blindadas tienen más bisagras o más grandes, y además con bulón antipalanca.",
+   "rec": "Madera: tres bisagras y ningún refuerzo.",
+   "f": "Accesos forzados, 3.2.1 Puertas de madera (pág. 11)",
+   "tq": "Bisagras de la puerta de madera",
+   "ta": "Suelen ser tres.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     11
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 837,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "¿Cómo está construida una puerta blindada?",
+   "o": [
+    "Núcleo de madera, chapas metálicas y recubrimiento de madera.",
+    "Tablero de madera maciza sin refuerzo metálico.",
+    "Núcleo metálico con contrachapado sujeto con una «U»."
+   ],
+   "c": 0,
+   "o4": "Núcleo de espuma entre dos chapas de acero.",
+   "que": "La blindada es tipo <mark>sándwich</mark>: <mark>núcleo de madera</mark>, <mark>chapas metálicas</mark> de refuerzo y un <mark>recubrimiento de madera</mark> solo estético.",
+   "porque": "Las chapas dan resistencia; la madera de fuera es decoración.",
+   "ojo": "El <mark>núcleo metálico</mark> con contrachapado sujeto con una «U» perimetral es la <mark>acorazada</mark>; el tablero sin refuerzo, la estándar de madera.",
+   "rec": "Blindada = bocadillo: madera, chapa, madera.",
+   "f": "Accesos forzados, 3.2.2 Puertas blindadas (pág. 12)",
+   "tq": "Construcción de la puerta blindada",
+   "ta": "Sándwich: núcleo de madera, chapas y recubrimiento de madera.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     12
+    ]
+   }
+  },
+  {
+   "id": 838,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Llegáis a una vivienda y queréis saber desde fuera si la puerta es acorazada. ¿Qué dos indicios da el manual?",
+   "o": [
+    "La «U» perimetral y que el cerco atrae un imán.",
+    "El escudo dorado y el cerco de madera maciza.",
+    "Las bisagras ocultas y la mirilla digital."
+   ],
+   "c": 0,
+   "o4": "Tres bisagras a la vista y un escudo pequeño.",
+   "que": "La acorazada se reconoce por la <mark>«U» perimetral</mark> que sujeta los contrachapados y porque su <mark>cerco metálico atrae un imán</mark> (está recubierto de vinilo decorativo).",
+   "porque": "Saber el tipo de puerta antes de empezar ayuda a decidir la técnica y si conviene preparar un plan B (autoescala, cuerda).",
+   "ojo": "El cerco de la acorazada va recibido a la pared con <mark>esparto y escayola o tacos químicos</mark>, no con grapas y espuma como la blindada.",
+   "rec": "Acorazada: «U» de fuera e imán que se pega.",
+   "f": "Accesos forzados, 3.2.3 Puertas acorazadas (pág. 12)",
+   "tq": "Identificar una puerta acorazada",
+   "ta": "«U» perimetral e imán atraído por el cerco.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     12
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 839,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "¿Cuántos cierres suele tener la cerradura de una puerta acorazada, además del resbalón?",
+   "o": [
+    "Uno.",
+    "Tres o más.",
+    "Dos."
+   ],
+   "c": 1,
+   "o4": "Exactamente seis.",
+   "que": "La cerradura de la acorazada suele tener <mark>tres o más cierres</mark>, además del resbalón.",
+   "porque": "Por eso derribarla con la maza no es nada fácil.",
+   "ojo": "La estándar de madera tiene un único cierre (monopunto); la multipunto típica, la petaca central más dos secundarios.",
+   "rec": "Acorazada: tres o más, y la maza no sirve.",
+   "f": "Accesos forzados, 3.2.3 Puertas acorazadas (pág. 12)",
+   "tq": "Cierres de la cerradura acorazada",
+   "ta": "Tres o más, además del resbalón.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     12
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 840,
+   "t": "Accesos forzados",
+   "d": "difícil",
+   "q": "Retenedor de pletina de una acorazada: ¿qué ocurre si se gira el pestillo un octavo de vuelta y qué si se gira un cuarto?",
+   "o": [
+    "Un octavo deja una rendija; un cuarto la abre del todo.",
+    "Un octavo bloquea la puerta; un cuarto deja una rendija.",
+    "Un octavo deja una rendija; un cuarto bloquea la puerta."
+   ],
+   "c": 2,
+   "o4": "Un octavo libera el resbalón; un cuarto, la petaca.",
+   "que": "<mark>Un octavo de vuelta</mark>: el tetón se engrana en una pletina y la puerta abre <mark>una rendija</mark>. <mark>Un cuarto de vuelta</mark>: el tetón se encastra en el marco metálico y <mark>bloquea por completo</mark> la apertura.",
+   "porque": "Es un sistema doble de control de acceso, muy habitual en acorazadas.",
+   "ojo": "En la rendija se puede cortar la pletina con la <mark>sierra de sable</mark>; bloqueada del todo, no queda más que buscar otro acceso o tirar la puerta abajo (por eso es controvertido).",
+   "rec": "Más vuelta, más cerrado: 1/8 rendija, 1/4 bloqueo.",
+   "f": "Accesos forzados, 3.3 Retenedores antipánico (pág. 13)",
+   "tq": "Retenedor de pletina: 1/8 y 1/4 de vuelta",
+   "ta": "1/8: rendija. 1/4: bloqueo total.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     13
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 841,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Ante un retenedor de cadena en una emergencia, ¿qué es lo más rápido y aconsejable según el manual?",
+   "o": [
+    "Quitar la cadenilla con la cuerda de la herramienta de ventanas.",
+    "Cortar el tetón con la amoladora recta.",
+    "Cortar la cadenilla con las cizallas."
+   ],
+   "c": 2,
+   "o4": "Desmontar el retenedor desde el canto.",
+   "que": "Lo más rápido en emergencia es <mark>cortar la cadenilla con las cizallas</mark>.",
+   "porque": "Existe una maniobra con la cuerda de la herramienta de ventanas oscilobatientes del MAP, pero <mark>no sirve en cerrojos de otras marcas</mark> (Lince, por ejemplo).",
+   "ojo": "El de cadena es el más común porque se instala solo o junto a un cerrojo tipo FAC. El de <mark>barra</mark> es vulnerable a la <mark>sierra de sable</mark>, no tanto a las cizallas (a veces no caben por el hueco).",
+   "rec": "Cadena → cizalla; barra → sable.",
+   "f": "Accesos forzados, 3.3 Retenedores antipánico (pág. 13)",
+   "tq": "Retenedor de cadena en emergencia",
+   "ta": "Cortar la cadenilla con las cizallas.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     13
+    ]
+   }
+  },
+  {
+   "id": 842,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "¿Cuántos cierres tiene una cerradura de embutir multipunto según el manual?",
+   "o": [
+    "La petaca central y cuatro secundarios.",
+    "Solo el resbalón y la petaca central.",
+    "La petaca central y dos cierres secundarios."
+   ],
+   "c": 2,
+   "o4": "La petaca central y un secundario.",
+   "que": "La multipunto tiene, además de la <mark>petaca central</mark>, <mark>otros dos cierres secundarios</mark>: por eso es más segura que la monopunto.",
+   "porque": "Es la más instalada hoy, tanto en blindadas como en acorazadas. Las de embutir, encastradas dentro de la puerta, son las más comunes.",
+   "ojo": "La <mark>monopunto</mark> tiene resbalón y un solo cierre (petaca), y se suele poner en puertas de madera.",
+   "rec": "Multipunto: 1 central + 2 secundarios = 3.",
+   "f": "Accesos forzados, 4.2.1 Cerraduras de embutir (pág. 15)",
+   "tq": "Cierres de la multipunto de embutir",
+   "ta": "Petaca central + dos secundarios.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     15
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 843,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Mira el esquema de una puerta de perfilería metálica. ¿Qué ancho tiene su cerradura según el manual?",
+   "o": [
+    "35 mm.",
+    "27 mm.",
+    "40 mm."
+   ],
+   "c": 1,
+   "o4": "20 mm.",
+   "que": "Las cerraduras de perfilería metálica tienen <mark>27 mm de ancho</mark>, porque deben caber en un <mark>tubo cuadrado de 40 mm</mark>.",
+   "porque": "Al ser más estrechas que las estándar necesitan <mark>bombines de leva corta</mark>.",
+   "ojo": "<mark>40 mm</mark> es el tubo, no la cerradura. Además no van enrasadas sino atornilladas sobre el perfil: el escalón que forman hace que las micas se enganchen.",
+   "rec": "Tubo 40, cerradura 27: le sobran 13 mm.",
+   "f": "Accesos forzados, 4.2.3 Cerraduras de perfilería metálica (pág. 16)",
+   "tq": "Ancho de la cerradura de perfilería metálica",
+   "ta": "27 mm (tubo de 40 mm).",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     16
+    ]
+   },
+   "cifra": 1,
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 300 150\" role=\"img\" aria-label=\"Sección de un tubo cuadrado de 40 mm con una cerradura dentro cuyo ancho está marcado con un signo de interrogación\"><g font-size=\"12\" fill=\"#222\" text-anchor=\"middle\"><rect x=\"90\" y=\"25\" width=\"120\" height=\"100\" fill=\"#dfe6ec\" stroke=\"#3d5a73\" stroke-width=\"4\"/><rect x=\"110\" y=\"40\" width=\"80\" height=\"70\" fill=\"#c9a26b\" stroke=\"#7a5a2b\" stroke-width=\"2\"/><text x=\"150\" y=\"80\">cerradura</text><line x1=\"90\" y1=\"140\" x2=\"210\" y2=\"140\" stroke=\"#3d5a73\"/><line x1=\"90\" y1=\"134\" x2=\"90\" y2=\"146\" stroke=\"#3d5a73\"/><line x1=\"210\" y1=\"134\" x2=\"210\" y2=\"146\" stroke=\"#3d5a73\"/><text x=\"150\" y=\"136\">tubo 40 mm</text><line x1=\"110\" y1=\"16\" x2=\"190\" y2=\"16\" stroke=\"#b03030\"/><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"22\" stroke=\"#b03030\"/><line x1=\"190\" y1=\"10\" x2=\"190\" y2=\"22\" stroke=\"#b03030\"/><text x=\"150\" y=\"12\" fill=\"#b03030\">¿ancho?</text></g></svg>"
+  },
+  {
+   "id": 844,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "Hay que abrir desde fuera una puerta de emergencia con barra antipánico. ¿Por qué no servirá la mica y qué se usa según el manual?",
+   "o": [
+    "El resbalón no existe; se usa la mordaza de presión.",
+    "El resbalón está al revés; se usan agujas o alambres.",
+    "La puerta abre hacia dentro; se usa la sierra de sable."
+   ],
+   "c": 1,
+   "o4": "Tiene tres cierres; se usa el extractor de campana.",
+   "que": "Las puertas de emergencia <mark>abren hacia fuera</mark>, así que el resbalón va al revés: <mark>parte plana hacia el exterior</mark> y la achaflanada hacia dentro. La mica no funciona y se emplean <mark>agujas o alambres de apertura</mark>.",
+   "porque": "La mica trabaja empujando sobre la cara achaflanada; si lo que encuentra es la cara plana, no puede retraer el resbalón.",
+   "ojo": "Por normativa, las puertas de emergencia <mark>no pueden estar cerradas con llave, candados o similares</mark> que impidan la evacuación.",
+   "rec": "Antipánico: puerta hacia fuera, resbalón al revés, mica fuera.",
+   "f": "Accesos forzados, 4.2.4 Cerraduras antipánico (pág. 16)",
+   "tq": "Puerta antipánico desde fuera",
+   "ta": "Resbalón invertido: agujas o alambres, no mica.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     16
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 845,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "De una cerradura inteligente motorizada instalada sobre el cilindro, ¿de qué depende la seguridad de la puerta?",
+   "o": [
+    "Del cifrado de la aplicación del móvil.",
+    "Del cierre secundario que añade el motor.",
+    "Solo de la calidad del cilindro instalado."
+   ],
+   "c": 2,
+   "o4": "Del nivel de carga de las pilas.",
+   "que": "El motor solo gira la llave por dentro: <mark>no añade seguridad</mark>, solo un automatismo. La seguridad depende <mark>únicamente de la calidad del cilindro</mark>.",
+   "porque": "Por eso se puede abrir atacando directamente el cilindro: partiéndolo, extrayéndolo, taladrándolo o fresándolo.",
+   "ojo": "No confundir con las <mark>cerraduras invisibles</mark>, que sí son cierres secundarios. Si las pilas de la inteligente se agotan y no se cambian, la cerradura <mark>se abre automáticamente</mark>.",
+   "rec": "Inteligente por fuera, tan segura como su bombín por dentro.",
+   "f": "Accesos forzados, 4.2.6 Cerraduras inteligentes (pág. 17)",
+   "tq": "Cerradura inteligente: seguridad",
+   "ta": "Depende solo del cilindro.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     17
+    ]
+   }
+  },
+  {
+   "id": 846,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "En una cerradura, ¿qué medida suele tener el cuadradillo del hueco del picaporte?",
+   "o": [
+    "6 mm.",
+    "8 mm.",
+    "10 mm."
+   ],
+   "c": 1,
+   "o4": "12 mm.",
+   "que": "El hueco del picaporte suele ser un <mark>cuadradillo de 8 mm</mark>.",
+   "porque": "Al actuar sobre él se retrae el resbalón, esté donde esté la palanca de vinculación.",
+   "ojo": "No confundir con la palanca de vinculación, que es la que mueve el resbalón con la llave y se aparta mientras queden vueltas echadas.",
+   "rec": "Picaporte: un 8, como el cuadradillo de la manilla.",
+   "f": "Accesos forzados, 4.3.2 Elementos internos (pág. 19)",
+   "tq": "Cuadradillo del picaporte",
+   "ta": "8 mm.",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     19
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 847,
+   "t": "Accesos forzados",
+   "d": "normal",
+   "q": "¿Qué pieza interna de la cerradura permite cambiar su sentido de cierre (a izquierdas o a derechas)?",
+   "o": [
+    "El tope del resbalón, que libera el resbalón para girarlo 180º.",
+    "La salvaguarda, que libera la guarda para girarla 90º.",
+    "La palanca de vinculación, que invierte la petaca."
+   ],
+   "c": 0,
+   "o4": "El tornillo del puente, que gira el cilindro 180º.",
+   "que": "El <mark>tope del resbalón</mark> libera el resbalón para <mark>girarlo 180º</mark> y cambiar el sentido de cierre.",
+   "porque": "Por eso no hay cerraduras de este tipo «a izquierdas» o «a derechas»: el resbalón es reversible.",
+   "ojo": "La <mark>salvaguarda</mark> impide que la guarda corra libremente (la leva la levanta al girar la llave). El tornillo sujeta el cilindro en la zona llamada «el puente».",
+   "rec": "Tope = da la vuelta (180º) al resbalón.",
+   "f": "Accesos forzados, 4.3.2 Elementos internos (pág. 19)",
+   "tq": "Cambiar el sentido de cierre",
+   "ta": "Tope del resbalón (giro de 180º).",
+   "src": {
+    "m": "Bloque II - Tema 15 - Accesos forzados. Conceptos básicos",
+    "p": [
+     19
+    ]
+   }
   }
  ],
  "glosario": [
@@ -3706,6 +4661,186 @@
    "d": "Compresiones abdominales al atragantado consciente: desde detrás, puño en la boca del estómago y empujones bruscos hacia dentro y hacia arriba.",
    "tema": "Sanitario (SVB)",
    "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "SEHV",
+   "a": [
+    "SEHV"
+   ],
+   "d": "Clave de intervención de las aperturas de puertas en el Cuerpo de Bomberos del Ayuntamiento de Madrid.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "MAP (Maletín de Apertura de Puertas)",
+   "a": [
+    "MAP",
+    "Maletín de Apertura de Puertas"
+   ],
+   "d": "Maletín con la herramienta de acceso forzado; va en las Bombas (BUP), Emergencias (EMER) y Coches (BUL).",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Mordaza de presión",
+   "a": [
+    "mordaza de presión"
+   ],
+   "d": "Herramienta para partir cilindros; va en la caja de herramientas del vehículo, no en el MAP.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Morada",
+   "a": [
+    "morada"
+   ],
+   "d": "Según el Código Penal: el domicilio, un despacho profesional u oficina, o un establecimiento mercantil o local abierto al público fuera de horas de apertura.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Domicilio",
+   "a": [
+    "domicilio"
+   ],
+   "d": "Según el Tribunal Supremo: cualquier lugar cerrado donde se desarrolle la vida privada, individual o familiar, en propiedad o alquiler, estable o transitoria.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Allanamiento de morada",
+   "a": [
+    "allanamiento de morada",
+    "allanamiento"
+   ],
+   "d": "Delito del particular que, sin habitar en ella, entra en morada ajena o se mantiene en ella contra la voluntad del morador.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Omisión del deber de socorro",
+   "a": [
+    "omisión del deber de socorro",
+    "deber de socorro"
+   ],
+   "d": "Delito de quien no socorre a las víctimas de un accidente o desastre pudiendo hacerlo sin grave peligro propio ni de terceros. Multa de 3 a 12 meses.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Estado de necesidad",
+   "a": [
+    "estado de necesidad"
+   ],
+   "d": "Eximente penal: causar un mal para evitar otro mayor, sin haber provocado la situación y sin obligación de sacrificarse por el oficio o cargo.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Responsabilidad patrimonial",
+   "a": [
+    "responsabilidad patrimonial",
+    "patrimonial"
+   ],
+   "d": "Obligación de reparar un daño material causado. La de las Administraciones se desarrolla en la Ley 40/2015.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Retenedor de pletina",
+   "a": [
+    "retenedor de pletina",
+    "pletina"
+   ],
+   "d": "Retenedor habitual en acorazadas: con 1/8 de vuelta del pestillo deja abrir una rendija; con 1/4 bloquea por completo la puerta.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Retenedor de cadena",
+   "a": [
+    "retenedor de cadena",
+    "cadenilla"
+   ],
+   "d": "Retenedor antipánico más común; en emergencia lo más rápido es cortar la cadenilla con cizallas.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Cerradura multipunto",
+   "a": [
+    "multipunto",
+    "monopunto"
+   ],
+   "d": "Cerradura con la petaca central y otros dos cierres secundarios. La monopunto solo tiene resbalón y un cierre (petaca).",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Cerradura de perfilería metálica",
+   "a": [
+    "perfilería metálica"
+   ],
+   "d": "Cerradura estrecha (27 mm) para puertas de tubo cuadrado de 40 mm; usa bombines de leva corta y va atornillada sobre el perfil.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Cerradura inteligente",
+   "a": [
+    "cerradura inteligente",
+    "cerraduras inteligentes"
+   ],
+   "d": "Motor sobre el cilindro que gira la llave por dentro; no añade seguridad: depende del cilindro.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Tope del resbalón",
+   "a": [
+    "tope del resbalón"
+   ],
+   "d": "Pieza que libera el resbalón para girarlo 180º y cambiar el sentido de cierre de la cerradura.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "Hueco del picaporte",
+   "a": [
+    "hueco del picaporte",
+    "cuadradillo"
+   ],
+   "d": "Cuadradillo (suele ser de 8 mm) que retrae el resbalón al actuar sobre él.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
+  },
+  {
+   "t": "UNE-EN 1627",
+   "a": [
+    "UNE-EN 1627",
+    "UNE 1627"
+   ],
+   "d": "Norma que fija las clases de seguridad de las puertas según tiempo de resistencia, tipo de ladrón y herramientas.",
+   "tema": "Accesos forzados",
+   "f": "Accesos forzados",
+   "solo": 1
   }
  ]
 }
