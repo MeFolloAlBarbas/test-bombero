@@ -52,19 +52,19 @@
   "doc": "Ver la página oficial"
  },
  {
-  "id": "2026-07-toledo",
+  "id": "2026-10-21-toledo-practicas",
   "p": 3,
-  "f": "2026-07-08",
+  "f": "2026-10-21",
   "src": "Toledo",
-  "il": "calendario",
-  "tit": "Toledo: 25 plazas de bombero-conductor en dos oposiciones",
+  "il": "lista",
+  "tit": "Toledo: nombrados en prácticas 17 bomberos-conductores",
   "txt": [
-   "El Consorcio Provincial de Extinción de Incendios y Salvamento de Toledo convocó 17 plazas de bombero-conductor por oposición libre (BOE del 8 de julio de 2026). El plazo de solicitudes acabó el 5 de agosto, y ya se ha publicado en el Boletín de la Provincia la relación definitiva de admitidos y excluidos (Decreto 209/2026).",
-   "Por su parte, el Ayuntamiento de Toledo convocó 8 plazas de bombero-conductor por concurso-oposición (BOE del 30 de junio). Su plazo terminó el 28 de julio."
+   "El Consorcio Provincial de Extinción de Incendios de Toledo ha nombrado funcionarios en prácticas a los 17 aspirantes que cubren las 17 plazas de bombero-conductor de su oferta de empleo de 2026. El decreto es del 21 de octubre y los nombramientos tienen efectos desde el día 23.",
+   "Antes, 50 aspirantes habían superado las pruebas físicas y los 17 propuestos fueron declarados aptos en el reconocimiento médico. El curso selectivo empezaba el 23 de octubre en la Escuela de Protección Ciudadana de Castilla-La Mancha, en Toledo.",
+   "Es un proceso distinto del que convocó el Ayuntamiento de Toledo para 8 plazas de bombero-conductor por concurso-oposición (BOE del 30 de junio), cuyo plazo de solicitudes terminó el 28 de julio."
   ],
-  "clave": "Son dos procesos distintos: el del Consorcio provincial y el del Ayuntamiento de la ciudad.",
-  "url": "https://www.boe.es/boe/dias/2026/07/08/pdfs/BOE-A-2026-14821.pdf",
-  "doc": "Ver el anuncio en el BOE (PDF)"
+  "url": "https://cpeistoledo.es/convocatoria/17-plazas-de-bombero-conductor-c1-oposicion-libre-2026/",
+  "doc": "Ver la página oficial"
  },
  {
   "id": "2026-06-conductor-68",
@@ -80,6 +80,20 @@
   ],
   "url": "https://sede.madrid.es/UnidadWeb/Contenidos/Oposiciones/2025/BomberoConductorEspecialista/Ficheros/68plBasesBOAM5junio26.pdf",
   "doc": "Ver la modificación (PDF)"
+ },
+ {
+  "id": "2026-11-23-incendio-illescas",
+  "p": 5,
+  "f": "2026-11-23",
+  "src": "Toledo",
+  "il": "camion",
+  "tit": "Toledo: nueve afectados por humo en un incendio en Illescas",
+  "txt": [
+   "Un incendio en un edificio de dos plantas de la calle Yuncos, en Illescas, obligó a evacuar a 17 personas. Nueve resultaron afectadas por inhalación de humo y seis de ellas fueron trasladadas en ambulancia al Hospital Universitario de Toledo.",
+   "Intervinieron bomberos del Consorcio Provincial de los parques de Illescas y Toledo, que necesitaron más de dos horas para apagar las llamas y ventilar."
+  ],
+  "url": "https://www.elespanol.com/eldigitalcastillalamancha/sociedad/sucesos/20261123/personas-intoxicadas-evacuadas-incendio-edificio-plantas-illescas-toledo/1003744468243_0.html",
+  "doc": "Leer la noticia"
  },
  {
   "id": "2026-11-19-cpeis-presupuesto",
@@ -110,6 +124,20 @@
   "url": "https://vivirediciones.es/?p=1148821",
   "doc": "Leer la noticia",
   "p": 5
+ },
+ {
+  "id": "2026-11-05-escalas-ayto",
+  "p": 5,
+  "f": "2026-11-05",
+  "src": "Ayto. Madrid",
+  "il": "camion",
+  "tit": "Bomberos de Madrid ciudad: compra de 16 nuevas escalas",
+  "txt": [
+   "El Ayuntamiento de Madrid ha aprobado la compra de 16 vehículos escala para su Cuerpo de Bomberos: 12 escalas compactas de 32 metros y 4 de 42 metros. El gasto es de 22,9 millones de euros y las entregas se harán entre 2027 y 2028.",
+   "Los nuevos vehículos sustituirán a 10 escalas en alquiler cuyo contrato está a punto de acabar y renovarán otros con más de 18 años. La compra forma parte del plan de flota de Bomberos 2019-2029."
+  ],
+  "url": "https://www.lacerca.com/noticias/madrid/cuerpo-bomberos-ayuntamiento-madrid-16-nuevos-vehiculos-escala-835789-1.html",
+  "doc": "Leer la noticia"
  },
  {
   "id": "2026-11-campana-hogar-cam",
