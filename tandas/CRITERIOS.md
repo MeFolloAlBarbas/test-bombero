@@ -136,6 +136,10 @@ Reparto aproximado de las 90 (para priorizar temas; nunca copiar sus preguntas):
 - **Edificaciones I, II, III y Técnicas de estabilización tienen datos mal.** Contrastar cada dato con
   fuentes fiables; la explicación dice cómo es realmente y cómo lo pone el temario. Van en el lote
   marcadas y el usuario las revisa una a una (revision.py las pone aparte).
+- **Preguntas sobre una errata** (aprobado por el usuario, 26/11/2026, preguntas 703, 717 y 723): la respuesta correcta
+  es el dato real; el valor del manual puede ir como opción incorrecta, y el bloque «Ojo» empieza por «Errata del temario:»,
+  dice qué pone el manual, por qué está mal y avisa de que el tribunal podría copiar la frase literal. Si poner el valor del
+  manual como opción deja dos respuestas defendibles, se deja fuera (como en la 717).
 
 ## Ahorro de uso (25/11/2026, pedido del usuario)
 - **No leer enteras las notas del proyecto**: este fichero basta. Solo `project_search` en las notas si hay
