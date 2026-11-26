@@ -21,7 +21,9 @@ BANK = json.load(open(os.path.join(ROOT, 'preguntas.json'), encoding='utf-8'))
 PLAN_F = os.path.join(ROOT, 'plan.json')
 INICIO = dt.date(2026, 11, 21)
 YA_USADAS_ANTES = {1, 7, 11, 12, 13, 15, 16, 20, 22, 26, 33, 34, 36, 38, 39,  # preguntas del 20/11/2026
-                   71}  # 23/11 19:00: la vio casi todo el mundo (el plan se cambió a la 293)
+                   71,  # 23/11 19:00: la vio casi todo el mundo (el plan se cambió a la 293)
+                   # 26/11: salían en el 20/11 calculado con el banco (cambiaba al crecer) y alguien pudo verlas
+                   17, 62, 70, 76, 85, 93, 94, 111, 136, 137, 158, 228, 265, 332}
 
 HOY = dt.datetime.now(ZoneInfo('Europe/Madrid')).date()
 HORIZONTE = 21
