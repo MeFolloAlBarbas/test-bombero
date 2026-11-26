@@ -2061,6 +2061,1171 @@
      12
     ]
    }
+  },
+  {
+   "id": 768,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Según el manual, ¿qué porcentaje de las paradas cardiorrespiratorias presentan fibrilación ventricular como ritmo en el momento de la parada?",
+   "o": [
+    "El 50 %.",
+    "El 75 %.",
+    "El 25 %."
+   ],
+   "c": 1,
+   "o4": "El 90 %.",
+   "que": "Se estima que <mark>3 de cada 4 paradas (75 %)</mark> empiezan en fibrilación ventricular (FV).",
+   "porque": "La FV se trata con una descarga: por eso hacen falta DESA accesibles y población entrenada en su manejo.",
+   "ojo": "Es el ritmo del momento de la parada; si se tarda en desfibrilar, la FV acaba degenerando.",
+   "rec": "FV = <mark>3 de cada 4</mark> paradas: por eso hay un DEA en cada esquina.",
+   "f": "Soporte vital básico, Parada cardiorrespiratoria (pág. 6)",
+   "tq": "Paradas con FV como ritmo inicial",
+   "ta": "75 %.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     1
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 769,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Cada cuánto tiempo revisa el ILCOR sus recomendaciones de reanimación, según el manual?",
+   "o": [
+    "Cada 2 años.",
+    "Cada 5 años.",
+    "Cada 10 años."
+   ],
+   "c": 1,
+   "o4": "Cada año.",
+   "que": "Las recomendaciones de SVB se basan en el consenso científico (CoSTR) del ILCOR, que <mark>se revisa cada 5 años</mark>.",
+   "porque": "La evidencia sobre RCP cambia: revisarla periódicamente permite actualizar los protocolos.",
+   "ojo": "El manual cita la revisión publicada el 15 de octubre de 2015.",
+   "rec": "ILCOR: un lustro, <mark>5 años</mark>.",
+   "f": "Soporte vital básico, Introducción (pág. 6)",
+   "tq": "Revisión de las recomendaciones del ILCOR",
+   "ta": "Cada 5 años.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     1
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 770,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Si la RCP por testigos se inicia inmediatamente tras la parada, ¿cuánto pueden aumentar las probabilidades de supervivencia?",
+   "o": [
+    "Triplicarse o cuadruplicarse.",
+    "Duplicarse como mucho.",
+    "Multiplicarse por diez."
+   ],
+   "c": 0,
+   "o4": "No cambian si no hay DEA.",
+   "que": "El inicio inmediato de la RCP puede <mark>triplicar o cuadruplicar</mark> la supervivencia.",
+   "porque": "Las compresiones mantienen un pequeño pero crítico flujo de sangre al corazón y al cerebro hasta que llega el desfibrilador.",
+   "ojo": "No confundir con la desfibrilación en 3-5 minutos, que da supervivencias de hasta el 50-70 %.",
+   "rec": "RCP inmediata: <mark>× 3 o × 4</mark>.",
+   "f": "Soporte vital básico, Cadena de supervivencia, RCP precoz (pág. 7)",
+   "tq": "RCP inmediata por testigos: aumento de supervivencia",
+   "ta": "Se triplica o cuadruplica.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     2
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 771,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "En la mayoría de las comunidades autónomas, ¿cuál es la mediana del tiempo desde la llamada al servicio de emergencias hasta su llegada a la escena?",
+   "o": [
+    "De 8 a 11 minutos.",
+    "De 5 a 8 minutos.",
+    "De 3 a 5 minutos."
+   ],
+   "c": 1,
+   "o4": "De 10 a 15 minutos.",
+   "que": "La mediana del intervalo de respuesta es de <mark>5 a 8 minutos</mark>; hasta la primera descarga pasan de 8 a 11 minutos.",
+   "porque": "Como a partir de los 4 minutos la supervivencia cae drásticamente, lo que hagan los testigos mientras tanto es decisivo.",
+   "ojo": "8-11 minutos es hasta la primera descarga, no hasta la llegada.",
+   "rec": "Llegan en <mark>5-8</mark>, descargan en 8-11.",
+   "f": "Soporte vital básico, La importancia de la actuación de los testigos (pág. 7)",
+   "tq": "Intervalo de respuesta (llamada → llegada) en España",
+   "ta": "5-8 minutos (mediana).",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     2
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 772,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Si los servicios sanitarios van a tardar, ¿cada cuánto hay que movilizar a un paciente colocado en posición lateral de seguridad?",
+   "o": [
+    "Cada 5-10 minutos.",
+    "Cada 60 minutos.",
+    "Cada 20-30 minutos."
+   ],
+   "c": 2,
+   "o4": "Nunca: no se debe mover.",
+   "que": "En PLS, si la ayuda va a tardar, se moviliza al paciente <mark>cada 20-30 minutos</mark>.",
+   "porque": "Así se evita el compromiso vascular o nervioso de los miembros sobre los que apoya.",
+   "ojo": "Mientras tanto hay que reevaluar constantemente su consciencia y su respiración.",
+   "rec": "PLS: media hora como mucho, <mark>20-30 min</mark>.",
+   "f": "Soporte vital básico, Posición lateral de seguridad (pág. 9)",
+   "tq": "PLS prolongada: cada cuánto movilizar",
+   "ta": "Cada 20-30 minutos.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     4
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 773,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Un paciente tiene pulso pero no respira. ¿A qué ritmo se le deben administrar ventilaciones?",
+   "o": [
+    "12-16 ventilaciones por minuto.",
+    "30 ventilaciones por minuto.",
+    "6-8 ventilaciones por minuto."
+   ],
+   "c": 0,
+   "o4": "20-24 ventilaciones por minuto.",
+   "que": "Con pulso y sin respiración se inician de inmediato ventilaciones a <mark>12-16 por minuto</mark>.",
+   "porque": "Si el corazón late, no hacen falta compresiones: basta con aportar el oxígeno que falta.",
+   "ojo": "Valorar el pulso es solo para personal experto; el resto, si no respira, inicia RCP.",
+   "rec": "Con pulso: <mark>12-16</mark> respiraciones, como una persona en reposo.",
+   "f": "Soporte vital básico, C: Circulación (pág. 10)",
+   "tq": "Con pulso y sin respiración: ventilaciones por minuto",
+   "ta": "12-16.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     5
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 774,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Durante la RCP en un adulto, ¿qué volumen de aire hay que administrar en cada ventilación?",
+   "o": [
+    "200-300 ml, durante medio segundo.",
+    "1.000-1.200 ml, durante 2 segundos.",
+    "500-600 ml (6-7 ml/kg), durante 1 segundo."
+   ],
+   "c": 2,
+   "o4": "800 ml, durante 3 segundos.",
+   "que": "El volumen corriente es de <mark>500-600 ml (6-7 ml/kg) en 1 segundo</mark>, lo que ocupa una respiración normal.",
+   "porque": "Es lo justo para que el tórax se expanda; más volumen puede causar barotraumatismos.",
+   "ojo": "Por eso el rescatador no debe coger aire profundamente antes de insuflar.",
+   "rec": "Medio litro en <mark>1 segundo</mark>: una respiración normal.",
+   "f": "Soporte vital básico, Ventilaciones (pág. 12)",
+   "tq": "Volumen de cada ventilación en el adulto",
+   "ta": "500-600 ml (6-7 ml/kg) en 1 s.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     7
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 775,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Cuánto tiempo, como máximo, se pueden interrumpir las compresiones para dar las ventilaciones?",
+   "o": [
+    "10 segundos.",
+    "5 segundos.",
+    "20 segundos."
+   ],
+   "c": 0,
+   "o4": "30 segundos.",
+   "que": "Las compresiones se interrumpen lo mínimo para ventilar: <mark>como máximo 10 segundos</mark>.",
+   "porque": "Cada pausa hace caer el flujo de sangre que generan las compresiones.",
+   "ojo": "Si las dos ventilaciones no entran, no se insiste: se vuelve a comprimir y se reintenta en el ciclo siguiente.",
+   "rec": "Pausa para ventilar: <mark>10 s</mark>, lo mismo que para mirar si respira.",
+   "f": "Soporte vital básico, Ventilaciones (pág. 12)",
+   "tq": "Pausa máxima de compresiones para ventilar",
+   "ta": "10 segundos.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     7
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 776,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Qué relación compresiones-ventilaciones se usa en la RCP del adulto?",
+   "o": [
+    "15:2.",
+    "30:5.",
+    "30:2."
+   ],
+   "c": 2,
+   "o4": "5:1.",
+   "que": "En el adulto cada ciclo tiene <mark>30 compresiones y 2 ventilaciones</mark>.",
+   "porque": "En el adulto la causa suele ser cardiaca y lo prioritario es mover la sangre aún oxigenada.",
+   "ojo": "30:2 es también la configuración predeterminada de las indicaciones de voz del DEA.",
+   "rec": "<mark>30:2</mark>: treinta empujones y dos soplos.",
+   "f": "Soporte vital básico, Relación compresiones-ventilaciones (pág. 12)",
+   "tq": "Relación compresiones:ventilaciones en el adulto",
+   "ta": "30:2.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     7
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 777,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Si hay varios reanimadores, ¿cada cuánto se debe cambiar al que hace las compresiones?",
+   "o": [
+    "Cada 30 segundos.",
+    "Cada 2 minutos.",
+    "Cada 5 minutos."
+   ],
+   "c": 1,
+   "o4": "Solo cuando esté agotado.",
+   "que": "El que comprime se cambia <mark>cada 2 minutos</mark> (el manual dice también cada 4 ciclos) para evitar su fatiga.",
+   "porque": "Un reanimador cansado comprime con menos profundidad sin darse cuenta.",
+   "ojo": "El cambio se hace cuando el DEA analiza el ritmo, que también es cada 2 minutos, para perder el menor tiempo.",
+   "rec": "Cambio = cuando el DEA analiza: <mark>cada 2 minutos</mark>.",
+   "f": "Soporte vital básico, Desarrollo de la RCP (pág. 13)",
+   "tq": "Relevo del reanimador que comprime",
+   "ta": "Cada 2 minutos.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     8
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 778,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿A partir de qué edad se pueden usar los parches estándar de adulto de un DEA?",
+   "o": [
+    "Más de 8 años.",
+    "Más de 14 años.",
+    "Más de 1 año."
+   ],
+   "c": 0,
+   "o4": "Más de 18 años.",
+   "que": "Los DEA estándar valen para <mark>niños mayores de 8 años</mark>; entre 1 y 8 años, parches pediátricos con atenuador o modo pediátrico.",
+   "porque": "En niños pequeños la energía de adulto es excesiva y se atenúa.",
+   "ojo": "El límite es la edad de 8 años, no la pubertad ni la mayoría de edad.",
+   "rec": "Parche de adulto a partir de los <mark>8</mark>.",
+   "f": "Soporte vital básico, Uso del DEA (pág. 13)",
+   "tq": "Edad a partir de la cual valen los parches de adulto",
+   "ta": "Más de 8 años.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     8
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 779,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Según el manual, poner un DEA es una intervención coste-efectiva en las zonas donde se puede esperar una parada cardiorrespiratoria…",
+   "o": [
+    "Cada 5 años.",
+    "Cada año.",
+    "Cada 10 años."
+   ],
+   "c": 0,
+   "o4": "Cada mes.",
+   "que": "Colocar un DEA donde se espera <mark>una parada cada 5 años</mark> es coste-efectivo, comparable a otras intervenciones médicas.",
+   "porque": "Aunque se use poco, un DEA cerca salva vidas en el medio público.",
+   "ojo": "También ayuda que los servicios de emergencia tengan registrados los DEA de acceso público.",
+   "rec": "DEA público: una parada cada <mark>5 años</mark> ya lo justifica.",
+   "f": "Soporte vital básico, Programas de acceso público a la desfibrilación (pág. 14)",
+   "tq": "DEA coste-efectivo: frecuencia de paradas esperada",
+   "ta": "Una cada 5 años.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     9
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 780,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "En las paradas cardiorrespiratorias de origen NO cardiaco, ¿cuál es la causa más frecuente según el manual?",
+   "o": [
+    "Metabólica (diabetes e hipotermia).",
+    "Respiratoria (ahogamiento, atragantamiento, asfixia).",
+    "Traumática (caídas y accidentes de tráfico)."
+   ],
+   "c": 1,
+   "o4": "Tóxica (drogas y fármacos).",
+   "que": "La mayoría de las paradas no cardiacas tienen una <mark>causa respiratoria</mark>: ahogamiento, atragantamiento y asfixia.",
+   "porque": "Por eso en ellas las respiraciones de rescate son de vital importancia, además de las compresiones.",
+   "ojo": "En los niños es justo al revés que en los adultos: su parada suele ser respiratoria.",
+   "rec": "No cardiaca → <mark>falta de aire</mark>.",
+   "f": "Soporte vital básico, Introducción (pág. 6)",
+   "tq": "Causa más frecuente de PCR no cardiaca",
+   "ta": "Respiratoria (ahogamiento, atragantamiento, asfixia).",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     1
+    ]
+   }
+  },
+  {
+   "id": 781,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Según la definición del manual, ¿qué material puede usarse en el soporte vital básico?",
+   "o": [
+    "Barrera, DEA y oxígeno a alto flujo.",
+    "Barrera, DEA y cánula orofaríngea con balón.",
+    "Solo un dispositivo de barrera y el DEA o DESA."
+   ],
+   "c": 2,
+   "o4": "Ninguno: solo las manos.",
+   "que": "El SVB son maniobras estandarizadas para la vía aérea, la respiración y la circulación <mark>sin más equipo que un dispositivo de barrera y el DEA/DESA</mark>.",
+   "porque": "Así lo puede hacer cualquier persona entrenada, sin material sanitario.",
+   "ojo": "Incluye también la desobstrucción de la vía aérea (OVACE) y la posición lateral de seguridad.",
+   "rec": "SVB = <mark>manos + barrera + DEA</mark>.",
+   "f": "Soporte vital básico, Introducción (pág. 6)",
+   "tq": "Material del SVB",
+   "ta": "Solo barrera y DEA/DESA.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     1
+    ]
+   }
+  },
+  {
+   "id": 782,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Qué es la fibrilación ventricular?",
+   "o": [
+    "Un ritmo desorganizado con múltiples focos ventriculares que impide un latido eficaz.",
+    "Un ritmo muy lento con un único foco que mantiene un latido débil.",
+    "La ausencia total de actividad eléctrica en el corazón."
+   ],
+   "c": 0,
+   "o4": "Un ritmo rápido y organizado que nace en las aurículas.",
+   "que": "En la FV <mark>muchos focos ventriculares</mark> mandan señales a la vez y el corazón no se contrae bien: está en parada.",
+   "porque": "Al no haber latido eficaz, el tratamiento es RCP y <mark>desfibrilación precoz</mark>.",
+   "ojo": "La ausencia total de actividad eléctrica es la asistolia, que no es la FV.",
+   "rec": "FV: el corazón <mark>tiembla</mark>, no late.",
+   "f": "Soporte vital básico, Parada cardiorrespiratoria (pág. 6)",
+   "tq": "Fibrilación ventricular",
+   "ta": "Ritmo desorganizado de muchos focos ventriculares: sin latido eficaz.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     1
+    ]
+   }
+  },
+  {
+   "id": 783,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Cómo define el manual la parada cardiorrespiratoria súbita?",
+   "o": [
+    "Cese súbito, inesperado y potencialmente reversible de la respiración y circulación espontáneas.",
+    "Cese progresivo y potencialmente reversible de la respiración espontánea.",
+    "Cese súbito, previsible e irreversible de la respiración y circulación espontáneas."
+   ],
+   "c": 0,
+   "o4": "Pérdida de consciencia con pulso y respiración conservados.",
+   "que": "La PCR es el <mark>cese súbito, inesperado y potencialmente reversible</mark> de la respiración y la circulación espontáneas.",
+   "porque": "Se corta el transporte de oxígeno a los órganos vitales y, si no se revierte a tiempo, el paciente muere.",
+   "ojo": "La clave es «potencialmente reversible»: por eso tiene sentido la RCP.",
+   "rec": "PCR: <mark>súbita, inesperada y reversible</mark> (S-I-R).",
+   "f": "Soporte vital básico, Parada cardiorrespiratoria (pág. 6)",
+   "tq": "Definición de parada cardiorrespiratoria",
+   "ta": "Cese súbito, inesperado y potencialmente reversible de respiración y circulación.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     1
+    ]
+   }
+  },
+  {
+   "id": 784,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "La persona que asiste a un paciente en parada no tiene formación y llama al 112. ¿Qué le indicará el operador?",
+   "o": [
+    "Alternar 30 compresiones y 2 ventilaciones.",
+    "Hacer solo compresiones torácicas hasta que llegue ayuda.",
+    "No tocarle hasta que llegue la ayuda profesional."
+   ],
+   "c": 1,
+   "o4": "Hacer solo ventilaciones boca a boca.",
+   "que": "Si el testigo no está formado, el operador le guía para hacer <mark>solo compresiones</mark> hasta que llegue ayuda profesional o alguien que sepa.",
+   "porque": "Las compresiones solas son fáciles de guiar por teléfono y es mejor que no hacer nada.",
+   "ojo": "Quien está entrenado debe alternar compresiones y ventilaciones: la RCP es de más calidad.",
+   "rec": "Testigo sin formación: <mark>solo manos</mark>.",
+   "f": "Soporte vital básico, Cadena de supervivencia, RCP precoz (pág. 7)",
+   "tq": "Testigo no formado guiado por teléfono",
+   "ta": "Solo compresiones torácicas.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     2
+    ]
+   }
+  },
+  {
+   "id": 785,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Qué significa la «A» de la conducta PAS?",
+   "o": [
+    "Avisar.",
+    "Aislar la escena.",
+    "Abrir la vía aérea."
+   ],
+   "c": 0,
+   "o4": "Asegurar al paciente.",
+   "que": "La conducta PAS es <mark>Proteger la escena, Avisar y Socorrer</mark>.",
+   "porque": "Marca el orden de actuación ante un paciente fuera del hospital: primero que nadie más se haga daño.",
+   "ojo": "La «A» de la secuencia ABC sí es la vía aérea (Airway): no confundirlas.",
+   "rec": "P-A-S: <mark>Proteger, Avisar, Socorrer</mark>.",
+   "f": "Soporte vital básico, Seguridad de la víctima y del reanimador (pág. 8)",
+   "tq": "Conducta PAS",
+   "ta": "Proteger, Avisar, Socorrer.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     3
+    ]
+   }
+  },
+  {
+   "id": 786,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Por qué un paciente inconsciente puede tener la vía aérea obstruida aunque no haya ningún cuerpo extraño?",
+   "o": [
+    "Porque se relaja la musculatura de la lengua y tapa el paso del aire.",
+    "Porque se contraen las cuerdas vocales y cierran la glotis.",
+    "Porque la saliva se acumula y forma un tapón en la tráquea."
+   ],
+   "c": 0,
+   "o4": "Porque se colapsan los bronquios por falta de oxígeno.",
+   "que": "Al perder el reflejo de protección, <mark>se relaja la lengua</mark> y puede obstruir la vía aérea.",
+   "porque": "Por eso hay inconscientes que parecen no respirar y empiezan a hacerlo solos al abrirles la vía aérea.",
+   "ojo": "Muchos inconscientes mueren por esto y se habrían salvado con una maniobra frente-mentón.",
+   "rec": "Inconsciente: la <mark>lengua</mark> cae y tapa.",
+   "f": "Soporte vital básico, A: Apertura de la vía aérea (pág. 8)",
+   "tq": "Causa de obstrucción en el inconsciente",
+   "ta": "Se relaja la lengua y tapa la vía aérea.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     3
+    ]
+   }
+  },
+  {
+   "id": 787,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "En la maniobra de tracción mandibular, ¿dónde se colocan las manos del rescatador?",
+   "o": [
+    "Talones sobre el mentón y dedos detrás de la nuca.",
+    "Una mano en la frente y la otra en el mentón.",
+    "Talones sobre los arcos cigomáticos y dedos en el ángulo de la mandíbula."
+   ],
+   "c": 2,
+   "o4": "Ambas manos entrelazadas en la nuca.",
+   "que": "Tracción mandibular: <mark>talones de las manos en los arcos cigomáticos</mark> (pómulos) y <mark>dedos en el ángulo de la mandíbula</mark>; después se tira de la mandíbula hacia arriba.",
+   "porque": "Se usa en traumatizados porque abre la vía aérea sin hiperextender el cuello, que podría lesionar la columna cervical.",
+   "ojo": "Es más difícil y el manual solo la recomienda a personal experto. La mano en la frente y la otra en el mentón es la frente-mentón.",
+   "rec": "Pómulos y <mark>esquinas de la mandíbula</mark>.",
+   "f": "Soporte vital básico, A: Apertura de la vía aérea (pág. 9)",
+   "tq": "Tracción mandibular: posición de las manos",
+   "ta": "Talones en los cigomáticos, dedos en el ángulo de la mandíbula.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 788,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "En la maniobra VOS para valorar la respiración, ¿qué se debe «sentir»?",
+   "o": [
+    "El tórax subir apoyando la mano.",
+    "El aliento del paciente en la mejilla.",
+    "El pulso carotídeo con dos dedos."
+   ],
+   "c": 1,
+   "o4": "El calor de la piel en la frente.",
+   "que": "VOS = <mark>Ver</mark> si el tórax se expande, <mark>Oír</mark> la respiración y <mark>Sentir</mark> el aliento en la mejilla, con la cabeza sobre la del paciente mirando a su tórax.",
+   "porque": "Se combinan tres sentidos para no equivocarse en pocos segundos.",
+   "ojo": "El pulso no forma parte de la VOS (y solo lo valora personal experto).",
+   "rec": "Mejilla junto a su boca, ojos en su pecho.",
+   "f": "Soporte vital básico, B: Ventilación (pág. 9)",
+   "tq": "Qué se siente en la maniobra VOS",
+   "ta": "El aliento del paciente en la mejilla.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 789,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Por qué no se debe tomar el pulso con el dedo pulgar?",
+   "o": [
+    "Porque el pulgar tiene poca sensibilidad en la yema.",
+    "Porque el pulgar presiona demasiado y colapsa la arteria.",
+    "Porque el pulgar tiene pulso propio y se sentiría el del rescatador."
+   ],
+   "c": 2,
+   "o4": "Porque el pulgar no llega bien a la carótida.",
+   "que": "La arteria radial termina en el pulgar, así que <mark>el pulgar tiene pulso</mark>: el rescatador podría notar su propio latido.",
+   "porque": "Confundir el pulso propio con el del paciente llevaría a no iniciar una RCP necesaria.",
+   "ojo": "Se usan los dedos índice y medio, y en la carótida.",
+   "rec": "Pulgar = <mark>tu propio pulso</mark>.",
+   "f": "Soporte vital básico, C: Circulación (pág. 10)",
+   "tq": "Por qué no tomar el pulso con el pulgar",
+   "ta": "Tiene pulso propio: sentirías el tuyo.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 790,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Un testigo quiere llamar al 112 para avisar de una parada. ¿Qué es cierto?",
+   "o": [
+    "Es gratuito solo si se llama desde un teléfono fijo.",
+    "Solo funciona en el país en el que se contrató la línea.",
+    "Se puede llamar desde un móvil incluso sin cobertura."
+   ],
+   "c": 2,
+   "o4": "Siempre atiende en el idioma del país desde el que se llama.",
+   "que": "El 112 es el número de emergencias de la UE: <mark>gratuito</mark>, desde fijo o móvil, <mark>incluso sin cobertura</mark>, y con locutor en el idioma natal del alertante.",
+   "porque": "Así cualquier persona puede pedir ayuda esté en el país europeo que esté.",
+   "ojo": "En Estados Unidos y varios países de Latinoamérica el número es el 911.",
+   "rec": "112: gratis, sin cobertura y <mark>en tu idioma</mark>.",
+   "f": "Soporte vital básico, Alerta a los servicios de emergencia (pág. 10)",
+   "tq": "Características del 112",
+   "ta": "Gratuito, desde fijo o móvil incluso sin cobertura, en tu idioma.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 791,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Por qué la RCP del adulto empieza por las compresiones y no por las ventilaciones?",
+   "o": [
+    "Porque así el rescatador descansa antes de ventilar.",
+    "Porque la sangre de pulmones y arterias sigue oxigenada unos minutos y hay que moverla.",
+    "Porque las ventilaciones solo sirven si antes se ha desfibrilado."
+   ],
+   "c": 1,
+   "o4": "Porque ventilar primero puede provocar vómitos siempre.",
+   "que": "Tras la parada, <mark>la sangre de los pulmones y del sistema arterial sigue oxigenada unos minutos</mark>: lo urgente es ponerla en circulación.",
+   "porque": "En el adulto la causa suele ser cardiaca, así que al principio falta flujo, no oxígeno.",
+   "ojo": "En los niños, cuya parada suele ser respiratoria, se empieza con 5 ventilaciones.",
+   "rec": "Adulto: la sangre ya trae oxígeno, <mark>muévela</mark>.",
+   "f": "Soporte vital básico, Inicio de las compresiones torácicas (pág. 10)",
+   "tq": "Por qué empezar por compresiones en el adulto",
+   "ta": "La sangre sigue oxigenada unos minutos: hay que moverla.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 792,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Para comprimir el tórax, ¿con qué parte de la mano se apoya según el manual?",
+   "o": [
+    "Con la palma entera y los dedos extendidos sobre las costillas.",
+    "Con los puños cerrados, uno encima del otro.",
+    "Con el talón de una mano y la otra encima, dedos entrelazados."
+   ],
+   "c": 2,
+   "o4": "Con la yema de los dedos de ambas manos.",
+   "que": "Se apoya el <mark>talón de una mano</mark> en el centro del tórax (línea intermamilar), la otra encima y los dedos entrelazados.",
+   "porque": "En estudios experimentales, comprimir con el talón da mejor respuesta hemodinámica que hacerlo con la palma.",
+   "ojo": "Con los dedos levantados se evita apretar sobre las costillas.",
+   "rec": "Talón abajo, <mark>dedos arriba</mark>.",
+   "f": "Soporte vital básico, Posición de las manos (pág. 11)",
+   "tq": "Parte de la mano para comprimir",
+   "ta": "El talón, con la otra mano encima y los dedos entrelazados.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 793,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Durante las compresiones torácicas, ¿de dónde debe proceder la fuerza?",
+   "o": [
+    "De las muñecas, con los hombros relajados.",
+    "De la región lumbar, con los brazos estirados como un pistón.",
+    "De los brazos, flexionando los codos en cada compresión."
+   ],
+   "c": 1,
+   "o4": "De las piernas, levantándose en cada compresión.",
+   "que": "De rodillas, espalda recta y brazos estirados: la fuerza sale de <mark>la región lumbar</mark> y los brazos solo hacen de <mark>pistón</mark>.",
+   "porque": "Así el reanimador se cansa menos y corre menos riesgo de lesionarse.",
+   "ojo": "Doblar los codos agota en poco tiempo y quita profundidad.",
+   "rec": "Brazos de <mark>pistón</mark>, motor en la cintura.",
+   "f": "Soporte vital básico, Posición de las manos (pág. 11)",
+   "tq": "Origen de la fuerza en las compresiones",
+   "ta": "La región lumbar; los brazos, como un pistón.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 794,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Por qué el rescatador no debe tomar aire profundamente antes de cada ventilación?",
+   "o": [
+    "Porque el aire tomado a fondo lleva menos oxígeno.",
+    "Porque metería demasiado volumen y podría causar barotrauma.",
+    "Porque se mareará enseguida y tendrá que dejar la RCP."
+   ],
+   "c": 1,
+   "o4": "Porque así la ventilación dura más de 1 segundo.",
+   "que": "Basta el volumen de <mark>una respiración normal</mark>; tomar aire de más puede meter volúmenes mayores y provocar <mark>barotraumatismos</mark>.",
+   "porque": "El objetivo es solo que el tórax se expanda.",
+   "ojo": "Tampoco hay que coger aire a la altura de la boca del paciente: se respiraría el aire que él exhala, pobre en oxígeno.",
+   "rec": "Soplo <mark>normal</mark>, no de globo.",
+   "f": "Soporte vital básico, Ventilaciones (pág. 12)",
+   "tq": "Por qué no coger aire profundo para ventilar",
+   "ta": "Metería demasiado volumen: barotrauma.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 795,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Al ventilar boca a boca, ¿por qué el rescatador debe incorporarse para tomar aire entre insuflaciones?",
+   "o": [
+    "Para dejar que el tórax del paciente se hunda del todo.",
+    "Para no inspirar el aire que exhala el paciente, pobre en oxígeno.",
+    "Para comprobar a la vez el pulso carotídeo."
+   ],
+   "c": 1,
+   "o4": "Para descansar la espalda y no lesionarse.",
+   "que": "Si toma aire a la altura de la boca del paciente, el rescatador inspira <mark>el aire que el paciente exhala</mark>, con baja concentración de oxígeno.",
+   "porque": "Lo que insufla después tendría todavía menos oxígeno.",
+   "ojo": "Antes de insuflar hay que tapar la nariz y sellar bien los labios para que no haya fugas.",
+   "rec": "Sopla, <mark>levanta la cabeza</mark>, respira aire limpio.",
+   "f": "Soporte vital básico, Ventilaciones (pág. 12)",
+   "tq": "Por qué incorporarse entre insuflaciones",
+   "ta": "Para no respirar el aire exhalado del paciente.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 796,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿En qué se diferencia un DESA de un DEA?",
+   "o": [
+    "El DESA indica la descarga, pero el reanimador debe pulsar un botón.",
+    "El DESA solo lo puede usar personal sanitario.",
+    "El DESA descarga solo, sin que nadie pulse nada."
+   ],
+   "c": 0,
+   "o4": "El DESA no analiza el ritmo: decide el reanimador.",
+   "que": "El <mark>DEA</mark> descarga automáticamente si el ritmo es desfibrilable; el <mark>DESA</mark> avisa de que hay que descargar y el reanimador <mark>pulsa un botón</mark>.",
+   "porque": "Ambos analizan el ritmo y guían por voz, así que son seguros incluso para personal no sanitario sin formación.",
+   "ojo": "«Desfibrilador externo automatizado» engloba los dos.",
+   "rec": "DE<mark>S</mark>A: la S de «Señala, tú pulsas».",
+   "f": "Soporte vital básico, Uso del DEA (pág. 13)",
+   "tq": "DEA frente a DESA",
+   "ta": "El DESA avisa y hay que pulsar el botón; el DEA descarga solo.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     8
+    ]
+   }
+  },
+  {
+   "id": 797,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Según el manual, ¿dónde tienen una efectividad limitada los programas de acceso público a desfibriladores?",
+   "o": [
+    "En las paradas en el domicilio, que son la mayoría fuera del hospital.",
+    "En las paradas de niños menores de 8 años.",
+    "En las paradas en la vía pública, porque nadie los usa."
+   ],
+   "c": 0,
+   "o4": "En las paradas de deportistas jóvenes.",
+   "que": "El acceso público a DEA tiene <mark>efectividad limitada en las paradas en casa</mark>, que son la mayoría de las extrahospitalarias.",
+   "porque": "Donde sí funciona muy bien es en las paradas en lugares públicos de países que los tienen muy implantados.",
+   "ojo": "Ayuda que los DEA públicos estén registrados en los servicios de emergencia: el operador puede dirigir la RCP desde el principio.",
+   "rec": "DEA público: brilla en la calle, <mark>flojea en casa</mark>.",
+   "f": "Soporte vital básico, Programas de acceso público a la desfibrilación (pág. 14)",
+   "tq": "Dónde rinde poco el acceso público a DEA",
+   "ta": "En el domicilio (donde ocurren la mayoría).",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     9
+    ]
+   }
+  },
+  {
+   "id": 798,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Una persona atragantada respira y tose. Además de animarla a toser, ¿qué NO se debe hacer?",
+   "o": [
+    "Darle golpes o algo de beber.",
+    "Mantenerse a su lado.",
+    "Vigilar si la tos se vuelve ineficaz."
+   ],
+   "c": 0,
+   "o4": "Preguntarle si se está atragantando.",
+   "que": "En la obstrucción incompleta solo se anima a toser: <mark>ni golpes ni nada de beber o comer</mark>.",
+   "porque": "La tos genera presiones en la vía aérea alta capaces de expulsar el objeto; los golpes o el agua pueden empeorarlo.",
+   "ojo": "Si deja de toser y muestra signos de asfixia, pasa a ser completa: entonces sí, golpes y compresiones.",
+   "rec": "Si tose, <mark>manos quietas</mark> y ánimo.",
+   "f": "Soporte vital básico, OVACE: tratamiento de la obstrucción incompleta (pág. 15)",
+   "tq": "Obstrucción incompleta: qué no hacer",
+   "ta": "Ni golpes ni dar de beber.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     10
+    ]
+   }
+  },
+  {
+   "id": 799,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "En la maniobra de Heimlich, ¿hacia dónde se dirigen las compresiones?",
+   "o": [
+    "Hacia atrás, con las manos sobre el esternón.",
+    "Hacia dentro y hacia arriba, con el puño en la boca del estómago.",
+    "Hacia dentro y hacia abajo, con el puño en el ombligo."
+   ],
+   "c": 1,
+   "o4": "Hacia arriba, con las palmas en las costillas.",
+   "que": "Detrás de la víctima, inclinada hacia delante, con el <mark>puño en la boca del estómago</mark> agarrado con la otra mano, se empuja bruscamente <mark>hacia dentro y hacia arriba</mark>.",
+   "porque": "El empujón hacia arriba sube el diafragma y empuja el aire de los pulmones contra el objeto.",
+   "ojo": "Se alternan 5 golpes interescapulares y 5 compresiones abdominales hasta que lo expulse o quede inconsciente.",
+   "rec": "Heimlich: <mark>adentro y arriba</mark>, como una J.",
+   "f": "Soporte vital básico, OVACE: maniobra de Heimlich (pág. 16)",
+   "tq": "Dirección de las compresiones de Heimlich",
+   "ta": "Hacia dentro y hacia arriba (puño en la boca del estómago).",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 800,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Cuál es la causa más frecuente de parada cardiorrespiratoria en los niños?",
+   "o": [
+    "La muerte súbita del lactante.",
+    "Un fallo respiratorio.",
+    "Un fallo cardiovascular."
+   ],
+   "c": 1,
+   "o4": "Un traumatismo craneal.",
+   "que": "En la mayoría de los casos los niños paran por <mark>fallo respiratorio</mark>; en los adultos suele ser cardiovascular.",
+   "porque": "Por eso el protocolo pediátrico cambia: hay que aportar oxígeno pronto.",
+   "ojo": "El fallo cardiovascular y la muerte súbita del lactante existen, pero son menos frecuentes.",
+   "rec": "Niño = <mark>pulmón</mark>; adulto = corazón.",
+   "f": "Soporte vital básico, SVB pediátrico: causas de la PCR (pág. 17)",
+   "tq": "Causa más frecuente de PCR en niños",
+   "ta": "Fallo respiratorio.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     12
+    ]
+   }
+  },
+  {
+   "id": 801,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Cómo se valora el nivel de consciencia de un lactante?",
+   "o": [
+    "Pellizcándole el lóbulo de la oreja.",
+    "Sacudiéndole los hombros y preguntando en voz alta.",
+    "Moviéndolo ligeramente y/o dando golpes en los talones."
+   ],
+   "c": 2,
+   "o4": "Presionándole el esternón con los nudillos.",
+   "que": "En el <mark>lactante</mark> se estimula moviéndolo ligeramente y/o con <mark>golpes en los talones</mark>; al niño se le sacude con cuidado gritando «¿Te encuentras bien?».",
+   "porque": "Sacudir con fuerza a un lactante es peligroso.",
+   "ojo": "En el adulto se sacuden suavemente los hombros preguntando en voz alta «¿Se encuentra bien?».",
+   "rec": "Bebé: <mark>talones</mark>; niño y adulto: hombros.",
+   "f": "Soporte vital básico, SVB pediátrico: evaluar la consciencia (pág. 17)",
+   "tq": "Valorar la consciencia de un lactante",
+   "ta": "Moverlo ligeramente y/o golpes en los talones.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     12
+    ]
+   }
+  },
+  {
+   "id": 802,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Según el manual, ¿cuál de estas situaciones NO es motivo para suspender la RCP?",
+   "o": [
+    "Que lleguen los servicios de emergencia.",
+    "Que hayan pasado 20 minutos sin respuesta.",
+    "Que el paciente muestre signos de vida."
+   ],
+   "c": 1,
+   "o4": "Que los reanimadores estén agotados.",
+   "que": "La RCP se suspende por <mark>signos de vida, llegada de los servicios de emergencia o agotamiento de los reanimadores</mark>. El tiempo transcurrido no figura.",
+   "porque": "Para no perder compresiones, ni siquiera se para para evaluar: solo ante signos evidentes de vida (movimientos, respiración espontánea, apertura ocular…).",
+   "ojo": "Decidir parar por el tiempo transcurrido es una decisión médica, no del reanimador.",
+   "rec": "Se para por: <mark>vive, llegan o no puedo más</mark>.",
+   "f": "Soporte vital básico, Finalización de la RCP (pág. 13)",
+   "tq": "Cuándo se suspende la RCP",
+   "ta": "Signos de vida, llegada de emergencias o agotamiento.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     8
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 803,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "¿Cuál es el orden correcto de los eslabones de la cadena de supervivencia?",
+   "o": [
+    "Reconocimiento y pedir ayuda → desfibrilación precoz → RCP precoz → soporte vital avanzado.",
+    "RCP precoz → reconocimiento y pedir ayuda → desfibrilación precoz → soporte vital avanzado.",
+    "Reconocimiento y pedir ayuda → RCP precoz → desfibrilación precoz → soporte vital avanzado."
+   ],
+   "c": 2,
+   "o4": "Desfibrilación precoz → RCP precoz → reconocimiento → soporte vital avanzado.",
+   "que": "Los 4 eslabones: <mark>1 reconocimiento precoz y pedir ayuda, 2 RCP precoz por testigos, 3 desfibrilación precoz, 4 soporte vital avanzado y cuidados postresucitación</mark>.",
+   "porque": "Es una cadena secuencial: sin el eslabón anterior no se puede seguir con el siguiente.",
+   "ojo": "Mientras se trae el DEA se sigue con la RCP; no se espera al desfibrilador para comprimir.",
+   "rec": "<mark>Veo, aprieto, descargo, me lo llevan</mark>.",
+   "f": "Soporte vital básico, Cadena de supervivencia (pág. 7)",
+   "tq": "Orden de la cadena de supervivencia",
+   "ta": "Reconocer y avisar → RCP → desfibrilar → SVA.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     2
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 804,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Un hombre inconsciente hace movimientos de boqueo, como un pez fuera del agua, cada varios segundos. ¿Qué haces?",
+   "o": [
+    "Darle 12-16 ventilaciones por minuto sin comprimir.",
+    "Actuar como si no respirara: avisar e iniciar la RCP.",
+    "Colocarlo en posición lateral de seguridad: está respirando."
+   ],
+   "c": 1,
+   "o4": "Esperar 2 minutos y volver a valorar.",
+   "que": "Las <mark>respiraciones agónicas (gasping o boqueadas)</mark> no son eficaces para meter oxígeno: se actúa <mark>como si no respirara</mark>.",
+   "porque": "Confundir el gasping con respiración retrasa la RCP en el momento en que más vidas salva.",
+   "ojo": "La PLS es solo para el inconsciente que respira con normalidad.",
+   "rec": "Boquea como un pez → <mark>RCP</mark>.",
+   "f": "Soporte vital básico, B: Ventilación (pág. 9)",
+   "tq": "Respiración agónica (gasping): qué hacer",
+   "ta": "Tratar como si no respirara: RCP.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     4
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 805,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Encuentras a una mujer que no responde. Abres la vía aérea y con la maniobra VOS compruebas que respira con normalidad. ¿Qué haces?",
+   "o": [
+    "Dejarla boca arriba con el cuello hiperextendido sin moverla.",
+    "Colocarla en posición lateral de seguridad y reevaluarla.",
+    "Iniciar compresiones torácicas 30:2."
+   ],
+   "c": 1,
+   "o4": "Darle dos ventilaciones de rescate.",
+   "que": "Si no responde pero <mark>respira con normalidad</mark>, va de inmediato a <mark>posición lateral de seguridad</mark>.",
+   "porque": "En PLS, con el cuello en hiperextensión, si vomita no lo aspira hacia la vía aérea.",
+   "ojo": "Hay que reevaluar constantemente consciencia y respiración: si deja de respirar, RCP.",
+   "rec": "Respira pero no responde → <mark>de lado</mark>.",
+   "f": "Soporte vital básico, Posición lateral de seguridad (pág. 9)",
+   "tq": "Inconsciente que respira normal",
+   "ta": "PLS y reevaluar.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     4
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 806,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Durante la RCP de un adulto, das las dos ventilaciones y el tórax no se eleva en ninguna. ¿Qué haces?",
+   "o": [
+    "Pasar a RCP solo con compresiones hasta que llegue la ayuda.",
+    "Repetir las ventilaciones hasta que el tórax se eleve.",
+    "Reanudar las compresiones y volver a intentarlo en el siguiente ciclo."
+   ],
+   "c": 2,
+   "o4": "Parar la RCP y buscar un cuerpo extraño en la boca.",
+   "que": "Si las dos ventilaciones no son efectivas, <mark>se reinician las compresiones</mark> y se vuelve a intentar <mark>en el siguiente ciclo</mark>.",
+   "porque": "Lo prioritario es estar el menor tiempo posible sin comprimir (como mucho 10 segundos para ventilar).",
+   "ojo": "Antes de ventilar, la vía aérea tiene que estar abierta: conviene revisar la maniobra frente-mentón.",
+   "rec": "No entra el aire → <mark>vuelve al pecho</mark>.",
+   "f": "Soporte vital básico, Ventilaciones (pág. 12)",
+   "tq": "Ventilaciones que no entran durante la RCP",
+   "ta": "Reanudar compresiones y reintentar en el siguiente ciclo.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     7
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 807,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Estás haciendo golpes interescapulares y compresiones abdominales a un adulto atragantado y pierde el conocimiento. ¿Qué haces?",
+   "o": [
+    "Seguir con las compresiones abdominales tumbado de lado.",
+    "Colocarlo en posición lateral de seguridad y esperar.",
+    "Tumbarlo en el suelo, avisar al 112 e iniciar la RCP."
+   ],
+   "c": 2,
+   "o4": "Intentar sacar el objeto con los dedos a ciegas.",
+   "que": "En cuanto el atragantado queda <mark>inconsciente</mark>: al suelo, <mark>activar los servicios de emergencia e iniciar la RCP</mark> de inmediato.",
+   "porque": "Las compresiones torácicas también generan presión en la vía aérea y pueden mover el objeto.",
+   "ojo": "Mientras está consciente se alternan 5 golpes interescapulares y 5 compresiones abdominales.",
+   "rec": "Atragantado que cae → <mark>suelo, 112 y RCP</mark>.",
+   "f": "Soporte vital básico, OVACE: paciente inconsciente (pág. 17)",
+   "tq": "OVACE que pierde la consciencia",
+   "ta": "Al suelo, avisar e iniciar RCP.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     12
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 808,
+   "t": "Sanitario (SVB)",
+   "d": "difícil",
+   "q": "Un compañero comprime a unas 150 por minuto «para mover más sangre». Según el manual, ¿qué ocurre?",
+   "o": [
+    "Las compresiones son menos profundas y el corazón no llega a llenarse bien.",
+    "No influye en el flujo; solo hace que se canse antes.",
+    "Mejora el flujo: cuanto más rápido, más sangre llega al cerebro."
+   ],
+   "c": 0,
+   "o4": "Mejora el flujo siempre que llegue a 5 cm.",
+   "que": "Las frecuencias altas se asocian a <mark>menor profundidad</mark>, el corazón <mark>no se llena</mark> y la sangre no se distribuye bien. Hay que mantener <mark>110-120 por minuto</mark>.",
+   "porque": "Entre compresión y compresión el corazón tiene que llenarse; si no da tiempo, cada compresión expulsa menos sangre.",
+   "ojo": "La idea tentadora («más rápido = más flujo») es la equivocada: la supervivencia es mayor dentro de ese rango.",
+   "rec": "Ni lento ni a lo loco: <mark>110-120</mark>.",
+   "f": "Soporte vital básico, Frecuencia de las compresiones (pág. 11)",
+   "tq": "Compresiones demasiado rápidas: efecto",
+   "ta": "Menos profundidad y peor llenado del corazón.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 809,
+   "t": "Sanitario (SVB)",
+   "d": "difícil",
+   "q": "Un sanitario experto valora a un paciente hipotenso que no respira: no le encuentra pulso radial pero sí carotídeo. ¿Qué indica el manual?",
+   "o": [
+    "No tiene pulso válido: hay que iniciar compresiones.",
+    "Hay que repetir la toma en la radial hasta encontrarlo.",
+    "Tiene pulso: las arterias periféricas se colapsan en la hipotensión."
+   ],
+   "c": 2,
+   "o4": "El pulso carotídeo es engañoso: manda el radial.",
+   "que": "Es frecuente un paciente <mark>sin pulso distal pero con pulso central</mark>: las periféricas <mark>se colapsan en la hipotensión</mark>. Por eso el pulso se busca en la carótida, nunca en una periférica.",
+   "porque": "Tiene pulso pero no respira: le corresponden ventilaciones a 12-16 por minuto, no compresiones.",
+   "ojo": "La opción tentadora (sin pulso radial = parada) es la equivocada. Recuerda que fuera del personal experto no se valora el pulso.",
+   "rec": "En hipotensión, la <mark>carótida</mark> es la que manda.",
+   "f": "Soporte vital básico, C: Circulación (pág. 10)",
+   "tq": "Sin pulso radial pero con carotídeo: ¿tiene pulso?",
+   "ta": "Sí: las periféricas se colapsan en la hipotensión.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 810,
+   "t": "Sanitario (SVB)",
+   "d": "difícil",
+   "q": "Al abrir la vía aérea de un lactante inconsciente le hiperextiendes bien el cuello, igual que a un adulto. ¿Qué ocurre?",
+   "o": [
+    "Se le cierra la vía aérea, porque la tiene más anterior.",
+    "Nada: la técnica es la misma a cualquier edad.",
+    "Se abre mejor, porque su lengua es proporcionalmente mayor."
+   ],
+   "c": 0,
+   "o4": "Se abre igual, pero con riesgo de lesión cervical.",
+   "que": "En el <mark>lactante</mark> la cabeza va en <mark>posición neutra</mark>: si se hiperextiende, <mark>se cierra</mark> su vía aérea, que es más anterior que la del adulto.",
+   "porque": "En niños mayores se hace una hiperextensión moderada, menos que en el adulto.",
+   "ojo": "La respuesta tentadora (más extensión = más abierta) es justo la que obstruye al lactante.",
+   "rec": "Lactante: <mark>neutro</mark>; niño: un poco; adulto: mucho.",
+   "f": "Soporte vital básico, SVB pediátrico: apertura de la vía aérea (pág. 17)",
+   "tq": "Lactante: posición de la cabeza para abrir la vía aérea",
+   "ta": "Neutra: hiperextender le cierra la vía aérea.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     12
+    ]
+   }
+  },
+  {
+   "id": 811,
+   "t": "Sanitario (SVB)",
+   "d": "normal",
+   "q": "Según la curva de Drinker del manual (ver esquema), si la RCP empieza a los 6 minutos de la parada, ¿qué probabilidad aproximada de reanimación queda?",
+   "o": [
+    "60 %.",
+    "40 %.",
+    "70 %."
+   ],
+   "c": 0,
+   "o4": "80 %.",
+   "que": "Curva de Drinker: <mark>en torno al 80 %</mark> si la RCP empieza en los primeros <mark>4 minutos</mark>, y <mark>un 10 % menos por cada minuto extra</mark>. A los 6 minutos: 80 − 2 × 10 = 60 %.",
+   "porque": "La parada es una patología tiempo-dependiente: cuanto más se tarda, menos se recuperan y más secuelas neurológicas quedan.",
+   "ojo": "El 10 % se resta solo a partir del minuto 4, no desde el minuto 0.",
+   "rec": "<mark>80 a los 4</mark> y luego −10 por minuto.",
+   "f": "Soporte vital básico, Curva de Drinker (pág. 6)",
+   "tq": "Curva de Drinker: probabilidad si la RCP empieza en los 4 primeros minutos",
+   "ta": "En torno al 80 %; después, −10 % por minuto.",
+   "src": {
+    "m": "Bloque II - Tema 26 - Soporte vital básico",
+    "p": [
+     1
+    ]
+   },
+   "ex": 1,
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 300 170\" role=\"img\" aria-label=\"Gráfica de la curva de Drinker: eje vertical probabilidad de reanimación, eje horizontal minutos desde la parada. La curva es alta y casi plana hasta el minuto 4 (marcado) y después baja en línea recta.\"><g font-size=\"11\" fill=\"#222\" font-family=\"sans-serif\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"140\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"140\" x2=\"285\" y2=\"140\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"12\" y=\"80\" transform=\"rotate(-90 12 80)\" text-anchor=\"middle\">Probabilidad (%)</text><text x=\"165\" y=\"165\" text-anchor=\"middle\">Minutos desde la parada</text><polyline points=\"40,36 128,44 238,132\" fill=\"none\" stroke=\"#c0392b\" stroke-width=\"3\"/><line x1=\"128\" y1=\"44\" x2=\"128\" y2=\"140\" stroke=\"#888\" stroke-dasharray=\"4 3\"/><text x=\"128\" y=\"154\" text-anchor=\"middle\">4</text><text x=\"40\" y=\"154\" text-anchor=\"middle\">0</text><text x=\"196\" y=\"70\">−10 % / min</text></g></svg>"
   }
  ],
  "glosario": [
@@ -2431,6 +3596,116 @@
    "tema": "Igualdad",
    "f": "LO 3/2007, art. 4",
    "solo": 1
+  },
+  {
+   "t": "Curva de Drinker",
+   "a": [
+    "curva de Drinker"
+   ],
+   "d": "Gráfica de la probabilidad de reanimar según cuándo empieza la RCP: en torno al 80 % en los 4 primeros minutos y un 10 % menos por cada minuto más.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "Conducta PAS",
+   "a": [
+    "conducta PAS",
+    "PAS"
+   ],
+   "d": "Pauta ante un paciente fuera del hospital: Proteger la escena, Avisar y Socorrer.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "Maniobra VOS",
+   "a": [
+    "maniobra VOS",
+    "VOS"
+   ],
+   "d": "Valoración de la respiración en 10 segundos como máximo: Ver si el tórax se expande, Oír la respiración y Sentir el aliento en la mejilla.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "Respiración agónica",
+   "a": [
+    "respiración agónica",
+    "respiraciones agónicas",
+    "gasping",
+    "boqueadas"
+   ],
+   "d": "Boqueos ineficaces, como los de un pez fuera del agua. No meten oxígeno: se actúa como si el paciente no respirara.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "Tracción mandibular",
+   "a": [
+    "tracción mandibular"
+   ],
+   "d": "Apertura de la vía aérea en traumatizados sin hiperextender el cuello: talones de las manos en los pómulos, dedos en el ángulo de la mandíbula y tracción hacia arriba.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "Maniobra frente-mentón",
+   "a": [
+    "frente-mentón",
+    "frente mentón"
+   ],
+   "d": "Apertura de la vía aérea del inconsciente: una mano en la frente y otra en el mentón, llevando la cabeza hacia atrás (hiperextensión). En lactantes, cabeza neutra.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "Fibrilación ventricular",
+   "a": [
+    "fibrilación ventricular",
+    "FV"
+   ],
+   "d": "Ritmo desorganizado en el que muchos focos ventriculares mandan señales a la vez: el corazón no late eficazmente y está en parada. Se trata con RCP y desfibrilación.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "DESA",
+   "a": [
+    "DESA",
+    "desfibrilador semiautomático"
+   ],
+   "d": "Desfibrilador externo semiautomático: analiza el ritmo y avisa de que hay que descargar, pero la descarga la da el reanimador pulsando un botón.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "Posición lateral de seguridad",
+   "a": [
+    "posición lateral de seguridad",
+    "PLS"
+   ],
+   "d": "Posición de recuperación del inconsciente que respira: de lado, con la pierna flexionada de tope y el cuello en hiperextensión para que no aspire si vomita. Se le moviliza cada 20-30 min.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "OVACE",
+   "a": [
+    "OVACE",
+    "atragantamiento"
+   ],
+   "d": "Obstrucción de la vía aérea por cuerpo extraño. Incompleta: tose, habla y respira (animar a toser). Completa: 5 golpes interescapulares y 5 compresiones abdominales.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
+  },
+  {
+   "t": "Maniobra de Heimlich",
+   "a": [
+    "Heimlich",
+    "compresiones abdominales"
+   ],
+   "d": "Compresiones abdominales al atragantado consciente: desde detrás, puño en la boca del estómago y empujones bruscos hacia dentro y hacia arriba.",
+   "tema": "Sanitario (SVB)",
+   "f": "Soporte vital básico (Cuerpo de Bomberos de la Comunidad de Madrid)"
   }
  ]
 }
