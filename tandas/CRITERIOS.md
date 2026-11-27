@@ -143,8 +143,10 @@ Dar prioridad a este tipo dentro de las de aplicación. Llevan además el campo 
 **De momento TODAS las de deducir se marcan con `"revisar": "deducción"`**: el usuario quiere verlas antes de subirlas
 (al menos las primeras). Hacer pocas y muy cuidadas (unas 6 por noche, una por día de calendario).
 **Destino (decidido por el usuario el 27/11): una pregunta EXTRA de deducir cada día a las 20:00**, además de la difícil
-(13 preguntas al día). Pendiente de montar en la web (se enseñará al usuario antes de subirlo); hasta entonces se quedan
-apartadas en tandas/revisar/ y, una vez aceptadas, en el banco esperando ese hueco (no las uses en los 12 huecos normales).
+(13 preguntas al día). YA ESTÁ EN LA WEB: `scripts/deduccion.py` (dentro de calendario.sh) pone una `ded: 1` aceptada como 13.º id
+de cada día futuro; la web la enseña como «20:00 · extra» y el aviso push de las 20:00 es uno solo para las dos. Mientras no
+haya `ded` aceptadas, los días se quedan con 12. Las nuevas se apartan en tandas/revisar/ hasta que el usuario las acepte
+(nunca en los 12 huecos normales).
 Reglas: enunciado con un caso concreto y verosímil; el dato o principio tiene que estar en el temario (con `src`); los
 distractores son errores de razonamiento típicos, no datos inventados; la explicación dice qué principio se aplica y por
 qué la opción tentadora falla. Pueden ser normales o difíciles (las de las 20:00 de este estilo son ideales).

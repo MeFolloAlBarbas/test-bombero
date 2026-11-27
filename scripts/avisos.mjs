@@ -25,13 +25,17 @@ if (!force && (await est.get()).data()?.ultimo === marca) { console.log('Ya envi
 const snap = await db.collection('tokens').get();
 const tokens = snap.docs.map(d => d.id);
 console.log('Dispositivos:', tokens.length);
+// A las 20:00, si el día tiene la extra de deducir (13.º id), se manda UN solo aviso para las dos
+const extra = hour === 20 && (plan[day] || []).length > 12;
 const link = 'https://mefolloalbarbas.github.io/test-bombero/#inicio';
 let ok = 0, borrados = 0;
 for (let i = 0; i < tokens.length; i += 500) {
   const lote = tokens.slice(i, i + 500);
   const r = await admin.messaging().sendEachForMulticast({
     tokens: lote,
-    data: { title: `🚒 Pregunta de las ${hour}:00`, body: 'Ya tienes una pregunta nueva. Respóndela hoy: mañana solo se podrá revisar.', link },
+    data: extra
+      ? { title: '🚒 Preguntas de las 20:00', body: 'Hoy son dos: la de siempre y la extra de deducir. Respóndelas hoy: mañana solo se podrán revisar.', link }
+      : { title: `🚒 Pregunta de las ${hour}:00`, body: 'Ya tienes una pregunta nueva. Respóndela hoy: mañana solo se podrá revisar.', link },
     webpush: { headers: { Urgency: 'high', TTL: '3600' } }
   });
   ok += r.successCount;

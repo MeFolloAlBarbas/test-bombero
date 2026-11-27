@@ -5,6 +5,7 @@ Reglas:
 - 12 preguntas por día (9:00-20:00), de lunes a sábado; los domingos no hay.
 - En un mismo día no se repite tema.
 - La de las 20:00 es siempre "difícil".
+- La 13.ª (extra de deducir de las 20:00, `ded: 1`) la pone después scripts/deduccion.py.
 - Los días ya planificados no se tocan; solo se añaden días nuevos al final.
 - Si no quedan preguntas suficientes para un día completo, el plan se detiene ahí.
 - Las preguntas de intervención (int=1) no se usan aquí: las coloca scripts/intervencion.py

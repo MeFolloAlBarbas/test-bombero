@@ -381,7 +381,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795762062';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795784943';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -450,7 +450,9 @@ function planUpTo(k){
   return PLAN[k]||[];
 }
 let FIXED={};
-function slotQ(k,h){const ids=FIXED[k];return ids?byId(ids[h-9])||null:null}  // todos los días salen de plan.json (el 20/11 también, desde el 25/11: antes se calculaba con el banco y cambiaba al crecer)
+function slotQ(k,h){const ids=FIXED[k];return ids?byId(ids[h===HX?12:h-9])||null:null}
+// Pregunta extra de deducir a las 20:00 (desde el 27/11): si el día de plan.json tiene 13 ids, el 13.º es la extra (hora interna HX)
+const HX=21,hrs=k=>FIXED[k]&&FIXED[k].length>12?HOURS.concat([HX]):HOURS,abre=h=>h===HX?20:h,hlab=h=>h===HX?'20:00 · extra':h+':00';  // todos los días salen de plan.json (el 20/11 también, desde el 25/11: antes se calculaba con el banco y cambiaba al crecer)
 const hasDay=k=>!!FIXED[k];
 function slot(k,h){const d=(S.daily[k]||{})[h];return d?{q:byId(d.id)||slotQ(k,h),a:d.a,done:true}:{q:slotQ(k,h),a:undefined,done:false}}
 
@@ -580,7 +582,7 @@ function go(h){if(location.hash==='#'+h)render();else location.hash=h}
 
 function pending(){
   const {key,hour}=madrid();if(dow(key)===0||!hasDay(key))return null;
-  for(const hh of HOURS){if(hh>hour)break;if(!(S.daily[key]||{})[hh]&&slotQ(key,hh))return {k:key,h:hh}}
+  for(const hh of hrs(key)){if(abre(hh)>hour)break;if(!(S.daily[key]||{})[hh]&&slotQ(key,hh))return {k:key,h:hh}}
   return null;
 }
 // ===== Tirada diaria y comodines =====
@@ -779,7 +781,7 @@ function bindComBar(){
 }
 
 // ===== Racha: días seguidos contestando las 12 (solo la ve cada uno) =====
-const diaHecho=k=>hasDay(k)&&HOURS.every(h=>(S.daily[k]||{})[h]);
+const diaHecho=k=>hasDay(k)&&hrs(k).every(h=>(S.daily[k]||{})[h]);
 function racha(hoy){let n=0,t=parse(hoy);if(diaHecho(hoy))n++;t-=864e5;
   for(let i=0;i<400;i++,t-=864e5){const k=keyOf(t);if(dow(k)===0||!hasDay(k))continue;if(diaHecho(k))n++;else break}return n}
 
@@ -794,7 +796,7 @@ function llamaRacha(n,px){const l=llamaNivel(n),g=l===4?LLAMA_AURA:PX.icons.llam
   return `<span class="lfx" style="width:${px}px;height:${px}px">${o}</span>`}
 function rachaHtml(hoy){const ph=!PID;const n=ph?0:racha(hoy),wk=weekDays(monday(hoy)).slice(0,6);
   const sq=wk.map(k=>`<i class="rd${diaHecho(k)?' on':''}" title="${nice(k)}"></i>`).join('');
-  return `<div class="racha"${ph?' style="visibility:hidden"':''}><div class="rt">${llamaRacha(n,20)}${n?`${n} día${n>1?'s':''} seguido${n>1?'s':''}`:'Contesta las 12 de hoy para empezar tu racha'}</div><div class="rds">${sq}</div></div>`}
+  return `<div class="racha"${ph?' style="visibility:hidden"':''}><div class="rt">${llamaRacha(n,20)}${n?`${n} día${n>1?'s':''} seguido${n>1?'s':''}`:`Contesta las ${hrs(hoy).length} de hoy para empezar tu racha`}</div><div class="rds">${sq}</div></div>`}
 function proxPregunta(key,hour,nxt,sun){
   if(!sun&&nxt&&hasDay(key))return `hoy a las ${nxt}:00`;
   return dow(key)===6?'el lunes a las 9:00':'mañana a las 9:00';
@@ -804,7 +806,7 @@ function home(){
   const p=pending();
   if(p&&home.go){start('dia',[slot(p.k,p.h).q],p);return}
   if(p){
-    const {key,hour}=madrid(),n=HOURS.filter(x=>x<=hour&&!(S.daily[key]||{})[x]).length;
+    const {key,hour}=madrid(),n=hrs(key).filter(x=>abre(x)<=hour&&!(S.daily[key]||{})[x]).length;
     app.innerHTML=`<div class="start"><p class="meta">${nice(key)}</p><h2>Hola, ${esc(NAME)}</h2>
       <p>Tienes <b>${n}</b> pregunta${n>1?'s':''} pendiente${n>1?'s':''} hoy.</p>
       <button class="go" id="bGo">COMENZAR</button></div>${avisoUnico()}`;bindPush();bindComBar();
@@ -840,16 +842,16 @@ function day(k){
   run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   const now=madrid(),today=k===now.key,past=k<now.key;
   if(dow(k)===0||k>now.key){app.innerHTML=`<p class="empty">${dow(k)===0?'Los domingos no hay preguntas.':'Ese día todavía no ha llegado.'}</p>`;return}
-  const rows=HOURS.map(h=>{
-    const s=slot(k,h),q=s.q,locked=today&&h>now.hour;
-    if(!q)return `<div class="slot lk"><div class="sh"><span class="hr">${h}:00</span><span class="st lk">Sin publicar</span></div></div>`;
+  const rows=hrs(k).map(h=>{
+    const s=slot(k,h),q=s.q,locked=today&&abre(h)>now.hour;
+    if(!q)return `<div class="slot lk"><div class="sh"><span class="hr">${hlab(h)}</span><span class="st lk">Sin publicar</span></div></div>`;
     let state,cls='';
     const de=(S.daily[k]||{})[h]||{};
     if(s.done){state=de.wa!==undefined?'Escudo · 0':s.a===null?'En blanco · 0':s.a===q.c?'✓ Acierto · +1':'✗ Fallo · −0,33';cls=s.a===null?'bl':s.a===q.c?'okr':'kor'}
-    else if(locked){state=`Disponible a las ${h}:00`;cls='lk'}
+    else if(locked){state=`Disponible a las ${abre(h)}:00`;cls='lk'}
     else if(today){state='Pendiente de responder';cls='pd'}
     else{state='Sin responder · 0';cls='bl'}
-    const head=`<span class="hr">${h}:00</span><span class="st ${cls}">${state}</span>`;
+    const head=`<span class="hr">${hlab(h)}</span><span class="st ${cls}">${state}</span>`;
     if(locked)return `<div class="slot lk"><div class="sh">${head}</div></div>`;
     if(today&&!s.done)return `<div class="slot"><div class="sh">${head}</div></div>`;
     return `<details class="slot" data-q="${q.id}"><summary class="sh">${head}</summary><div class="qhead2"><p class="sq" style="margin:0">${esc(q.t)}</p>${bmBtn(q.id)}</div><p class="enun">${esc(q.q)}</p>${qimg(q)}
@@ -875,7 +877,7 @@ function history(){
   for(let t=parse(now)-864e5;t>=parse(first);t-=864e5){const k=keyOf(t);if(dow(k)!==0)list.push(k)}
   app.innerHTML=`<h2 style="font-size:19px;margin:0 0 12px">Días anteriores</h2>${list.length?list.map(k=>{
     const n=Object.values(S.daily[k]||{}),r=n.filter(d=>{const q=byId(d.id);return q&&d.a!==null}).length;
-    return `<button class="op dayrow" data-k="${k}"><span>${nice(k)}</span><span class="mut">${n.length}/12 respondidas · ${fmt(netaDay(k))} netas</span></button>`}).join(''):'<p class="empty">Todavía no hay días anteriores. Aparecerán aquí a partir de mañana.</p>'}`;
+    return `<button class="op dayrow" data-k="${k}"><span>${nice(k)}</span><span class="mut">${n.length}/${hrs(k).length} respondidas · ${fmt(netaDay(k))} netas</span></button>`}).join(''):'<p class="empty">Todavía no hay días anteriores. Aparecerán aquí a partir de mañana.</p>'}`;
   app.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>go('dia-'+b.dataset.k));
 }
 // ===== Tarjetas de estudio: cada fallo o pregunta en blanco se convierte en una tarjeta =====
@@ -920,7 +922,7 @@ function tarjetas(){
 }
 let RK={unsub:null,docs:[],sel:null};
 function stopRanking(){if(RK.unsub){RK.unsub();RK.unsub=null}}
-function maxSoFar(m){const now=madrid();let n=0;for(const k of weekDays(m)){if(k>now.key)break;if(k<'2026-11-20'||!hasDay(k))continue;n+=k<now.key?12:HOURS.filter(h=>h<=now.hour).length}return n}
+function maxSoFar(m){const now=madrid();let n=0;for(const k of weekDays(m)){if(k>now.key)break;if(k<'2026-11-20'||!hasDay(k))continue;n+=k<now.key?hrs(k).length:hrs(k).filter(h=>abre(h)<=now.hour).length}return n}
 function ranking(sel){
   run=null;homeBtn.hidden=true;window.scrollTo(0,0);
   if(sel!==undefined)RK.sel=sel;
@@ -936,7 +938,7 @@ function ranking(sel){
 }
 function okOf(r){if(typeof r.ok==='number')return r.ok;const N=Math.round(r.neta*100);for(let w=0;w<=r.resp;w++){const t=N+33*w;if(t%100===0){const ok=t/100;if(ok>=0&&ok+w<=r.resp)return ok}}return 0}
 function summary(m,docs,now){
-  const ids=new Set();for(const k of weekDays(m)){if(k>=now.key||k<'2026-11-20'||!hasDay(k))continue;for(const h of HOURS){const q=slotQ(k,h);if(q)ids.add(q.id)}}
+  const ids=new Set();for(const k of weekDays(m)){if(k>=now.key||k<'2026-11-20'||!hasDay(k))continue;for(const h of hrs(k)){const q=slotQ(k,h);if(q)ids.add(q.id)}}
   if(!ids.size)return `<h3 class="sumt">Resumen de la semana</h3><p class="note" style="text-align:center">Aparecerá cuando termine el primer día de la semana.</p>`;
   const st={};for(const d of docs){const a=(d.w[m]||{}).ans||{};for(const id in a){if(!ids.has(+id))continue;const s=st[id]=st[id]||{o:0,x:0,b:0,w:{}};const v=a[id];if(v==='o'||v==='b')s[v]++;else{s.x++;const j=v.slice(1);if(j!=='')s.w[j]=(s.w[j]||0)+1}}}
   const L=Object.entries(st).map(([id,s])=>({q:byId(+id),...s,n:s.o+s.x+s.b})).filter(r=>r.q&&r.n>=2);
@@ -978,7 +980,7 @@ async function weeklyPopup(vista){
 }
 function panelAdmin(L,R){
   const now=madrid(),today=now.key,m=monday(today),wk=weekDays(m);
-  const open=dow(today)!==0&&hasDay(today)?HOURS.filter(h=>h<=now.hour).length:0;
+  const open=dow(today)!==0&&hasDay(today)?hrs(today).filter(h=>abre(h)<=now.hour).length:0;
   const answered=e=>Object.keys((e.daily||{})[today]||{}).length;
   const last=e=>Object.keys(e.daily||{}).filter(k=>Object.keys(e.daily[k]||{}).length).sort().pop();
   const hoy=L.filter(r=>answered(r.e)>0).length;
@@ -1101,7 +1103,7 @@ function expl(q){return `
 function show(){
   window.scrollTo(0,0);
   const {q,ord}=run.qs[run.i],n=run.qs.length,sim=run.mode==='simulacro';
-  const title={dia:run.ctx?`Pregunta de las ${run.ctx.h}:00 · solo se puede responder hoy`:''}[run.mode]||'';
+  const title={dia:run.ctx?`Pregunta de las ${hlab(run.ctx.h)} · solo se puede responder hoy`:''}[run.mode]||'';
   app.innerHTML=`
   <div class="top"><span>${title}${sim||run.mode==='dia'?'':' · '+fmt(run.net)+' netas'}</span><span>${run.mode==='dia'?nice(run.ctx.k):`Pregunta ${run.i+1} de ${n}`}</span></div>
   <div class="prog"><i style="width:${run.i*100/n}%"></i></div>
@@ -1284,11 +1286,11 @@ function paint(el,k){
 const MASC_FELIZ=["...K.......K", "..KYK.....KY", "..KYOK...KYO", "..KOOK..KKKK", "...KORKKNNNN", "...KRKNNNNNG", "...KRKNNNNGG", "..KKKKKKKKKK", "..KRRRRRRRRR", ".KRRRRRRRRRR", ".KROOOOOOOOO", ".KROOKKOOOOO", ".KROKOOKOOOO", "KRROOOOOOOOO", "KROPPOKWWWWW", "KRROOKWWWWWW", ".KRROKWSWWWW", "..KRRKWSWWSW", ".KRROKWSWWSW", "KRRYKWWSWWSW", "KOKYKWSWWSWW", "KOKYKSWWSWWW", ".KRYKSWWSWWW", ".KRYYKSWWSWW", ".KRRYKSWWSWW", "..KRRKSWSWWW", "..KRRKSWSWWW", "..KOOKKSWSWW", "..KKKK.KSWSW", ".......KSWSW", "........KSWW", "........KSWW", ".......KSWWS", "........KWSW", ".........KSW", ".........KWW", "..........KW", "..........KK"];
 const MASC_C={K:'2d1616',N:'23376e',G:'f5c32d',R:'de3422',O:'fa8723',Y:'ffd446',W:'fff8e1',P:'ff788c',S:'c8c8d2'};
 function mascFeliz(sz){const g=MASC_FELIZ.map(r=>r+r.split('').reverse().join(''));return `<svg width="${Math.round(sz*24/38)}" height="${sz}" viewBox="0 0 24 38" shape-rendering="crispEdges" aria-hidden="true">${pxRects(g,MASC_C)}</svg>`}
-function diaPerfecto(k){const d=S.daily[k]||{};return HOURS.every(h=>{const e=d[h],q=e&&byId(e.id);return q&&e.a===q.c})}
+function diaPerfecto(k){const d=S.daily[k]||{};return hrs(k).every(h=>{const e=d[h],q=e&&byId(e.id);return q&&e.a===q.c})}
 function fiesta(k){
   if(lsGet('fiesta')===k||!diaPerfecto(k))return;lsSet('fiesta',k);
   const ov=document.createElement('div');ov.className='fiesta';
-  ov.innerHTML=`<div class="fbox"><div class="fmasc"><img src="img/mascota-360.png?v=3" alt="" style="height:120px;width:auto;display:block"></div><div class="ftit">¡12 de 12!</div><p>Día perfecto</p><button class="btn" id="fok">¡Vamos!</button></div>`;
+  ov.innerHTML=`<div class="fbox"><div class="fmasc"><img src="img/mascota-360.png?v=3" alt="" style="height:120px;width:auto;display:block"></div><div class="ftit">¡${hrs(k).length} de ${hrs(k).length}!</div><p>Día perfecto</p><button class="btn" id="fok">¡Vamos!</button></div>`;
   document.body.appendChild(ov);
   const box=ov.querySelector('.fbox'),cols=['#ffd23c','#de3422','#fa8723','#7bd389','#6fb6ff'];
   for(let i=0;i<34;i++){const c=document.createElement('i');c.className='fcf';c.style.left=Math.random()*100+'%';c.style.background=cols[i%5];c.style.animationDelay=(Math.random()*.7)+'s';box.appendChild(c)}
