@@ -67,6 +67,22 @@
   "doc": "Ver la página oficial"
  },
  {
+  "id": "2026-11-13-conductor-orientacion",
+  "p": 4,
+  "f": "2026-11-13",
+  "src": "Conductor · Ayto.",
+  "il": "lista",
+  "num": "68",
+  "tit": "Conductor del Ayuntamiento: 223 superan el test",
+  "txt": [
+   "En la oposición de 68 plazas de Bombero/a Conductor/a Especialista, la lista de 223 aprobados del test de conocimientos ya es definitiva. El corte quedó en 41 respuestas netas sobre 90.",
+   "La segunda prueba, de orientación espacial en la ciudad de Madrid, se convocó para el 25 de noviembre a las 9:30 en el Pabellón de Convenciones de la Casa de Campo: 30 preguntas en 60 minutos, con un mínimo de 5 sobre 10 para superarla."
+  ],
+  "clave": "Dato tomado de una academia que cita el anuncio del tribunal; confírmalo en la sede del Ayuntamiento.",
+  "url": "https://formacion.ninja/noticias/bombero-conductor-madrid-orientacion-25-noviembre",
+  "doc": "Leer la noticia"
+ },
+ {
   "id": "2026-06-conductor-68",
   "p": 4,
   "f": "2026-06-05",
@@ -140,6 +156,20 @@
   "doc": "Leer la noticia"
  },
  {
+  "id": "2026-11-04-toledo-rescate-altura",
+  "p": 5,
+  "f": "2026-11-04",
+  "src": "Toledo",
+  "il": "camion",
+  "tit": "Toledo: jornadas de rescate en altura para bomberos",
+  "txt": [
+   "Toledo programó para los días 6 y 7 de noviembre las XX Jornadas de Rescate en Altura, con más de un centenar de bomberos.",
+   "El plan incluía talleres en el parque de bomberos y, el sábado, ejercicios por equipos en ocho escenarios del casco histórico, como el interior del Alcázar o el Miradero. Entre los participantes anunciados estaban varios consorcios españoles y los bomberos de Dublín."
+  ],
+  "url": "https://www.lacerca.com/noticias/toledo/toledo-xx-jornadas-rescate-altura-bomberos-centenar-participantes-835658-1.html",
+  "doc": "Leer la noticia"
+ },
+ {
   "id": "2026-11-campana-hogar-cam",
   "f": "2026-11-03",
   "fx": "Nov 2026",
@@ -153,5 +183,19 @@
   "url": "https://www.comunidad.madrid/node/121706",
   "doc": "Leer la noticia",
   "p": 5
+ },
+ {
+  "id": "2026-10-28-cam-seis-parques",
+  "p": 5,
+  "f": "2026-10-28",
+  "src": "Comunidad de Madrid",
+  "il": "camion",
+  "tit": "Comunidad de Madrid: prevé seis parques de bomberos",
+  "txt": [
+   "El proyecto de presupuestos de la Comunidad de Madrid para 2027 incluye la construcción de seis parques de bomberos: Villanueva de la Cañada, Villarejo de Salvanés, Cobeña, Loeches, Torrejón de Ardoz y Colmenar Viejo.",
+   "También prevé un centro unificado de Protección Civil y Emergencias en El Álamo. Al tratarse de un proyecto de presupuestos, todavía no es definitivo."
+  ],
+  "url": "https://serviciosemergencia.es/noticia/5276-la-comunidad-de-madrid-contara-con-seis-nuevos-parques-de-bomberos-y-un-centro-de-emergencias-en-el-alamo-en-2027/",
+  "doc": "Leer la noticia"
  }
 ]
