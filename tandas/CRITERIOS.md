@@ -13,7 +13,8 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
 - «Me han gustado las preguntas que has ido haciendo»: las preguntas entran solas en la web cada noche.
 - **Excepción: marca con `"revisar": "<motivo>"` cualquier pregunta rara o distinta en su forma de redacción**
   (formato nuevo, enunciado poco habitual, duda sobre si se entiende, dato discutible o contradictorio) y las de
-  Edificaciones I-III / Técnicas de estabilización donde el manual y la realidad no coinciden. Esas NO entran: se
+  Edificaciones I-III / Técnicas de estabilización donde el manual y la realidad no coinciden, y **SIEMPRE las
+  preguntas basadas en una errata del temario** (y su ficha para laboratorio.json): el usuario quiere verlas antes. Esas NO entran: se
   apartan en `tandas/revisar/AAAA-MM-DD.json` y se ven con el usuario una a una. Ante la duda, marcarla.
 - La tarea 5, al terminar, ejecuta `python3 scripts/aprobar.py <hoy> --separar-revisar`, luego `scripts/version.sh`,
   commit y push, y avisa al usuario: cuántas han entrado y cuáles quedan para revisar juntos (con su motivo).
