@@ -3889,6 +3889,1072 @@
    },
    "dib": 1,
    "img": "<svg viewBox=\"0 0 320 150\" role=\"img\" aria-label=\"Esquema: de la casilla Tipos de shock salen tres casillas: Fallo en la bomba (corazón), Alteración de la canalización (vasos) y una casilla con interrogación\"><g font-size=\"11\" fill=\"#222\" text-anchor=\"middle\"><rect x=\"100\" y=\"8\" width=\"120\" height=\"26\" rx=\"4\" fill=\"#ffe1e1\" stroke=\"#b33\"/><text x=\"160\" y=\"25\">Tipos de shock</text><line x1=\"160\" y1=\"34\" x2=\"55\" y2=\"78\" stroke=\"#555\"/><line x1=\"160\" y1=\"34\" x2=\"160\" y2=\"78\" stroke=\"#555\"/><line x1=\"160\" y1=\"34\" x2=\"265\" y2=\"78\" stroke=\"#555\"/><rect x=\"5\" y=\"78\" width=\"100\" height=\"44\" rx=\"4\" fill=\"#eef\" stroke=\"#447\"/><text x=\"55\" y=\"96\">Fallo en la</text><text x=\"55\" y=\"111\">bomba (corazón)</text><rect x=\"110\" y=\"78\" width=\"100\" height=\"44\" rx=\"4\" fill=\"#eef\" stroke=\"#447\"/><text x=\"160\" y=\"96\">Alteración de la</text><text x=\"160\" y=\"111\">canalización (vasos)</text><rect x=\"215\" y=\"78\" width=\"100\" height=\"44\" rx=\"4\" fill=\"#fff6d6\" stroke=\"#a80\"/><text x=\"265\" y=\"106\" font-size=\"22\" font-weight=\"bold\">?</text></g></svg>"
+  },
+  {
+   "id": 1029,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la Ley 31/1995, para calificar un riesgo laboral desde el punto de vista de su gravedad, ¿qué se valora?",
+   "o": [
+    "Solo la severidad del daño que pueda producirse.",
+    "La probabilidad del daño y su severidad, conjuntamente.",
+    "El número de trabajadores expuestos y la duración."
+   ],
+   "c": 1,
+   "o4": "La frecuencia de los accidentes ocurridos ese año.",
+   "que": "«Riesgo laboral» es la posibilidad de que un trabajador sufra un daño derivado del trabajo. Su gravedad se califica valorando <mark>conjuntamente la probabilidad</mark> de que ocurra el daño <mark>y la severidad</mark> del mismo.",
+   "porque": "Un daño terrible pero casi imposible y uno leve pero casi seguro no se valoran igual: hacen falta los dos factores.",
+   "ojo": "No basta con lo grave que sería el daño: si no se mira también lo probable que es, la valoración está incompleta.",
+   "rec": "Gravedad = Probabilidad × Severidad (P × S).",
+   "f": "LPRL art. 4.2.º (pág. 4)",
+   "tq": "Gravedad de un riesgo laboral",
+   "ta": "Probabilidad + severidad, conjuntamente.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 1030,
+   "t": "PRL",
+   "d": "difícil",
+   "q": "Un trabajador va a quedar expuesto de forma inminente a un agente cancerígeno cuyos efectos tardarían años en aparecer. Según la LPRL, ¿hay riesgo grave e inminente?",
+   "o": [
+    "Sí, aunque los daños no se manifiesten de forma inmediata.",
+    "No, porque el daño no se produciría en un futuro inmediato.",
+    "Solo si el agente puede causar la muerte en el acto."
+   ],
+   "c": 0,
+   "o4": "Solo si lo declara así la Inspección de Trabajo.",
+   "que": "Con agentes que pueden causar daños graves, hay <mark>riesgo grave e inminente</mark> cuando es probable que se produzca en un futuro inmediato la <mark>exposición</mark>, <mark>aun cuando los daños no se manifiesten de forma inmediata</mark>.",
+   "porque": "Lo inminente es la exposición, no la enfermedad: una vez expuesto, el daño ya no se puede evitar.",
+   "ojo": "La opción tentadora confunde exposición inmediata con daño inmediato; la ley lo aclara expresamente.",
+   "rec": "Con agentes peligrosos: lo que cuenta es que la EXPOSICIÓN sea inminente.",
+   "f": "LPRL art. 4.4.º (pág. 4)",
+   "tq": "Riesgo grave e inminente con agentes nocivos",
+   "ta": "Exposición inminente, aunque el daño tarde.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     4
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 1031,
+   "t": "PRL",
+   "d": "normal",
+   "q": "¿Cómo define la LPRL el «equipo de trabajo»?",
+   "o": [
+    "Cualquier equipo llevado o sujetado por el trabajador para protegerse.",
+    "El conjunto de trabajadores asignados a una misma tarea.",
+    "Cualquier máquina, aparato, instrumento o instalación usada en el trabajo."
+   ],
+   "c": 2,
+   "o4": "Solo la maquinaria fija de un centro de trabajo.",
+   "que": "Para la Ley 31/1995, «equipo de trabajo» es <mark>cualquier máquina, aparato, instrumento o instalación utilizada en el trabajo</mark>.",
+   "porque": "La definición es amplia a propósito: así todas las herramientas quedan sujetas a las obligaciones de seguridad.",
+   "ojo": "«Llevado o sujetado por el trabajador para protegerse» es la definición de EPI, no de equipo de trabajo.",
+   "rec": "Equipo de trabajo = con lo que trabajo; EPI = lo que llevo puesto para protegerme.",
+   "f": "LPRL art. 4.6.º (pág. 4)",
+   "tq": "Definición de equipo de trabajo",
+   "ta": "Máquina, aparato, instrumento o instalación del trabajo.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 1032,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la LPRL, ¿qué se considera «daños derivados del trabajo»?",
+   "o": [
+    "Solo los accidentes ocurridos dentro del centro de trabajo.",
+    "Enfermedades, patologías o lesiones sufridas con motivo u ocasión del trabajo.",
+    "Solo las enfermedades profesionales reconocidas oficialmente."
+   ],
+   "c": 1,
+   "o4": "Las pérdidas materiales que sufre la empresa por un accidente.",
+   "que": "«Daños derivados del trabajo» son <mark>las enfermedades, patologías o lesiones sufridas con motivo u ocasión del trabajo</mark>.",
+   "porque": "La ley protege la salud del trabajador en sentido amplio, no solo frente a accidentes en el centro.",
+   "ojo": "No se limita a las enfermedades profesionales «de lista» ni a lo ocurrido dentro del centro.",
+   "rec": "Daño derivado = Enfermedad, Patología o Lesión (E-P-L) por el trabajo.",
+   "f": "LPRL art. 4.3.º (pág. 4)",
+   "tq": "Daños derivados del trabajo",
+   "ta": "Enfermedades, patologías o lesiones con motivo u ocasión del trabajo.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 1033,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la LPRL, ¿quién puede ordenar la paralización inmediata de unos trabajos por riesgo grave e inminente, a su propio juicio?",
+   "o": [
+    "El inspector de Trabajo y Seguridad Social.",
+    "El Instituto Nacional de Seguridad e Higiene en el Trabajo.",
+    "El servicio de prevención ajeno de la empresa."
+   ],
+   "c": 0,
+   "o4": "El Juzgado de lo Social de la provincia.",
+   "que": "Entre las funciones de la <mark>Inspección de Trabajo y Seguridad Social</mark> está <mark>ordenar la paralización inmediata de trabajos</mark> cuando, <mark>a juicio del inspector</mark>, haya riesgo grave e inminente.",
+   "porque": "Es quien vigila y controla el cumplimiento de la normativa de prevención, y puede actuar en el acto.",
+   "ojo": "El Instituto Nacional de Seguridad e Higiene presta asesoramiento técnico a la Inspección, pero no paraliza trabajos.",
+   "rec": "Inspector = Inspecciona y puede Interrumpir.",
+   "f": "LPRL art. 9.1.f (pág. 6)",
+   "tq": "¿Quién paraliza trabajos a su juicio?",
+   "ta": "El inspector de Trabajo y Seguridad Social.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     6
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 1034,
+   "t": "PRL",
+   "d": "normal",
+   "q": "En el ámbito de la Administración General del Estado, ¿quién presta a la Inspección de Trabajo la colaboración pericial y el asesoramiento técnico?",
+   "o": [
+    "Las Mutuas Colaboradoras con la Seguridad Social.",
+    "El Instituto Nacional de Seguridad e Higiene en el Trabajo.",
+    "Los Comités de Seguridad y Salud de las empresas."
+   ],
+   "c": 1,
+   "o4": "La Comisión Nacional de Seguridad y Salud en el Trabajo.",
+   "que": "Según la LPRL, en la Administración General del Estado la colaboración pericial y el asesoramiento técnico a la Inspección los presta el <mark>Instituto Nacional de Seguridad e Higiene en el Trabajo</mark> (hoy INSST).",
+   "porque": "La Inspección controla; el Instituto aporta los técnicos que saben medir y evaluar riesgos.",
+   "ojo": "Las Mutuas tienen prohibido actuar como servicios de prevención ajenos: no asesoran a la Inspección.",
+   "rec": "INSHT = el «técnico» de la Inspección.",
+   "f": "LPRL art. 9.2 (pág. 6)",
+   "tq": "Asesor técnico de la Inspección (AGE)",
+   "ta": "Instituto Nacional de Seguridad e Higiene en el Trabajo.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 1035,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la LPRL, ¿sobre qué accidentes de trabajo debe informar la Inspección de Trabajo a la autoridad laboral?",
+   "o": [
+    "Solo sobre los accidentes mortales.",
+    "Sobre todos, incluidos los leves sin baja.",
+    "Sobre los mortales, muy graves o graves, y otros si es necesario."
+   ],
+   "c": 2,
+   "o4": "Solo sobre los que haya denunciado el trabajador.",
+   "que": "La Inspección debe <mark>informar a la autoridad laboral</mark> sobre los accidentes de trabajo <mark>mortales, muy graves o graves</mark>, y sobre otros en que por sus características o por los afectados se considere necesario.",
+   "porque": "Son los que exigen investigar responsabilidades y, en su caso, proponer sanción.",
+   "ojo": "No se limita a los mortales, pero tampoco abarca por norma todos los leves.",
+   "rec": "Informe obligatorio: Mortal, Muy grave, Grave (las «tres M-G»).",
+   "f": "LPRL art. 9.1.d (pág. 5)",
+   "tq": "Accidentes que la Inspección informa a la autoridad",
+   "ta": "Mortales, muy graves o graves (y otros si procede).",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 1036,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la LPRL, la participación de empresarios y trabajadores en la política de prevención, ¿a través de quién se canaliza y qué carácter tiene?",
+   "o": [
+    "De las organizaciones más representativas; es principio básico.",
+    "De los Comités de Empresa; es una recomendación.",
+    "De la Inspección de Trabajo; es voluntaria."
+   ],
+   "c": 0,
+   "o4": "De los servicios de prevención; es optativa.",
+   "que": "La participación de empresarios y trabajadores, <mark>a través de las organizaciones empresariales y sindicales más representativas</mark>, en la planificación y control de la prevención es <mark>principio básico</mark> de la política de prevención de riesgos laborales.",
+   "porque": "Quien sufre los riesgos y quien organiza el trabajo deben estar en el diseño de las políticas públicas.",
+   "ojo": "Aquí se habla de la política pública (nivel de Administraciones), no de la participación dentro de cada empresa.",
+   "rec": "Política de prevención: patronal y sindicatos «más representativos» a la mesa.",
+   "f": "LPRL art. 12 (pág. 7)",
+   "tq": "Participación en la política de prevención",
+   "ta": "Organizaciones más representativas; principio básico.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 1037,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Una empresa concierta la prevención con un servicio de prevención ajeno. Según la LPRL, ¿qué ocurre con el deber del empresario?",
+   "o": [
+    "Pasa entero al servicio de prevención ajeno.",
+    "Se reparte a partes iguales con el servicio.",
+    "Sigue siendo suyo: el concierto lo complementa, no le exime."
+   ],
+   "c": 2,
+   "o4": "Queda suspendido mientras dure el concierto.",
+   "que": "Las obligaciones de los trabajadores, la atribución de funciones a trabajadores o servicios y el <mark>concierto con entidades especializadas complementan</mark> las acciones del empresario, <mark>sin eximirle</mark> del cumplimiento de su deber.",
+   "porque": "El responsable de la seguridad de sus trabajadores es siempre el empresario; contratar ayuda no le quita esa responsabilidad.",
+   "ojo": "Que trabaje con un servicio ajeno no traslada la responsabilidad: es la idea tentadora y la equivocada.",
+   "rec": "Se contrata la ayuda, no la responsabilidad.",
+   "f": "LPRL art. 14.4 (pág. 8)",
+   "tq": "Concierto con servicio ajeno y deber del empresario",
+   "ta": "Complementa, no exime.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     8
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 1038,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Un bombero (funcionario) incumple sus obligaciones en materia de prevención. Según la LPRL, ¿qué consideración tiene?",
+   "o": [
+    "Ninguna: la LPRL no se aplica a funcionarios.",
+    "Falta, según su régimen disciplinario.",
+    "Infracción administrativa grave sancionada por la Inspección."
+   ],
+   "c": 1,
+   "o4": "Delito contra la seguridad de los trabajadores.",
+   "que": "El incumplimiento por los trabajadores de sus obligaciones de prevención es <mark>incumplimiento laboral</mark> (Estatuto de los Trabajadores) o, para funcionarios y personal estatutario, <mark>falta</mark> según su <mark>normativa de régimen disciplinario</mark>.",
+   "porque": "La prevención obliga también al trabajador: velar por su seguridad y la de los demás.",
+   "ojo": "La LPRL sí se aplica a los funcionarios (con sus peculiaridades); no es la Inspección quien le sanciona.",
+   "rec": "Laboral → incumplimiento laboral; funcionario → falta disciplinaria.",
+   "f": "LPRL art. 29.3 (págs. 13-14)",
+   "tq": "Funcionario que incumple sus obligaciones de prevención",
+   "ta": "Falta según su régimen disciplinario.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     13,
+     14
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 1039,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Un trabajador ve una situación que, por motivos razonables, cree peligrosa. Según la LPRL, ¿a quién debe informar de inmediato?",
+   "o": [
+    "A su superior directo y a los designados o servicio de prevención.",
+    "Solo a la Inspección de Trabajo, por escrito y en el día.",
+    "Solo al Comité de Seguridad y Salud de su empresa."
+   ],
+   "c": 0,
+   "o4": "Al Delegado de Personal, por escrito y en 15 días.",
+   "que": "Es obligación del trabajador <mark>informar de inmediato a su superior jerárquico directo</mark> y a los <mark>trabajadores designados</mark> o, en su caso, al <mark>servicio de prevención</mark>, de cualquier situación que a su juicio, por motivos razonables, entrañe un riesgo.",
+   "porque": "Quien está más cerca del riesgo es quien antes puede hacer que se corrija.",
+   "ojo": "No dice «a la Inspección» ni «al Comité»: primero la línea de mando y la organización preventiva.",
+   "rec": "Veo riesgo → aviso YA a mi jefe directo y a prevención.",
+   "f": "LPRL art. 29.2.4.º (pág. 13)",
+   "tq": "¿A quién informa el trabajador de un riesgo?",
+   "ta": "Superior directo y designados / servicio de prevención.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     13
+    ]
+   }
+  },
+  {
+   "id": 1040,
+   "t": "PRL",
+   "d": "difícil",
+   "q": "Según la LPRL, ¿hasta cuántos trabajadores puede el empresario asumir él mismo la prevención si trabaja habitualmente en el centro y tiene capacidad?",
+   "o": [
+    "Hasta 6; o hasta 50 si tiene un único centro.",
+    "Hasta 25; o hasta 50 si tiene un único centro.",
+    "Hasta 10; o hasta 25 si tiene un único centro."
+   ],
+   "c": 2,
+   "o4": "Hasta 10, sin ninguna excepción.",
+   "que": "En empresas de <mark>hasta 10 trabajadores</mark> el empresario puede asumir personalmente la prevención si desarrolla su actividad de forma habitual en el centro y tiene la capacidad necesaria. Igual si ocupa <mark>hasta 25</mark>, siempre que la empresa tenga <mark>un único centro de trabajo</mark>.",
+   "porque": "En una empresa pequeña el propio empresario conoce de cerca los riesgos; más allá hace falta organización preventiva.",
+   "ojo": "50 es el umbral del Comité de Seguridad y Salud y 6 el de la participación a través de representantes: no lo confundas.",
+   "rec": "10 → yo mismo; 25 → yo mismo si solo tengo UN centro.",
+   "f": "LPRL art. 30.5 (pág. 14)",
+   "tq": "Empresario que asume la prevención",
+   "ta": "Hasta 10 trabajadores (25 con un único centro).",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     14
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 1041,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la LPRL, el empresario que NO ha concertado el servicio de prevención con una entidad ajena, ¿a qué debe someter su sistema de prevención?",
+   "o": [
+    "A la aprobación previa del Comité de Empresa.",
+    "A una auditoría o evaluación externa.",
+    "A la inspección anual de la Mutua."
+   ],
+   "c": 1,
+   "o4": "A un examen de la autoridad sanitaria cada dos años.",
+   "que": "El empresario que <mark>no hubiere concertado el servicio de prevención</mark> con una entidad especializada ajena debe someter su sistema de prevención al control de una <mark>auditoría o evaluación externa</mark>.",
+   "porque": "Si la prevención se hace con medios propios, alguien de fuera tiene que comprobar que funciona.",
+   "ojo": "Las Mutuas no pueden hacer funciones de servicio de prevención ajeno.",
+   "rec": "Prevención «en casa» → auditor «de fuera».",
+   "f": "LPRL art. 30.6 (pág. 14)",
+   "tq": "Prevención sin servicio ajeno",
+   "ta": "Auditoría o evaluación externa.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     14
+    ]
+   }
+  },
+  {
+   "id": 1042,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la LPRL, ¿qué carácter debe tener el servicio de prevención?",
+   "o": [
+    "Interdisciplinario.",
+    "Exclusivamente sanitario.",
+    "Exclusivamente técnico-industrial."
+   ],
+   "c": 0,
+   "o4": "Paritario entre empresa y trabajadores.",
+   "que": "El servicio de prevención tendrá <mark>carácter interdisciplinario</mark>, con medios apropiados y suficientes según el <mark>tamaño de la empresa</mark>, los <mark>tipos de riesgo</mark> y su <mark>distribución</mark> en la empresa.",
+   "porque": "Debe cubrir evaluación de riesgos, planes de emergencia, formación y vigilancia de la salud: hacen falta perfiles distintos.",
+   "ojo": "Paritario es el Comité de Seguridad y Salud (delegados y representantes de la empresa), no el servicio de prevención.",
+   "rec": "Servicio de prevención = varias disciplinas.",
+   "f": "LPRL art. 31.4 (pág. 15)",
+   "tq": "Carácter del servicio de prevención",
+   "ta": "Interdisciplinario.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     15
+    ]
+   }
+  },
+  {
+   "id": 1043,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la LPRL, ¿qué tienen prohibido las Mutuas Colaboradoras con la Seguridad Social?",
+   "o": [
+    "Asegurar los accidentes de trabajo.",
+    "Pagar prestaciones por incapacidad temporal.",
+    "Desarrollar las funciones de los servicios de prevención ajenos."
+   ],
+   "c": 2,
+   "o4": "Colaborar con la Inspección de Trabajo.",
+   "que": "Las <mark>Mutuas Colaboradoras con la Seguridad Social no pueden desarrollar las funciones de los servicios de prevención ajenos</mark>, ni participar con su patrimonio histórico en sociedades mercantiles cuyo objeto sea la prevención.",
+   "porque": "Se evita que quien cubre los accidentes sea también quien hace (y cobra) la prevención.",
+   "ojo": "La prohibición es sobre la prevención como negocio, no sobre su función aseguradora.",
+   "rec": "Mutua: cubre, pero no previene como servicio ajeno.",
+   "f": "LPRL art. 32 (págs. 15-16)",
+   "tq": "Prohibición de las Mutuas",
+   "ta": "No pueden ser servicio de prevención ajeno.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     15,
+     16
+    ]
+   }
+  },
+  {
+   "id": 1044,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la LPRL, ¿desde cuántos trabajadores la participación en prevención se canaliza a través de sus representantes?",
+   "o": [
+    "Desde 6 trabajadores.",
+    "Desde 11 trabajadores.",
+    "Desde 50 trabajadores."
+   ],
+   "c": 0,
+   "o4": "Desde 31 trabajadores.",
+   "que": "En las empresas o centros con <mark>seis o más trabajadores</mark>, la participación se canaliza <mark>a través de sus representantes</mark> y de la representación especializada (Delegados de Prevención).",
+   "porque": "Con pocos trabajadores pueden participar directamente; a partir de cierto tamaño hace falta representación.",
+   "ojo": "50 es la cifra del Comité de Seguridad y Salud; 6 es la de la participación a través de representantes.",
+   "rec": "6 o más → hablan mis representantes.",
+   "f": "LPRL art. 34.1 (pág. 17)",
+   "tq": "Participación a través de representantes",
+   "ta": "Desde 6 trabajadores.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     17
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 1045,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la LPRL, ¿en qué plazo deben los Delegados de Prevención emitir los informes que se les piden sobre decisiones del empresario?",
+   "o": [
+    "En 10 días; si no, la decisión queda suspendida.",
+    "En 15 días; pasado ese plazo, el empresario puede aplicar su decisión.",
+    "En 30 días; si no, decide la Inspección de Trabajo."
+   ],
+   "c": 1,
+   "o4": "En 15 días; si no, la decisión se entiende rechazada.",
+   "que": "Los informes de los Delegados de Prevención deben hacerse en <mark>quince días</mark>, o en el tiempo imprescindible si se trata de riesgos inminentes. <mark>Transcurrido el plazo sin informe, el empresario puede poner en práctica su decisión</mark>.",
+   "porque": "El informe es obligatorio pedirlo, pero no puede bloquear indefinidamente la decisión.",
+   "ojo": "Si el empresario rechaza una propuesta del Delegado, su negativa debe ser motivada.",
+   "rec": "Delegado: 15 días para informar; si calla, el empresario sigue.",
+   "f": "LPRL art. 36.3 (pág. 19)",
+   "tq": "Plazo de informe de los Delegados de Prevención",
+   "ta": "15 días; luego el empresario puede decidir.",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     19
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 1046,
+   "t": "PRL",
+   "d": "normal",
+   "q": "Según la LPRL, ¿qué deben hacer los fabricantes y suministradores de productos químicos usados en el trabajo?",
+   "o": [
+    "Formar personalmente a los trabajadores que los usen.",
+    "Envasarlos y etiquetarlos para que se identifiquen su contenido y riesgos.",
+    "Pedir autorización a la Inspección antes de cada venta."
+   ],
+   "c": 1,
+   "o4": "Retirarlos del mercado a los cinco años.",
+   "que": "Los fabricantes, importadores y suministradores de productos químicos deben <mark>envasarlos y etiquetarlos</mark> de forma que se conserven y manipulen con seguridad y se identifique claramente <mark>su contenido y sus riesgos</mark>.",
+   "porque": "Quien usa el producto tiene que saber, al verlo, qué es y qué peligro tiene.",
+   "ojo": "La información a los trabajadores en términos comprensibles debe garantizarla el empresario.",
+   "rec": "Químico en el trabajo = envase seguro + etiqueta clara.",
+   "f": "LPRL art. 41.1 (pág. 21)",
+   "tq": "Obligación de fabricantes de químicos",
+   "ta": "Envasar y etiquetar (contenido y riesgos).",
+   "src": {
+    "m": "Bloque I - Tema 08 - Ley 31-1995 Prevención de Riesgos Laborales",
+    "p": [
+     21
+    ]
+   }
+  },
+  {
+   "id": 1047,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo de Bomberos de Madrid, ¿puede un bombero alegar que desconocía la Orden del Cuerpo?",
+   "o": [
+    "Sí, si no estaba de guardia el día que se publicó.",
+    "No, en ningún caso; se entiende conocida por todos.",
+    "Sí, si no se colgó en el tablón de su Parque."
+   ],
+   "c": 1,
+   "o4": "Solo si estaba de baja médica.",
+   "que": "La <mark>Orden del Cuerpo se entiende conocida por todo el personal</mark>, sin que pueda alegarse <mark>en ningún caso</mark> su desconocimiento. Debe leerse, reiterarse o recordarse a diario al iniciar el turno de guardia o la jornada.",
+   "porque": "Por eso los mandos la leen cada día y hay un tablón de órdenes en todos los Parques.",
+   "ojo": "Lo del tablón y la lectura diaria son medios para darla a conocer, no condiciones para que obligue.",
+   "rec": "Orden del Cuerpo: «no la conocía» no vale nunca.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 37 (pág. 11)",
+   "tq": "¿Se puede alegar desconocer la Orden del Cuerpo?",
+   "ta": "No, en ningún caso.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 1048,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, ¿en qué forma deben darse preferentemente las órdenes particulares?",
+   "o": [
+    "Por escrito, salvo durante la prestación de servicios.",
+    "Siempre de palabra, para ganar rapidez.",
+    "Por escrito siempre, incluso en el siniestro."
+   ],
+   "c": 0,
+   "o4": "Por radio, con confirmación posterior.",
+   "que": "Las <mark>órdenes particulares</mark> adoptarán <mark>preferentemente la forma escrita, salvo durante la prestación de servicios</mark>, y se dirigen al mando de la dependencia afectada o directamente al interesado si son individuales.",
+   "porque": "En un siniestro no hay tiempo para escribir; fuera de él, el escrito deja constancia y evita malentendidos.",
+   "ojo": "Los absolutos («siempre», «incluso en el siniestro») son la trampa.",
+   "rec": "Orden particular: papel en el Parque, voz en el siniestro.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 39.2 (pág. 11)",
+   "tq": "Forma de las órdenes particulares",
+   "ta": "Escrita, salvo durante la prestación de servicios.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 1049,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Un Sargento quiere dar una orden particular de especial trascendencia a su dotación. Según el Reglamento, ¿qué necesita, salvo urgencia extrema?",
+   "o": [
+    "La aprobación de la Junta Municipal.",
+    "Nada: cualquier escalón de mando puede darla libremente.",
+    "El conocimiento y la anuencia de su superior inmediato."
+   ],
+   "c": 2,
+   "o4": "Que la publique la Orden del Cuerpo.",
+   "que": "Las órdenes particulares pueden emanar de la Dirección o de cualquier escalón de mando. Si vienen de un escalón y tienen <mark>especial trascendencia</mark>, hacen falta el <mark>conocimiento y la anuencia del superior inmediato</mark>, salvo que el carácter muy urgente lo impida.",
+   "porque": "Así el mando superior sabe y respalda lo que se ordena en su línea.",
+   "ojo": "Puede darla un mando intermedio, pero no «libremente» si es de especial trascendencia.",
+   "rec": "Orden importante desde abajo → que lo sepa y lo apruebe el de arriba.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 39.1 (pág. 11)",
+   "tq": "Orden particular de especial trascendencia",
+   "ta": "Conocimiento y anuencia del superior inmediato.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     11
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 1050,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, ¿qué partes deben formularse SIEMPRE por escrito?",
+   "o": [
+    "Solo los partes de relevo y los de avería.",
+    "Los disciplinarios y los de siniestro.",
+    "Ninguno: basta el parte verbal ampliado después."
+   ],
+   "c": 1,
+   "o4": "Solo los partes extraordinarios.",
+   "que": "Se formulan <mark>siempre por escrito</mark> los partes <mark>susceptibles de producir actuaciones disciplinarias</mark> y los relativos a <mark>siniestros</mark> (parte de siniestro), además de otros que fija el Reglamento.",
+   "porque": "Ambos pueden tener consecuencias (sanciones, responsabilidades) y necesitan constancia.",
+   "ojo": "«Parte» es toda comunicación a un superior sobre novedades o hechos del Servicio; no todos son escritos.",
+   "rec": "Sanción o siniestro → por escrito.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 41 (pág. 11)",
+   "tq": "Partes siempre por escrito",
+   "ta": "Los disciplinarios y los de siniestro.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 1051,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Un hecho exige una decisión urgente de la superioridad. Según el Reglamento, ¿cómo se cursa ese parte?",
+   "o": [
+    "Por conducto regular, escalón a escalón.",
+    "Al terminar la guardia, junto con el parte de relevo.",
+    "Directamente al escalón de mando que deba conocerlo y pueda resolver."
+   ],
+   "c": 2,
+   "o4": "Siempre al Director del Servicio.",
+   "que": "Son <mark>partes extraordinarios</mark> los de hechos que exigen una decisión urgente o deben conocerse de inmediato. Se remiten <mark>directamente al escalón de mando que deba conocer el hecho</mark> y tenga atribuciones para resolver. Los <mark>ordinarios</mark> van <mark>por conducto regular</mark>.",
+   "porque": "Si el asunto es urgente, pasar por todos los escalones haría perder un tiempo precioso.",
+   "ojo": "No es «siempre al Director»: es a quien corresponda resolver.",
+   "rec": "Extraordinario = Exprés, directo a quien decide.",
+   "f": "Reglamento del Cuerpo de Bomberos, arts. 42-43 (pág. 11)",
+   "tq": "¿Cómo se cursa un parte extraordinario?",
+   "ta": "Directo al escalón que pueda resolver.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     11
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 1052,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, ¿a quién deben dirigirse las comunicaciones oficiales?",
+   "o": [
+    "A la autoridad o mando correspondiente, no a la persona.",
+    "A la persona que ocupa el cargo, con su nombre.",
+    "Siempre al Director de Servicios."
+   ],
+   "c": 0,
+   "o4": "Al Jefe de Guardia, que las reparte.",
+   "que": "Reglas de la correspondencia oficial: <mark>cada comunicación trata de un solo asunto</mark> y se dirige <mark>a la autoridad o mando correspondiente, y no a la persona</mark> que lo ejerza; antes de la firma, la antefirma; los informes, terminantes y breves.",
+   "porque": "El cargo permanece aunque cambie la persona: la comunicación sigue siendo válida.",
+   "ojo": "El Director da el enterado, conforme o visto bueno para que un documento salga del Departamento, pero no todo se le dirige a él.",
+   "rec": "Se escribe al cargo, no a la cara.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 44 (pág. 12)",
+   "tq": "¿A quién se dirigen las comunicaciones oficiales?",
+   "ta": "Al cargo (autoridad o mando), no a la persona.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     12
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 1053,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, ¿con qué frecuencia mínima debe el Director revisar y autorizar con su firma los libros de las dependencias?",
+   "o": [
+    "Una vez al mes.",
+    "Una vez al año.",
+    "Una vez cada seis meses."
+   ],
+   "c": 1,
+   "o4": "Una vez cada dos años.",
+   "que": "Los libros de cada dependencia los diligencia el Jefe del Departamento y deben ser <mark>revisados y autorizados con la firma del Director, al menos una vez al año</mark>.",
+   "porque": "Es un control periódico de que se deja constancia de órdenes, partes y comunicaciones.",
+   "ojo": "Quien los diligencia es el Jefe del Departamento; quien los revisa y firma, el Director.",
+   "rec": "Libros: firma del Director, 1 vez al año.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 47.2 (pág. 12)",
+   "tq": "Revisión de los libros por el Director",
+   "ta": "Al menos una vez al año.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     12
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 1054,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Tras un siniestro, ¿quién toma los datos básicos para el parte de siniestro y quién lo redacta, según el Reglamento?",
+   "o": [
+    "Los toma el mando y lo redacta el Bombero conductor.",
+    "Los toma y lo redacta el Jefe de Guardia.",
+    "Los toma el de menor antigüedad y lo redacta quien estuvo al mando."
+   ],
+   "c": 2,
+   "o4": "Los toma el Cabo y lo redacta el de mayor antigüedad.",
+   "que": "El componente <mark>de menor antigüedad toma los datos básicos</mark> de la actuación. La <mark>redacción material</mark> la hace <mark>quien estuvo al mando</mark> de la dotación o dotaciones; el parte llega a la Dirección a través del mando responsable de la guardia del Parque.",
+   "porque": "Reparte el trabajo: el más nuevo recoge datos (y aprende) y el responsable de la actuación firma lo que pasó.",
+   "ojo": "El Jefe de Guardia hace su propio parte con las novedades de todo el turno, no el de cada siniestro.",
+   "rec": "Datos: el más nuevo; redacción: el que mandaba.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 50 (págs. 12-13)",
+   "tq": "Parte de siniestro: datos y redacción",
+   "ta": "Datos el de menor antigüedad; redacta el mando.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     12,
+     13
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 1055,
+   "t": "Reglamento Bomberos",
+   "d": "difícil",
+   "q": "La dotación vuelve de un siniestro diez minutos antes del cambio de turno. Según el Reglamento, ¿cuándo debe hacerse el parte de siniestro?",
+   "o": [
+    "Nada más regresar: el fin del turno no es circunstancia excepcional.",
+    "Lo puede hacer el turno entrante con los datos recogidos.",
+    "En las 24 horas siguientes, al volver a entrar de guardia."
+   ],
+   "c": 0,
+   "o4": "Cuando lo pida la Dirección del Servicio.",
+   "que": "Los partes de siniestro deben confeccionarse <mark>nada más regresar del siniestro</mark>, salvo circunstancias excepcionales, <mark>no entendiéndose por tal la simple finalización del turno de guardia</mark>.",
+   "porque": "Los datos se olvidan y quien sabe lo que pasó es quien estuvo allí.",
+   "ojo": "La tentación es pensar que el cambio de turno justifica dejarlo: el Reglamento lo excluye expresamente.",
+   "rec": "Parte de siniestro: al volver, aunque se acabe el turno.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 50.4 (pág. 13)",
+   "tq": "¿Cuándo se hace el parte de siniestro?",
+   "ta": "Nada más regresar (el fin de turno no excusa).",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     13
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 1056,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Un Bombero conductor detecta síntomas de avería en su vehículo. Según el Reglamento, ¿a quién da parte inmediato?",
+   "o": [
+    "Al Jefe de Guardia y al taller municipal.",
+    "Al Cabo de Conductores y sucesivamente al jefe del Parque.",
+    "Solo al mando de su dotación, al terminar la guardia."
+   ],
+   "c": 1,
+   "o4": "Directamente al Director del Servicio.",
+   "que": "El Bombero conductor que detecte una avería o sus síntomas debe dar <mark>parte inmediato al Cabo de Conductores y sucesivamente al jefe del Parque</mark>. Además, a diario rellena el parte de cada vehículo usado (kilometraje, lubricante y carburante).",
+   "porque": "Un vehículo de emergencia averiado tiene que conocerse enseguida para darlo de baja o repararlo.",
+   "ojo": "«Al terminar la guardia» choca con «inmediato».",
+   "rec": "Avería: Cabo de Conductores → jefe del Parque.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 52.2 (pág. 13)",
+   "tq": "Avería en un vehículo: ¿a quién se da parte?",
+   "ta": "Cabo de Conductores y luego jefe del Parque.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     13
+    ]
+   }
+  },
+  {
+   "id": 1057,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, ¿cuántas copias lleva el parte de un accidente o colisión de un vehículo del Servicio?",
+   "o": [
+    "Por duplicado.",
+    "Por cuadruplicado.",
+    "Por triplicado."
+   ],
+   "c": 2,
+   "o4": "Una sola copia, para la Dirección.",
+   "que": "De los accidentes o colisiones que sufra el vehículo, en servicio o en otras circunstancias, se da <mark>parte por triplicado</mark> en el impreso existente para ello.",
+   "porque": "Varias copias porque el accidente afecta a varios destinatarios (Servicio, seguro, expediente).",
+   "ojo": "No confundir con el parte diario del vehículo (kilometraje y consumos).",
+   "rec": "Choque = parte «tri»: 3 copias.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 52.3 (pág. 13)",
+   "tq": "Copias del parte de accidente de vehículo",
+   "ta": "Por triplicado.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     13
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 1058,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, ¿qué uniforme NO es obligado que exista, sino que «podrá existir»?",
+   "o": [
+    "El de trabajo o de Parque.",
+    "El de gala o de paseo.",
+    "El de ataque a fuego."
+   ],
+   "c": 1,
+   "o4": "Ninguno: todos son obligatorios.",
+   "que": "Existirá un <mark>uniforme de trabajo o de Parque</mark> y otro de <mark>ataque a fuego</mark>; además, <mark>podrá existir</mark> uno <mark>de gala o de paseo</mark>. También se regula la uniformidad de verano y de invierno.",
+   "porque": "Los de trabajo y fuego son imprescindibles para el servicio; el de gala es para actos.",
+   "ojo": "Las únicas diferencias exteriores admitidas en la uniformidad son las de escala, grado y especialidad.",
+   "rec": "Trabajo y Fuego: fijos. Gala: «puede».",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 54.3 (pág. 13)",
+   "tq": "Uniforme que «podrá existir»",
+   "ta": "El de gala o de paseo.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     13
+    ]
+   }
+  },
+  {
+   "id": 1059,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, ¿quién desempeña el puesto de Jefe de Guardia, responsable máximo de la guardia en todo Madrid?",
+   "o": [
+    "Un Oficial titulado del Departamento.",
+    "El Suboficial más antiguo de servicio.",
+    "El jefe de Zona del Parque Central."
+   ],
+   "c": 0,
+   "o4": "El Director de Servicios.",
+   "que": "Durante la guardia hay para todo Madrid un responsable máximo, el <mark>Jefe de Guardia</mark>, puesto que desempeña <mark>un Oficial titulado del Departamento</mark>. Cada Parque o grupo de Parques está bajo un jefe de Zona, que es el jefe del Parque.",
+   "porque": "Organiza y dirige la actuación en los siniestros del término municipal durante su servicio.",
+   "ojo": "El jefe de Zona manda en su Parque, no en toda la ciudad.",
+   "rec": "Jefe de Guardia = Oficial titulado; Jefe de Zona = jefe del Parque.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 60 (pág. 14)",
+   "tq": "¿Quién es el Jefe de Guardia?",
+   "ta": "Un Oficial titulado del Departamento.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     14
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 1060,
+   "t": "Reglamento Bomberos",
+   "d": "difícil",
+   "q": "En plena guardia, un bombero tiene que salir por un asunto familiar grave y urgente de duración imprevisible, y no se localiza al Jefe de Guardia. Según el Reglamento, ¿qué se hace?",
+   "o": [
+    "No puede salir hasta que se localice al Jefe de Guardia.",
+    "Puede salir sin autorización y justificarlo después.",
+    "Le autoriza el mando del Parque y luego se comunica al Jefe de Guardia."
+   ],
+   "c": 2,
+   "o4": "Le autoriza el compañero más antiguo de la dotación.",
+   "que": "Nadie puede ausentarse sin autorización. Para asuntos menores autoriza el <mark>mando del Parque</mark> por tiempo determinado; para asuntos personales y familiares de duración imprevisible, el <mark>Jefe de Guardia</mark>. En casos <mark>graves y urgentes</mark> sin poder localizarle, autoriza el <mark>mando del Parque</mark>, con <mark>comunicación posterior</mark> al Jefe de Guardia.",
+   "porque": "Equilibra la necesidad del bombero con que el Servicio sepa en todo momento con quién cuenta.",
+   "ojo": "La salida sin autorización está prohibida; el abandono del puesto sin permiso es conducta especialmente perjudicial.",
+   "rec": "Menor → Parque. Imprevisible → Jefe de Guardia. Urgente sin Jefe → Parque y aviso.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 69.1 (págs. 15-16)",
+   "tq": "Ausencia urgente sin localizar al Jefe de Guardia",
+   "ta": "Autoriza el mando del Parque; luego se comunica.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     15,
+     16
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 1061,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, ¿qué años en acto de servicio se significan con una distinción especial?",
+   "o": [
+    "Veinticinco años.",
+    "Veinte años.",
+    "Treinta años."
+   ],
+   "c": 0,
+   "o4": "Quince años.",
+   "que": "De acuerdo con el Acuerdo-Convenio, <mark>los veinticinco años en acto de servicio</mark> se significan con una <mark>distinción especial</mark>, para reconocer la capacidad, dedicación y riesgo.",
+   "porque": "Es el reconocimiento a toda una carrera de servicio.",
+   "ojo": "Las distinciones en el expediente se valoran en los ascensos, sin cambiar sus reglas generales.",
+   "rec": "25 años = «bodas de plata» con el Cuerpo.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 75 (pág. 16)",
+   "tq": "Años para la distinción especial",
+   "ta": "25 años en acto de servicio.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     16
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 1062,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, ¿quién otorga el título de Bombero Honorario?",
+   "o": [
+    "El Alcalde, a propuesta del Jefe de Guardia.",
+    "El Ayuntamiento Pleno, a propuesta del Cuerpo.",
+    "El Director del Servicio, por resolución."
+   ],
+   "c": 1,
+   "o4": "La Junta de Gobierno de la Comunidad de Madrid.",
+   "que": "El título de <mark>Bombero Honorario</mark> se otorga <mark>por acuerdo del Ayuntamiento Pleno</mark> a personas o instituciones que destaquen por su ayuda y colaboración con el Cuerpo, que tiene <mark>capacidad de proposición</mark>.",
+   "porque": "Es una distinción de la ciudad, por eso la da el máximo órgano municipal.",
+   "ojo": "El Cuerpo propone, pero no otorga.",
+   "rec": "Honorario → Pleno (el Cuerpo solo propone).",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 77 (págs. 16-17)",
+   "tq": "¿Quién otorga el título de Bombero Honorario?",
+   "ta": "El Ayuntamiento Pleno (propone el Cuerpo).",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     16,
+     17
+    ]
+   }
+  },
+  {
+   "id": 1063,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, ¿en qué caso NO se hace cargo el Ayuntamiento de la defensa y las fianzas de un bombero?",
+   "o": [
+    "Cuando el bombero esté de guardia.",
+    "Cuando el asunto sea penal.",
+    "Cuando la propia Corporación sea parte contraria."
+   ],
+   "c": 2,
+   "o4": "Cuando el bombero tenga menos de cinco años de antigüedad.",
+   "que": "El Ayuntamiento asume la <mark>representación, defensa y constitución de fianzas</mark> de los bomberos cuando sea consecuencia del ejercicio de las funciones de su cargo y <mark>la Corporación no sea parte contraria</mark>.",
+   "porque": "No puede defender a quien litiga contra el propio Ayuntamiento.",
+   "ojo": "Los bomberos responden administrativa, civil y penalmente; el apoyo cubre también lo penal si viene del cargo.",
+   "rec": "Defensa municipal… salvo pleito contra el Ayuntamiento.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 72.2 (pág. 16)",
+   "tq": "Defensa y fianzas a cargo del Ayuntamiento",
+   "ta": "Salvo que la Corporación sea parte contraria.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     16
+    ]
+   }
+  },
+  {
+   "id": 1064,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento, ¿cuál de estas NO figura entre las conductas especialmente perjudiciales para el Servicio?",
+   "o": [
+    "El abandono del puesto de trabajo sin permiso.",
+    "No asistir sin justificación al turno de guardia.",
+    "Pedir el cambio de turno con un compañero."
+   ],
+   "c": 2,
+   "o4": "Incumplir o alterar las órdenes dadas en un siniestro.",
+   "que": "A título orientativo son <mark>conductas especialmente perjudiciales</mark>: la <mark>no asistencia injustificada</mark> a la guardia, el <mark>abandono del puesto</mark> sin permiso, <mark>incumplir o alterar órdenes en siniestro</mark>, incumplir las funciones de cada categoría y <mark>consumir productos que generen intoxicación</mark>.",
+   "porque": "Todas ponen en peligro la respuesta del Servicio en una emergencia.",
+   "ojo": "El régimen disciplinario es el general de los funcionarios; esta lista es solo orientativa.",
+   "rec": "Faltar, irse, desobedecer en siniestro, no cumplir funciones, intoxicarse.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 73 (pág. 16)",
+   "tq": "Conductas especialmente perjudiciales",
+   "ta": "Faltar, abandonar, alterar órdenes, incumplir funciones, intoxicarse.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     16
+    ]
+   }
+  },
+  {
+   "id": 1065,
+   "t": "Reglamento Bomberos",
+   "d": "difícil",
+   "q": "Un bombero libre de servicio auxilia a los heridos de un accidente. Según el Reglamento, ¿tiene la consideración de agente de la autoridad municipal?",
+   "o": [
+    "No: solo la tiene en acto de servicio.",
+    "Sí, si acredita su condición con el carné de identidad municipal.",
+    "Sí, siempre, por ser funcionario del Cuerpo."
+   ],
+   "c": 1,
+   "o4": "Solo si lo autoriza después el Jefe de Guardia.",
+   "que": "En acto de servicio, los bomberos son <mark>agentes de la autoridad municipal</mark>. También lo son <mark>fuera de servicio</mark> cuando intervienen eventual y provisionalmente para prevenir o socorrer un siniestro, <mark>siempre que acrediten su condición con el carné de identidad municipal</mark>.",
+   "porque": "Sin identificarse, nadie puede saber que actúa como agente de la autoridad.",
+   "ojo": "No es «siempre» ni «solo en servicio»: la clave es la acreditación.",
+   "rec": "Fuera de servicio: carné en mano = agente de la autoridad.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 78 (pág. 17)",
+   "tq": "Bombero fuera de servicio: ¿agente de la autoridad?",
+   "ta": "Sí, si acredita su condición con el carné municipal.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     17
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 1066,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "Según el Reglamento del Cuerpo, al regresar de un servicio, ¿cómo circulan los vehículos?",
+   "o": [
+    "Con señales luminosas, salvo orden expresa de la Jefatura de guardia.",
+    "Con señales luminosas y acústicas, como a la ida.",
+    "Sin ninguna señal, siempre."
+   ],
+   "c": 0,
+   "o4": "Con señales acústicas solo en los cruces.",
+   "que": "A la ida se usan <mark>señales luminosas y acústicas</mark>. <mark>Al regreso se circula con las señales luminosas, salvo orden expresa de la Jefatura de guardia</mark>.",
+   "porque": "A la vuelta no hay urgencia que justifique las acústicas, pero se mantiene la visibilidad.",
+   "ojo": "Aun con preferencia, el conductor debe cumplir las normas de circulación y extremar las precauciones en cruces y semáforos.",
+   "rec": "Ida: luz + sonido. Vuelta: solo luz.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 79.3 (pág. 17)",
+   "tq": "Señales al regresar del servicio",
+   "ta": "Luminosas, salvo orden de la Jefatura de guardia.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     17
+    ]
+   }
+  },
+  {
+   "id": 1067,
+   "t": "Reglamento Bomberos",
+   "d": "difícil",
+   "q": "En un siniestro, ¿quién puede disponer la evacuación de un edificio y cortar el gas, y quién puede recabar la presencia de otros cuerpos de seguridad?",
+   "o": [
+    "Las dos cosas, el Jefe de la dotación del siniestro.",
+    "Las dos cosas, las autoridades municipales superiores.",
+    "1.º el Jefe de dotación; 2.º las autoridades superiores."
+   ],
+   "c": 2,
+   "o4": "Lo primero, la Policía Municipal; lo segundo, el Jefe de Guardia.",
+   "que": "El <mark>Jefe de la dotación</mark>, si lo juzga necesario, puede disponer la <mark>evacuación</mark> de edificios, la <mark>interrupción de agua, gas o electricidad</mark> y zonas de prohibición de paso (con posible revisión posterior). Las <mark>autoridades municipales superiores</mark> son las competentes para <mark>recabar otras fuerzas o Cuerpos de seguridad</mark>.",
+   "porque": "Las decisiones técnicas inmediatas son del que está en el siniestro; movilizar otros cuerpos corresponde a la autoridad.",
+   "ojo": "La Policía Municipal mantiene el cordón de seguridad siguiendo las instrucciones de los mandos de Bomberos.",
+   "rec": "Dentro (evacuar, cortar): Jefe de dotación. Fuera (otros cuerpos): autoridades superiores.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 81.3 y 81.5 (pág. 17)",
+   "tq": "Evacuar/cortar suministros y recabar otros cuerpos",
+   "ta": "Jefe de dotación / autoridades municipales superiores.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     17
+    ]
+   }
+  },
+  {
+   "id": 1068,
+   "t": "Reglamento Bomberos",
+   "d": "normal",
+   "q": "En el esquema, el siniestro está acotado con los dos cordones del Reglamento. ¿Qué se establece en la zona marcada con interrogación?",
+   "o": [
+    "Los servicios sanitarios y demás servicios auxiliares.",
+    "Solo los bomberos y el personal que colabora en las operaciones.",
+    "Los medios de comunicación y los curiosos."
+   ],
+   "c": 0,
+   "o4": "Las dotaciones de ataque al fuego.",
+   "que": "El siniestro se acota con <mark>dos cordones</mark>. En el <mark>interno</mark> entran exclusivamente los bomberos y el personal requerido para colaborar en las operaciones, y las órdenes las dan solo los mandos de Bomberos. El <mark>externo</mark>, total o parcialmente concéntrico, alberga los <mark>servicios sanitarios y demás servicios auxiliares</mark>.",
+   "porque": "Así quien ataca el siniestro trabaja sin estorbos y el apoyo está cerca pero fuera de la zona de peligro.",
+   "ojo": "La zona 1 (interna) es la de los bomberos; la interrogación está en la externa.",
+   "rec": "Dentro: los que apagan. Fuera: los que curan y apoyan.",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 82.1 (págs. 17-18)",
+   "tq": "Cordón externo del siniestro",
+   "ta": "Servicios sanitarios y auxiliares.",
+   "src": {
+    "m": "Bloque II - Tema 29 - Reglamento del Cuerpo de Bomberos del Ayuntamiento de Madrid",
+    "p": [
+     17,
+     18
+    ]
+   },
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 320 200\" role=\"img\" aria-label=\"Dos zonas concéntricas alrededor de un siniestro: la interior marcada con 1 y la exterior marcada con interrogación\"><g font-size=\"11\" fill=\"#222\" text-anchor=\"middle\"><ellipse cx=\"160\" cy=\"100\" rx=\"150\" ry=\"90\" fill=\"#fff6d6\" stroke=\"#a80\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><ellipse cx=\"160\" cy=\"100\" rx=\"85\" ry=\"50\" fill=\"#ffe1e1\" stroke=\"#b33\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"160\" cy=\"100\" r=\"16\" fill=\"#e55\"/><text x=\"160\" y=\"104\" fill=\"#fff\" font-size=\"10\">Fuego</text><text x=\"160\" y=\"70\" font-size=\"13\" font-weight=\"bold\">1</text><text x=\"160\" y=\"32\" font-size=\"20\" font-weight=\"bold\">?</text><text x=\"270\" y=\"190\" font-size=\"10\">Cordón externo</text><text x=\"160\" y=\"158\" font-size=\"10\">Cordón interno</text></g></svg>"
   }
  ],
  "glosario": [
@@ -4262,6 +5328,153 @@
    "d": "Incapacidad del corazón para bombear en cada latido la sangre suficiente; la sangre se acumula y produce edemas (en el pulmón, disnea).",
    "tema": "Patología cardiovascular",
    "f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 5",
+   "solo": 1
+  },
+  {
+   "t": "Riesgo laboral",
+   "a": [
+    "riesgo laboral"
+   ],
+   "d": "Posibilidad de que un trabajador sufra un daño derivado del trabajo; su gravedad se valora con la probabilidad y la severidad del daño, conjuntamente.",
+   "tema": "PRL",
+   "f": "LPRL art. 4 (pág. 4)",
+   "solo": 1
+  },
+  {
+   "t": "Equipo de trabajo",
+   "a": [
+    "equipo de trabajo"
+   ],
+   "d": "Cualquier máquina, aparato, instrumento o instalación utilizada en el trabajo.",
+   "tema": "PRL",
+   "f": "LPRL art. 4 (pág. 4)",
+   "solo": 1
+  },
+  {
+   "t": "Daños derivados del trabajo",
+   "a": [
+    "daños derivados del trabajo"
+   ],
+   "d": "Enfermedades, patologías o lesiones sufridas con motivo u ocasión del trabajo.",
+   "tema": "PRL",
+   "f": "LPRL art. 4 (pág. 4)",
+   "solo": 1
+  },
+  {
+   "t": "Inspección de Trabajo y Seguridad Social",
+   "a": [
+    "inspección de trabajo",
+    "inspector de trabajo"
+   ],
+   "d": "Órgano que vigila y controla el cumplimiento de la normativa de prevención; puede ordenar la paralización inmediata de trabajos por riesgo grave e inminente.",
+   "tema": "PRL",
+   "f": "LPRL art. 9 (págs. 5-6)",
+   "solo": 1
+  },
+  {
+   "t": "Servicio de prevención",
+   "a": [
+    "servicio de prevención",
+    "servicios de prevención"
+   ],
+   "d": "Conjunto de medios humanos y materiales para las actividades preventivas; de carácter interdisciplinario. Puede ser propio o ajeno.",
+   "tema": "PRL",
+   "f": "LPRL art. 31 (pág. 15)",
+   "solo": 1
+  },
+  {
+   "t": "Auditoría del sistema de prevención",
+   "a": [
+    "auditoría",
+    "evaluación externa"
+   ],
+   "d": "Control externo obligatorio para el empresario que no ha concertado la prevención con un servicio ajeno.",
+   "tema": "PRL",
+   "f": "LPRL art. 30.6 (pág. 14)",
+   "solo": 1
+  },
+  {
+   "t": "Mutuas Colaboradoras con la Seguridad Social",
+   "a": [
+    "mutua",
+    "mutuas"
+   ],
+   "d": "No pueden desarrollar las funciones de los servicios de prevención ajenos.",
+   "tema": "PRL",
+   "f": "LPRL art. 32 (págs. 15-16)",
+   "solo": 1
+  },
+  {
+   "t": "Orden del Cuerpo",
+   "a": [
+    "orden del cuerpo"
+   ],
+   "d": "Orden general del Cuerpo de Bomberos; se entiende conocida por todos, sin poder alegar su desconocimiento, y se lee a diario al iniciar el turno.",
+   "tema": "Reglamento Bomberos",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 37 (pág. 11)",
+   "solo": 1
+  },
+  {
+   "t": "Parte",
+   "a": [
+    "parte",
+    "partes"
+   ],
+   "d": "Comunicación dirigida a un superior para ponerle al corriente de novedades o hechos del Servicio. Ordinario (conducto regular) o extraordinario (directo a quien resuelve).",
+   "tema": "Reglamento Bomberos",
+   "f": "Reglamento del Cuerpo de Bomberos, arts. 40-43 (pág. 11)",
+   "solo": 1
+  },
+  {
+   "t": "Parte de siniestro",
+   "a": [
+    "parte de siniestro"
+   ],
+   "d": "Parte escrito de cada salida a siniestro: datos los toma el de menor antigüedad y lo redacta quien estuvo al mando, nada más regresar.",
+   "tema": "Reglamento Bomberos",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 50 (págs. 12-13)",
+   "solo": 1
+  },
+  {
+   "t": "Jefe de Guardia",
+   "a": [
+    "jefe de guardia"
+   ],
+   "d": "Responsable máximo de la guardia en todo Madrid; puesto desempeñado por un Oficial titulado del Departamento.",
+   "tema": "Reglamento Bomberos",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 60 (pág. 14)",
+   "solo": 1
+  },
+  {
+   "t": "Bombero Honorario",
+   "a": [
+    "bombero honorario"
+   ],
+   "d": "Título que otorga el Ayuntamiento Pleno, a propuesta del Cuerpo, a personas o instituciones que destacan por su ayuda al Cuerpo.",
+   "tema": "Reglamento Bomberos",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 77 (págs. 16-17)",
+   "solo": 1
+  },
+  {
+   "t": "Agente de la autoridad municipal",
+   "a": [
+    "agente de la autoridad",
+    "agentes de la autoridad"
+   ],
+   "d": "Condición de los bomberos en acto de servicio y, fuera de él, cuando intervienen en un siniestro acreditándose con el carné municipal.",
+   "tema": "Reglamento Bomberos",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 78 (pág. 17)",
+   "solo": 1
+  },
+  {
+   "t": "Cordones del siniestro",
+   "a": [
+    "cordón",
+    "cordones"
+   ],
+   "d": "Interno: solo bomberos y personal que colabora (órdenes solo de mandos de Bomberos). Externo: servicios sanitarios y auxiliares.",
+   "tema": "Reglamento Bomberos",
+   "f": "Reglamento del Cuerpo de Bomberos, art. 82 (págs. 17-18)",
    "solo": 1
   }
  ]
