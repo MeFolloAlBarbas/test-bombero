@@ -119,8 +119,28 @@ Reparto aproximado de las 90 (para priorizar temas; nunca copiar sus preguntas):
   y, según el tipo, `cifra`, `ex`, `int`, `dib` + `img` (SVG propio, nunca imágenes de los manuales).
 - Ids: a partir del mayor id de preguntas.json y del lote pendiente.
 
+## Preguntas de APLICACIÓN (campo `apl: 1`) — PRIORIDAD (usuario, 27/11/2026: «son las que más tenemos que trabajar»)
+Patrón del examen real (preguntas 20, 21, 26, 77 y 88): no preguntan un dato, sino **aplicar un concepto a una situación
+concreta**, y la opción que suena bien es la equivocada. Variantes:
+- **Concepto descrito en un caso**: no se pide la definición, sino reconocerla en una escena (p. ej. qué pasa con el flujo
+  de gases en una ventilación defensiva).
+- **Límite físico**: el caso choca con una ley física y la opción «reforzada» es la trampa (p. ej. aspirar agua de un pozo
+  de 20 m: ninguna bomba en superficie aspira más de ~10 m, tampoco dos en serie; la correcta es la bomba sumergida).
+- **Principio + trampa de unidades**: aplicar una ley con datos en unidades mezcladas (p. ej. empuje = peso del barco
+  que flota, con N, kg·m/s² y kg).
+- **Escenario de un tema, respuesta en otro**: intervención (colector con gases) cuya respuesta está en la instalación
+  (cierres hidráulicos del saneamiento); a menudo doble («¿qué… y qué…?»).
+- **«No se exige nada»**: la correcta es que la norma no pide nada en ese caso; los distractores son exigencias reales de
+  otros apartados (EI 60, EI2 30-C5…).
+Reglas: enunciado con un caso concreto y verosímil; el dato o principio tiene que estar en el temario (con `src`); los
+distractores son errores de razonamiento típicos, no datos inventados; la explicación dice qué principio se aplica y por
+qué la opción tentadora falla. Pueden ser normales o difíciles (las de las 20:00 de este estilo son ideales).
+**Cantidad: 10-15 por lote**, priorizando hidráulica (cuando haya manual), ventilación, electricidad, instalaciones (ACS,
+agua, gas, saneamiento), CTE DB-SI, edificaciones, APRAT y trabajos verticales. Si una sale rara o con formato nuevo,
+marcarla con `revisar`.
+
 ## Proporción orientativa por lote de 100
-- ~80 normales cortas (mitad cifras, mitad concepto) · ~9 difíciles (las de las 20:00) ·
+- ~70 normales cortas (mitad cifras, mitad concepto) · **10-15 de aplicación (`apl: 1`)** · ~9 difíciles (las de las 20:00) ·
   ~5 estilo examen · ~4 intervención · ~2 dibujo. Temas variados; priorizar los menos usados.
 
 ## Difíciles (las de las 20:00)
