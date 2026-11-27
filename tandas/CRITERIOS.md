@@ -132,6 +132,14 @@ concreta**, y la opción que suena bien es la equivocada. Variantes:
   (cierres hidráulicos del saneamiento); a menudo doble («¿qué… y qué…?»).
 - **«No se exige nada»**: la correcta es que la norma no pide nada en ese caso; los distractores son exigencias reales de
   otros apartados (EI 60, EI2 30-C5…).
+**LAS FAVORITAS DEL USUARIO: las que hay que DEDUCIR** (como la del pozo y la de las paredes entre habitaciones). La
+respuesta **no aparece tal cual en el temario**: se deduce en el momento a partir de lo que sí dice. En la del pozo, el
+manual explica la aspiración y su límite (presión atmosférica, ~10 m) pero no habla de un pozo de 20 m; en la de las paredes,
+el CTE dice qué elementos deben compartimentar (sectores, locales de riesgo…) y, como entre habitaciones de una vivienda no
+pide nada, la respuesta es «no se exige». Al hacerlas: partir de un principio, límite o ámbito de aplicación que SÍ está en el
+manual (citarlo en `src` y en la explicación) y construir un caso que el temario no menciona literalmente. La explicación
+muestra el razonamiento paso a paso: qué dice el manual → por qué de ahí se deduce la correcta → por qué falla la tentadora.
+Dar prioridad a este tipo dentro de las de aplicación (y para la difícil de las 20:00).
 Reglas: enunciado con un caso concreto y verosímil; el dato o principio tiene que estar en el temario (con `src`); los
 distractores son errores de razonamiento típicos, no datos inventados; la explicación dice qué principio se aplica y por
 qué la opción tentadora falla. Pueden ser normales o difíciles (las de las 20:00 de este estilo son ideales).
