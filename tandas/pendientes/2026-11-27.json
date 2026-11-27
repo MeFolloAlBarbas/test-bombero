@@ -887,6 +887,1094 @@
    "apl": 1,
    "ded": 1,
    "revisar": "deducción"
+  },
+  {
+   "id": 916,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "¿Qué significan las siglas de la conducta PAS ante un accidente?",
+   "o": [
+    "Proteger, Alertar, Socorrer.",
+    "Prevenir, Avisar, Socorrer.",
+    "Proteger, Avisar, Sanear."
+   ],
+   "c": 0,
+   "o4": "Parar, Alertar, Salvar.",
+   "que": "La <mark>conducta PAS</mark> (<mark>Proteger, Alertar, Socorrer</mark>) es la actuación inicial reconocida internacionalmente ante cualquier emergencia.",
+   "porque": "El orden importa: primero la protección del escenario, luego el aviso a emergencias y solo después, y si se sabe, socorrer.",
+   "ojo": "No es «Prevenir» ni «Avisar»: el manual usa Proteger y Alertar.",
+   "rec": "PAS: primero me Protejo, luego Alerto y al final Socorro.",
+   "f": "Manual DGT-APRAT I, respuesta ante un accidente (pág. 4)",
+   "tq": "Conducta PAS",
+   "ta": "Proteger, Alertar, Socorrer.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 917,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Según la conducta PAS, en una autovía (sentido único), ¿dónde se colocan los triángulos?",
+   "o": [
+    "El primero a 100 m y otro, si hace falta, a 250 m.",
+    "El primero a 50 m y otro, si hace falta, a 150 m mínimo.",
+    "Uno a 50 m por delante y otro a 50 m por detrás."
+   ],
+   "c": 1,
+   "o4": "Uno solo a 25 m por detrás.",
+   "que": "En vía de <mark>doble sentido</mark>: a <mark>50 m en ambos sentidos</mark>. En vía de <mark>un sentido</mark> (autovía): el primero a <mark>50 m</mark> y el otro, si fuese necesario, a <mark>150 m mínimo</mark>.",
+   "porque": "En una autovía todo el tráfico llega por detrás y más rápido: el segundo triángulo avisa con más antelación.",
+   "ojo": "Los 50 m por delante y por detrás son de la vía de doble sentido; los 100 y 250 m son las distancias de la primera señal de preseñalización de los servicios.",
+   "rec": "Autovía: 50 y 150 (el segundo, el triple de lejos).",
+   "f": "Manual DGT-APRAT I, respuesta ante un accidente (pág. 4)",
+   "tq": "Triángulos en autovía (PAS)",
+   "ta": "50 m y, si hace falta, otro a 150 m mínimo.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     4
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 918,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Si el accidentado es un motorista, ¿qué indica el manual al socorrer?",
+   "o": [
+    "Quitarle el casco para abrir la vía aérea.",
+    "Quitarle el casco solo si está consciente.",
+    "No quitarle el casco."
+   ],
+   "c": 2,
+   "o4": "Aflojarle el casco y dejarlo puesto.",
+   "que": "Entre las pautas de <mark>socorrer</mark> está: «en caso de ser un motorista el accidentado, <mark>no le quite el casco</mark>».",
+   "porque": "Quitarlo sin técnica puede agravar una lesión cervical; lo hace personal formado y con la técnica adecuada.",
+   "ojo": "Que esté consciente no cambia la pauta para el testigo que socorre.",
+   "rec": "Casco puesto, cuello a salvo.",
+   "f": "Manual DGT-APRAT I, socorrer (pág. 7)",
+   "tq": "Motorista accidentado (socorrer)",
+   "ta": "No quitarle el casco.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 919,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "¿Cuál de estas acciones NO está entre las pautas para socorrer a las víctimas de un accidente?",
+   "o": [
+    "Darles agua a sorbos si están conscientes.",
+    "Aflojarles las prendas que aprieten.",
+    "Protegerlas del frío o del calor."
+   ],
+   "c": 0,
+   "o4": "Comprimir las heridas sangrantes.",
+   "que": "Las pautas de socorrer incluyen <mark>aflojar las prendas</mark>, <mark>proteger del frío o del calor</mark>, comprimir las heridas sangrantes y <mark>no dar nada de beber ni de comer</mark>.",
+   "porque": "Una víctima puede necesitar cirugía o tener lesiones internas: comer o beber la pone en riesgo (vómito, aspiración).",
+   "ojo": "Aunque esté consciente y pida agua, no se le da.",
+   "rec": "Al herido, ni agua ni comida.",
+   "f": "Manual DGT-APRAT I, socorrer (pág. 7)",
+   "tq": "Comida y bebida a la víctima",
+   "ta": "Nada de beber ni de comer.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 920,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Según las pautas de socorrer, ¿cuándo se puede movilizar a la víctima sin tener conocimientos?",
+   "o": [
+    "Cuando está consciente y puede colaborar.",
+    "Solo ante riesgo de incendio o explosión inminente.",
+    "Cuando lleva más de 10 minutos atrapada."
+   ],
+   "c": 1,
+   "o4": "Nunca, en ningún caso.",
+   "que": "«<mark>No movilice</mark> a la víctima si no se tiene conocimiento, <mark>salvo</mark> situaciones de riesgo por <mark>incendio o explosión inminente</mark>».",
+   "porque": "Moverla puede agravar lesiones (columna); solo compensa si quedarse ahí la mata antes.",
+   "ojo": "El «nunca» es la trampa: el manual sí admite la excepción.",
+   "rec": "Solo se mueve si hay fuego o explosión a punto.",
+   "f": "Manual DGT-APRAT I, socorrer (pág. 7)",
+   "tq": "Movilizar a la víctima sin formación",
+   "ta": "Solo con riesgo de incendio o explosión inminente.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 921,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "En la valoración del nivel de conciencia con la escala AVDN, ¿qué significa la «D»?",
+   "o": [
+    "Desorientado.",
+    "Despierto.",
+    "Responde al dolor."
+   ],
+   "c": 2,
+   "o4": "Deterioro neurológico.",
+   "que": "Escala <mark>AVDN</mark>: <mark>A</mark>lerta, <mark>V</mark>erbal (responde a la voz), <mark>D</mark>olor (solo responde al estímulo doloroso), <mark>N</mark>o responde.",
+   "porque": "Va de más a menos conciencia: está alerta, responde si le hablas, solo si le haces daño o a nada.",
+   "ojo": "«Despierto» se parece a Alerta, pero la tercera letra de la escala corresponde al Dolor.",
+   "rec": "AVDN: Alerta, Voz, Dolor, Nada.",
+   "f": "Manual DGT-APRAT I, procedimiento unificado y datos de las víctimas (págs. 10 y 17)",
+   "tq": "D de la escala AVDN",
+   "ta": "Dolor.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     10,
+     17
+    ]
+   }
+  },
+  {
+   "id": 922,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Según el Reglamento General de Circulación citado en el manual, ¿qué pueden hacer los vehículos de urgencia en servicio urgente?",
+   "o": [
+    "Circular por encima de los límites de velocidad.",
+    "Pasar los semáforos en rojo sin detenerse.",
+    "Saltarse las señales de los agentes si hay víctimas."
+   ],
+   "c": 0,
+   "o4": "Circular sin señales luminosas para no alarmar.",
+   "que": "Los vehículos prioritarios en servicio urgente <mark>pueden circular por encima de los límites de velocidad</mark> y están exentos de otras normas, con <mark>uso ponderado</mark> de ese régimen.",
+   "porque": "La prioridad sirve para llegar antes, pero sin crear un accidente nuevo.",
+   "ojo": "En cruces y semáforos no pueden vulnerar la prioridad sin <mark>extremadas precauciones</mark> (cerciorarse de que los demás se han detenido); y las órdenes de los agentes se cumplen siempre.",
+   "rec": "Prioritario: más rápido, sí; a ciegas, no.",
+   "f": "Manual DGT-APRAT I, aproximación al lugar del accidente, RGC art. 67 (págs. 10-11)",
+   "tq": "Vehículo prioritario y velocidad",
+   "ta": "Puede superar los límites (uso ponderado).",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "id": 923,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Un conductor de un vehículo de urgencia en servicio urgente puede dejar de cumplir ciertas normas. ¿Qué tiene que cumplir siempre?",
+   "o": [
+    "Las marcas viales del pavimento.",
+    "Las órdenes y señales de los agentes.",
+    "Los límites de velocidad de la vía."
+   ],
+   "c": 1,
+   "o4": "Las señales de stop y ceda el paso.",
+   "que": "Puede dejar de cumplir, bajo su <mark>exclusiva responsabilidad</mark>, normas del reglamento, «<mark>salvo las órdenes y señales de los agentes</mark>, que son <mark>siempre de obligado cumplimiento</mark>».",
+   "porque": "El agente ve el escenario completo y coordina; si cada vehículo prioritario fuese por libre, habría choques entre ellos.",
+   "ojo": "Los límites de velocidad sí puede superarlos en servicio urgente.",
+   "rec": "El agente siempre manda.",
+   "f": "Manual DGT-APRAT I, aproximación al lugar del accidente, RGC art. 68 (pág. 11)",
+   "tq": "Lo que el prioritario cumple siempre",
+   "ta": "Órdenes y señales de los agentes.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 924,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "En autopista o autovía y en servicio urgente, ¿por dónde puede circular en sentido contrario un vehículo de urgencia, con carácter excepcional?",
+   "o": [
+    "Por el carril izquierdo.",
+    "Por el carril derecho.",
+    "Por el arcén."
+   ],
+   "c": 2,
+   "o4": "Por cualquier carril con prioritarios.",
+   "que": "Con carácter excepcional y sin comprometer la seguridad, puede dar media vuelta o marcha atrás, <mark>circular en sentido contrario siempre que lo haga por el arcén</mark>, o penetrar en la mediana o en sus pasos transversales.",
+   "porque": "El arcén es la parte de la vía donde menos probabilidad hay de encontrarse de frente con otro vehículo.",
+   "ojo": "Ir en sentido contrario por un carril, aunque sea el izquierdo, no está permitido.",
+   "rec": "Contramano, solo por el arcén.",
+   "f": "Manual DGT-APRAT I, aproximación al lugar del accidente, RGC art. 68 (pág. 11)",
+   "tq": "Sentido contrario en autovía (urgencias)",
+   "ta": "Solo por el arcén.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 925,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "¿Hasta cuándo deben mantenerse a la vez las señales acústicas y luminosas especiales de un vehículo de urgencia que llega a un accidente?",
+   "o": [
+    "Hasta la completa detención del vehículo.",
+    "Hasta que llegan los agentes de tráfico.",
+    "Hasta 100 m antes del accidente."
+   ],
+   "c": 0,
+   "o4": "Hasta ver a las víctimas.",
+   "que": "El uso <mark>simultáneo</mark> de señales acústicas y luminosas especiales debe mantenerse <mark>hasta la completa detención del vehículo</mark>.",
+   "porque": "Así los accidentados y los demás intervinientes lo perciben bien y se evitan atropellos.",
+   "ojo": "Lo que se recomienda mantener hasta la llegada de los agentes son las señales luminosas del vehículo ya estacionado, no la sirena de la marcha.",
+   "rec": "Sirena y luces, hasta parar del todo.",
+   "f": "Manual DGT-APRAT I, uso de las señales especiales (pág. 11)",
+   "tq": "Señales acústicas y luminosas al llegar",
+   "ta": "Ambas hasta la completa detención.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 926,
+   "t": "Tráfico (APRAT)",
+   "d": "difícil",
+   "q": "Circulando con el alumbrado prioritario encendido, ¿cuál es uno de los errores más comunes que señala el manual?",
+   "o": [
+    "Llevar encendida la luz de cruce.",
+    "Encender a la vez la luz de avería.",
+    "Usar los intermitentes para indicar maniobras."
+   ],
+   "c": 1,
+   "o4": "Apagar la sirena en las rectas.",
+   "que": "Un error muy común es usar el prioritario junto con la <mark>señalización de emergencia (luz de avería)</mark>. Hay que usar los <mark>indicadores de dirección</mark> para que los demás sepan qué maniobra va a hacer.",
+   "porque": "Con la luz de avería encendida parpadean los dos intermitentes, así que nadie sabe hacia dónde va a girar el vehículo de urgencia.",
+   "ojo": "Los intermitentes no son el error: son lo que hay que usar. La luz de avería sí se usa con el vehículo ya estacionado.",
+   "rec": "En marcha, intermitente; parado, avería.",
+   "f": "Manual DGT-APRAT I, uso de las señales especiales (pág. 11)",
+   "tq": "Error común con el prioritario en marcha",
+   "ta": "Usar a la vez la luz de avería.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     11
+    ]
+   }
+  },
+  {
+   "id": 927,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Según el manual, por el arcén solo pueden circular, entre otros, los vehículos especiales con una masa máxima autorizada…",
+   "o": [
+    "Menor de 2.500 kg.",
+    "Menor de 7.500 kg.",
+    "Menor de 3.500 kg."
+   ],
+   "c": 2,
+   "o4": "Menor de 12.000 kg.",
+   "que": "Por el arcén solo pueden circular ciclos, bicicletas, vehículos de tracción animal, <mark>vehículos especiales con MMA menor de 3.500 kg</mark>, de personas con movilidad reducida o de seguimiento de ciclistas.",
+   "porque": "El arcén no está destinado a automóviles «más que en circunstancias excepcionales», entre las que el manual incluye un accidente que deja el arcén como única vía para llegar.",
+   "ojo": "3.500 kg es el mismo límite que separa una furgoneta que se conduce con el permiso de turismo de un camión.",
+   "rec": "3.500: el límite del carné B.",
+   "f": "Manual DGT-APRAT I, recorrido hasta el lugar del accidente (pág. 11)",
+   "tq": "MMA de vehículos especiales en arcén",
+   "ta": "Menor de 3.500 kg.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     11
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 928,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Vas en el vehículo de urgencia por una vía de carriles desdoblados con retención y el arcén es impracticable. ¿Qué recomienda el manual?",
+   "o": [
+    "Circular por el centro, sobre la línea de separación de carriles.",
+    "Esperar a que los agentes abran un carril.",
+    "Circular por el arcén izquierdo junto a la mediana."
+   ],
+   "c": 0,
+   "o4": "Circular en sentido contrario por el carril izquierdo.",
+   "que": "Con arcén reducido o impracticable se recomienda <mark>circular por el centro de los carriles</mark>, por encima de las líneas de separación: los vehículos retenidos se apartan <mark>hacia ambos lados</mark> y queda un <mark>espacio central</mark>.",
+   "porque": "Abriendo hacia los dos lados los coches necesitan moverse poco y se crea un pasillo más rápido.",
+   "ojo": "Si el arcén está libre, sirve para no quedar encajonado; la opción del centro es para cuando no lo está.",
+   "rec": "Sin arcén: por la raya del medio.",
+   "f": "Manual DGT-APRAT I, recorrido hasta el lugar del accidente (pág. 12)",
+   "tq": "Retención sin arcén practicable",
+   "ta": "Por el centro, sobre la línea de carriles.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     12
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 929,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Según el manual, ¿a quién corresponde ordenar la ubicación de los vehículos de emergencia en el lugar del accidente?",
+   "o": [
+    "Al mando de bomberos.",
+    "A la Agrupación de Tráfico de la Guardia Civil.",
+    "Al primer servicio que llega."
+   ],
+   "c": 1,
+   "o4": "Al jefe del equipo sanitario.",
+   "que": "La correcta ubicación de los vehículos de emergencia es una <mark>competencia de la ATGC</mark>; los agentes determinan desde el primer instante dónde estaciona cada servicio según va llegando.",
+   "porque": "Es quien controla el tráfico de la vía: decide atendiendo a la seguridad de los intervinientes y a las operaciones de rescate posteriores.",
+   "ojo": "Si llegan antes bomberos o ambulancia, se colocan según los croquis del anexo, pero cuando llegan los agentes se siguen sus indicaciones.",
+   "rec": "Dónde aparcar lo dice la Guardia Civil.",
+   "f": "Manual DGT-APRAT I, emplazamiento y zonificación (págs. 12 y 14)",
+   "tq": "Quién ubica los vehículos de emergencia",
+   "ta": "La ATGC (agentes de tráfico).",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     12,
+     14
+    ]
+   }
+  },
+  {
+   "id": 930,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Entre las funciones de los servicios en el lugar del accidente, ¿a quién corresponde la certificación de fallecidos?",
+   "o": [
+    "A la Guardia Civil de Tráfico.",
+    "Al mando de bomberos.",
+    "A los servicios sanitarios."
+   ],
+   "c": 2,
+   "o4": "A la autoridad funeraria.",
+   "que": "La <mark>certificación de fallecidos</mark> es función de los <mark>servicios sanitarios</mark>, junto con la atención, clasificación y estabilización de víctimas y la organización de su evacuación.",
+   "porque": "Solo un médico puede certificar una muerte.",
+   "ojo": "La ATGC contacta con la autoridad judicial y funeraria, pero no certifica el fallecimiento.",
+   "rec": "Certifica quien sabe de medicina.",
+   "f": "Manual DGT-APRAT I, funciones de los servicios (pág. 13)",
+   "tq": "Certificación de fallecidos",
+   "ta": "Servicios sanitarios.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     13
+    ]
+   }
+  },
+  {
+   "id": 931,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "¿Cuál de estas funciones corresponde a la Guardia Civil de Tráfico (ATGC) en el lugar del accidente?",
+   "o": [
+    "Autorizar la retirada de vehículos y restablecer el tráfico.",
+    "Organizar la evacuación y traslado de víctimas.",
+    "Inmovilizar y estabilizar los vehículos."
+   ],
+   "c": 0,
+   "o4": "Controlar los airbags no activados.",
+   "que": "Funciones de la ATGC: control del tráfico, orden público, protección de vestigios, inspección ocular, atestado, rastreo perimetral y <mark>autorizar la retirada de vehículos y el restablecimiento del tráfico</mark>.",
+   "porque": "Antes de mover los coches hay que preservar pruebas para el atestado: por eso lo autoriza quien investiga.",
+   "ojo": "Estabilizar vehículos y controlar airbags son de bomberos; la evacuación y traslado, de sanitarios.",
+   "rec": "Quien investiga decide cuándo se retira el coche.",
+   "f": "Manual DGT-APRAT I, funciones de los servicios (págs. 12-13)",
+   "tq": "Retirada de vehículos del punto",
+   "ta": "La autoriza la ATGC.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     12,
+     13
+    ]
+   }
+  },
+  {
+   "id": 932,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "¿Cuál de estas funciones NO corresponde a los bomberos en un accidente de tráfico?",
+   "o": [
+    "El control de riesgos como derrames.",
+    "La protección de vestigios y restos.",
+    "La colaboración en la limpieza del pavimento."
+   ],
+   "c": 1,
+   "o4": "El rescate de personas atrapadas.",
+   "que": "Bomberos: rescate de atrapados, asistencia inicial, <mark>control de riesgos</mark> (incendios, derrames, airbags no activados), estabilización de vehículos, colaboración en retirada de obstáculos y en la <mark>limpieza del pavimento</mark>. La <mark>protección de vestigios</mark> es de la <mark>ATGC</mark>.",
+   "porque": "Los vestigios son pruebas para la investigación policial del accidente.",
+   "ojo": "Bomberos «colabora» en la limpieza: no es exclusiva suya, pero sí es función suya.",
+   "rec": "Vestigios = pruebas = Guardia Civil.",
+   "f": "Manual DGT-APRAT I, funciones de los servicios (págs. 12-13)",
+   "tq": "Función que no es de bomberos",
+   "ta": "La protección de vestigios (es de la ATGC).",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     13
+    ]
+   }
+  },
+  {
+   "id": 933,
+   "t": "Tráfico (APRAT)",
+   "d": "difícil",
+   "q": "El «rescate precoz ante riesgo vital inminente sin presencia de bomberos en el lugar» figura entre las funciones de…",
+   "o": [
+    "Solo la ATGC.",
+    "Solo los servicios sanitarios.",
+    "La ATGC y los servicios sanitarios."
+   ],
+   "c": 2,
+   "o4": "Ningún servicio: solo bomberos rescata.",
+   "que": "Esa función aparece tanto en la lista de la <mark>ATGC</mark> como en la de los <mark>servicios sanitarios</mark>: si hay riesgo vital inminente y aún no hay bomberos, el que esté puede sacar a la víctima.",
+   "porque": "Esperar a bomberos ante un incendio o similar costaría la vida a la víctima.",
+   "ojo": "Lo normal es que rescate bomberos; esto es la excepción por riesgo inminente (plan de excarcelación de emergencia).",
+   "rec": "Riesgo inminente: rescata quien esté.",
+   "f": "Manual DGT-APRAT I, funciones de los servicios (págs. 12-13)",
+   "tq": "Rescate precoz sin bomberos",
+   "ta": "Función de ATGC y sanitarios.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     12,
+     13
+    ]
+   }
+  },
+  {
+   "id": 934,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Según el manual, ¿qué función asumen los primeros en llegar al lugar de un accidente, sea cual sea el servicio?",
+   "o": [
+    "La de informadores cualificados.",
+    "La de mando único de la intervención.",
+    "La de responsables de la zonificación."
+   ],
+   "c": 0,
+   "o4": "La de coordinadores sanitarios.",
+   "que": "No se puede predecir quién llegará primero; los primeros asumen la función de <mark>informadores cualificados</mark> que <mark>corroboren o rectifiquen</mark> los datos de los alertantes.",
+   "porque": "Los datos de quien llama al 112 suelen ser incompletos; el primer profesional los confirma.",
+   "ojo": "La zonificación la ejecuta la ATGC.",
+   "rec": "El primero que llega, informa.",
+   "f": "Manual DGT-APRAT I, llegada y emplazamiento (pág. 13)",
+   "tq": "Función de los primeros en llegar",
+   "ta": "Informadores cualificados.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     13
+    ]
+   }
+  },
+  {
+   "id": 935,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Parar o estacionar un vehículo de urgencia en un lugar distinto del fijado por los agentes de tráfico tiene la consideración de…",
+   "o": [
+    "Infracción muy grave.",
+    "Infracción grave.",
+    "Infracción leve."
+   ],
+   "c": 1,
+   "o4": "Ninguna infracción si está en servicio.",
+   "que": "Los supuestos de parada o estacionamiento <mark>en lugares distintos de los fijados por los agentes</mark> tienen la consideración de <mark>infracción grave</mark>.",
+   "porque": "Por eso, aunque llegue antes bomberos o ambulancia, en cuanto hay agentes se colocan donde ellos digan.",
+   "ojo": "Estar en servicio urgente no lo exime: las órdenes de los agentes se cumplen siempre.",
+   "rec": "No aparcar donde dice el agente = grave.",
+   "f": "Manual DGT-APRAT I, llegada y emplazamiento, RGC art. 5.7 (pág. 14)",
+   "tq": "Estacionar fuera de lo fijado por los agentes",
+   "ta": "Infracción grave.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     14
+    ]
+   }
+  },
+  {
+   "id": 936,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "¿Cómo se llama la central operativa a la que informan los agentes de la Agrupación de Tráfico de la Guardia Civil?",
+   "o": [
+    "CECOP.",
+    "CCC.",
+    "COTA."
+   ],
+   "c": 2,
+   "o4": "CECOES.",
+   "que": "Los agentes informan a su central operativa: <mark>COTA</mark> para la <mark>Agrupación de Tráfico</mark> y <mark>CCC</mark> (Centros de Comunicación y Control) para el resto de servicios de la Guardia Civil.",
+   "porque": "La central contacta con el 112 y mantiene el contacto con los agentes para aclarar datos o pedir más medios (grúas, conservación…).",
+   "ojo": "CCC existe, pero es la del resto de componentes, no la de Tráfico.",
+   "rec": "COTA = Tráfico; CCC = el resto.",
+   "f": "Manual DGT-APRAT I, situaciones de llegada, ATGC (pág. 15)",
+   "tq": "Central operativa de la Agrupación de Tráfico",
+   "ta": "COTA.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     15
+    ]
+   }
+  },
+  {
+   "id": 937,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Llegan primero dos agentes de la ATGC. ¿Cómo se reparten normalmente las tareas?",
+   "o": [
+    "Uno regula el tráfico; el otro valora y transmite datos.",
+    "Los dos regulan el tráfico hasta que llegan bomberos.",
+    "Uno atiende a las víctimas; el otro zonifica."
+   ],
+   "c": 0,
+   "o4": "Los dos valoran y uno de ellos excarcela.",
+   "que": "Normalmente son <mark>dos componentes</mark>: uno se encarga de la <mark>seguridad, señalización o regulación del tráfico</mark> y el otro de la <mark>valoración inicial y transmisión de datos a la central</mark>.",
+   "porque": "Así a la vez se protege el escenario y se informa para que lleguen los recursos adecuados.",
+   "ojo": "Después la ATGC zonifica (caliente, templada, fría) y no deja entrar en la caliente a nadie sin EPI.",
+   "rec": "Uno protege, otro informa.",
+   "f": "Manual DGT-APRAT I, situaciones de llegada, ATGC (pág. 15)",
+   "tq": "Reparto de tareas de dos agentes ATGC",
+   "ta": "Uno tráfico; otro valoración y datos.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     15
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 938,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "En la zonificación de un accidente, ¿qué distancia aproximada abarca la zona templada?",
+   "o": [
+    "Entre 2 y 5 m.",
+    "Entre 5 y 10 m.",
+    "Entre 10 y 25 m."
+   ],
+   "c": 1,
+   "o4": "Entre 10 y 50 m.",
+   "que": "<mark>Zona caliente</mark>: aprox. <mark>2-5 m</mark> (solo rescate con EPI). <mark>Zona templada</mark>: <mark>5-10 m</mark>, para vehículos de bomberos, sanitarios y Guardia Civil, punto base, punto de chatarra y espera del personal de apoyo.",
+   "porque": "Es la franja intermedia: cerca para trabajar, fuera del área de acción directa.",
+   "ojo": "2-5 m es la zona caliente.",
+   "rec": "2-5-10: caliente hasta 5, templada hasta 10.",
+   "f": "Manual DGT-APRAT I, zonificación del accidente (pág. 16)",
+   "tq": "Zona templada (distancia)",
+   "ta": "Entre 5 y 10 m.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     16
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 939,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "En el esquema de zonificación, la zona marcada con una X es donde se sitúa el depósito de herramientas. ¿Qué zona es y cómo se llama ese depósito?",
+   "o": [
+    "Zona caliente; punto base.",
+    "Zona fría; punto de material.",
+    "Zona templada; punto base."
+   ],
+   "c": 2,
+   "o4": "Zona templada; punto de chatarra.",
+   "que": "En la <mark>zona templada</mark> está la zona de depósito de herramientas y materiales de rescate: el <mark>punto base</mark>. También ahí van el punto de chatarra (restos de vehículos) y la espera del personal de apoyo.",
+   "porque": "La zona caliente debe quedar libre de herramientas que no se estén usando: se cogen del punto base y se devuelven.",
+   "ojo": "El punto de chatarra también está en la templada, pero es para restos de los vehículos, no para herramientas.",
+   "rec": "Base = herramientas; chatarra = restos. Las dos, en la templada.",
+   "f": "Manual DGT-APRAT I, zonificación del accidente (pág. 16)",
+   "tq": "Punto base",
+   "ta": "Depósito de herramientas en la zona templada.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     16
+    ]
+   },
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 320 200\" role=\"img\" aria-label=\"Esquema de zonificación: un coche accidentado en el centro rodeado de tres anillos concéntricos. El anillo intermedio está marcado con una X y contiene un montón de herramientas.\"><rect width=\"320\" height=\"200\" fill=\"#fff\"/><circle cx=\"160\" cy=\"100\" r=\"95\" fill=\"#dbeafe\" stroke=\"#1e3a8a\"/><circle cx=\"160\" cy=\"100\" r=\"62\" fill=\"#fde68a\" stroke=\"#92400e\"/><circle cx=\"160\" cy=\"100\" r=\"32\" fill=\"#fca5a5\" stroke=\"#991b1b\"/><rect x=\"144\" y=\"91\" width=\"32\" height=\"18\" rx=\"4\" fill=\"#374151\"/><circle cx=\"150\" cy=\"111\" r=\"3\" fill=\"#111\"/><circle cx=\"170\" cy=\"111\" r=\"3\" fill=\"#111\"/><g stroke=\"#374151\" stroke-width=\"3\"><line x1=\"200\" y1=\"140\" x2=\"214\" y2=\"126\"/><line x1=\"206\" y1=\"144\" x2=\"220\" y2=\"130\"/></g><text x=\"216\" y=\"152\" font-size=\"10\" fill=\"#111\" font-family=\"sans-serif\">herramientas</text><text x=\"112\" y=\"62\" font-size=\"22\" font-weight=\"bold\" fill=\"#111\" font-family=\"sans-serif\">X</text></svg>"
+  },
+  {
+   "id": 940,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Llega al accidente la grúa que retirará los vehículos. ¿En qué zona debe permanecer mientras dura el rescate?",
+   "o": [
+    "En la zona fría.",
+    "En la zona caliente, lista para enganchar.",
+    "En la zona templada, junto al punto de chatarra."
+   ],
+   "c": 0,
+   "o4": "Fuera de la zonificación, en otra vía.",
+   "que": "La <mark>zona fría</mark> es el perímetro exterior no implicado en el rescate, destinado a <mark>todo el personal de carreteras, mantenimiento de vías, grúas</mark>, etc., controlado por la Guardia Civil de Tráfico.",
+   "porque": "La grúa no participa en el rescate: entra cuando la ATGC autoriza la retirada de los vehículos.",
+   "ojo": "El punto de chatarra (templada) es para los restos de los vehículos, no para la grúa.",
+   "rec": "Grúas y carreteras, a la fría.",
+   "f": "Manual DGT-APRAT I, zonificación del accidente (pág. 16)",
+   "tq": "Grúa durante el rescate",
+   "ta": "En la zona fría.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     16
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 941,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Un médico fuera de servicio que pasaba por allí colabora en el rescate. ¿Qué indica el manual?",
+   "o": [
+    "Debe ponerse a las órdenes del mando de bomberos.",
+    "Debe ser identificado por la ATGC.",
+    "Debe abandonar la zona caliente."
+   ],
+   "c": 1,
+   "o4": "Debe firmar el atestado como testigo.",
+   "que": "Ante un profesional de emergencias <mark>fuera de su jornada laboral</mark>, si participa en cualquier fase de la intervención <mark>deberá ser identificado por la ATGC</mark>.",
+   "porque": "La ATGC controla quién accede al escenario y recoge los datos del atestado.",
+   "ojo": "El manual no le prohíbe colaborar: solo exige identificarlo.",
+   "rec": "Fuera de servicio y ayudando: DNI a la Guardia Civil.",
+   "f": "Manual DGT-APRAT I, zonificación del accidente (pág. 16)",
+   "tq": "Profesional fuera de servicio que colabora",
+   "ta": "La ATGC debe identificarlo.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     16
+    ]
+   }
+  },
+  {
+   "id": 942,
+   "t": "Tráfico (APRAT)",
+   "d": "difícil",
+   "q": "Un turismo moderno ha chocado a gran velocidad; el conductor, consciente, dice estar bien y quiere salir por su pie. No hay fuego ni otro riesgo. Según el manual, ¿qué procede?",
+   "o": [
+    "Dejarlo salir: si está consciente no hay lesión grave.",
+    "Sacarlo enseguida con una extracción rápida.",
+    "Valorarlo sanitariamente in situ antes de extraerlo."
+   ],
+   "c": 2,
+   "o4": "Sacarlo y valorarlo ya fuera del coche.",
+   "que": "Los <mark>refuerzos estructurales</mark> de los vehículos modernos <mark>enmascaran lesiones importantes</mark>, por lo que es imprescindible una <mark>valoración sanitaria in situ</mark> sin dejar que se ejecute la extracción. Solo con riesgo inminente se saca antes (plan de excarcelación de emergencia).",
+   "porque": "El coche aguanta mejor el golpe y el ocupante parece ileso, pero puede tener lesiones internas o de columna.",
+   "ojo": "Lo tentador es fiarse de que está consciente y dice estar bien; sin riesgo inminente no hay motivo para la extracción rápida.",
+   "rec": "Coche moderno = lesiones escondidas: primero valorar.",
+   "f": "Manual DGT-APRAT I, zonificación del accidente (pág. 16)",
+   "tq": "Vehículo moderno y víctima aparentemente ilesa",
+   "ta": "Valoración sanitaria in situ antes de extraer.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     16
+    ]
+   },
+   "apl": 1
+  },
+  {
+   "id": 943,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Entre las actuaciones sanitarias básicas de bomberos, ¿cómo se protege a la víctima durante el rescate?",
+   "o": [
+    "Con protección blanda (plástico).",
+    "Con una manta ignífuga rígida.",
+    "Con protección dura (tablero)."
+   ],
+   "c": 0,
+   "o4": "Con el airbag desplegado.",
+   "que": "Actuaciones básicas de bomberos: control bimanual de la cabeza y collarín, <mark>protección blanda (plástico)</mark> de la víctima, reevaluaciones ABCDE, inmovilización en bloque sobre <mark>tablero espinal</mark> y extracción coordinada.",
+   "porque": "El plástico protege de cristales y fragmentos mientras se corta el vehículo.",
+   "ojo": "El tablero espinal sirve para inmovilizar y extraer, no para proteger durante el corte.",
+   "rec": "Blanda = plástico sobre la víctima.",
+   "f": "Manual DGT-APRAT I, servicios de bomberos (pág. 17)",
+   "tq": "Protección de la víctima (actuaciones de bomberos)",
+   "ta": "Protección blanda (plástico).",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     17
+    ]
+   }
+  },
+  {
+   "id": 944,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Si los servicios sanitarios llegan primero, ¿qué iluminación del vehículo deben mantener?",
+   "o": [
+    "Solo las luces prioritarias, de noche.",
+    "Toda, de día y de noche.",
+    "Solo las luces de avería, de día."
+   ],
+   "c": 1,
+   "o4": "Ninguna, para no deslumbrar.",
+   "que": "Se mantendrá <mark>en todo momento, tanto de día como de noche, toda la iluminación</mark> del vehículo: alumbrado de cruce, prioritarios, luces de peligro…",
+   "porque": "Es la forma de que el vehículo se vea y sirva de protección para quienes trabajan.",
+   "ojo": "El error en marcha es la luz de avería; parado, en cambio, se encienden todas.",
+   "rec": "Ambulancia parada: todo encendido.",
+   "f": "Manual DGT-APRAT I, servicios de emergencias sanitarias (pág. 17)",
+   "tq": "Iluminación de la ambulancia en el accidente",
+   "ta": "Toda, de día y de noche.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     17
+    ]
+   }
+  },
+  {
+   "id": 945,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Un camión cisterna lleva el código de peligro precedido de una letra en la mitad superior de su placa naranja. ¿Qué letra puede ser?",
+   "o": [
+    "La Z.",
+    "La R.",
+    "La X."
+   ],
+   "c": 2,
+   "o4": "La P.",
+   "que": "Arriba va el <mark>código de peligro</mark>, en ocasiones acompañado de la <mark>letra X</mark>; abajo, el <mark>número ONU</mark>, único para cada materia.",
+   "porque": "La X advierte de que la materia reacciona peligrosamente con el agua.",
+   "ojo": "No confundir: el número ONU (abajo) identifica la materia; el de arriba, el peligro.",
+   "rec": "X arriba = ojo con el agua.",
+   "f": "Manual DGT-APRAT I, servicios de emergencias sanitarias (pág. 18)",
+   "tq": "Letra del código de peligro",
+   "ta": "La X (arriba).",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     18
+    ]
+   }
+  },
+  {
+   "id": 946,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "En la información ampliada in situ, ¿cómo se denomina el corte total de las vías de comunicación?",
+   "o": [
+    "Nivel Negro.",
+    "Nivel Cero.",
+    "Nivel Rojo."
+   ],
+   "c": 0,
+   "o4": "Nivel Crítico.",
+   "que": "Entre la información ampliada in situ figura el <mark>corte total de vías de comunicación</mark>, denominado <mark>Nivel Negro</mark>.",
+   "porque": "Es la situación más grave para la circulación: la vía queda cerrada.",
+   "ojo": "No es el «Nivel Rojo»: el manual usa el negro.",
+   "rec": "Vía cortada del todo: negro.",
+   "f": "Manual DGT-APRAT I, información ampliada in situ (pág. 18)",
+   "tq": "Corte total de vías de comunicación",
+   "ta": "Nivel Negro.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     18
+    ]
+   }
+  },
+  {
+   "id": 947,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Según las normas generales de ubicación del manual, ¿cómo se estaciona el vehículo de emergencia antes del punto del accidente?",
+   "o": [
+    "En diagonal, para proteger mejor a los intervinientes.",
+    "En el arcén derecho, en paralelo al eje de la vía.",
+    "Atravesado en la calzada, cerrando el carril."
+   ],
+   "c": 1,
+   "o4": "Detrás del accidente, en el carril izquierdo.",
+   "que": "Estacionamiento <mark>anterior al punto del accidente</mark> en sentido de la marcha, en el <mark>arcén derecho</mark> y <mark>sin orientación</mark>, es decir, <mark>en paralelo al eje</mark> de la vía, ocupando el mínimo de calzada.",
+   "porque": "Así el vehículo hace de barrera de protección del accidentado y de los auxiliadores sin quitar más espacio del necesario.",
+   "ojo": "En diagonal ocuparía más calzada: el manual pide expresamente «sin orientación alguna».",
+   "rec": "Antes del accidente y en paralelo.",
+   "f": "Manual DGT-APRAT I, ubicación de los vehículos de emergencias (pág. 18)",
+   "tq": "Cómo estacionar antes del accidente",
+   "ta": "Arcén derecho, en paralelo al eje.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     18
+    ]
+   }
+  },
+  {
+   "id": 948,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Los triángulos de preseñalización se colocan como mínimo a 50 m. ¿Desde qué distancia deben ser visibles, al menos, para quien se aproxima?",
+   "o": [
+    "Desde 50 m.",
+    "Desde 150 m.",
+    "Desde 100 m."
+   ],
+   "c": 2,
+   "o4": "Desde 250 m.",
+   "que": "Se colocan uno por delante y otro por detrás, <mark>como mínimo a 50 m</mark> y de forma que sean <mark>visibles desde 100 m</mark>. En calzadas de <mark>sentido único o de más de 3 carriles</mark> basta un solo dispositivo.",
+   "porque": "A 50 m hay poco tiempo para frenar si el triángulo queda oculto por una curva.",
+   "ojo": "150 m es la distancia mínima del segundo triángulo en una autovía según las pautas PAS.",
+   "rec": "Se ponen a 50, se ven desde 100: el doble.",
+   "f": "Manual DGT-APRAT I, ubicación de los vehículos de emergencias (pág. 18)",
+   "tq": "Visibilidad de los triángulos",
+   "ta": "Desde 100 m al menos.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     18
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 949,
+   "t": "Tráfico (APRAT)",
+   "d": "difícil",
+   "q": "Según las normas de ubicación del manual, ¿en qué calzadas basta con colocar un solo triángulo de preseñalización?",
+   "o": [
+    "De sentido único o de más de 3 carriles.",
+    "De doble sentido con arcén amplio.",
+    "Convencionales de un carril por sentido."
+   ],
+   "c": 0,
+   "o4": "Solo en las autopistas de peaje.",
+   "que": "Los triángulos se colocan uno por delante y otro por detrás; <mark>en calzadas de sentido único o de más de 3 carriles bastará un solo dispositivo</mark>, a la misma distancia.",
+   "porque": "Si todo el tráfico va en el mismo sentido, solo llega por detrás: el de delante no avisa a nadie.",
+   "ojo": "En doble sentido hacen falta los dos, porque llegan coches por ambos lados.",
+   "rec": "Un sentido, un triángulo.",
+   "f": "Manual DGT-APRAT I, ubicación de los vehículos de emergencias (pág. 18)",
+   "tq": "Un solo triángulo",
+   "ta": "Sentido único o más de 3 carriles.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     18
+    ]
+   }
+  },
+  {
+   "id": 950,
+   "t": "Tráfico (APRAT)",
+   "d": "difícil",
+   "q": "El accidente está en la mediana de una autovía y los vehículos de emergencia llegan por calzadas distintas. Si hay dudas sobre desde cuál atenderlo, ¿cuál se toma como referencia?",
+   "o": [
+    "Aquella por la que circulaba el vehículo accidentado.",
+    "Aquella por la que llegó el primer vehículo de urgencia.",
+    "Aquella con menos tráfico en ese momento."
+   ],
+   "c": 1,
+   "o4": "La más cercana al parque de bomberos.",
+   "que": "Se toma como referencia la calzada <mark>por donde haya llegado el primero de los vehículos de urgencia</mark>, afectando solo a un sentido, que <mark>no tiene por qué coincidir</mark> con el que llevaba el accidentado.",
+   "porque": "Así se corta un solo sentido y se respeta el despliegue ya hecho por el primero.",
+   "ojo": "Lo tentador es elegir el sentido del accidentado, pero el manual dice que no tiene por qué coincidir.",
+   "rec": "Manda el primero que llegó.",
+   "f": "Manual DGT-APRAT I, ubicación de los vehículos de emergencias (pág. 19)",
+   "tq": "Accidente en la mediana",
+   "ta": "Calzada por la que llegó el primer vehículo de urgencia.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     19
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 951,
+   "t": "Tráfico (APRAT)",
+   "d": "difícil",
+   "q": "Según las recomendaciones de ubicación, ¿cuál es el orden de preferencia para colocar los vehículos de emergencia, de más a menos preferible?",
+   "o": [
+    "Fuera de la plataforma; carril derecho; arcén derecho; arcén y parte del carril derecho.",
+    "Arcén derecho; fuera de la plataforma; carril derecho; arcén y parte del carril derecho.",
+    "Fuera de la plataforma; arcén derecho; arcén y parte del carril derecho; carril derecho."
+   ],
+   "c": 2,
+   "o4": "Carril derecho; arcén derecho; fuera de la plataforma; calzada.",
+   "que": "Por este orden: <mark>fuera de la plataforma por el margen derecho</mark>, <mark>solo arcén derecho</mark>, <mark>arcén y parte del carril derecho</mark>, <mark>carril derecho</mark> y, si hace falta, la parte de la calzada necesaria.",
+   "porque": "Cuanto menos se ocupe de la vía, menos se obstaculiza la circulación, siempre que se pueda trabajar con eficacia y seguridad.",
+   "ojo": "Las opciones solo cambian el orden: va de menos a más ocupación de la vía.",
+   "rec": "De fuera hacia dentro: cuanto menos asfalto, mejor.",
+   "f": "Manual DGT-APRAT I, recomendaciones sobre la ubicación (pág. 19)",
+   "tq": "Orden de ubicación de los vehículos",
+   "ta": "Fuera de la plataforma → arcén → arcén+carril → carril.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     19
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 952,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Según el manual, ¿qué vehículo se encuentra siempre en último lugar preseñalizando el accidente?",
+   "o": [
+    "Uno de la Agrupación de Tráfico.",
+    "Uno de mantenimiento de carreteras.",
+    "Uno de bomberos."
+   ],
+   "c": 0,
+   "o4": "La ambulancia.",
+   "que": "<mark>Un vehículo de la Agrupación</mark> siempre estará <mark>en último lugar</mark> preseñalizando. Solo el de <mark>mantenimiento</mark>, si tiene señales luminosas efectivas, podrá situarse <mark>tras el vehículo policial</mark>.",
+   "porque": "Es el primero que ven los conductores que llegan: protege a todos los que trabajan delante.",
+   "ojo": "El de mantenimiento puede ir detrás del policial, pero solo si las circunstancias lo aconsejan y tiene señales luminosas efectivas.",
+   "rec": "La Guardia Civil cierra la fila.",
+   "f": "Manual DGT-APRAT I, recomendaciones sobre la ubicación (pág. 19)",
+   "tq": "Último vehículo preseñalizando",
+   "ta": "Uno de la Agrupación de Tráfico.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     19
+    ]
+   }
+  },
+  {
+   "id": 953,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "En una vía convencional, ¿a qué distancia mínima del accidente debe estar la primera señal de preseñalización (peligro, reducción de velocidad…)?",
+   "o": [
+    "A 50 m.",
+    "A 100 m.",
+    "A 250 m."
+   ],
+   "c": 1,
+   "o4": "A 500 m.",
+   "que": "La primera señal de preseñalización va a un mínimo de <mark>100 m en vías convencionales</mark> y de <mark>250 m</mark> en el otro supuesto que da el manual (vías no convencionales), variable según la vía y el tráfico.",
+   "porque": "Son señales de advertencia, reducción de velocidad o estrechamiento: necesitan más distancia que un triángulo para que dé tiempo a reaccionar.",
+   "ojo": "50 m es la distancia mínima de los triángulos; 250 m, la del otro tipo de vía (no convencional).",
+   "rec": "Convencional 100; la otra, 250.",
+   "f": "Manual DGT-APRAT I, señales de balizamiento y circunstanciales (pág. 20)",
+   "tq": "Primera señal en vía convencional",
+   "ta": "A 100 m.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     20
+    ]
+   },
+   "cifra": 1
+  },
+  {
+   "id": 954,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Llegas con el vehículo de intervención a un accidente en el que ya trabajan otros servicios. ¿Dónde estacionas?",
+   "o": [
+    "Por detrás de los implicados, protegiendo la zona.",
+    "En el carril izquierdo, junto a los demás servicios.",
+    "Por delante de los vehículos implicados, cerca del borde."
+   ],
+   "c": 2,
+   "o4": "En la zona caliente, junto al accidentado.",
+   "que": "Si <mark>no hay otros servicios</mark>: en el sentido del accidente y <mark>antes</mark> de los vehículos implicados, protegiendo la zona. Si <mark>ya existen otros servicios</mark>: <mark>por delante</mark> de los vehículos implicados, próximos al borde de la calzada.",
+   "porque": "La protección por detrás ya la dan los que llegaron antes; delante se deja paso y se facilita la salida rápida.",
+   "ojo": "Ponerse detrás es lo correcto solo si eres el primero.",
+   "rec": "Primero, detrás (protejo); los siguientes, delante.",
+   "f": "Manual DGT-APRAT I, pautas de estacionamiento (pág. 20)",
+   "tq": "Estacionar si ya hay otros servicios",
+   "ta": "Por delante de los implicados, junto al borde.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     20
+    ]
+   },
+   "int": 1,
+   "apl": 1
+  },
+  {
+   "id": 955,
+   "t": "Tráfico (APRAT)",
+   "d": "normal",
+   "q": "Si es necesario un corte total de la circulación, ¿qué indica el manual?",
+   "o": [
+    "Hacerlo el tiempo mínimo imprescindible.",
+    "Hacerlo siempre en vías de más de 2 carriles.",
+    "Mantenerlo hasta que termine el atestado."
+   ],
+   "c": 0,
+   "o4": "Mantenerlo hasta que se retire la grúa.",
+   "que": "Solo en caso necesario se realizará un <mark>corte total</mark> de la circulación <mark>por el tiempo mínimo imprescindible</mark>; si va a ser largo, se organizan <mark>desvíos alternativos</mark>.",
+   "porque": "Un corte provoca retenciones y nuevos riesgos (accidentes por alcance en la cola).",
+   "ojo": "No hay un tipo de vía en el que haya que cortar siempre.",
+   "rec": "Corte total: el mínimo, y si es largo, desvío.",
+   "f": "Manual DGT-APRAT I, corte total de la circulación (pág. 20)",
+   "tq": "Corte total de la circulación",
+   "ta": "Solo si es necesario y el tiempo mínimo.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     20
+    ]
+   }
+  },
+  {
+   "id": 956,
+   "t": "Tráfico (APRAT)",
+   "d": "difícil",
+   "q": "Llegáis primero los bomberos y os colocáis según los croquis. Llegan después los agentes de tráfico y os indican otro sitio aunque el vuestro también era seguro. ¿Qué hacéis?",
+   "o": [
+    "Quedarse si ya habéis desplegado material.",
+    "Moverlo donde indican los agentes.",
+    "Quedarse: el primero en llegar elige la ubicación."
+   ],
+   "c": 1,
+   "o4": "Moverlo solo cuando termine el rescate.",
+   "que": "Los agentes de la ATGC <mark>determinan el lugar de estacionamiento</mark> de los vehículos de emergencia; parar en un lugar distinto del fijado por ellos es <mark>infracción grave</mark>. A su llegada, se atienden sus indicaciones sobre retirada o cambio de ubicación.",
+   "porque": "El primero que llega se coloca según los croquis solo hasta que llegan los agentes, que son quienes organizan el escenario.",
+   "ojo": "Lo tentador es quedarse por haber desplegado material; el manual dice que conviene que la posición sea definitiva y que se concilien las necesidades, pero quien decide es el agente.",
+   "rec": "Llega el agente, manda el agente.",
+   "f": "Manual DGT-APRAT I, llegada y emplazamiento (págs. 14, 19 y 20)",
+   "tq": "Agentes que piden mover el vehículo",
+   "ta": "Se mueve donde indiquen.",
+   "src": {
+    "m": "Bloque II - Tema 08 - Rescate en accidentes de tráfico (DGT-APRAT) I",
+    "p": [
+     14,
+     18
+    ]
+   },
+   "apl": 1
   }
  ],
  "glosario": [
@@ -943,6 +2031,101 @@
    "d": "Receptores conectados cada uno de forma independiente a la misma tensión; la intensidad total es la suma de las de cada uno y la resistencia total baja al añadir receptores.",
    "tema": "Electricidad",
    "f": "Conceptos básicos de electricidad, 5",
+   "solo": 1
+  },
+  {
+   "t": "Conducta PAS",
+   "a": [
+    "conducta PAS",
+    "PAS"
+   ],
+   "d": "Proteger, Alertar, Socorrer: orden de la actuación inicial ante cualquier emergencia. Primero protegerse y proteger el escenario, luego avisar al 112 y solo después, si se sabe, socorrer.",
+   "tema": "Tráfico (APRAT)",
+   "f": "Manual DGT-APRAT I, pág. 4",
+   "solo": 1
+  },
+  {
+   "t": "Escala AVDN",
+   "a": [
+    "escala AVDN",
+    "AVDN"
+   ],
+   "d": "Valoración rápida del nivel de conciencia: Alerta, responde a la Voz, responde solo al Dolor, No responde.",
+   "tema": "Tráfico (APRAT)",
+   "f": "Manual DGT-APRAT I, págs. 10 y 17",
+   "solo": 1
+  },
+  {
+   "t": "Zona templada",
+   "a": [
+    "zona templada",
+    "área templada"
+   ],
+   "d": "Franja de unos 5-10 m alrededor de la zona caliente: vehículos de bomberos, sanitarios y Guardia Civil, punto base, punto de chatarra y espera del personal de apoyo.",
+   "tema": "Tráfico (APRAT)",
+   "f": "Manual DGT-APRAT I, pág. 16",
+   "solo": 1
+  },
+  {
+   "t": "Zona fría",
+   "a": [
+    "zona fría",
+    "área fría"
+   ],
+   "d": "Perímetro exterior no implicado en el rescate, controlado por la Guardia Civil de Tráfico; para el personal de carreteras, mantenimiento y grúas.",
+   "tema": "Tráfico (APRAT)",
+   "f": "Manual DGT-APRAT I, pág. 16",
+   "solo": 1
+  },
+  {
+   "t": "Punto base",
+   "a": [
+    "punto base"
+   ],
+   "d": "Zona de depósito de herramientas y materiales de rescate, en la zona templada. La zona caliente queda libre de herramientas que no se usen.",
+   "tema": "Tráfico (APRAT)",
+   "f": "Manual DGT-APRAT I, pág. 16",
+   "solo": 1
+  },
+  {
+   "t": "Punto de chatarra",
+   "a": [
+    "punto de chatarra"
+   ],
+   "d": "Área de la zona templada donde se dejan los restos de los vehículos siniestrados.",
+   "tema": "Tráfico (APRAT)",
+   "f": "Manual DGT-APRAT I, pág. 16",
+   "solo": 1
+  },
+  {
+   "t": "COTA",
+   "a": [
+    "COTA"
+   ],
+   "d": "Central operativa de la Agrupación de Tráfico de la Guardia Civil; el resto de servicios de la Guardia Civil informan a los CCC (Centros de Comunicación y Control).",
+   "tema": "Tráfico (APRAT)",
+   "f": "Manual DGT-APRAT I, pág. 15",
+   "solo": 1
+  },
+  {
+   "t": "Nivel Negro",
+   "a": [
+    "nivel negro"
+   ],
+   "d": "Denominación del corte total de las vías de comunicación en la información ampliada in situ de un accidente.",
+   "tema": "Tráfico (APRAT)",
+   "f": "Manual DGT-APRAT I, pág. 18",
+   "solo": 1
+  },
+  {
+   "t": "ATGC",
+   "a": [
+    "ATGC",
+    "Agrupación de Tráfico de la Guardia Civil"
+   ],
+   "d": "Agrupación de Tráfico de la Guardia Civil: regula el tráfico, zonifica, ordena dónde se colocan los vehículos de emergencia y autoriza la retirada de los vehículos.",
+   "tema": "Tráfico (APRAT)",
+   "f": "Manual DGT-APRAT I, págs. 12-15",
    "solo": 1
   }
  ]
