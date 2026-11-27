@@ -3797,5 +3797,513 @@
 "tema": "CTE DB-SI",
 "f": "CTE DB-SI, Anejo SI A",
 "solo": 1
+},
+{
+"t": "Dominio público local",
+"a": [
+"dominio público local",
+"dominio público municipal",
+"dominio público"
+],
+"d": "Bienes de la entidad local destinados al uso o servicio público (calles, aceras, plazas…). Usarlo en exclusiva o con un aprovechamiento especial se paga con una tasa.",
+"tema": "Haciendas locales",
+"f": "RDL 2/2004 (TRLRHL), art. 20",
+"solo": 1
+},
+{
+"t": "Prestación patrimonial de carácter público no tributaria",
+"a": [
+"prestación patrimonial de carácter público no tributaria",
+"no tributaria"
+],
+"d": "Lo que se cobra coactivamente por un servicio local gestionado de forma indirecta (concesión, empresa mixta o de capital público). No es tasa; se regula por ordenanza.",
+"tema": "Haciendas locales",
+"f": "RDL 2/2004 (TRLRHL), art. 20.6",
+"solo": 1
+},
+{
+"t": "Hecho imponible",
+"a": [
+"hecho imponible"
+],
+"d": "Situación que fija la ley y cuya realización hace nacer la obligación de pagar un tributo (p. ej., aumento de valor por una obra local en la contribución especial).",
+"tema": "Haciendas locales",
+"f": "RDL 2/2004 (TRLRHL), arts. 20 y 28",
+"solo": 1
+},
+{
+"t": "Recargo (hacienda local)",
+"a": [
+"recargos",
+"recargo"
+],
+"d": "Cantidad que una entidad local exige añadida a un impuesto de la comunidad autónoma o de otra entidad local.",
+"tema": "Haciendas locales",
+"f": "RDL 2/2004 (TRLRHL), art. 2.1.b",
+"solo": 1
+},
+{
+"t": "Circuito en paralelo",
+"a": [
+"en paralelo",
+"paralelo"
+],
+"d": "Receptores conectados cada uno de forma independiente a la misma tensión; la intensidad total es la suma de las de cada uno y la resistencia total baja al añadir receptores.",
+"tema": "Electricidad",
+"f": "Conceptos básicos de electricidad, 5",
+"solo": 1
+},
+{
+"t": "Escala AVDN",
+"a": [
+"escala AVDN",
+"AVDN"
+],
+"d": "Valoración rápida del nivel de conciencia: Alerta, responde a la Voz, responde solo al Dolor, No responde.",
+"tema": "Tráfico (APRAT)",
+"f": "Manual DGT-APRAT I, págs. 10 y 17",
+"solo": 1
+},
+{
+"t": "Zona templada",
+"a": [
+"zona templada",
+"área templada"
+],
+"d": "Franja de unos 5-10 m alrededor de la zona caliente: vehículos de bomberos, sanitarios y Guardia Civil, punto base, punto de chatarra y espera del personal de apoyo.",
+"tema": "Tráfico (APRAT)",
+"f": "Manual DGT-APRAT I, pág. 16",
+"solo": 1
+},
+{
+"t": "Zona fría",
+"a": [
+"zona fría",
+"área fría"
+],
+"d": "Perímetro exterior no implicado en el rescate, controlado por la Guardia Civil de Tráfico; para el personal de carreteras, mantenimiento y grúas.",
+"tema": "Tráfico (APRAT)",
+"f": "Manual DGT-APRAT I, pág. 16",
+"solo": 1
+},
+{
+"t": "Punto base",
+"a": [
+"punto base"
+],
+"d": "Zona de depósito de herramientas y materiales de rescate, en la zona templada. La zona caliente queda libre de herramientas que no se usen.",
+"tema": "Tráfico (APRAT)",
+"f": "Manual DGT-APRAT I, pág. 16",
+"solo": 1
+},
+{
+"t": "Punto de chatarra",
+"a": [
+"punto de chatarra"
+],
+"d": "Área de la zona templada donde se dejan los restos de los vehículos siniestrados.",
+"tema": "Tráfico (APRAT)",
+"f": "Manual DGT-APRAT I, pág. 16",
+"solo": 1
+},
+{
+"t": "COTA",
+"a": [
+"COTA"
+],
+"d": "Central operativa de la Agrupación de Tráfico de la Guardia Civil; el resto de servicios de la Guardia Civil informan a los CCC (Centros de Comunicación y Control).",
+"tema": "Tráfico (APRAT)",
+"f": "Manual DGT-APRAT I, pág. 15",
+"solo": 1
+},
+{
+"t": "Nivel Negro",
+"a": [
+"nivel negro"
+],
+"d": "Denominación del corte total de las vías de comunicación en la información ampliada in situ de un accidente.",
+"tema": "Tráfico (APRAT)",
+"f": "Manual DGT-APRAT I, pág. 18",
+"solo": 1
+},
+{
+"t": "ATGC",
+"a": [
+"ATGC",
+"Agrupación de Tráfico de la Guardia Civil"
+],
+"d": "Agrupación de Tráfico de la Guardia Civil: regula el tráfico, zonifica, ordena dónde se colocan los vehículos de emergencia y autoriza la retirada de los vehículos.",
+"tema": "Tráfico (APRAT)",
+"f": "Manual DGT-APRAT I, págs. 12-15",
+"solo": 1
+},
+{
+"t": "Asamblea vecinal",
+"a": [
+"asamblea vecinal"
+],
+"d": "Órgano formado por los vecinos que, en los municipios en régimen de Concejo Abierto, ejerce las atribuciones que en los demás corresponden al Pleno.",
+"tema": "Régimen local",
+"f": "LBRL (Ley 7/1985), art. 22.2",
+"solo": 1
+},
+{
+"t": "Comisión Especial de Cuentas",
+"a": [
+"comisión especial de cuentas"
+],
+"d": "Comisión que existe en todos los municipios para examinar las cuentas de la entidad local.",
+"tema": "Régimen local",
+"f": "LBRL (Ley 7/1985), art. 20.1.e",
+"solo": 1
+},
+{
+"t": "Teniente de Alcalde",
+"a": [
+"teniente de alcalde",
+"tenientes de alcalde"
+],
+"d": "Concejal nombrado libremente por el Alcalde (entre los miembros de la Junta de Gobierno, si existe) que le sustituye, por orden de nombramiento, en caso de vacante, ausencia o enfermedad.",
+"tema": "Régimen local",
+"f": "LBRL (Ley 7/1985), art. 23.3",
+"solo": 1
+},
+{
+"t": "Declaración de lesividad",
+"a": [
+"declaración de lesividad",
+"lesividad"
+],
+"d": "Acuerdo por el que la Administración declara que un acto suyo favorable a alguien perjudica el interés público, paso previo para impugnarlo ante los tribunales. En el régimen común la declara el Pleno.",
+"tema": "Régimen local",
+"f": "LBRL (Ley 7/1985), art. 22.2.k",
+"solo": 1
+},
+{
+"t": "Operaciones de tesorería",
+"a": [
+"operaciones de tesorería",
+"operación de tesorería"
+],
+"d": "Créditos a corto plazo para cubrir desfases de caja. El Alcalde puede concertarlas mientras las vivas no superen el 15 % de los ingresos corrientes liquidados del ejercicio anterior.",
+"tema": "Régimen local",
+"f": "LBRL (Ley 7/1985), art. 21.1.f",
+"solo": 1
+},
+{
+"t": "Funcionario de carrera",
+"a": [
+"funcionario de carrera",
+"funcionarios de carrera"
+],
+"d": "Funcionario con relación permanente con la Administración. En la Administración local, solo ellos pueden ejercer funciones que impliquen ejercicio de autoridad o potestades públicas.",
+"tema": "Régimen local",
+"f": "LBRL (Ley 7/1985), art. 92.3",
+"solo": 1
+},
+{
+"t": "Ángor",
+"a": [
+"ángor",
+"angina de pecho"
+],
+"d": "Dolor torácico isquémico por obstrucción INCOMPLETA de una arteria coronaria. Aparece con el esfuerzo, dura poco y mejora con reposo y nitroglicerina.",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 3",
+"solo": 1
+},
+{
+"t": "Placa de ateroma",
+"a": [
+"placa de ateroma"
+],
+"d": "Placa de grasa en la pared de la arteria coronaria; es la causa común del síndrome coronario agudo.",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 3",
+"solo": 1
+},
+{
+"t": "Síncope",
+"a": [
+"síncope",
+"síncopes"
+],
+"d": "Pérdida súbita de conciencia, breve y con recuperación espontánea, por hipoperfusión cerebral transitoria. De más leve a más grave: reflejo, ortostático y cardiaco.",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 7",
+"solo": 1
+},
+{
+"t": "Disnea paroxística nocturna",
+"a": [
+"disnea paroxística nocturna"
+],
+"d": "En la insuficiencia cardiaca, despertarse por la noche con sensación de ahogo.",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 6",
+"solo": 1
+},
+{
+"t": "Trombosis venosa profunda (TVP)",
+"a": [
+"trombosis venosa profunda",
+"TVP"
+],
+"d": "Obstrucción de las venas profundas de las piernas por un trombo; es la causa principal del TEP.",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 9",
+"solo": 1
+},
+{
+"t": "Tromboembolismo pulmonar (TEP)",
+"a": [
+"tromboembolismo pulmonar",
+"TEP"
+],
+"d": "Obstrucción de la arteria pulmonar por un trombo, casi siempre procedente de una TVP. 3.ª enfermedad cardiovascular más frecuente.",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 9",
+"solo": 1
+},
+{
+"t": "Órganos diana",
+"a": [
+"órganos diana",
+"órganos «diana»"
+],
+"d": "Órganos que puede lesionar una crisis hipertensiva: sistema nervioso central, corazón y riñones.",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 8",
+"solo": 1
+},
+{
+"t": "Fibrilación auricular",
+"a": [
+"fibrilación auricular"
+],
+"d": "Taquiarritmia en la que las aurículas se contraen a unos 400 lat/min; produce trombos auriculares y embolias, sobre todo cerebrales.",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 5",
+"solo": 1
+},
+{
+"t": "Flutter auricular",
+"a": [
+"flutter auricular",
+"flutter"
+],
+"d": "Taquiarritmia en la que las aurículas se contraen a unos 200 lat/min.",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 5",
+"solo": 1
+},
+{
+"t": "Shock hipovolémico",
+"a": [
+"shock hipovolémico"
+],
+"d": "Shock por pérdida de fluido circulante (hemorragias, deshidratación); es el tipo de shock más frecuente.",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 10",
+"solo": 1
+},
+{
+"t": "Dolor opresivo",
+"a": [
+"dolor opresivo",
+"opresivo"
+],
+"d": "Dolor que el paciente describe como una presión difusa en el pecho, no localizable a punta de dedo; típico del dolor isquémico.",
+"tema": "Síntomas clínicos",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 2",
+"solo": 1
+},
+{
+"t": "Precordial",
+"a": [
+"precordial"
+],
+"d": "Localización del dolor en el lado izquierdo del pecho, a la altura del corazón (retroesternal = centro, a la altura del esternón).",
+"tema": "Síntomas clínicos",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 2",
+"solo": 1
+},
+{
+"t": "Hipotensión",
+"a": [
+"hipotensión"
+],
+"d": "Tensión arterial baja: TAS < 90 y/o TAD < 60 mm Hg. En la emergencia prehospitalaria suele indicar shock.",
+"tema": "Síntomas clínicos",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 2",
+"solo": 1
+},
+{
+"t": "Bradicardia",
+"a": [
+"bradicardia"
+],
+"d": "Frecuencia cardiaca por debajo de 60 lat/min (normal: 60-100). Puede ser fisiológica en deportistas o ante un dolor intenso.",
+"tema": "Síntomas clínicos",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 2",
+"solo": 1
+},
+{
+"t": "Insuficiencia cardiaca",
+"a": [
+"insuficiencia cardiaca",
+"insuficiencia cardíaca"
+],
+"d": "Incapacidad del corazón para bombear en cada latido la sangre suficiente; la sangre se acumula y produce edemas (en el pulmón, disnea).",
+"tema": "Patología cardiovascular",
+"f": "Urgencias cardiocirculatorias y respiratorias (Tema 28), pág. 5",
+"solo": 1
+},
+{
+"t": "Riesgo laboral",
+"a": [
+"riesgo laboral"
+],
+"d": "Posibilidad de que un trabajador sufra un daño derivado del trabajo; su gravedad se valora con la probabilidad y la severidad del daño, conjuntamente.",
+"tema": "PRL",
+"f": "LPRL art. 4 (pág. 4)",
+"solo": 1
+},
+{
+"t": "Equipo de trabajo",
+"a": [
+"equipo de trabajo"
+],
+"d": "Cualquier máquina, aparato, instrumento o instalación utilizada en el trabajo.",
+"tema": "PRL",
+"f": "LPRL art. 4 (pág. 4)",
+"solo": 1
+},
+{
+"t": "Daños derivados del trabajo",
+"a": [
+"daños derivados del trabajo"
+],
+"d": "Enfermedades, patologías o lesiones sufridas con motivo u ocasión del trabajo.",
+"tema": "PRL",
+"f": "LPRL art. 4 (pág. 4)",
+"solo": 1
+},
+{
+"t": "Inspección de Trabajo y Seguridad Social",
+"a": [
+"inspección de trabajo",
+"inspector de trabajo"
+],
+"d": "Órgano que vigila y controla el cumplimiento de la normativa de prevención; puede ordenar la paralización inmediata de trabajos por riesgo grave e inminente.",
+"tema": "PRL",
+"f": "LPRL art. 9 (págs. 5-6)",
+"solo": 1
+},
+{
+"t": "Servicio de prevención",
+"a": [
+"servicio de prevención",
+"servicios de prevención"
+],
+"d": "Conjunto de medios humanos y materiales para las actividades preventivas; de carácter interdisciplinario. Puede ser propio o ajeno.",
+"tema": "PRL",
+"f": "LPRL art. 31 (pág. 15)",
+"solo": 1
+},
+{
+"t": "Auditoría del sistema de prevención",
+"a": [
+"auditoría",
+"evaluación externa"
+],
+"d": "Control externo obligatorio para el empresario que no ha concertado la prevención con un servicio ajeno.",
+"tema": "PRL",
+"f": "LPRL art. 30.6 (pág. 14)",
+"solo": 1
+},
+{
+"t": "Mutuas Colaboradoras con la Seguridad Social",
+"a": [
+"mutua",
+"mutuas"
+],
+"d": "No pueden desarrollar las funciones de los servicios de prevención ajenos.",
+"tema": "PRL",
+"f": "LPRL art. 32 (págs. 15-16)",
+"solo": 1
+},
+{
+"t": "Orden del Cuerpo",
+"a": [
+"orden del cuerpo"
+],
+"d": "Orden general del Cuerpo de Bomberos; se entiende conocida por todos, sin poder alegar su desconocimiento, y se lee a diario al iniciar el turno.",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos, art. 37 (pág. 11)",
+"solo": 1
+},
+{
+"t": "Parte",
+"a": [
+"parte",
+"partes"
+],
+"d": "Comunicación dirigida a un superior para ponerle al corriente de novedades o hechos del Servicio. Ordinario (conducto regular) o extraordinario (directo a quien resuelve).",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos, arts. 40-43 (pág. 11)",
+"solo": 1
+},
+{
+"t": "Parte de siniestro",
+"a": [
+"parte de siniestro"
+],
+"d": "Parte escrito de cada salida a siniestro: datos los toma el de menor antigüedad y lo redacta quien estuvo al mando, nada más regresar.",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos, art. 50 (págs. 12-13)",
+"solo": 1
+},
+{
+"t": "Jefe de Guardia",
+"a": [
+"jefe de guardia"
+],
+"d": "Responsable máximo de la guardia en todo Madrid; puesto desempeñado por un Oficial titulado del Departamento.",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos, art. 60 (pág. 14)",
+"solo": 1
+},
+{
+"t": "Bombero Honorario",
+"a": [
+"bombero honorario"
+],
+"d": "Título que otorga el Ayuntamiento Pleno, a propuesta del Cuerpo, a personas o instituciones que destacan por su ayuda al Cuerpo.",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos, art. 77 (págs. 16-17)",
+"solo": 1
+},
+{
+"t": "Agente de la autoridad municipal",
+"a": [
+"agente de la autoridad",
+"agentes de la autoridad"
+],
+"d": "Condición de los bomberos en acto de servicio y, fuera de él, cuando intervienen en un siniestro acreditándose con el carné municipal.",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos, art. 78 (pág. 17)",
+"solo": 1
+},
+{
+"t": "Cordones del siniestro",
+"a": [
+"cordón",
+"cordones"
+],
+"d": "Interno: solo bomberos y personal que colabora (órdenes solo de mandos de Bomberos). Externo: servicios sanitarios y auxiliares.",
+"tema": "Reglamento Bomberos",
+"f": "Reglamento del Cuerpo de Bomberos, art. 82 (págs. 17-18)",
+"solo": 1
 }
 ]

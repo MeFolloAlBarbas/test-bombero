@@ -1,6 +1,6 @@
 {
- "esperando_visto_bueno": "2026-11-27",
- "ultimo_aprobado": "2026-11-26",
+ "esperando_visto_bueno": null,
+ "ultimo_aprobado": "2026-11-27",
  "por_noche": 170,
  "por_tarea": 34,
  "parado": null
