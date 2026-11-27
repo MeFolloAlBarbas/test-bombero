@@ -201,9 +201,9 @@
   },
   "DOC-20240402-WA0043..pdf": {
    "tema": "Patologías / IMV y triaje",
-   "hechas": "",
-   "total": null,
-   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están."
+   "hechas": "1-10",
+   "total": 44,
+   "nota": "Antes de los lotes ya había preguntas de este tema en preguntas.json: comprobar qué datos están. Lote 2026-11-27 (tarea 4): págs. 1-10 hechas (síntomas cardiovasculares, SCA, arritmias, IC/EAP, síncope, HTA, TEP; pág. 10 el shock solo en parte). Ojo: pág. 2 da HTA TAS>120 y pág. 8 HTA ≥140; ángor <10 min en pág. 2 y <10-15 en pág. 3: no preguntar esas cifras."
   },
   "DOC-20240414-WA0000. 1.pdf": {
    "tema": "CTE DB-SI (SI 1-3)",
