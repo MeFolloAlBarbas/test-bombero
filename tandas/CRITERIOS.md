@@ -9,21 +9,17 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
   apartado de repaso de pasadas), pero el calendario no la vuelve a usar. Tampoco se cambia nunca un día de hoy o
   anterior en plan.json. `scripts/sin_repetir.py` lo comprueba al ampliar el calendario.
 
-## Visto bueno diario (regla del usuario, 25/11/2026)
-- Cada noche se hace **un lote**: unas `por_noche` preguntas (tandas/estado.json), repartidas en
-  varias tareas de unas `por_tarea` cada una.
-- El lote se guarda en `tandas/pendientes/AAAA-MM-DD.json` (`{"preguntas": [...], "glosario": [...]}`).
-  **No entra en `preguntas.json` ni en la web** hasta que el usuario da el visto bueno.
-- Al terminar el lote: `python3 scripts/reglas.py` sin errores → `python3 scripts/revision.py AAAA-MM-DD` (pone todas las preguntas completas)
-  → commit y push → aviso al usuario con el enlace a `tandas/revision/AAAA-MM-DD.md`.
-- **Si `esperando_visto_bueno` tiene la fecha de una noche anterior, la tarea NO hace nada**
-  (como mucho, un recordatorio en la primera tarea de la noche).
-- Normas UNE/EN: la web las detecta solas (Laboratorio → Normas) en cualquier parte del texto de una pregunta (enunciado, opciones o explicación) y la muestran solo después de que el usuario responda esa pregunta: código, qué regula y tema. Al citar una norma, escribir siempre su código completo (p. ej. «UNE-EN 374-1»). La web SOLO muestra las que están en `laboratorio.json` → `nor` (lista de normas que aparecen en el temario). Al aprobar un lote, si sale una norma nueva, comprobar con project_search que está en algún manual y solo entonces añadirla ahí con su descripción; las que solo vengan de fuentes externas (contrastes, erratas) no se añaden.
-- Cuando el usuario da el visto bueno (en una conversación): `python3 scripts/aprobar.py AAAA-MM-DD`
-  (opcional `--quitar id1,id2`), luego `scripts/version.sh`, commit y push. Si pide cambios en
-  preguntas concretas, se corrigen en el lote antes de aprobar y se apunta el criterio aprendido aquí
-  y en las notas del proyecto.
-- Si `parado` no es null (p. ej. «temario agotado»), la tarea no genera nada.
+## Aprobación automática (desde el 27/11/2026, el usuario ya no da visto bueno a cada lote)
+- «Me han gustado las preguntas que has ido haciendo»: las preguntas entran solas en la web cada noche.
+- **Excepción: marca con `"revisar": "<motivo>"` cualquier pregunta rara o distinta en su forma de redacción**
+  (formato nuevo, enunciado poco habitual, duda sobre si se entiende, dato discutible o contradictorio) y las de
+  Edificaciones I-III / Técnicas de estabilización donde el manual y la realidad no coinciden. Esas NO entran: se
+  apartan en `tandas/revisar/AAAA-MM-DD.json` y se ven con el usuario una a una. Ante la duda, marcarla.
+- La tarea 5, al terminar, ejecuta `python3 scripts/aprobar.py <hoy> --separar-revisar`, luego `scripts/version.sh`,
+  commit y push, y avisa al usuario: cuántas han entrado y cuáles quedan para revisar juntos (con su motivo).
+- Si la aprobación falla (reglas.py con errores o sin_repetir.py), no se sube nada a la web: queda pendiente y se avisa.
+- Las revisadas que el usuario acepte: `python3 scripts/aceptar_revisadas.py AAAA-MM-DD --ok id1,id2 [--quitar id3]`.
+- `esperando_visto_bueno` solo queda puesto si la aprobación automática falló; entonces la noche siguiente no genera.
 
 ## Temario oficial
 - **Los manuales están en el repo, cifrados**, en `temario/` (nombres según las bases). Al empezar:

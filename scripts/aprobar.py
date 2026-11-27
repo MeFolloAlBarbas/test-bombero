@@ -6,6 +6,8 @@
 4. Amplía el calendario (scripts/calendario.sh).
 Después: scripts/version.sh, commit y push.
 Uso: python3 scripts/aprobar.py 2026-11-25   (o --quitar 401,407 para descartar antes esas preguntas)
+     python3 scripts/aprobar.py 2026-11-27 --separar-revisar   (aprobación automática de la tarea 5: las preguntas
+       marcadas con «revisar» no entran; se apartan en tandas/revisar/AAAA-MM-DD.json para verlas con el usuario)
 """
 import json, os, sys, subprocess, shutil
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -16,6 +18,16 @@ lote = json.load(open(ruta, encoding='utf-8'))
 if quitar:
     lote['preguntas'] = [q for q in lote['preguntas'] if q['id'] not in quitar]
     json.dump(lote, open(ruta, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+if '--separar-revisar' in sys.argv:
+    aparte = [q for q in lote['preguntas'] if q.get('revisar')]
+    if aparte:
+        rv = os.path.join(ROOT, 'tandas', 'revisar', fecha + '.json')
+        prev = json.load(open(rv, encoding='utf-8')) if os.path.exists(rv) else {'preguntas': [], 'glosario': []}
+        prev['preguntas'] += aparte; prev['glosario'] += lote.get('glosario', [])
+        open(rv, 'w', encoding='utf-8').write(json.dumps(prev, ensure_ascii=False, indent=1))
+        lote['preguntas'] = [q for q in lote['preguntas'] if not q.get('revisar')]
+        json.dump(lote, open(ruta, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print(f'Apartadas para revisar con el usuario: {len(aparte)}')
 if subprocess.run([sys.executable, os.path.join(ROOT, 'scripts', 'reglas.py'), ruta]).returncode:
     sys.exit('Hay errores: corrígelos antes de aprobar.')
 PQ, GL = os.path.join(ROOT, 'preguntas.json'), os.path.join(ROOT, 'glosario.json')
