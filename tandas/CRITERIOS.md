@@ -141,7 +141,9 @@ manual (citarlo en `src` y en la explicación) y construir un caso que el temari
 muestra el razonamiento paso a paso: qué dice el manual → por qué de ahí se deduce la correcta → por qué falla la tentadora.
 Dar prioridad a este tipo dentro de las de aplicación. Llevan además el campo `ded: 1`.
 **De momento TODAS las de deducir se marcan con `"revisar": "deducción"`**: el usuario quiere verlas antes de subirlas
-(al menos las primeras). Hacer pocas y muy cuidadas (unas 6 por noche, una por día de calendario).
+(al menos las primeras). **Las hace SOLO la tarea 1 (20:37): exactamente 6 en total cada noche**, una por día de calendario
+(lunes a sábado), muy cuidadas y de temas distintos. **Las tareas 2 a 5 NO hacen ninguna pregunta de deducir** (decidido por el
+usuario el 27/11, para revisar 6 cada mañana).
 **Destino (decidido por el usuario el 27/11): una pregunta EXTRA de deducir cada día a las 20:00**, además de la difícil
 (13 preguntas al día). YA ESTÁ EN LA WEB: `scripts/deduccion.py` (dentro de calendario.sh) pone una `ded: 1` aceptada como 13.º id
 de cada día futuro; la web la enseña como «20:00 · extra» y el aviso push de las 20:00 es uno solo para las dos. Mientras no
