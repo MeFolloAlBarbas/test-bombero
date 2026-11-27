@@ -31,7 +31,7 @@ HASTA = dt.date.fromisoformat(sys.argv[sys.argv.index('--hasta') + 1]) if '--has
 
 plan = json.load(open(PLAN_F, encoding='utf-8')) if os.path.exists(PLAN_F) else {}
 usadas = set(YA_USADAS_ANTES) | {i for ids in plan.values() for i in ids}
-libres = [q for q in sorted(BANK, key=lambda q: q['id']) if q['id'] not in usadas]
+libres = [q for q in sorted(BANK, key=lambda q: q['id']) if q['id'] not in usadas and not q.get('ded')]  # ded: hueco extra de las 20:00
 
 dia = max([dt.date.fromisoformat(k) for k in plan] + [INICIO - dt.timedelta(days=1)]) + dt.timedelta(days=1)
 nuevos = 0

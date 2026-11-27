@@ -17,7 +17,7 @@ usadas={i for ids in plan.values() for i in ids}
 import os as _os,re as _re  # también las ya vistas antes del calendario (YA_USADAS_ANTES de plan.py)
 _t=open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'plan.py'),encoding='utf-8').read()
 usadas|={int(x) for x in _re.findall(r'\d+',_re.sub(r'#.*','',_re.search(r'YA_USADAS_ANTES = \{([^}]*)\}',_t,_re.S).group(1)))}
-libres=[q for q in sorted(B.values(),key=lambda q:q['id']) if q.get('ex') and q['id'] not in usadas]
+libres=[q for q in sorted(B.values(),key=lambda q:q['id']) if q.get('ex') and q['id'] not in usadas and not q.get('ded')]
 prot=lambda q:q.get('int') or q.get('dib')
 n=0
 for d in sorted(plan):
