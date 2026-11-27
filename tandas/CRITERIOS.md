@@ -11,7 +11,7 @@ proyecto (`claude/entrenamiento-tests.md`); si hay contradicción, mandan las no
 
 ## Aprobación automática (desde el 27/11/2026, el usuario ya no da visto bueno a cada lote)
 - «Me han gustado las preguntas que has ido haciendo»: las preguntas entran solas en la web cada noche.
-- **Excepción: marca con `"revisar": "<motivo>"` cualquier pregunta rara o distinta en su forma de redacción**
+- **Excepción: marca con `"revisar": "<motivo>"` cualquier pregunta rara o distinta en su forma de redacción, toda pregunta de deducir (`ded: 1`)**
   (formato nuevo, enunciado poco habitual, duda sobre si se entiende, dato discutible o contradictorio) y las de
   Edificaciones I-III / Técnicas de estabilización donde el manual y la realidad no coinciden, y **SIEMPRE las
   preguntas basadas en una errata del temario** (y su ficha para laboratorio.json): el usuario quiere verlas antes. Esas NO entran: se
@@ -139,7 +139,9 @@ el CTE dice qué elementos deben compartimentar (sectores, locales de riesgo…)
 pide nada, la respuesta es «no se exige». Al hacerlas: partir de un principio, límite o ámbito de aplicación que SÍ está en el
 manual (citarlo en `src` y en la explicación) y construir un caso que el temario no menciona literalmente. La explicación
 muestra el razonamiento paso a paso: qué dice el manual → por qué de ahí se deduce la correcta → por qué falla la tentadora.
-Dar prioridad a este tipo dentro de las de aplicación (y para la difícil de las 20:00).
+Dar prioridad a este tipo dentro de las de aplicación. Llevan además el campo `ded: 1`.
+**De momento TODAS las de deducir se marcan con `"revisar": "deducción"`**: el usuario quiere verlas antes de subirlas
+(al menos las primeras). Hacer pocas y muy cuidadas (unas 6 por noche, una por día de calendario).
 Reglas: enunciado con un caso concreto y verosímil; el dato o principio tiene que estar en el temario (con `src`); los
 distractores son errores de razonamiento típicos, no datos inventados; la explicación dice qué principio se aplica y por
 qué la opción tentadora falla. Pueden ser normales o difíciles (las de las 20:00 de este estilo son ideales).
