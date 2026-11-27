@@ -17,7 +17,7 @@ delicada = lambda q: any(k in q['t'].lower() for k in DELICADOS)
 
 def tipo(q):
     if q.get('d') == 'difícil': return 'difícil'
-    for k, n in (('int', 'intervención'), ('ex', 'estilo examen'), ('dib', 'dibujo'), ('cifra', 'cifra')):
+    for k, n in (('apl', 'aplicación'), ('int', 'intervención'), ('ex', 'estilo examen'), ('dib', 'dibujo'), ('cifra', 'cifra')):
         if q.get(k): return n
     return 'concepto'
 
