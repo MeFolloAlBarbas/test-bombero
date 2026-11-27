@@ -1,0 +1,949 @@
+{
+ "preguntas": [
+  {
+   "id": 883,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "¿Sobre qué impuestos pueden exigir recargos las entidades locales como recurso de su hacienda?",
+   "o": [
+    "Sobre cualquier impuesto que se pague en el municipio.",
+    "Sobre los del Estado y los de las comunidades autónomas.",
+    "Sobre los de las comunidades autónomas o de otras entidades locales."
+   ],
+   "c": 2,
+   "o4": "Solo sobre los impuestos estatales cedidos.",
+   "que": "Entre los recursos de la hacienda local están los tributos propios y los <mark>recargos exigibles sobre los impuestos de las comunidades autónomas o de otras entidades locales</mark>.",
+   "porque": "Del Estado no reciben recargos sino <mark>participaciones en sus tributos</mark> (igual que en los de la comunidad autónoma).",
+   "ojo": "No confundir: recargo (sobre impuestos de CCAA u otras EELL) y participación (en tributos del Estado y de las CCAA).",
+   "rec": "Recargo: comunidad o vecina (otra entidad local). Participación: Estado.",
+   "f": "RDL 2/2004 (TRLRHL), art. 2.1.b (pág. 2)",
+   "tq": "Recargos de la hacienda local: ¿sobre qué?",
+   "ta": "Impuestos de las CCAA o de otras entidades locales.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     2
+    ]
+   }
+  },
+  {
+   "id": 884,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Para cobrar sus tributos, precios públicos y multas, ¿qué prerrogativas tiene la hacienda de las entidades locales?",
+   "o": [
+    "Las establecidas legalmente para la hacienda del Estado.",
+    "Ninguna especial: cobra como cualquier acreedor.",
+    "Las de la hacienda de su comunidad autónoma."
+   ],
+   "c": 0,
+   "o4": "Solo las que fije cada ordenanza fiscal.",
+   "que": "Para la cobranza de tributos y demás ingresos de derecho público (precios públicos, multas…), la hacienda local <mark>ostenta las prerrogativas legales de la hacienda del Estado</mark>.",
+   "porque": "Son ingresos de derecho público: la ley le da los mismos privilegios de cobro que al Estado (p. ej., la vía de apremio).",
+   "ojo": "No son las de la comunidad autónoma: la referencia es siempre la hacienda del Estado.",
+   "rec": "Cobra «como Hacienda» (la del Estado).",
+   "f": "RDL 2/2004 (TRLRHL), art. 2.2 (pág. 2)",
+   "tq": "Prerrogativas de cobro de la hacienda local",
+   "ta": "Las de la hacienda del Estado.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     2
+    ]
+   }
+  },
+  {
+   "id": 885,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Las obras de una nueva calle aumentan el valor de las viviendas que dan a ella. ¿Qué tributo local grava ese beneficio de los propietarios?",
+   "o": [
+    "El Impuesto sobre Bienes Inmuebles.",
+    "Una tasa por prestación de servicios.",
+    "Una contribución especial."
+   ],
+   "c": 2,
+   "o4": "Un precio público por la obra.",
+   "que": "El hecho imponible de las <mark>contribuciones especiales</mark> es obtener un <mark>beneficio o un aumento de valor de los bienes</mark> por obras públicas o por establecer o ampliar servicios públicos locales.",
+   "porque": "La obra beneficia de modo especial a unos vecinos concretos; por eso pagan parte de ella.",
+   "ojo": "La tasa grava usar el dominio público o recibir un servicio o actividad; la contribución especial, el aumento de valor por una obra o servicio.",
+   "rec": "Contribución especial = «la obra me revaloriza».",
+   "f": "RDL 2/2004 (TRLRHL), art. 28 (pág. 7)",
+   "tq": "Hecho imponible de la contribución especial",
+   "ta": "Beneficio o aumento de valor por obras o servicios locales.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     7
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 886,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Según el RDL 2/2004, ¿cuándo NO se considera voluntaria la solicitud de un servicio local, a efectos de cobrarlo como tasa?",
+   "o": [
+    "Cuando el servicio es imprescindible para la vida privada o social.",
+    "Cuando el coste del servicio supera su precio.",
+    "Cuando el interesado lo solicita por escrito."
+   ],
+   "c": 0,
+   "o4": "Cuando lo pide más de la mitad del vecindario.",
+   "que": "No se considera voluntaria la solicitud o recepción: <mark>cuando la impone una norma legal o reglamentaria</mark>, o <mark>cuando el bien o servicio es imprescindible para la vida privada o social</mark> del solicitante.",
+   "porque": "Si no hay elección real, el servicio no es voluntario y lo que se cobra es una tasa (un tributo), no un precio público.",
+   "ojo": "Pedirlo por escrito no lo hace voluntario ni obligatorio: lo que cuenta es si viene impuesto o si es imprescindible.",
+   "rec": "No voluntario = «me obliga una norma» o «no puedo vivir sin él».",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.1.B.a (pág. 3)",
+   "tq": "Servicio no voluntario (tasa)",
+   "ta": "Impuesto por norma o imprescindible para la vida privada o social.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     3
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 887,
+   "t": "Haciendas locales",
+   "d": "difícil",
+   "q": "Un servicio local de solicitud voluntaria, ¿cuándo se cobra igualmente como tasa?",
+   "o": [
+    "Solo si una ley lo reserva expresamente al sector público.",
+    "Cuando no lo presta el sector privado, esté o no reservado al público.",
+    "Cuando lo solicitan al menos diez vecinos del municipio."
+   ],
+   "c": 1,
+   "o4": "Nunca: lo voluntario se cobra siempre como precio público.",
+   "que": "Es tasa el servicio o actividad de competencia local que se dé en régimen de derecho público si <mark>no es de solicitud voluntaria</mark> o si <mark>no lo presta el sector privado, esté o no establecida su reserva</mark> a favor del sector público.",
+   "porque": "Si nadie más lo ofrece, el vecino no puede elegir proveedor: por eso se trata como tributo.",
+   "ojo": "La trampa es «solo si lo reserva una ley»: el texto dice expresamente <mark>esté o no establecida su reserva</mark>.",
+   "rec": "Basta una de las dos: obligatorio O sin oferta privada.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.1.B.b (pág. 3)",
+   "tq": "Servicio voluntario que es tasa",
+   "ta": "Si no lo presta el sector privado (haya o no reserva).",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     3
+    ]
+   }
+  },
+  {
+   "id": 888,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Los bomberos apuntalan de oficio la fachada de un edificio que amenaza caer por la dejadez de su propietario, que no ha pedido nada. ¿Puede cobrársele una tasa?",
+   "o": [
+    "Sí: su omisión ha obligado a actuar por seguridad.",
+    "No: la seguridad es protección civil, siempre gratuita.",
+    "No: solo hay tasa si el servicio se solicita."
+   ],
+   "c": 0,
+   "o4": "Solo si la fachada está asegurada.",
+   "que": "El servicio <mark>afecta al sujeto pasivo</mark> cuando lo motivan, directa o indirectamente, <mark>sus actuaciones u omisiones</mark> que obligan a la entidad local a actuar de oficio por razones de <mark>seguridad</mark>, salubridad, abastecimiento u orden urbanístico.",
+   "porque": "Quien provoca la intervención con su dejadez es el que la paga, aunque no la haya pedido.",
+   "ojo": "Lo gratuito por ley es la protección civil en general, no un servicio concreto motivado por un particular (prevención de ruinas y salvamentos admiten tasa).",
+   "rec": "Lo provocas, lo pagas.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.2 (pág. 3)",
+   "tq": "Servicio de oficio motivado por una omisión",
+   "ta": "Sí hay tasa: la omisión obliga a actuar.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     3
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 889,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Una obra ocupa la acera con andamios, vallas y escombros. ¿Por qué concepto cobra el ayuntamiento?",
+   "o": [
+    "Tasa por utilización privativa del dominio público local.",
+    "Tasa por prestación de un servicio público local.",
+    "Contribución especial por la realización de obras."
+   ],
+   "c": 0,
+   "o4": "Precio público por ocupación de vía pública.",
+   "que": "Ocupar terrenos de uso público con <mark>mercancías, materiales, escombros, vallas, puntales, asnillas, andamios</mark> y similares es un supuesto de tasa por <mark>utilización privativa o aprovechamiento especial del dominio público local</mark>.",
+   "porque": "No se recibe ningún servicio: se usa en exclusiva un espacio que es de todos.",
+   "ojo": "La contribución especial la paga quien se beneficia de una obra pública, no quien ocupa la calle con su obra privada.",
+   "rec": "Ocupar la calle = dominio público.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.3.g (pág. 4)",
+   "tq": "Andamios y escombros en la acera",
+   "ta": "Tasa por utilización del dominio público local.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 890,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "¿Qué vehículos pueden pagar una tasa local por rodaje y arrastre por las vías públicas?",
+   "o": [
+    "Todos los que superen 3.500 kg de masa máxima.",
+    "Los de transporte de mercancías peligrosas.",
+    "Los que no están gravados por el impuesto de vehículos (IVTM)."
+   ],
+   "c": 2,
+   "o4": "Los vehículos agrícolas que crucen el casco urbano.",
+   "que": "La tasa por <mark>rodaje y arrastre</mark> solo alcanza a los vehículos <mark>que no estén gravados por el Impuesto sobre Vehículos de Tracción Mecánica</mark>.",
+   "porque": "Así no se cobra dos veces por lo mismo: el que ya paga el IVTM no paga esta tasa.",
+   "ojo": "La masa o la carga no son el criterio; lo es no pagar ya el IVTM.",
+   "rec": "Rodaje: o impuesto o tasa, nunca los dos.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.3.o (pág. 4)",
+   "tq": "Tasa por rodaje y arrastre: ¿quién?",
+   "ta": "Vehículos no gravados por el IVTM.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 891,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "¿Qué condición pone la ley para cobrar tasa por ocupar la vía pública con mesas, sillas y tribunas?",
+   "o": [
+    "Que tengan finalidad lucrativa.",
+    "Que ocupen más de diez metros cuadrados.",
+    "Que se instalen durante más de un mes."
+   ],
+   "c": 0,
+   "o4": "Que se pongan en una calle peatonal.",
+   "que": "Es supuesto de tasa la ocupación de terrenos de uso público con <mark>mesas, sillas, tribunas, tablados</mark> y similares <mark>con finalidad lucrativa</mark> (la terraza de un bar).",
+   "porque": "Se cobra el aprovechamiento con ánimo de lucro de un espacio que es de todos.",
+   "ojo": "La ley no pone superficie ni plazo mínimo: esas cifras son inventadas.",
+   "rec": "Terraza que da dinero, terraza que paga.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.3.l (pág. 4)",
+   "tq": "Tasa por mesas y sillas en la calle",
+   "ta": "Solo con finalidad lucrativa.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 892,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "El estacionamiento regulado de vehículos en las zonas que determina el ayuntamiento, ¿qué es?",
+   "o": [
+    "Un precio público por un servicio voluntario.",
+    "Un recargo sobre el impuesto de vehículos.",
+    "Una tasa por aprovechamiento especial del dominio público."
+   ],
+   "c": 2,
+   "o4": "Una contribución especial por el servicio de tráfico.",
+   "que": "El <mark>estacionamiento de vehículos de tracción mecánica</mark> en las vías del municipio, <mark>dentro de las zonas que se determinen</mark> y con sus limitaciones, figura entre las tasas por <mark>utilización o aprovechamiento especial del dominio público local</mark>.",
+   "porque": "Se paga por ocupar un trozo de vía pública, no por recibir un servicio.",
+   "ojo": "No es precio público: lo que se aprovecha es el dominio público, y eso siempre es tasa.",
+   "rec": "Aparcar en zona azul = usar la calle = tasa.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.3.u (pág. 4)",
+   "tq": "Estacionamiento regulado (zona azul)",
+   "ta": "Tasa por aprovechamiento del dominio público.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     4
+    ]
+   }
+  },
+  {
+   "id": 893,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Un vecino pide prestada al servicio municipal de bomberos una motobomba para achicar su sótano. ¿Puede cobrarse una tasa por ello?",
+   "o": [
+    "No: el material de bomberos no puede cederse.",
+    "No: solo puede cobrarse la extinción de incendios.",
+    "Sí: la cesión de su maquinaria y equipo está incluida."
+   ],
+   "c": 2,
+   "o4": "Solo si el sótano está asegurado.",
+   "que": "La tasa por <mark>prevención y extinción de incendios, ruinas, salvamentos</mark> y protección de personas y bienes comprende también el <mark>mantenimiento del servicio</mark> y la <mark>cesión del uso de maquinaria y equipo</mark>: escalas, cubas, motobombas, barcas…",
+   "porque": "Es un servicio de competencia local que beneficia de modo particular a ese vecino.",
+   "ojo": "La ley no limita la tasa a los incendios: incluye salvamentos, ruinas y la cesión de equipo.",
+   "rec": "Escalas, cubas, motobombas, barcas: también se cobran.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.4.k (pág. 5)",
+   "tq": "Cesión de una motobomba de bomberos",
+   "ta": "Admite tasa (cesión de maquinaria y equipo).",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     5
+    ]
+   },
+   "int": 1
+  },
+  {
+   "id": 894,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Si la licencia de obras se sustituye por una declaración responsable, ¿puede el ayuntamiento cobrar tasa?",
+   "o": [
+    "Solo si la obra supera un presupuesto mínimo.",
+    "No, porque ya no otorga ninguna licencia.",
+    "Sí, por las actividades administrativas de control."
+   ],
+   "c": 2,
+   "o4": "No: lo sustituye el Impuesto sobre Construcciones (ICIO).",
+   "que": "Hay tasa por <mark>otorgar licencias urbanísticas</mark> o por <mark>las actividades administrativas de control</mark> cuando la licencia se sustituye por <mark>declaración responsable o comunicación previa</mark>. Igual con las licencias de apertura.",
+   "porque": "El ayuntamiento sigue trabajando (comprueba e inspecciona), y ese control se cobra.",
+   "ojo": "Sin licencia no desaparece la tasa: cambia lo que se grava (el control en lugar del otorgamiento).",
+   "rec": "Sin licencia, sigue el control… y su tasa.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.4.h (pág. 5)",
+   "tq": "Declaración responsable en vez de licencia",
+   "ta": "Tasa por la actividad de control.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     5
+    ]
+   }
+  },
+  {
+   "id": 895,
+   "t": "Haciendas locales",
+   "d": "difícil",
+   "q": "Un comerciante pide al ayuntamiento que enarene la calle helada frente a su tienda. ¿Puede cobrársele una tasa?",
+   "o": [
+    "No: es protección civil, que es siempre gratuita.",
+    "No: es limpieza de la vía pública, que no admite tasa.",
+    "Sí: el enarenado a petición de particulares admite tasa."
+   ],
+   "c": 2,
+   "o4": "Solo si la calle es de titularidad privada.",
+   "que": "Entre los servicios por los que cabe tasa está el <mark>enarenado de vías públicas a solicitud de los particulares</mark>.",
+   "porque": "Lo pide un particular para su beneficio concreto; no es la limpieza general de la calle.",
+   "ojo": "La <mark>limpieza de la vía pública</mark> y la <mark>protección civil</mark> no admiten tasa, y por eso suenan bien; pero el enarenado pedido por un particular es un supuesto propio que sí la admite.",
+   "rec": "Arena a petición, arena con tasa.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.4.y y art. 21 (pág. 6)",
+   "tq": "Enarenado pedido por un particular",
+   "ta": "Admite tasa.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 896,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "¿Puede un ayuntamiento cobrar una tasa por celebrar matrimonios civiles?",
+   "o": [
+    "Sí, puede establecerla.",
+    "No, es un servicio gratuito por ley.",
+    "Solo si la boda es fuera del ayuntamiento."
+   ],
+   "c": 0,
+   "o4": "Solo si los contrayentes no están empadronados.",
+   "que": "La ley dice que los ayuntamientos <mark>podrán establecer una tasa para la celebración de los matrimonios en forma civil</mark>.",
+   "porque": "Es una actividad que beneficia de modo particular a quienes la piden.",
+   "ojo": "Es una posibilidad («podrán»), no una obligación; y no depende del lugar ni del empadronamiento.",
+   "rec": "Boda civil: tasa posible.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.5 (pág. 6)",
+   "tq": "Tasa por bodas civiles",
+   "ta": "Sí, el ayuntamiento puede establecerla.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 897,
+   "t": "Haciendas locales",
+   "d": "difícil",
+   "q": "El agua de un municipio la cobra una empresa concesionaria. ¿Qué naturaleza tiene esa contraprestación, fijada coactivamente?",
+   "o": [
+    "Prestación patrimonial de carácter público no tributaria.",
+    "Precio público por un servicio voluntario.",
+    "Tasa por la prestación de un servicio público."
+   ],
+   "c": 0,
+   "o4": "Contribución especial por el servicio de agua.",
+   "que": "Lo que se cobra coactivamente por los servicios de tasa prestados por <mark>gestión indirecta</mark> o personificación privada (<mark>concesión</mark>, sociedades de economía mixta, sociedades de capital público…) es una <mark>prestación patrimonial de carácter público no tributaria</mark>, y se regula mediante ordenanza.",
+   "porque": "Al cobrarlo una empresa y no la entidad local, deja de ser un tributo, aunque siga siendo obligatorio.",
+   "ojo": "Si el mismo servicio lo presta y cobra directamente el ayuntamiento, sí es tasa: lo que cambia es quién lo gestiona.",
+   "rec": "Concesionaria cobra → «no tributaria».",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.6 (pág. 6)",
+   "tq": "Lo que cobra una concesionaria",
+   "ta": "Prestación patrimonial de carácter público no tributaria.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     6
+    ]
+   }
+  },
+  {
+   "id": 898,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "¿Por cuál de estos servicios SÍ puede cobrar una tasa una entidad local?",
+   "o": [
+    "La limpieza de la vía pública.",
+    "La recogida de residuos sólidos urbanos.",
+    "El alumbrado de las vías públicas."
+   ],
+   "c": 1,
+   "o4": "La vigilancia pública en general.",
+   "que": "No se puede exigir tasa por: <mark>agua en fuentes públicas, alumbrado de vías públicas, vigilancia pública general, protección civil, limpieza de la vía pública y enseñanza obligatoria</mark>. La <mark>recogida de residuos</mark> sí admite tasa.",
+   "porque": "Los servicios de la lista benefician a todos por igual; la basura se recoge de cada casa.",
+   "ojo": "Ojo con «limpieza»: la de la vía pública no admite tasa, pero la <mark>limpieza en calles particulares</mark> va con la recogida de residuos y sí.",
+   "rec": "Lista sin tasa: «Fuentes, Luz, Vigilancia, Protección civil, Limpieza y Escuela».",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.4.s y art. 21.1 (págs. 5-6)",
+   "tq": "¿Recogida de basuras admite tasa?",
+   "ta": "Sí (alumbrado y limpieza viaria no).",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     5,
+     6
+    ]
+   }
+  },
+  {
+   "id": 899,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "¿Por qué enseñanza NO puede un ayuntamiento cobrar tasa?",
+   "o": [
+    "Las enseñanzas especiales en sus centros.",
+    "Ninguna: toda enseñanza local admite tasa.",
+    "La de los niveles de educación obligatoria."
+   ],
+   "c": 2,
+   "o4": "La de cualquier nivel educativo.",
+   "que": "No admite tasa la <mark>enseñanza en los niveles de educación obligatoria</mark>. En cambio, sí la admiten las <mark>enseñanzas especiales</mark> en establecimientos docentes de las entidades locales.",
+   "porque": "La educación obligatoria es un deber y un derecho de todos: no se cobra.",
+   "ojo": "Una escuela municipal de música o idiomas (enseñanza especial) sí puede cobrar tasa.",
+   "rec": "Obligatoria = gratis; especial = con tasa.",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.4.v y art. 21.1.f (págs. 5-6)",
+   "tq": "Enseñanza sin tasa",
+   "ta": "La de los niveles obligatorios.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     5,
+     6
+    ]
+   }
+  },
+  {
+   "id": 900,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "¿Quién NO tiene que pagar la tasa por utilización privativa del dominio público?",
+   "o": [
+    "Cualquier empresa privada de telecomunicaciones.",
+    "Las asociaciones sin ánimo de lucro inscritas.",
+    "El Estado, por los aprovechamientos que interesen a la seguridad ciudadana."
+   ],
+   "c": 2,
+   "o4": "Los vecinos empadronados en el municipio.",
+   "que": "El <mark>Estado, las comunidades autónomas y las entidades locales</mark> no pagan esa tasa por los aprovechamientos de los <mark>servicios públicos de comunicaciones que exploten directamente</mark> ni por los que interesen a la <mark>seguridad ciudadana o a la defensa nacional</mark>.",
+   "porque": "Son administraciones usando el espacio público para fines públicos esenciales.",
+   "ojo": "La exención de comunicaciones es solo para las administraciones que <mark>las explotan directamente</mark>, no para empresas privadas.",
+   "rec": "Exentos: administraciones + (comunicaciones propias, seguridad ciudadana, defensa).",
+   "f": "RDL 2/2004 (TRLRHL), art. 21.2 (pág. 6)",
+   "tq": "Exentos de tasa por dominio público",
+   "ta": "Administraciones: comunicaciones propias, seguridad, defensa.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     6
+    ]
+   },
+   "ex": 1
+  },
+  {
+   "id": 901,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Tasa de recogida de basuras de un piso alquilado: ¿quién es el sustituto del contribuyente?",
+   "o": [
+    "La comunidad de propietarios del edificio.",
+    "El inquilino, que es quien recibe el servicio.",
+    "El propietario, que puede repercutirla al inquilino."
+   ],
+   "c": 2,
+   "o4": "El ayuntamiento, que la cobra en el IBI.",
+   "que": "En las tasas por servicios que benefician a los <mark>ocupantes de viviendas o locales</mark>, son sustitutos del contribuyente <mark>los propietarios</mark>, que pueden <mark>repercutir las cuotas</mark> a los beneficiarios.",
+   "porque": "Al ayuntamiento le es más fácil cobrar al dueño, que es fijo; el dueño luego se lo pasa al inquilino.",
+   "ojo": "El inquilino es el contribuyente (quien se beneficia), no el sustituto. Igual ocurre con la tasa de vado: paga el propietario de la finca.",
+   "rec": "Sustituto = el dueño paga y luego repercute.",
+   "f": "RDL 2/2004 (TRLRHL), art. 23.2.a (pág. 7)",
+   "tq": "Basuras de piso alquilado: sustituto",
+   "ta": "El propietario (puede repercutirla).",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 902,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "En la tasa por licencias urbanísticas, ¿quién es el sustituto del contribuyente?",
+   "o": [
+    "El propietario del solar o del edificio.",
+    "Los constructores y contratistas de la obra.",
+    "El arquitecto director de la obra."
+   ],
+   "c": 1,
+   "o4": "El promotor que pide la licencia.",
+   "que": "En las tasas por <mark>licencias urbanísticas</mark>, tienen la condición de sustitutos del contribuyente <mark>los constructores y contratistas de obras</mark>.",
+   "porque": "Son quienes están a pie de obra y el ayuntamiento los tiene localizados.",
+   "ojo": "Los propietarios son sustitutos en otros casos (servicios a ocupantes de viviendas y vados), no en las licencias urbanísticas.",
+   "rec": "Licencia de obra → paga el que construye.",
+   "f": "RDL 2/2004 (TRLRHL), art. 23.2.b (pág. 7)",
+   "tq": "Licencia urbanística: sustituto",
+   "ta": "Constructores y contratistas.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 903,
+   "t": "Haciendas locales",
+   "d": "difícil",
+   "q": "¿Qué obra de un ayuntamiento NO puede financiarse con contribuciones especiales?",
+   "o": [
+    "La que realiza una sociedad 100 % municipal.",
+    "La que le ha delegado otra administración pública.",
+    "La que ejecuta como dueño de sus bienes patrimoniales."
+   ],
+   "c": 2,
+   "o4": "La que hace un concesionario con aportación municipal.",
+   "que": "Son obras locales las que hace la entidad en sus competencias, <mark>excepto las que ejecuta a título de dueño de sus bienes patrimoniales</mark>; también las atribuidas o delegadas por otras administraciones, y no pierden ese carácter si las hace una sociedad de capital íntegramente local o un concesionario con aportaciones.",
+   "porque": "Arreglar su patrimonio (lo que tiene como un propietario cualquiera) no es una obra pública que beneficie a los vecinos.",
+   "ojo": "Las delegadas y las de una sociedad 100 % municipal sí cuentan: por eso parecen la respuesta y no lo son.",
+   "rec": "Patrimonio propio = no hay contribución especial.",
+   "f": "RDL 2/2004 (TRLRHL), art. 29 (pág. 7)",
+   "tq": "Obra local excluida de contribución especial",
+   "ta": "La hecha como dueño de bienes patrimoniales.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     7
+    ]
+   }
+  },
+  {
+   "id": 904,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Un ayuntamiento amplía su servicio de extinción de incendios y lo financia con contribuciones especiales. ¿Quiénes se consideran especialmente beneficiados?",
+   "o": [
+    "Los propietarios afectados y las aseguradoras del ramo en el municipio.",
+    "Solo los propietarios de los bienes afectados.",
+    "Solo las aseguradoras de incendios del municipio."
+   ],
+   "c": 0,
+   "o4": "Todos los vecinos empadronados.",
+   "que": "En las contribuciones especiales por <mark>establecer o ampliar el servicio de extinción de incendios</mark>, además de los <mark>propietarios de los bienes afectados</mark>, son beneficiadas <mark>las compañías de seguros del ramo</mark> que actúan en ese término municipal.",
+   "porque": "Con más bomberos, las aseguradoras pagan menos siniestros: también se benefician.",
+   "ojo": "En la <mark>tasa</mark> por un servicio concreto de bomberos, la aseguradora es sustituta del contribuyente; aquí es una contribución especial y paga junto a los propietarios.",
+   "rec": "Más bomberos: pagan dueños Y seguros.",
+   "f": "RDL 2/2004 (TRLRHL), art. 30.2.c (pág. 8)",
+   "tq": "Contribución especial por ampliar bomberos",
+   "ta": "Propietarios afectados + aseguradoras del ramo.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     8
+    ]
+   }
+  },
+  {
+   "id": 905,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "En las contribuciones especiales por construir galerías subterráneas, ¿quiénes son los especialmente beneficiados?",
+   "o": [
+    "Los vecinos del barrio por donde pasan.",
+    "Las empresas suministradoras que deban utilizarlas.",
+    "Los propietarios de los inmuebles de la calle."
+   ],
+   "c": 1,
+   "o4": "El propio ayuntamiento como titular.",
+   "que": "En las contribuciones especiales por <mark>construcción de galerías subterráneas</mark>, se consideran especialmente beneficiadas <mark>las empresas suministradoras que deban utilizarlas</mark>.",
+   "porque": "Por esas galerías pasan sus cables y tuberías: son las que sacan provecho.",
+   "ojo": "Los propietarios son los beneficiados en obras que afectan a inmuebles; en explotaciones empresariales, sus titulares.",
+   "rec": "Galería → la usa la suministradora → paga la suministradora.",
+   "f": "RDL 2/2004 (TRLRHL), art. 30.2.d (pág. 8)",
+   "tq": "Galerías subterráneas: ¿quién paga?",
+   "ta": "Las empresas suministradoras que las usen.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     8
+    ]
+   }
+  },
+  {
+   "id": 906,
+   "t": "Haciendas locales",
+   "d": "difícil",
+   "q": "¿Cuándo cobra un ayuntamiento un precio público, y no una tasa, por un servicio?",
+   "o": [
+    "Si es de solicitud voluntaria y también lo presta el sector privado.",
+    "Siempre que el servicio sea de competencia local.",
+    "Si es obligatorio pero lo presta una empresa privada."
+   ],
+   "c": 0,
+   "o4": "Si su coste supera lo que pagaría por él una tasa.",
+   "que": "Hay <mark>precio público</mark> por servicios o actividades de competencia local <mark>cuando no concurre ninguna</mark> de las circunstancias de la tasa: es decir, cuando <mark>es voluntario</mark> y <mark>sí lo presta el sector privado</mark>.",
+   "porque": "Si el vecino puede elegir no usarlo, o ir a otro proveedor, no hace falta un tributo.",
+   "ojo": "Basta con que falle una de las dos condiciones (obligatorio, o sin oferta privada) para que sea tasa.",
+   "rec": "Precio público = voluntario + hay competencia privada.",
+   "f": "RDL 2/2004 (TRLRHL), art. 41 y art. 20.1.B (págs. 3 y 8)",
+   "tq": "Precio público en vez de tasa",
+   "ta": "Servicio voluntario que también ofrece el sector privado.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     3,
+     8
+    ]
+   }
+  },
+  {
+   "id": 907,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Por razones sociales, un ayuntamiento fija el precio público de su piscina por debajo de lo que cuesta el servicio. ¿Qué le exige la ley?",
+   "o": [
+    "Pedir autorización previa a la comunidad autónoma.",
+    "Consignar en su presupuesto la dotación para cubrir la diferencia.",
+    "Nada: puede fijarlo libremente sin más requisitos."
+   ],
+   "c": 1,
+   "o4": "Convertirlo en tasa mediante ordenanza.",
+   "que": "El precio público debe cubrir como mínimo el coste, pero por <mark>razones sociales, benéficas, culturales o de interés público</mark> puede fijarse por debajo, y entonces deben <mark>consignarse en los presupuestos las dotaciones para cubrir la diferencia</mark>.",
+   "porque": "El servicio sigue costando lo mismo: lo que no paga el usuario lo pone el presupuesto municipal.",
+   "ojo": "Está permitido, pero no «sin más»: hay que presupuestar el hueco.",
+   "rec": "Rebajar sí, pero con la diferencia presupuestada.",
+   "f": "RDL 2/2004 (TRLRHL), art. 44.2 (pág. 8)",
+   "tq": "Precio público por debajo del coste",
+   "ta": "Consignar en presupuestos la diferencia.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     8
+    ]
+   }
+  },
+  {
+   "id": 908,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "Además del ICIO, ¿qué otro impuesto municipal es potestativo?",
+   "o": [
+    "El Impuesto sobre Vehículos de Tracción Mecánica.",
+    "El de incremento de valor de los terrenos urbanos.",
+    "El Impuesto sobre Actividades Económicas."
+   ],
+   "c": 1,
+   "o4": "El Impuesto sobre Bienes Inmuebles.",
+   "que": "Los ayuntamientos <mark>exigirán</mark> el <mark>IBI, el IAE y el IVTM</mark> (obligatorios) y <mark>podrán</mark> establecer el <mark>ICIO</mark> y el <mark>IIVTNU</mark> (la «plusvalía municipal»).",
+   "porque": "Los obligatorios se exigen siempre; los potestativos necesitan que el ayuntamiento los apruebe en su ordenanza fiscal.",
+   "ojo": "Tres obligatorios, dos potestativos: los potestativos son los dos que gravan obras y terrenos.",
+   "rec": "Obligatorios: «BIen, ACtividad, VEhículo». Potestativos: obras (ICIO) y plusvalía.",
+   "f": "RDL 2/2004 (TRLRHL), art. 59 (pág. 9)",
+   "tq": "Impuestos municipales potestativos",
+   "ta": "ICIO y plusvalía (IIVTNU).",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     9
+    ]
+   }
+  },
+  {
+   "id": 909,
+   "t": "Haciendas locales",
+   "d": "normal",
+   "q": "En el esquema, ¿qué falta en la casilla con interrogación para completar la clasificación de los tributos propios de las entidades locales?",
+   "o": [
+    "Impuestos.",
+    "Multas y sanciones.",
+    "Participaciones en tributos."
+   ],
+   "c": 0,
+   "o4": "Precios públicos.",
+   "que": "Los <mark>tributos propios</mark> se clasifican en <mark>tasas, contribuciones especiales e impuestos</mark>. Precios públicos, multas, subvenciones, participaciones y crédito son <mark>otros recursos</mark> de la hacienda local, pero no tributos propios.",
+   "porque": "Tributo es lo que se exige por ley como obligación; un precio público, por ejemplo, se paga por un servicio voluntario.",
+   "ojo": "Multas y participaciones en tributos del Estado son recursos de la hacienda local, pero no tributos propios.",
+   "rec": "Tributos: «TCI» = Tasas, Contribuciones, Impuestos.",
+   "f": "RDL 2/2004 (TRLRHL), art. 2.1 (pág. 2)",
+   "tq": "Tributos propios locales",
+   "ta": "Tasas, contribuciones especiales e impuestos.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     2
+    ]
+   },
+   "dib": 1,
+   "img": "<svg viewBox=\"0 0 320 150\" role=\"img\" aria-label=\"Esquema: de «Tributos propios» salen tres casillas: Tasas, Contribuciones especiales y una casilla con interrogación. Aparte, fuera de los tributos, la casilla Precios públicos\"><g font-size=\"11\" fill=\"#222\" text-anchor=\"middle\"><rect x=\"100\" y=\"8\" width=\"120\" height=\"26\" rx=\"4\" fill=\"#cfe0f0\" stroke=\"#3d5a73\"/><text x=\"160\" y=\"25\">Tributos propios</text><line x1=\"160\" y1=\"34\" x2=\"160\" y2=\"50\" stroke=\"#555\"/><line x1=\"55\" y1=\"50\" x2=\"265\" y2=\"50\" stroke=\"#555\"/><line x1=\"55\" y1=\"50\" x2=\"55\" y2=\"64\" stroke=\"#555\"/><line x1=\"160\" y1=\"50\" x2=\"160\" y2=\"64\" stroke=\"#555\"/><line x1=\"265\" y1=\"50\" x2=\"265\" y2=\"64\" stroke=\"#555\"/><rect x=\"10\" y=\"64\" width=\"90\" height=\"26\" rx=\"4\" fill=\"#fff\" stroke=\"#3d5a73\"/><text x=\"55\" y=\"81\">Tasas</text><rect x=\"110\" y=\"64\" width=\"100\" height=\"26\" rx=\"4\" fill=\"#fff\" stroke=\"#3d5a73\"/><text x=\"160\" y=\"76\" font-size=\"10\">Contribuciones</text><text x=\"160\" y=\"87\" font-size=\"10\">especiales</text><rect x=\"220\" y=\"64\" width=\"90\" height=\"26\" rx=\"4\" fill=\"#fde9a8\" stroke=\"#a07d10\"/><text x=\"265\" y=\"82\" font-size=\"16\">?</text><rect x=\"100\" y=\"112\" width=\"120\" height=\"26\" rx=\"4\" fill=\"#eee\" stroke=\"#777\" stroke-dasharray=\"4 3\"/><text x=\"160\" y=\"129\">Precios públicos</text><text x=\"278\" y=\"130\" font-size=\"9\" fill=\"#666\">(no tributo)</text></g></svg>"
+  },
+  {
+   "id": 910,
+   "t": "Haciendas locales",
+   "d": "difícil",
+   "q": "Como la ley no le deja cobrar tasa por el alumbrado de las calles, un ayuntamiento se plantea cobrarlo como precio público a cada vecino. ¿Puede?",
+   "o": [
+    "Sí, si lo fija como mínimo al coste del servicio.",
+    "Sí: el precio público no es un tributo y no tiene ese límite.",
+    "No: tampoco caben precios públicos por esos servicios."
+   ],
+   "c": 2,
+   "o4": "Sí, si los vecinos lo aprueban en concejo abierto.",
+   "que": "Qué dice la ley: no se pueden exigir <mark>tasas</mark> por alumbrado de vías públicas (ni por agua en fuentes públicas, vigilancia general, protección civil, limpieza viaria o enseñanza obligatoria), y además <mark>no podrán exigirse precios públicos por los servicios de esa misma lista</mark>.",
+   "porque": "Razonamiento: la ley cierra las dos puertas a la vez. Cambiar el nombre del cobro (de tasa a precio público) no sirve: esos servicios no se pueden cobrar al vecino de ninguna de las dos formas.",
+   "ojo": "La tentadora es «el precio público no es un tributo»: es verdad que no lo es, pero la propia ley de haciendas excluye esos servicios también de los precios públicos. Lo de cubrir el coste es un requisito de cuantía, no un permiso.",
+   "rec": "Lista negra del art. 21: ni tasa ni precio público.",
+   "f": "RDL 2/2004 (TRLRHL), art. 21.1 y art. 42 (págs. 6 y 8)",
+   "tq": "Alumbrado público como precio público",
+   "ta": "No: esos servicios tampoco admiten precio público.",
+   "src": {
+    "m": "Bloque I - Tema 03 - RDL 2-2004 Ley Reguladora de las Haciendas Locales",
+    "p": [
+     6,
+     8
+    ]
+   },
+   "apl": 1,
+   "ded": 1,
+   "revisar": "deducción"
+  },
+  {
+   "id": 911,
+   "t": "Gas y GLP",
+   "d": "normal",
+   "q": "Fuga en la cocina de una casa de planta baja con bombona de propano; bajo la cocina hay un sótano comunicado por una escalera abierta. Tras ventilar la cocina, ¿dónde es más probable que quede atmósfera inflamable?",
+   "o": [
+    "En el sótano, porque el propano baja y se acumula abajo.",
+    "En ningún sitio: ventilando la cocina basta.",
+    "Junto al techo de la cocina, donde sube el gas."
+   ],
+   "c": 0,
+   "o4": "En el piso de arriba, por el hueco de la escalera.",
+   "que": "Qué dice el manual: los <mark>GLP</mark> (propano, butano) son <mark>más densos que el aire</mark> (densidad relativa mayor que 1) y <mark>se acumulan en las zonas bajas</mark>; por eso sus rejillas van abajo y <mark>se prohíbe poner envases de GLP en sótanos</mark>. El gas natural, en cambio, es más ligero y sube.",
+   "porque": "Razonamiento: el propano se comporta como un líquido invisible: rebosa por el suelo y cae por la escalera al punto más bajo, el sótano, donde no se ha ventilado. Allí hay que medir con el explosímetro antes de dar por resuelta la fuga.",
+   "ojo": "La tentadora es «junto al techo»: es lo que haría el <mark>gas natural</mark> (metano), no un GLP. Y ventilar solo la cocina no saca el gas que ya ha bajado.",
+   "rec": "GLP como el agua: busca lo más bajo.",
+   "f": "Gas natural, 1.3 Densidad relativa y 1.2 Características de los GLP (págs. 3 y 14)",
+   "tq": "Fuga de propano con sótano debajo",
+   "ta": "Se acumula en el sótano: medir y ventilar abajo.",
+   "src": {
+    "m": "Bloque II - Tema 21 - Instalaciones de la edificación. Gas natural",
+    "p": [
+     3,
+     14
+    ]
+   },
+   "apl": 1,
+   "ded": 1,
+   "revisar": "deducción"
+  },
+  {
+   "id": 912,
+   "t": "ACS",
+   "d": "normal",
+   "q": "Una comunidad tiene la red de ACS de acero galvanizado. ¿Qué operación de mantenimiento queda en entredicho con esas tuberías?",
+   "o": [
+    "El tratamiento periódico a 70 °C contra la legionela.",
+    "El vaciado anual del depósito de expansión.",
+    "Mantener el agua por encima de 50 °C en los grifos."
+   ],
+   "c": 0,
+   "o4": "La prueba de presión a 1 bar.",
+   "que": "Qué dice el manual: las conducciones de ACS deben soportar <mark>más de 50 °C en trabajo normal</mark> y <mark>70 °C periódicos</mark> para el tratamiento contra la legionelosis, y por eso el CTE <mark>prohíbe el acero galvanizado por encima de 60 °C</mark> (sí permite inoxidable y cobre).",
+   "porque": "Razonamiento: el trabajo normal, a 50 °C, cabe por debajo del límite del galvanizado, pero el choque térmico antilegionela a 70 °C lo supera. Esa tubería no puede pasar el tratamiento sin dañarse; habría que sustituirla por cobre o inoxidable.",
+   "ojo": "La tentadora es la de 50 °C: también es una temperatura de ACS, pero queda por debajo de 60 °C y no choca con el galvanizado. La que lo supera es la de 70 °C.",
+   "rec": "Galvanizado tope 60: el 50 cabe, el 70 no.",
+   "f": "ACS, temperatura en las conducciones (pág. 11)",
+   "tq": "ACS galvanizado y tratamiento antilegionela",
+   "ta": "No admite los 70 °C: el límite es 60 °C.",
+   "src": {
+    "m": "Bloque II - Tema 20 - Instalaciones de la edificación. Agua caliente sanitaria (ACS)",
+    "p": [
+     11
+    ]
+   },
+   "apl": 1,
+   "ded": 1,
+   "revisar": "deducción"
+  },
+  {
+   "id": 913,
+   "t": "Electricidad",
+   "d": "normal",
+   "q": "En una vivienda todos los aparatos están en paralelo en el mismo circuito. Si se enchufa uno más, ¿qué pasa con la intensidad total que circula por el cable común?",
+   "o": [
+    "No cambia, porque la tensión sigue siendo la misma.",
+    "Aumenta, porque la resistencia total del circuito baja.",
+    "Baja, porque la corriente se reparte entre más aparatos."
+   ],
+   "c": 1,
+   "o4": "Aumenta, porque la resistencia total sube.",
+   "que": "Qué dice el manual: en paralelo, cada receptor recibe la <mark>misma tensión</mark>, la <mark>intensidad total es la suma</mark> de la de cada receptor y la <mark>resistencia total es menor</mark> que con los mismos receptores en serie (cada rama nueva es un camino más para la corriente).",
+   "porque": "Razonamiento: al añadir un aparato, se suma su intensidad a la de los demás, y con la misma tensión (V = I · R) eso solo cabe si la resistencia total ha bajado. Por eso, enchufando muchos aparatos a la vez, el cable común se carga y acaba saltando el magnetotérmico.",
+   "ojo": "La tentadora es «se reparte»: es cierto que cada aparato lleva su parte, pero el cable común lleva la suma de todas. Y «sube la resistencia» sería lo que pasa en serie, no en paralelo.",
+   "rec": "Paralelo: más aparatos, menos resistencia, más corriente.",
+   "f": "Conceptos básicos de electricidad, 5 Circuitos eléctricos, receptores en paralelo (pág. 8)",
+   "tq": "Enchufar un aparato más en paralelo",
+   "ta": "Sube la intensidad total (baja la resistencia).",
+   "src": {
+    "m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+    "p": [
+     8
+    ]
+   },
+   "apl": 1,
+   "ded": 1,
+   "revisar": "deducción"
+  },
+  {
+   "id": 914,
+   "t": "Agua fría",
+   "d": "normal",
+   "q": "Edificio con distribución superior: el agua baja por gravedad desde un depósito en la cubierta. En el último piso, cuyo grifo está unos 3 m por debajo del agua del depósito, sale un hilillo de agua, y abajo va bien. ¿Por qué?",
+   "o": [
+    "Con 3 m de columna tiene unos 0,3 bar, menos del mínimo de 1 bar.",
+    "La reductora de su planta está mal regulada.",
+    "La red urbana no tiene presión para llegar a esa altura."
+   ],
+   "c": 0,
+   "o4": "Por las pérdidas de carga de la batería de contadores.",
+   "que": "Qué dice el manual: la presión mínima en grifos es <mark>100 kPa = 1 bar = 10 mca</mark>; para distribución superior se usa un <mark>depósito de gravedad</mark> (la presión la da la altura del agua por encima del grifo).",
+   "porque": "Razonamiento: si 10 m de columna de agua dan 1 bar, 3 m dan solo unos 0,3 bar, muy por debajo del mínimo. Cuanto más abajo está el grifo, más columna tiene encima y más presión: por eso los pisos bajos van bien (y en esa distribución son los bajos los que pueden necesitar reductora, no el último).",
+   "ojo": "La tentadora es la red urbana: en distribución superior el piso no se alimenta de la red, sino del depósito de arriba. El problema es la poca altura de agua sobre ese grifo.",
+   "rec": "10 m de agua = 1 bar: 3 m no llegan.",
+   "f": "Agua fría, grupo de presión y presiones mínimas (pág. 16)",
+   "tq": "Último piso bajo depósito de gravedad",
+   "ta": "Solo ~0,3 bar (3 mca): menos del mínimo de 1 bar.",
+   "src": {
+    "m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+    "p": [
+     16
+    ]
+   },
+   "apl": 1,
+   "ded": 1,
+   "revisar": "deducción"
+  },
+  {
+   "id": 915,
+   "t": "CTE DB-SI",
+   "d": "normal",
+   "q": "Edificio administrativo de tres plantas cuyos sectores exigen paredes EI 90. El techo de la última planta es una cubierta sin uso y no prevista para la evacuación. ¿Qué debe aportar ese techo?",
+   "o": [
+    "EI 90, igual que las paredes del sector.",
+    "REI 90, como todo techo que cierra un sector.",
+    "Solo la resistencia R que le toque como elemento estructural."
+   ],
+   "c": 2,
+   "o4": "No necesita ninguna resistencia al fuego.",
+   "que": "Qué dice el CTE: un techo que separa de una planta superior necesita la misma resistencia que las paredes pero <mark>REI</mark>; en cambio, una <mark>cubierta no destinada a actividad alguna ni prevista para la evacuación no precisa función de compartimentación</mark>, y solo aporta la <mark>R</mark> que le corresponda como estructura (salvo en las franjas de SI 2).",
+   "porque": "Razonamiento: compartimentar sirve para que el fuego no pase a otro sector; encima de esa cubierta no hay ningún sector que proteger. Por eso se le pide solo que aguante (R), no que aísle (EI).",
+   "ojo": "La tentadora es REI 90: es la regla del techo que separa de otra planta, y aquí no hay planta encima. Tampoco es «nada»: como elemento estructural sí debe tener su R.",
+   "rec": "Encima no hay nadie: solo R.",
+   "f": "CTE DB-SI, SI 1-1, tabla 1.2, nota 3 (pág. 12)",
+   "tq": "Cubierta sin uso: resistencia exigida",
+   "ta": "Solo la R estructural (no compartimenta).",
+   "src": {
+    "m": "Bloque II - Tema 30 - CTE DB-SI (SI 1 a SI 3)",
+    "p": [
+     12
+    ]
+   },
+   "apl": 1,
+   "ded": 1,
+   "revisar": "deducción"
+  }
+ ],
+ "glosario": [
+  {
+   "t": "Dominio público local",
+   "a": [
+    "dominio público local",
+    "dominio público municipal",
+    "dominio público"
+   ],
+   "d": "Bienes de la entidad local destinados al uso o servicio público (calles, aceras, plazas…). Usarlo en exclusiva o con un aprovechamiento especial se paga con una tasa.",
+   "tema": "Haciendas locales",
+   "f": "RDL 2/2004 (TRLRHL), art. 20",
+   "solo": 1
+  },
+  {
+   "t": "Prestación patrimonial de carácter público no tributaria",
+   "a": [
+    "prestación patrimonial de carácter público no tributaria",
+    "no tributaria"
+   ],
+   "d": "Lo que se cobra coactivamente por un servicio local gestionado de forma indirecta (concesión, empresa mixta o de capital público). No es tasa; se regula por ordenanza.",
+   "tema": "Haciendas locales",
+   "f": "RDL 2/2004 (TRLRHL), art. 20.6",
+   "solo": 1
+  },
+  {
+   "t": "Hecho imponible",
+   "a": [
+    "hecho imponible"
+   ],
+   "d": "Situación que fija la ley y cuya realización hace nacer la obligación de pagar un tributo (p. ej., aumento de valor por una obra local en la contribución especial).",
+   "tema": "Haciendas locales",
+   "f": "RDL 2/2004 (TRLRHL), arts. 20 y 28",
+   "solo": 1
+  },
+  {
+   "t": "Recargo (hacienda local)",
+   "a": [
+    "recargos",
+    "recargo"
+   ],
+   "d": "Cantidad que una entidad local exige añadida a un impuesto de la comunidad autónoma o de otra entidad local.",
+   "tema": "Haciendas locales",
+   "f": "RDL 2/2004 (TRLRHL), art. 2.1.b",
+   "solo": 1
+  },
+  {
+   "t": "Circuito en paralelo",
+   "a": [
+    "en paralelo",
+    "paralelo"
+   ],
+   "d": "Receptores conectados cada uno de forma independiente a la misma tensión; la intensidad total es la suma de las de cada uno y la resistencia total baja al añadir receptores.",
+   "tema": "Electricidad",
+   "f": "Conceptos básicos de electricidad, 5",
+   "solo": 1
+  }
+ ]
+}
