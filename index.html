@@ -419,7 +419,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .rkf .r.fav .n{color:var(--nvac)}
 .rkf .r.pulse{animation:rkp .3s ease}@keyframes rkp{50%{transform:scale(.97)}}
 </style>
-<script>const APPV='1795864246';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795869334';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -615,7 +615,7 @@ const ptsOf=(a,q)=>a===null?0:a===q.c?1:-0.33;
 const netaDay=k=>Object.values(S.daily[k]||{}).reduce((t,d)=>{const q=byId(d.id);return t+(q?ptsOf(d.a,q):0)},0);
 
 /* vistas */
-function render(){if(BLOQ){app.innerHTML='<div class="bloq"><h2>Acceso desactivado</h2><p>El administrador ha desactivado tu acceso a la web.</p></div>';document.querySelectorAll('nav,header nav,#tabs').forEach(n=>n.style.display='none');return}if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);{const t=h.startsWith('tarjetas')?'tarjetas':h.startsWith('ranking')?'ranking':h.startsWith('admin')?'admin':'inicio';document.querySelectorAll('header .tabs a').forEach(x=>x.getAttribute('href')==='#'+t?x.setAttribute('aria-current','page'):x.removeAttribute('aria-current'))}if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='tarjetas')tarjetas();else if(h==='ranking')ranking();else if(h==='admin')admin();else home();hdrChu();if(needTirada())showMaquina()}
+function render(){if(BLOQ){app.innerHTML='<div class="bloq"><h2>Acceso desactivado</h2><p>El administrador ha desactivado tu acceso a la web.</p></div>';document.querySelectorAll('nav,header nav,#tabs').forEach(n=>n.style.display='none');return}if(!NAME||!lsGet('key')){askName(false);return}const h=location.hash.slice(1);if(!h.startsWith('ranking'))RK.vista=0;{const t=h.startsWith('tarjetas')?'tarjetas':h.startsWith('ranking')?'ranking':h.startsWith('admin')?'admin':'inicio';document.querySelectorAll('header .tabs a').forEach(x=>x.getAttribute('href')==='#'+t?x.setAttribute('aria-current','page'):x.removeAttribute('aria-current'))}if(h!=='ranking')stopRanking();if(h==='hoy'||h==='inicio'||!h)home();else if(h.startsWith('dia-'))day(h.slice(4));else if(h==='historial')history();else if(h==='tarjetas')tarjetas();else if(h==='ranking')ranking();else if(h==='admin')admin();else home();hdrChu();if(needTirada())showMaquina()}
 function go(h){if(location.hash==='#'+h)render();else location.hash=h}
 
 function pending(){
@@ -1136,6 +1136,8 @@ function drawRanking(){
     ['pointerup','pointercancel','pointerleave'].forEach(n=>el.addEventListener(n,off));
     el.addEventListener('contextmenu',e=>e.preventDefault())});
   const wk=document.getElementById('wk');if(wk)wk.onchange=()=>{RK.sel=wk.value;drawRanking()};
+  // Al abrir el ranking, si tu fila no se ve, se desplaza para dejarte en el centro (solo la primera vez en cada visita)
+  if(!RK.vista){const y=app.querySelector('.rkf .r.yo');if(y){RK.vista=1;const b=y.getBoundingClientRect();if(b.bottom>innerHeight-20||b.top<0)setTimeout(()=>y.scrollIntoView({block:'center',behavior:'smooth'}),350)}}
 }
 
 function start(mode,qs,ctx){const sab=mode==='dia'&&SAB.length&&qs[0]&&qs[0].o4?SAB[0]:null;run={mode,ctx,sab,qs:qs.map(q=>({q,ord:shuffle(sab?[0,1,2,3]:[0,1,2])})),i:0,ans:[],net:0};homeBtn.hidden=true;show()}

@@ -1,0 +1,200 @@
+[
+ {
+  "id": 49,
+  "t": "Trabajos en altura",
+  "motivo": "faltaba por qué 6 kN",
+  "antes": {
+   "porque": "La norma fija que el cuerpo no reciba más de <mark>6 kN</mark> con una masa de <mark>100 kg</mark>."
+  },
+  "despues": {
+   "porque": "Unos <mark>6 kN</mark> es lo máximo que el cuerpo aguanta con arnés sin lesiones graves al frenar una caída. El absorbedor se rasga y alarga la frenada para que el pico de fuerza quede <mark>por debajo de 6 kN</mark> (la norma lo prueba con una masa de <mark>100 kg</mark>)."
+  }
+ },
+ {
+  "id": 50,
+  "t": "Trabajos en altura",
+  "motivo": "faltaba por qué 12 kN",
+  "antes": {
+   "porque": "Debe ser suficientemente sólido y garantizar al menos <mark>12 kN</mark>. El anclaje de la cuerda de seguridad es independiente del de la cuerda de trabajo y también es de 12 kN."
+  },
+  "despues": {
+   "porque": "Debe garantizar al menos <mark>12 kN</mark>: el doble de la fuerza de choque máxima que deja pasar un absorbedor (6 kN), para tener margen de seguridad. El anclaje de la cuerda de seguridad es independiente del de la cuerda de trabajo y también es de 12 kN."
+  }
+ },
+ {
+  "id": 56,
+  "t": "Agua fría",
+  "motivo": "Ojo sin relación",
+  "antes": {
+   "ojo": "La acometida contra incendios debe ser siempre <mark>independiente</mark>."
+  },
+  "despues": {
+   "ojo": "Avisar al Canal no es un trámite: al cerrar esas llaves se puede dejar sin agua a otros abonados, y el Canal tiene que saberlo para revisar y restablecer el servicio."
+  }
+ },
+ {
+  "id": 66,
+  "t": "Patología cardiovascular",
+  "motivo": "faltaba por qué 5 min",
+  "antes": {
+   "porque": "Si una crisis dura <mark>más de 5 minutos</mark>, o hay <mark>crisis repetidas</mark>, es una emergencia neurológica grave."
+  },
+  "despues": {
+   "porque": "Casi todas las crisis paran solas en 1-2 minutos. Si dura <mark>más de 5 minutos</mark>, o se repiten sin recuperar la conciencia, es poco probable que cedan solas y el cerebro empieza a sufrir por falta de oxígeno: es una <mark>emergencia neurológica grave</mark>."
+  }
+ },
+ {
+  "id": 100,
+  "t": "CTE DB-SI",
+  "motivo": "faltaba para qué",
+  "antes": {
+   "porque": "Deben medir al menos <mark>0,80 m en horizontal</mark> y <mark>1,20 m en vertical</mark>, con el alféizar a <mark>no más de 1,20 m</mark> del suelo de la planta, y separados como máximo <mark>25 m</mark> entre ejes."
+  },
+  "despues": {
+   "porque": "Las medidas mínimas, <mark>0,80 m de ancho y 1,20 m de alto</mark>, permiten que entre un bombero equipado (con el equipo de respiración) desde la autoescala. El alféizar a no más de 1,20 m del suelo de la planta y la separación máxima de 25 m entre ejes hacen que siempre haya un hueco a mano."
+  }
+ },
+ {
+  "id": 104,
+  "t": "Ascensores",
+  "motivo": "faltaba para qué",
+  "antes": {
+   "porque": "Mínimos: carga de <mark>630 kg</mark>, cabina de <mark>1,10 × 1,40 m</mark>, paso de <mark>1,00 m</mark> y una velocidad que le permita hacer todo su recorrido en <mark>menos de 60 s</mark>."
+  },
+  "despues": {
+   "porque": "<mark>630 kg</mark> equivalen a unas 8 personas: caben bomberos con su equipo o una persona en camilla. Por eso también se fija la cabina mínima de 1,10 × 1,40 m, el paso de 1,00 m y que recorra todo el edificio en menos de 60 s."
+  }
+ },
+ {
+  "id": 117,
+  "t": "ACS",
+  "motivo": "faltaba por qué 1-5 bar",
+  "antes": {
+   "porque": "El HS4 exige en cada punto de consumo un <mark>mínimo de 1 bar</mark> y un <mark>máximo de 5 bar</mark>."
+  },
+  "despues": {
+   "porque": "Con menos de <mark>1 bar</mark> el grifo no da un caudal útil (y los calentadores instantáneos pueden no encenderse). Con más de <mark>5 bar</mark> sufren las juntas y los grifos, aparecen ruidos y golpes de ariete, y se gasta más agua. Por eso el HS4 fija ese rango en cada punto de consumo."
+  }
+ },
+ {
+  "id": 119,
+  "t": "ACS",
+  "motivo": "faltaba por qué 70 °C",
+  "antes": {
+   "porque": "Los depósitos de acumulación deben trabajar a <mark>70 °C o más</mark> y a una presión mínima de <mark>6 bar</mark> (recomendable 8)."
+  },
+  "despues": {
+   "porque": "La legionela se multiplica en agua templada (de unos 25 a 45 °C) y muere rápidamente a <mark>70 °C</mark>. Por eso los depósitos de acumulación deben trabajar a <mark>70 °C o más</mark>, y a una presión mínima de 6 bar (recomendable 8)."
+  }
+ },
+ {
+  "id": 191,
+  "t": "CTE DB-SI",
+  "motivo": "faltaba para qué",
+  "antes": {
+   "porque": "Con carácter general debe haber uno de eficacia <mark>21A-113B</mark> a <mark>15 m de recorrido</mark> como máximo en cada planta, y en las zonas de riesgo especial."
+  },
+  "despues": {
+   "porque": "Con carácter general, uno de eficacia <mark>21A-113B</mark> a <mark>15 m</mark> de recorrido como máximo en cada planta, y en las zonas de riesgo especial. La distancia corta busca que cualquiera llegue a un extintor en pocos segundos, cuando el fuego todavía es pequeño y se puede apagar."
+  }
+ },
+ {
+  "id": 192,
+  "t": "CTE DB-SI",
+  "motivo": "faltaba para qué",
+  "antes": {
+   "porque": "Deben tener una <mark>anchura mínima libre de 3,5 m</mark>, una <mark>altura libre o gálibo de 4,5 m</mark> y una capacidad portante de 20 kN/m²."
+  },
+  "despues": {
+   "porque": "El gálibo de <mark>4,5 m</mark> deja pasar los vehículos más altos (autoescalas y autobombas) con margen. Además, el vial debe tener <mark>3,5 m</mark> de anchura libre y aguantar <mark>20 kN/m²</mark> para soportar el peso de un camión cargado de agua sin hundirse."
+  }
+ },
+ {
+  "id": 193,
+  "t": "CTE DB-SI",
+  "motivo": "faltaba para qué",
+  "antes": {
+   "porque": "Debe haber una <mark>franja de 25 m</mark> que separe lo edificado de lo forestal y un <mark>camino perimetral de 5 m</mark>, que puede estar incluido en la franja."
+  },
+  "despues": {
+   "porque": "Una franja de <mark>25 m</mark> sin vegetación que pueda arder separa lo edificado del monte: las llamas no llegan a tocar las construcciones, el calor radiado les llega mucho menor y los bomberos tienen espacio para defenderlas. Además, un camino perimetral de <mark>5 m</mark>, que puede ir dentro de la franja."
+  }
+ },
+ {
+  "id": 196,
+  "t": "CTE DB-SI",
+  "motivo": "faltaba por qué 80 m",
+  "antes": {
+   "porque": "Salvo otra indicación según el uso, es obligatoria en todo edificio con una altura de evacuación de <mark>más de 80 m</mark>, y también en algunas cocinas industriales y centros de transformación."
+  },
+  "despues": {
+   "porque": "Por encima de <mark>80 m</mark> la evacuación es muy larga y atacar el fuego desde fuera es imposible, así que el edificio tiene que controlar el incendio en su inicio por sí mismo con <mark>extinción automática</mark>. También se exige, según el uso, en algunas cocinas industriales y centros de transformación."
+  }
+ },
+ {
+  "id": 202,
+  "t": "Gas y GLP",
+  "motivo": "faltaba por qué",
+  "antes": {
+   "porque": "Hasta <mark>10 bar</mark> se usa sobre todo <mark>polietileno</mark> enterrado; para presiones mayores, <mark>acero</mark>."
+  },
+  "despues": {
+   "porque": "Hasta <mark>10 bar</mark> se usa sobre todo <mark>polietileno</mark> enterrado: no se corroe, es flexible y se instala fácil. Para presiones mayores hace falta la resistencia del <mark>acero</mark>."
+  }
+ },
+ {
+  "id": 208,
+  "t": "Agua fría",
+  "motivo": "faltaba por qué",
+  "antes": {
+   "porque": "Los <mark>fluxores y calentadores</mark> requieren como mínimo <mark>150 kPa</mark>, es decir, <mark>1,5 bar</mark> o 15 m de columna de agua."
+  },
+  "despues": {
+   "porque": "Los fluxores (cisternas sin depósito) tienen que dar mucho caudal de golpe, y los calentadores instantáneos necesitan un caudal mínimo para encenderse: por eso piden al menos <mark>150 kPa</mark>, es decir, <mark>1,5 bar</mark> o 15 m de columna de agua, más que un grifo normal (1 bar)."
+  }
+ },
+ {
+  "id": 209,
+  "t": "Ascensores",
+  "motivo": "faltaba por qué",
+  "antes": {
+   "porque": "El rescate por el <mark>piso superior</mark> sin mover la cabina solo se hace si el hueco libre es <mark>mayor de 80 cm</mark>. Antes hay que cortar la corriente y asegurar el cierre de todas las puertas."
+  },
+  "despues": {
+   "porque": "Con un hueco de <mark>más de 80 cm</mark> una persona puede salir sin quedar atrapada entre la cabina y el forjado. Aun así, antes hay que cortar la corriente y asegurar el cierre de todas las puertas, para que la cabina no se mueva durante el rescate."
+  }
+ },
+ {
+  "id": 218,
+  "t": "Tráfico (APRAT)",
+  "motivo": "faltaba por qué",
+  "antes": {
+   "porque": "En <mark>doble sentido</mark>, a <mark>50 m en ambos sentidos</mark>. En vías de un solo sentido, como las autovías, el primero a <mark>50 m</mark> y otro, si hace falta, a <mark>150 m como mínimo</mark>."
+  },
+  "despues": {
+   "porque": "Los triángulos avisan con tiempo para que los conductores frenen antes de llegar al accidente. En doble sentido se ponen a <mark>50 m</mark> en ambos sentidos. En vías de un solo sentido, como las autovías, donde se va más rápido, el primero a 50 m y otro, si hace falta, a <mark>150 m</mark> como mínimo."
+  }
+ },
+ {
+  "id": 226,
+  "t": "Sanitario (SVB)",
+  "motivo": "faltaba por qué",
+  "antes": {
+   "porque": "No se deben emplear <mark>más de 10 segundos</mark>. Si hay dudas sobre si respira con normalidad, se actúa como si no respirara."
+  },
+  "despues": {
+   "porque": "No más de <mark>10 segundos</mark>, porque cada segundo sin compresiones baja la supervivencia. Si hay dudas sobre si respira con normalidad, se actúa como si no respirara: empezar la RCP sin necesitarla hace mucho menos daño que no empezarla."
+  }
+ },
+ {
+  "id": 271,
+  "t": "Agua fría",
+  "motivo": "faltaba por qué",
+  "antes": {
+   "porque": "Las arterias (más de 150 mm) conectan la aducción con las zonas de presión y en ellas <mark>se evitan acometidas e hidrantes</mark>. Los hidrantes van en la <mark>distribución principal</mark> (150 mm o más)."
+  },
+  "despues": {
+   "porque": "Las arterias (más de 150 mm) llevan el agua desde la aducción a zonas enteras de presión: en ellas se evitan acometidas e hidrantes porque una toma de mucho caudal bajaría la presión de toda la zona, y una avería en esa toma dejaría sin agua a muchos usuarios. Los hidrantes van en la distribución principal (150 mm o más)."
+  }
+ }
+]

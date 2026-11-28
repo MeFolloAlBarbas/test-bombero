@@ -89,7 +89,7 @@ def main():
             if mal: errores.append(f'{i}: campos no permitidos {sorted(mal)}'); continue
             if campos & set(ENUN) and i in U: errores.append(f'{i}: ya ha salido, no se puede cambiar el enunciado ni las opciones'); continue
             for k in campos & set(EXPL):
-                if re.search(r'\b(opción|respuesta)\s+[ABC]\b|\b[ABC]\)', re.sub('<[^>]+>', '', ch[k])):
+                if re.search(r'\b(opción|respuesta)\s+[ABC]\b|(?:^|\s)[ABC]\)', re.sub('<[^>]+>', '', ch[k])):
                     errores.append(f'{i}: «{k}» nombra una opción por su letra')
             if 'o' in ch and (not isinstance(ch['o'], list) or len(ch['o']) != 3): errores.append(f'{i}: «o» debe tener 3 opciones')
             if 'c' in ch and ch['c'] not in (0, 1, 2): errores.append(f'{i}: «c» debe ser 0, 1 o 2')
