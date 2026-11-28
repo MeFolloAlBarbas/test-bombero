@@ -1,0 +1,92 @@
+{
+ "preguntas": [
+  {
+   "id": 1069,
+   "t": "EPI",
+   "d": "difícil",
+   "q": "Hay que entrar en un colector donde el detector marca un 16 % de oxígeno y algo de sulfhídrico. ¿Qué protección respiratoria sirve?",
+   "o": [
+    "Máscara completa con filtro combinado de clase 3.",
+    "Máscara completa con dos filtros combinados de clase 3.",
+    "Equipo de respiración autónomo de presión positiva."
+   ],
+   "c": 2,
+   "o4": "Mascarilla autofiltrante FFP3 con válvula de exhalación.",
+   "que": "Qué dice el manual: los equipos <mark>filtrantes</mark> son <mark>dependientes de la atmósfera</mark>: <mark>purifican el aire que hay</mark>. La respiración está garantizada con <mark>al menos un 18 % de oxígeno</mark>, y no deben usarse por debajo de ese valor. Por debajo del 19,5 % hay deficiencia de oxígeno, que exige ventilar o un equipo autónomo (aislante).",
+   "porque": "Paso a paso: 1) un filtro solo retiene contaminantes; no añade oxígeno. 2) En el colector hay un 16 %, por debajo del 18 %. 3) Da igual la clase del filtro o cuántos se pongan: el aire que llega a la boca sigue teniendo un 16 %. Solo sirve un equipo <mark>independiente de la atmósfera</mark>.",
+   "ojo": "La tentadora es la de dos filtros: parece «más protección», como poner dos bombas en serie para sacar agua de un pozo profundo. Pero el problema no es el sulfhídrico, sino la falta de oxígeno, y eso ningún filtro lo arregla.",
+   "rec": "Un filtro limpia el aire; no fabrica oxígeno.",
+   "f": "EPI de las vías respiratorias (Tema 24), págs. 2, 4, 13 y 18",
+   "tq": "Colector con 16 % de O₂ y sulfhídrico: ¿qué EPR?",
+   "ta": "ERA: ningún filtro aporta oxígeno.",
+   "src": {
+    "m": "Bloque II - Tema 24 - Equipos de protección individual de las vías respiratorias",
+    "p": [
+     2,
+     4,
+     13,
+     18
+    ]
+   },
+   "apl": 1,
+   "ded": 1
+  },
+  {
+   "id": 1073,
+   "t": "Agua fría",
+   "d": "difícil",
+   "q": "Edificio de 22 plantas alimentado directamente desde la acometida, con la red a unos 6 bar. En las últimas plantas no sale agua ni de madrugada, sin nadie más gastando. ¿Qué lo resuelve?",
+   "o": [
+    "Cambiar el montante por una tubería de mayor diámetro.",
+    "Quitar las válvulas reductoras de las primeras plantas.",
+    "Instalar un grupo de presión para las plantas altas."
+   ],
+   "c": 2,
+   "o4": "Abrir del todo la llave de paso general del edificio.",
+   "que": "Qué dice el manual: <mark>1 bar = 10 mca</mark>; la red urbana va a <mark>unos 6 bar</mark>. Con la presión de la acometida (y reductoras abajo) se llega hasta unas <mark>10 plantas</mark>; <mark>para plantas superiores la acometida ya no es suficiente</mark> y se usa un <mark>grupo de presión</mark>.",
+   "porque": "Paso a paso: 1) 6 bar equivalen a unos 60 m de columna de agua. 2) 22 plantas son unos 66 m (unos 3 m por planta, como las 10 plantas ≈ 30 mca del manual). 3) Sin consumo no hay pérdidas por rozamiento que culpar: es pura altura, y la presión de la red no da para subir tanto. Solo una bomba añade la presión que falta.",
+   "ojo": "La tentadora es la tubería más gruesa: parece reforzar la instalación, pero el diámetro reduce pérdidas cuando circula agua, no crea presión. Y quitar las reductoras de abajo solo daría más presión a las plantas bajas.",
+   "rec": "El diámetro no sube el agua; la sube la presión.",
+   "f": "Agua fría de consumo humano (Tema 22), pág. 16",
+   "tq": "22 plantas desde la acometida (6 bar): ¿qué resuelve la falta de agua arriba?",
+   "ta": "Un grupo de presión (más diámetro no da presión).",
+   "src": {
+    "m": "Bloque II - Tema 22 - Instalaciones de la edificación. Agua fría consumo humano (AFCH)",
+    "p": [
+     16
+    ]
+   },
+   "apl": 1,
+   "ded": 1
+  },
+  {
+   "id": 1074,
+   "t": "NRBQ",
+   "d": "difícil",
+   "q": "Vuelca una cisterna con panel naranja X423 y derrama su carga sólida en la calzada; no arde y empieza a llover. ¿Qué es lo más adecuado?",
+   "o": [
+    "Diluir el derrame con abundante agua para rebajar el peligro.",
+    "Rociarlo con agua pulverizada para enfriarlo y abatir el polvo.",
+    "Cubrirlo para protegerlo de la lluvia, sin echarle agua."
+   ],
+   "c": 2,
+   "o4": "Barrerlo hacia el imbornal para despejar la calzada.",
+   "que": "Qué dice el manual: si el número de peligro va <mark>precedido de una «X»</mark>, la materia <mark>reacciona peligrosamente con el agua</mark> y <mark>el agua solo puede emplearla un experto</mark>. El <mark>423</mark> es una <mark>materia sólida que reacciona con el agua desprendiendo gases inflamables</mark>.",
+   "porque": "Paso a paso: 1) la X y el 423 dicen lo mismo: el agua produce gases inflamables. 2) La lluvia también es agua, así que el peligro está empezando. 3) Lo adecuado es evitar que el producto se moje (cubrirlo) y no aportar agua de ninguna forma hasta que decida un experto.",
+   "ojo": "La tentadora es el agua pulverizada: suena prudente porque es la forma habitual de abatir vapores y enfriar, pero sigue siendo agua. Diluir con mucha agua es la versión «reforzada» y la peor.",
+   "rec": "Con X, ni chorro, ni niebla, ni lluvia.",
+   "f": "Riesgo NRBQ (Tema 17), panel naranja (pág. 52)",
+   "tq": "Derrame sólido X423 bajo la lluvia: ¿qué hacer?",
+   "ta": "Cubrirlo y no echarle agua.",
+   "src": {
+    "m": "Bloque II - Tema 17 - Riesgo NRBQ",
+    "p": [
+     52
+    ]
+   },
+   "apl": 1,
+   "ded": 1
+  }
+ ],
+ "glosario": []
+}

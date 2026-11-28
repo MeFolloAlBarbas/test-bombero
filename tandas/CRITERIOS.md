@@ -161,7 +161,13 @@ manual. **Cada una se hace con el mismo cuidado que si fuera la única de la noc
    salvo que sea la correcta «no se exige». Ninguna es defendible además de la correcta.
 6. Explicación: «Qué dice el manual» → «Paso a paso» (el razonamiento) → «Ojo» (por qué la reforzada falla).
 7. Antes de entregarlas, el revisor Sonnet comprueba también los puntos 3 y 4 (pistas y respuesta literal); si señala alguno, se corrige.
-Ejemplos que siguen este criterio (28/11, pendientes de que el usuario los valore): 1069-1074 en tandas/revisar/2026-11-28.json.
+Resultado de la prueba del 28/11 (seguimos buscando la fórmula):
+- **ACEPTADAS** (así sí): 1069 (colector con 16 % de O₂: dos filtros de clase 3 no sirven, solo ERA), 1073 (22 plantas
+  desde la acometida a 6 bar: más diámetro no da presión, grupo de presión) y 1074 (derrame X423 bajo la lluvia: ni agua
+  pulverizada, cubrirlo). Rasgos comunes: **supuesto de intervención real**, la tentadora es una **medida física «reforzada»**
+  (más filtros, tubería más gruesa, agua «suave») y un **límite físico o químico** que la anula, como el pozo.
+- **RECHAZADAS**: 1070 (CTE, «no se exigen BIE» en viviendas), 1071 (diferencial frente a PIA de 10 A) y 1072 (comparar
+  factores de caída). Hasta que el usuario diga otra cosa, dar prioridad al patrón de las aceptadas.
 **De momento TODAS las de deducir se marcan con `"revisar": "deducción"`**: el usuario quiere verlas antes de subirlas
 (al menos las primeras). **Las hace SOLO la tarea 1 (20:37): exactamente 6 en total cada noche**, una por día de calendario
 (lunes a sábado), muy cuidadas y de temas distintos. **Las tareas 2 a 5 NO hacen ninguna pregunta de deducir** (decidido por el
