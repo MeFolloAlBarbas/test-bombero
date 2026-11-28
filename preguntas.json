@@ -2371,7 +2371,7 @@
 ],
 "c": 2,
 "que": "La <mark>legionela</mark> es una bacteria que se multiplica en el agua tibia estancada y puede causar neumonías graves.",
-"porque": "La legionela se multiplica en agua templada (de unos 25 a 45 °C) y muere rápidamente a <mark>70 °C</mark>. Por eso los depósitos de acumulación deben trabajar a <mark>70 °C o más</mark>, y a una presión mínima de 6 bar (recomendable 8).",
+"porque": "La legionela se multiplica entre <mark>20 y 50 °C</mark> (lo óptimo para ella, 35-37 °C), sobre todo en agua estancada, y a <mark>70 °C</mark> muere. Por eso los depósitos de acumulación deben trabajar a <mark>70 °C o más</mark>, y a una presión mínima de 6 bar (recomendable 8).",
 "ojo": "Los <mark>interacumuladores</mark> producen el agua caliente ellos mismos; los <mark>acumuladores</mark> solo la almacenan.",
 "rec": "Acumulación: <mark>al menos 70 °C</mark>, por la legionela.",
 "f": "Manual de ACS",

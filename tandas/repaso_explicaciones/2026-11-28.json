@@ -229,5 +229,16 @@
   "despues": {
    "porque": "Por debajo de <mark>50 V en alterna o 75 V en continua</mark> la tensión no se considera peligrosa para las personas en un lugar seco (es la muy baja tensión de seguridad). A partir de ahí hace falta un equipo dieléctrico. Con humedad, la piel conduce mucho más y esos niveles bajan."
   }
+ },
+ {
+  "id": 119,
+  "t": "ACS",
+  "motivo": "rango del temario (usuario)",
+  "antes": {
+   "porque": "La legionela se multiplica en agua templada (de unos 25 a 45 °C) y muere rápidamente a <mark>70 °C</mark>. Por eso los depósitos de acumulación deben trabajar a <mark>70 °C o más</mark>, y a una presión mínima de 6 bar (recomendable 8)."
+  },
+  "despues": {
+   "porque": "La legionela se multiplica entre <mark>20 y 50 °C</mark> (lo óptimo para ella, 35-37 °C), sobre todo en agua estancada, y a <mark>70 °C</mark> muere. Por eso los depósitos de acumulación deben trabajar a <mark>70 °C o más</mark>, y a una presión mínima de 6 bar (recomendable 8)."
+  }
  }
 ]
