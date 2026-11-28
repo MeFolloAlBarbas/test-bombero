@@ -381,7 +381,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .nv-li h4{font-size:15.5px;line-height:1.35;margin:2px 0 0}
 /*/NOV*/
 </style>
-<script>const APPV='1795830742';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795830815';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -639,7 +639,7 @@ function showMaquina(){
     <div class="trk" id="trk">
       <div class="tshadow"></div><div class="tbase"></div><div class="tpost"></div><div class="ladder"></div>
       <div class="tbody"><div class="twnd">${[0,1,2].map(i=>`<div class="reel" id="mr${i}"></div>`).join('')}</div><div class="stripe"><span>MAGIRUS</span></div><div class="tsill"></div></div>
-      <div class="tcab"><div class="siren"></div><div class="door"></div><div class="handle"></div><div class="wind"><div class="drv"><svg width="44" height="33" viewBox="0 0 24 18" shape-rendering="crispEdges" aria-hidden="true">${pxRects(PX.masc.slice(0,18),PXM)}</svg></div><div class="glare"></div></div><div class="stripe"></div></div>
+      <div class="tcab"><div class="siren"></div><div class="door"></div><div class="handle"></div><div class="wind"><div class="glare"></div></div><div class="stripe"></div></div>
       <div class="tlight"></div><div class="rlight"></div><div class="bumper"></div><div class="arch" style="left:17px;width:48px"></div><div class="arch" style="left:169px;width:90px"></div><i class="puff"></i><i class="puff p2"></i>
       <div class="twheel" style="left:24px"><i></i></div><div class="twheel" style="left:176px"><i></i></div><div class="twheel" style="left:218px"><i></i></div>
     </div>
@@ -649,8 +649,8 @@ function showMaquina(){
     <span class="msnd" id="msnd" role="button" tabindex="0" aria-label="Sonido"></span>
   </div>`;
   document.body.appendChild(ov);document.body.style.overflow='hidden';
-  const R=[0,1,2].map(i=>document.getElementById('mr'+i)),IS=36,K=Object.keys(PX.icons).filter(k=>k!=='llama');
-  ['abeja','chulito','maza'].forEach((k,i)=>R[i].innerHTML=pxIcon(k,IS));
+  const R=[0,1,2].map(i=>document.getElementById('mr'+i)),IS=36,K=Object.keys(PX.icons);
+  ['llama','chulito','maza'].forEach((k,i)=>R[i].innerHTML=pxIcon(k,IS));
   const ms=document.getElementById('msnd'),pint=()=>{ms.innerHTML=sndIco(sonidoOn());ms.setAttribute('aria-label',sonidoOn()?'Silenciar':'Activar sonido')};pint();
   ms.onclick=()=>{lsSet('sonido',sonidoOn()?'no':'');pint()};
   document.getElementById('mgo').onclick=async()=>{
