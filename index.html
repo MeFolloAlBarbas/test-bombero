@@ -397,8 +397,15 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .rkf .cut:before,.rkf .cut:after{content:"";flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--kol) 0 8px,transparent 8px 13px)}
 .rkf .foot{margin:14px 0 0;text-align:center;color:var(--mut);font-size:15px;letter-spacing:.03em}.rkf .foot b{color:var(--ink)}
 .rkf .empty{color:var(--mut)}
+.rkf h2:after{content:"";display:block;width:64px;height:5px;background:#e10600;margin:9px auto 0;transform:skewX(-25deg)}
+.rkf .p{font-style:italic}
+.rkf .r .p b{display:inline-block;min-width:24px;padding:1px 4px;transform:skewX(-12deg);border-radius:2px;font-weight:800}
+.rkf .r.t1 .p b{background:#d9a514;color:#16120a}.rkf .r.t2 .p b{background:#b9c0c8;color:#14171b}.rkf .r.t3 .p b{background:#c47a3d;color:#1a0f06}
+.rkf .r{animation:rkin .4s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0)*45ms)}
+@keyframes rkin{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.rkf .r{animation:none}}
 </style>
-<script>const APPV='1795831537';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795831752';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -1101,7 +1108,7 @@ function drawRanking(){
   ${!RK_SOLO_ACTUAL&&weeksAll.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${weeksAll.map(w=>`<option value="${w}" ${w===m?'selected':''}>${w===cur?'Semana actual':'Semana del '+nice(w)}</option>`).join('')}</select>`:''}
   ${rows.length?`<div class="hd"><span></span><span>PARTICIPANTE</span><span>NETAS</span><span>RESP.</span></div>`:''}
   ${rows.map((r,i)=>{if(r.neta!==prev){pos=i+1;prev=r.neta}r.pos=pos;
-    return `${max&&i===firstKo?cutRow:''}<div class="r${i===0?' lead':''}${r.id===PID?' yo':''}"><span class="p">${pos}</span><span class="n nm"></span><span class="g">${fmt(r.neta)}</span><span class="l">${r.resp||0}</span></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}
+    return `${max&&i===firstKo?cutRow:''}<div class="r${i===0?' lead':''}${pos<=3?' t'+pos:''}${r.id===PID?' yo':''}" style="--i:${i}"><span class="p"><b>${pos}</b></span><span class="n nm"></span><span class="g">${fmt(r.neta)}</span><span class="l">${r.resp||0}</span></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}
   ${max&&rows.length&&firstKo<0?cutRow:''}
   </div>`;
   app.querySelectorAll('.rkf .nm').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
