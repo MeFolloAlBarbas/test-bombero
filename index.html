@@ -398,7 +398,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .rkf .foot{margin:14px 0 0;text-align:center;color:var(--mut);font-size:15px;letter-spacing:.03em}.rkf .foot b{color:var(--ink)}
 .rkf .empty{color:var(--mut)}
 </style>
-<script>const APPV='1795831476';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795831537';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -1096,7 +1096,6 @@ function drawRanking(){
   const rows=docs.filter(d=>d.w[m]&&d.w[m].resp>0).map(d=>({id:d.id,n:d.n,...d.w[m]})).sort((a,b)=>b.neta-a.neta||b.resp-a.resp);
   const end=keyOf(parse(m)+5*864e5);let pos=0,prev=null;
   const firstKo=rows.findIndex(r=>!(r.neta>cut)),cutRow=`<div class="cut">CORTE · ${fmt(cut)} NETAS</div>`;
-  const yo=rows.findIndex(r=>r.id===PID);
   app.innerHTML=`<div class="rkf">
   <h2>RANKING SEMANAL</h2>
   ${!RK_SOLO_ACTUAL&&weeksAll.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${weeksAll.map(w=>`<option value="${w}" ${w===m?'selected':''}>${w===cur?'Semana actual':'Semana del '+nice(w)}</option>`).join('')}</select>`:''}
@@ -1104,7 +1103,6 @@ function drawRanking(){
   ${rows.map((r,i)=>{if(r.neta!==prev){pos=i+1;prev=r.neta}r.pos=pos;
     return `${max&&i===firstKo?cutRow:''}<div class="r${i===0?' lead':''}${r.id===PID?' yo':''}"><span class="p">${pos}</span><span class="n nm"></span><span class="g">${fmt(r.neta)}</span><span class="l">${r.resp||0}</span></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}
   ${max&&rows.length&&firstKo<0?cutRow:''}
-  ${yo>=0&&max?`<p class="foot">Vas <b>${rows[yo].pos}.º</b> y ${rows[yo].neta>cut?`pasas el corte por <b>${fmt(rows[yo].neta-cut)} netas</b>`:`te faltan <b>${fmt(cut-rows[yo].neta)} netas</b> para el corte`}</p>`:''}
   </div>`;
   app.querySelectorAll('.rkf .nm').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
   const wk=document.getElementById('wk');if(wk)wk.onchange=()=>{RK.sel=wk.value;drawRanking()};
