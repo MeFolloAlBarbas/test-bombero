@@ -39,10 +39,7 @@ header{padding-top:12px}header .in{justify-content:center;column-gap:8px;row-gap
 header h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 header .in>img{width:34px!important;height:34px!important}
 header .in>div:has(h1){position:relative}
-.opo{font:inherit;font-size:14px;font-weight:600;color:var(--ink);background:var(--card);border:0;border-radius:999px;padding:7px 14px;display:flex;gap:6px;align-items:center;cursor:pointer;min-height:auto}
-.opo i{font-style:normal;color:var(--mut);font-weight:400;transition:transform .2s}.opo[aria-expanded=true] i{transform:rotate(180deg)}
-.opom{position:absolute;left:50%;transform:translateX(-50%);top:calc(100% + 6px);z-index:40;background:var(--bg);border:1px solid var(--line);border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.25);padding:10px 14px;min-width:230px;font-size:14px}
-.opom b{display:block}.opom span{display:block;color:var(--mut);font-size:12.5px;margin:1px 0 0 1.25em}.opom p{margin:8px 0 0;padding-top:8px;border-top:1px solid var(--line);color:var(--mut);font-size:12.5px}
+.opo{font:inherit;font-size:14px;font-weight:600;color:var(--ink);background:var(--card);border:0;border-radius:999px;padding:7px 14px;display:flex;gap:6px;align-items:center;min-height:auto}
 header .hchu{margin-left:0}
 header .tabs{order:4;flex-basis:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:0;background:var(--card);border-radius:10px;padding:3px}
 header .tabs a[hidden]{display:none}
@@ -423,11 +420,11 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .rkf .r.fav .n{color:var(--nvac)}
 .rkf .r.pulse{animation:rkp .3s ease}@keyframes rkp{50%{transform:scale(.97)}}
 </style>
-<script>const APPV='1795864060';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795864167';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
-<header><div class="in"><img src="img/mascota-anim.webp?v=1" alt="" width="44" height="44" style="width:44px;height:44px;flex:none"><div><h1>Test Bombero Madrid</h1><button type="button" class="opo" id="opoBtn" aria-haspopup="true" aria-expanded="false">Bombero Especialista · Madrid <i aria-hidden="true">▾</i></button><div class="opom" id="opoMenu" hidden><b>✓ Bombero Especialista</b><span>Ayuntamiento de Madrid</span><p>Pronto podrás elegir otras oposiciones.</p></div></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header><script>(function(){const h=location.hash.slice(1),t=h.startsWith('tarjetas')?'tarjetas':h.startsWith('ranking')?'ranking':h.startsWith('admin')?'admin':'inicio',e=document.querySelector('header .tabs a[href="#'+t+'"]');if(e)e.setAttribute('aria-current','page');const ob=document.getElementById('opoBtn'),om=document.getElementById('opoMenu');if(ob&&om){const set=v=>{om.hidden=!v;ob.setAttribute('aria-expanded',v)};ob.addEventListener('click',ev=>{ev.stopPropagation();set(om.hidden)});document.addEventListener('click',ev=>{if(!om.hidden&&!om.contains(ev.target))set(false)})}})()</script>
+<header><div class="in"><img src="img/mascota-anim.webp?v=1" alt="" width="44" height="44" style="width:44px;height:44px;flex:none"><div><h1>Test Bombero Madrid</h1><span class="opo">Bombero Especialista · Madrid</span></div><div id="hchu" class="hchu"></div><nav class="tabs"><a href="#inicio">Hoy</a><a href="#tarjetas">Laboratorio</a><a href="#ranking">Ranking</a><a href="#admin" id="tabAdmin" hidden>Panel</a></nav><button class="home-btn" id="goHome" hidden>Inicio</button></div></header><script>(function(){const h=location.hash.slice(1),t=h.startsWith('tarjetas')?'tarjetas':h.startsWith('ranking')?'ranking':h.startsWith('admin')?'admin':'inicio',e=document.querySelector('header .tabs a[href="#'+t+'"]');if(e)e.setAttribute('aria-current','page')})()</script>
 <main id="app"><p class="empty">Cargando preguntas…</p></main>
 <script src="firebase-config.js"></script>
 <script>
