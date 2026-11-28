@@ -107,6 +107,14 @@ Reparto aproximado de las 90 (para priorizar temas; nunca copiar sus preguntas):
 - Explicación en bloques `que` / `porque` / `ojo` / `rec` (Qué es / Por qué / Ojo / Para recordar),
   lenguaje sencillo, `<mark>` en los datos clave.
 - **Nunca nombrar una opción por su letra** (se barajan): referirse a su contenido.
+- **El «Por qué» explica la CAUSA REAL, no repite la norma** (usuario, 28/11/2026, pregunta 118): si el manual da una
+  prohibición o un límite («el CTE prohíbe el galvanizado a más de 60 °C»), la explicación cuenta el mecanismo que lo
+  justifica (el galvanizado es acero con una capa de zinc; con agua a más de 60 °C el zinc se gasta y llega la
+  corrosión). Si ese motivo no está en el manual, se puede contar igualmente (comprobado con fuentes fiables) y se dice
+  en «Ojo» que el manual solo da la norma. Evitar también enunciados «¿por qué…?» cuya respuesta correcta sea
+  «porque lo dice la norma»: mejor preguntar el dato (¿hasta qué temperatura…?) o el motivo técnico.
+- **Cada bloque habla de la pregunta**: no rellenar «Ojo» con un dato de otro tema del mismo párrafo (en la 118 hablaba
+  de los termoplásticos); si se cuenta un dato relacionado, que esté conectado con lo preguntado.
 - **La explicación puede contar otros datos del temario** (contexto, datos relacionados): al usuario le parece bien
   (26/11, sustituye a la regla del 25/11). **Pero esos datos NO cuentan como ya preguntados**: siguen libres para
   futuras preguntas.
