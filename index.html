@@ -418,8 +418,18 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .rkf .r{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:pan-y}
 .rkf .r.fav .n{color:var(--nvac)}
 .rkf .r.pulse{animation:rkp .3s ease}@keyframes rkp{50%{transform:scale(.97)}}
+/* Estilo unificado con el ranking (28/11): botón principal y resumen semanal */
+.go{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.06em;background:var(--nvac);color:var(--bg);border-radius:10px;font-size:30px;box-shadow:0 3px 0 rgba(0,0,0,.2)}
+.go:hover{background:var(--nvac);filter:brightness(1.08)}.go:active{transform:translateY(2px);box-shadow:0 1px 0 rgba(0,0,0,.2)}
+.wkr .rkf h2{font-size:clamp(22px,7vw,30px)}.wkr .rkf .fecha{margin:-4px 0 12px;text-align:center;color:var(--mut);font-size:15px;letter-spacing:.03em}
+.wkr .rkf .corte{margin:6px 0 2px;text-align:center;font-weight:800;letter-spacing:.08em;font-size:15px}.wkr .rkf .corte.ok{color:var(--okt)}.wkr .rkf .corte.ko{color:var(--kol)}
+.wkr .rkf .r{animation:none}
+.sumh{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:15px;color:var(--mut);margin:18px 0 8px;display:flex;align-items:center;gap:8px}
+.sumh:before{content:"";width:16px;height:4px;background:var(--nvac);transform:skewX(-25deg);flex:none}
+.sumq summary{align-items:center}.sumpct{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:19px;font-weight:800;min-width:2.6em}
+.flojos li{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:17px;font-weight:700;text-transform:uppercase;letter-spacing:.02em}
 </style>
-<script>const APPV='1795869721';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795879251';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -989,8 +999,8 @@ function summary(m,docs,now){
     ${qimg(r.q)}<p class="sumok">Correcta: ${esc(r.q.o[r.q.c])}</p>${expl(r.q)}</details>`;
   return `<h3 class="sumt">Resumen de la semana</h3>
   <p class="note" style="text-align:center">Acierto medio del grupo: <b>${Math.round(tot.o/tot.n*100)} %</b> (días ya terminados)</p>
-  ${(()=>{const T={};for(const r of L){const t=T[r.q.t]=T[r.q.t]||{o:0,n:0};t.o+=r.o;t.n+=r.n}const W=Object.entries(T).filter(([,t])=>t.n>=4).map(([k,t])=>[k,t.o/t.n]).sort((a,b)=>a[1]-b[1]).slice(0,3).filter(x=>x[1]<0.6);return W.length?`<h4 class="sumh">Temas más flojos del grupo</h4><ul class="flojos">${W.map(([k,p])=>`<li><span>${esc(k)}</span><b>${Math.round(p*100)} %</b></li>`).join('')}</ul>`:''})()}
-  <h4 class="sumh">Las que más ha fallado el grupo</h4>
+  ${(()=>{const T={};for(const r of L){const t=T[r.q.t]=T[r.q.t]||{o:0,n:0};t.o+=r.o;t.n+=r.n}const W=Object.entries(T).filter(([,t])=>t.n>=4).map(([k,t])=>[k,t.o/t.n]).sort((a,b)=>a[1]-b[1]).slice(0,3).filter(x=>x[1]<0.6);return W.length?`<h4 class="sumh">Temas más flojos</h4><ul class="flojos">${W.map(([k,p])=>`<li><span>${esc(k)}</span><b>${Math.round(p*100)} %</b></li>`).join('')}</ul>`:''})()}
+  <h4 class="sumh">Las más falladas</h4>
   ${fail.length?fail.map(item).join(''):'<p class="note" style="text-align:center">Ninguna pregunta la ha fallado o dejado en blanco más de la mitad. ¡Bien!</p>'}`;
 }
 async function weeklyPopup(vista){
@@ -1003,16 +1013,17 @@ async function weeklyPopup(vista){
   if(!rows.length){if(vista){alertaPanel('Todavía no hay respuestas esa semana.');return}lsSet(seen,1);return}
   const max=maxSoFar(prev),cut=max*CUT;let pos=0,prev2=null,mine=null;
   rows.forEach((r,i)=>{if(r.neta!==prev2){pos=i+1;prev2=r.neta}if(r.id===PID)mine={pos,...r}});
-  const podium=rows.slice(0,3).map((r,i)=>`<li><span class="pm">${['🥇','🥈','🥉'][i]}</span><b class="pn"></b><span class="pt">${fmt(r.neta)} netas</span></li>`).join('');
-  const me=mine?`<div class="rk ${mine.neta>cut?'pass':'fail'}" style="margin:10px 0"><span class="pos">${mine.pos}º</span><div class="who"><b>Tú</b></div><div class="sc"><span class="ac" title="Aciertos / preguntas respondidas">${okOf(mine)}/${mine.resp||0}</span><b>${fmt(mine.neta)} netas</b></div></div><p class="note" style="text-align:center;margin:0 0 6px">${mine.neta>cut?'¡Pasaste el corte!':'No pasaste el corte'} (más de ${fmt(cut)} netas)</p>`:'<p class="note" style="text-align:center">La semana pasada no respondiste ninguna pregunta.</p>';
+  const podium=rows.slice(0,3).map((r,i)=>`<div class="r t${i+1}${r.id===PID?' yo':''}"><span class="p"><b>${i+1}</b></span><span class="n pn"></span><span class="g">${fmt(r.neta)}</span><span class="l">${okOf(r)}/${r.resp||0}</span></div>`).join('');
+  const hd='<div class="hd"><span></span><span>PARTICIPANTE</span><span>NETAS</span><span>RESP.</span></div>';
+  const me=mine?`<h4 class="sumh">Tu semana</h4>${hd}<div class="r yo"><span class="p"><b>${mine.pos}</b></span><span class="n">Tú</span><span class="g">${fmt(mine.neta)}</span><span class="l">${okOf(mine)}/${mine.resp||0}</span></div><p class="corte ${mine.neta>cut?'ok':'ko'}">${mine.neta>cut?'PASASTE EL CORTE':'NO PASASTE EL CORTE'} · ${fmt(cut)} NETAS</p>`:'<p class="note" style="text-align:center">La semana pasada no respondiste ninguna pregunta.</p>';
   const ov=document.createElement('div');ov.className='modal';
-  ov.innerHTML=`<div class="mbox">${vista?'<p class="note" style="text-align:center;margin:0 0 6px;color:var(--int);font-weight:600">Vista previa (solo la ves tú)</p>':''}<h2 style="text-align:center;margin:0 0 2px;font-size:20px">Resumen de la semana pasada</h2>
-  <p class="note" style="text-align:center;margin:0 0 10px">Del ${nice(prev)} al ${nice(keyOf(parse(prev)+5*864e5))}</p>
-  ${me}<h4 class="sumh">Podio</h4><ol class="podio">${podium}</ol>
+  ov.innerHTML=`<div class="mbox wkr">${vista?'<p class="note" style="text-align:center;margin:0 0 6px;color:var(--int);font-weight:600">Vista previa (solo la ves tú)</p>':''}<div class="rkf"><h2>SEMANA PASADA</h2>
+  <p class="fecha">Del ${nice(prev)} al ${nice(keyOf(parse(prev)+5*864e5))}</p>
+  ${me}<h4 class="sumh">Podio</h4>${hd}${podium}</div>
   ${summary(prev,docs,now).replace(/<h3 class="sumt">[^<]*<\/h3>/,'')}
-  <button class="go" id="mclose" style="margin-top:14px;font-size:18px;padding:12px">Entendido</button></div>`;
+  <button class="go" id="mclose" style="margin-top:16px;font-size:22px;padding:12px;width:100%">Entendido</button></div>`;
   document.body.appendChild(ov);
-  ov.querySelectorAll('.podio .pn').forEach((el,i)=>el.textContent=rows[i].n);
+  ov.querySelectorAll('.wkr .pn').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
   const close=()=>{if(!vista)lsSet(seen,1);ov.remove()};
   ov.querySelector('#mclose').onclick=close;ov.onclick=e=>{if(e.target===ov)close()};
 }
