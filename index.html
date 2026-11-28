@@ -429,7 +429,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .sumq summary{align-items:center}.sumpct{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:19px;font-weight:800;min-width:2.6em}
 .flojos li{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:17px;font-weight:700;text-transform:uppercase;letter-spacing:.02em}
 </style>
-<script>const APPV='1795879251';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795879484';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
@@ -1024,7 +1024,7 @@ async function weeklyPopup(vista){
   <button class="go" id="mclose" style="margin-top:16px;font-size:22px;padding:12px;width:100%">Entendido</button></div>`;
   document.body.appendChild(ov);
   ov.querySelectorAll('.wkr .pn').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
-  const close=()=>{if(!vista)lsSet(seen,1);ov.remove()};
+  const close=cierraConAtras(ov,()=>{if(!vista)lsSet(seen,1)});
   ov.querySelector('#mclose').onclick=close;ov.onclick=e=>{if(e.target===ov)close()};
 }
 function panelAdmin(L,R){
@@ -1293,9 +1293,12 @@ function bmBtn(id){return `<button class="bm${guardada(id)?' on':''}" data-bm="$
 function bmClick(bk,id){if(guardada(id)){confirmarQuitar(()=>{toggleGuardar(id);bk.classList.remove('on');bk.innerHTML=BMSVG;aviso('Quitada de Fallos')});return}const on=toggleGuardar(id);bk.classList.toggle('on',on);bk.innerHTML=(on?'<span>Guardada</span>':'')+BMSVG;if(on){bk.classList.remove('pop');void bk.offsetWidth;bk.classList.add('pop')}aviso(on?'Guardada en Laboratorio → Fallos':'Quitada de Fallos')}
 function guardada(id){return ((S.guard||{})[id]||0)>0}
 function toggleGuardar(id){S.guard=S.guard||{};const on=!guardada(id);S.guard[id]=on?Date.now():-Date.now();save();return on}
+// Las ventanas emergentes se cierran también con el botón «atrás» del móvil
+function cierraConAtras(ov,alCerrar){window.history.pushState({md:1},'');const pop=()=>{window.removeEventListener('popstate',pop);if(ov.isConnected){ov.remove();alCerrar&&alCerrar()}};window.addEventListener('popstate',pop);
+  return ()=>{if(!ov.isConnected)return;ov.remove();window.removeEventListener('popstate',pop);alCerrar&&alCerrar();if(window.history.state&&window.history.state.md)window.history.back()}}
 function confirmarQuitar(si){const ov=document.createElement('div');ov.className='modal';
   ov.innerHTML='<div class="mbox cq"><p class="cq-t">¿Quitar esta pregunta de Fallos?</p><div class="cq-b"><button class="btn sec" id="cqNo">Mantener</button><button class="btn cq-si" id="cqSi">Quitar</button></div></div>';
-  document.body.appendChild(ov);const fin=()=>ov.remove();ov.onclick=e=>{if(e.target===ov)fin()};ov.querySelector('#cqNo').onclick=fin;ov.querySelector('#cqSi').onclick=()=>{fin();si()}}
+  document.body.appendChild(ov);const fin=cierraConAtras(ov);ov.onclick=e=>{if(e.target===ov)fin()};ov.querySelector('#cqNo').onclick=fin;ov.querySelector('#cqSi').onclick=()=>{fin();si()}}
 function aviso(t){let e=document.getElementById('aviso');if(!e){e=document.createElement('div');e.id='aviso';e.className='aviso';document.body.appendChild(e)}e.textContent=t;e.classList.remove('show');void e.offsetWidth;e.classList.add('show');clearTimeout(aviso.t);aviso.t=setTimeout(()=>e.classList.remove('show'),1700)}
 function pendienteHoyOFuturo(id){const hoy=madrid().key;for(const k in FIXED){if(k>=hoy&&FIXED[k].includes(id))return true}return false}
 // ===== expulsiones =====
