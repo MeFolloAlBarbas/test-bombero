@@ -404,6 +404,12 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .rkf .r{animation:rkin .4s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0)*45ms)}
 @keyframes rkin{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.rkf .r{animation:none}}
+.rkf .r{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:pan-y}
+.rkf .r.fav{box-shadow:inset 0 0 0 2px #d9a514;background:rgba(217,165,20,.13)}
+.rkf .r.fav.lead{background:#f5e6b8;color:#16120a}.rkf .r.fav.lead .l{color:#16120a}
+.rkf .r.fav .n:before{content:"★ ";color:#d9a514}.rkf .r.fav.lead .n:before{color:#a87b00}
+.rkf .r.yo.fav{box-shadow:inset 3px 0 0 #e10600,inset 0 0 0 2px #d9a514}
+.rkf .r.pulse{animation:rkp .3s ease}@keyframes rkp{50%{transform:scale(.97)}}
 </style>
 <script>const APPV='1795831752';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
@@ -1108,10 +1114,19 @@ function drawRanking(){
   ${!RK_SOLO_ACTUAL&&weeksAll.length>1?`<select id="wk" aria-label="Semana" style="margin:0 0 14px">${weeksAll.map(w=>`<option value="${w}" ${w===m?'selected':''}>${w===cur?'Semana actual':'Semana del '+nice(w)}</option>`).join('')}</select>`:''}
   ${rows.length?`<div class="hd"><span></span><span>PARTICIPANTE</span><span>NETAS</span><span>RESP.</span></div>`:''}
   ${rows.map((r,i)=>{if(r.neta!==prev){pos=i+1;prev=r.neta}r.pos=pos;
-    return `${max&&i===firstKo?cutRow:''}<div class="r${i===0?' lead':''}${pos<=3?' t'+pos:''}${r.id===PID?' yo':''}" style="--i:${i}"><span class="p"><b>${pos}</b></span><span class="n nm"></span><span class="g">${fmt(r.neta)}</span><span class="l">${r.resp||0}</span></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}
+    return `${max&&i===firstKo?cutRow:''}<div class="r${i===0?' lead':''}${pos<=3?' t'+pos:''}${r.id===PID?' yo':''}" style="--i:${i}" data-k="${i}"><span class="p"><b>${pos}</b></span><span class="n nm"></span><span class="g">${fmt(r.neta)}</span><span class="l">${r.resp||0}</span></div>`}).join('')||`<p class="empty">${live?'Todavía nadie ha respondido esta semana.':'Nadie respondió preguntas esa semana.'}</p>`}
   ${max&&rows.length&&firstKo<0?cutRow:''}
   </div>`;
   app.querySelectorAll('.rkf .nm').forEach((el,i)=>el.textContent=rows[i].n+(rows[i].id===PID?' (tú)':''));
+  let fav=[];try{fav=JSON.parse(lsGet('rkfav')||'[]')}catch(e){}
+  app.querySelectorAll('.rkf .r[data-k]').forEach(el=>{const id=rows[+el.dataset.k].id;if(fav.includes(id))el.classList.add('fav');
+    let t=null,x0=0,y0=0;const off=()=>{clearTimeout(t);t=null};
+    el.addEventListener('pointerdown',e=>{x0=e.clientX;y0=e.clientY;off();t=setTimeout(()=>{t=null;let f=[];try{f=JSON.parse(lsGet('rkfav')||'[]')}catch(e){}
+      const on=!f.includes(id);f=on?[...f,id]:f.filter(v=>v!==id);lsSet('rkfav',f.length?JSON.stringify(f):'');
+      el.classList.toggle('fav',on);el.classList.remove('pulse');void el.offsetWidth;el.classList.add('pulse');vib(on?[30,40,30]:20)},550)});
+    el.addEventListener('pointermove',e=>{if(t&&Math.hypot(e.clientX-x0,e.clientY-y0)>10)off()});
+    ['pointerup','pointercancel','pointerleave'].forEach(n=>el.addEventListener(n,off));
+    el.addEventListener('contextmenu',e=>e.preventDefault())});
   const wk=document.getElementById('wk');if(wk)wk.onchange=()=>{RK.sel=wk.value;drawRanking()};
 }
 
