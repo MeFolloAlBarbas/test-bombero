@@ -34,6 +34,11 @@ header{padding:20px max(5vw,16px) 0}
 header .in{max-width:720px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px}
 h1,h2,h3{font-weight:600;line-height:1.2;margin:0}
 h1{font-size:22px}header small{display:block;font-size:13px;color:var(--mut);margin-top:2px}
+/* Cabecera compacta (28/11): sin título visible; la oposición en pequeño debajo (más adelante, selector de oposición) */
+header{padding-top:12px}header .in{padding-bottom:8px;row-gap:6px}
+header h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+header .in>div:has(h1){order:3;flex-basis:100%}
+header small{font-size:12px;margin:0;letter-spacing:.01em}
 main{max-width:720px;margin:auto;padding:20px max(5vw,16px) 56px}
 button{font:inherit;cursor:pointer;border-radius:8px;min-height:44px;-webkit-appearance:none;appearance:none}
 button:focus-visible,select:focus-visible{outline:3px solid var(--inl);outline-offset:2px}
@@ -408,7 +413,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .rkf .r.fav .n{color:var(--nvac)}
 .rkf .r.pulse{animation:rkp .3s ease}@keyframes rkp{50%{transform:scale(.97)}}
 </style>
-<script>const APPV='1795863318';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795863602';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
