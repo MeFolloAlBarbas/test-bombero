@@ -23850,5 +23850,31 @@
 },
 "dib": 1,
 "img": "<svg viewBox=\"0 0 320 200\" role=\"img\" aria-label=\"Dos zonas concéntricas alrededor de un siniestro: la interior marcada con 1 y la exterior marcada con interrogación\"><g font-size=\"11\" fill=\"#222\" text-anchor=\"middle\"><ellipse cx=\"160\" cy=\"100\" rx=\"150\" ry=\"90\" fill=\"#fff6d6\" stroke=\"#a80\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><ellipse cx=\"160\" cy=\"100\" rx=\"85\" ry=\"50\" fill=\"#ffe1e1\" stroke=\"#b33\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><circle cx=\"160\" cy=\"100\" r=\"16\" fill=\"#e55\"/><text x=\"160\" y=\"104\" fill=\"#fff\" font-size=\"10\">Fuego</text><text x=\"160\" y=\"70\" font-size=\"13\" font-weight=\"bold\">1</text><text x=\"160\" y=\"32\" font-size=\"20\" font-weight=\"bold\">?</text><text x=\"270\" y=\"190\" font-size=\"10\">Cordón externo</text><text x=\"160\" y=\"158\" font-size=\"10\">Cordón interno</text></g></svg>"
+},
+{
+"id": 913,
+"t": "Electricidad",
+"d": "normal",
+"q": "En una vivienda todos los aparatos están en paralelo en el mismo circuito. Si se enchufa uno más, ¿qué pasa con la intensidad total que circula por el cable común?",
+"o": [
+"No cambia, porque la tensión sigue siendo la misma.",
+"Aumenta, porque la resistencia total del circuito baja.",
+"Baja, porque la corriente se reparte entre más aparatos."
+],
+"c": 1,
+"o4": "Aumenta, porque la resistencia total sube.",
+"que": "En paralelo, cada receptor recibe la <mark>misma tensión</mark>, la <mark>intensidad total es la suma</mark> de la de cada receptor y la <mark>resistencia total es menor</mark> que con los mismos receptores en serie (cada rama nueva es un camino más para la corriente).",
+"porque": "Al añadir un aparato, se suma su intensidad a la de los demás, y con la misma tensión (V = I · R) eso solo cabe si la resistencia total ha bajado. Por eso, enchufando muchos aparatos a la vez, el cable común se carga y acaba saltando el magnetotérmico.",
+"ojo": "La tentadora es «se reparte»: es cierto que cada aparato lleva su parte, pero el cable común lleva la suma de todas. Y «sube la resistencia» sería lo que pasa en serie, no en paralelo.",
+"rec": "Paralelo: más aparatos, menos resistencia, más corriente.",
+"f": "Conceptos básicos de electricidad, 5 Circuitos eléctricos, receptores en paralelo (pág. 8)",
+"tq": "Enchufar un aparato más en paralelo",
+"ta": "Sube la intensidad total (baja la resistencia).",
+"src": {
+"m": "Bloque II - Tema 18 - Conceptos básicos de electricidad",
+"p": [
+8
+]
+}
 }
 ]
