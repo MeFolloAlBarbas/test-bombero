@@ -3,5 +3,6 @@
  "ultimo_aprobado": "2026-11-28-revisadas",
  "por_noche": 170,
  "por_tarea": 34,
- "parado": null
+ "parado": null,
+ "extra_20h": false
 }

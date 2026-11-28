@@ -6,6 +6,10 @@
 import json, os, re, datetime as dt
 from zoneinfo import ZoneInfo
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Interruptor del usuario (28/11): la extra de las 20:00 NO se activa hasta que él lo diga → tandas/estado.json "extra_20h": true
+if not json.load(open(os.path.join(ROOT, 'tandas', 'estado.json'), encoding='utf-8')).get('extra_20h'):
+    print('Pregunta extra de las 20:00 desactivada (extra_20h = false en tandas/estado.json): no se añade ninguna.')
+    raise SystemExit(0)
 P = os.path.join(ROOT, 'plan.json')
 plan = json.load(open(P, encoding='utf-8')); B = {q['id']: q for q in json.load(open(os.path.join(ROOT, 'preguntas.json'), encoding='utf-8'))}
 t = open(os.path.join(ROOT, 'scripts', 'plan.py'), encoding='utf-8').read()

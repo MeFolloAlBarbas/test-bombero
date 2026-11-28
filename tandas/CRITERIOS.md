@@ -181,7 +181,7 @@ Resultado de la prueba del 28/11 (seguimos buscando la fórmula):
 (lunes a sábado), muy cuidadas y de temas distintos. **Las tareas 2 a 5 NO hacen ninguna pregunta de deducir** (decidido por el
 usuario el 27/11, para revisar 6 cada mañana).
 **Destino (decidido por el usuario el 27/11): una pregunta EXTRA de deducir cada día a las 20:00**, además de la difícil
-(13 preguntas al día). YA ESTÁ EN LA WEB: `scripts/deduccion.py` (dentro de calendario.sh) pone una `ded: 1` aceptada como 13.º id
+(13 preguntas al día). **DESACTIVADA hasta que el usuario lo diga (28/11): `"extra_20h": false` en tandas/estado.json; no cambiarlo sin su orden expresa.** Las `ded` se siguen haciendo y revisando, y esperan en el banco. Cuando se active: `scripts/deduccion.py` (dentro de calendario.sh) pone una `ded: 1` aceptada como 13.º id
 de cada día futuro; la web la enseña como «20:00 · extra» y el aviso push de las 20:00 es uno solo para las dos. Mientras no
 haya `ded` aceptadas, los días se quedan con 12. Las nuevas se apartan en tandas/revisar/ hasta que el usuario las acepte
 (nunca en los 12 huecos normales).
