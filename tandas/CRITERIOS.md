@@ -232,3 +232,24 @@ marcarla con `revisar`.
    Revisa **todas** las difíciles, de concepto, estilo examen, intervención, dibujo y las de Edificaciones /
    Estabilización; de las de **cifras**, una de cada tres (al azar). Si falla una o no encuentra el dato,
    se corrige o se quita (y si falla una de cifras, se revisan todas las de cifras de esa tarea).
+
+## Repaso de las explicaciones ya hechas (usuario, 28/11/2026) — tarea «Repaso de explicaciones»
+Objetivo: que todas las preguntas del banco cumplan el criterio «El Por qué explica la CAUSA REAL, no repite la norma».
+Cola y cambios con `scripts/repaso_explicaciones.py` (estado · ver N · aplicar cambios.json); registro antes/después en
+`tandas/repaso_explicaciones/AAAA-MM-DD.json`. Primero los temas técnicos, los legales al final.
+- **Marcar `ok`** si la explicación ya enseña el porqué, o si es un dato que no tiene porqué (una cifra de una tabla, un
+  nombre) y la explicación es clara. No reescribir por reescribir: solo lo incompleto o flojo.
+- **Reescribir** (`que`/`porque`/`ojo`/`rec`) cuando: el «Por qué» solo repite la norma o la respuesta; falta el
+  mecanismo (qué pasa físicamente, qué riesgo evita, para qué sirve); «Ojo» habla de otra cosa sin relación; hay un
+  error. Mismo formato y estilo de siempre: lenguaje sencillo, `<mark>` en los datos clave, sin nombrar letras de opción.
+- El motivo real se comprueba en el temario (descifrado en /tmp/temario) y, si no está, en fuentes fiables (WebSearch);
+  en ese caso «Ojo» dice que el manual solo da la norma o el dato. Nunca inventar mecanismos.
+- **Temas legales** (Constitución, Igualdad, Régimen local, Haciendas, Procedimiento, EBEP, Estatuto, Reglamento,
+  Protección civil): el «porqué» es la finalidad de la norma (qué protege, qué evita), solo cuando sea claro y no
+  especulativo; si no, `ok`.
+- **Enunciado y opciones**: solo se pueden cambiar si la pregunta no ha salido nunca (`ya_salio: false`), p. ej. un
+  «¿por qué…?» cuya respuesta correcta es «porque lo dice la norma» → preguntar el motivo técnico o el dato. Si ya salió,
+  solo la explicación.
+- **Apartar con `revisar`** (no se toca) si hay una errata del temario o una discrepancia en Edificaciones/Estabilización
+  que cambiaría la explicación, o si dudas.
+- Lote: unas 100 preguntas por ejecución. El usuario no aprueba cada cambio (son explicaciones), pero recibe el resumen.
