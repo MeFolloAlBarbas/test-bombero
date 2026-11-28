@@ -37,7 +37,6 @@ h1{font-size:22px}header small{display:block;font-size:13px;color:var(--mut);mar
 /* Cabecera compacta y centrada (28/11): sin título visible; mascota + oposición (más adelante, selector de oposición); pestañas como selector */
 header{padding-top:12px}header .in{justify-content:center;column-gap:8px;row-gap:10px;border-bottom:0;padding-bottom:4px}
 header h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-header .in>img{width:34px!important;height:34px!important}
 header .in>div:has(h1){position:relative}
 .opo{font:inherit;font-size:14px;font-weight:600;color:var(--ink);background:var(--card);border:0;border-radius:999px;padding:7px 14px;display:flex;gap:6px;align-items:center;min-height:auto}
 header .hchu{margin-left:0}
@@ -420,7 +419,7 @@ html.nv-lock,html.nv-lock body{overflow:hidden}
 .rkf .r.fav .n{color:var(--nvac)}
 .rkf .r.pulse{animation:rkp .3s ease}@keyframes rkp{50%{transform:scale(.97)}}
 </style>
-<script>const APPV='1795864167';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
+<script>const APPV='1795864246';(function chk(){fetch('version.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.text()).then(t=>{t=t.trim();if(t&&t!==APPV){const k='rl'+t;if(!sessionStorage.getItem(k)){sessionStorage.setItem(k,1);location.replace(location.pathname+'?v='+t+location.hash)}}}).catch(()=>{});setTimeout(chk,300000)})();</script>
 <script>(function(){function f(){var c=getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();if(!c)return;document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",c)})}document.addEventListener("DOMContentLoaded",f);try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",f)}catch(e){}new MutationObserver(f).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]})})();</script>
 </head>
 <body>
