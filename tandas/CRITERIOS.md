@@ -140,6 +140,28 @@ pide nada, la respuesta es «no se exige». Al hacerlas: partir de un principio,
 manual (citarlo en `src` y en la explicación) y construir un caso que el temario no menciona literalmente. La explicación
 muestra el razonamiento paso a paso: qué dice el manual → por qué de ahí se deduce la correcta → por qué falla la tentadora.
 Dar prioridad a este tipo dentro de las de aplicación. Llevan además el campo `ded: 1`.
+
+**CRITERIO ENDURECIDO (usuario, 28/11/2026).** Las 6 primeras de la tarea 1 (910-915) se rechazaron: «no se parecen a las que
+te comenté». Eran preguntas de aplicar un dato a una escena, con pistas en el enunciado o con la respuesta casi literal en el
+manual. **Cada una se hace con el mismo cuidado que si fuera la única de la noche.** Modelos: pregunta 21 del examen (pozo de
+20 m) y 77 (paredes entre habitaciones). Una pregunta de deducir tiene que cumplir TODO esto; si no, se descarta y se hace otra:
+1. **La opción tentadora es una medida «reforzada» o prudente que falla**: dos bombas en serie, más filtros, más diámetro, un
+   magnetotérmico más sensible, agua pulverizada «por precaución», o una exigencia real de otro apartado de la norma (EI 60,
+   BIE de 25 mm) cuando la norma no pide nada en ese caso. Si ninguna opción parece «hacer más», no es de este tipo.
+2. **Hay un principio, límite o ámbito que lo impide** y está en el manual (límite de aspiración, filtro que no aporta oxígeno,
+   presión de la red, factor de caída, tabla del CTE que no incluye ese uso). La correcta es lo que respeta ese límite y suele
+   sonar menos obvia o menos protectora.
+3. **Enunciado corto y sin pistas**: describe la situación o pregunta como lo haría el tribunal, sin nombrar el principio ni
+   copiar la frase del manual que da la clave (mal: «Como la ley no le deja cobrar tasa…», «cubierta no prevista para la
+   evacuación»). Puede dar por supuesto que hay una exigencia o una solución (como la 77).
+4. **La respuesta no está escrita en el manual para ese caso.** Prueba: si buscando en el manual las palabras del caso sale la
+   respuesta, no vale (la 911 de GLP en el sótano estaba casi literal). La 913 (aparato más en paralelo) se aceptó, pero como
+   pregunta normal, no de deducir.
+5. **Las tres opciones son acciones o exigencias reales y profesionales**, ninguna absurda («en ningún sitio», «no hacer nada»)
+   salvo que sea la correcta «no se exige». Ninguna es defendible además de la correcta.
+6. Explicación: «Qué dice el manual» → «Paso a paso» (el razonamiento) → «Ojo» (por qué la reforzada falla).
+7. Antes de entregarlas, el revisor Sonnet comprueba también los puntos 3 y 4 (pistas y respuesta literal); si señala alguno, se corrige.
+Ejemplos que siguen este criterio (28/11, pendientes de que el usuario los valore): 1069-1074 en tandas/revisar/2026-11-28.json.
 **De momento TODAS las de deducir se marcan con `"revisar": "deducción"`**: el usuario quiere verlas antes de subirlas
 (al menos las primeras). **Las hace SOLO la tarea 1 (20:37): exactamente 6 en total cada noche**, una por día de calendario
 (lunes a sábado), muy cuidadas y de temas distintos. **Las tareas 2 a 5 NO hacen ninguna pregunta de deducir** (decidido por el
