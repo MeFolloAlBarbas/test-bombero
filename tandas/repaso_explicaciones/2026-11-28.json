@@ -196,5 +196,38 @@
   "despues": {
    "porque": "Las arterias (más de 150 mm) llevan el agua desde la aducción a zonas enteras de presión: en ellas se evitan acometidas e hidrantes porque una toma de mucho caudal bajaría la presión de toda la zona, y una avería en esa toma dejaría sin agua a muchos usuarios. Los hidrantes van en la distribución principal (150 mm o más)."
   }
+ },
+ {
+  "id": 321,
+  "t": "EPI",
+  "motivo": "faltaba por qué",
+  "antes": {
+   "porque": "Su uso no puede ser permanente: se limita al mínimo necesario y <mark>nunca más de 4 horas diarias</mark>, con pausas según la carga física y el clima."
+  },
+  "despues": {
+   "porque": "Llevar un equipo respiratorio cansa: se respira contra la resistencia del filtro o del equipo, da calor y limita los movimientos. Por eso su uso no puede ser permanente: se limita al mínimo necesario y nunca más de <mark>4 horas diarias</mark>, con pausas según la carga física y el clima."
+  }
+ },
+ {
+  "id": 353,
+  "t": "Incendios de vegetación",
+  "motivo": "faltaba por qué",
+  "antes": {
+   "porque": "Las proyecciones <mark>más peligrosas</mark> son las <mark>piñas del pino carrasco</mark> y la <mark>corteza del eucalipto</mark>."
+  },
+  "despues": {
+   "porque": "Las más peligrosas son las <mark>piñas del pino carrasco</mark> y la <mark>corteza del eucalipto</mark>. La corteza del eucalipto se desprende en tiras ligeras que el viento y la columna de humo llevan muy lejos todavía ardiendo; las piñas arden durante mucho tiempo y saltan o ruedan encendidas."
+  }
+ },
+ {
+  "id": 495,
+  "t": "EPI",
+  "motivo": "faltaba por qué",
+  "antes": {
+   "porque": "Se seleccionan cuando se trabaja con tensiones a partir de <mark>50 V en alterna</mark> o <mark>75 V en continua</mark>. Esos niveles son para lugares secos; en lugares húmedos o mojados los niveles son más bajos."
+  },
+  "despues": {
+   "porque": "Por debajo de <mark>50 V en alterna o 75 V en continua</mark> la tensión no se considera peligrosa para las personas en un lugar seco (es la muy baja tensión de seguridad). A partir de ahí hace falta un equipo dieléctrico. Con humedad, la piel conduce mucho más y esos niveles bajan."
+  }
  }
 ]
